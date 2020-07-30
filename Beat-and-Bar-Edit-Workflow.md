@@ -1,36 +1,3 @@
-# What are tempo and beat?
-Tempo is the speed a passage of music is meant to be played. It's an abstract and relative concept. A beat is a unit of length, it's the smallest unit that we perceive rhythm, ie: a regular pattern of change, of a music record. The beat is what one would intuitively tap the foot or nod the head. 
-
-Beats per minute is then a empirical measurement of this speed, as distance (beats) over time (minutes). When we are counting the BPM our result is always relative to the window of beats we are counting and to the relative length of the beat, determined by the denominator in a time signature. 
-
-Semibreve - 1 |
-Minims - 1/2 |
-Crotchets - 1/4 |
-Quavers - 1/8 |
-Semi-Quavers - 1/16 |
-Dime-Semi Quavers - 1/32 |
-
-Using different note lengths can cause a different BPM values for the same tempo. 
-It is not always possible to define a "correct" way of measuring the tempo in music; a piece of music in one tempo can be interpreted in different BPMs. Mathematically BPMs values of 240, 120, or 60 with the respective note lengths of 1/8, 1/4 and 1/2 will result in the exact same tempo. A piece in 3/4 can be easily rewritten in 3/8 simply by halving the length of the notes and doubling the BPM.
-However, the interpretation of musicians and thus the perception of the listener can be different. It's usually considered that a piece with a lower BPM will be perceived as being more serene because a musician is usually more prone to applying legato on longer (faster) notes than on short (slower) notes. 
-
-Using different windows to count the beats can also cause the different BPM values for the same tempo. Let's consider that we have counted 12 beats over the course of 6 seconds. To get the BPM we use the formula: (12 * 60) / 6 = 120 BPM. Now let's suppose we use 6 beats to count the tempo in this same 12 beats window but in two discrete steps. We count the first 6 beats on 2 seconds: (6 * 60) / 2 = 180 BPM. The other group of 6 beats take us another 4 seconds to count: (6 * 60) / 4 = 90 BPM. If we try to simply compute the arithmetic mean our BPMs, we got (90 + 180) / 2 = 135. This would be the same of one single window of 6 beats, that skip the first 2 beats and the last 4 beats, in this case we count the first 4 beats in 1.33 seconds and take an additional 1.33 seconds to count the next 2 beats, this gives us: (6 * 60) / 2.66... = 135. Since BPM is a speed measure, if we want to know the total distance we traveled we need to use the harmonic mean: 2/((1/90) + (1/180)) = 120 BPM, which was the original tempo we counted our 12 beats.
-
-What is the true tempo of this passage? One could argue that it is 120 BPM, but that certainly is misleading because it does not consider that there is a tempo change in this region. To avoid missing any tempo changes one could consider only counting the tempo on a 2 beat window, but that can be even more misleading since small tempo deviations will be very prominent. It's impossible to expect that a musician, no matter how proficient in his instrument will always hit a note with perfect timing, but it's reasonable to expect that on average he will. Even if the track was recorded with a drum machine, there is also swing, which is making some notes shorter or longer on purpose, and many other articulations that a composer (written) and a performer (improvised) can throw that changes the length and/or the start and end positions of single notes, this will create a momentary perception of change in the played speed, even when the tempo has remained constant. 
-
-There is no definitive or correct answer for that question. Indeed, this detail alone adds an enormous amount of complexity to the problem of beat tracking and tempo estimation. When computationally analyzing or critically listening to an audio record, all that can be used to determine the beat potions are the instants that the notes are being hit, this can create only a perception of the playing speed. However, what is of interest in most cases is the hidden "ground truth" as annotated on a sheet music or represented in digital symbolic file. The beat does not exists in the physical world, ie: air vibrations, perceived as sound. In western notation such articulations that change the perception of speed are tightly standardized, but nothing forbidden a composer or performer to invent a new one if he wishes. Computer musicians also have unlimited freedom to create on their DAWs any kind of articulations. For this reason, even extraordinarily trained individuals like professional drummers and conductors, whose have the responsibility of indicating the beat positions, for a band or an orchestra, will not always agree on "correct" beat position or "local" tempo value for an recorded music.
-
-# What are bars and time signatures?
-
-The bottom number of the time signature is the relative beat length. As a speed with beat units, the BPM is used it to determine the distance of two beats, ie: their lengths; or their duration, in an absolute unit: seconds, or milliseconds. The upper number of the time signature is called the beats per bar. As the name suggests it defines how many beats should be inside each measure. After we know the absolute beat length of the beat we can simply multiple that by the beats per bar, to determine the bar length. The main purpose of the time signature is to define the length of beats and bars, in relative terms, and with the BPM in a absolute unit of time.
-
-A measure is the restrict space in which the beats are placed. Since the beat length is defined as a relative fractions, we need a regular space, of a certain duration to place them. That's the bar or measure. Visually, it's defined as bar lines that organize the notes on sheet music. The main purpose of the bar is to chop the music in equal lengths so that notes of different fractional duration can balance each other to make melodies. 
-
-
-A 4/4 measure means that it fits 4 crotchets. At a 120 BPM it means that each beat will be 0.5 seconds long. And that we have 4, 0.5s long beats in a bar, and thus a 2 seconds measure. The simplest possible melody is to play 4 crotchets of 0.5 seconds each. A different melody is to play 1 semibreve, or one note for the whole 2 seconds. Another more sophisticated melody can be played as 2 1/8 notes (2 * 0.25 = 0.5) and 1 crochets (1 * 0.5 = 0.5) and one minim (1 * 1 = 1), all totaling 2 seconds. Music is also silence, so for every note, there is an equally sized rest. So another melody could be a 1/2 rest (1 * 1 = 1) and then 16 dime-semi-quavers (16 * 0.0625 = 1) also totaling 2 seconds. We can put any combination of notes and rests inside a measure as long as we respect the size defined by the time signature, in this case, that is the same of 4 crotchets that at 120 BPM means 2 seconds. 
-
-On a 3/4 measure also in 120 BPM, our beats are still 0.5 seconds long, but our measure is only 1.5 seconds. A 7/8 signature also at 120 BPM means that our beat is 0.25 seconds and that the measure allows 7 of these inside, and thus are 1.75 seconds.
-
 # Legacy architecture
 
 ## BeatGrid

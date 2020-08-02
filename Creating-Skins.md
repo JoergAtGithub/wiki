@@ -2426,13 +2426,14 @@ correspond to putting all the child widgets in a
 [QHBoxLayout](https://doc.qt.io/qt-4.8/qhboxlayout.html) and
 [QVBoxLayout](https://doc.qt.io/qt-4.8/qvboxlayout.html), respectively.
 
-|                                                                                                                                                                                                                                                                                                                                   |                                                                                                                                                                                                                                              |
-| --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `<WidgetGroup>
+Example:
+```xml
+<WidgetGroup>
   <Pos>100,200</Pos>
   <Size>w,h</Size>
-  <Layout>horizontal</Layout>
-  <BackPath>background.png</BackPath>
+  <Layout>horizontal</Layout><!-- Layout widgets horizontally -->
+  <BackPath>background.png</BackPath><!-- New in Mixxx 1.11: Loads a background image from the skin folder. Support resizing and color schemes -->
+  <!-- Note: The style sheet is painted on top of the new background set by the <BackPath> node -->
   <Children>
     <PushButton>
       ...
@@ -2443,23 +2444,7 @@ correspond to putting all the child widgets in a
     <!-- as many regular widgets as you like in here -->
   </Children>
 </WidgetGroup>
-` | `
-
-
-Layout widgets horizontally.
-New in Mixxx 1.11: Loads a background image from the skin folder. Support resizing and color schemes.
-Note: The style sheet is painted on top of the new background set by the <BackPath> node.
-
-
-
-
-
-
-
-
-
-
-` |
+```
 
 The result of this is that the pushbutton and slider will be
 automatically sized and laid out horizontally within the widget group.
@@ -2604,18 +2589,18 @@ Example:
 <SizeAwareStack>
   <Children>
     <WidgetGroup>
-      <MinimumSize>10,10</MinimumSize> <!-- A WidgetGroup that is shown when the available screen estate -->
-      <MaximumSize>10,10</MaximumSize> <!-- is at least 10x10 pixel -->
+      <MinimumSize>10,10</MinimumSize><!-- A WidgetGroup that is shown when the available screen estate -->
+      <MaximumSize>10,10</MaximumSize><!-- is at least 10x10 pixel -->
       <Style>QGroupBox {background: blue;}</Style>
     </WidgetGroup>
     <WidgetGroup>
-      <MinimumSize>100,10</MinimumSize> <!-- A WidgetGroup that is shown when the available screen estate -->
-      <MaximumSize>199,10</MaximumSize> <!-- is 100x10 up to 199x10 pixel. -->
+      <MinimumSize>100,10</MinimumSize><!-- A WidgetGroup that is shown when the available screen estate -->
+      <MaximumSize>199,10</MaximumSize><!-- is 100x10 up to 199x10 pixel. -->
       <Style>QGroupBox {background: red;}</Style>
     </WidgetGroup>
     <WidgetGroup>
-      <MinimumSize>200,10</MinimumSize> <!-- A WidgetGroup that is shown when the available screen estate -->
-      <MaximumSize>200,10</MaximumSize> <!-- is at least 200x10 pixel -->
+      <MinimumSize>200,10</MinimumSize><!-- A WidgetGroup that is shown when the available screen estate -->
+      <MaximumSize>200,10</MaximumSize><!-- is at least 200x10 pixel -->
       <Style>QGroupBox {background: green;}</Style>
     </WidgetGroup>
   </Children>

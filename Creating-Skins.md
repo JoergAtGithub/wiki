@@ -466,7 +466,7 @@ shows the current key of a playing deck:
             <ConfigKey>[ChannelX],visual_key</ConfigKey>
         </Connection>
     </Key>
-```xml
+```
 
 Sub-tags like the `<Size>` tag tell Mixxx how it should size, style and
 layout the widget. There are certain sub-tags that are common to all

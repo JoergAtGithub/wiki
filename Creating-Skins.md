@@ -2511,6 +2511,17 @@ provide a size for the splitter this is the default policy.
 
 _New in Mixxx 1.11.0_
 
+A `WidgetStack` is a widget that only shows one widget at a time. By
+default, the shown widget is the first child in the `<Children>` block.
+If the `NextControl` or `PrevControl` is set to 1, then the next or
+previous widget in the stack is shown and the current widget is hidden.
+If an optional `trigger` attribute is given to any child, then the
+control named by the attribute will automatically switch to the widget
+when the control is set to 1 and when the widget is hidden the control
+will be set to 0 by the `WidgetStack`. This allows you to create radio
+buttons that let the user switch between multiple different widgets to
+occupy a certain space.
+
 Example:
 ```xml
 <WidgetStack>
@@ -2525,19 +2536,7 @@ Example:
 </WidgetStack>
 ```
 
-
-A `WidgetStack` is a widget that only shows one widget at a time. By
-default, the shown widget is the first child in the `<Children>` block.
-If the `NextControl` or `PrevControl` is set to 1, then the next or
-previous widget in the stack is shown and the current widget is hidden.
-If an optional `trigger` attribute is given to any child, then the
-control named by the attribute will automatically switch to the widget
-when the control is set to 1 and when the widget is hidden the control
-will be set to 0 by the `WidgetStack`. This allows you to create radio
-buttons that let the user switch between multiple different widgets to
-occupy a certain space.
-
-Some examples:
+Some example applications:
 
   - Multiple pages of hotcue buttons.
   - A collapsed/expanded view of a deck: two children in a
@@ -2613,6 +2612,7 @@ Example:
 
 New in Mixxx 2.00.0
 
+```xml
     <ComboBox>
       <State>
         <Number>1</Number>
@@ -2628,6 +2628,7 @@ New in Mixxx 2.00.0
         <ConfigKey>[XXX],combobox_selector</ConfigKey>
       </Connection>
     </ComboBox>
+```
 
 Both \<Text\> and \<Icon\> tags are optional. The order in which the
 states are displayed is determined by the order they have in the xml,
@@ -2638,7 +2639,7 @@ with the \<Connection\> tag.
 
 ### Singleton widgets
 
-New in Mixxx 2.00.0
+_New in Mixxx 2.00.0_
 
 Defines widgets that should only be instantiated once but may appear in
 multiple places in a skin definition. This is useful for complex widgets
@@ -2653,41 +2654,32 @@ definition should be very early in the skin file. Note that the
 singleton does not actually appear where it is defined.
 
 Example definition:
-
-|                                                                                                                                                                             |                                                                                                             |
-| --------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------- |
-| `   <SingletonDefinition>
-    <ObjectName>LibrarySingleton</ObjectName>
-    <Children>
-      <Template src="skin:library.xml"/>
-    </Children>
-  </SingletonDefinition>
- ` | `
-
-
-
-The skin:prefex is replaced by the skin folder first, if this fails the current directory is used
-
-
-
-` |
-
-The ObjectName is used to identify this singleton elsewhere in the skin
-files.
+```xml
+<SingletonDefinition>
+  <ObjectName>LibrarySingleton</ObjectName>
+  <!-- The ObjectName is used to identify this singleton elsewhere in the skin files -->
+  <Children>
+    <Template src="skin:library.xml"/>
+    <!-- The skin:prefex is replaced by the skin folder first, if this fails the current directory is used -->
+  </Children>
+</SingletonDefinition>
+```
 
 Example usage:
 
-    <WidgetGroup>
-      <ObjectName>SomeUiElement</ObjectName>
-      <Layout>vertical</Layout>
-      <SizePolicy>min,i</SizePolicy>
-      <Children>
-        <SingletonContainer>
-          <ObjectName>LibrarySingleton</ObjectName>
-        </SingletonContainer>
-        ...
-      </Children>
-    </WidgetGroup>
+```xml
+<WidgetGroup>
+  <ObjectName>SomeUiElement</ObjectName>
+  <Layout>vertical</Layout>
+  <SizePolicy>min,i</SizePolicy>
+  <Children>
+    <SingletonContainer>
+      <ObjectName>LibrarySingleton</ObjectName>
+    </SingletonContainer>
+    ...
+  </Children>
+</WidgetGroup>
+```
 
 The skin system sees the Singleton tag, and any time the containing
 group gets a show event, the Singleton widget is reparented to this
@@ -2728,61 +2720,63 @@ All elements are style-able by Qt stylesheets as shown in the example
 below:
 
 Example definition:
-
-    <LaunchImageStyle>
-      LaunchImage { background-color: #202020; }
-      QLabel {
-        image: url(skin:/style/mixxx-icon-logo-symbolic.png);
-        padding:0;
-        margin:0;
-        border:none;
-        min-width: 208px;
-        min-height: 48px;
-        max-width: 208px;
-        max-height: 48px;
-      }
-      QProgressBar {
-        background-color: #202020;
-        <!-- You can also use an image instead. To avoid blur, size it according to data below -->
-        background: url(skin:/style/progressbar_bg.svg);
-        border:none;
-        min-width: 208px;
-        min-height: 3px;
-        max-width: 208px;
-        max-height: 3px;
-      }
-      QProgressBar::chunk {
-        background-color: #ec4522;
-        <!-- You can also use an image instead. To avoid blur, size it like the QProgressBar -->
-        background: url(skin:/style/progressbar.svg);
-      }
-    </LaunchImageStyle>
+```xml
+<LaunchImageStyle>
+  LaunchImage { background-color: #202020; }
+  QLabel {
+    image: url(skin:/style/mixxx-icon-logo-symbolic.png);
+    padding:0;
+    margin:0;
+    border:none;
+    min-width: 208px;
+    min-height: 48px;
+    max-width: 208px;
+    max-height: 48px;
+  }
+  QProgressBar {
+    background-color: #202020;
+    <!-- You can also use an image instead. To avoid blur, size it according to data below -->
+    background: url(skin:/style/progressbar_bg.svg);
+    border:none;
+    min-width: 208px;
+    min-height: 3px;
+    max-width: 208px;
+    max-height: 3px;
+  }
+  QProgressBar::chunk {
+    background-color: #ec4522;
+    <!-- You can also use an image instead. To avoid blur, size it like the QProgressBar -->
+    background: url(skin:/style/progressbar.svg);
+  }
+</LaunchImageStyle>
+```
 
 ### Battery
 
-New in Mixxx 2.1.0
+_New in Mixxx 2.1.0_
 
 A a widget to show the laptop battery status.
 
-    <Battery>
-      <BackPath>battery_background.png</BackPath>
-      <!-- displayed when battery status is unknown -->
-      <PixmapUnknown>battery_unknown.png<PixmapUnknown>
-      <!-- displayed when battery is full -->
-      <PixmapCharged>battery_charged.png</PixmapCharged>
-      <!-- number of charging / discharging pixmaps -->
-      <NumberStates>10</NumberStates>
-      <!-- displayed when battery is charging -->
-      <PixmapsCharging>battery_%1_charging.png</PixmapsCharging>
-      <!-- displayed when battery is discharging -->
-      <PixmapsDischarging>battery_%1_discharging.png</PixmapsDischarging>
-    </Battery>
+```xml
+<Battery>
+  <BackPath>battery_background.png</BackPath>
+  <!-- displayed when battery status is unknown -->
+  <PixmapUnknown>battery_unknown.png<PixmapUnknown>
+  <!-- displayed when battery is full -->
+  <PixmapCharged>battery_charged.png</PixmapCharged>
+  <!-- number of charging / discharging pixmaps -->
+  <NumberStates>10</NumberStates>
+  <!-- displayed when battery is charging -->
+  <PixmapsCharging>battery_%1_charging.png</PixmapsCharging>
+  <!-- displayed when battery is discharging -->
+  <PixmapsDischarging>battery_%1_discharging.png</PixmapsDischarging>
+</Battery>
+```
 
 The charging/discharging pixmaps will have %1 replaced from 0 to
 NumberStates - 1.
 
-Changed in Mixxx 2.3
-
+_Changed in Mixxx 2.3:_
 The Battery widget is hidden by default and only becomes visible once
 the status is known. This means that the unknown-icons are never
 presented to the user.

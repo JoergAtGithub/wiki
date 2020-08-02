@@ -480,12 +480,11 @@ then this means position the widget 0 pixels from the horizontal
 location (left edge) of the parent widget and 50 pixels from the vertical location (top edge)
 of the widget's parent.
 
-Examples:
-| value | result |
+| Examples: |   |
 | ----- | ------ |
-| \<Pos\>0,50\<\/Pos\> | 0 pixels from top left edge of the parent, 50 pixels from the top edge |
-| \<Pos\>50,0\<\/Pos\> | 50 pixels from the horizontal position of parent, 0 pixels from the vertical position |
-| \<Pos\>50,50\<\/Pos\> | 50 pixels from the horizontal position of parent, 50 pixels from the vertical position |
+| `<Pos>0,50</Pos>` | 0 pixels from top left edge of the parent, 50 pixels from the top edge |
+| `<Pos>50,0</Pos>` | 50 pixels from the horizontal position of parent, 0 pixels from the vertical position |
+| `<Pos>50,50</Pos>` | 50 pixels from the horizontal position of parent, 50 pixels from the vertical position |
 
 #### \<Size\>
 
@@ -500,8 +499,7 @@ for this. Simply append the SizePolicy skin abbreviation (see the table
 in the `<SizePolicy>` section below) at the end of each dimension's
 value.
 
-Examples:
-| value | result |
+| Examples: |   |
 | ----- | ------ |
 | `<Size>100,50</Size>` | 100 pixels wide and 50 pixels tall. |
 | `<Size>100me,50p</Size>` | 100 pixels wide and 50 pixels tall. The horizontal size policy is MinimumExpanding and the vertical policy is Preferred. |
@@ -519,8 +517,7 @@ The widget will never be resized to be smaller than this size.
 minimum vertical size separated by a comma. A value of -1 for a
 dimension means no minimum in that dimension.
 
-Examples:
-| value | result |
+| Examples: |   |
 | ----- | ------ |
 | `<MinimumSize>100,50</MinimumSize>` | minimum width 100, minimum height 50 |
 | `<MinimumSize>200,-1</MinimumSize>` | minimum width 200, no minimum height |
@@ -552,29 +549,25 @@ Examples:
 on the available space. Size policy refers to the Qt
 [QSizePolicy](https://doc.qt.io/qt-4.8/qsizepolicy.html#Policy-enum).
 
-| SizePolicy       |  | Skin Abbreviation |  | What it does                                                                                                                                                                  |  |
-| ---------------- |  | ----------------- |  | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |  |
-| Fixed            |  | f                 |  | The size in the given dimension is fixed and should not grow or shrink.                                                                                                       |  |
-| Minimum          |  | min               |  | The widget size in this dimension is the minimum it should be. It can grow but will not be smaller than this.                                                                 |  |
-| Maximum          |  | max               |  | The widget size in this dimension is the maximum it should be. It can shrink but will not be larger than this.                                                                |  |
-| Preferred        |  | p                 |  | The widget size in this dimension is the preferred size. It can be shrunk and still be useful. It can grow but there is no advantage to it growing.                           |  |
-| Expanding        |  | e                 |  | The widget size in this dimension can be shrunk and still be useful. The widget can make use of extra space in this dimension so it should receive as much space as possible. |  |
-| MinimumExpanding |  | me                |  | The widget size in this dimension is the minimum it should be. The widget can make use of extra space in this dimension so it should receive as much space as possible.       |  |
-| Ignored          |  | i                 |  | The widget size in this dimension is ignored. The widget will get as much space as possible.                                                                                  |  |
+| SizePolicy       | Skin Abbreviation | What it does |
+| ---------------- | ----------------- | ------------ |  |
+| Fixed | f | The size in the given dimension is fixed and should not grow or shrink. |
+| Minimum | min | The widget size in this dimension is the minimum it should be. It can grow but will not be smaller than this. |
+| Maximum | max | The widget size in this dimension is the maximum it should be. It can shrink but will not be larger than this. |
+| Preferred | p | The widget size in this dimension is the preferred size. It can be shrunk and still be useful. It can grow but there is no advantage to it growing. |
+| Expanding | e | The widget size in this dimension can be shrunk and still be useful. The widget can make use of extra space in this dimension so it should receive as much space as possible. |
+| MinimumExpanding | me | The widget size in this dimension is the minimum it should be. The widget can make use of extra space in this dimension so it should receive as much space as possible. |
+| Ignored | i | The widget size in this dimension is ignored. The widget will get as much space as possible. |
 
 The `<SizeHint>` property is formatted as the skin abbreviation (from
 the above table) for the horizontal size and the skin abbreviation for
 the vertical size policy separated by a comma.
 
-| Examples:                                                                                     |                                                                                                                              |
-| --------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------- |
-| `<SizePolicy>f,min</SizePolicy>
-<SizePolicy>me,me</SizePolicy>
-<SizePolicy>p,f</SizePolicy>
-` | `Fixed horizontal, Minimum vertical
-MinimumExpanding for both horizontal and vertical
-Preferred horizontal, Fixed vertical
-` |
+| Examples: | |
+| ------------------------------------ | ------------ |
+| `<SizePolicy>f,min</SizePolicy>` | Fixed horizontal, Minimum vertical |
+| `<SizePolicy>me,me</SizePolicy>` | MinimumExpanding for both horizontal and vertical |
+| `<SizePolicy>p,f</SizePolicy>` | Preferred horizontal, Fixed vertical |
 
 #### \<TooltipId\>
 
@@ -592,24 +585,19 @@ and look at all the `add("example")` lines in the file. If you would
 like to use a tooltip, you should make the TooltipId the word "example"
 for the appropriate tooltip.
 
-| Examples:                                                           |                                                                                                         |
-| ------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------- |
-| `<TooltipId>track_artist</TooltipId>
-<TooltipId>eject</TooltipId>
-` | `Use the "track_artist" tooltip from the tooltip file.
-Use the "eject" tooltip from the tooltip file.
-` |
+| Examples: | |
+| -------------------------------------- |  |
+| `<TooltipId>track_artist</TooltipId>` | Use the "track_artist" tooltip from the tooltip file. |
+<TooltipId>eject</TooltipId>` | Use the "eject" tooltip from the tooltip file. |
 
 #### \<Tooltip\>
 
 If no existing tooltip meets your needs, you can create a custom tooltip
 using the `<Tooltip>` tag.
 
-| Examples:                               |                                                              |
-| --------------------------------------- | ------------------------------------------------------------ |
-| `<Tooltip>My Custom Tooltip</Tooltip>
-` | `Use the phrase "My Custom Tooltip" as the widget tooltip.
-` |
+| Examples: | |
+| ----------- | --- |
+| `<Tooltip>My Custom Tooltip</Tooltip>` | Use the phrase "My Custom Tooltip" as the widget tooltip. |
 
 Translation or internationalization of these tooltips is not currently
 possible.

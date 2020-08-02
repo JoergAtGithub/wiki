@@ -265,7 +265,7 @@ favorite [text editor](#tools) and get started :-)
 
 ### Skin Manifest
 
-**New in Mixxx 1.11.0**
+_New in Mixxx 1.11.0_
 
 The skin manifest section tells Mixxx details about the skin. Some of
 the details are currently unused but may be used in a future version.
@@ -508,7 +508,7 @@ value.
 
 #### \<MinimumSize\>
 
-**New in Mixxx 2.00.0**
+_New in Mixxx 2.00.0_
 
 `<MinimumSize>` tags tell Mixxx the smallest size a widget should be.
 The widget will never be resized to be smaller than this size.
@@ -525,7 +525,7 @@ dimension means no minimum in that dimension.
 
 #### \<MaximumSize\>
 
-**New in Mixxx 2.00.0**
+_New in Mixxx 2.00.0_
 
 `<MaximumSize>` tags tell Mixxx the largest size a widget should be. The
 widget will never be resized to be larger than this size.
@@ -2547,7 +2547,7 @@ Some example applications:
   - Tabbed UIs / Screen Sets. The entire skin could be one large
     `WidgetStack` that lets you switch the UI between different layouts.
 
-_New in Mixxx 2.00.0:_
+_New in Mixxx 2.00.0:_<br>
 If you need the stacks to remember which index they were closed with so
 they can start back up in the right state, do it like this:
 
@@ -2555,7 +2555,7 @@ they can start back up in the right state, do it like this:
 
 The "currentpage" CO doesn't need to be defined anywhere else.
 
-_New in Mixxx 2.00.0:_
+_New in Mixxx 2.00.0:_<br>
 You can define which page to select if a group gets a hide signal.
 `on_hide_select` adds a page to the stack. If this page is hidden, the
 the page with the 0-based index given by on\_hide\_select will be shown.
@@ -2688,7 +2688,7 @@ same time, behavior is undefined and could be crashy.
 
 ### Skin Preview Image
 
-New in Mixxx 2.1.0, Changed in Mixxx 2.3.0
+_New in Mixxx 2.1.0, changed in Mixxx 2.3.0_
 
 To provide users a rough impression of what skins look like before they
 switch to a different skin, show a preview screenshot when a skin is
@@ -2699,8 +2699,7 @@ as `skin_preview.png` in the root folder of the corresponding skin (was
 `preferences_preview_screenshot.png` prior to Mixxx 2.3). Is no
 screenshoot provided, a placeholder is displayed.
 
-New in Mixxx 2.3.0
-
+_New in Mixxx 2.3.0_<br>
 If [color schemes](creating_skins#skin_color_scheme) are supported by
 the selected skin, show a preview screenshots for a set of color
 variations to choose from in Preferences -\> Interface -\> Color Scheme.
@@ -2759,24 +2758,18 @@ A a widget to show the laptop battery status.
 
 ```xml
 <Battery>
-  <BackPath>battery_background.png</BackPath>
-  <!-- displayed when battery status is unknown -->
-  <PixmapUnknown>battery_unknown.png<PixmapUnknown>
-  <!-- displayed when battery is full -->
-  <PixmapCharged>battery_charged.png</PixmapCharged>
-  <!-- number of charging / discharging pixmaps -->
-  <NumberStates>10</NumberStates>
-  <!-- displayed when battery is charging -->
-  <PixmapsCharging>battery_%1_charging.png</PixmapsCharging>
-  <!-- displayed when battery is discharging -->
-  <PixmapsDischarging>battery_%1_discharging.png</PixmapsDischarging>
+  <BackPath>battery_background.png</BackPath><!-- default background -->
+  <PixmapUnknown>battery_unknown.png<PixmapUnknown><!-- displayed when battery status is unknown -->
+  <PixmapCharged>battery_charged.png</PixmapCharged><!-- displayed when battery is full -->
+  <NumberStates>10</NumberStates><!-- number of charging / discharging pixmaps -->
+  <PixmapsCharging>battery_%1_charging.png</PixmapsCharging><!-- displayed when battery is charging -->
+  <PixmapsDischarging>battery_%1_discharging.png</PixmapsDischarging><!-- displayed when battery is discharging -->
 </Battery>
 ```
 
-The charging/discharging pixmaps will have %1 replaced from 0 to
-NumberStates - 1.
+The charging/discharging pixmaps are 0-indexed, %1 will be replaced with 0 to [NumberStates - 1].
 
-_Changed in Mixxx 2.3:_
+_Changed in Mixxx 2.3:_<br>
 The Battery widget is hidden by default and only becomes visible once
 the status is known. This means that the unknown-icons are never
 presented to the user.
@@ -2788,21 +2781,16 @@ problems reading the status.
 
 ### Main background
 
-Deprecated in Mixxx 1.11.0, use
-[WidgetGroup](creating_skins?#widgetgroup) instead
+Deprecated in Mixxx 1.11.0, use [WidgetGroup](creating_skins?#widgetgroup) instead.
 
-|                                                                                     |                                                                                                                                                                                                                                                                                                                     |
-| ----------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `<Background>
+```xml
+<Background><!-- start background tag -->
+  <!-- Defines which image in the skins folder to use for the background. All elements are displayed over this image and its size defines the skin size (see Guidelines) -->
   <Path>background.png</Path>
+  <!-- Defines a background color. Example: <BgColor>#000000</BgColor> (000000 being the hex value for black) -->
   <BgColor>#</BgColor>
-</Background>
-
-` | `start background tag
-Defines which image in the skins folder to use for the background. All elements are displayed over this image and its size defines the skin size (see Guidelines)
-Defines a background color. Example: <BgColor>#000000</BgColor> (000000 being the hex value for black)
-end background tag
-` |
+</Background><!-- end background tag -->
+```
 
 #### Library TableView
 

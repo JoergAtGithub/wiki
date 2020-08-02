@@ -274,20 +274,20 @@ minimum-Mixxx-version required or recommended screen resolution.
 
 | syntax | Info |
 | ------ | ---- |
-| <manifest>
-<title>...</title>
-<author>...</author>
-<version>...</version>
-<description>...</description>
-<language>en</language>
-<license>...</license>
-<attributes>
-  <attribute config_key="[Master],num_decks">4</attribute>
-  <attribute config_key="[Master],num_samplers">16</attribute>
-  <attribute config_key="[Master],num_preview_decks">1</attribute>
-  <attribute config_key="[Samplers],show_samplers">1</attribute>
-</attributes>
-</manifest>
+| \<manifest\>
+\<title\>...\<\/title\>
+\<author\>...\<\/author\>
+\<version\>...\<\/version\>
+\<description\>...\<\/description\>
+\<language\>en\<\/language\>
+\<license\>...\<\/license\>
+\<attributes\>
+  \<attribute config_key=\"[Master],num_decks\"\>4\<\/attribute\>
+  \<attribute config_key=\"[Master],num_samplers\"\>16\<\/attribute\>
+  \<attribute config_key=\"[Master],num_preview_decks\"\>1\<\/attribute\>
+  \<attribute config_key=\"[Samplers],show_samplers\"\>1\<\/attribute\>
+\<\/attributes\>
+\<\/manifest\>
 | start manifest tag
 Skin title
 Skin author
@@ -296,10 +296,10 @@ A brief description of the skin
 Skin language (if language-independent, omit or put *)
 Skin copyright license (e.g. Creative Commons Attribution, Share-Alike 3.0 Unported)
 Begin skin attributes
-Set "[Master],num_decks" ConfigKey to 4 when skin is loaded. Requires additional code per Deck in the skin.xml
-Set "[Master],num_samplers" ConfigKey to 16 when skin is loaded. Requires additional code per Sampler Deck in the skin.xml
-Set "[Master],num_preview_decks" ConfigKey to 1 when skin is loaded. Requires additional code for the Preview Deck in the skin.xml
-Set "[Samplers],show_samplers" WidgetGroup to be visible by default. Works for existing WidgetGroups with <BindProperty>visible</BindProperty> key
+Set \"[Master],num_decks\" ConfigKey to 4 when skin is loaded. Requires additional code per Deck in the skin.xml
+Set \"[Master],num_samplers\" ConfigKey to 16 when skin is loaded. Requires additional code per Sampler Deck in the skin.xml
+Set \"[Master],num_preview_decks\" ConfigKey to 1 when skin is loaded. Requires additional code for the Preview Deck in the skin.xml
+Set \"[Samplers],show_samplers\" WidgetGroup to be visible by default. Works for existing WidgetGroups with \<BindProperty\>visible\<\/BindProperty\> key
 End skin attributes
 end manifest tag |
 

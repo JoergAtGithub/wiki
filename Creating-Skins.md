@@ -45,13 +45,24 @@ values are given in pixels.
 
 ##### Structure
 
-General structure of the skin.xml. More in-depth informations for each
-element and their attributes defined in the skin.xml can be found
-[here](#skinxml-in-depth-review)
+General structure of the skin.xml. See [Skin.xml in-depth review](#skinxml-in-depth-review) for more in-depth informations on elements and their attributes defined in the skin.xml.
 
-| syntax | Info |
-| ------ | ---- |
-| \<\!--Comment--\><br>\<\!DOCTYPE skin\><br>\<skin\><br>\<manifest\>...\</manifest\><br>\<elementname\><br>\<TooltipId\>...\</TooltipId\><br>\<Pos\>X,Y\</Pos\><br>\<Size\>W,H\</Size\><br>\<MinimumSize\>W,H\</MinimumSize\><br>\<MaximumSize\>W,H\</MaximumSize\><br>\<SizePolicy\>WPolicy,HPolicy\</SizePolicy\><br>\<options\>values(depends)\</options\><br>\</elementname\><br>\</skin\> | Optional comments (i.e. skin license or changelog)<br>Doctype declaration<br>Skin opening tag<br>Manifest describing skin properties (author, title, version, etc.)<br>Elements opening tag<br>Tooltips to display on mouse-over, available IDs are in src/skin/tooltips.cpp<br>Position on the screen<br>Size (depending on the element)<br>Minimum Size<br>Maximum Size<br>Size Policy<br>Options(depending on the element)<br>Elements closing tag<br>Skin closing tag |
+```xml
+<!--Comment--><!-- Optional comments (i.e. skin changelog) -->
+<!DOCTYPE skin><!-- Doctype declaration -->
+<skin><!-- Skin opening tag -->
+  <manifest>...</manifest><!-- Manifest describing skin properties (author, title, version, etc.) -->
+  <elementname><!-- Elements opening tag -->
+    <TooltipId>...</TooltipId><!-- Tooltips to display on mouse-over, available IDs are in src/skin/tooltips.cpp -->
+    <Pos>X,Y</Pos><!-- Position on the screen, relative to parent widget -->
+    <Size>W,H</Size><!-- Size (depending on the element) -->
+    <MinimumSize>W,H</MinimumSize><!-- Minimum Size -->
+    <MaximumSize>W,H</MaximumSize><!-- Maximum Size -->
+    <SizePolicy>WPolicy,HPolicy</SizePolicy><!-- Size Policy -->
+    <options>values(depends)</options><!-- Options(depending on the element) -->
+  </elementname><!-- Elements closing tag -->
+</skin><!-- Skin closing tag -->
+```
 
 ### Skin 101
 
@@ -272,22 +283,26 @@ the details are currently unused but may be used in a future version.
 Additionally we may expand the manifest to include things like
 minimum-Mixxx-version required or recommended screen resolution.
 
-| syntax | Info |
-| ------ | ---- |
-| \<manifest\> | start manifest tag |
-|   \<title\>...\<\/title\> | Skin title |
-|   \<author\>...\<\/author\> | Skin author |
-|   \<version\>...\<\/version\> | Skin version (not the Mixxx version) |
-|   \<description\>...\<\/description\> | A brief description of the skin |
-|   \<language\>en\<\/language\> | Skin language (if language-independent, omit or put *) |
-|   \<license\>...\<\/license\> | Skin copyright license (e.g. Creative Commons Attribution, Share-Alike 3.0 Unported) |
-|   \<attributes\> | Begin skin attributes |
-|     \<attribute config_key=\"[Master],num_decks\"\>4\<\/attribute\> | Set \"[Master],num_decks\" ConfigKey to 4 when skin is loaded. Requires additional code per Deck in the skin.xml |
-|     \<attribute config_key=\"[Master],num_samplers\"\>16\<\/attribute\> |  |
-|     \<attribute config_key=\"[Master],num_preview_decks\"\>1\<\/attribute\> |  |
-|     \<attribute config_key=\"[Samplers],show_samplers\"\>1\<\/attribute\> | Set \"[Samplers],show_samplers\" WidgetGroup to be visible by default. Works for existing WidgetGroups with \<BindProperty\>visible\<\/BindProperty\>key |
-|   \<\/attributes\> | End skin attributes |
-| \<\/manifest\> | end manifest tag |
+```xml
+<manifest><!-- start manifest tag -->
+  <title>...</title><!-- Skin title -->
+  <author>...</author><!-- Skin author -->
+  <version>...</version><!-- Skin version (not the Mixxx version) -->
+  <description>...</description><!-- A brief description of the skin -->
+  <language>en</language><!-- Skin language (if language-independent, omit or put *) -->
+  <license>...</license><!-- Skin copyright license (e.g. Creative Commons Attribution, Share-Alike 3.0 Unported) -->
+  <attributes><!-- Begin skin attributes -->
+    <!-- Set \"[Master],num_decks\" ConfigKey to 4 when skin is loaded.
+      Requires additional code per Deck in the skin.xml -->
+    <attribute config_key=\"[Master],num_decks\">4</attribute>
+    <attribute config_key=\"[Master],num_samplers\">16</attribute>
+    <attribute config_key=\"[Master],num_preview_decks\">1</attribute>
+    <!-- Set \"[Samplers],show_samplers\" WidgetGroup to be visible by default.
+      Works for existing WidgetGroups with <BindProperty>visible</BindProperty>key -->
+    <attribute config_key=\"[Samplers],show_samplers\">1</attribute>
+  </attributes><!-- End skin attributes -->
+</manifest><!-- end manifest tag -->
+```
 
 **The only part of the manifest that is used in 1.11.0 is the
 \<attributes\> section.** This section allows the skin to specify

@@ -274,33 +274,33 @@ minimum-Mixxx-version required or recommended screen resolution.
 
 | syntax | Info |
 | ------ | ---- |
-| \<manifest\>
-\<title\>...\<\/title\>
-\<author\>...\<\/author\>
-\<version\>...\<\/version\>
-\<description\>...\<\/description\>
-\<language\>en\<\/language\>
-\<license\>...\<\/license\>
-\<attributes\>
-  \<attribute config_key=\"[Master],num_decks\"\>4\<\/attribute\>
-  \<attribute config_key=\"[Master],num_samplers\"\>16\<\/attribute\>
-  \<attribute config_key=\"[Master],num_preview_decks\"\>1\<\/attribute\>
-  \<attribute config_key=\"[Samplers],show_samplers\"\>1\<\/attribute\>
-\<\/attributes\>
-\<\/manifest\>
-| start manifest tag
-Skin title
-Skin author
-Skin version (not the Mixxx version)
-A brief description of the skin
-Skin language (if language-independent, omit or put *)
-Skin copyright license (e.g. Creative Commons Attribution, Share-Alike 3.0 Unported)
-Begin skin attributes
-Set \"[Master],num_decks\" ConfigKey to 4 when skin is loaded. Requires additional code per Deck in the skin.xml
-Set \"[Master],num_samplers\" ConfigKey to 16 when skin is loaded. Requires additional code per Sampler Deck in the skin.xml
-Set \"[Master],num_preview_decks\" ConfigKey to 1 when skin is loaded. Requires additional code for the Preview Deck in the skin.xml
-Set \"[Samplers],show_samplers\" WidgetGroup to be visible by default. Works for existing WidgetGroups with \<BindProperty\>visible\<\/BindProperty\> key
-End skin attributes
+| \<manifest\><br>
+\<title\>...\<\/title\><br>
+\<author\>...\<\/author\><br>
+\<version\>...\<\/version\><br>
+\<description\>...\<\/description\><br>
+\<language\>en\<\/language\><br>
+\<license\>...\<\/license\><br>
+\<attributes\><br>
+  \<attribute config_key=\"[Master],num_decks\"\>4\<\/attribute\><br>
+  \<attribute config_key=\"[Master],num_samplers\"\>16\<\/attribute\><br>
+  \<attribute config_key=\"[Master],num_preview_decks\"\>1\<\/attribute\><br>
+  \<attribute config_key=\"[Samplers],show_samplers\"\>1\<\/attribute\><br>
+\<\/attributes\><br>
+\<\/manifest\><br>
+| start manifest tag<br>
+Skin title<br>
+Skin author<br>
+Skin version (not the Mixxx version)<br>
+A brief description of the skin<br>
+Skin language (if language-independent, omit or put *)<br>
+Skin copyright license (e.g. Creative Commons Attribution, Share-Alike 3.0 Unported)<br>
+Begin skin attributes<br>
+Set \"[Master],num_decks\" ConfigKey to 4 when skin is loaded. Requires additional code per Deck in the skin.xml<br>
+Set \"[Master],num_samplers\" ConfigKey to 16 when skin is loaded. Requires additional code per Sampler Deck in the skin.xml<br>
+Set \"[Master],num_preview_decks\" ConfigKey to 1 when skin is loaded. Requires additional code for the Preview Deck in the skin.xml<br>
+Set \"[Samplers],show_samplers\" WidgetGroup to be visible by default. Works for existing WidgetGroups with \<BindProperty\>visible<br>\<\/BindProperty\> key<br>
+End skin attributes<br>
 end manifest tag |
 
 **The only part of the manifest that is used in 1.11.0 is the

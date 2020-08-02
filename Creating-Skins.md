@@ -274,7 +274,7 @@ minimum-Mixxx-version required or recommended screen resolution.
 
 | syntax | Info |
 | ------ | ---- |
-| `<manifest>
+| <manifest>
 <title>...</title>
 <author>...</author>
 <version>...</version>
@@ -287,7 +287,8 @@ minimum-Mixxx-version required or recommended screen resolution.
   <attribute config_key="[Master],num_preview_decks">1</attribute>
   <attribute config_key="[Samplers],show_samplers">1</attribute>
 </attributes>
-</manifest>` | `start manifest tag
+</manifest>
+| start manifest tag
 Skin title
 Skin author
 Skin version (not the Mixxx version)
@@ -300,7 +301,7 @@ Set "[Master],num_samplers" ConfigKey to 16 when skin is loaded. Requires additi
 Set "[Master],num_preview_decks" ConfigKey to 1 when skin is loaded. Requires additional code for the Preview Deck in the skin.xml
 Set "[Samplers],show_samplers" WidgetGroup to be visible by default. Works for existing WidgetGroups with <BindProperty>visible</BindProperty> key
 End skin attributes
-end manifest tag` |
+end manifest tag |
 
 **The only part of the manifest that is used in 1.11.0 is the
 \<attributes\> section.** This section allows the skin to specify

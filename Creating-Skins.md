@@ -2526,18 +2526,19 @@ provide a size for the splitter this is the default policy.
 
 _New in Mixxx 1.11.0_
 
-| Example: | |
-| --------------------------------------------------------------------- | ------------------------- |
-| `<WidgetStack>` | |
-| `  <NextControl>[Channel1],hotcuepage_next</NextControl>` | Optional: Control that switches to the next widget in the stack. (will be created if doesn't exist) |
-| `  <PrevControl>[Channel1],hotcuepage_prev</PrevControl>` | Optional: Control that switches to the previous widget in the stack. (will be created if doesn't exist) |
-| `  <Children>` | 
-| `    <WidgetGroup trigger="[Channel1],hotcuepage_show1"></WidgetGroup>` | A WidgetGroup that is shown when the 'trigger' control is set to `1`. (will be created if doesn't exist) |
-| `    <WidgetGroup trigger="[Channel1],hotcuepage_show2"></WidgetGroup>` | A WidgetGroup that is shown when the 'trigger' control is set to `2`. (will be created if doesn't exist) |
-| `    <WidgetGroup trigger="[Channel1],hotcuepage_show3"></WidgetGroup>` | A WidgetGroup that is shown when the 'trigger' control is set to `3`. (will be created if doesn't exist) |
-| `    <!-- as many regular widgets as you like in here -->` | |
-| `  </Children>` | |
-| `</WidgetStack>` | |
+Example:
+```xml
+<WidgetStack>
+  <NextControl>[Channel1],hotcuepage_next</NextControl> <!-- Optional: Control that switches to the next widget in the stack. (will be created if doesn't exist) -->
+  <PrevControl>[Channel1],hotcuepage_prev</PrevControl> <!-- Optional: Control that switches to the previous widget in the stack. (will be created if doesn't exist) -->
+  <Children>
+    <WidgetGroup trigger="[Channel1],hotcuepage_show1"></WidgetGroup> <!-- A WidgetGroup that is shown when the 'trigger' control is set to 1. (will be created if doesn't exist) -->
+    <WidgetGroup trigger="[Channel1],hotcuepage_show2"></WidgetGroup> <!-- A WidgetGroup that is shown when the 'trigger' control is set to 2. (will be created if doesn't exist) -->
+    <WidgetGroup trigger="[Channel1],hotcuepage_show3"></WidgetGroup> <!-- A WidgetGroup that is shown when the 'trigger' control is set to 3. (will be created if doesn't exist) -->
+    <!-- as many regular widgets as you like in here -->
+  </Children>
+</WidgetStack>
+```
 
 
 A `WidgetStack` is a widget that only shows one widget at a time. By
@@ -2578,29 +2579,18 @@ You can define which page to select if a group gets a hide signal.
 the page with the 0-based index given by on\_hide\_select will be shown.
 If this value is -1, the next page on the stack will be shown.
 
-|                                                                                                                                                                                                                                                                                                                                                                                                                                                   |                                                                                                                                                                                               |
-| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `<WidgetStack>
+Example:
+```xml
+<WidgetStack>
   <Children>
-    <WidgetGroup on_hide_select="0"></WidgetGroup>
-    <WidgetGroup trigger="[Channel1],hotcuepage_show1" on_hide_select="0"></WidgetGroup>
-    <WidgetGroup trigger="[Channel1],hotcuepage_show2" on_hide_select="0"></WidgetGroup>
-    <WidgetGroup trigger="[Channel1],hotcuepage_show3" on_hide_select="0"></WidgetGroup>
+    <WidgetGroup on_hide_select="0"></WidgetGroup> <!-- First page of the stack -->
+    <WidgetGroup trigger="[Channel1],hotcuepage_show1" on_hide_select="0"></WidgetGroup> <!-- When any page is hidden, go back to the first page. -->
+    <WidgetGroup trigger="[Channel1],hotcuepage_show2" on_hide_select="0"></WidgetGroup> <!-- When any page is hidden, go back to the first page. -->
+    <WidgetGroup trigger="[Channel1],hotcuepage_show3" on_hide_select="0"></WidgetGroup> <!-- When any page is hidden, go back to the first page. -->
     <!-- as many regular widgets as you like in here -->
   </Children>
 </WidgetStack>
-` | `
-
-
-First page of the stack
-When any page is hidden, go back to the first page.
-When any page is hidden, go back to the first page.
-When any page is hidden, go back to the first page.
-
-
-
-
-` |
+```
 
 ### SizeAwareStack
 

@@ -2563,8 +2563,7 @@ Some examples:
   - Tabbed UIs / Screen Sets. The entire skin could be one large
     `WidgetStack` that lets you switch the UI between different layouts.
 
-New in Mixxx 2.00.0
-
+_New in Mixxx 2.00.0:_
 If you need the stacks to remember which index they were closed with so
 they can start back up in the right state, do it like this:
 
@@ -2572,8 +2571,7 @@ they can start back up in the right state, do it like this:
 
 The "currentpage" CO doesn't need to be defined anywhere else.
 
-New in Mixxx 2.00.0
-
+_New in Mixxx 2.00.0:_
 You can define which page to select if a group gets a hide signal.
 `on_hide_select` adds a page to the stack. If this page is hidden, the
 the page with the 0-based index given by on\_hide\_select will be shown.
@@ -2594,56 +2592,37 @@ Example:
 
 ### SizeAwareStack
 
-New in Mixxx 2.00.0
-
-|                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |                                                                                                                                                                                                                                                                                          |
-| -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `<SizeAwareStack>
-  <Children>
-    <WidgetGroup>
-      <MinimumSize>10,10</MinimumSize>
-      <MaximumSize>10,10</MaximumSize>
-      <Style>QGroupBox {background: blue;}</Style>
-    </WidgetGroup>
-    <WidgetGroup>
-      <MinimumSize>100,10</MinimumSize>
-      <MaximumSize>100,10</MaximumSize>
-      <Style>QGroupBox {background: red;}</Style>
-    </WidgetGroup>
-    <WidgetGroup>
-      <MinimumSize>200,10</MinimumSize>
-      <MaximumSize>200,10</MaximumSize>
-      <Style>QGroupBox {background: green;}</Style>
-    </WidgetGroup>
-  </Children>
-</SizeAwareStack>
-` | `
-
-
-A WidgetGroup that is shown when the available screen estate is at least 10x10 pixel.
-
-
-
-
-A WidgetGroup that is shown when the available screen estate is at least 100x10 pixel.
-
-
-
-
-A WidgetGroup that is shown when the available screen estate is at least 200x10 pixel.
-
-
-
-
-
-
-
-` |
+_New in Mixxx 2.00.0_
 
 A `SizeAwareStack` selects the best fitting widget based on available
 space. It allows GUI elements to easily adopt to window size without
 manual actions.The algorithm is very basic and requires children sorted
 by size, smallest first.
+
+Example:
+```xml
+<SizeAwareStack>
+  <Children>
+    <WidgetGroup>
+      <MinimumSize>10,10</MinimumSize> <!-- A WidgetGroup that is shown when the available screen estate -->
+      <MaximumSize>10,10</MaximumSize> <!-- is at least 10x10 pixel -->
+      <Style>QGroupBox {background: blue;}</Style>
+    </WidgetGroup>
+    <WidgetGroup>
+      <MinimumSize>100,10</MinimumSize> <!-- A WidgetGroup that is shown when the available screen estate -->
+      <MaximumSize>199,10</MaximumSize> <!-- is 100x10 up to 199x10 pixel. -->
+      <Style>QGroupBox {background: red;}</Style>
+    </WidgetGroup>
+    <WidgetGroup>
+      <MinimumSize>200,10</MinimumSize> <!-- A WidgetGroup that is shown when the available screen estate -->
+      <MaximumSize>200,10</MaximumSize> <!-- is at least 200x10 pixel -->
+      <Style>QGroupBox {background: green;}</Style>
+    </WidgetGroup>
+  </Children>
+</SizeAwareStack>
+```
+
+
 
 ### ComboBox
 

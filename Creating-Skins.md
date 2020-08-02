@@ -368,29 +368,29 @@ Here is a potentially out-of-date list of which Mixxx widgets derive
 from which Qt widgets. If not listed, the widget inherits from
 `QWidget`.
 
-|  | Skin Tag        |  | Mixxx Internal Name |  | Qt Widget                   |  |
-|  | --------------- |  | ------------------- |  | --------------------------- |  |
-|  | WidgetStack     |  | WWidgetStack        |  | QStackedWidget              |  |
-|  | WidgetGroup     |  | WWidgetGroup        |  | QGroupBox                   |  |
-|  | (none)          |  | WTrackTableView     |  | QTableView                  |  |
-|  | (none)          |  | WLibraryTableView   |  | QTableView                  |  |
-|  | Library         |  | WLibrary            |  | QStackedWidget              |  |
-|  | LibrarySidebar  |  | WLibrarySidebar     |  | QTreeView                   |  |
-|  | SearchBox       |  | WSearchLineEdit     |  | QLineEdit                   |  |
-|  | Spinny          |  | WSpinny             |  | QGLWidget                   |  |
-|  | Visual          |  | WWaveformViewer     |  | QWidget                     |  |
-|  | NumberRate      |  | WNumberRate         |  | QWidget with a QLabel child |  |
-|  | NumberPos       |  | WNumberPos          |  | QWidget with a QLabel child |  |
-|  | NumberBpm       |  | WNumber             |  | QWidget with a QLabel child |  |
-|  | Number          |  | WNumber             |  | QWidget with a QLabel child |  |
-|  | Label           |  | WLabel              |  | QWidget with a QLabel child |  |
-|  | Text            |  | WTrackText          |  | QWidget with a QLabel child |  |
-|  | TrackProperty   |  | WTrackProperty      |  | QWidget with a QLabel child |  |
-|  | Time            |  | WTime               |  | QWidget with a QLabel child |  |
-|  | Key             |  | WKey                |  | QWidget with a QLabel child |  |
-|  | Splitter        |  | WSplitter           |  | QSplitter                   |  |
-|  | DefineSingleton |  | WSingletonContainer |  | QWidget                     |  |
-|  | EffectSelector  |  | WEffectSelector     |  | QComboBox                   |  |
+| Skin Tag        | Mixxx Internal Name | Qt Widget                   |
+| --------------- | ------------------- | --------------------------- |
+| WidgetStack     | WWidgetStack        | QStackedWidget              |
+| WidgetGroup     | WWidgetGroup        | QGroupBox                   |
+| (none)          | WTrackTableView     | QTableView                  |
+| (none)          | WLibraryTableView   | QTableView                  |
+| Library         | WLibrary            | QStackedWidget              |
+| LibrarySidebar  | WLibrarySidebar     | QTreeView                   |
+| SearchBox       | WSearchLineEdit     | QLineEdit                   |
+| Spinny          | WSpinny             | QGLWidget                   |
+| Visual          | WWaveformViewer     | QWidget                     |
+| NumberRate      | WNumberRate         | QWidget with a QLabel child |
+| NumberPos       | WNumberPos          | QWidget with a QLabel child |
+| NumberBpm       | WNumber             | QWidget with a QLabel child |
+| Number          | WNumber             | QWidget with a QLabel child |
+| Label           | WLabel              | QWidget with a QLabel child |
+| Text            | WTrackText          | QWidget with a QLabel child |
+| TrackProperty   | WTrackProperty      | QWidget with a QLabel child |
+| Time            | WTime               | QWidget with a QLabel child |
+| Key             | WKey                | QWidget with a QLabel child |
+| Splitter        | WSplitter           | QSplitter                   |
+| DefineSingleton | WSingletonContainer | QWidget                     |
+| EffectSelector  | WEffectSelector     | QComboBox                   |
 
 ### Set Variables
 
@@ -410,9 +410,9 @@ variables available to multiple templates is in `skin.xml` directly
 after the first `<Children>` opening tag, before any other template is
 loaded.
 
-Variables are set like this `<SetVariable
-name="veryDescriptiveName">String</SetVariable>` and recalled via
-`<Variable name="veryDescriptiveName"/>`.
+set variables like this: `<SetVariable
+name="veryDescriptiveName">String</SetVariable>`
+Recalled variables: `<Variable name="veryDescriptiveName"/>`
 
 **Note:** Variables can not be used within tags or within values:
 
@@ -435,7 +435,7 @@ deck template (other deck templates would load with other variables).
 Here, the variables defined above are used to set up a waveform overview
 widget:
 
-``` 
+```xml
   <Overview>
     <Size>XX,YY</Size>
     <Objectname>Overview<Variable name="side"/></Overview> <!-- = <Objectname>OverviewLeft</Overview> -->

@@ -543,7 +543,7 @@ Examples:
 
 #### \<SizePolicy\>
 
-**New in Mixxx 2.00.0**
+_New in Mixxx 2.00.0_
 
 `<SizePolicy>` tags tell Mixxx how widgets should grow or shrink based
 on the available space. Size policy refers to the Qt
@@ -927,7 +927,7 @@ end Overview tag
 
 ### Spinning vinyl image (Spinny)
 
-New in Mixxx 1.10.0
+_New in Mixxx 1.10.0_
 
 |                                                                                                                                                                                                                                                                                                                 |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
 | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
@@ -1037,7 +1037,7 @@ The text to be displayed
 
 ### Clock
 
-New in Mixxx 1.10
+_New in Mixxx 1.10_
 
 |                                                                                                                                                        |  |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
 | ------------------------------------------------------------------------------------------------------------------------------------------------------ |  | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -1063,7 +1063,7 @@ You could set a custom format with <CustomFormat> instead of <ClockFormat>, whic
 
 ### Track information
 
-New in Mixxx 1.9
+_New in Mixxx 1.9_
 
 You can replace the whole \<Text\> node with
 [TrackProperty](/creating_skins#trackproperty)\`s to display more
@@ -1118,7 +1118,7 @@ Must be same value as under <Channel> above, (X = 1 or 2)
 
 ### Effective musical key display
 
-New in Mixxx 2.00
+_New in Mixxx 2.00_
 
 |                                                                                                                                                                                                          |  |                                                                 |
 | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |  | --------------------------------------------------------------- |
@@ -1176,7 +1176,7 @@ Must be same value as under <Channel> above, (X = 1 or 2)
 
 ### Recording duration
 
-New in Mixxx 2.1
+_New in Mixxx 2.1_
 
 |                                                                                                                     |  |                                                                                                                                                                                              |
 | ------------------------------------------------------------------------------------------------------------------- |  | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -1224,7 +1224,7 @@ Must be same value as under <Channel> above, (X = 1 or 2)
 
 ### dB display
 
-New in Mixxx 2.00
+_New in Mixxx 2.00_
 
 |                                                                                                                                        |  |                                                                                                                 |
 | -------------------------------------------------------------------------------------------------------------------------------------- |  | --------------------------------------------------------------------------------------------------------------- |
@@ -2312,7 +2312,7 @@ these special nodes.
 
 ### TrackProperty
 
-New in Mixxx 1.9
+_New in Mixxx 1.9_
 
 Replace the [Text](/creating_skins#track_information) node with
 TrackProperty\`s to display more advanced track informations. You can
@@ -2340,7 +2340,8 @@ duration is the duration in seconds, while durationFormatted is the duration in 
 
 ### WidgetGroup
 
-New in Mixxx 1.9  
+_New in Mixxx 1.9_
+
 It is probably cumbersome to have to give the absolute positions of
 every node in the tree. WidgetGroups allow to make a group of relatively
 positioned widgets. You can display more than one WidgetGroup node in a
@@ -2465,19 +2466,18 @@ automatically sized and laid out horizontally within the widget group.
 
 ### Splitter
 
-New in Mixxx 1.11.0
+_New in Mixxx 1.11.0_
 
 This allows you to create a QSplitter dynamically and to control the
 size of child widgets by dragging the boundary between the children.
 
-New in Mixxx 2.10
-
+_New in Mixxx 2.10:_
 Allows to specify which children can be collapsed
 
-New in Mixxx 2.00
-
+_New in Mixxx 2.00:_
 Remember splitter layout
 
+```xml
     <Splitter>
       <Pos>100,200</Pos>
       <Size>w,h</Size>
@@ -2495,6 +2495,7 @@ Remember splitter layout
         <!-- as many regular widgets as you like in here -->
       </Children>
     </Splitter>
+```
 
 `SplitSizes` gives the absolute splits between the children of the
 'Splitter' in pixels. There must be as many split sizes as there are children or else it
@@ -2523,10 +2524,10 @@ provide a size for the splitter this is the default policy.
 
 ### WidgetStack
 
-New in Mixxx 1.11.0
+_New in Mixxx 1.11.0_
 
-|                                                                                                                                                                                                                                                                                                                                                                                                                                                       |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
-| ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| Example: | |
+| --------------------------------------------------------------------- | ------------------------- |
 | `<WidgetStack>
   <NextControl>[Channel1],hotcuepage_next</NextControl>
   <PrevControl>[Channel1],hotcuepage_prev</PrevControl>
@@ -2537,19 +2538,13 @@ New in Mixxx 1.11.0
     <!-- as many regular widgets as you like in here -->
   </Children>
 </WidgetStack>
-` | `
-
-Optional: Control that switches to the next widget in the stack. (will be created if doesn't exist)
+` | Optional: Control that switches to the next widget in the stack. (will be created if doesn't exist)
 Optional: Control that switches to the previous widget in the stack. (will be created if doesn't exist)
 
 A WidgetGroup that is shown when the 'trigger' control is set to 1. (will be created if doesn't exist)
 A WidgetGroup that is shown when the 'trigger' control is set to 2. (will be created if doesn't exist)
 A WidgetGroup that is shown when the 'trigger' control is set to 3. (will be created if doesn't exist)
-
-
-
-
-` |
+ |
 
 A `WidgetStack` is a widget that only shows one widget at a time. By
 default, the shown widget is the first child in the `<Children>` block.

@@ -2528,17 +2528,16 @@ _New in Mixxx 1.11.0_
 
 | Example: | |
 | --------------------------------------------------------------------- | ------------------------- |
-| ```xml
-<WidgetStack>
-   <NextControl>[Channel1],hotcuepage_next</NextControl>
-   <PrevControl>[Channel1],hotcuepage_prev</PrevControl>
-   <Children>
-     <WidgetGroup trigger="[Channel1],hotcuepage_show1"></WidgetGroup>
-     <WidgetGroup trigger="[Channel1],hotcuepage_show2"></WidgetGroup>
-     <WidgetGroup trigger="[Channel1],hotcuepage_show3"></WidgetGroup>
-     <!-- as many regular widgets as you like in here -->
-   </Children>
- </WidgetStack>``` |<br>Optional: Control that switches to the next widget in the stack. (will be created if doesn't exist)<br>Optional: Control that switches to the previous widget in the stack. (will be created if doesn't exist)<br>A WidgetGroup that is shown when the 'trigger' control is set to `1`. (will be created if doesn't exist)<br>A WidgetGroup that is shown when the 'trigger' control is set to `2`. (will be created if doesn't exist)<br>A WidgetGroup that is shown when the 'trigger' control is set to `3`. (will be created if doesn't exist) |
+| `<WidgetStack>` | |
+| `  <NextControl>[Channel1],hotcuepage_next</NextControl>` | Optional: Control that switches to the next widget in the stack. (will be created if doesn't exist) |
+| `  <PrevControl>[Channel1],hotcuepage_prev</PrevControl>` | Optional: Control that switches to the previous widget in the stack. (will be created if doesn't exist) |
+| `  <Children>` | 
+| `    <WidgetGroup trigger="[Channel1],hotcuepage_show1"></WidgetGroup>` | A WidgetGroup that is shown when the 'trigger' control is set to `1`. (will be created if doesn't exist) |
+| `    <WidgetGroup trigger="[Channel1],hotcuepage_show2"></WidgetGroup>` | A WidgetGroup that is shown when the 'trigger' control is set to `2`. (will be created if doesn't exist) |
+| `    <WidgetGroup trigger="[Channel1],hotcuepage_show3"></WidgetGroup>` | A WidgetGroup that is shown when the 'trigger' control is set to `3`. (will be created if doesn't exist) |
+| `    <!-- as many regular widgets as you like in here -->` | |
+| `  </Children>` | |
+| `</WidgetStack>` | |
 
 
 A `WidgetStack` is a widget that only shows one widget at a time. By

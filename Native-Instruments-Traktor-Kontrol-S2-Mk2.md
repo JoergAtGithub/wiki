@@ -4,6 +4,10 @@ The Native Instruments Traktor Kontrol S2 Mk2 is a 2 deck all-in-one controller 
 
 The Kontrol S2 Mk2 can be distinguished from the Mk1 by the jog wheels. The top of the jog wheels on the Mk2 are shiny aluminum; the top of the jog wheels on the Mk1 are black. The Kontrol S2 Mk3 does not have effects knobs at the top.
 
+Reviews:
+ * [DJTechTools](https://djtechtools.com/2013/10/22/review-traktor-kontrol-s4-mk2-and-s2-mk2/)
+ * [DJWorx](https://djworx.com/review-ni-traktor-kontrol-s2-mk2-dj-controller/)
+
 # Compatibility
 The Kontrol S2 Mk2 is a USB audio and HID class compliant device. It is fully compatible with Linux, Windows, and macOS. No proprietary driver is required on Linux or macOS. For Windows, download and install the latest driver from [Native Instruments' website](https://www.native-instruments.com/en/support/downloads/drivers-other-files/).
 

@@ -482,6 +482,7 @@ of the widget's parent.
 
 Examples:
 | value | result |
+| ----- | ------ |
 | \<Pos\>0,50\<\/Pos\> | 0 pixels from top left edge of the parent, 50 pixels from the top edge |
 | \<Pos\>50,0\<\/Pos\> | 50 pixels from the horizontal position of parent, 0 pixels from the vertical position |
 | \<Pos\>50,50\<\/Pos\> | 50 pixels from the horizontal position of parent, 50 pixels from the vertical position |

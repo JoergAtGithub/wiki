@@ -500,17 +500,13 @@ for this. Simply append the SizePolicy skin abbreviation (see the table
 in the `<SizePolicy>` section below) at the end of each dimension's
 value.
 
-| Examples:                                                                             |                                                                                                                                                                                                                                                                                                                                                                        |
-| ------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `<Size>100,50</Size>
-<Size>100me,50p</Size>
-<Size>100me,50</Size>
-<Size>me,e</Size>
-` | `100 pixels wide and 50 pixels tall.
-100 pixels wide and 50 pixels tall. The horizontal size policy is MinimumExpanding and the vertical policy is Preferred.
-100 pixels wide and 50 pixels tall. The horizontal size policy is MinimumExpanding.
-The horizontal size policy is MinimumExpanding and the vertical size policy is Expanding. No explicit size is set.
-` |
+Examples:
+| value | result |
+| ----- | ------ |
+| `<Size>100,50</Size>` | 100 pixels wide and 50 pixels tall. |
+| `<Size>100me,50p</Size>` | 100 pixels wide and 50 pixels tall. The horizontal size policy is MinimumExpanding and the vertical policy is Preferred. |
+| `<Size>100me,50</Size>` | 100 pixels wide and 50 pixels tall. The horizontal size policy is MinimumExpanding. |
+| `<Size>me,e</Size>` | The horizontal size policy is MinimumExpanding and the vertical size policy is Expanding. No explicit size is set. |
 
 #### \<MinimumSize\>
 
@@ -523,15 +519,12 @@ The widget will never be resized to be smaller than this size.
 minimum vertical size separated by a comma. A value of -1 for a
 dimension means no minimum in that dimension.
 
-| Examples:                                                                                                |                                                                                                                   |
-| -------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------- |
-| `<MinimumSize>100,50</MinimumSize>
-<MinimumSize>200,-1</MinimumSize>
-<MinimumSize>-1,300</MinimumSize>
-` | `minimum width 100, minimum height 50
-minimum width 200, no minimum height
-no minimum width, minimum height 300
-` |
+Examples:
+| value | result |
+| ----- | ------ |
+| `<MinimumSize>100,50</MinimumSize>` | minimum width 100, minimum height 50 |
+| `<MinimumSize>200,-1</MinimumSize>` | minimum width 200, no minimum height |
+| `<MinimumSize>-1,300</MinimumSize>` | no minimum width, minimum height 300 |
 
 #### \<MaximumSize\>
 
@@ -544,15 +537,12 @@ widget will never be resized to be larger than this size.
 maximum vertical size separated by a comma. A value of -1 for a
 dimension means no maximum in that dimension.
 
-| Examples:                                                                                                |                                                                                                                   |
-| -------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------- |
-| `<MaximumSize>100,50</MaximumSize>
-<MaximumSize>200,-1</MaximumSize>
-<MaximumSize>-1,300</MaximumSize>
-` | `maximum width 100, maximum height 50
-maximum width 200, no maximum height
-no maximum width, maximum height 300
-` |
+Examples:
+| value | result |
+| ----- | ------ |
+| `<MaximumSize>100,50</MaximumSize>` | maximum width 100, maximum height 50 |
+| `<MaximumSize>200,-1</MaximumSize>` | maximum width 200, no maximum height |
+| `<MaximumSize>-1,300</MaximumSize>` | no maximum width, maximum height 300 |
 
 #### \<SizePolicy\>
 

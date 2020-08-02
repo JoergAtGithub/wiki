@@ -410,23 +410,26 @@ variables available to multiple templates is in `skin.xml` directly
 after the first `<Children>` opening tag, before any other template is
 loaded.
 
-set variables like this: `<SetVariable
-name="veryDescriptiveName">String</SetVariable>`
-Recalled variables: `<Variable name="veryDescriptiveName"/>`
+Set variables like this: `<SetVariable
+name="veryDescriptiveName">String</SetVariable>`<br>
+Recall variables: `<Variable name="veryDescriptiveName"/>`<br>
 
 **Note:** Variables can not be used within tags or within values:
-
-    <Template src="skin:deck_container_<Variable name="side"/>.xml"/> <!-- Wrong. skin parser will fail -->
-    <Template <SetVariable name="Alignment">left|top</SetVariable>src="skin:library.xml"/> <!-- Wrong... -->
+```xml
+<Template src="skin:deck_container_<Variable name="side"/>.xml"/> <!-- Wrong. skin parser will fail -->
+<Template <SetVariable name="Alignment">left|top</SetVariable>src="skin:library.xml"/> <!-- Wrong... -->
+```
 
 For example, let's load a deck template, pass the channel number and
 deck side to it and define a background color:
 
-    <Template src="skin:deck_container.xml>
-      <SetVariable name="side">Left</SetVariable>
-      <SetVariable name="channum">1</SetVariable>
-      <SetVariable name="SignalBgColor">#0a0a0a</SetVariable>  <!-- dark grey -->
-    </Template>
+```xml
+<Template src="skin:deck_container.xml>
+   <SetVariable name="side">Left</SetVariable>
+   <SetVariable name="channum">1</SetVariable>
+   <SetVariable name="SignalBgColor">#0a0a0a</SetVariable>  <!-- dark grey -->
+</Template>
+```
 
 `channum` is a perfect example of how to make use of the inheritance:
 the variable is automatically passed on to button templates or
@@ -454,6 +457,7 @@ Every skin widget is declared in a block with an opening XML tag and a
 closing tag. For example, this block defines a musical key widget that
 shows the current key of a playing deck:
 
+```xml
     <Key>
         <TooltipId>visual_key</TooltipId>
         <Pos>X,Y</Pos>
@@ -462,6 +466,7 @@ shows the current key of a playing deck:
             <ConfigKey>[ChannelX],visual_key</ConfigKey>
         </Connection>
     </Key>
+```xml
 
 Sub-tags like the `<Size>` tag tell Mixxx how it should size, style and
 layout the widget. There are certain sub-tags that are common to all
@@ -472,18 +477,14 @@ widgets and behave in the same way regardless of the widget type.
 `<Pos>` tags tell Mixxx where to position a widget. The position is
 relative to the widget's parent. For example, if the position is `0,50`
 then this means position the widget 0 pixels from the horizontal
-location of the parent widget and 50 pixels from the vertical location
+location (left edge) of the parent widget and 50 pixels from the vertical location (top edge)
 of the widget's parent.
 
-| Examples:                                           |                                                                                                                                                                                                                                                                                                  |
-| --------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| `<Pos>0,50</Pos>
-<Pos>50,0</Pos>
-<Pos>50,50</Pos>
-` | `position 0 pixels from the horizontal position of parent, 50 pixels from the vertical position
-position 50 pixels from the horizontal position of parent, 0 pixels from the vertical position
-position 50 pixels from the horizontal position of parent, 50 pixels from the vertical position
-` |
+Examples:
+| value | result |
+| \<Pos\>0,50\<\/Pos\> | 0 pixels from top left edge of the parent, 50 pixels from the top edge |
+| \<Pos\>50,0\<\/Pos\> | 50 pixels from the horizontal position of parent, 0 pixels from the vertical position |
+| \<Pos\>50,50\<\/Pos\> | 50 pixels from the horizontal position of parent, 50 pixels from the vertical position |
 
 #### \<Size\>
 

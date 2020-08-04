@@ -1,24 +1,8 @@
-# Bugfix Work Flow
-
-This is a brief step by step description about a typical work flow of
+This is a brief step by step description about a typical workflow of
 fixing a first Mixxx bug. Follow the links for more details.
-
-## Fork Mixxx on GitHub
-
-The Mixxx repo is located [here](https://github.com/mixxxdj/mixxx)
-
-<https://help.github.com/articles/fork-a-repo>
-
-## Create a Local Branch
-
-[Mixxx workflow with
-GitHub](http://neval8.wordpress.com/2013/07/07/en-typical-workflow-with-github-on-shared-project)
-
-[Using Git for Mixxx Development](using_git)
-
-## Build Mixxx
-
-[Build Mixxx](home#compile_mixxx_from_source_code)
+- [Fork](https://help.github.com/articles/fork-a-repo) [Mixxx on GitHub](https://github.com/mixxxdj/mixxx)
+- [Set up git for Mixxx](using_git) and [create a branch](https://neval8.wordpress.com/2013/07/07/en-typical-workflow-with-github-on-shared-project)
+- [Build Mixxx](home#compile-mixxx-from-source-code)
 
 ## Choose a working environment
 
@@ -35,10 +19,9 @@ information.
 
 ## Adopt an easy bug on Launchpad
 
-[List of bugs tagged as
-easy](https://bugs.launchpad.net/mixxx/+bugs?field.tag=easy&field.status%3Alist=CONFIRMED)
+[List of bugs tagged as easy](https://bugs.launchpad.net/mixxx/+bugs?field.tag=easy&field.status%3Alist=CONFIRMED)
 
-More details you will find here: [The Bug Tracker](launchpad_bugs)
+[More info about the Bug Tracker](launchpad_bugs)
 
 ## Study the code and debug it
 

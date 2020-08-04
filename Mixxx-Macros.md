@@ -260,16 +260,50 @@ Mo:
 - Reviews
 
 Tu:
+- Implemented Macro deserialization
+- Clean up & Improve code
+
+*Family & Camp preparation intervened*
+
+### CW 30
+
+Little chance to work as I'm away.
+- C++ Research (e.g. lambdas)
+- Coding Style fixes & tests
+
+### CW 31
+
+Mo: Database & Side PR work
+
+Tu: Research
+
+We: Work on PlayerManager
+
+Th: Code cleanups & clang-tidy investigation
+
+Fr:
+- Update call with Mentor
+- Implemented Recording using SPSCQueue: https://github.com/mixxxdj/mixxx/commit/27b1d08546
+
+Sa:
+- Work on MacroManagerTest and its new parent abstraction MixxxDbTest
+
+### CW 32
+
+Mo:
+- Work on side-PR reviews
+
+Tu:
+- Code update and merges, PR moved to https://github.com/mixxxdj/mixxx/pull/2989
+- Investigate Playback
 
 We:
 
 Th:
 
-### CW 30
+Fr:
 
-Little chance to work as I'm away.
-
-### CW 31
+### CW 33
 
 Mo:
 
@@ -280,3 +314,17 @@ We:
 Th:
 
 Fr:
+
+
+### CW 34
+
+Mo:
+
+Tu:
+
+We:
+
+Th:
+
+Fr:
+

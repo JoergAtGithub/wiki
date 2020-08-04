@@ -291,11 +291,13 @@ Sa:
 ### CW 32
 
 Mo:
-- Work on side-PR reviews
+- Work on side-PR reviews & personal tooling
 
 Tu:
 - Code update and merges, PR moved to https://github.com/mixxxdj/mixxx/pull/2989
-- Investigate Playback
+- Work on side PRs
+- Entered up work log for last 3 weeks
+- Start Playback Implementation
 
 We:
 

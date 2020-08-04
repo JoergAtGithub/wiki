@@ -8,6 +8,9 @@ to speed with the basics of Git and how to use it with our workflow on
 GitHub. We are intentionally glossing over a lot of finer details which
 are explained in other [\#Tutorials](#Tutorials).
 
+There is also a short blog post summarizing the workflow and branching model:
+https://neval8.wordpress.com/2013/07/07/en-typical-workflow-with-github-on-shared-project/
+
 If you have still have questions after reading this, feel free to ask on
 [Zulip](https://mixxx.zulipchat.com/).
 
@@ -71,8 +74,6 @@ Aborting
 You can discard your local changes by '' git reset --hard'' or `git
 checkout -t -f remote/branch`
 
-  
-  
 Configure Git so that you push to your fork by default for new branches:
 
     git config remote.pushDefault origin
@@ -80,8 +81,7 @@ Configure Git so that you push to your fork by default for new branches:
 # Set up automatic code checking
 
 **WARNING**: This currently only works for linux, since "clang-format"
-under python is only compiled for linux (
-<https://github.com/mgevaert/clang-format-wheel/issues/2> )
+under python is [only compiled for linux](https://github.com/mgevaert/clang-format-wheel/issues/2)
 
 To get your changes merged into Mixxx it's necessary to make sure that
 your code matches our code style requirements. You can make git check
@@ -147,9 +147,9 @@ When you are ready to start editing the Mixxx code, create a new Git
 branch for your work. Git branches are a way to organize your changes
 into separate workspaces, which allows you to work on multiple
 bugs/features in parallel and independently propose them for inclusion
-in Mixxx whenever each one is ready. **Every time you start fixing
-another bug or working on a new feature, make a new branch** following
-these steps:
+in Mixxx whenever each one is ready.
+**Every time you start fixing another bug or working on a new feature,
+create a new branch** following these steps:
 
 First, download the latest updates before you start working on new
 changes:

@@ -297,9 +297,11 @@ Tu:
 - Code update and merges, PR moved to https://github.com/mixxxdj/mixxx/pull/2989
 - Work on side PRs
 - Entered up work log for last 3 weeks
-- Start Playback Implementation
+- Started Playback Implementation
 
 We:
+- Implement MacroDAO and integrate with TrackDAO
+- Read Macro Actions from Track in Engine
 
 Th:
 

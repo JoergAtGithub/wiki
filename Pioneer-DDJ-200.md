@@ -1,5 +1,3 @@
-# Pioneer DDJ-200
-
 ![Pioneer DDJ-200](https://www.pioneerdj.com/-/media/pioneerdj/images/products/controller/ddj-200/black/ddj-200-top.png?h=630&w=1200&hash=D4763E7B4F70241AE86F6072AB6649DB24B89F8E)
 
   - [Manufacturer's Product Page](https://www.pioneerdj.com/en-gb/product/controller/ddj-200/black/overview/)

@@ -2,38 +2,19 @@
 
 [[/media/pioneer_ddj-200.png|]]
 
-  - [Manufacturer's Product
-    Page](https://www.pioneerdj.com/en-gb/product/controller/ddj-200/black/overview/)
-  - [Manufacturer's User
-    Manual](http://docs.pioneerdj.com/Manuals/DDJ_200_DRI1596B_manual/)
-  - [Manufacturer's Firmware
-    Update](https://www.pioneerdj.com/en/support/software/controller/ddj-200/)
-  - [Midi
-    Mappings](https://www.pioneerdj.com/-/media/pioneerdj/software-info/controller/ddj-200/ddj-200_midi_message_list_e2.pdf)
-  - [Hardware
-    Diagram](https://www.pioneerdj.com/-/media/pioneerdj/software-info/controller/ddj-200/ddj-200_hardwarediagram_rekordboxdj_e2.pdf)
-  - [Mapping Forum
-    Thread](https://mixxx.org/forums/viewtopic.php?f=7&t=12113)
-  - [Mapping Git
-    Fork](https://github.com/dan-giddins/mixxx/tree/ddj-200-support)
-  - [Simple Mapping Git
-    Repository](https://github.com/dan-giddins/mixxx-ddj-200-mapping)
+  - [Manufacturer's Product Page](https://www.pioneerdj.com/en-gb/product/controller/ddj-200/black/overview/)
+  - [Manufacturer's User Manual](http://docs.pioneerdj.com/Manuals/DDJ_200_DRI1596B_manual/)
+  - [Manufacturer's Firmware Update](https://www.pioneerdj.com/en/support/software/controller/ddj-200/)
+  - [Midi Mappings](https://www.pioneerdj.com/-/media/pioneerdj/software-info/controller/ddj-200/ddj-200_midi_message_list_e2.pdf)
+  - [Hardware Diagram](https://www.pioneerdj.com/-/media/pioneerdj/software-info/controller/ddj-200/ddj-200_hardwarediagram_rekordboxdj_e2.pdf)
+  - [Mapping Git Fork] (https://github.com/dan-giddins/mixxx/tree/ddj-200-support)
+  - [Simple Mapping Git Repository](https://github.com/dan-giddins/mixxx-ddj-200-mapping)
 
 The Pioneer DDJ-200 is a simple 2 deck USB DJ controller designed for WeDJ, djay, edjing Mix and rekordboxDJ.
 
-## Audio Setup
-
-| Output   |             |
-| -------- | ----------- |
-| Channels | Assigned to |
-| 1-2      | Master      |
-| 3-4      | Headphones  |
-
 ## Controller Mapping
 
-A mapping has been [added to
-Mixxx](https://github.com/mixxxdj/mixxx/pull/2143) prior to the 2.3.0
-release.
+A mapping is in the process of being [added to Mixxx](https://github.com/mixxxdj/mixxx/pull/2377)
 
 ### Controls
 
@@ -156,9 +137,5 @@ with Rekordbox.
 | \[KEYSHIFT\] Mode   | \[SHIFT\] + \[PAD 7\]     | Permanently increase Semitone of the Track                                            |
 | \[KEYSHIFT\] Mode   | \[SHIFT\] + \[PAD 8\]     | Permanently decrease Semitone of the Track                                            |
 
-Notes: \*1 Loop will be set on Hot Cue Pad if Pad is empty and Loop is
-enabled
 
 ### Known Issues
-
-  - Hot Cue Loops Pads will be discarded on loading a track

@@ -1,6 +1,6 @@
 # Pioneer DDJ-200
 
-[[/media/pioneer_ddj-200.png|]]
+![Pioneer DDJ 200](https://www.pioneerdj.com/-/media/pioneerdj/images/products/controller/ddj-200/black/ddj-200-top.png)
 
   - [Manufacturer's Product Page](https://www.pioneerdj.com/en-gb/product/controller/ddj-200/black/overview/)
   - [Manufacturer's User Manual](http://docs.pioneerdj.com/Manuals/DDJ_200_DRI1596B_manual/)

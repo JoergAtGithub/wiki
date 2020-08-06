@@ -15,10 +15,11 @@
   - [Mapping Forum
     Thread](https://mixxx.org/forums/viewtopic.php?f=7&t=12113)
   - [Mapping Git
-    Repository](https://github.com/WarkerAnhaltRanger/mixxx/tree/master/res/controllers)
+    Fork](https://github.com/dan-giddins/mixxx/tree/ddj-200-support)
+  - [Simple Mapping Git
+    Repository](https://github.com/dan-giddins/mixxx-ddj-200-mapping)
 
-The Pioneer DDJ-400 is a 2 deck DJ controller with integrated audio
-interface designed for rekordbox DJ.
+The Pioneer DDJ-200 is a simple 2 deck USB DJ controller designed for WeDJ, djay, edjing Mix and rekordboxDJ.
 
 ## Audio Setup
 

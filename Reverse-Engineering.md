@@ -85,10 +85,7 @@ Linux you don't need to bother transferring the captured traffic files
 out of the VM. You need to redirect the USB device to the VM for the VM
 to use it.
 
-If you use VirtualBox, you need to install the VirtualBox guest
-extensions with experimental 3D acceleration to run VirtualDJ or Serato.
-
-TODO: Is there anything in particular to configure for QEMU?
+DJ software including Traktor, Serato, and VirtualDJ require OpenGL support in the VM to work. For QEMU/KVM virtual machines, refer to the [Arch Linux wiki](https://wiki.archlinux.org/index.php/QEMU/Guest_graphics_acceleration) for the various ways to do this. If you use VirtualBox, you need to install the VirtualBox guest extensions with experimental 3D acceleration to run VirtualDJ or Serato.
 
 Wireshark has both GUI and CLI applications.
 

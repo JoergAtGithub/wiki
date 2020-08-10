@@ -98,6 +98,8 @@ There are various options for display drivers as detailed on the [Arch Linux wik
 
 TODO: Does Traktor work well with Looking Glass? I could not get Looking Glass to work. ~Be, August 2020
 
+For audio, Traktor works best with WASAPI Exclusive Mode. Curiously, the option for this disappears when the ASIO driver for the Kontrol S4 Mk3 is installed, so don't install that.
+
 #### VirtualBox
 Install the VirtualBox guest extensions with experimental 3D acceleration.
 

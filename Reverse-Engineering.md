@@ -85,9 +85,19 @@ Linux you don't need to bother transferring the captured traffic files
 out of the VM. You need to redirect the USB device to the VM for the VM
 to use it.
 
-The biggest factor affecting the performance of DJ software in a VM is the graphics driver as DJ softwares typically use OpenGL to render graphics (at least for the waveforms). For QEMU/KVM virtual machines, there are various options for display drivers as detailed on the [Arch Linux wiki](https://wiki.archlinux.org/index.php/QEMU/Guest_graphics_acceleration). Traktor seems to work best with VirtIO, even though there is no usable virtio-gpu driver for Windows that supports OpenGL (this was started as a [GSOC project in 2017](https://gist.github.com/Keenuts/199184f9a6d7a68d9a62cf0011147c0b) but [remains incomplete](https://gitlab.freedesktop.org/spice/win32/virtio-gpu-wddm-dod/-/issues/1) as of August 2020). If you use VirtualBox, you need to install the VirtualBox guest extensions with experimental 3D acceleration to run VirtualDJ or Serato.
+The biggest factor affecting the performance of DJ software in a VM is the graphics driver as DJ softwares typically use OpenGL to render graphics (at least for the waveforms). Also make sure you have Intel VT-x or AMD-V enabled in your EFI/BIOS settings.
 
-#### Wireshark CLI
+It is recommended to use at least 35 GB for the disk image to allow room for Windows, the DJ software, and a bit of music to test with (Traktor requires at lest 3 GB of free space).
+
+#### QEMU/KVM
+Windows 10 will not use multiple CPUs on different sockets, so if you want to use multiple CPU cores, configure the VM to use a single CPU socket with multiple cores.
+
+For QEMU/KVM virtual machines, there are various options for display drivers as detailed on the [Arch Linux wiki](https://wiki.archlinux.org/index.php/QEMU/Guest_graphics_acceleration). Traktor seems to work best with VirtIO, even though there is no usable virtio-gpu driver for Windows that supports OpenGL (this was started as a [GSOC project in 2017](https://gist.github.com/Keenuts/199184f9a6d7a68d9a62cf0011147c0b) but [remains incomplete](https://gitlab.freedesktop.org/spice/win32/virtio-gpu-wddm-dod/-/issues/1) as of August 2020).
+
+#### VirtualBox
+Install the VirtualBox guest extensions with experimental 3D acceleration.
+
+### Wireshark CLI
 
 First, you need to load the kernel module that allows monitoring the USB
 connection:
@@ -122,7 +132,7 @@ ignore, e.g.:
 | `0bbf6400`        | `bf 64 00`   |
 | `09900100`        | `90 01 00`   |
 
-#### Wireshark GUI example
+### Wireshark GUI example
 
 Here you can find a Wireshark example running wireshark-gtk (for KDE you
 may want use wireshark-qt) GUI on Ubuntu using the left screen and Win10

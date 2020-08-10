@@ -317,6 +317,15 @@ Supported Mappings](#Community%20Supported%20Mappings) table above.
 <td>2014</td>
 </tr>
 <tr class="odd">
+<td><a href="Pioneer XDJ-RX">Pioneer XDJ-RX</a></td>
+<td>discontinued</td>
+<td>all-in-one DJ system(2 deck controller)</td>
+<td>yes</td>
+<td>n/a</td>
+<td>MIDI</td>
+<td>2015</td>
+</tr>
+<tr class="odd">
 <td><a href="Behringer CMD PL-1">Behringer CMD PL-1</a></td>
 <td>$100</td>
 <td>1 deck controller</td>

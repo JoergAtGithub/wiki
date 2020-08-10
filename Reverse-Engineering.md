@@ -90,7 +90,7 @@ Make sure you have Intel VT-x or AMD-V enabled in your EFI/BIOS settings.
 It is recommended to use at least 35 GB for the disk image to allow room for Windows, the DJ software, and a bit of music to test with (Traktor requires at lest 3 GB of free space).
 
 #### QEMU/KVM
-Windows 10 will not use multiple CPUs on different sockets, so if you want to use multiple CPU cores, configure the VM to use a single CPU socket with multiple cores.
+Windows 10 will not use multiple CPUs on different sockets, so if you want to use multiple CPU cores, configure the VM to use a single CPU socket with multiple cores. Configure this before installing Windows so the installation goes faster.
 
 Install [SPICE guest tools](https://www.spice-space.org/download/windows/spice-guest-tools/spice-guest-tools-latest.exe) after installing Windows for seamless integration with the host mouse and keyboard.
 

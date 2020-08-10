@@ -85,7 +85,7 @@ Linux you don't need to bother transferring the captured traffic files
 out of the VM. You need to redirect the USB device to the VM for the VM
 to use it.
 
-The biggest factor affecting the performance of DJ software in a VM is the graphics driver as DJ softwares typically use OpenGL to render graphics (at least for the waveforms). Also make sure you have Intel VT-x or AMD-V enabled in your EFI/BIOS settings.
+Make sure you have Intel VT-x or AMD-V enabled in your EFI/BIOS settings.
 
 It is recommended to use at least 35 GB for the disk image to allow room for Windows, the DJ software, and a bit of music to test with (Traktor requires at lest 3 GB of free space).
 

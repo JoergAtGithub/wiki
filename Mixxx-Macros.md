@@ -301,15 +301,21 @@ Tu:
 
 We:
 - Implement MacroDAO and integrate with TrackDAO
+- Test MacroDAO
 - Read Macro Actions from Track in Engine
 
 Th:
+- Research
 
 Fr:
+- Fix saving issue
+- Macro Playback
 
 ### CW 33
 
 Mo:
+- Start implementing Macro Playback tests
+- Fix local compilation issues
 
 Tu:
 

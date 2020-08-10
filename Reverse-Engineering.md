@@ -95,7 +95,7 @@ Install [SPICE guest tools](https://www.spice-space.org/download/windows/spice-g
 
 There are various options for display drivers as detailed in this [blog post](https://www.kraxel.org/blog/2019/09/display-devices-in-qemu/) and the [Arch Linux wiki](https://wiki.archlinux.org/index.php/QEMU/Guest_graphics_acceleration). Traktor seems to work best with VirtIO, even though there is no usable virtio-gpu driver for Windows that supports OpenGL (this was started as a [GSOC project in 2017](https://gist.github.com/Keenuts/199184f9a6d7a68d9a62cf0011147c0b) but [remains incomplete](https://gitlab.freedesktop.org/spice/win32/virtio-gpu-wddm-dod/-/issues/1) as of August 2020). Traktor does not seem to work well with Intel GVT-g (tested with Intel UHD Graphics 620 on a Core i7 8550U, Linux kernel 5.6.19-300.rt10.2.fc32.ccrma.x86_64+rt).
 
-Audio works best with WASAPI Exclusive Mode. Audio will crackle frequently, but not so much that it's unusable. ASIO crackles so much that it is unusable. Curiously, the option for using WASAPI disappears from Traktor when the ASIO driver for the Kontrol S4 Mk3 is installed, so don't install the ASIO drivers for Native Instruments devices.
+Audio works best with WASAPI Exclusive Mode. Audio will crackle frequently, but not so much that it's unusable for reverse engineering. ASIO crackles so much that it is unusable. Curiously, the option for using WASAPI disappears from Traktor when the ASIO driver for the Kontrol S4 Mk3 is installed, so don't install the ASIO drivers for Native Instruments devices.
 
 #### VirtualBox
 Install the VirtualBox guest extensions with experimental 3D acceleration.

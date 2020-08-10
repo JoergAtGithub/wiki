@@ -77,13 +77,10 @@ only system exclusive (sysex) messages.
 
 ### Running VMs on a Linux host
 
-If you are using Linux, you can run other DJ software in a Windows
-virtual machine and record the USB traffic with Wireshark (macOS is a
-hassle to run in a VM but Windows is easy). You can run Wireshark on the
-Linux host or inside the virtual machine, but if you run Wireshark in
-Linux you don't need to bother transferring the captured traffic files
-out of the VM. You need to redirect the USB device to the VM for the VM
-to use it.
+If you are using Linux, you can run other DJ software in a Windows virtual machine and record the USB traffic with Wireshark (macOS is a
+hassle to run in a VM but Windows is easy). Microsoft makes the [ISO image installer](https://www.microsoft.com/en-us/software-download/windows10ISO) available for no cost. When Windows asks for a product key during installation, you can mark that you don't have one.
+
+You can run Wireshark on the Linux host or inside the virtual machine, but if you run Wireshark in Linux you don't need to bother transferring the captured traffic files out of the VM. You need to redirect the USB device to the VM for the VM to use it.
 
 Make sure you have Intel VT-x or AMD-V enabled in your EFI/BIOS settings.
 

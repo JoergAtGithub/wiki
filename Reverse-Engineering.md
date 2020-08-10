@@ -85,9 +85,7 @@ Linux you don't need to bother transferring the captured traffic files
 out of the VM. You need to redirect the USB device to the VM for the VM
 to use it.
 
-The biggest factor affecting the performance of DJ software in a VM is the graphics driver as DJ softwares typically use OpenGL to render graphics (at least for the waveforms). For QEMU/KVM virtual machines, there are various options for display drivers as detailed on the [Arch Linux wiki](https://wiki.archlinux.org/index.php/QEMU/Guest_graphics_acceleration). Traktor seems to work best with Virtio, even though there is no usable virtio-gpu driver for Windows that supports OpenGL (this was started as a [GSOC project in 2017](https://gist.github.com/Keenuts/199184f9a6d7a68d9a62cf0011147c0b) but [remains incomplete](https://gitlab.freedesktop.org/spice/win32/virtio-gpu-wddm-dod/-/issues/1) as of August 2020). If you use VirtualBox, you need to install the VirtualBox guest extensions with experimental 3D acceleration to run VirtualDJ or Serato.
-
-Wireshark has both GUI and CLI applications.
+The biggest factor affecting the performance of DJ software in a VM is the graphics driver as DJ softwares typically use OpenGL to render graphics (at least for the waveforms). For QEMU/KVM virtual machines, there are various options for display drivers as detailed on the [Arch Linux wiki](https://wiki.archlinux.org/index.php/QEMU/Guest_graphics_acceleration). Traktor seems to work best with VirtIO, even though there is no usable virtio-gpu driver for Windows that supports OpenGL (this was started as a [GSOC project in 2017](https://gist.github.com/Keenuts/199184f9a6d7a68d9a62cf0011147c0b) but [remains incomplete](https://gitlab.freedesktop.org/spice/win32/virtio-gpu-wddm-dod/-/issues/1) as of August 2020). If you use VirtualBox, you need to install the VirtualBox guest extensions with experimental 3D acceleration to run VirtualDJ or Serato.
 
 #### Wireshark CLI
 

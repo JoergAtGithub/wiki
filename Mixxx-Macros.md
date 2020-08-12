@@ -318,8 +318,11 @@ Mo:
 - Fix local compilation issues
 
 Tu:
+- Fix Playback test
+- Refactorings
 
 We:
+- Create Channel COs
 
 Th:
 

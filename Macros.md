@@ -20,11 +20,11 @@ for background on the project.
 
 | Key/Control        | Range              | What it does                                                                                           |
 | ------------------ | ------------------ | ------------------------------------------------------------------------------------------------------ |
-| macros\_show       | binary             | Whether to show the Macro Rack for this channel                                                        |
-| macro\_X\_activate | binary             | If Macro X exists, seek to the first action and start it. If Macro X is unset, start recording for it. |
-| macro\_X\_status   | 0-2, read-only     | Whether this Macro is currently running                                                                |
+| macros\_show(?)    | binary             | Whether to show the Macro Rack for this channel                                                        |
+| macro\_X\_status   | -1 - 2, read-only  | -1=unset, 0=off, 1=armed, 2=running |
 | macro\_X\_enabled  | binary             | Whether this Macro will automatically be started when the track is loaded                              |
 | macro\_X\_loop     | binary             | Whether this Macro should loop infinitely                                                              |
+| macro\_X\_activate | binary             | If Macro X exists, seek to the first action and start it. If Macro X is unset, start recording for it. |
 | macro\_X\_set      | binary             | Record a Macro to slot X                                                                               |
 | macro\_X\_clear    | binary             | If Macro X is set, delete it and remove it from the Rack                                               |
 

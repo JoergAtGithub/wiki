@@ -27,6 +27,8 @@ daylight, and increases the volume of the headphone output.
 
 ### Mixxx mapping
 
+**HINT:** Since this controller is a USB-HID device, you might need to set the corresponding [udev rules](https://github.com/mixxxdj/mixxx/wiki/Troubleshooting#user-content-hid-and-usb-bulk-controllers-on-gnulinux) in Linux.
+
 Have a look at the corresponding thread in the forums for questions and
 feedback:
 <https://www.mixxx.org/forums/viewtopic.php?uid=14478&f=7&t=12999&start=0>

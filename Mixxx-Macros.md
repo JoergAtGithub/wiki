@@ -322,9 +322,13 @@ Tu:
 - Refactorings
 
 We:
-- Create Channel COs
+- Create MacroControl with Channel COs
+- Cleanup
 
 Th:
+- Finish cleanup
+- Implement COs & Playback in MacroControl
+- Improve MacroDAO
 
 Fr:
 

@@ -13,7 +13,7 @@ at once, a DJ should be able to rely on his tools so he can focus on
 what really matters. For some, beatmatching and keeping all tracks in
 sync is an art in itself - for others, including me, it is something
 happily delegated to the software - that is why there is a sync
-function.
+function.  
 But sometimes, more sophisticated automation can be helpful - maybe you
 want to skip a breakdown, shuffle around verses, loop an intro a
 specific way or deliberately repeat certain parts. Handling that while
@@ -331,7 +331,7 @@ Th:
 - Improve MacroDAO
 
 Fr:
-
+- Implement MacroControl button controls
 
 ### CW 34
 

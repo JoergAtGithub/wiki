@@ -419,13 +419,15 @@ Platter Ring LEDs are correlated with the VINYL button.
 
 ### Wish List
 
-All additional wishes will be listed here:
+All additional wishes will be listed here (help appreciated):
 
   - improve Platter Ring LED performance. Currently only 26 signals are
     sent for one complete turn around for 48 LEDs. This is gonna be
     solved using MIXXX 2.3
   - let Platter Ring LEDs flash during the last minute (or other time
     period) of a track
+  - colored Hot Cue
+  - Secondary PAD functions
 
 ## Contact and DJ Web Sites
 

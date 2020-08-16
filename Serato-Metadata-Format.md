@@ -12,7 +12,7 @@ This in an overview of which tags are currently read and parsed by Mixxx:
 | ------------ | ------- | ------- | ------- | ---------- | ----------
 | `Analysis`   | No      | No      | No      | No         | Serato Analysis version
 | `Autotags`   | No      | No      | No      | No         | BPM and Gain values	
-| `BeatGrid`   | *WIP*   | *WIP*   | *WIP*   | No         | Beatgrid Markers ([#2958](https://github.com/mixxxdj/mixxx/pull/2958))
+| `BeatGrid`   | **Yes** | **Yes** | **Yes**   | No         | Beatgrid Markers ([#2958](https://github.com/mixxxdj/mixxx/pull/2958))
 | `Markers_`   | **Yes** | *n/a*   | **Yes** | No         | Hotcues, Saved Loops, etc.
 | `Markers2`   | **Yes** | **Yes** | **Yes** | ?          | Hotcues, Saved Loops, etc.
 | `Offsets_`   | No      | No      | No      | No         |

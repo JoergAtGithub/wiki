@@ -9,7 +9,7 @@ an `incomingData` function to handle all input from the controller.
 The steps are:
 
 1.  [Create your script
-    file](midi_scripting#setting_up_a_javascript_mapping_file). The same
+    file](midi-scripting#set-up-a-javascript-mapping). The same
     function and file naming conventions as well as init and shutdown
     function requirements apply as with MIDI scripting.
 2.  The script file must also contain a function called `incomingData`.
@@ -17,10 +17,10 @@ The steps are:
     responsible for parsing them and taking appropriate actions based on
     which bytes change. It has the same signature as the [inboundSysex
     function in MIDI
-    scripting](midi_scripting#system-exclusive_sysex_message_handing_functions).
+    scripting](midi-scripting#system-exclusive-messages).
 3.  Create an XML file that tells Mixxx the name of the controller and
     which script file(s) to load, [just like with MIDI
-    scripting](midi_scripting#linking_a_javascript_mapping_file_to_an_xml_mapping_file)
+    scripting](midi-scripting#link-midi-input-signals-to-javascript)
     but make sure to end the file name with `.hid.xml` or `.bulk.xml` as
     appropriate.
 

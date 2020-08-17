@@ -28,7 +28,7 @@ with your particular setup. If you encounter a bug, please [report
 it](reporting-bugs).
 
 If you are using a GNU/Linux distribution other than Ubuntu or a
-derivative distribution that is compatible with Ubuntu .deb packages,
+derivative distribution that is incompatible with Ubuntu .deb packages,
 you will need to [compile from source code](compiling-on-Linux) to
 test the master git branch.
 

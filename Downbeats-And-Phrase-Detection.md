@@ -121,6 +121,17 @@ The final step is picking the peaks of this new tempogram, since not all peaks r
 
 The tempogram has proved to be a robust tool for finding the metrical level pulse rate but it's useless to find the phase of these pulses. We can determine for example that the beat rate is 120bpm and that the measure rate is 30bpm, but we can not possible determine where are the beats or the bar lines.
 
+# Rhythm Analyzer Architecture
+
+A high level data flow that overview of the rhythm analyzer interacts with Mixxx:
+
+![Rhythm Analyzer](https://user-images.githubusercontent.com/61819301/90569473-536ff400-e184-11ea-9480-6adfc7d451c1.png)
+
+A detailed data flow of the internals working of the rhythm analyzer:
+
+![RhythmAnalyzerDataFlow](https://user-images.githubusercontent.com/61819301/90569626-96ca6280-e184-11ea-904e-0f67ba673e13.png)
+
+
 # Final month schedule:
 
 Week 1: Finish working on the tempo detection as an optimization problem - Improve phase correction algorithm so that two bpms adjacent bpm values are less than 5% apart. Finish working on removing arrhythmic regions - Use the onsets energy to detect regions that lack strong percussive sounds.

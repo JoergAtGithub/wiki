@@ -113,6 +113,8 @@ The FX setup is unusual on this controller.  Each deck has a single toggle butto
 
 When the Filter Enable button is off, the knob still controls the default QuickEffect, even if that button is not lit in the FX section. When the Filter Enable button is on, the QuickEffect is only enabled if the Filter FX Select button is on.  This means the QuickEffect is available on channels that don't have any other effects active.
 
+When turning Filter Enable off, Mixxx will use soft takeover so the QuickEffect doesn't suddenly activate.
+
 ### Mapping options
 
 There are two user-friendly customizations possible on the S3:

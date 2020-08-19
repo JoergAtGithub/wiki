@@ -11,7 +11,7 @@
   - [DJWORX
     overview](https://djworx.com/the-traktor-kontrol-s3-we-have-it-but-not-the-software/)
 
-The Kontrol S3 is an introductory 4 deck controller with good buil
+The Kontrol S3 is an introductory 4 deck controller with good build
 quality and integrated sound card. This is the first controller released
 with the "S3" name.
 
@@ -50,10 +50,11 @@ for details.
 
   - Gain, equalizer high/mid/low, and cue (headphones)
     behave as labelled.
-  - The FX setup is unusual on this controller.  Each deck has a single on-off button for effects, and on the right-hand side there are five buttons that determine which effects are applied to every channel that has effects on.  This means it is not possible to use the controller to select one effect for one deck, and another effect for another.  You can still make these choices in the Mixxx UI, however.
+  - FX Enable buttons: See Effect section below.
   - Filter: controls QuickEffect superknob. This controls the Filter
     effect by default, but a different effect can be chosen in the
     Equalizer section of Mixxs's Preferences.
+  - EXT: The EXT button is not yet connected.
 
 The Master Volume knob on the S3 controls the volume of the S3's master
 output in hardware, so it does not affect the software master gain knob
@@ -63,52 +64,54 @@ the master volume knob on the S3 will not help.
 
 ### Decks
 
-  - Pressing the library knob: load track selected in library to the deck.
-  - Shift + pressing knob: eject track
+  - Pressing the library knob: Load track selected in library to the deck.
+  - Shift + pressing knob: Eject track.
+  - Small play button: While held, plays the current track in the preview deck.  If you rotate the library knob while you hold the play button, Mixxx will scan through the track being previewed.
+  - Star button: This button is not used (yet).
+  - List-plus button: Adds the current track to the Auto DJ list.
   - View button: move focus of library control between left-hand tree and main list.
-  - Small buttons with play icons: play a sampler from its cue point.
-  - Small buttons with play icons + shift: If sampler is playing, stop
-    it. If sampler is not playing, the loaded eject track from the
-    sampler.
 
-#### Looping
+### Transport Mode Buttons
 
-  - right encoder turn: double/halve loop size.
-  - right encoder press: activate loop of set size from current position
+  - REV: Activates a reverse-roll (aka "censor") effect.
+  - Shift + REV: Turns on reverse playback mode.
+  - GRID: Turns on Quantize mode.
+  - FLUX: Turns on Slip mode.
+  - JOG: Currently unmapped.
 
-<!-- end list -->
+### Looping
 
-  - left encoder turn: beatjump forward/backward by beatjump size (shown
-    on screen but not on controller), or move the loop by beatjump size
-    if there is a loop enabled
-  - left encoder press: re-enable a loop that has been set previously.
-    Pressing this before a loop will keep playing until the loop is
-    entered.
-  - left encoder turn + shift: adjust beatjump size
-  - left encoder press + shift: jump to loop in point, activate loop,
-    and stop playback. This is helpful for preparing to mix a track in
-    with a loop.
+  - Right Encoder Turn: double/halve loop size.
+  - Right Encoder Press: activate loop of set size from current position.
+  - Shift + Right Encoder Press: Toggles the existing loop on and off.
+  - Left Encoder Turn: Beatjump forward/backward.
+  - Shift + Left Encoder Turn: Adjust beatjump size.
+  - Left Encoder Press: Activates beatloop roll.
+  - Shift + Left Encoder Press: Activates a loop and then stops.
 
 <!-- end list -->
 
-  - In button: set loop in point manually. Hold pressed while moving the
-    jog wheel to finely adjust the loop in point.
-  - Out button: set loop out point manually. Hold pressed while moving
-    the jog wheel to finely adjust the loop out point.
+### Rate / Keylock
+
+There are two ways the rate sliders can be mapped: Absolute, and Relative.  Absolute mode is the default. In this mode, the position of the pitch slider matches the on-screen pitch slider position.  If the sliders are misaligned, Mixxx engages "soft takeover mode" -- Mixxx won't update the value of the slider until the controller matches the GUI. In Relative mode, moving the slider always adjusts the value of the pitch slider, even if they don't match.
+ 
+  - Absolute Mode:
+    - Keylock: Press to toggle keylock mode.
+    - Sync: Press to beatsync, or press and hold to activate Sync Lock Mode.
+    - Pitch slider: Adjusts playback speed.
+    - Shift + Pitch slider: Adjusts musical key
+  - Relative Mode:
+    - Keylock: Press to toggle keylock mode.
+    - Sync: Press to beatsync, or press and hold to activate Sync Lock Mode.
+    - Pitch slider: Adjusts playback speed.
+    - Keylock + Pitch Slider: adjusts musical key
+    - Shift + Pitch Slider: Allows the user to move the slider without any effect.
 
 ### Effects
 
-The knob on the left of each effect unit controls the mix (dry/wet) knob
-for all 3 effects in the unit. The other knobs control the metaknobs of
-the effects. The buttons below the metaknobs control the effect enable
-buttons. When pressed with shift, they cycle through the available
-effects. The button below the mix knob toggles whether the effect
-parameters are showing on screen. This will be expanded in a future
-update to implement the [Standard Effects
-Mapping](Standard%20Effects%20Mapping).
+The FX setup is unusual on this controller.  Each deck has a single toggle button for effects, and on the right-hand side of the mixer there are five buttons that determine which effects are applied to every channel that has effects on.  This means it is not possible to use the controller to select one effect for one deck, and another effect for another.  You can still make these choices in the Mixxx UI, however.
 
-The buttons at the top of each mixer column control which decks are
-routed to which effects units.
+When the Filter Enable button is off, the knob still controls the default QuickEffect, even if that button is not lit in the FX section. When the Filter Enable button is on, the QuickEffect is only enabled if the Filter FX Select button is on.  This means the QuickEffect is available on channels that don't have any other effects active.
 
 ### Mapping options
 

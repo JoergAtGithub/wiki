@@ -115,6 +115,11 @@ When the Filter Enable button is off, the knob still controls the default QuickE
 
 ### Mapping options
 
+There are two user-friendly customizations possible on the S3:
+
+  1. Toggle between Absolute and Relative pitch slider mode.
+  1. Customize the colors for decks A, B, C, and D.
+
 Making these changes is still a little awkward and we will be making
 controller preferences easier to change in the future. For now you'll
 have to make a small change to the mapping script file. Don't worry, the

@@ -23,7 +23,7 @@ it in daylight, and increases the volume of the headphone output.
 
 ### Controller
 
-The Kontrol S3 is a USB class compliant audio, HID, and MIDI device,
+The Kontrol S3 is a USB class compliant audio and HID device,
 so it is compatible with Mixxx without any proprietary drivers on
 GNU/Linux and Mac OS X. On Windows, it is recommended to install the
 [driver from Native

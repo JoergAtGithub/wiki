@@ -11,16 +11,15 @@
 discussion on
 [Zulip](https://mixxx.zulipchat.com/#narrow/stream/109171-development/topic/Rhythm.20Detector))
 
+# What is rhythm?
 
-Temporal and structural regularities - *I.e.* rhythm - are together with
-melody and harmony the most prominent characteristics of music, but the
-rhythm is by far the one that offers the biggest incentive and easiest
-way to interact physically with the music, which can be simple in the
-form of just taping the foot or nodding the head to the beat to dancing
-to elaborate piece-long choreographies or all night long on a
-dancefloor. We define music rhythm is a hierarchical structure as
-follows:
+In daily life "rhythm" is used to refer to patterns of temporal distributions of events. More strictly in music, rhythm refers to the explicit division of time into recurrent and periodic intervals of space.
 
+Rhythm are together with melody and harmony the most prominent characteristics of music, but the rhythm is by far the one that offers the biggest incentive and easiest way to interact physically with the music and play the biggest role when mixing tracks together.
+
+# What defines the perception of the rhythm
+
+![RhythmElements](https://user-images.githubusercontent.com/61819301/90592196-5e924680-e1bb-11ea-9ddc-54188f89fee4.png)
 
 # What are tempo and beat?
 
@@ -79,25 +78,26 @@ A duple meter is made of 2 beats, similarly a triple meter of 3 beats, quadruple
 In a simple meter the beats are divided into groups of 2, in a compound meter the beats are divided into groups of 3.
 The meter implies our strong beats. In a duple meter every 2 beats is accented, in a compound meter every 3. Also every first beat of the meter is made even stronger (ie: downbeat), So on a simple quadruple meter, the first of every 4 beats is the (**S**)strongest, but the third beat is also (s)strong while the 2 and 4 are (w)weak. There is a strong correlation between the time signature and the meter but it's not always possible to unequivocally map one to another.
 
-A simple duple meter is traditionally written as 2/4. (**S**,w|**S**,w)
+A simple duple meter is traditionally written as 2/4. 1 group of 2 quarters. (**S**,w|**S**,w)
 
-A simple triple meter is traditionally written as 3/4. (**S**,w,w|**S**,w,w)
+A simple triple meter is traditionally written as 3/4. 1/2 group of 2 quarters. (**S**,w,s|**S**,w,s)
 
-A simple quadruple meter is traditionally written as 4/4.(**S**,w,s,w|**S**,w,s,w) 
+A simple quadruple meter is traditionally written as 4/4. 2 groups of 2 quarters. (**S**,w,s,w|**S**,w,s,w) 
 
 These are the only meters that can be simple. Although the quarter note is usually used to describe simple meters this can be any note length.
 
-Next these are the compound meters, which are usually written in eight note length, but again this can be any note.
-A 6/8 time signature, has 6 eight notes, in theory this means they can be grouped in 3 * 2, or 2 * 3. But actually they can be only be grouped as 3 * 2, resulting in a compound duple meter. A 2 * 3 group is essentially two simple triple meters, but the simple triple meter is already reserved for the 3/4 time signature. Any time a 6 appears on top it means a compound duple. ie: 6/2, 6/8, 6/16 and so on. (**S**,w,s,w,s,w|)
+Next, are the compound meters, which are usually written in eight note length, but again this can be any note.
 
-A 9/8 signature is a compound triple. (**S**,w,w,s,w,w,s,w,w|)
+A 6/8 time signature, has 6 eight notes, which could be the same as a 3/4. But these are actually different organization of beats. The 3/4 time signature is reserved for grouping 3 beats that can be divided into 2 eights each, while the 6/8 represents 2 groups of 3 eight beats. (**S**,w,w,s,w,w|)
 
-A 12/8 time signature is a compound quadruple (**S**,w,w,w,s,w,w,w,s,w,w,w|)
+A 9/8 signature is a compound triple. 3 groups of 3 eights notes (**S**,w,w,s,w,w,s,w,w|)
+
+A 12/8 time signature is a compound quadruple. 4 groups of 3 eights notes (**S**,w,w,s,w,w,s,w,w,s,w,w|)
+
 
 # Odd and (n)tuples meters
 
-In a odd meter the beats are divided into compound and simple divisions that can happen in any order.
-The most common are the quintuple and septuple meters.
+In a odd meter the beats are divided into compound and simple divisions that can happen in any order. The most common are the quintuple and septuple meters.
 
 A 5/n time signature means the beats can be divided into 1 compound and 1 simple division. (**S**,w,s,w,w|)(**S**,w,w,s,w|) are both valid quintuple meters for example.
 
@@ -107,7 +107,9 @@ Despite the name a (even-n)tuple can also be an odd meter, that's why they are a
 A 8/n time signature for example means 2 compound and 1 simple division.
 A 10/n time signature for example means 2 compound and 2 simple division. 
 
-A complex meter can be made with any beats per bar that is not reserved for a simple or compound meter, with any beat length.
+A complex meter can be made with any beats per bar that is not reserved for a simple or compound meter, with any beat length. 
+
+A complex meter is also called an additive meter and in fact can be written as two consecutive bars with different time signature. A 7/8 bar for example can be the same as one 6/8 bar followed by a 4/4 bar.
 
 # The problem of automatic meter detection
 

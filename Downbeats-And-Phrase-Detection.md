@@ -95,7 +95,7 @@ A 9/8 signature is a compound triple. 3 groups of 3 eights notes (**S**,w,w,s,w,
 A 12/8 time signature is a compound quadruple. 4 groups of 3 eights notes (**S**,w,w,s,w,w,s,w,w,s,w,w|)
 
 
-# Odd and (n)tuples meters
+# Odd, (n)tuples and additive meters
 
 In a odd meter the beats are divided into compound and simple divisions that can happen in any order. The most common are the quintuple and septuple meters.
 
@@ -134,14 +134,18 @@ A detailed data flow of the internals working of the rhythm analyzer:
 ![RhythmAnalyzerDataFlow](https://user-images.githubusercontent.com/61819301/90569626-96ca6280-e184-11ea-904e-0f67ba673e13.png)
 
 
-# Final month schedule:
+# Final days schedule:
 
-Week 1: Finish working on the tempo detection as an optimization problem - Improve phase correction algorithm so that two bpms adjacent bpm values are less than 5% apart. Finish working on removing arrhythmic regions - Use the onsets energy to detect regions that lack strong percussive sounds.
+19/8 - Finish bar line and phrase beat detector. Infer most likely beats per bar and phrase length from meter hierarchy and use the beats spectral difference from QM Downbeat to find the positions that led to the highest difference. 
 
-Week 2: Use freely available C++ tempogram implementation on the analyzer. Implement the proposed multiplication of ACF and DFT to improve it's robustness.
+20/8 - Work on make grid method. Use downbeat and phrases to make longest possible fixed tempo grid keeping the detected beats inside a 25ms phase threshold when possible.
 
-Week 3: Implement musically informed peek-picking algorithm to extract the metric level pulse rates.
+21/8 - Finish make grid method. When not possible to make fixed grids make sure no two adjacent tempos are no more than 0.03% apart. Or at least try to make them as close as possible in this case by making smaller grids.
 
-Week 4: Use Chordino to output chord changes, try to align the measure pulse rate to chord changes.  
+22/8 - Address open review issues, general code clean up.
 
-Meanwhile polish #2930 so it's ready to merge.
+24&25/8 - Make regressions tests. Write code to test the analyzer on selected annotated samples and check it's output.
+
+26&27/8 - Make benchmarks. Compare the new analyzer and old analyzer results on large datasets. Detailed evaluation on selected tracks.
+
+29/8 - Final PR update. Ready?

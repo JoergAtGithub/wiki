@@ -19,7 +19,7 @@ Rhythm are together with melody and harmony the most prominent characteristics o
 
 # What defines the perception of the rhythm
 
-![RhythmElements](https://user-images.githubusercontent.com/61819301/90592196-5e924680-e1bb-11ea-9ddc-54188f89fee4.png)
+![RhythmElements](https://user-images.githubusercontent.com/61819301/90596081-9356cb80-e1c4-11ea-979a-d3d79743d77d.png)
 
 # What are tempo and beat?
 

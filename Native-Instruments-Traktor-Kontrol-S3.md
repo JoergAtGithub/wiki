@@ -54,7 +54,8 @@ for details.
   - Filter: controls QuickEffect superknob. This controls the Filter
     effect by default, but a different effect can be chosen in the
     Equalizer section of Mixxs's Preferences.
-  - EXT: The EXT button is not yet connected.
+  - EXT: The EXT button changes the fourth channel pregain (knob), pfl, and volume (slider) adjustments to operate with the Microphone input.  The microphone does not respond to EQ or effects.
+  - Shift + EXT: Switches input from Mic to Line and back again.
 
 The Master Volume knob on the S3 controls the volume of the S3's master
 output in hardware, so it does not affect the software master gain knob

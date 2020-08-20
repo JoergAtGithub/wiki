@@ -44,17 +44,23 @@ What is the true tempo of this passage? One could argue that it is 120 BPM, but 
 
 There is no definitive or correct answer for that question. Indeed, this detail alone adds an enormous amount of complexity to the problem of beat tracking and tempo estimation. When computationally analyzing or critically listening to an audio record, all that can be used to determine the beat potions are the instants that the notes are being hit, this can create only a perception of the playing speed. However, what is of interest in most cases is the hidden "ground truth" as annotated on a sheet music or represented in digital symbolic file. The beat does not exists in the physical world, ie: air vibrations, perceived as sound. In western notation such articulations that change the perception of speed are tightly standardized, but nothing forbidden a composer or performer to invent a new one if he wishes. Computer musicians also have unlimited freedom to create on their DAWs any kind of articulations. For this reason, even extraordinarily trained individuals like professional drummers and conductors, whose have the responsibility of indicating the beat positions, for a band or an orchestra, will not always agree on "correct" beat position or "local" tempo value for an recorded music.
 
+Since we can not always define what is the true local tempo, the performance evaluation of beat tracking algorithms is a research problem on it's own.
+
 # The problem of automatic tempo detection and beat tracking
 
-Since we can not always define what is the true local tempo, the performance evaluation of beat tracking algorithms is a research problem on it's own, with several metrics proposed and used simultaneously at MIREX for example. The implementations are then tuned to achieve the highest score in some or all of these metrics, but for our use case of beat matching music together these metrics are not very useful.
+For the purpose of mixing tracks together, we need to turn tempo detection into an optimization problem: the correct BPM is the one which leads for the easiest beatmatching. The first problem we need to outcome to achieve that is the so called tempo octave error, which is doubling or halving the true tempo, to avoid that we use the quarter notes tempo even when the track has a beat with different note length. This leads to tempos that are as close as possible to the most common 120 bpm always so all tracks are in this constrained range.  
 
-For the purpose of mixing tracks together, we need to turn tempo detection into an optimization problem: the correct BPM is the one which leads for the longest sequence of detected beats to be in phase while two adjacent BPM values have the smaller possible difference. The longest sequence serves the purpose of allowing smooth(long) transitions and the smallest BPM difference allows the warping of the audio to sound unnoticeable.
+A second problem is that the algorithms (which Mixxx relies) are developed in academic settings and in their evaluations small fluctuation on the tempo on every beat, even for clicking tracks are tolerated since the only condition that need to be satisfied for a beat to be consider correct is to be within +- 4% window of the ground truth. While this is a reasonable assumption on academic setting it fails on our DJ context and makes beatmatching harder. 
+
+We want to consider the beats correct when it can be placed in equidistant positions for as long as possible, this is what allow more than one sourced to be played together in sync. On other hand we need to consider the trade-off that two equidistant sequences should have the smaller difference possible, this is what allow to stretch them when the bpm is locked without creating audible artifacts. To balance these conflicting interest we can assume that beats within a +-25ms threshold will still sound good and that a tempo change of +- 0.03% can be stretched without noticeable difference.
 
 # What are bars and time signatures?
 
-The bottom number of the time signature is the relative beat length. As a speed with beat units, the BPM is used it to determine the distance of two beats, ie: their lengths; or their duration, in an absolute unit: seconds, or milliseconds. The upper number of the time signature is called the beats per bar. As the name suggests it defines how many beats should be inside each measure. After we know the absolute beat length of the beat we can simply multiple that by the beats per bar, to determine the bar length. The main purpose of the time signature is to define the length of beats and bars, in relative terms, and with the BPM in a absolute unit of time.
+The bottom number of the time signature is the relative beat length. As a speed with beat units, the BPM is used it to determine the distance of two beats, ie: their lengths; or their duration, in an absolute unit: seconds, or milliseconds. A metronome is a device that clicks perfectly and periodically to this unit of time. 
 
-A measure is the restrict space in which the beats are placed. Since the beat length is defined as a relative fractions, we need a regular space, of a certain duration to place them. That's the bar or measure. Visually, it's defined as bar lines that organize the notes on sheet music. The main purpose of the bar is to chop the music in equal lengths so that notes of different fractional duration can balance each other to make melodies. 
+The upper number of the time signature is called the beats per bar. As the name suggests it defines how many beats should be inside each measure. After we know the absolute length of the beat we can simply multiple that by the beats per bar, to determine the bar length. The main purpose of the time signature is to define the length of beats and bars, in relative terms, and with the BPM in a absolute unit of time.
+
+A measure is the restrict space in which the beats exists, and thus where the notes happens. Since the beat length is defined as a relative fractions, we need a regular space, of a certain duration to place them. That's the bar or measure. Visually, it's defined as bar lines that organize the notes on sheet music. The main purpose of the bar is to chop the music in equal lengths so that notes of different fractional duration can balance each other to make melodies. We define note onsets, as the instant where a note is played, since only the notes exists, the first task of beat tracking is onset detection.
 
 A 4/4 measure means that it fits 4 crotchets. At a 120 BPM it means that each beat will be 0.5 seconds long. And that we have 4, 0.5s long beats in a bar, and thus a 2 seconds measure. The simplest possible melody is to play 4 crotchets of 0.5 seconds each. A different melody is to play 1 semibreve, or one note for the whole 2 seconds. Another more sophisticated melody can be played as 2 1/8 notes (2 * 0.25 = 0.5) and 1 crochets (1 * 0.5 = 0.5) and one minim (1 * 1 = 1), all totaling 2 seconds. Music is also silence, so for every note, there is an equally sized rest. So another melody could be a 1/2 rest (1 * 1 = 1) and then 16 dime-semi-quavers (16 * 0.0625 = 1) also totaling 2 seconds. We can put any combination of notes and rests inside a measure as long as we respect the size defined by the time signature, in this case, that is the same of 4 crotchets that at 120 BPM means 2 seconds. 
 
@@ -62,21 +68,26 @@ On a 3/4 measure also in 120 BPM, our beats are still 0.5 seconds long, but our 
 
 # The problem of automatic time signature and bar detection
 
-The time signature is used to describe the meter of the music, or the metrical hierarchy in which the music is divided. The problem is that a time signature does not uniquely describe a metrical structure.
-A 12/8 signature means that there are 4 beats that are further divided into 3 beats. A 9/8 signature means that there are 3 beats that are then further divided into 3 beats. Since the time signature does not define how the beats are subdivided, this means that we can write the exact same music as 4 measures of 9/8 or one single measure in 12/8 with a third of the BPM.
+The time signature holds a strong relation to the meter of the music and is what sheet music use to convey such information together with the actual notes, but it's not completely nor unmistakably on it's own.
+
+A 12/8 signature means that there are 4 beats that are further divided into 3 beats. A 9/8 signature means that there are 3 beats that are then further divided into 3 beats. Since the time signature does not define how the beats are actually subdivided into notes, we can write the exact same music as 4 measures of 9/8 or one single measure in 12/8 with a third of the BPM.
 Extracting a time signature from audio is then not only a structural problem but also a semantic one. 
 
 # The meter of the music
 
-In music time is divided into temporal units. The beat also called the "tactus" is the most prominent one, but it is not the only. We have already saw that the measure is a higher level in which the beats are grouped. Lower than the beat there is the "tatum" which is the shortest unit, described by the shortest note used in the music, the tatums are grouped to form the beats. The BPM is nothing more than the pulse rate of the beat, but all metrical levels have a pulse rate. 
-More importantly is that the perception of rhythm is created by the grouping of the beats into strong and weak units. This hierarchical and layered structure called meter defines how this grouping occurs.
+In music time is divided into pulses and several pulses exists at once on a hierarchical structure. The beat also called the "tactus" is the most prominent one, but it is not the only. We have already saw that the measure is a higher level in which the beats are grouped. Lower than the beat there is the "tatum" which is the shortest unit, described by the shortest note used in the music, the tatums are grouped to form the beats.
+
+More importantly the perception of rhythm is created by the grouping of the beats into strong and weak units which can be perceived as another pulse. This hierarchical and layered structure called meter defines how this grouping occurs.
 
 # Simple, compound; duple, triple and quadruple meters
 
 A duple meter is made of 2 beats, similarly a triple meter of 3 beats, quadruple meter of 4 beats and so on.
 
 In a simple meter the beats are divided into groups of 2, in a compound meter the beats are divided into groups of 3.
-The meter implies our strong beats. In a duple meter every 2 beats is accented, in a compound meter every 3. Also every first beat of the meter is made even stronger (ie: downbeat), So on a simple quadruple meter, the first of every 4 beats is the (**S**)strongest, but the third beat is also (s)strong while the 2 and 4 are (w)weak. There is a strong correlation between the time signature and the meter but it's not always possible to unequivocally map one to another.
+
+The meter implies our strong beats. In a duple meter every 2 beats is accented, in a compound meter every 3. Also every first beat of the measure is made even stronger (ie: downbeat), So on a simple quadruple meter, the first of every 4 beats is the (**S**)strongest, but the third beat is also (s)strong while the 2 and 4 are (w)weak. 
+
+There is a strong correlation between the time signature and the meter but it's not always possible to unequivocally map one to another.
 
 A simple duple meter is traditionally written as 2/4. 1 group of 2 quarters. (**S**,w|**S**,w)
 
@@ -88,16 +99,18 @@ These are the only meters that can be simple. Although the quarter note is usual
 
 Next, are the compound meters, which are usually written in eight note length, but again this can be any note.
 
-A 6/8 time signature, has 6 eight notes, which could be the same as a 3/4. But these are actually different organization of beats. The 3/4 time signature is reserved for grouping 3 beats that can be divided into 2 eights each, while the 6/8 represents 2 groups of 3 eight beats. (**S**,w,w,s,w,w|)
+A 6/8 time signature, has 6 eight notes, which could be the same as a 3 quarter notes. But these are actually different organization of beats. The 3/4 time signature is reserved for grouping 3 beats that can be divided into 2 eights each, while the 6/8 represents 2 groups of 3 eight notes. (**S**,w,w,s,w,w|)
 
 A 9/8 signature is a compound triple. 3 groups of 3 eights notes (**S**,w,w,s,w,w,s,w,w|)
 
 A 12/8 time signature is a compound quadruple. 4 groups of 3 eights notes (**S**,w,w,s,w,w,s,w,w,s,w,w|)
 
+It's a common practice to play these 3 eight notes, as a dotted quarter note which has the same length of 3/8, since a dot increases the length by half.
+
 
 # Odd, (n)tuples and additive meters
 
-In a odd meter the beats are divided into compound and simple divisions that can happen in any order. The most common are the quintuple and septuple meters.
+In a odd meter the beats are divided into compound and simple divisions that can happen in any order.  While some music happen exclusively in those, especially the most commons quintuple and septuple meters. These divisions are often used to create complex, weird, rhythms since with creativity the stressed notes can happen anywhere, and the weak beats often have no notes in such cases. A lot of music that are written on the ordinaries time signatures often uses such odd meters very sparsely to add some special characteristic on some part of it.
 
 A 5/n time signature means the beats can be divided into 1 compound and 1 simple division. (**S**,w,s,w,w|)(**S**,w,w,s,w|) are both valid quintuple meters for example.
 
@@ -136,16 +149,14 @@ A detailed data flow of the internals working of the rhythm analyzer:
 
 # Final days schedule:
 
-19/8 - Finish bar line and phrase beat detector. Infer most likely beats per bar and phrase length from meter hierarchy and use the beats spectral difference from QM Downbeat to find the positions that led to the highest difference. 
+20/8 - Implement rhythm analyzer preferences.
 
-20/8 - Work on make grid method. Use downbeat and phrases to make longest possible fixed tempo grid keeping the detected beats inside a 25ms phase threshold when possible.
+21/8 - Implement rhythm analyzer interface for passing detecting results other than the beats.
 
-21/8 - Finish make grid method. When not possible to make fixed grids make sure no two adjacent tempos are no more than 0.03% apart. Or at least try to make them as close as possible in this case by making smaller grids.
+22&23/8 - Implementing testing facilities.
 
-22/8 - Address open review issues, general code clean up.
+24/8 - Finish bar line and phrase beat detector. Infer most likely beats per bar and phrase length from meter hierarchy and use the beats spectral difference from QM Downbeat to find the positions that led to the highest difference. 
 
-24&25/8 - Make regressions tests. Write code to test the analyzer on selected annotated samples and check it's output.
+25/8 - Work on make grid method. Use downbeat and phrases to make longest possible fixed tempo grid keeping the detected beats inside a 25ms phase threshold when possible.
 
-26&27/8 - Make benchmarks. Compare the new analyzer and old analyzer results on large datasets. Detailed evaluation on selected tracks.
-
-29/8 - Final PR update. Ready?
+26/8 - Finish make grid method. When not possible to make fixed grids make sure no two adjacent tempos are no more than 0.03% apart. Or at least try to make them as close as possible in this case by making smaller grids.

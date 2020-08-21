@@ -59,9 +59,12 @@ for details.
 
 The Master Volume knob on the S3 controls the volume of the S3's master
 output in hardware, so it does not affect the software master gain knob
-in Mixxx. Peak display is only generated from software, however. So if
-you see or hear clipping, lower the gain of the playing decks; adjusting
-the master volume knob on the S3 will not help.
+in Mixxx by default. You can hold shift and turn the knob to adjust Mixxx's
+master gain.  Note that this will still also adjust the hardware gain, so
+after you release shift you'll need to adjust the knob again.
+
+Peak display is only generated from software. So if
+you see clipping indicated, lower the gain of the playing decks or use Shift + Master Volume.
 
 ### Decks
 

@@ -132,7 +132,7 @@ sysex](Serato%20sysex) message.
 
 For example, if there are 40 LEDs on your controller that respond to
 MIDI note numbers 1 through 40 that turn on when sent value 0x7f and
-turn on when sent value 0x00, your script could start with:
+turn off when sent value 0x00, your script could start with:
 
     var MyController = {};
     

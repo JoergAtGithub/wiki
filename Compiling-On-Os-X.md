@@ -49,7 +49,7 @@ have already installed Homebrew and gotten it working:
 
 <!-- end list -->
 
-    brew install scons pkg-config portaudio libsndfile libogg libvorbis portmidi git taglib libshout protobuf flac libjpeg qt5 chromaprint rubberband fftw vamp-plugin-sdk opusfile lilv lame
+    brew install scons pkg-config portaudio libsndfile libogg libvorbis portmidi git taglib libshout protobuf flac libjpeg qt5 chromaprint rubberband fftw vamp-plugin-sdk opusfile lilv lame qtkeychain
 
 Next you need to set your environment variables so that the compiler can
 find Homebrew-installed dependencies. In the below code you should

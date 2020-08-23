@@ -46,7 +46,7 @@ Set the **Generation path** field to `cmake_build`:
 CLion will generate the build files in this folder, which will be
 created in the root path of the project. Don't commit this folder.
 Configure git to exclude it. Open `.git/info/exclude` and append
-`cmake-build/` in a new line.
+`cmake_build/` in a new line.
 
 Click **OK** to save the changes and close the preferences window.
 

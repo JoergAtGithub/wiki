@@ -27,8 +27,11 @@ As of Mixxx 2.2, Mixxx uses Qt's automatic scaling for high pixel
 density screens. Unfortunately, this does not always work well.
 Sometimes it uses scaling to make the GUI too big on screens that do not
 need scaling, or if your screen does require scaling you may prefer a
-different size than the automatically determined default. You can
-disable automatic scaling with...
+different size than the automatically determined default.  
+You can disable automatic scaling with `QT_AUTO_SCREEN_SCALE_FACTOR=0`.  
+You can also apply a specific scale factor (for example 1.5 = 150%):  
+`QT_SCALE_FACTOR=1.5` or `QT_SCREEN_SCALE_FACTORS=1.5` while the latter overwrites `QT_SCALE_FACTOR`.  
+For supported operating systems the commands to apply scaling options vary:
 
 **<span class="underline">Linux</span>**
 
@@ -42,7 +45,7 @@ set a scale factor by running
     export QT_SCREEN_SCALE_FACTORS=your-scale-factor
 
 To avoid needing to run these commands every time you run Mixxx, you can
-add them to /etc/profile or \~/.bashrc (assuming you are using Bash as
+add them to `/etc/profile` or `~/.bashrc` (assuming you are using Bash as
 your shell), log out, and log back in.
 
 **<span class="underline">Windows</span>**
@@ -56,12 +59,12 @@ You can also manually set a scale factor by running
     set QT_SCREEN_SCALE_FACTORS=your-scale-factor
 
 Then type the full path to your Mixxx.exe file, or cd to the directory
-where it is and run it. Usually "C:\\Program Files\\Mixxx\\Mixxx.exe"
+where it is and run it. Usually `C:\\Program Files\\Mixxx\\Mixxx.exe`
 
 To avoid needing to run these commands every time you run Mixxx, you can
-create batch file (which is a text file with the extensions .bat or
-.cmd) with the set QT\_AUTO\_SCREEN\_SCALE\_FACTOR=0 line, and the full
-path to Mixxx.exe. Then doubleclick this file instead of Mixxx shortcut
+create a batch file (which is a text file with the extensions .bat or
+.cmd). It should contain the commands you need, each on a separate line.
+Then doubleclick this file instead of Mixxx shortcut
 to launch it.
 
 Refer to [Qt's

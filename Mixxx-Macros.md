@@ -221,7 +221,7 @@ Sa:
 
 Mo: Recording Macros works!
 
-Unfortunately I wasn't able to do any further this week due to an interference.
+*Unfortunately I wasn't able to do any further this week for medical reasons.*
 
 ### CW 27
 
@@ -263,11 +263,12 @@ Tu:
 - Implemented Macro deserialization
 - Clean up & Improve code
 
-*Family & Camp preparation intervened*
+*Family & Camp preparation prevailed.*
 
 ### CW 30
 
-Little chance to work as I'm away.
+*Little chance to work as I'm away.*
+
 - C++ Research (e.g. lambdas)
 - Coding Style fixes & tests
 
@@ -331,17 +332,31 @@ Th:
 - Improve MacroDAO
 
 Fr:
-- Implement MacroControl button controls
+- Implement MacroControl ControlPushButtons
+- Update Database
 
 ### CW 34
 
-Mo:
+Mo: Save Macros via Track, add Playback to MacroControl & update COs
 
-Tu:
+Tu: Implement MacroPtr & Improve DAO
+
+We: Refactorings
+
+Th: Improved controls & Added first MacroControl test
+
+Fr: *Travel*
+
+
+### CW 34
+
+Mo: Debug MacroControl tests
+
+Tu: MacroControl + Tests working!
 
 We:
+- Test MacroControl with controller (Traktor Kontrol F1)
+- Finalize documentation & blog post
 
-Th:
-
-Fr:
+Th: Merge & submit
 

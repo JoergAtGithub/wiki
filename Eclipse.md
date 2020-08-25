@@ -218,8 +218,9 @@ icon).
     `
   - Non-Mac users should use GDB for debugging in Eclipse
     ([GDB](https://www.gnu.org/software/gdb/)).
-  - Your `.gdbinit` should be setup before`dir
-    ~/eclipse-workspace/qt5/src/corelib
+  - Your `.gdbinit` should be setup before
+    ```
+    dir ~/eclipse-workspace/qt5/src/corelib
     dir ~/eclipse-workspace/qt5/src/corelib/io
     dir ~/eclipse-workspace/qt5/src/corelib/tools
     dir ~/eclipse-workspace/qt5/src/gui
@@ -241,7 +242,8 @@ icon).
     end
     set print pretty 1
     set charset UTF-8
-    `
+    ```
+
   - Qt pretty printer
     [qt.py](https://github.com/KDE/kdevelop/blob/master/plugins/gdb/printers/qt.py).
   - "Debug" button for run Mixxx.

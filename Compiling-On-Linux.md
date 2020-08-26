@@ -75,6 +75,11 @@ sudo dnf install gcc-c++ lame-devel
 sudo dnf builddep mixxx
 ```
 
+if you are building the master branch before the 2.4 release, you also need to install qt5-declarative:
+```sh
+sudo dnf install qt5-declarative-devel
+```
+
 ### Arch & Derivatives
 
 If you are developing in Arch, you should have the

@@ -313,9 +313,8 @@ these buttons jumps 32 beats. *This section needs further development.*
 
 44\. **Slip:** Press this button to enable or disable Slip Mode. In Slip
 Mode, you can jump to cue points, trigger loop rolls, or use the
-platters, while the track’s timeline continues. In other words, when you
-stop the action, the track will resume normal playback from where it
-would have been if you had never done anything (i.e., as if the track
+platters, while the track’s timeline continues. Once disabled, the audible
+playback will resume where the track would have been if you had never done anything (i.e., as if the track
 had been playing forward the whole time).
 
 45\. **Censor / Rev:** Press this button to activate the Backspin

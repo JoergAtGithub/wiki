@@ -356,6 +356,12 @@ Tu: MacroControl + Tests working!
 
 We:
 - Test MacroControl with controller (Traktor Kontrol F1)
-- Finalize documentation & blog post
+- Final refactorings
 
-Th: Merge & submit
+Th:
+- Fix remaining issues & tests
+- Work on blog post
+
+Fr:
+- Review blog post
+- Final reviews

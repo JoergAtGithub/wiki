@@ -5,7 +5,9 @@ bug](reporting%20bugs) or ask for help on the Mixxx forum or IRC
 channel, please attach your `mixxx.log` file to help us help you. This
 is a plain text file that can be read with any text editor.
 
-  - **Linux:** \~/.mixxx/mixxx.log
+  - **Linux:** \~/.mixxx/mixxx.log  
+    Note: make sure you have 'Show hidden files' enabled in your file manager
+    in order to show all dot-files and folders.
   - **Windows:** `%LOCALAPPDATA%\Mixxx\mixxx.log` on Vista and up,
     `%USERPROFILE%\Local Settings\Application Data\Mixxx\mixxx.log` on
     XP and below. (You can just type either of those into the Location

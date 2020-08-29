@@ -1,2 +1,2 @@
 This page is deprecated. Please see the [Compiling on
-Linux](compiling_on_linux) page.
+Linux](compiling-on-linux) page.

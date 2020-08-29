@@ -10,28 +10,24 @@ updated with the appropriate instructions yet.*
 
 ## Programs to install
 
-  - Visual Studio 2017 Community Edition or the Visual Studio 2017 Build
-    Tools.
-  - (Visual Studio 2015 may work, but will likely stop working once we
+  - Visual Studio 2017 Community Edition or the Visual Studio 2017 Build Tools.  
+    (Visual Studio 2015 may work, but will likely stop working once we
     start using C++ features that are not implemented by VS2015).
-  - [Python](http://python.org/download/) 2.7.x. Ensure Python is on
+  - [Python](http://python.org/download/) 2.7.x  
+    Ensure Python is on
     your system PATH (there is an option in the installer to do this).
-    Don't use Python 3.x as [Scons is not compatible with
-    it](https://github.com/SCons/scons/wiki/FrequentlyAskedQuestions#what-version-of-python-do-i-need).
-  - [SCONS](http://scons.org/pages/download.html) (download the latest
-    version).
-  - A Git client like [Git for
-    Windows](https://git-scm.com/download/win),
-    [TortoiseGit](https://code.google.com/p/tortoisegit/) or the [github
-    windows
-    client](http://github-windows.s3.amazonaws.com/GitHubSetup.exe)
+    Don't use Python 3.x as [Scons is not compatible with it](https://github.com/SCons/scons/wiki/FrequentlyAskedQuestions#what-version-of-python-do-i-need).
+  - [Latest version of SCONS](http://scons.org/pages/download.html)
+  - A Git client like [Git for Windows](https://git-scm.com/download/win),
+    [TortoiseGit](https://code.google.com/p/tortoisegit/) or the
+	[github windows client](http://github-windows.s3.amazonaws.com/GitHubSetup.exe)
     (featuring a unix like command line)
 
 ## Acquire Mixxx dependencies
 
-To build Mixxx, you need built copies of its dependencies. You may
-download pre-built versions of them from the Mixxx team (recommended) or
-build them from source.
+To build Mixxx, you need built copies of its dependencies.
+You may download pre-built versions of them from the Mixxx team (recommended)
+or build them from source.
 
 ### Option 1: Download pre-built Mixxx dependencies
 
@@ -71,8 +67,7 @@ which the repository was saved. We will refer to that folder as
 If you want to build the Mixxx dependencies from source instead of
 downloading pre-built ones:
 
-1.  Clone the [Mixxx
-    buildserver](https://github.com/mixxxdj/buildserver) repository.
+1.  Clone the [Mixxx buildserver repository](https://github.com/mixxxdj/buildserver).  
     Remember the folder to which the repository was saved. We will refer
     to that folder as **WINLIB\_PATH** later.
 2.  In the buildserver repository, checkout the **2.?.x-windows**
@@ -81,11 +76,11 @@ downloading pre-built ones:
 3.  Start a Windows command prompt (you do not need a Windows SDK
     command prompt). Open the Start Menu and type "cmd" into the search
     box and hit enter. 
-4.  change into the **WINLIB\_PATH** directory.
-    1.  `cd WINLIB_PATH_GOES_HERE`
+4.  Change into the **WINLIB\_PATH** directory.  
+    `cd WINLIB_PATH_GOES_HERE`
 5.  Build the environment:
-    1.  32-bit: `build_environment x86 Release`
-    2.  64-bit: `build_environment x64 Release`
+    - 32-bit: `build_environment x86 Release`
+    - 64-bit: `build_environment x64 Release`
 
 This step will take 2-3 hours depending on how many CPU cores you have.
 Go have lunch.
@@ -98,7 +93,10 @@ Go have lunch.
 2.  Start a command prompt (it doesn't need to be a Windows SDK prompt)
     and change into the **MIXXX\_REPO** directory.
 3.  If you are building Mixxx 2.1 or 2.2, create a file called
-    `build.bat` with the following content: ` @echo off
+    `build.bat` with the following content:
+
+    ```bat
+	@echo off
     SETLOCAL
     REM Clean up after old builds.
     del /q /f *.exe
@@ -147,17 +145,20 @@ Go have lunch.
     optimize=portable virtualize=0 test=1 qt_sqlite_plugin=0
     build_number_in_title_bar=0 bundle_pdbs=1
     ENDLOCAL
-         ` This script will setup the build environment and call scons with
+    ```
+
+	This script will setup the build environment and call scons with
     the appropriate flags. You have to edit the **WINLIB\_PATH**
     variable and set it to the absolute path of the folder where you
     compiled the dependencies for mixxx. If you build the environment
     yourself instead of using the precompiled environment, you will need
     to adjust the **QTDIR** variable too.
 
-<!-- end list -->
+    If you are building Mixxx 2.3, create a file called `build.bat` with
+    the following content
 
-1.  If you are building Mixxx 2.3, create a file called `build.bat` with
-    the following content `@echo off
+	```bat
+	@echo off
     SETLOCAL enableDelayedExpansion
     
     if "%1" == "clean" (
@@ -218,8 +219,9 @@ Go have lunch.
     %LOCAL_WINLIB_PARENT%\%LOCAL_WINLIB_NAME% skiptest skipinstaller
     
     ENDLOCAL
-    `
-2.  When you are ready, type: `build.bat`
+    ```
+
+4.  When you are ready, type: `build.bat`
 
 ## Build 64bit version of Mixxx
 

@@ -141,7 +141,9 @@ Planned Deliverable: Macros can be recorded, saved and played back
 - CW 29: Database
 - (CW 30)
 
-Result: Unit & end to end testing, Macros can be saved
+Result:
+- Unit & end to end testing
+- Macros can be saved
 
 **August**
 
@@ -150,7 +152,12 @@ Planned Deliverables: Controls mapped to a skin and controller, Macros are autom
 - CW 31: Playback
 - CW 32: Design controls & integrate into a skin
 
-Tasks:
+Result:
+- Recording & Playback working correctly
+- Added MacroControl with COs as major architectural redesign
+- Unfortunately no visual feedback apart from controllers
+
+Extras:
 - Loop mode
 - Enable Import from Serato & explore possibilities for sharing
 - Waveform highlighting for upcoming jumps
@@ -263,11 +270,11 @@ Tu:
 - Implemented Macro deserialization
 - Clean up & Improve code
 
-*Family & Camp preparation prevailed.*
+*Holidays*
 
 ### CW 30
 
-*Little chance to work as I'm away.*
+*Holidays*
 
 - C++ Research (e.g. lambdas)
 - Coding Style fixes & tests
@@ -359,9 +366,16 @@ We:
 - Final refactorings
 
 Th:
-- Fix remaining issues & tests
 - Work on blog post
+- Macro & Track dirtiness
+- Update controller mapping & COs
+- Many misc fixes
 
 Fr:
-- Review blog post
-- Final reviews
+- Debug slots
+- Make Status enum class & fix status checks
+
+Sa:
+- Debug failing tests
+- Address reviews
+- Document PR

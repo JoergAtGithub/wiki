@@ -507,8 +507,11 @@ File includes should be done in the following order:
 Each different group of includes should be separated by a single empty
 line. **Order the includes in alphabetical order.** Relative includes
 **should never be used**. Always include Mixxx local files by specifying
-them from the root of the `src` folder. Do not forward declare any
-classes other than Mixxx project classes.
+them from the root of the `src` folder.
+
+Generally do not forward declare any classes other than Mixxx project classes.
+For forward declarations of *Qt* types use the `QT_FORWARD_DECLARE_CLASS` macro
+that is defined in `<QtGlobal>`.
 
 **Example:**
 
@@ -523,6 +526,8 @@ classes other than Mixxx project classes.
 #include <taglib/taglib.h>
 
 #include "library/library.h"
+
+QT_FORWARD_DECLARE_CLASS(QDomNode);
 
 class Cue;
 ```

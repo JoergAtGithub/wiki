@@ -498,11 +498,12 @@ Replace these with `#pragma once` when you edit a header file.
 
 File includes should be done in the following order:
 
-1.  System Includes
-2.  Qt Includes
-3.  Includes of Mixxx library dependencies
-4.  Mixxx local includes
-5.  Class forward-declarations
+1.  Matching header file include for current cpp file (if applicable)
+2.  System Includes
+3.  Qt Includes
+4.  Includes of Mixxx library dependencies
+5.  Mixxx local includes
+6.  Class forward-declarations
 
 Each different group of includes should be separated by a single empty
 line. **Order the includes in alphabetical order.** Relative includes

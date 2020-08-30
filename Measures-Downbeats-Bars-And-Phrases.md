@@ -66,7 +66,9 @@ I favour a test-driven approach and tried my best to create new tests for the co
 ## Journey so far
 
 It's been a great experience working with Mixxx and I am glad to be a part of an active community that combines two of my interests. I greatly enjoyed working on my pre-GSoC PR creating `WTrackMenu` which added a menu to decks and samplers in addition to the track table. I personally use it quite often now.
+
 The time and effort put in by my mentors into my project are really appreciable and I learnt a lot during the course of the project, be it design choices, C++ semantics or architecture planning. The architectural and data structure challenges throughout the course of the project kept me technically inspired.
+
 I would like to thank the entire community as a whole in addition to my primary mentors for taking a huge interest in my project and adding valuable inputs to discussions and PR reviews.
 
 # Original Proposal

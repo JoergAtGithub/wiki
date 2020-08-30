@@ -9,6 +9,68 @@
 **Related Project:**
 [Downbeats-And-Phrase-Detection](https://github.com/mixxxdj/mixxx/wiki/Downbeats-And-Phrase-Detection)
 
+# GSoC 2020 Work Product
+
+During the community bonding period, I added cue menu to the scrolling waveform which was only available to the overview waveform. This served as an important precursor to my project since it requires interactions on the scrolling waveform, which were non-existent earlier.
+
+[#2783](https://github.com/mixxxdj/mixxx/pull/2783) summarises that work.
+
+With the commencement of the coding period, we decided I should begin with some UI. So I added downbeat triangles to the scrolling waveform renderer. Initially, support for 4/4 time signature was added and every fourth beat was accented with downbeat triangles.
+
+Thanks to the presence of downbeats, we could now zoom out even further out of the scrolling waveform by displaying only the downbeats at high zoom out levels, thus reducing clutter on display and only displaying meaningful information.
+
+This PR also introduces the new `Beat` class which encapsulates all properties a beat may store, whether it is a beat or downbeat and its index.
+
+[#2844](https://github.com/mixxxdj/mixxx/pull/2844) summarises the initial work.
+
+Due to the added metadata, it was necessary to start working on the data format. So I continued past work which aimed at making the `Beats` class non-polymorphic by removing `BeatMap` and `BeatGrid`. Although a polymorphic approach for containing beats of different nature sounds appropriate, `BeatMap` was mostly causing trouble with DJing operations. The past work only aimed at preserving `BeatMap` essentially moving its implementation to `Beats` class, so this could not clearly support our use case.
+
+So I started working in another PR [#2861](https://github.com/mixxxdj/mixxx/pull/2861) starting off by fixing all broken tests, without which the core functionality of Mixxx was rendered dysfunctional. This was an important PR since we had to fixate on a Beats protocol buffer data structure with **minimal base state**.
+
+An important refactor this PR introduced was the creation of a new `Frame` class. Earlier, Mixxx used sample positions to reference a point in the track, but the sample position is channel dependent. So I refactored a lot of existing code to use `Frame` which means the elimination of perplexing frame-sample conversions. Creating this class was a dive into building correct semantic architecture with C++. I discovered the granularity of control and what operations are considered appropriate when creating a class.
+
+At this point, more of my work started in the direction of improving the existing code architecture and it was a great learning experience.
+
+Using the new Beats protobuf format meant that old beat grid data could be broken when someone upgrades Mixxx to a newer version. Fortunately, `BeatFactory` provided an easy interface to write the migration path.
+
+We took a step ahead in the direction of creating a sample independent data structure by basing the markers (BPM, Time Signature) on beat or bar indices. This facilitates the deterministic regeneration of beats from the minimal beats data.
+
+The new beats protobuf structure was still controversial so we decided that I should start implementing UI and editing operations on top of the new beats. So we decided to merge [#2844](https://github.com/mixxxdj/mixxx/pull/2844) and [#2861](https://github.com/mixxxdj/mixxx/pull/2861) closing them in favour of [#2961](https://github.com/mixxxdj/mixxx/pull/2961). This was necessary to gain confidence in the new beats format.
+
+I created a new widget to edit the time signature at any downbeat in the track. With this widget, we can change the time signature for any bar in the track. A similar menu was created to edit BPM at any beat in the track.
+
+Play marker is a rendering component of the scrolling waveform and unlike other components which are modular, it was included with code where it did not belong. So I factored it out to its own renderer.
+
+A major architectural change was the redesign of the `Beats` class inheriting from `QObject`. The earlier design was problematic since it allowed a `QObject` to be copied and any client could create `Beats` object by injecting `TrackPointer` which led to cyclic dependency and is overall bad design. So the first step was to separate the hull inheriting from `QObject` which takes care of locking in the multithreaded GUI environment and signal-slot connections. By allowing only the `Track` to create `Beats` object, the cyclic dependency could be removed and the `Track` now holds direct control over `Beats`.
+
+Nearing the end of GSoC, I fixed a major bug which was caused due to ignoring the `BeatGrid` nature of the `Beats` and limiting ourselves to a `BeatMap`. Beats needed to be created dynamically outside the boundaries of the track and cached inside the track. This fixed DJing operations like beat jumping before the track.
+
+I favour a test-driven approach and tried my best to create new tests for the code I added and even improved old tests to increase the range of coverage.
+
+[#2961](https://github.com/mixxxdj/mixxx/pull/2961) is not merged as of now as we do not have a strong consensus on the Beats protobuf format. This decision cannot be arbitrary since it may break old user data. This PR also needs more seamless UX for beat grid editing, though it can be handled in another PR, this will be helpful to gain confidence in the new data structure.
+
+## Remaining work
+
+### In this PR
+
+* Fix existing tests and add more tests to check old and new behaviour.
+* Create a more seamless editing UX.
+* Discuss more with the community and fixate on the ideal Beats protobuf data structure.
+* Find and fix any remaining architectural flaws.
+
+### Further in the project
+* Create section overview widget under overview waveform and section renderer for scrolling waveform.
+* Add phrase display to section display.
+* Improve DJing operations aided by the new metadata.
+
+## Journey so far
+
+It's been a great experience working with Mixxx and I am glad to be a part of an active community that combines two of my interests. I greatly enjoyed working on my pre-GSoC PR creating `WTrackMenu` which added a menu to decks and samplers in addition to the track table. I personally use it quite often now.
+The time and effort put in by my mentors into my project are really appreciable and I learnt a lot during the course of the project, be it design choices, C++ semantics or architecture planning. The architectural and data structure challenges throughout the course of the project kept me technically inspired.
+I would like to thank the entire community as a whole in addition to my primary mentors for taking a huge interest in my project and adding valuable inputs to discussions and PR reviews.
+
+# Original Proposal
+
 This is the final
 [proposal](https://drive.google.com/file/d/1Micg2kqdE-XpCIgcjb58CrZoqrgIHUnv/view?usp=sharing)
 that got accepted in GSoC 2020.

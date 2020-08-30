@@ -8,28 +8,22 @@ for background on the project.
 
 ## Controls
 
-### \[MacroRecording\]
-
-| Key/Control | Range          | What it does                                                                                              | On-screen feedback |
-|-------------|----------------|-----------------------------------------------------------------------------------------------------------|--------------------|
-| record      | binary         | Arms Macro recording & stops it                                                                           | Recording icon     |
-| status      | 0-2, read-only | Indicates whether a Macros is being recorded: 0 = no recording, 1 = recording armed, 2 = recording active | Recording icon     |
-| deck?       | integer        | The deck the Macro is being recorded to (0 if the recording\_status \!= 2)                                | Toggle Button      |
-
 ### \[ChannelN\]
 
-| Key/Control        | Range              | What it does                                                                                           |
-| ------------------ | ------------------ | ------------------------------------------------------------------------------------------------------ |
-| macros\_show(?)    | binary             | Whether to show the Macro Rack for this channel                                                        |
-| macro\_X\_status   | -1 - 2, read-only  | -1=unset, 0=off, 1=armed, 2=running |
-| macro\_X\_enabled  | binary             | Whether this Macro will automatically be started when the track is loaded                              |
-| macro\_X\_loop     | binary             | Whether this Macro should loop infinitely                                                              |
-| macro\_X\_activate | binary             | If Macro X exists, seek to the first action and start it. If Macro X is unset, start recording for it. |
-| macro\_X\_set      | binary             | Record a Macro to slot X                                                                               |
-| macro\_X\_clear    | binary             | If Macro X is set, delete it and remove it from the Rack                                               |
+Currently implemented: status, activate, toggle, clear
+
+| Key/Control        | Range              | What it does                                                                                  |
+| ------------------ | ------------------ | --------------------------------------------------------------------------------------------- |
+| show\_macros       | binary             | Whether to show the Macro Rack for this channel                                               |
+| macro\_X\_status   | -1 - 4, read-only  | -1=no track loaded, 0=empty, 1=recording armed, 2=recording, 3=recorded, 4=playing            |
+| macro\_X\_enabled  | binary             | Whether this Macro will automatically be started when the track is loaded                     |
+| macro\_X\_loop     | binary             | Whether this Macro should loop infinitely                                                     |
+| macro\_X\_activate | binary             | If playing, seek to beginning and start over. If recorded, enable. If unset, start recording. |
+| macro\_X\_toggle   | binary             | If playing, stop. If recorded, enable. If unset, start recording.                             |
+| macro\_X\_clear    | binary             | If Macro X is set, delete it and remove it from the Rack                                      |
 
 ## Storage
 
 A Macro with its Actions is stored in the [protobuf format](https://github.com/xerus2000/mixxx/blob/macros/src/proto/macro.proto).
 
-A table in the mixxxdb will store the binary blob of the Macro along with its name, the corresponding track and its state (enabled/looped).
+A table in the mixxxdb stores the binary blob of the Macro along with its name, the id of the corresponding track and its state (enabled/looped).

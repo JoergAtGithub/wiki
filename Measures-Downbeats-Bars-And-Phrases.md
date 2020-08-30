@@ -7,7 +7,7 @@
 **Mentors:** Be (Be-ing), Jan Holthuis (Holzhaus), Uwe Klotz (uklotzde)
 
 **Related Project:**
-[downbeats\_and\_phrase\_detection](https://www.mixxx.org/wiki/doku.php/downbeats_and_phrase_detection)
+[Downbeats-And-Phrase-Detection](https://github.com/mixxxdj/mixxx/wiki/Downbeats-And-Phrase-Detection)
 
 This is the final
 [proposal](https://drive.google.com/file/d/1Micg2kqdE-XpCIgcjb58CrZoqrgIHUnv/view?usp=sharing)

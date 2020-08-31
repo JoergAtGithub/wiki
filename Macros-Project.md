@@ -4,6 +4,9 @@
 
 [Official GSoC Proposal](https://github.com/mixxxdj/mixxx/wiki/media/gsoc_2020_proposal_janek_fischer_-_mixxx_macros.pdf)
 
+
+See [Macros](Macros) for a list of controls.
+
 ## Introduction
 
 There are moves through which a DJ expresses himself - and there are
@@ -13,7 +16,8 @@ at once, a DJ should be able to rely on his tools so he can focus on
 what really matters. For some, beatmatching and keeping all tracks in
 sync is an art in itself - for others, including me, it is something
 happily delegated to the software - that is why there is a sync
-function.  
+function.
+
 But sometimes, more sophisticated automation can be helpful - maybe you
 want to skip a breakdown, shuffle around verses, loop an intro a
 specific way or deliberately repeat certain parts. Handling that while
@@ -22,10 +26,56 @@ that is where Mixxx Macros come in. With this feature implemented, it
 will be possible to record specific moves while playing a track and
 store them in a rack, to be used when it gets hot.
 
-## Details
+## Requirements
 
-See [Mixxx Macros Requirements](Mixxx%20Macros%20Requirements) and
-[Macros](Macros) for formal specifications. Below are only notes.
+### Personas
+
+_Raptor_ is an experienced DJ who experiments with cue point drumming.
+
+_Bob_ wants to prepare his track so he can DJ mostly hands-off at a
+birthday party. For this he wants to censor his tracks as well prepare a
+few transitions.
+
+_Sona_ used to create custom versions of songs (extended & rearranged
+parts) in Ableton Live, but would like to avoid the problems this
+entails (duplication, quality loss through re-encoding, takes rather
+long, can get lost in editing)
+
+_Jannis_ wants to record Mash-ups in Mixxx, but currently has to
+re-record them several times, and even then he doesn't get them exactly
+how he wanted. He doesn't want to get into a DAW for that either.
+
+### User Stories
+
+#### As Raptor
+- I want to
+  - start a Macro recording
+  - press cue points to create a beat
+  - *if live* have it repeat immediately
+  - save this as a looped Macro
+  - assign it to a hotcue
+- so that I have a cool custom beat based on a track, which I can invoke
+anytime.
+Requirements: everything on controller
+
+### As Bob
+- I want to create a very simple rearrangement and censoring of a track
+- and save it to the track in enabled state
+- so that the track is automatically played back in that arrangement.
+
+Requirements: No controller
+
+#### As Sona
+- I want to be able to quickly recreate my Ableton Live edits in Mixxx
+- so that I can eliminate the data duplication and speed up my workflow
+for creating new edits.
+
+#### As Jannis
+- I want to record an edit to a track, potentially with cue point drumming
+- so that I can play that back while creating a Mash-up.
+
+I would appreciate the ability to edit a Macro so that I don't have to
+re-record it if I made a small mistake
 
 ## Components
 

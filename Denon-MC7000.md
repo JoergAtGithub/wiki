@@ -416,6 +416,11 @@ Platter Ring LEDs are correlated with the VINYL button.
   - all other functions and LEDs are working except PAD mode 2nd and 3rd
     function
 
+### Under development / investigation
+  - combine Censor/Reverse with Slip Mode
+  - use Shift + Key Slect Knob for Waveform Zoom
+  - add Search through track using Shift + Jog Wheel 
+
 ### Wish List
 
 All additional wishes will be listed here (help appreciated):

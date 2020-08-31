@@ -419,7 +419,9 @@ Platter Ring LEDs are correlated with the VINYL button.
 ### Under development / investigation
   - combine Censor/Reverse with Slip Mode
   - use Shift + Key Slect Knob for Waveform Zoom
-  - add Search through track using Shift + Jog Wheel 
+  - add Search through track using Shift + Jog Wheel
+  - use Parameter buttons to add or delete stars
+  - use Shift + Parameter to colour tracks in library
 
 ### Wish List
 

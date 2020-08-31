@@ -12,15 +12,15 @@ for background on the project.
 
 Currently implemented: status, activate, toggle, clear
 
-| Key/Control        | Range              | What it does                                                                                  |
-| ------------------ | ------------------ | --------------------------------------------------------------------------------------------- |
-| show\_macros       | binary             | Whether to show the Macro Rack for this channel                                               |
-| macro\_X\_status   | -1 - 4, read-only  | -1=no track loaded, 0=empty, 1=recording armed, 2=recording, 3=recorded, 4=playing            |
-| macro\_X\_enabled  | binary             | Whether this Macro will automatically be started when the track is loaded                     |
-| macro\_X\_loop     | binary             | Whether this Macro should loop infinitely                                                     |
-| macro\_X\_activate | binary             | If playing, seek to beginning and start over. If recorded, enable. If unset, start recording. |
-| macro\_X\_toggle   | binary             | If playing, stop. If recorded, enable. If unset, start recording.                             |
-| macro\_X\_clear    | binary             | If Macro X is set, delete it and remove it from the Rack                                      |
+| Key/Control        | Range              | What it does                                                                                    |
+| ------------------ | ------------------ | ----------------------------------------------------------------------------------------------- |
+| show\_macros       | binary             | Whether to show the Macro Rack for this channel                                                 |
+| macro\_X\_status   | -1 - 4, read-only  | -1=no track loaded, 0=empty, 1=recording armed, 2=recording, 3=recorded, 4=playing              |
+| macro\_X\_enabled  | binary             | Whether this Macro will automatically be started when the track is loaded                       |
+| macro\_X\_loop     | binary             | Whether this Macro should loop infinitely                                                       |
+| macro\_X\_activate | binary             | If playing, seek to beginning and start over. If recorded, enable. If unset, start recording.   |
+| macro\_X\_toggle   | binary             | If playing, stop. If recorded, enable. If unset, start recording.                               |
+| macro\_X\_clear    | binary             | If status is recorded(3), remove all actions. Keeps the label in case you want to re-record it. |
 
 ## Storage
 

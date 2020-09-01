@@ -48,8 +48,11 @@ and paste the following lines at the top of the file:
         fetch = +refs/pull/*/head:refs/remotes/upstream/pr/*
 
 This makes it easy to interact with the upstream [mixxxdj/mixxx
-repository on GitHub's server](https://github.com/mixxxdj/mixxx). To
-download the latest updates, run
+repository on GitHub's server](https://github.com/mixxxdj/mixxx).
+Note: 'upstream' is only a recommendation. You can choose any name you
+like, just replace all occurences of 'upstream' in the above snippet.
+
+To download the latest updates, go to the `mixxx` folder and run
 
     git fetch upstream
 
@@ -61,7 +64,7 @@ computer to match the latest updates, run
 to switch to the upstream master branch.
 
   
-If you get an error that says:
+You may get an error that says:
 
 ``` bash
 error: Your local changes to the following files would be overwritten by checkout:
@@ -71,7 +74,9 @@ Please commit your changes or stash them before you switch branches.
 Aborting
 ```
 
-You can discard your local changes by '' git reset --hard'' or `git
+This means you have local file changes that are not commited, yet. You can stash
+your changes for later with `git add -A && git stash push -m "stash comment"`.
+Or you can discard your local changes by `git reset --hard` or `git
 checkout -t -f remote/branch`
 
 Configure Git so that you push to your fork by default for new branches:
@@ -132,7 +137,15 @@ website](https://github.com/mixxxdj/mixxx/pulls), then run
 to switch the code files on your computer to the proposed changes. (If
 you are testing your own pull request, use the name of the [branch you
 created on your computer](#create-a-new-branch) instead of
-`upstream/pr/PULL-REQUEST-NUMBER`.) Now you can [start\#Compile Mixxx
+`upstream/pr/PULL-REQUEST-NUMBER`.)
+
+Alternative:
+At the top right of any PR page you may have noticed the `Open with` link.
+Click it and it shows you a command to be used with the the [Github command line interface](https://github.com/cli/cli).
+Besides quickly checking out PRs it gives you other shortcuts to interact with
+Github pages in the terminal.
+
+Now you can [start\#Compile Mixxx
 From Source Code](home#Compile%20Mixxx%20From%20Source%20Code) to test
 the proposed changes. Give feedback by commenting on the pull request on
 the GitHub website.

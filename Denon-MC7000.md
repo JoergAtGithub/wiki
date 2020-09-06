@@ -1,4 +1,17 @@
 
+### Content of this page:
+
+* [Useful Links](#useful-links)
+* [Compatibility](#compatibility)
+* [How to get the mapping](#how-to-get-the-mapping)
+* [User Variables](#user-variables)
+* [Layout and Functions](#layout-and-functions)
+* [LED's](#leds)
+* [Change Log](#change-log)
+* [Under development / investigation](#under-development--investigation)
+* [Wish List](#wish-list)
+* [Contact and DJ Web Sites](#contact-and-dj-web-sites)
+
 [[/media/hardware/denondj-img-mc7000.jpg]]
 
 ### Useful Links
@@ -384,7 +397,7 @@ curve. Turn the knob to the left for a smooth fade (mixing) or to the
 right for a sharp cut (scratching). The center position is a typical
 setting. This seams to have a very minor effect in MIXXX.
 
-### LEDs
+### LED's
 
 The Channel Volume Meters matches to the ones shown in MIXXX GUI. Only
 when clipping the red LED illuminates.

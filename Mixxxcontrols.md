@@ -358,7 +358,7 @@ Below, *N*=2 up to the number of active microphones. e.g
 | `shuffle_playlist`\[169\] | binary | Shuffles the content of the Auto DJ playlist. | Order of tracks in the AutoDJ playlist changes.    |
 | `skip_next`\[170\]        | binary | Skips the next track in the Auto DJ playlist. | Skipped track is removed from the AutoDJ playlist. |
 | `fade_now`\[171\]         | binary | Triggers the transition to the next track.    | Crossfader slider moves to the other side.         |
-| `add_random_track`\[172\] | binary | Adds a random track to the Auto DJ queue.     | Track is added to AutoDJ queue.                    |
+| `add_random_track`\[217\] | binary | Adds a random track to the Auto DJ queue.     | Track is added to AutoDJ queue.                    |
 
 ### `[Library]`
 

@@ -1017,3 +1017,5 @@ Equalizers section of the Preferences window.
 215. introduced in Mixxx v1.10.0
 
 216. introduced in Mixxx v1.11.0
+
+217. introduced in Mixxx v2.3.0

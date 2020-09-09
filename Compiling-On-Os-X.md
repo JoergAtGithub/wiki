@@ -181,21 +181,26 @@ to [Using Git](Using%20Git) for more details.
 
 ## 4\. Compile and install
 
-Change to the newly created `mixxx` directory, and use scons to compile
-Mixxx:
+Change to the newly created `mixxx` directory:
 
     cd mixxx
-    scons verbose=0
 
-If you get an error about hss1394, set `hss1394=0`.
+Create the folder where the build files will be written and cd into it:
 
-If you are compiling with Qt 4, set `qt5=0`. Qt 4 is only supported in
-Mixxx 2.1 and earlier.
+    mkdir cmake_build && cd cmake_build
+
+Run the following cmake command to configure the project with the recommended default settings for development. You don't need to run this command each time you want to build Mixxx, you only need to run this command again whenever you want to change the build settings.
+
+    cmake -DCOREAUDIO=ON -DCMAKE_BUILD_TYPE=Debug -DDEBUG_ASSERTIONS_FATAL=ON -DQt5_DIR=/usr/local/opt/qt5/cmake/Qt5/ -DCMAKE_PREFIX_PATH=/usr/local/opt/ ..
+
+Now you are ready to build Mixxx. To build Mixxx simply run the following command. Note that this has to be run inside the `cmake_build` folder:
+
+    cmake --build .
 
 If the build succeeds, there will be a `mixxx` binary in the current
 directory that you can run:
 
-    ./mixxx --resourcePath res/
+    ./mixxx --developer --resourcePath res/
 
 This runs Mixxx, telling it to use the `res` folder as its source of
 skins, controller presets, etc. This is usually desirable for local
@@ -211,114 +216,7 @@ osx64_build/Mixxx.app`. Generating the .app has some expensive scanning
 and relinking steps so for iterative development, we suggest using the
 bare binary instead of creating a bundle.
 
-### Optional: Use Clang to build
-
-On macOS, GCC is a wrapper around [Clang](http://clang.llvm.org) -- a
-compiler based on [LLVM](http://llvm.org). Using Clang has various
-benefits:
-
-  - [Better error messages.](http://clang.llvm.org/diagnostics.html)
-  - Colorized compilation output.
-  - Better tools for analyzing problems in your program ([Address
-    Sanitizer](http://clang.llvm.org/docs/AddressSanitizer.html),
-    [Thread Sanitizer](http://clang.llvm.org/docs/ThreadSanitizer.html),
-    [MemorySanitizer](http://clang.llvm.org/docs/MemorySanitizer.html),
-    etc.)
-
-The GCC wrapper around Clang on macOS tries to behave like GCC which
-loses some of these benefits. To use Clang directly, before running
-`scons`:
-
-    export CC=clang
-    export CXX=clang++
-
-You can now use clang-specific SCons options.
-
-  - To enable colorized output, use the `color=1` scons flag.
-  - To enable Address Sanitizer, use the `asan=1` scons flag.
-
-### Optional: Alternative MP3/AAC support
-
-As of Mixxx 2.0, Mixxx will use CoreAudio to decode MP3 and AAC files by
-default. If you want to use `libmad` or `libfaad` for MP3 and AAC
-decoding, simply set the `mad` and `faad` flags and clear the
-`coreaudio` flag. For example:
-
-    scons mad=1 faad=1 coreaudio=0
-
-### Optional: ModPlug Support
-
-To enable libmodplug based module tracker support, set the `modplug`
-flag. For example:
-
-    scons modplug=1
-
-\==== Common error messages & solutions ====
-
-##### ld: symbol(s) not found for architecture x86\_64
-
-OSX 10.9 Mavericks has changed the stdlib default to libc++. If you are
-on OSX 10.9 Mavericks and get this link error, try the "scons" command
-above like this:
-
-    scons stdlib=libc++
-
-##### Error: QT path does not exist or QT5 is not installed.
-
-If you installed Qt to a custom location you will have to provide this
-via the `qtdir` flag. For example, you could try:
-
-    scons qtdir=/Developer
-
-Because /Developer is a common place for Qt to drop its frameworks.
-
-##### Missing "initializer\_list".
-
-This most likely means you are building Mixxx with libstdc++ and not
-libc++. Mixxx versions newer than 2.0 now require C++11 so libstdc++ is
-no longer an option since it does not support C++11 features like
-initializer\_list.
-
-##### ld: warning: in /opt/local/lib/libGLU.dylib, file was built for unsupported file format which is not the architecture being linked (i386)
-
-Try the "scons" command above like this:
-
-    scons machine=x86_64
-
-##### Unmet dependency: Could not find libtag or its development headers.
-
-Dependency errors happen from time to time , even if the dependencies
-are installed. This is not limited to \`\`libtag\`\`. You are not able
-to compile the source, and the mixxx build aborts.
-
-First, try updating brew and upgrading the packages
-
-``` 
- brew update && brew upgrade
-```
-
-Force SCons to ignore any cached results, delete temporary files and
-return the source tree to the original state. From the Mixxx build
-directory, run
-
-``` 
- rm -R config.log .sconsign.dblite .sconf_temp .sconsign.branch
-```
-
-Build Mixxx
-
-``` 
- scons
-```
-
-If build is finished, start the executable
-
-``` 
- ./mixxx --controllerDebug --developer --resourcePath res/
- 
-```
-
 ## 5\. Configure your development tools
 
 Now that you can build Mixxx, learn about [developer
-tools](developer_tools) that make Mixxx development easier.
+tools](https://github.com/mixxxdj/mixxx/wiki/Developer-Tools) that make Mixxx development easier.

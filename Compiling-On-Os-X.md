@@ -4,11 +4,6 @@ Compiling Mixxx for macOS is simple once you have all the dependencies
 installed. This guide assumes you have basic knowledge about using the
 command line.
 
-*FIXME Mixxx is fading out SCons in favor of [cmake](https://cmake.org)
-starting in 2.3 and [will completely switch
-in 2.4](https://github.com/mixxxdj/mixxx/pull/2777). This page isn't
-updated with the appropriate instructions yet.*
-
 ## 1\. Install Xcode Command Line Tools
 
 Launch the Terminal application, and type the following command string:
@@ -50,48 +45,6 @@ have already installed Homebrew and gotten it working:
 <!-- end list -->
 
     brew install scons pkg-config portaudio libsndfile libogg libvorbis portmidi git taglib libshout protobuf flac libjpeg qt5 chromaprint rubberband fftw vamp-plugin-sdk opusfile lilv lame qtkeychain
-
-Next you need to set your environment variables so that the compiler can
-find Homebrew-installed dependencies. In the below code you should
-customize `HOMEBREW_PATH` to the path where your Homebrew folder can be
-found. Copy and paste the code below into \~/.bash\_profile:
-
-``` 
-HOMEBREW_PATH=/usr/local
-# See the note below about the Opus workaround.
-export CFLAGS="-I$HOMEBREW_PATH/include -I$HOMEBREW_PATH/include/opus"
-export CXXFLAGS="-I$HOMEBREW_PATH/include -I$HOMEBREW_PATH/include/opus"
-export LDFLAGS=-L$HOMEBREW_PATH/lib
-export QTDIR=$HOMEBREW_PATH/Cellar/qt/`brew list --versions qt | ruby -ne 'print $_.split.last'`/
-
-```
-
-then run `source ~/.bash_profile`.
-
-**Opus Workaround:** The version of libopus included with Homebrew has a
-bug where opusfile.h includes the file opus\_multistream.h. In order for
-this file to be present on the include path, we need to add
-$HOMEBREW\_PATH/include/opus to the include path. This will hopefully be
-fixed in future versions of libopusfile.
-
-#### Legacy: Qt 4
-
-**Qt 4 is only supported in Mixxx 2.1 and earlier. Newer versions of
-Mixxx do not build with it.**
-
-If you will be compiling with Qt4, also run:
-
-    brew tap cartr/qt4
-    brew tap-pin cartr/qt4
-    brew install qt@4
-
-Set the `$QTDIR` environment variable (e.g. in your `.bash_profile`, as
-described above) to point to Qt 4:
-
-    export QTDIR=$HOMEBREW_PATH/Cellar/qt@4/%VERSION%/
-
-Replace %VERSION% with the folder name, e.g. 4.8.7\_5 . Run `brew list
---versions qt@4` to see what version(s) you have installed.
 
 #### Optional: ModPlug support
 
@@ -185,7 +138,7 @@ Change to the newly created `mixxx` directory:
 
     cd mixxx
 
-Create the folder where the build files will be written and cd into it:
+Create the folder where the build files will be written and navigate into it:
 
     mkdir cmake_build && cd cmake_build
 
@@ -206,15 +159,16 @@ This runs Mixxx, telling it to use the `res` folder as its source of
 skins, controller presets, etc. This is usually desirable for local
 development.
 
-Alternatively, you can build a macOS `.app` bundle by running:
+**TODO: Update me for cmake**
+~~Alternatively, you can build a macOS `.app` bundle by running:~~
 
     scons bundle
 
-This will generate a `Mixxx.app` bundle in the `osx64_build` folder,
+~~This will generate a `Mixxx.app` bundle in the `osx64_build` folder,
 which you can run by double-clicking on or typing `open
 osx64_build/Mixxx.app`. Generating the .app has some expensive scanning
 and relinking steps so for iterative development, we suggest using the
-bare binary instead of creating a bundle.
+bare binary instead of creating a bundle.~~
 
 ## 5\. Configure your development tools
 

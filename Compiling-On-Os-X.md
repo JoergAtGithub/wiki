@@ -93,21 +93,7 @@ and select the series of Mixxx you would like to develop for (e.g.
 [build/osx/golden\_environment](https://github.com/mixxxdj/mixxx/blob/master/build/osx/golden_environment)
 to see the current official version.
 
-After you extract your build environment, you need to tell Mixxx where
-to find it:
-
-``` 
-export OSXLIB=/path/to/build/environment; 
-# Make sure to edit this to match what is actually present in $OSXLIB.
-export QTDIR=${OSXLIB}/Qt-5.11.2; 
-export PATH=${OSXLIB}/bin:${QTDIR}/bin:$PATH; 
-export CXXFLAGS="-isystem ${OSXLIB}/include"; 
-export CFLAGS="-isystem ${OSXLIB}/include"
-export LDFLAGS="-L${OSXLIB}/lib -F${OSXLIB}/lib -Wl,-rpath,${OSXLIB}/lib"; 
-```
-
-You may need to adjust `$QTDIR` in the above example, depending on what
-is actually present in the environment.
+Extract the build environment and take note of its path.
 
 ### Method 3: Manual
 
@@ -142,10 +128,26 @@ Create the folder where the build files will be written and navigate into it:
 
     mkdir cmake_build && cd cmake_build
 
+The next steps you need to follow depend on whether you are using a pre-built environment or you installed dependencies with Homebrew:
+
+### Configure the build for Homebrew dependencies
+
 Run the following cmake command to configure the project with the recommended default settings for development. You don't need to run this command each time you want to build Mixxx, you only need to run this command again whenever you want to change the build settings.
 
     cmake -DCOREAUDIO=ON -DCMAKE_BUILD_TYPE=Debug -DDEBUG_ASSERTIONS_FATAL=ON -DQt5_DIR=/usr/local/opt/qt5/cmake/Qt5/ -DCMAKE_PREFIX_PATH=/usr/local/opt/ ..
 
+### Configure the build for pre-built environment
+You don't need to follow this steps each time you want to build Mixxx, you only need to run this command again whenever you want to change the build settings.
+
+Before configuring the build, make sure to disable macOS Gatekeeper as described in [this article](https://www.imore.com/how-open-apps-anywhere-macos-catalina-and-mojave). Otherwise, macOS will prevent the pre-built environment bundled binaries to execute.
+
+Run the following cmake command to configure the project with the recommended default settings for development.
+
+    cmake -DCOREAUDIO=ON -DCMAKE_BUILD_TYPE=Debug -DDEBUG_ASSERTIONS_FATAL=ON -DQt5_DIR=/usr/local/opt/qt5/cmake/Qt5/ -DCMAKE_PREFIX_PATH=/usr/local/opt/ ..
+
+Now you can enable Gatekeeper again as described in [this article](https://www.imore.com/how-open-apps-anywhere-macos-catalina-and-mojave).
+
+### Build Mixxx
 Now you are ready to build Mixxx. To build Mixxx simply run the following command. Note that this has to be run inside the `cmake_build` folder:
 
     cmake --build .

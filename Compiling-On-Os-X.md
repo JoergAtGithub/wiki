@@ -11,6 +11,8 @@ command line.
     1. [Method 3: Manual](#method-3-manual)
 1. [Get Mixxx](#3-get-mixxx)<br/>
 1. [Compile and install](#4-compile-and-install)<br/>
+    1. [Configure the build for Homebrew dependencies](#configure-the-build-for-homebrew-dependencies)
+    1. [Configure the build for pre-built environment](#configure-the-build-for-pre-built-environment)
 1. [Configure your development tools](#5-configure-your-development-tools)
 
 ## 1\. Install Xcode Command Line Tools

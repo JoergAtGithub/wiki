@@ -161,7 +161,7 @@ Before configuring the build, make sure to disable macOS Gatekeeper as described
 Run the following cmake command to configure the project with the recommended default settings for development.
 
     PREBUILT_ENVIRONMENT=<...> &&\
-cmake -DCOREAUDIO=ON -DCMAKE_BUILD_TYPE=Debug -DDEBUG_ASSERTIONS_FATAL=ON -DQt5_DIR=${PREBUILT_ENVIRONMENT}/Qt-5.14.2/lib/cmake/Qt5 -DCMAKE_PREFIX_PATH=${PREBUILT_ENVIRONMENT} ..
+    cmake -DCOREAUDIO=ON -DCMAKE_BUILD_TYPE=Debug -DDEBUG_ASSERTIONS_FATAL=ON -DQt5_DIR=${PREBUILT_ENVIRONMENT}/Qt-5.14.2/lib/cmake/Qt5 -DCMAKE_PREFIX_PATH=${PREBUILT_ENVIRONMENT} ..
 
 Now you can enable Gatekeeper again as described in [this article](https://www.imore.com/how-open-apps-anywhere-macos-catalina-and-mojave).
 

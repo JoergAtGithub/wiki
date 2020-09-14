@@ -151,8 +151,7 @@ The next steps you need to follow depend on whether you are using a pre-built en
 
 Run the following cmake command to configure the project with the recommended default settings for development. You don't need to run this command each time you want to build Mixxx, you only need to run this command again whenever you want to change the build settings. Make sure to replace "<...>" with the path to your pre-built environment.
 
-    PREBUILT_ENVIRONMENT=<...> &&\
-    cmake -DCOREAUDIO=ON -DCMAKE_BUILD_TYPE=Debug -DDEBUG_ASSERTIONS_FATAL=ON -DQt5_DIR=${PREBUILT_ENVIRONMENT}/Qt-5.14.2/lib/cmake/Qt5 -DCMAKE_PREFIX_PATH=${PREBUILT_ENVIRONMENT} ..
+    cmake -DCOREAUDIO=ON -DCMAKE_BUILD_TYPE=Debug -DDEBUG_ASSERTIONS_FATAL=ON -DQt5_DIR=/usr/local/opt/qt5/cmake/Qt5/ -DCMAKE_PREFIX_PATH=/usr/local/opt/ ..
 
 ### Configure the build for pre-built environment
 You don't need to follow this steps each time you want to build Mixxx, you only need to run again the commands on this section whenever you want to change the build settings.
@@ -161,7 +160,8 @@ Before configuring the build, make sure to disable macOS Gatekeeper as described
 
 Run the following cmake command to configure the project with the recommended default settings for development.
 
-    cmake -DCOREAUDIO=ON -DCMAKE_BUILD_TYPE=Debug -DDEBUG_ASSERTIONS_FATAL=ON -DQt5_DIR=/usr/local/opt/qt5/cmake/Qt5/ -DCMAKE_PREFIX_PATH=/usr/local/opt/ ..
+    PREBUILT_ENVIRONMENT=<...> &&\
+cmake -DCOREAUDIO=ON -DCMAKE_BUILD_TYPE=Debug -DDEBUG_ASSERTIONS_FATAL=ON -DQt5_DIR=${PREBUILT_ENVIRONMENT}/Qt-5.14.2/lib/cmake/Qt5 -DCMAKE_PREFIX_PATH=${PREBUILT_ENVIRONMENT} ..
 
 Now you can enable Gatekeeper again as described in [this article](https://www.imore.com/how-open-apps-anywhere-macos-catalina-and-mojave).
 

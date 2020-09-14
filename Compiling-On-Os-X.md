@@ -4,6 +4,15 @@ Compiling Mixxx for macOS is simple once you have all the dependencies
 installed. This guide assumes you have basic knowledge about using the
 command line.
 
+[1\. Install Xcode Command Line Tools](#installXcode)<br/>
+[2\. Install build dependencies](#installDependencies)<br/>
+[3\. Get Mixxx](#getMixxx)<br/>
+[4\. Compile and install](#compile)<br/>
+[5\. Configure your development tools](#configureTools)
+
+
+<a name="installXcode"/>
+
 ## 1\. Install Xcode Command Line Tools
 
 Launch the Terminal application, and type the following command string:
@@ -23,6 +32,8 @@ check this by trying to run `clang` or `make` from the terminal). To
 install the latest available version of Xcode for your macOS release, go
 to <https://developer.apple.com/download/>. Downloading it requires a
 free registration at Apple's developer site.
+
+<a name="installDependencies"/>
 
 ## 2\. Install build dependencies
 
@@ -100,6 +111,8 @@ Extract the build environment and take note of its path.
 You can of course install all of [Mixxx's dependencies](dependencies) by
 hand. We don't recommend it.
 
+<a name="getMixxx"/>
+
 ## 3\. Get Mixxx
 
 If you want to compile Mixxx, you'll need to download the source code.
@@ -117,6 +130,8 @@ git repository:
 To update to the latest version of a git branch, enter (`cd` into) the
 directory you cloned the git repository into and run `git pull`. Refer
 to [Using Git](Using%20Git) for more details.
+
+<a name="compile"/>
 
 ## 4\. Compile and install
 
@@ -172,6 +187,8 @@ which you can run by double-clicking on or typing `open
 osx64_build/Mixxx.app`. Generating the .app has some expensive scanning
 and relinking steps so for iterative development, we suggest using the
 bare binary instead of creating a bundle.~~
+
+<a name="configureTools"/>
 
 ## 5\. Configure your development tools
 

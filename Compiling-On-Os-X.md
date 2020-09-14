@@ -4,14 +4,11 @@ Compiling Mixxx for macOS is simple once you have all the dependencies
 installed. This guide assumes you have basic knowledge about using the
 command line.
 
-[1\. Install Xcode Command Line Tools](#installXcode)<br/>
-[2\. Install build dependencies](#installDependencies)<br/>
-[3\. Get Mixxx](#getMixxx)<br/>
-[4\. Compile and install](#compile)<br/>
-[5\. Configure your development tools](#configureTools)
-
-
-<a name="installXcode"/>
+[1\. Install Xcode Command Line Tools](#1-install-xcode-command-line-tools)<br/>
+[2\. Install build dependencies](#2-install-build-dependencies)<br/>
+[3\. Get Mixxx](#3-get-mixxx)<br/>
+[4\. Compile and install](#4-compile-and-install)<br/>
+[5\. Configure your development tools](#5-configure-your-development-tools)
 
 ## 1\. Install Xcode Command Line Tools
 

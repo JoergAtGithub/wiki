@@ -149,7 +149,7 @@ The next steps you need to follow depend on whether you are using a pre-built en
 
 ### Configure the build for Homebrew dependencies
 
-Run the following cmake command to configure the project with the recommended default settings for development. You don't need to run this command each time you want to build Mixxx, you only need to run this command again whenever you want to change the build settings. Make sure to replace "<...>" with the path to your pre-built environment.
+Run the following cmake command to configure the project with the recommended default settings for development. You don't need to run this command each time you want to build Mixxx, you only need to run this command again whenever you want to change the build settings.
 
     cmake -DCOREAUDIO=ON -DCMAKE_BUILD_TYPE=Debug -DDEBUG_ASSERTIONS_FATAL=ON -DQt5_DIR=/usr/local/opt/qt5/cmake/Qt5/ -DCMAKE_PREFIX_PATH=/usr/local/opt/ ..
 

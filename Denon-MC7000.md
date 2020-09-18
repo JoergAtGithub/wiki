@@ -20,7 +20,7 @@
   - [Manufacturer's product
     page](https://www.denondj.com/professional-dj-controller-for-serato-mc7000xus)
   - [User
-    Guide](http://cdn.inmusicbrands.com/denondj/MC7000/MC7000-UserGuide-v1.1.pdf)
+    Guide (Serato)](http://cdn.inmusicbrands.com/denondj/MC7000/MC7000-UserGuide-v1.1.pdf)
   - [Hardware Setting
     Specification](http://cdn.inmusicbrands.com/denondj/MC7000/MC7000-Hardware-Settings-Mode-Specification-v1_4.pdf)
 
@@ -429,7 +429,7 @@ Platter Ring LEDs are correlated with the VINYL button.
   - all other functions and LEDs are working except PAD mode 2nd and 3rd
     function
 
-### Under development / investigation
+### Under investigation / development
   - combine Censor/Reverse with Slip Mode
   - use Shift + Key Select/Reset Knob for Waveform Zoom/Reset
   - add Search through track using Shift + Jog Wheel

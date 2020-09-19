@@ -30,7 +30,7 @@ users on the [Mixxx forum](http://mixxx.org/forums/viewforum.php?f=7) as
 you develop the mapping.
 
 The processes and guidelines on this page are to ensure that new
-mappings included in Mixxx are of good quality, complete, and documented. 
+mappings included in Mixxx are of good quality, complete, and documented.
 This gives users the most choice and the ability to make their own informed
 decisions about what equipment to get for using Mixxx.
 
@@ -62,7 +62,7 @@ your commits. See the [Using Git](Using%20Git) wiki page for more
 information. Please prefix your git commit messages with the name of
 your controller so others can easily tell what the commits are for after
 your changes are merged. For example, a good commit message could look
-like:  
+like:
 `Hercules P32: push browse encoder to maximize/minimize library`
 
 #### Working on your mapping in your git repository
@@ -79,7 +79,7 @@ your home directory on GNU/Linux, run:
 
     ln -s ~/software/mixxx/res/controllers ~/.mixxx/controllers
 
-Instructions for working on your mapping and other branches simultaneously are on the 
+Instructions for working on your mapping and other branches simultaneously are on the
 [Using Git](Using-Git#working-on-mappings-and-skins-separately-from-other-changes) page.
 
 ### Submitting your mapping for review
@@ -110,21 +110,18 @@ commit(s) will automatically show up in the pull request.
 ## Documenting the mapping
 
 Post [on the forum](http://mixxx.org/forums/viewforum.php?f=7) early so
-users can find your mapping and give feedback as you develop it. For new
-mappings, list your controller on the [DJ Hardware
-Guide](hardware%20compatibility#mappings%20in%20development) and start a
-wiki page for your controller. To make a wiki page, put double brackets
-around the name of your controller in the Hardware Guide, for example
-\[\[My Controller\]\]. Save your edit to the Hardware Guide page, then
-click on the red link in the Hardware Guide to create the new page. Wiki
-pages for controllers should include:
+users can find your mapping and give feedback as you develop it.
 
-  - A picture of the controller (use the syntax {{URL to picture}} to
-    embed a picture)
-  - A link to the manufacturer's webpage for the controller (Use the
-    syntax \[\[URL to link to|text of link\]\] for a link)
-  - A link to the Mixxx forum thread for the controller
-  - Links to some reviews (optional, but nice to have)
+Controller mappings that are supposed to be included in Mixxx need to be
+described in the manual. Clone the [manual repository](https://github.com/mixxxdj/manual)
+and add a page in the `hardware/controllers` directory.
+Check out the [reStructuredTest Primer](https://www.sphinx-doc.org/en/master/usage/restructuredtext/basics.html#external-links)
+for help with the RST syntax.
+
+Controller documentation in the manual should include:
+
+  - A link to the manufacturer's webpage for the controller.
+  - A link to the Mixxx forum thread for the controller.
   - A brief description of the controller
   - Notes about (in)compatibility with Windows, Linux, and macOS.
     Document whether it is USB class compliant (if it is compatible with
@@ -145,6 +142,22 @@ pages for controllers should include:
     helpful for explaining the mapping.
   - An explanation of how the mapping works
 
+Controller documentation in the manual should *not* include:
+  - Information about MIDI/HID messages or other stuff that is only relevant to
+    programmers (Put that in a comment the mappings file itself)
+  - Links to reviews (optional, but nice to have)
+  - Product photos that we don't have permission to use
+  - Information how the mapping worked in earlier versions of Mixxx (old
+    versions of the manual are still readily avaible)
+
+If you don't plan to get your mapping included in Mixxx, you can list your
+controller on the [DJ Hardware
+Guide](hardware%20compatibility#mappings%20in%20development) and start a wiki
+page for your controller instead. To make a wiki page, put double brackets
+around the name of your controller in the Hardware Guide, for example
+\[\[My Controller\]\]. Save your edit to the Hardware Guide page, then
+click on the red link in the Hardware Guide to create the new page.
+
 You do not need to explain how Mixxx works; explain how the controller
 affects Mixxx. Feel free to link to the [Mixxx
 manual](http://mixxx.org/manual/latest/). For example, to document a
@@ -152,33 +165,22 @@ sync button, you do not need to explain how master sync works; just
 write that the button toggles master sync.
 
 If you are not very comfortable writing English, do not worry. Do your
-best to write a description of the mapping on the wiki page and someone
-who knows English better can work on your writing. You are also
-encouraged to write the wiki page in your native language in addition to
-English. You can translate a wiki page by clicking the button for your
-language at the bottom right of the wiki page.
+best to write a description of the mapping. When you open the Pull Request
+on the manual repo, someone who knows English better can correct mistakes give
+you suggestions how to improve your writing.
 
-Please complete the wiki page with labeled diagrams explaining how your
-mapping works. Look at the pages for other controllers on the [DJ
-Hardware Guide](hardware%20compatibility#controller%20mappings) for
+Please complete the documentation with labeled diagrams explaining how your
+mapping works. Look at the pages for other controllers for
 examples (many controllers are not documented. Contributing a new,
 documented mapping helps fix that =) ). In addition to helping users,
 this helps developers who do not own the controller to review the
 mapping. If there is no diagram readily available, ask the manufacturer
-for one and permission to upload it to the Mixxx wiki. If they do not
-provide one, take pictures of your device and label them. Upload
-diagrams and/or pictures by going to the [Media Manager](?do=media) at
-the top right of any wiki page and upload your file(s) to the "hardware"
-namespace. SVG diagrams are preferred because they are easier to edit
+for one and permission to put it into the Mixxx manual. If they do not
+provide one, take pictures of your device and label them.
+SVG diagrams are preferred because they are easier to edit
 later. If the manufacturer only provides a PDF diagram, you can open the
 PDF in [Inkscape](https://inkscape.org/) to convert it to SVG and label
 it.
-
-If you are submitting a substantially updated or different mapping for a
-controller that already has a mapping in Mixxx, create a new section on
-the controller's existing wiki page to describe your new mapping. When
-your pull request is merged, delete the description of the old mapping
-from the wiki page if your mapping replaces the old one.
 
 ### Microphone inputs
 
@@ -422,7 +424,7 @@ These coding conventions are mandatory for new Javascript code in Mixxx:
 Here is an example of good Javascript style:
 
     var someObject = new ShinyObject();
-    
+
     var anotherObject = {
         someFunction: function(parameter) {
             return parameter++;
@@ -431,7 +433,7 @@ Here is an example of good Javascript style:
             return parameter--;
         },
     }
-    
+
     ShinyObject.someMethod = function(someParameter) {
         var someVariable = someParameter + 2;
         if (someVariable === 5) {

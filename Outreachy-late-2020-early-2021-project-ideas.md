@@ -1,8 +1,32 @@
+Most of these projects are much too big for an internship.  We should figure out ways to make them smaller.
+
 ## AutoDJ rewrite
+
+Too big on its own.  Can we identify particular parts of autodj that an intern could work on?  
+
 ## Manual overhaul
+
 ## Video tutorials
+
 ## Screenreader UX
+
 ## Touchscreen UX
+
 ## Audio and controller hardware hotplug
+
+(This feels *much* too hard for an intern)
+
 ## Community Manager / Social Media
+
+"Community Manager" is a real job, not an internship project.  But an intern could work with Owen on some of these aspects and help give mixxx more of a presence.
+
+* facebook
+* twitter
+* forums
+* zulip?
+
 ## RTL Support (Hebrew)
+
+* Applying a hebrew translation to see how things render
+* reversing skins?
+* reversing waveforms

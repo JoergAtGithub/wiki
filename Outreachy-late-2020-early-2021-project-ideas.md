@@ -10,6 +10,8 @@ Too big on its own.  Can we identify particular parts of autodj that an intern c
 
 ## Screenreader UX
 
+Owen thinks this would be a good project, it could mostly be filing bugs and figuring out common issues we're having
+
 ## Touchscreen UX
 
 ## Audio and controller hardware hotplug

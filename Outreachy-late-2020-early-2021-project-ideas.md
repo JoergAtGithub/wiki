@@ -3,3 +3,4 @@
 ## Video tutorials
 ## Screenreader UX
 ## Touchscreen UX
+## Audio and controller hardware hotplug

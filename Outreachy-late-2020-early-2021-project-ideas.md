@@ -2,7 +2,7 @@ Most of these projects are much too big for an internship.  We should figure out
 
 ## Preferences redesign
 
-Lots of UX testing
+Lots of UX testing, C++ knowledge required but not very technically challenging
 
 ## AutoDJ rewrite
 

@@ -439,12 +439,12 @@ doing it:
 4.  Open the SQLite Manager from within firefox. Within SQLite Manager
     open the file `mixxxdb.sqlite` that can be found in your mixxx
     configuration folder
-5.  Go on `Execute SQL` and enter: `update track_locations set directory
-    = replace (directory, '/old/path/DJ/Music/', '/new/path/DJ/Music/');
-    
-    update track_locations set location = replace (location,
-    '/old/path/DJ/Music/', '/new/path/DJ/Music/');` where the old and
-    new paths point to your corresponding music folders. 
+5.  Go on `Execute SQL` and enter:
+
+        update track_locations set directory = replace (directory, '/old/path/DJ/Music/', '/new/path/DJ/Music/');
+        update track_locations set location = replace (location, '/old/path/DJ/Music/', '/new/path/DJ/Music/');
+
+    where the old and new paths point to your corresponding music folders. 
 6.  Then hit `Run SQL`. The above statements will replace all instances
     of `/old/path/DJ/Music/` to `/new/path/DJ/Music/` in the field of
     *location* and *directory* of *track\_locations* table.

@@ -1,8 +1,12 @@
 Most of these projects are much too big for an internship.  We should figure out ways to make them smaller.
 
+## Preferences redesign
+
+Lots of UX testing
+
 ## AutoDJ rewrite
 
-Too big on its own.  Can we identify particular parts of autodj that an intern could work on?  
+Too big on its own.  Can we identify particular parts of autodj that an intern could work on?
 
 ## Manual overhaul
 
@@ -13,10 +17,6 @@ Too big on its own.  Can we identify particular parts of autodj that an intern c
 Owen thinks this would be a good project, it could mostly be filing bugs and figuring out common issues we're having
 
 ## Touchscreen UX
-
-## Audio and controller hardware hotplug
-
-(This feels *much* too hard for an intern)
 
 ## Community Manager / Social Media
 

@@ -45,12 +45,3 @@ Nice to have skills:
   * QWidgets
 
 Some blind and visually impaired users use Mixxx with screenreader software. However, Mixxx was not designed with screenreaders in mind so many features are cumbersome or impossible to use with screenreaders. This project would entail making Mixxx practically usable with screenreader software.
-
-## Community Manager / Social Media
-
-"Community Manager" is a real job, not an internship project.  But an intern could work with Owen on some of these aspects and help give mixxx more of a presence.
-
-* facebook
-* twitter
-* forums
-* zulip?

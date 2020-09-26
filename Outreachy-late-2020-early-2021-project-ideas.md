@@ -47,9 +47,3 @@ Owen thinks this would be a good project, it could mostly be filing bugs and fig
 * twitter
 * forums
 * zulip?
-
-## RTL Support (Hebrew)
-
-* Applying a hebrew translation to see how things render
-* reversing skins?
-* reversing waveforms

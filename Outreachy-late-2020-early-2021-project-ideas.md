@@ -29,6 +29,8 @@ This project would entail making Mixxx's features practically usable with a touc
 
 ## Video tutorials
 Required skills:
+  * screen capturing
+  * opt: Video capture for demoing controller operations
   * video editing
 
 Preferred skills:

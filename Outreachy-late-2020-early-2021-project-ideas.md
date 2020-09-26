@@ -40,6 +40,7 @@ New users are often overwhelmed and do not know how to get started using Mixxx. 
 
 ## Screenreader UX
 Required skills:
+  * C++ / QT programming
   * experience using screenreader software
 
 Nice to have skills:

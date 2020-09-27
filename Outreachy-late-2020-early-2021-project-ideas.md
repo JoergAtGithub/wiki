@@ -34,7 +34,7 @@ Required skills:
   * 5: English writing - applicants must submit an example of prior writing (on any topic)
 
 Preferred skills:
-  * 3: DJing
+  * 4: DJing
 
 Nice to have:
   * 3: Technical documentation writing
@@ -49,7 +49,7 @@ Required skills:
   * 5: video editing
 
 Preferred skills:
-  * 3: DJing with a controller so footage of this can be combined with screen capture video
+  * 4: DJing with a controller so footage of this can be combined with screen capture video
 
 New users are often overwhelmed and do not know how to get started using Mixxx. This project would entail making tutorial videos explaining Mixxx's features and demonstrating how to use them with real examples.
 

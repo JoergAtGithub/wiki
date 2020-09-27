@@ -30,11 +30,10 @@ This project would entail making Mixxx's features practically usable with a touc
 ## Video tutorials
 Required skills:
   * screen capturing
-  * opt: Video capture for demoing controller operations
   * video editing
 
 Preferred skills:
-  * DJing
+  * DJing with a controller so footage of this can be combined with screen capture video
 
 New users are often overwhelmed and do not know how to get started using Mixxx. This project would entail making tutorial videos explaining Mixxx's features and demonstrating how to use them with real examples.
 

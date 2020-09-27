@@ -31,7 +31,7 @@ This project would entail making Mixxx's features practically usable with a touc
 
 ## User manual improvements
 Required skills:
-  * 5: English writing - applicants must submit an example of prior writing (on any topic)
+  * 5: English writing
 
 Preferred skills:
   * 4: DJing

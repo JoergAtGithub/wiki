@@ -1,5 +1,22 @@
 Skill requirements are described following the [Outreachy project skills key](https://www.outreachy.org/apply/project-selection/#project-skills-key).
 
+
+## Touchscreen UX design
+Required skills:
+  * 3: C++ - beginner skill level is okay, but must have more experience with other programming languages in that case
+  * 5: having a touchscreen device that can run Mixxx (Mixxx does not run on Android or iOS)
+
+Preferred skills:
+  * 3: designing for touchscreens
+
+Nice to have skills:
+  * 3: DJing or other experience using electronic music equipment
+  * 3: UX testing
+
+Generally, Mixxx users use DJ controller hardware because it is difficult to manipulate Mixxx fast enough while music is playing using just a keyboard and mouse. Nowadays, many laptops have touchscreens. Also, some users are using Mixxx with tablets or single board computers (such as Raspberry Pi and Odroid devices) together with a touchscreen and controller. However, Mixxx's GUI was designed before touchscreens were common and there are many ways it is difficult to use with only a touchscreen without relying on a mouse.
+
+This project would entail making Mixxx's features practically usable with a touchscreen. The goal is not necessarily to fully replace a controller, but to make it practical to do basic mixing with just a touchscreen and to compliment controllers. Some features are currently only accessible through right click menus so alternative ways to use these would need to be designed and implemented. The project will also require changing the behavior of Mixxx's custom QWidgets to properly handle touch input. Some changes to Mixxx's skins may be required too.
+
 ## Preferences redesign
 Required skills:
   * 3: C++
@@ -13,21 +30,6 @@ Nice to have skills:
   * 3: Qt Designer
 
 Mixxx is a large, complex application with lots of options that users can configure. Over the years, this has made the preferences window rather unwieldy. This project would entail redesigning the preferences to make it easier for users to find what they are searching for as well as understand what every option does and why someone might want to change it. In some cases this may lead to changing the behavior of Mixxx so options are no longer required and/or moving options out of the preferences window.
-
-## Touchscreen UX design
-Required skills:
-  * 3: C++ - beginner skill level is okay, but must have more experience with other programming languages in that case
-  * 5: having a touchscreen device that can run Mixxx (Mixxx does not run on Android or iOS)
-
-Preferred skills:
-  * 3: designing for touchscreens
-
-Nice to have skills:
-  * 3: DJing or other experience using electronic music equipment
-
-Generally, Mixxx users use DJ controller hardware because it is difficult to manipulate Mixxx fast enough while music is playing using just a keyboard and mouse. Nowadays, many laptops have touchscreens. Also, some users are using Mixxx with tablets or single board computers (such as Raspberry Pi and Odroid devices) together with a touchscreen and controller. However, Mixxx's GUI was designed before touchscreens were common and there are many ways it is difficult to use with only a touchscreen without relying on a mouse.
-
-This project would entail making Mixxx's features practically usable with a touchscreen. The goal is not necessarily to fully replace a controller, but to make it practical to do basic mixing with just a touchscreen and to compliment controllers. Some features are currently only accessible through right click menus so alternative ways to use these would need to be designed and implemented. The project will also require changing the behavior of Mixxx's custom QWidgets to properly handle touch input. Some changes to Mixxx's skins may be required too.
 
 ## User manual improvements
 Required skills:

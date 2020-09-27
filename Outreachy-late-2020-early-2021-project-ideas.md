@@ -1,3 +1,5 @@
+Skill requirements are described following the [Outreachy project skills key](https://www.outreachy.org/apply/project-selection/#project-skills-key).
+
 ## Preferences redesign
 Required skills:
   * 3: C++

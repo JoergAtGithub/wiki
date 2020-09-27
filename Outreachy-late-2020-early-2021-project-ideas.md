@@ -61,5 +61,6 @@ Required skills:
 Nice to have skills:
   * 2: QAccessibleInterface
   * 2: QWidgets
+  * 3: DJing
 
 Some blind and visually impaired users use Mixxx with screenreader software. However, Mixxx was not designed with screenreaders in mind so many features are cumbersome or impossible to use with screenreaders. This project would entail making Mixxx practically usable with screenreader software.

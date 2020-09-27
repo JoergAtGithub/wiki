@@ -27,6 +27,20 @@ Generally, Mixxx users use DJ controller hardware because it is difficult to man
 
 This project would entail making Mixxx's features practically usable with a touchscreen. The goal is not necessarily to fully replace a controller, but to make it practical to do basic mixing with just a touchscreen and to compliment controllers. Some features are currently only accessible through right click menus so alternative ways to use these would need to be designed and implemented. The project will also require changing the behavior of Mixxx's custom QWidgets to properly handle touch input. Some changes to Mixxx's skins may be required too.
 
+## User manual improvements
+Required skills:
+  * English writing - applicants must submit an example of prior writing (on any topic)
+
+Preferred skills:
+  * DJing
+
+Nice to have:
+  * Technical documentation writing
+
+Mixxx's [user manual](https://manual.mixxx.org/) does a decent job explaining the application, however there is lots of room for improvement. Many users come to Mixxx without any prior experience DJing and are left wondering how to practically use the application to mix music. The manual could be improved by explaining not only how to set up Mixxx and how to use specific features, but also explaining the bigger picture of how to play music with Mixxx.
+
+There is some information in the manual that is obvious or already explained in the application with tooltips; some of this may be deleted from the manual. Other text could be moved directly into the Mixxx GUI. The manual should focus on explaining information that would take too many words to adequately explain in the Mixxx GUI. Also, it would be helpful to add more links to specific sections of the manual from the Mixxx GUI (and maybe edit the manual text with this context in mind).
+
 ## Video tutorials
 Required skills:
   * screen capturing

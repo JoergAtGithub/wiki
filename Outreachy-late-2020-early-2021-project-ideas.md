@@ -17,7 +17,7 @@ Mixxx is a large, complex application with lots of options that users can config
 ## Touchscreen UX design
 Required skills:
   * 3: C++ - beginner skill level is okay, but must have more experience with other programming languages in that case
-  * 5: having a touchscreen device that can run Mixxx
+  * 5: having a touchscreen device that can run Mixxx (Mixxx does not run on Android or iOS)
 
 Preferred skills:
   * 3: designing for touchscreens

@@ -1,27 +1,27 @@
 ## Preferences redesign
 Required skills:
-  * C++ - beginner skill level is okay, but need to have at least a little experience with the language
+  * 3: C++
 
 Preferred skills:
-  * UI design
-  * UX testing
+  * 4: UI design
+  * 2: UX testing
 
 Nice to have skills:
-  * DJing
-  * Qt Designer
+  * 3: DJing
+  * 3: Qt Designer
 
 Mixxx is a large, complex application with lots of options that users can configure. Over the years, this has made the preferences window rather unwieldy. This project would entail redesigning the preferences to make it easier for users to find what they are searching for as well as understand what every option does and why someone might want to change it. In some cases this may lead to changing the behavior of Mixxx so options are no longer required and/or moving options out of the preferences window.
 
 ## Touchscreen UX design
 Required skills:
-  * C++ - beginner skill level is okay, but must have more experience with other programming languages in that case
-  * having a touchscreen device that can run Mixxx
+  * 3: C++ - beginner skill level is okay, but must have more experience with other programming languages in that case
+  * 5: having a touchscreen device that can run Mixxx
 
 Preferred skills:
-  * designing for touchscreens
+  * 3: designing for touchscreens
 
 Nice to have skills:
-  * DJing or other experience using electronic music equipment
+  * 3: DJing or other experience using electronic music equipment
 
 Generally, Mixxx users use DJ controller hardware because it is difficult to manipulate Mixxx fast enough while music is playing using just a keyboard and mouse. Nowadays, many laptops have touchscreens. Also, some users are using Mixxx with tablets or single board computers (such as Raspberry Pi and Odroid devices) together with a touchscreen and controller. However, Mixxx's GUI was designed before touchscreens were common and there are many ways it is difficult to use with only a touchscreen without relying on a mouse.
 
@@ -29,13 +29,13 @@ This project would entail making Mixxx's features practically usable with a touc
 
 ## User manual improvements
 Required skills:
-  * English writing - applicants must submit an example of prior writing (on any topic)
+  * 5: English writing - applicants must submit an example of prior writing (on any topic)
 
 Preferred skills:
-  * DJing
+  * 3: DJing
 
 Nice to have:
-  * Technical documentation writing
+  * 3: Technical documentation writing
 
 Mixxx's [user manual](https://manual.mixxx.org/) does a decent job explaining the application, however there is lots of room for improvement. Many users come to Mixxx without any prior experience DJing and are left wondering how to practically use the application to mix music. The manual could be improved by explaining not only how to set up Mixxx and how to use specific features, but also explaining the bigger picture of how to play music with Mixxx.
 
@@ -43,21 +43,21 @@ There is some information in the manual that is obvious or already explained in 
 
 ## Video tutorials
 Required skills:
-  * screen capturing
-  * video editing
+  * 3: screen capturing
+  * 5: video editing
 
 Preferred skills:
-  * DJing with a controller so footage of this can be combined with screen capture video
+  * 3: DJing with a controller so footage of this can be combined with screen capture video
 
 New users are often overwhelmed and do not know how to get started using Mixxx. This project would entail making tutorial videos explaining Mixxx's features and demonstrating how to use them with real examples.
 
 ## Screenreader UX
 Required skills:
-  * C++ - beginner skill level is okay, but must have more experience with other programming languages in that case
-  * experience using screenreader software
+  * 3: C++ - beginner skill level is okay, but must have more experience with other programming languages in that case
+  * 4: experience using screenreader software
 
 Nice to have skills:
-  * QAccessibleInterface
-  * QWidgets
+  * 2: QAccessibleInterface
+  * 2: QWidgets
 
 Some blind and visually impaired users use Mixxx with screenreader software. However, Mixxx was not designed with screenreaders in mind so many features are cumbersome or impossible to use with screenreaders. This project would entail making Mixxx practically usable with screenreader software.

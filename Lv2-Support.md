@@ -96,7 +96,3 @@ Here are some features our current implementation supports:
   - displays the reason why a plugin is disabled
   - lets the user select up to 8 parameters and button parameters to be
     displayed inside the skin
-
-A couple of screenshots:  
-![http://oi59.tinypic.com/6gh6yu.jpg](http://oi59.tinypic.com/6gh6yu.jpg)  
-![http://oi60.tinypic.com/xni5c0.jpg](http://oi60.tinypic.com/xni5c0.jpg)

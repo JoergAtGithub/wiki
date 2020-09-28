@@ -1,12 +1,12 @@
 # Required Text Blocks
 
-Each project requires a significant amount of detailed information for each project.  Here are the fields in the form:
+It's possible to fill out a lot of information about each project for Outreachy.  Not everything is required but it will help interns understand the projects.
 
-* Short Description with verb first, like "Improve User Manual"
-* Long Description
-* Intern Tasks: A bullet list of example tasks to be done, including small starter tasks, main project-spanning task, and stretch goals.  Does not have to be complete
-* Intern Benefits: What will the intern get out of this project?
-* Community Benefits: What does Mixxx get out of this project?
+* (required) Short Description with verb first, like "Improve User Manual"
+* (required) Long Description
+* (optional) Intern Tasks: A bullet list of example tasks to be done, including small starter tasks, main project-spanning task, and stretch goals.  Does not have to be complete
+* (optional) Intern Benefits: What will the intern get out of this project?
+* (optional) Community Benefits: What does Mixxx get out of this project?
 
 
 Skill requirements are described following the [Outreachy project skills key](https://www.outreachy.org/apply/project-selection/#project-skills-key).
@@ -42,7 +42,31 @@ Nice to have skills:
 
 Mixxx is a large, complex application with lots of options that users can configure. Over the years, this has made the preferences window rather unwieldy. This project would entail redesigning the preferences to make it easier for users to find what they are searching for as well as understand what every option does and why someone might want to change it. In some cases this may lead to changing the behavior of Mixxx so options are no longer required and/or moving options out of the preferences window.
 
-## User manual improvements
+## Improve User Manual
+
+### Long Description:
+
+Mixxx's [user manual](https://manual.mixxx.org/) does a decent job explaining the application, however there is lots of room for improvement. Many users come to Mixxx without any prior experience DJing and are left wondering how to practically use the application to mix music. The manual could be improved by explaining not only how to set up Mixxx and how to use specific features, but also explaining the bigger picture of how to play music with Mixxx.
+
+There is some information in the manual that is obvious or already explained in the application with tooltips; some of this may be deleted from the manual. Other text could be moved directly into the Mixxx GUI. The manual should focus on explaining information that would take too many words to adequately explain in the Mixxx GUI. Also, it would be helpful to add more links to specific sections of the manual from the Mixxx GUI (and maybe edit the manual text with this context in mind).
+
+### Intern Tasks:
+
+* ?
+
+### Intern Benefits
+
+Gain experience doing technical writing on a large, mature project.
+
+Get to know Git on an active project with many contributors
+
+Gain experience with markdown for formatting
+
+### Community Benefits
+
+
+
+
 Required skills:
   * 5: English writing
 
@@ -52,9 +76,6 @@ Preferred skills:
 Nice to have:
   * 3: Technical documentation writing
 
-Mixxx's [user manual](https://manual.mixxx.org/) does a decent job explaining the application, however there is lots of room for improvement. Many users come to Mixxx without any prior experience DJing and are left wondering how to practically use the application to mix music. The manual could be improved by explaining not only how to set up Mixxx and how to use specific features, but also explaining the bigger picture of how to play music with Mixxx.
-
-There is some information in the manual that is obvious or already explained in the application with tooltips; some of this may be deleted from the manual. Other text could be moved directly into the Mixxx GUI. The manual should focus on explaining information that would take too many words to adequately explain in the Mixxx GUI. Also, it would be helpful to add more links to specific sections of the manual from the Mixxx GUI (and maybe edit the manual text with this context in mind).
 
 ## Video tutorials
 Required skills:

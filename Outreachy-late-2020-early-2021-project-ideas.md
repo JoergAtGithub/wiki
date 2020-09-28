@@ -1,3 +1,14 @@
+# Required Text Blocks
+
+Each project requires a significant amount of detailed information for each project.  Here are the fields in the form:
+
+* Short Description with verb first, like "Improve User Manual"
+* Long Description
+* Intern Tasks: A bullet list of example tasks to be done, including small starter tasks, main project-spanning task, and stretch goals.  Does not have to be complete
+* Intern Benefits: What will the intern get out of this project?
+* Community Benefits: What does Mixxx get out of this project?
+
+
 Skill requirements are described following the [Outreachy project skills key](https://www.outreachy.org/apply/project-selection/#project-skills-key).
 
 

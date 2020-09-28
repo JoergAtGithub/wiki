@@ -4,6 +4,7 @@ It's possible to fill out a lot of information about each project for Outreachy.
 
 * (required) Short Description with verb first, like "Improve User Manual"
 * (required) Long Description
+* (required) "How can applicants make a contribution to your project?".  This describes what the applicants can do during the application period, not the actual internship.
 * (optional) Intern Tasks: A bullet list of example tasks to be done, including small starter tasks, main project-spanning task, and stretch goals.  Does not have to be complete
 * (optional) Intern Benefits: What will the intern get out of this project?
 * (optional) Community Benefits: What does Mixxx get out of this project?
@@ -50,9 +51,13 @@ Mixxx's [user manual](https://manual.mixxx.org/) does a decent job explaining th
 
 There is some information in the manual that is obvious or already explained in the application with tooltips; some of this may be deleted from the manual. Other text could be moved directly into the Mixxx GUI. The manual should focus on explaining information that would take too many words to adequately explain in the Mixxx GUI. Also, it would be helpful to add more links to specific sections of the manual from the Mixxx GUI (and maybe edit the manual text with this context in mind).
 
+### Initial Contributions
+
+?
+
 ### Intern Tasks:
 
-* ?
+n/a
 
 ### Intern Benefits
 

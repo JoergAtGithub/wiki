@@ -220,11 +220,11 @@ Find it here -\> [DJControl Starlight](hercules_dj_control_starlight)
 
 ## Hercules DJControl Inpulse 200
 
-Find it here -\> [DJControl Inpulse 200](hercules_djcontrol_inpulse_200)
+Find it here -\> [DJControl Inpulse 200](https://github.com/mixxxdj/mixxx/wiki/Hercules-Djcontrol-Inpulse-200)
 
 ## Hercules DJControl Inpulse 300
 
-Find it here -\> [DJControl Inpulse 300](hercules_djcontrol_inpulse_300)
+Find it here -\> [DJControl Inpulse 300](https://github.com/mixxxdj/mixxx/wiki/Hercules-Djcontrol-Inpulse-300)
 
 ## Additional information
 

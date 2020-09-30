@@ -98,12 +98,15 @@ SHIFT + Loop Out = Loop Double.
   
 **Browser:**
 
-Encoder = Move up/down list Encoder button = Switch focus between List
-and file view  
+Encoder = Move up/down list 
+
+Encoder button = Switch focus between List and file view  
+
 SHIFT + Encoder button = Maximize/Minimize broser view  
+
 Assistant = AutoDJ On/Off
 
-\*\* FX :\*\*  
+**FX :** 
   
 FX On = FX 3 On/off  
 SHIFT + FX On = FX 3 Select (next effect)  
@@ -111,12 +114,12 @@ SHIFT + FX On = FX 3 Select (next effect)
   
 **PADS - Hot Cue:**  
 
-Set and trigger Hot Cue 1-4  
-SHIFT + Pad = Delete Hot Cue 1-4.  
+Set and trigger Hot Cue 1-8  
+SHIFT + Pad = Delete Hot Cue 1-8.  
 
 **PADS - Roll:**  
 
-Pad 1-4 = Beatloop 1 / 2 / 4 / 8 beats  
+Beatloop 1/8 to 16 beats  
   
 **PADS - Sample:**  
   

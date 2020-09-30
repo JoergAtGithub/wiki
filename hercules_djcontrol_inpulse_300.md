@@ -90,7 +90,7 @@ Encoder = Move up/down list
 
 Encoder button =  Switch focus between List and file view   
 
- _SHIFT_  + Encoder button = Maximize/Minimize broser view  
+ _SHIFT_  + Encoder button = Maximize/Minimize browser view  
 
 Assistant = AutoDJ On/Off
 

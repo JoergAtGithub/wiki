@@ -226,6 +226,10 @@ Find it here -\> [DJControl Inpulse 200](https://github.com/mixxxdj/mixxx/wiki/H
 
 Find it here -\> [DJControl Inpulse 300](https://github.com/mixxxdj/mixxx/wiki/Hercules-Djcontrol-Inpulse-300)
 
+## Hercules DJControl Inpulse 300
+
+Find it here -\> [DJControl Inpulse 500](https://github.com/mixxxdj/mixxx/wiki/Hercules-Djcontrol-Inpulse-500)
+
 ## Additional information
 
 [More information about the DJ console series](hercules_pc_dj_console)

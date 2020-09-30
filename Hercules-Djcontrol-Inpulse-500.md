@@ -1,4 +1,4 @@
-
+![](https://aws1.discourse-cdn.com/free1/uploads/mixxx/original/2X/e/e3ee08e8d4b5ed1cd8d49e694720ae56a70720bc.png)
 
 \* [Manufacturer's product
 page](https://www.hercules.com/en-us/product/djcontrolinpulse500//)  

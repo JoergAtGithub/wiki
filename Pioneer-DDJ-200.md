@@ -5,7 +5,7 @@
   - [Manufacturer's Firmware Update](https://www.pioneerdj.com/en/support/software/controller/ddj-200/)
   - [Midi Mappings](https://www.pioneerdj.com/-/media/pioneerdj/software-info/controller/ddj-200/ddj-200_midi_message_list_e2.pdf)
   - [Hardware Diagram](https://www.pioneerdj.com/-/media/pioneerdj/software-info/controller/ddj-200/ddj-200_hardwarediagram_rekordboxdj_e2.pdf)
-  - [Mapping Git Fork] (https://github.com/dan-giddins/mixxx/tree/ddj-200-support)
+  - [Mapping Git Fork](https://github.com/dan-giddins/mixxx/tree/ddj-200-support)
   - [Simple Mapping Git Repository](https://github.com/dan-giddins/mixxx-ddj-200-mapping)
 
 The Pioneer DDJ-200 is a simple 2 deck USB DJ controller designed for WeDJ, djay, edjing Mix and rekordboxDJ.

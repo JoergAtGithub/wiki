@@ -81,7 +81,7 @@ you see clipping indicated, lower the gain of the playing decks or use Shift + M
   - Shift + REV: Turns on reverse playback mode.
   - GRID: Turns on Quantize mode.
   - FLUX: Turns on Slip mode.
-  - JOG: Currently unmapped.
+  - JOG: Hold to use the wheels to quickly scroll through the track
 
 ### Looping
 

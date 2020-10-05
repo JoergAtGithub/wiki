@@ -33,7 +33,7 @@ sudo apt-get install g++ git scons libportmidi-dev libopusfile-dev \
 Note: `libfaad-dev libmp4v2-dev` are required for M4A support. The
 installation order is [important](https://bugs.launchpad.net/mixxx/+bug/1464120).
 
-Beginning with Debian 11 (Ubuntu 20.04) support for libmp4v2 has been dropped.
+Beginning with Debian 10 (Ubuntu 20.04) support for libmp4v2 has been dropped.
 Instead install additional FFmpeg packages to build Mixxx with FFmpeg enabled:
 
 ```sh
@@ -46,6 +46,12 @@ sudo apt-get install g++ git scons libportmidi-dev libopusfile-dev \
   libgl-dev liblilv-dev \
   libjack-dev libjack0 portaudio19-dev \
   libmp3lame-dev libebur128-dev
+```
+
+And build with:
+
+```
+scons faad=0 ffmpeg=1
 ```
 
 If you are building the Mixxx **master** or **2.3** git branch, additionally run:

@@ -62,9 +62,13 @@ that it is either 'ON' (non-zero) or 'OFF' (zero).
 
 The following extensions add some features to ControlPotMeter controls
 (volume, crossfader, ...). Use in conjunction with `[Channel*N*]`,
-`[Sampler*N*]`, \[Master\] ... groups. Please note, this doesn't work in
-JavaScript files, so you can not do, for example,
-`engine.setValue('MyController', 'keylock_toggle')`.
+`[Sampler*N*]`, \[Master\] ... groups.
+
+Please note, this doesn't work in JavaScript files, so you can not do, for example,
+`engine.setValue('MyController', 'pitch_up_small')`.  
+Use `script.triggerControl(group,'pitch_up_small',50);` instead (see [common-controller-scripts.js > script.triggerControl](https://github.com/mixxxdj/mixxx/blob/master/res/controllers/common-controller-scripts.js#L208)).  
+To use `[group],..._toggle` the respetive shortcut for scripts is
+    `script.toggleControl(group,'keylock_toggle',100);` (see [common-controller-scripts.js > script.toggleControl](https://github.com/mixxxdj/mixxx/blob/master/res/controllers/common-controller-scripts.js#L195)).
 
 | Key/Control           | Range   | What it does                                                                      | On-screen feedback                                                                              |
 | --------------------- | ------- | --------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------- |

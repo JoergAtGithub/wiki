@@ -226,7 +226,7 @@ Find it here -\> [DJControl Inpulse 200](https://github.com/mixxxdj/mixxx/wiki/H
 
 Find it here -\> [DJControl Inpulse 300](https://github.com/mixxxdj/mixxx/wiki/Hercules-Djcontrol-Inpulse-300)
 
-## Hercules DJControl Inpulse 300
+## Hercules DJControl Inpulse 500
 
 Find it here -\> [DJControl Inpulse 500](https://github.com/mixxxdj/mixxx/wiki/Hercules-Djcontrol-Inpulse-500)
 

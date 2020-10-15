@@ -102,8 +102,8 @@ when the controller is activated.
 
 There is a default script function file called
 `common-controller-scripts.js` which contains functions common to all
-controllers and is always loaded. See [\#Helper
-functions](#Helper%20functions) below for information on these
+controllers and is always loaded. See [Helper
+functions](#Helper-functions) below for information on these
 functions.
 
 ### Script file header
@@ -586,8 +586,8 @@ Here is how to use them:
 ```
 
 **Note:** You can use `script.deckFromGroup(group)` to get the virtual
-deck number from the group string. See [\#Helper
-functions](#Helper%20functions) for more information.
+deck number from the group string. See [Helper
+functions](#Helper-functions) for more information.
 
 Here is an example for the two most common types of wheels. Click the
 tab labeled 'scratchingExample.js' below to open this example as a file

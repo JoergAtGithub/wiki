@@ -129,8 +129,7 @@ this wiki, please fix it.
   - [Compiling on Linux](Compiling%20on%20Linux)
   - [Compiling on Windows](Compiling%20on%20Windows)
   - [Compiling on macOS](Compiling%20on%20OS%20X)
-  - [Packaging / Making a Mixxx
-    Installer](Packaging%20/%20Making%20a%20Mixxx%20Installer)
+  - [Packaging / Making a Mixxx Installer](Packaging-Making-Mixxx-Installer)
 
 ### Getting Started
 

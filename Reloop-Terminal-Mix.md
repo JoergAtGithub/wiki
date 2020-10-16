@@ -3,8 +3,8 @@
   
   
   
-[[/media/hardware/reloop/terminalmix2_top.jpg|Terminal Mix 2]] ![Terminal Mix
-4](/hardware/reloop/terminalmix4_top.jpg)
+[[/media/hardware/reloop/terminalmix2_top.jpg|Terminal Mix 2]]
+[[/media/hardware/reloop/terminalmix4_top.jpg|Terminal Mix 4]]
 
 *Images courtesy of [Reloop](http://www.reloop.com/). Click on either
 for a larger version.*
@@ -99,91 +99,80 @@ FX units.
 Note: these knobs & buttons don't switch to decks 3 and 4.
 
   - **FX1/2/3** knobs
-  - control the Meta knob of each effect
-  - focused effect: control the first three knob parameters of the
-    focused effect
+    * control the Meta knob of each effect
+    * focused effect: control the first three knob parameters of the
+    * focused effect
   - **ON** buttons
-  - Press: toggle the effects
-  - Press & hold: temporarily toggle an effect
-  - focused effect: control the first three button parameters of the
+    * Press: toggle the effects
+    * Press & hold: temporarily toggle an effect
+    * focused effect: control the first three button parameters of the
     focused effect
   - **BEATS** encoder
-  - Turn: adjust the Wet/Dry knob of the effect unit
-  - Press repeatedly: adjust the BPM (not the pitch/speed\!) of the
+    * Turn: adjust the Wet/Dry knob of the effect unit
+    * Press repeatedly: adjust the BPM (not the pitch/speed\!) of the
     loaded track
-  - Shift & Press: move the nearest beat marker to the current play
+    * Shift & Press: move the nearest beat marker to the current play
     position
   - **TAP** button
-  - LED flashes on each beat
-  - Press & hold, then press any ON button to focus the respective
+    * LED flashes on each beat
+    * Press & hold, then press any ON button to focus the respective
     effect
-  - Shift & Press: switch between FX units 1/3 (left FX section) and 2/4
+    * Shift & Press: switch between FX units 1/3 (left FX section) and 2/4
     (right FX section)
 
 ### Loop Controls
 
   - **LENGTH** knob
-  - Turn: double or halve the current *loop size* (beats) visible in
+    * Turn: double or halve the current *loop size* (beats) visible in
     loop size spinbox in each skin.
-  - Press: set and activate a loop of *loop size*
-  - Shift & Press: re-activate the previous loop
+    * Press: set and activate a loop of *loop size*
+    * Shift & Press: re-activate the previous loop
+      * play position behind loop-out: jump to loop-in point and play loop from there
+      * play position before loop: activate loop, keep playing and enter loop when play position crosses loop-in marker
+  - **IN** / **1/2x** button
+    * Press: set the loop in point, flashes when a loop is active
+    * Press & hold: drags the loop in point of an active loop
+  - **OUT** / **2x** button
+    * Press: set the loop out point, flashes when a loop is active
+    * Press & hold: drags the loop out point of an active loop
+  - **MOVE** knob
+    * Press & turn: adjust the //beatjump size// visible in beatjump spinbox in each skin
+    * Turn
+      * no active loop: jump back or forth in the track by //beatjump size//
+      * active loop & Quantize OFF: move the loop position by 1/8 beat per detent (helpful to correct the loop in point in case it's set slightly too early or too late)
+      * active loop & Quantize ON: move the loop position by one beat per detent (helpful to correct the loop in point in case it snapped to the wrong beat marker)
+    * Shift & turn with active loop: shift the loop back or forth by //beatjump size//
 
-<!-- end list -->
-
-``` 
-    * play position behind loop-out: jump to loop-in point and play loop from there
-    * play position before loop: activate loop, keep playing and enter loop when play position crosses loop-in marker
-* **IN** / **1/2x** button
-* Press: set the loop in point, flashes when a loop is active
-* Press & hold: drags the loop in point of an active loop
-* **OUT** / **2x** button
-* Press: set the loop out point, flashes when a loop is active
-* Press & hold: drags the loop out point of an active loop
-* **MOVE** knob
-* Press & turn: adjust the //beatjump size// visible in beatjump spinbox in each skin
-* Turn with no active loop: jump back or forth in the track by //beatjump size//
-* Turn with active loop & Quantize OFF: move the loop position by 1/8 beat per detent (helpful to correct the loop in point in case it's set slightly too early or too late)
-* Turn with active loop & Quantize ON: move the loop position by one beat per detent (helpful to correct the loop in point in case it snapped to the wrong beat marker)
-* Shift & turn with active loop: shift the loop back or forth by //beatjump size//
-```
-
-\[ToDo: press & hold MOVE to temporarily show loop/jump controls if
-they're currently hidden in GUI\]
 
 ### Hot cues / Sampler buttons
 
   - **1-4** Hot cue buttons
-  - LED: lit if a hot cue is set
-  - Press: set or recall a hot cue
-  - Press & hold when deck is stopped: play from hot cue as long as
+    * LED: lit if a hot cue is set
+    * Press: set or recall a hot cue
+    * Press & hold when deck is stopped: play from hot cue as long as
     button is pressed. Press Play to continue playing after releasing
     hot cue button
-  - Press & hold when deck is playing: jump to hot cue and play from
+    * Press & hold when deck is playing: jump to hot cue and play from
     there
-  - Shift & press: delete the hot cue
+    * Shift & press: delete the hot cue
   - **▶ 1-4** Sampler buttons
-  - LED: lit when a sample is loaded to the corresponding sampler,
+    * LED: lit when a sample is loaded to the corresponding sampler,
     flashes when that sampler is playing.
-  - Press: play the sample from the beginning
-  - Shift & Press: stop the sample
+    * Press: play the sample from the beginning
+    * Shift & Press: stop the sample
   - **✂ (scissors)** button - Switches hot cues 5-8 & samplers 5-8
 
 ### Wheel & Vinyl button
 
   - **Vinyl/Search** button
-  - Press & release: toggle scratching with the wheel (LED On)
-  - Hold down & turn the wheel: seek through the track
+    * Press & release: toggle scratching with the wheel (LED On)
+    * Hold down & turn the wheel: seek through the track
   - **Wheel**
-  - Vinyl mode ON
-
-<!-- end list -->
-
-``` 
-    * Touch the top black area & turn: scratch the current track like a vinyl record
-    * Touch gray rim only & turn: perform a temporary pitch bend
-* Vinyl mode OFF
-    *  Touch wheel anywhere & turn: perform a temporary pitch bend
-```
+    * Vinyl mode ON
+      * Touch the top black area & turn: scratch the current track like a vinyl record
+      * Touch gray rim only & turn: perform a temporary pitch bend
+    * Vinyl mode OFF
+      *  Touch wheel anywhere & turn: perform a temporary pitch bend
 
 ### Transport buttons
 
@@ -193,27 +182,23 @@ they're currently hidden in GUI\]
   - **CUP** (Cue-Play) Start playback from the cue point (also known as
     stutter play)
   - **Q** (Cue)
-  - LED: lit or flashes when play position is at cue point. [set cue
+    * LED: lit or flashes when play position is at cue point. [set cue
     mode](https://mixxx.org/manual/2.1/chapters/user_interface.html#using-cue-modes)
-  - Press: Set or recall the main cue point on the track
-  - Press & hold: play from Cue point. Release stops playback
+    * Press: Set or recall the main cue point on the track
+    * Press & hold: play from Cue point. Release stops playback
   - **▶ ||** (Play/Pause) Toggle playback of the track
   - \*\*Shift & \*\*▶◀ (left deck) / **Shift & ▶||** (right deck)
-  - initiate the [brake
+    * initiate the [brake
     effect](https://www.mixxx.org/wiki/doku.php/midi_scripting#spinback_brake_and_soft_start_effect)
     for the respective deck: track slows down to full stop.
-  - Touch wheel, Vinyl mode ON: track speed jumps back to normal
+    * Touch wheel, Vinyl mode ON: track speed jumps back to normal
     (considering the pitch slider) and playback continues as soon as the
     wheel is released. Open the `controllers/Reloop Terminal Mix 2-4.js`
     file and look for `TerminalMix.brake` to adjust parameters.
   - **3** / **4** button - When lit all deck buttons (except FX
     controls) control deck 3 (deck 4 respectively).
 
-<!-- end list -->
-
-``` 
   [ToDo: add sofStart function to Shift & CUP (left) / Shift & Q (right)]
-```
 
 ## Mixer controls
 
@@ -229,9 +214,9 @@ virtual deck.*
   - **Headphone** button - Toggles hearing the deck in the headphone
     output
   - 🡄 / 🡆 / **1** / **2** / **3** / **4**
-  - Press: load the currently highlighted song into that deck. \[ToDo:
+    * Press: load the currently highlighted song into that deck. \[ToDo:
     long-press to eject track\]
-  - Shift & press: toggle fader-start (on the channel fader and
+    * Shift & press: toggle fader-start (on the channel fader and
     cross-fader when applicable.) The button flashes when fader-start is
     enabled on that deck.
   - **Channel slider** - Adjust the output volume
@@ -256,21 +241,21 @@ virtual deck.*
   - ***Prep** button - Does nothing at the moment. Use the MIDI Learning
     Wizard to assign an action.*
   - **Back** button
-  - Press: move the highlight in the active library panel to the right
-  - Shift & Press: move the highlight to the left
+    * Press: move the highlight in the active library panel to the right
+    * Shift & Press: move the highlight to the left
   - **TRAX knob**
-  - Turn: move the highlight up/down by one line
-  - Shift & turn: move the highlight one page up/down
-  - Press while Tree panel has focus: expand an item if possible. If
+    * Turn: move the highlight up/down by one line
+    * Shift & turn: move the highlight one page up/down
+    * Press while Tree panel has focus: expand an item if possible. If
     item can't be expanded further, it is selected and and highight is
     shifted rightwarde to the respective tracks table.
-  - Press while tracks table has focus: perform the Track Load Action
+    * Press while tracks table has focus: perform the Track Load Action
     specified in *Preferences \> Library* (default: load track to next
     empty deck)
   - **Volume Level Meter**
-  - LEDs dislay the hardware(\!) volume of the Master output (2 blue
+    * LEDs dislay the hardware(\!) volume of the Master output (2 blue
     LEDs at the top indicate clipping)
-  - *Attention:* the Master volume might already clip in Mixxx before
+    * *Attention:* the Master volume might already clip in Mixxx before
     the hardware LEDs light up. You can adjust the hardware Master
     volume knob and target loudness in *Preferences \> Normalization \>
     ReplayGain* to keep enough headroom for the Master volume in Mixxx
@@ -278,14 +263,14 @@ virtual deck.*
     in Mixxx
   - **POWER** LED (red)
   - **MIDI** LED (blue)
-  - flashes when a MIDI messages was sent
-  - when it flashes although no control is touched, it's probaly due to
+    * flashes when a MIDI messages was sent
+    * when it flashes although no control is touched, it's probaly due to
     dust in the jogwheels (See [Controler Hardware /
     Maintenance](#controller-hardware-maintenance))
   - **Shift Lock** switch at the back side
-  - ON: press **Shift** buttons once to switch to secondary button/knob
+    * ON: press **Shift** buttons once to switch to secondary button/knob
     actions
-  - OFF: press & hold **Shift** buttons to switch to secondary
+    * OFF: press & hold **Shift** buttons to switch to secondary
     button/knob actions
 
 ### Cross-fader section

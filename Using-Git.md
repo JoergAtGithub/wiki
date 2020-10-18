@@ -85,9 +85,6 @@ Configure Git so that you push to your fork by default for new branches:
 
 # Set up automatic code checking
 
-**WARNING**: This currently only works for linux, since "clang-format"
-under python is [only compiled for linux](https://github.com/mgevaert/clang-format-wheel/issues/2)
-
 To get your changes merged into Mixxx it's necessary to make sure that
 your code matches our code style requirements. You can make git check
 this automatically every time you commit your changes by using the

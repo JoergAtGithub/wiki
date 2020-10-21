@@ -94,16 +94,17 @@ installed.
 
 The tools you are going to need for working with Mixxx are:
 ``` sh
-pacman -S git gcc cmake
+sudo pacman -S --needed git gcc cmake
 ```
 Alternatively, you can substitute gcc with clang.
 
 Then install the dependencies:
 ``` sh
-sudo pacman -S libid3tag libmad portaudio qt libogg \
+sudo pacman -S --needed libid3tag libmad portaudio qt libogg \
     libvorbis libsndfile portmidi libmp4v2 faad2 libshout \
     taglib protobuf vamp-plugin-sdk rubberband \
-    chromaprint sqlite upower lilv lame
+    chromaprint sqlite upower lilv lame \
+    soundtouch opusfile
 ```
 
 ### Non-system Qt

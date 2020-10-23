@@ -128,6 +128,7 @@ nix-shell --arg enableKeyfinder true --arg defaultLv2Plugins true
 ```
 You can then use the commands `configure`, `build`, `run`, `debug` for your workcycle.
 The result will be placed in the folder cbuild.
+ccache is used inside the development shell to speed up your recompile times.
 
 ### Non-system Qt
 

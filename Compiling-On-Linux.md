@@ -107,6 +107,28 @@ sudo pacman -S --needed libid3tag libmad portaudio qt libogg \
     soundtouch opusfile
 ```
 
+### Nix & NixOS
+
+If you have the nix package manager installed (can be done on any linux),
+or you are running [NixOS](https://nixos.org/), getting started is the easiest.
+
+#### Creating a release
+
+```
+nix-build shell.nix --arg releaseMode true --arg defaultLv2Plugins true
+```
+This will build a fully functional mixxx derivate to run at any time.
+
+#### Development Environment
+
+To get a working development environment start a nix-shell like this:
+
+```
+nix-shell --arg enableKeyfinder true --arg defaultLv2Plugins true
+```
+You can then use the commands `configure`, `build`, `run`, `debug` for your workcycle.
+The result will be placed in the folder cbuild.
+
 ### Non-system Qt
 
 If your distribution's Qt package is older than the version required by

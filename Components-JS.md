@@ -45,7 +45,7 @@ function. Use the custom Deck's constructor function to create all the
 Components you need for your particular controller. The example below is
 for a typical 2 deck controller. If you are mapping a controller with a
 different layout, some changes to this general structure may be
-necessary. There is a lot to explain here, so worry about understanding
+necessary. There is a lot to explain here, so don't worry about understanding
 every detail yet:
 
 ```javascript

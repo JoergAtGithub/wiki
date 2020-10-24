@@ -1,6 +1,6 @@
 # Ion Discover DJ Pro
 
-  *[[https://mixxx.discourse.group/t/ion-discover-dj-pro-mapping-script/12120|Forum thread]]
+[[Forum thread|https://mixxx.discourse.group/t/ion-discover-dj-pro-mapping-script/12120]]
 
 Ion Discover DJ Pro is a 2-deck controller with integrated audio interface and iPhone dock.
 

@@ -130,6 +130,31 @@ You can then use the commands `configure`, `build`, `run`, `debug` for your work
 The result will be placed in the folder cbuild.
 ccache is used inside the development shell to speed up your recompile times.
 
+#### VSCode support
+
+You can use following task for building mixxx inside the nix development environment and
+have proper error parsing:
+
+```json
+{
+    "label": "build",
+    "type": "shell",
+    "command": "nix-shell --arg enableKeyfinder true --arg defaultLv2Plugins true --command 'build;'",
+    "options": {
+        "cwd": "${workspaceFolder}"
+    },
+    "problemMatcher": {
+        "base": "$gcc",
+        "fileLocation": ["absolute"]
+    },
+    "group": {
+        "kind": "build",
+        "isDefault": true
+    },
+    "runOptions": { "instances": 1}
+}
+```
+
 ### Non-system Qt
 
 If your distribution's Qt package is older than the version required by

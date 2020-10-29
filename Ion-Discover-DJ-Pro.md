@@ -13,4 +13,4 @@ The basic operation for this controller is working:
   * scratching
   * sound control bass, mid & treble
 
-But this controller mapping is definitely not "prefect" an might need some more rework for other more advanced features to get working. Please discuss issues and questions on the forum and provide enhancements to this controller mapping via Github.
+But this controller mapping is definitely not "perfect" an might need some more rework for other more advanced features to get working. Please discuss issues and questions on the forum and provide enhancements to this controller mapping via Github.

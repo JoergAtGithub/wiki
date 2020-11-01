@@ -59,9 +59,9 @@ To download the latest updates, go to the `mixxx` folder and run
 That will only download the updates though. To change the files on your
 computer to match the latest updates, run
 
-    git checkout upstream/master
+    git checkout upstream/main
 
-to switch to the upstream master branch.
+to switch to the upstream main branch.
 
   
 You may get an error that says:
@@ -167,13 +167,13 @@ changes:
     git fetch upstream
 
 Create a new branch on your computer called 'fixing\_some\_bug' starting
-from the upstream/master branch:
+from the upstream/main branch:
 
-    git checkout -b fixing_some_bug upstream/master
+    git checkout -b fixing_some_bug upstream/main
 
 If you want your changes included in a current beta release or a bugfix
 point release (such as 2.1.1), start your new branch from the release
-branch instead of the master branch, for example:
+branch instead of the main branch, for example:
 
     git checkout -b fixing_some_bug upstream/2.2
 
@@ -268,7 +268,7 @@ request" button.
 
 On the page for making a new pull request, click the link that says
 "compare across forks". Leave the base fork as mixxxdj/mixxx. By
-default, the base branch is the master branch, but if you want your
+default, the base branch is the main branch, but if you want your
 changes included in a different branch, be sure to select it here. For
 the "head fork", select the fork for your GitHub user. Where it says
 "compare", select the branch on your fork that you have been working on.
@@ -300,20 +300,20 @@ branch](#create%20a%20new%20branch).
 Sometimes you [started your work](#create-a-new-branch) from the wrong
 base branch. Maybe you wrote a bugfix or a controller mapping that
 should be merged into current stable release, but started from the
-`master` branch instead of the stable version's branch.
+`main` branch instead of the stable version's branch.
 
 In these cases you need to
 [rebase](https://git-scm.com/book/en/Git-Branching-Rebasing) your work
 on the correct branch. For example, the current stable version is 2.2.3
 and you want your changes to be a part of the 2.2.4 release, but you
-based your work on `master` (which will become the 2.3 release), you
+based your work on `main` (which will become the 2.3 release), you
 need to rebase onto the `2.2` branch.
 
-To rebase your work in the `fixing_some_bug` branch from `master` onto
+To rebase your work in the `fixing_some_bug` branch from `main` onto
 `2.2`, run:
 
     git fetch upstream
-    git rebase --onto upstream/2.2 upstream/master fixing_some_bug
+    git rebase --onto upstream/2.2 upstream/main fixing_some_bug
 
 Since this changes commits that you already pushed to the server, you
 need to use the `-f` flag when pushing the changes to the remote
@@ -330,18 +330,18 @@ If there have been new changes in the upstream code that you would like
 to include in a branch you are working on, run:
 
     git checkout your_branch_name
-    git pull # a shortcut for 'git fetch upstream && git merge upstream/master'
+    git pull # a shortcut for 'git fetch upstream && git merge upstream/main'
 
 If you want to try the latest code from upstream without any of your own
 changes, run:
 
     git fetch upstream
-    git checkout upstream/master
+    git checkout upstream/main
 
-Note that there is usually no need to use the origin/master branch or
-maintain a master branch on your computer. Only developers with write
-access to the mixxxdj/mixxx repository need to maintain a local master
-branch for occasionally pushing directly to the master branch.
+Note that there is usually no need to use the origin/main branch or
+maintain a main branch on your computer. Only developers with write
+access to the mixxxdj/mixxx repository need to maintain a local main
+branch for occasionally pushing directly to the main branch.
 
 # Tutorials
 

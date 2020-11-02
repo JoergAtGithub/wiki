@@ -187,7 +187,7 @@ Additional skins for Mixxx can be downloaded in the
     so you get
     C:\Program Files\Mixxx\skins\NewSkin
     
-    Mac OSX
+    macOS
     *************
     -  In the Finder, go to the Applications folder and select Mixxx.
     -  Right Click and choose "Show Package Contents" from the Action menu.
@@ -255,7 +255,7 @@ Further reads:
   - Free Images editors - Online
     ([Phoenix](http://aviary.com/tools/phoenix),
     [Pixlr](http://www.pixlr.com/)), Windows
-    ([Paint.net](http://www.getpaint.net/)) Mac OSX
+    ([Paint.net](http://www.getpaint.net/)) macOS
     ([Pixelmator](http://www.pixelmator.com/) -trial-), Linux (Gimp,
     Inkscape)
   - Free color tools - Online ([Color Palette

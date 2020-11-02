@@ -102,6 +102,10 @@ The callbacks would be passed the `mixxx.Control` as their first parameter. If a
 
 ## New jog wheel scratching API
 
+Will be able to handle both motorized and non-motorized wheels.
+
+Jog touch events should be passed to Mixxx so Mixxx can properly handle spinbacks on non-motorized wheels without needing to duplicate this for every controller script. This will also allow Mixxx to implement [slip mode](https://bugs.launchpad.net/mixxx/+bug/1475303) for jog wheels.
+
 https://mixxx.zulipchat.com/#narrow/stream/113295-controller-mapping/topic/new.20jog.20wheel.20API
 
 ## New Timer API

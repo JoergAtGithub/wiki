@@ -38,11 +38,11 @@ decisions about what equipment to get for using Mixxx.
 
 ### Setting up Git
 
-We use Git for coordinating Mixxx development. Git is software that
+We use `git` for coordinating Mixxx development. Git is software that
 helps keep track of changes in files. Before you start working on your
 mapping, it is recommended (but not necessary) to set up git on your
-computer. Using git will help you keep track of your progress on the
-mapping and help Mixxx developers review it. If you have already
+computer. Using git allows you to split your work into chunks and will thereby help you keep track of your progress on the
+mapping. It will also help Mixxx developers review your mapping. If you have already
 finished your mapping, that's okay, just add your finished mapping files
 in one commit. Start by creating a [GitHub](http://github.com/) account,
 [forking Mixxx](https://github.com/mixxxdj/mixxx), and cloning your
@@ -50,11 +50,11 @@ forked git repository onto your computer.
 
 Usually, new mappings can be released as part of bugfix releases. Hence,
 you should usually use the current stable release branch (e.g. `2.2`)
-instead of the \`master\` branch as a starting point for your new
+instead of the \`main\` branch as a starting point for your new
 mapping branch. You run `git checkout -b new_branch_name 2.2` from
 within your git repository to that. If you're making use of unreleased
-features that are only present in `master`, you can also use `master` as
-base branch instead (run `git checkout -b new_branch_name master`).
+features that are only present in `main`, you can also use `main` as
+base branch instead (run `git checkout -b new_branch_name main`).
 
 Make changes to your mapping and commit them when your changes work.
 Before making any commits, configure git to use your name and email in
@@ -133,7 +133,7 @@ Controller documentation in the manual should include:
     Mixxx beyond the usual loading of the mapping in Mixxx's preferences
   - The inputs and outputs of the audio interface if the device has one.
     Explain how to set these up with Mixxx. Usually this is just
-    configuring channels 1-2 for master and channels 3-4 for headphones,
+    configuring channels 1-2 for main output and channels 3-4 for headphones,
     but mention if there is anything else to set up. Document if the
     microphone inputs are available to the computer (more details
     [below](#microphone-inputs)).
@@ -208,7 +208,7 @@ computer motherboards often has one microphone input jack, typically a
 icon, that can be used for this purpose.
 
 Some controllers have a loopback/mix record input that includes the
-microphone mixed with the master output from Mixxx (and often external
+microphone mixed with the main output from Mixxx (and often external
 audio inputs). If your controller has this, it should be configured for
 Mixxx's Record/Broadcast input and this should be explained on the wiki
 page for the controller.

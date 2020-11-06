@@ -72,7 +72,7 @@ guidelines](coding%20guidelines) to avoid extra work.
 You have to sign a contributor agreement. We will contact you about it
 in time.
 
-## Fix is merged to Master
+## Fix is merged to the `main` branch
 
 The Bug is fixed now and will be released with the next release cycle.
 

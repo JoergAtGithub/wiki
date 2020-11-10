@@ -172,8 +172,6 @@ cmake -DCOREAUDIO=ON -DCMAKE_BUILD_TYPE=Debug -DDEBUG_ASSERTIONS_FATAL=ON -DQt5_
 
 Now you can enable Gatekeeper again as described in this [article](https://www.imore.com/how-open-apps-anywhere-macos-catalina-and-mojave).
 
-If you want to create a signed DMG image with a signed `.app` bundle inside, add `-DAPPLE_CODESIGN_IDENTITY=<your signing identity>` to the command above. This must be done here at the `cmake` configure step, not when running `cpack` later. You can run `security find-identity -p codesigning` to find what identities you have installed on your keychain.
-
 ### Build Mixxx
 Now you are ready to build Mixxx. To build Mixxx simply run the following command. Note that this has to be run inside the `cmake_build` folder:
 
@@ -185,21 +183,21 @@ If the build succeeds, there will be a `mixxx` binary in the current
 directory that you can run:
 
 ```shell
-./mixxx --developer --resourcePath res/
+./mixxx
 ```
 
-This runs Mixxx, telling it to use the `res` folder as its source of
-skins, controller presets, etc. This is usually desirable for local
-development.
+### Building a DMG image with an .app bundle inside
+Generating the .app has some expensive scanning and relinking steps. So, for development, we recommend using the bare binary instead of creating a bundle. Generally you would only need to build a bundle locally if you are working on the bundle building process.
 
-Alternatively, you can build a DMG image with a macOS `.app` bundle inside by running (from the cmake_build directory):
+Add `-DMACOS_BUNDLE=ON` to the first `cmake` command above when configuring the build.
 
+To sign the `.app` bundle inside the DMG image, add `-DAPPLE_CODESIGN_IDENTITY=<your signing identity>` to the `cmake` command. This must be done at the initial `cmake` configure step, not when running `cpack` later. You can run `security find-identity -p codesigning` to find what identities you have installed on your keychain.
+
+To create the DMG image with the .app bundle inside, run
 ```shell
 cpack -G DragNDrop
 ```
-You can double click the DMG image in Finder then drag and drop the Mixxx.app file inside to /Applications or wherever you would like.
-Generating the .app has some expensive scanning and relinking steps. So, for iterative development, we suggest using the bare binary instead of creating a bundle.
-
+You can run the bundle by double clicking the DMG image in Finder then dragging and dropping the Mixxx.app file inside to /Applications or wherever you would like.
 
 ## 5. Configure your development tools
 

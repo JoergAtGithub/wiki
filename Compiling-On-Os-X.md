@@ -179,12 +179,19 @@ Now you are ready to build Mixxx. To build Mixxx simply run the following comman
 cmake --build .
 ```
 
-If the build succeeds, there will be a `mixxx` binary in the current
-directory that you can run:
+If the build succeeds, there will be a `run-mixxx.sh` script in the current directory that you can run:
 
 ```shell
-./mixxx
+./run-mixxx.sh
 ```
+
+You can pass arguments to this as if you were running the `mixxx` binary directly. For example:
+
+```shell
+./run-mixxx.sh --logLevel debug
+```
+
+You can run the `mixxx` binary directly, but you would need to set the `QT_QPA_PLATFORM_PLUGIN_PATH` environment variable to point to the `plugins` directory under the Qt directory in the build environment.
 
 ### Building a DMG image with an .app bundle inside
 Generating the .app has some expensive scanning and relinking steps. So, for development, we recommend using the bare binary instead of creating a bundle. Generally you would only need to build a bundle locally if you are working on the bundle building process.

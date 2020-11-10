@@ -108,7 +108,7 @@ to see the current official version. Download the archive and extract it whereve
 There is currently an issue with a hardcoded path in the PkgConfig file for taglib in the build environment, so you must fix it before building or your build will fail to link at the end.
 ```shell
 tar xf 2.3-j00004-497fe02e-osx10.11-x86_64-release.tar.gz
-export PREBUILT_ENVIRONMENT=/home/YOUR-USERNAME/2.3-j00004-497fe02e-osx10.11-x86_64-release
+export PREBUILT_ENVIRONMENT=/home/YOUR-USERNAME/2.3-j00004-497fe02e-osx10.11-x86_64-release # or wherever you extracted the archive
 find "${PREBUILT_ENVIRONMENT}" -name "*.pc" -or -path "*/bin/taglib-config" -exec sed -i".orig" -e "s|/Users/mixxx/bs-2.3-mac/amd64/environment/2.3-j00004-497fe02e-osx10.11-x86_64-release|${PREBUILT_ENVIRONMENT}|g" {} \;
 ```
 

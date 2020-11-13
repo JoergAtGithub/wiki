@@ -111,7 +111,9 @@ functions.
 In your script file, you need to have a declaration of the controller's
 object. It looks like this:
 
-    var MyController = {};
+``` js
+var MyController = {};
+```
 
 ...and you would replace `MyController` with whatever you entered for
 'functionprefix' in the XML file above. This declares a new JavaScript
@@ -134,22 +136,24 @@ For example, if there are 40 LEDs on your controller that respond to
 MIDI note numbers 1 through 40 that turn on when sent value 0x7f and
 turn off when sent value 0x00, your script could start with:
 
-    var MyController = {};
-    
-    MyController.init = function (id, debugging) {
-        // turn on all LEDs
-        for (var i = 1; i <= 40; i++) { // Repeat the following code for the numbers 1 through 40
-                                    // see https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for
-            midi.sendShortMsg(0x90, i, 0x7f);
-        }
+``` js
+var MyController = {};
+
+MyController.init = function (id, debugging) {
+    // turn on all LEDs
+    for (var i = 1; i <= 40; i++) { // Repeat the following code for the numbers 1 through 40
+                                // see https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for
+        midi.sendShortMsg(0x90, i, 0x7f);
     }
-    
-    MyController.shutdown = function() {
-       // turn off all LEDs
-       for (var i = 1; i <= 40; i++) {
-            midi.sendShortMsg(0x90, i, 0x00);
-        }
+}
+
+MyController.shutdown = function() {
+   // turn off all LEDs
+   for (var i = 1; i <= 40; i++) {
+        midi.sendShortMsg(0x90, i, 0x00);
     }
+}
+```
 
 The ID parameter of the init function is the `controller id` attribute
 from the XML file. This can be used to identify the particular
@@ -169,15 +173,15 @@ element in the XML file, with a \<Script-Binding/\> tag in the
 \<options\> block, like so:
 
 ``` XML
-            <control>    <!--    Pitch slider    -->
-                <group>[Master]</group>
-                <key>StantonSCS3d.pitchSlider</key>
-                <status>0xB0</status>
-                <midino>0x04</midino>
-                <options>
-                    <Script-Binding/>
-                </options>
-            </control>
+<control>    <!--    Pitch slider    -->
+    <group>[Master]</group>
+    <key>StantonSCS3d.pitchSlider</key>
+    <status>0xB0</status>
+    <midino>0x04</midino>
+    <options>
+        <Script-Binding/>
+    </options>
+</control>
 ```
 
 The value for \<group\> doesn't matter when using a script function, but
@@ -356,11 +360,9 @@ connection. This object should be stored in a script variable. To switch
 the controller between different modes, such as controlling a different
 deck:
 
-``` 
  - disconnect the old connection object by calling its ''disconnect'' method (with no arguments)
  - register the new connection with ''engine.makeConnection''
  - call the ''trigger'' method of the new connection object (with no arguments) to immediately execute the callback using the state of the new Mixxx Control.
-```
 
 For example:
 
@@ -558,32 +560,25 @@ bool engine.isScratching(int deck);
 
 Here is how to use them:
 
-1.  When you want to start scratching (such as when the wheel is
-    touched,) call `engine.scratchEnable()` with:
+**When you want to start scratching** (such as when the wheel is touched,) call `engine.scratchEnable()` with:
 
-<!-- end list -->
+- the virtual deck number you want to scratch
+- the resolution of the MIDI control (in intervals per revolution, typically 128.)
+- the speed of the imaginary record at 0% pitch (in revolutions per minute (RPM) typically 33+1/3, adjust for comfort)
+- the [alpha-beta filter](http://en.wikipedia.org/wiki/Alpha_beta_filter) coefficients (together these affect responsiveness and looseness of the imaginary slip mat):
+  - the alpha value for the filter (start with 1/8 (0.125) and tune from there)
+  - the beta value for the filter (start with alpha/32 and tune from there)
+- whether you want Mixxx to ramp the deck speed down or to stop instantly. (TRUE for ramping, which is the default.)
 
-  - the virtual deck number you want to scratch
-  - the resolution of the MIDI control (in intervals per revolution,
-    typically 128.)
-  - the speed of the imaginary record at 0% pitch (in revolutions per
-    minute (RPM) typically 33+1/3, adjust for comfort)
-  - the [alpha-beta
-    filter](http://en.wikipedia.org/wiki/Alpha_beta_filter) coefficients
-    (together these affect responsiveness and looseness of the imaginary
-    slip mat)
+**Each time the MIDI control is moved**, call `engine.scratchTick()` with:
 
-<!-- end list -->
+- the virtual deck number this control is currently scratching
+- the movement value (typically 1 for one "tick" forwards, -1 for one "tick" backwards)
 
-``` 
-    * the alpha value for the filter (start with 1/8 (0.125) and tune from there)
-    * the beta value for the filter (start with alpha/32 and tune from there)
-* whether you want Mixxx to ramp the deck speed down or to stop instantly. (TRUE for ramping, which is the default.)
-- Each time the MIDI control is moved, call ''engine.scratchTick()'' with:
-* the virtual deck number this control is currently scratching
-* the movement value (typically 1 for one "tick" forwards, -1 for one "tick" backwards)
-- When you're done scratching (like when the wheel is released,) just call ''engine.scratchDisable()'' with the number of the virtual deck to stop scratching and whether you want Mixxx to ramp up to the play speed or jump to it instantly. (Default is to ramp which also allows spin-backs with wheels.)
-```
+**When you're done scratching** (like when the wheel is released,) just call `engine.scratchDisable()` with:
+
+- the number of the virtual deck to stop scratching
+- whether you want Mixxx to ramp up to the play speed or jump to it instantly. (Default is to ramp which also allows spin-backs with wheels.)
 
 **Note:** You can use `script.deckFromGroup(group)` to get the virtual
 deck number from the group string. See [Helper
@@ -661,9 +656,11 @@ If you need to pass arguments to a function used with
 `engine.beginTimer`, wrap the function call in an anonymous function
 expression, for example:
 
+``` js
     engine.beginTimer(250, function() {
         someFunctionToExecute(parameter1, parameter2, parameter3);
     });
+```
 
 Note that within the function expression, you can access variables from
 the surrounding scope because [JavaScript functions create
@@ -826,11 +823,13 @@ the nearest color supported by the controller. Create a ColorMapper by
 passing an object with RGB codes as the keys and the corresponding MIDI
 codes as values:
 
+``` js
     var myControllerColorMapper = new ColorMapper({
         0xFF0000: 1, // red
         0x00FF00: 2, // green
         0x0000FF: 3, // blue
     });
+```
 
 In this example, the controller's buttons would be lit red by sending
 MIDI code 1, green with MIDI code 2, and blue with MIDI code 3.
@@ -847,6 +846,7 @@ ColorMapper has two methods:
 Connect a callback to `[ChannelN]`, `hotcue_X_color` to set LEDs to
 match the hotcue color, for example:
 
+``` js
     var hotcueLEDcallback = engine.makeConnection('[Channel1]', 'hotcue_2_color', function (value, group, control) {
       if (value !== -1) { // hotcue is set
         midi.sendShortMsg(0x90, 0x60, myControllerColorMapper.getNearestColor(value));
@@ -854,6 +854,7 @@ match the hotcue color, for example:
         midi.sendShortMsg(0x90, 0x60, 0);
       }
     });
+```
 
 The Components library supports passing a ColorMapper object to the
 [HotcueButton class](components_js#hotcuebutton) so all the logic for

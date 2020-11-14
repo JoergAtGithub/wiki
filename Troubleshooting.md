@@ -33,7 +33,7 @@ You can also apply a specific scale factor (for example 1.5 = 150%):
 `QT_SCALE_FACTOR=1.5` or `QT_SCREEN_SCALE_FACTORS=1.5` while the latter overwrites `QT_SCALE_FACTOR`.  
 For supported operating systems the commands to apply scaling options vary:
 
-**<span class="underline">Linux</span>**
+### Linux
 
 Open a shell console and type:
 
@@ -48,7 +48,7 @@ To avoid needing to run these commands every time you run Mixxx, you can
 add them to `/etc/profile` or `~/.bashrc` (assuming you are using Bash as
 your shell), log out, and log back in.
 
-**<span class="underline">Windows</span>**
+### Windows
 
 Open a command prompt ( cmd ) and type:
 
@@ -70,6 +70,10 @@ to launch it.
 Refer to [Qt's
 documentation](http://doc.qt.io/qt-5/highdpi.html#high-dpi-support-in-qt)
 for details.
+
+### macOS
+
+Mixxx 2.2 on macOS 11 may need to be run in Low Resolution Mode. This is not an issue with Mixxx 2.3 beta. To run Mixxx in Low Resolution Mode, right click on the Mixxx application in Finder, select Get Info, and check "Open in Low Resolution".
 
 ## Other programs do not make sound while Mixxx is running
 

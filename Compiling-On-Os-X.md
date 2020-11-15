@@ -103,7 +103,6 @@ There is currently an issue with a hardcoded path in the PkgConfig file for tagl
 export PREBUILT_ENV_NAME=2.3-7b6dfe7-sdk10.15-macosminimum10.12-x86_64
 unzip ~/Downloads/macOS-build-environment.zip -d ~/Downloads
 tar xf ~/Downloads/${PREBUILT_ENV_NAME}.tar.gz -C ~
-rm -rf ~/Downloads/${PREBUILT_ENV_NAME}.tar.gz
 export PREBUILT_ENV_PATH=~/${ENVIRONMENT_PATH} # or wherever you extracted the tar.gz archive to
 find "${}" -name "*.pc" -or -path "*/bin/taglib-config" -exec sed -i".orig" -e "s|/Users/runner/work/buildserver/buildserver/environment/${PREBUILT_ENV_NAME}|${PREBUILT_ENV_PATH}|g" {} \;
 ```

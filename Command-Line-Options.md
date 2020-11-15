@@ -1,8 +1,8 @@
 # Command line options
 
-Mixxx is designed to be as user-friendly as possible. As such, its command line options are only useful for development or debugging, as they make these tasks easier. Below is an exhaustive list.
+Mixxx is designed to be as user-friendly as possible. As such, its command line options are only useful for development or debugging. Below is an exhaustive list.
 
-Since 1.11, command line options are part of the manual - the latest version is always here: https://mixxx.org/manual/latest/chapters/appendix.html#command-line-options
+Since 1.11, command line options are part of the manual - the latest version is always here: https://mixxx.org/manual/latest/chapters/appendix.html#command-line-options  
 By replacing "latest" in the url with the desired version (e.g. `2.2` or `1.11`), you will be guided to the respective documentation for that version
 
 _These are case-sensitive_

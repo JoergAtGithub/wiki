@@ -171,7 +171,7 @@ Now you can enable Gatekeeper again as described in this [article](https://www.i
 Now you are ready to build Mixxx. To build Mixxx simply run the following command. Note that this has to be run inside the `cmake_build` folder:
 
 ```shell
-cmake --build .
+cmake --build . --parallel $(sysctl -n hw.physicalcpu)
 ```
 
 If the build succeeds, there will be a `run-mixxx.sh` script in the current directory that you can run:

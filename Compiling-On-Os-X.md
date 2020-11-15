@@ -161,7 +161,7 @@ Run the following cmake command to configure the project with the recommended de
 
 ```shell
 export PREBUILT_ENV_PATH=~/2.3-7b6dfe7-sdk10.15-macosminimum10.12-x86_64 # path where you extracted the build environment archive
-export PATH="${PREBUILT_ENV_PATH}:/bin:$PATH" # to add ccache to your $PATH
+export PATH="${PREBUILT_ENV_PATH}/bin:$PATH" # to add ccache to your $PATH
 cmake -DCOREAUDIO=ON -DCMAKE_BUILD_TYPE=Debug -DDEBUG_ASSERTIONS_FATAL=ON -DQt5_DIR=${PREBUILT_ENV_PATH}/Qt-5.12.10/lib/cmake/Qt5 -DCMAKE_PREFIX_PATH=${PREBUILT_ENV_PATH} ..
 ```
 

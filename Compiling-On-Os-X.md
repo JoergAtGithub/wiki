@@ -96,26 +96,21 @@ brew install libid3tag libmad mp4v2 faad2
 
 **These instructions only work for Mixxx 2.3 and later.**
 
-The Mixxx build server produces pre-built macOS build environments.
-
-See
-[downloads.mixxxx.org](http://downloads.mixxx.org/builds/buildserver/)
-and select the series of Mixxx you would like to develop for (e.g.
-`2.3.x-macosx`). Check
-[build/osx/golden\_environment](https://github.com/mixxxdj/mixxx/blob/master/build/osx/golden_environment)
-to see the current official version. Download the archive and extract it wherever.
+Download the [prebuilt environment here](https://github.com/Be-ing/buildserver/suites/1503889010/artifacts/26328962). The GitHub Action artifact wraps the tar.gz archive within a redundant zip archive.
 
 There is currently an issue with a hardcoded path in the PkgConfig file for taglib in the build environment, so you must fix it before building or your build will fail to link at the end.
 ```shell
-tar xf 2.3-j00004-497fe02e-osx10.11-x86_64-release.tar.gz
-export PREBUILT_ENVIRONMENT=/home/YOUR-USERNAME/2.3-j00004-497fe02e-osx10.11-x86_64-release # or wherever you extracted the archive
-find "${PREBUILT_ENVIRONMENT}" -name "*.pc" -or -path "*/bin/taglib-config" -exec sed -i".orig" -e "s|/Users/mixxx/bs-2.3-mac/amd64/environment/2.3-j00004-497fe02e-osx10.11-x86_64-release|${PREBUILT_ENVIRONMENT}|g" {} \;
+export PREBUILT_ENV_NAME=2.3-7b6dfe7-sdk10.15-macosminimum10.12-x86_64
+unzip ~/Downloads/macOS-build-environment.zip -d ~/Downloads
+tar xf ~/Downloads/${PREBUILT_ENV_NAME}.tar.gz -C ~
+rm -rf ~/Downloads/${PREBUILT_ENV_NAME}.tar.gz
+export PREBUILT_ENV_PATH=~/${ENVIRONMENT_PATH} # or wherever you extracted the tar.gz archive to
+find "${}" -name "*.pc" -or -path "*/bin/taglib-config" -exec sed -i".orig" -e "s|/Users/runner/work/buildserver/buildserver/environment/${PREBUILT_ENV_NAME}|${PREBUILT_ENV_PATH}|g" {} \;
 ```
 
 ### Method 3: Manual
 
-You can of course install all of [Mixxx's dependencies](dependencies) by
-hand. We don't recommend it.
+You can of course install all of [Mixxx's dependencies](dependencies) byhand. We don't recommend it.
 
 <a name="getMixxx"/>
 
@@ -161,13 +156,14 @@ cmake -DCOREAUDIO=ON -DCMAKE_BUILD_TYPE=Debug -DDEBUG_ASSERTIONS_FATAL=ON -DQt5_
 ### Configure the build for pre-built environment
 You don't need to follow this steps each time you want to build Mixxx, you only need to run again the commands on this section whenever you want to change the build settings.
 
-Before configuring the build, make sure to disable macOS Gatekeeper as described in [this article](https://www.imore.com/how-open-apps-anywhere-macos-catalina-and-mojave). Otherwise, macOS will prevent the pre-built environment bundled binaries to execute.
+Before configuring the build, make sure to disable macOS Gatekeeper as described in [this article](https://www.imore.com/how-open-apps-anywhere-macos-catalina-and-mojave). Otherwise, macOS will prevent the pre-built environment bundled binaries from executing.
 
 Run the following cmake command to configure the project with the recommended default settings for development.
 
 ```shell
-export PREBUILT_ENVIRONMENT=/home/YOUR-USERNAME/2.3-j00004-497fe02e-osx10.11-x86_64-release # path where you extracted the build environment archive
-cmake -DCOREAUDIO=ON -DCMAKE_BUILD_TYPE=Debug -DDEBUG_ASSERTIONS_FATAL=ON -DQt5_DIR=${PREBUILT_ENVIRONMENT}/Qt-5.12.3/lib/cmake/Qt5 -DCMAKE_PREFIX_PATH=${PREBUILT_ENVIRONMENT} ..
+export PREBUILT_ENV_PATH=~/2.3-7b6dfe7-sdk10.15-macosminimum10.12-x86_64 # path where you extracted the build environment archive
+export PATH="${PREBUILT_ENV_PATH}:/bin:$PATH" # to add ccache to your $PATH
+cmake -DCOREAUDIO=ON -DCMAKE_BUILD_TYPE=Debug -DDEBUG_ASSERTIONS_FATAL=ON -DQt5_DIR=${PREBUILT_ENV_PATH}/Qt-5.12.3/lib/cmake/Qt5 -DCMAKE_PREFIX_PATH=${PREBUILT_ENV_PATH} ..
 ```
 
 Now you can enable Gatekeeper again as described in this [article](https://www.imore.com/how-open-apps-anywhere-macos-catalina-and-mojave).

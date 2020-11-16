@@ -146,7 +146,7 @@ You can run the `mixxx` binary directly, but you would need to set the `QT_QPA_P
 
 Generating the .app has some expensive scanning and relinking steps. So, for development, we recommend skipping this step. Generally you would only need to build a bundle locally if you are working on the bundle building process.
 
-Add `-DMACOS_BUNDLE=ON` to the first `cmake` command above when configuring the build.
+Add `-DMACOS_BUNDLE=ON` to the first `cmake` command above when configuring the build. You must rerun the `cmake` configure command with this option if you have already run it before.
 
 To sign the `.app` bundle inside the DMG image, add `-DAPPLE_CODESIGN_IDENTITY=<your signing identity>` to the `cmake` command. This must be done at the initial `cmake` configure step, not when running `cpack` later. You can run `security find-identity -p codesigning` to find what identities you have installed on your keychain.
 

@@ -1,8 +1,6 @@
-# Compiling on macOS
-
 Compiling Mixxx for macOS is simple once you have all the dependencies installed. This guide assumes you have basic knowledge about using the command line.
 
-## Install Xcode Command Line Tools
+# Install Xcode Command Line Tools
 
 Launch the Terminal application, and type the following command string:
 
@@ -15,7 +13,7 @@ gets placed in the following directory: `/Library/Developer/CommandLineTools/`
 
 If Xcode is already installed in your system, then Command Line Tools are installed as well (you can check this by trying to run `clang` or `make` from the terminal). To install the latest available version of Xcode for your macOS release, [download it from Apple](https://developer.apple.com/download/). Downloading it requires a free registration at Apple's developer site.
 
-## Download Mixxx source code
+# Download Mixxx source code
 
 If you want to compile Mixxx, you'll need to download the source code. Either grab the source for the latest release from our [downloads
 page](https://www.mixxx.org/download), or checkout a snapshot from our git repository:
@@ -26,11 +24,11 @@ page](https://www.mixxx.org/download), or checkout a snapshot from our git repos
 
 To update to the latest version of a git branch, enter (`cd` into) the directory you cloned the git repository into and run `git pull`. Refer to [Using Git](https://github.com/mixxxdj/mixxx/wiki/Using%20Git) for more details.
 
-## Install build dependencies
+# Install build dependencies
 
 You have several options how to install the libraries and build tools Mixxx requires.
 
-### Recommended: Pre-built environment
+## Recommended: Pre-built environment
 
 Download the [prebuilt environment here](https://github.com/Be-ing/buildserver/suites/1506041269/artifacts/26401744). This contains all the libraries Mixxx and build tools Mixxx needs for macOS. It is what we use to build the official builds, so we recommend using it for local development for consistency.
 
@@ -44,13 +42,13 @@ tar xf ~/Downloads/${PREBUILT_ENV_NAME}.tar.gz -C ~
 
 Then set some environment variables which will be used when configuring `cmake` below:
 
-```
+```shell
 export DEPENDENCIES_PATH=~/${PREBUILT_ENV_NAME} # or wherever you extracted the tar.gz archive to
 export QT_DIR="$(find "${DEPENDENCIES_PATH}" -type d -path "*/cmake/Qt5")"
 export PATH="${DEPENDENCIES_PATH}/bin:$PATH" # to add cmake and ccache to your $PATH
 ```
 
-### Homebrew
+## Homebrew
 
 **There is currently a major performance problem with current versions of Qt in Homebrew and Mixxx on macOS. We recommend [using our prebuilt
 dependencies](#Recommended-Pre-built-environment) with Qt 5.12 until this is [fixed](https://github.com/mixxxdj/mixxx/pull/1974).**
@@ -69,7 +67,7 @@ export QT_DIR=/usr/local/opt/qt5/cmake/Qt5/
 export DEPENDENCIES_PATH=/usr/local/opt/
 ```
 
-#### Optional: ModPlug support
+### Optional: ModPlug support
 
 To enable [libmodplug](http://modplug-xmms.sourceforge.net/) based
 module tracker support.
@@ -91,7 +89,7 @@ Enter Formula name `libmodplug` if asked for, then enter:
 brew install libmodplug
 ```
 
-#### Optional: Alternative MP3/AAC support
+### Optional: Alternative MP3/AAC support
 
 Mixxx supports using macOS-provided versions of the MP3 and AAC codec, so you do not need this step for MP3/AAC support. If you don't want to use the macOS versions of these codecs you can build the codecs into Mixxx directly. To do this, you have to install the MP3 and AAC codecs using Homebrew:
 
@@ -99,11 +97,11 @@ Mixxx supports using macOS-provided versions of the MP3 and AAC codec, so you do
 brew install libid3tag libmad mp4v2 faad2
 ```
 
-### Build dependencies yourself
+## Build dependencies yourself
 
 You can use the [scripts used to make the prebuilt environment](https://github.com/mixxxdj/buildserver) locally if you want to do it yourself. Generally this is a waste of time unless you are working on changing the prebuilt environment.
 
-## Configure
+# Configure CMake
 
 First, create the directory where `cmake` will output the built files. For convenience we suggest making this within the Mixxx source code directory, which is assumed to be `~/mixxx` for this example, however, the build directory can be located anywhere you have write access. If you have the source code somewhere other than `~/mixxx`, substitute that for `~/mixxx` in the following commands.
 
@@ -123,13 +121,13 @@ Now you can enable Gatekeeper again as described in this [article](https://www.i
 
 This step only needs to be done once or repeated when you want to change the cmake configuration. Otherwise you can simply rerun the build step below to compile different code.
 
-## Build Mixxx
+# Build Mixxx
 
 ```shell
 cmake --build ~/mixxx/cmake_build --parallel $(sysctl -n hw.physicalcpu)
 ```
 
-## Run Mixxx
+# Run Mixxx
 ```shell
 ~/mixxx/cmake_build/run-mixxx.sh
 ```
@@ -142,7 +140,7 @@ You can pass arguments to this as if you were running the `mixxx` binary directl
 
 You can run the `mixxx` binary directly, but you would need to set the `QT_QPA_PLATFORM_PLUGIN_PATH` environment variable to point to the `plugins` directory under the Qt directory in the build environment.
 
-## Build Mixxx.app bundle inside a DMG image
+# Build Mixxx.app bundle inside a DMG image
 
 Generating the .app has some expensive scanning and relinking steps. So, for development, we recommend skipping this step. Generally you would only need to build a bundle locally if you are working on the bundle building process.
 
@@ -158,6 +156,6 @@ cpack -G DragNDrop
 
 The DMG file is created in ~/mixxx/cmake_build. You can run the bundle by double clicking the DMG image in Finder then dragging and dropping the Mixxx.app file inside to /Applications or wherever you would like.
 
-## Set up development tools
+# Set up development tools
 
 Now that you can build Mixxx, learn about [developer tools](https://github.com/mixxxdj/mixxx/wiki/Developer%20Tools) that make Mixxx development easier.

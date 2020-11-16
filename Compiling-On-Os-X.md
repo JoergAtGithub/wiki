@@ -5,11 +5,11 @@ installed. This guide assumes you have basic knowledge about using the
 command line.
 
 1. [Install Xcode Command Line Tools](#1-install-xcode-command-line-tools)
-1. [Install build dependencies](#2-install-build-dependencies)
+1. [Get Mixxx](#2-get-mixxx)
+1. [Install build dependencies](#3-install-build-dependencies)
     1. [Method 1: Homebrew](#method-1-homebrew)
     1. [Method 2: Use a pre-built environment](#method-2-use-a-pre-built-environment)
     1. [Method 3: Manual](#method-3-manual)
-1. [Get Mixxx](#3-get-mixxx)
 1. [Compile and install](#4-compile-and-install)
     1. [Configure the build for Homebrew dependencies](#configure-the-build-for-homebrew-dependencies)
     1. [Configure the build for pre-built environment](#configure-the-build-for-pre-built-environment)
@@ -35,9 +35,24 @@ install the latest available version of Xcode for your macOS release, go
 to <https://developer.apple.com/download/>. Downloading it requires a
 free registration at Apple's developer site.
 
+<a name="getMixxx"/>
+
+## 2. Get Mixxx
+
+If you want to compile Mixxx, you'll need to download the source code. Either grab the source for the latest release from our [downloads
+page](https://www.mixxx.org/download), or checkout a snapshot from our git repository:
+
+  - For the latest development (main) branch: `git clone https://github.com/mixxxdj/mixxx.git`
+  - For the latest beta branch: `git clone -b 2.3 https://github.com/mixxxdj/mixxx.git`
+  - For the latest stable branch: `git clone -b 2.2 https://github.com/mixxxdj/mixxx.git`
+
+To update to the latest version of a git branch, enter (`cd` into) the
+directory you cloned the git repository into and run `git pull`. Refer
+to [Using Git](Using%20Git) for more details.
+
 <a name="installDependencies"/>
 
-## 2. Install build dependencies
+## 3. Install build dependencies
 
 ### Method 1: Homebrew
 
@@ -110,21 +125,6 @@ find "${}" -name "*.pc" -or -path "*/bin/taglib-config" -exec sed -i".orig" -e "
 ### Method 3: Manual
 
 You can of course install all of [Mixxx's dependencies](dependencies) byhand. We don't recommend it.
-
-<a name="getMixxx"/>
-
-## 3. Get Mixxx
-
-If you want to compile Mixxx, you'll need to download the source code. Either grab the source for the latest release from our [downloads
-page](https://www.mixxx.org/download), or checkout a snapshot from our git repository:
-
-  - For the latest development (main) branch: `git clone https://github.com/mixxxdj/mixxx.git`
-  - For the latest beta branch: `git clone -b 2.3 https://github.com/mixxxdj/mixxx.git`
-  - For the latest stable branch: `git clone -b 2.2 https://github.com/mixxxdj/mixxx.git`
-
-To update to the latest version of a git branch, enter (`cd` into) the
-directory you cloned the git repository into and run `git pull`. Refer
-to [Using Git](Using%20Git) for more details.
 
 <a name="compile"/>
 

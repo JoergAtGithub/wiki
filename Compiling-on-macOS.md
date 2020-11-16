@@ -142,7 +142,7 @@ You can pass arguments to this as if you were running the `mixxx` binary directl
 
 You can run the `mixxx` binary directly, but you would need to set the `QT_QPA_PLATFORM_PLUGIN_PATH` environment variable to point to the `plugins` directory under the Qt directory in the build environment.
 
-## Building a DMG image with an .app bundle inside
+## Build Mixxx.app bundle inside a DMG image
 
 Generating the .app has some expensive scanning and relinking steps. So, for development, we recommend skipping this step. Generally you would only need to build a bundle locally if you are working on the bundle building process.
 

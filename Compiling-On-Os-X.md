@@ -73,7 +73,7 @@ have already installed Homebrew and gotten it working:
 <!-- end list -->
 
 ```shell
-brew install scons pkg-config portaudio libsndfile libogg libvorbis portmidi git taglib libshout protobuf flac libjpeg qt5 chromaprint rubberband fftw vamp-plugin-sdk opusfile lilv lame qtkeychain
+brew install scons cmake pkg-config portaudio libsndfile libogg libvorbis portmidi git taglib libshout protobuf flac libjpeg qt5 chromaprint rubberband fftw vamp-plugin-sdk opusfile lilv lame qtkeychain
 ```
 
 #### Optional: ModPlug support
@@ -122,9 +122,9 @@ export PREBUILT_ENV_PATH=~/${PREBUILT_ENV_NAME} # or wherever you extracted the 
 find "${}" -name "*.pc" -or -path "*/bin/taglib-config" -exec sed -i".orig" -e "s|/Users/runner/work/buildserver/buildserver/environment/${PREBUILT_ENV_NAME}|${PREBUILT_ENV_PATH}|g" {} \;
 ```
 
-### Method 3: Manual
+### Method 3: Build dependencies yourself
 
-You can of course install all of [Mixxx's dependencies](dependencies) byhand. We don't recommend it.
+You can use the [scripts used to make the prebuilt environment](https://github.com/mixxxdj/buildserver) locally if you want to do it yourself. Generally this is a waste of time unless you are working on changing the prebuilt environment.
 
 <a name="compile"/>
 
@@ -161,7 +161,7 @@ Run the following cmake command to configure the project with the recommended de
 
 ```shell
 export PREBUILT_ENV_PATH=~/2.3-7b6dfe7-sdk10.15-macosminimum10.12-x86_64 # path where you extracted the build environment archive
-export PATH="${PREBUILT_ENV_PATH}/bin:$PATH" # to add ccache to your $PATH
+export PATH="${PREBUILT_ENV_PATH}/bin:$PATH" # to add cmake and ccache to your $PATH
 cmake -DCOREAUDIO=ON -DCMAKE_BUILD_TYPE=Debug -DDEBUG_ASSERTIONS_FATAL=ON -DQt5_DIR=${PREBUILT_ENV_PATH}/Qt-5.12.10/lib/cmake/Qt5 -DCMAKE_PREFIX_PATH=${PREBUILT_ENV_PATH} ..
 ```
 

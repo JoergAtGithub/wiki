@@ -17,7 +17,7 @@ If your distribution is Debian 9/10 based (such as Ubuntu 16.04/18.04), you can 
 them by running:
 
 ```sh
-sudo apt-get install g++ git scons libportmidi-dev libopusfile-dev \
+sudo apt-get install g++ git scons cmake ccache libportmidi-dev libopusfile-dev \
   libshout-dev libtag1-dev libprotobuf-dev protobuf-compiler \
   libusb-1.0-0-dev libfftw3-dev libmad0-dev portaudio19-dev \
   libchromaprint-dev librubberband-dev libsqlite3-dev \

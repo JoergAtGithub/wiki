@@ -158,4 +158,4 @@ The DMG file is created in ~/mixxx/cmake_build. You can run the bundle by double
 
 ## Set up development tools
 
-Now that you can build Mixxx, learn about [developer tools](Developer Tools) that make Mixxx development easier.
+Now that you can build Mixxx, learn about [developer tools](https://github.com/mixxxdj/mixxx/wiki/Developer%20Tools) that make Mixxx development easier.

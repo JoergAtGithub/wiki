@@ -28,6 +28,8 @@ To update to the latest version of a git branch, enter (`cd` into) the directory
 
 ## Install build dependencies
 
+You have several options how to install the libraries and build tools Mixxx requires.
+
 ### Recommended: Pre-built environment
 
 Download the [prebuilt environment here](https://github.com/Be-ing/buildserver/suites/1506041269/artifacts/26401744). This contains all the libraries Mixxx and build tools Mixxx needs for macOS. It is what we use to build the official builds, so we recommend using it for local development for consistency.
@@ -97,7 +99,7 @@ Mixxx supports using macOS-provided versions of the MP3 and AAC codec, so you do
 brew install libid3tag libmad mp4v2 faad2
 ```
 
-### Method 3: Build dependencies yourself
+### Build dependencies yourself
 
 You can use the [scripts used to make the prebuilt environment](https://github.com/mixxxdj/buildserver) locally if you want to do it yourself. Generally this is a waste of time unless you are working on changing the prebuilt environment.
 

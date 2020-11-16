@@ -2,7 +2,6 @@
 
 Compiling Mixxx for macOS is simple once you have all the dependencies installed. This guide assumes you have basic knowledge about using the command line.
 
-
 ## Install Xcode Command Line Tools
 
 Launch the Terminal application, and type the following command string:
@@ -29,25 +28,40 @@ To update to the latest version of a git branch, enter (`cd` into) the directory
 
 ## Install build dependencies
 
-### Method 1: Homebrew
+### Recommended: Pre-built environment
 
-**There is currently a major performance problem with Qt 5.14 and Mixxx on macOS. We recommend [using our prebuilt
-dependencies](#method-2use-a-pre-built-environment) until this is [fixed](https://github.com/mixxxdj/mixxx/pull/1974).**
+Download the [prebuilt environment here](https://github.com/Be-ing/buildserver/suites/1506041269/artifacts/26401744). This contains all the libraries Mixxx and build tools Mixxx needs for macOS. It is what we use to build the official builds, so we recommend using it for local development for consistency.
 
-[Homebrew](https://github.com/Homebrew/brew) is yet another package
-manager for macOS. It is growing quickly in popularity. Assuming you
-have already installed Homebrew and gotten it working:
-
-  - Open the
-    [Terminal](http://www.apple.com/macosx/apps/all.html#terminal)
-    application and use the following command to install the necessary
-    libraries:
-
-<!-- end list -->
+The GitHub Action artifact wraps the tar.gz archive within a redundant zip archive. First, extract it:
 
 ```shell
-brew install scons cmake pkg-config portaudio libsndfile libogg libvorbis portmidi git taglib libshout protobuf flac libjpeg qt5 chromaprint rubberband fftw vamp-plugin-sdk opusfile lilv lame qtkeychain
+export PREBUILT_ENV_NAME=2.3-7b6dfe7-sdk10.15-macosminimum10.12-x86_64
+unzip ~/Downloads/macOS-build-environment.zip -d ~/Downloads
+tar xf ~/Downloads/${PREBUILT_ENV_NAME}.tar.gz -C ~
+```
 
+Then set some environment variables which will be used when configuring `cmake` below:
+
+```
+export DEPENDENCIES_PATH=~/${PREBUILT_ENV_NAME} # or wherever you extracted the tar.gz archive to
+export QT_DIR="$(find '${DEPENDENCIES_PATH}' -type d -path '*/cmake/Qt5')"
+export PATH="${DEPENDENCIES_PATH}/bin:$PATH" # to add cmake and ccache to your $PATH
+```
+
+### Homebrew
+
+**There is currently a major performance problem with current versions of Qt in Homebrew and Mixxx on macOS. We recommend [using our prebuilt
+dependencies](#Recommended-Pre-built-environment) with Qt 5.12 until this is [fixed](https://github.com/mixxxdj/mixxx/pull/1974).**
+
+[Homebrew](https://github.com/Homebrew/brew) is a package manager for macOS. Assuming you have already installed Homebrew and gotten it working, open the [Terminal](http://www.apple.com/macosx/apps/all.html#terminal) application and use the following command to install the necessary libraries:
+
+```shell
+brew install scons cmake ccache pkg-config portaudio libsndfile libogg libvorbis portmidi git taglib libshout protobuf flac libjpeg qt5 chromaprint rubberband fftw vamp-plugin-sdk opusfile lilv lame qtkeychain
+```
+
+Then set some environment variables which will be used to configure `cmake` below: 
+
+```shell
 # Set environment variables for use with cmake below
 export QT_DIR=/usr/local/opt/qt5/cmake/Qt5/
 export DEPENDENCIES_PATH=/usr/local/opt/
@@ -83,76 +97,52 @@ Mixxx supports using macOS-provided versions of the MP3 and AAC codec, so you do
 brew install libid3tag libmad mp4v2 faad2
 ```
 
-### Method 2: Use a pre-built environment
-
-Download the [prebuilt environment here](https://github.com/Be-ing/buildserver/suites/1506041269/artifacts/26401744). The GitHub Action artifact wraps the tar.gz archive within a redundant zip archive.
-
-```shell
-export PREBUILT_ENV_NAME=2.3-7b6dfe7-sdk10.15-macosminimum10.12-x86_64
-unzip ~/Downloads/macOS-build-environment.zip -d ~/Downloads
-tar xf ~/Downloads/${PREBUILT_ENV_NAME}.tar.gz -C ~
-
-# Set environment variables for use with cmake below
-export DEPENDENCIES_PATH=~/${PREBUILT_ENV_NAME} # or wherever you extracted the tar.gz archive to
-export QT_DIR="$(find '${DEPENDENCIES_PATH}' -type d -path '*/cmake/Qt5')"
-export PATH="${DEPENDENCIES_PATH}/bin:$PATH" # to add cmake and ccache to your $PATH
-```
-
 ### Method 3: Build dependencies yourself
 
 You can use the [scripts used to make the prebuilt environment](https://github.com/mixxxdj/buildserver) locally if you want to do it yourself. Generally this is a waste of time unless you are working on changing the prebuilt environment.
 
-## Compile and install
+## Configure
 
-Change to the newly created `mixxx` directory (the top level of the Git repository):
-
-```shell
-cd mixxx
-```
-
-Create the folder where the build files will be written and navigate into it:
+First, create the directory where `cmake` will output the built files. For convenience we suggest making this within the Mixxx source code directory, which is assumed to be `~/mixxx` for this example, however, the build directory can be located anywhere you have write access. If you have the source code somewhere other than `~/mixxx`, substitute that for `~/mixxx` in the following commands.
 
 ```shell
-mkdir cmake_build && cd cmake_build
+mkdir ~/mixxx/cmake_build
 ```
-
-### Configure the build
-You don't need to follow this steps each time you want to build Mixxx, you only need to run again the commands on this section whenever you want to change the build settings.
 
 Before configuring the build, make sure to disable macOS Gatekeeper as described in [this article](https://www.imore.com/how-open-apps-anywhere-macos-catalina-and-mojave). Otherwise, macOS will prevent the pre-built environment bundled binaries from executing.
 
-Run the following cmake command to configure the project with the recommended default settings for development.
+Run the following `cmake` command to configure the project with the recommended default settings for development. This assumes you have set the environment variables after installing dependencies as described above. For convenience, you can substitute the values of those variables in the command so that you can easily go back to it in your shell history (Ctrl + R then start typing `cmake -DC`) without having to set the variables again.
 
 ```shell
-cmake -DCOREAUDIO=ON -DCMAKE_BUILD_TYPE=Debug -DDEBUG_ASSERTIONS_FATAL=ON -DQt5_DIR="$QT_DIR" -DCMAKE_PREFIX_PATH="$DEPENDENCIES_PATH" ..
+cmake -DCOREAUDIO=ON -DCMAKE_BUILD_TYPE=Debug -DDEBUG_ASSERTIONS_FATAL=ON -DQt5_DIR="$QT_DIR" -DCMAKE_PREFIX_PATH="$DEPENDENCIES_PATH" -S ~/mixxx -B ~/mixxx/cmake_build
 ```
 
 Now you can enable Gatekeeper again as described in this [article](https://www.imore.com/how-open-apps-anywhere-macos-catalina-and-mojave).
 
-### Build Mixxx
-Now you are ready to build Mixxx. To build Mixxx simply run the following command. Note that this has to be run inside the `cmake_build` folder:
+This step only needs to be done once or repeated when you want to change the cmake configuration. Otherwise you can simply rerun the build step below to compile different code.
+
+## Build Mixxx
 
 ```shell
-cmake --build . --parallel $(sysctl -n hw.physicalcpu)
+cmake --build ~/mixxx/cmake_build --parallel $(sysctl -n hw.physicalcpu)
 ```
 
-If the build succeeds, there will be a `run-mixxx.sh` script in the current directory that you can run:
-
+## Run Mixxx
 ```shell
-./run-mixxx.sh
+~/mixxx/cmake_build/run-mixxx.sh
 ```
 
 You can pass arguments to this as if you were running the `mixxx` binary directly. For example:
 
 ```shell
-./run-mixxx.sh --logLevel debug
+~/mixxx/cmake_build/run-mixxx.sh --logLevel debug
 ```
 
 You can run the `mixxx` binary directly, but you would need to set the `QT_QPA_PLATFORM_PLUGIN_PATH` environment variable to point to the `plugins` directory under the Qt directory in the build environment.
 
-### Building a DMG image with an .app bundle inside
+## Building a DMG image with an .app bundle inside
 
-Generating the .app has some expensive scanning and relinking steps. So, for development, we recommend using the bare binary instead of creating a bundle. Generally you would only need to build a bundle locally if you are working on the bundle building process.
+Generating the .app has some expensive scanning and relinking steps. So, for development, we recommend skipping this step. Generally you would only need to build a bundle locally if you are working on the bundle building process.
 
 Add `-DMACOS_BUNDLE=ON` to the first `cmake` command above when configuring the build.
 
@@ -160,11 +150,12 @@ To sign the `.app` bundle inside the DMG image, add `-DAPPLE_CODESIGN_IDENTITY=<
 
 To create the DMG image with the .app bundle inside, run
 ```shell
+cd ~/mixxx/cmake_build
 cpack -G DragNDrop
 ```
-You can run the bundle by double clicking the DMG image in Finder then dragging and dropping the Mixxx.app file inside to /Applications or wherever you would like.
 
-## 5. Configure your development tools
+The DMG file is created in ~/mixxx/cmake_build. You can run the bundle by double clicking the DMG image in Finder then dragging and dropping the Mixxx.app file inside to /Applications or wherever you would like.
 
-Now that you can build Mixxx, learn about [developer
-tools](https://github.com/mixxxdj/mixxx/wiki/Developer-Tools) that make Mixxx development easier.
+## Set up development tools
+
+Now that you can build Mixxx, learn about [developer tools](Developer Tools) that make Mixxx development easier.

@@ -1,21 +1,9 @@
 # Compiling on macOS
 
-Compiling Mixxx for macOS is simple once you have all the dependencies
-installed. This guide assumes you have basic knowledge about using the
-command line.
+Compiling Mixxx for macOS is simple once you have all the dependencies installed. This guide assumes you have basic knowledge about using the command line.
 
-1. [Install Xcode Command Line Tools](#1-install-xcode-command-line-tools)
-1. [Get Mixxx](#2-get-mixxx)
-1. [Install build dependencies](#3-install-build-dependencies)
-    1. [Method 1: Homebrew](#method-1-homebrew)
-    1. [Method 2: Use a pre-built environment](#method-2-use-a-pre-built-environment)
-    1. [Method 3: Manual](#method-3-manual)
-1. [Compile and install](#4-compile-and-install)
-    1. [Configure the build for Homebrew dependencies](#configure-the-build-for-homebrew-dependencies)
-    1. [Configure the build for pre-built environment](#configure-the-build-for-pre-built-environment)
-1. [Configure your development tools](#5-configure-your-development-tools)
 
-## 1. Install Xcode Command Line Tools
+## Install Xcode Command Line Tools
 
 Launch the Terminal application, and type the following command string:
 
@@ -35,9 +23,7 @@ install the latest available version of Xcode for your macOS release, go
 to <https://developer.apple.com/download/>. Downloading it requires a
 free registration at Apple's developer site.
 
-<a name="getMixxx"/>
-
-## 2. Get Mixxx
+## Get Mixxx
 
 If you want to compile Mixxx, you'll need to download the source code. Either grab the source for the latest release from our [downloads
 page](https://www.mixxx.org/download), or checkout a snapshot from our git repository:
@@ -50,16 +36,12 @@ To update to the latest version of a git branch, enter (`cd` into) the
 directory you cloned the git repository into and run `git pull`. Refer
 to [Using Git](Using%20Git) for more details.
 
-<a name="installDependencies"/>
-
-## 3. Install build dependencies
+## Install build dependencies
 
 ### Method 1: Homebrew
 
-**There is currently a major performance problem with Qt 5.14 and Mixxx
-on macOS. We recommend [using our prebuilt
-dependencies](#method-2use-a-pre-built-environment) until this is
-[fixed](https://github.com/mixxxdj/mixxx/pull/1974).**
+**There is currently a major performance problem with Qt 5.14 and Mixxx on macOS. We recommend [using our prebuilt
+dependencies](#method-2use-a-pre-built-environment) until this is [fixed](https://github.com/mixxxdj/mixxx/pull/1974).**
 
 [Homebrew](https://github.com/Homebrew/brew) is yet another package
 manager for macOS. It is growing quickly in popularity. Assuming you
@@ -108,8 +90,6 @@ brew install libid3tag libmad mp4v2 faad2
 ```
 
 ### Method 2: Use a pre-built environment
-
-**These instructions only work for Mixxx 2.3 and later.**
 
 Download the [prebuilt environment here](https://github.com/Be-ing/buildserver/suites/1506041269/artifacts/26401744). The GitHub Action artifact wraps the tar.gz archive within a redundant zip archive.
 

@@ -113,13 +113,11 @@ brew install libid3tag libmad mp4v2 faad2
 
 Download the [prebuilt environment here](https://github.com/Be-ing/buildserver/suites/1506041269/artifacts/26401744). The GitHub Action artifact wraps the tar.gz archive within a redundant zip archive.
 
-There is currently an issue with a hardcoded path in the PkgConfig file for taglib in the build environment, so you must fix it before building or your build will fail to link at the end.
 ```shell
 export PREBUILT_ENV_NAME=2.3-7b6dfe7-sdk10.15-macosminimum10.12-x86_64
 unzip ~/Downloads/macOS-build-environment.zip -d ~/Downloads
 tar xf ~/Downloads/${PREBUILT_ENV_NAME}.tar.gz -C ~
 export PREBUILT_ENV_PATH=~/${PREBUILT_ENV_NAME} # or wherever you extracted the tar.gz archive to
-find "${}" -name "*.pc" -or -path "*/bin/taglib-config" -exec sed -i".orig" -e "s|/Users/runner/work/buildserver/buildserver/environment/${PREBUILT_ENV_NAME}|${PREBUILT_ENV_PATH}|g" {} \;
 ```
 
 ### Method 3: Build dependencies yourself

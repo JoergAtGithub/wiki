@@ -11,19 +11,12 @@ Launch the Terminal application, and type the following command string:
 xcode-select --install
 ```
 
-Click *Install* on the software update popup window that will appear,
-and wait for the download and installation to finish (about 150 MB). It
-gets placed in the following directory:
-`/Library/Developer/CommandLineTools/`
+Click *Install* on the software update popup window that will appear and wait for the download and installation to finish (about 150 MB). It
+gets placed in the following directory: `/Library/Developer/CommandLineTools/`
 
-<span class="underline">Note</span>: If Xcode is already installed in
-your system, then Command Line Tools are installed as well (you can
-check this by trying to run `clang` or `make` from the terminal). To
-install the latest available version of Xcode for your macOS release, go
-to <https://developer.apple.com/download/>. Downloading it requires a
-free registration at Apple's developer site.
+If Xcode is already installed in your system, then Command Line Tools are installed as well (you can check this by trying to run `clang` or `make` from the terminal). To install the latest available version of Xcode for your macOS release, go to <https://developer.apple.com/download/>. Downloading it requires a free registration at Apple's developer site.
 
-## Get Mixxx
+## Download Mixxx source code
 
 If you want to compile Mixxx, you'll need to download the source code. Either grab the source for the latest release from our [downloads
 page](https://www.mixxx.org/download), or checkout a snapshot from our git repository:
@@ -32,9 +25,7 @@ page](https://www.mixxx.org/download), or checkout a snapshot from our git repos
   - For the latest beta branch: `git clone -b 2.3 https://github.com/mixxxdj/mixxx.git`
   - For the latest stable branch: `git clone -b 2.2 https://github.com/mixxxdj/mixxx.git`
 
-To update to the latest version of a git branch, enter (`cd` into) the
-directory you cloned the git repository into and run `git pull`. Refer
-to [Using Git](Using%20Git) for more details.
+To update to the latest version of a git branch, enter (`cd` into) the directory you cloned the git repository into and run `git pull`. Refer to [Using Git](Using Git) for more details.
 
 ## Install build dependencies
 
@@ -56,6 +47,10 @@ have already installed Homebrew and gotten it working:
 
 ```shell
 brew install scons cmake pkg-config portaudio libsndfile libogg libvorbis portmidi git taglib libshout protobuf flac libjpeg qt5 chromaprint rubberband fftw vamp-plugin-sdk opusfile lilv lame qtkeychain
+
+# Set environment variables for use with cmake below
+export QT_DIR=/usr/local/opt/qt5/cmake/Qt5/
+export DEPENDENCIES_PATH=/usr/local/opt/
 ```
 
 #### Optional: ModPlug support
@@ -82,8 +77,7 @@ brew install libmodplug
 
 #### Optional: Alternative MP3/AAC support
 
-Mixxx supports using macOS-provided versions of the MP3 and AAC codec, so you do not need this step for MP3/AAC support. If you don't want to
-use the macOS versions of these codecs you can build the codecs into Mixxx directly. To do this, you have to install the MP3 and AAC codecs using Homebrew:
+Mixxx supports using macOS-provided versions of the MP3 and AAC codec, so you do not need this step for MP3/AAC support. If you don't want to use the macOS versions of these codecs you can build the codecs into Mixxx directly. To do this, you have to install the MP3 and AAC codecs using Homebrew:
 
 ```shell
 brew install libid3tag libmad mp4v2 faad2
@@ -97,18 +91,20 @@ Download the [prebuilt environment here](https://github.com/Be-ing/buildserver/s
 export PREBUILT_ENV_NAME=2.3-7b6dfe7-sdk10.15-macosminimum10.12-x86_64
 unzip ~/Downloads/macOS-build-environment.zip -d ~/Downloads
 tar xf ~/Downloads/${PREBUILT_ENV_NAME}.tar.gz -C ~
-export PREBUILT_ENV_PATH=~/${PREBUILT_ENV_NAME} # or wherever you extracted the tar.gz archive to
+
+# Set environment variables for use with cmake below
+export DEPENDENCIES_PATH=~/${PREBUILT_ENV_NAME} # or wherever you extracted the tar.gz archive to
+export QT_DIR="$(find '${DEPENDENCIES_PATH}' -type d -path '*/cmake/Qt5')"
+export PATH="${DEPENDENCIES_PATH}/bin:$PATH" # to add cmake and ccache to your $PATH
 ```
 
 ### Method 3: Build dependencies yourself
 
 You can use the [scripts used to make the prebuilt environment](https://github.com/mixxxdj/buildserver) locally if you want to do it yourself. Generally this is a waste of time unless you are working on changing the prebuilt environment.
 
-<a name="compile"/>
+## Compile and install
 
-## 4. Compile and install
-
-Change to the newly created `mixxx` directory:
+Change to the newly created `mixxx` directory (the top level of the Git repository):
 
 ```shell
 cd mixxx
@@ -120,17 +116,7 @@ Create the folder where the build files will be written and navigate into it:
 mkdir cmake_build && cd cmake_build
 ```
 
-The next steps you need to follow depend on whether you are using a pre-built environment or you installed dependencies with Homebrew:
-
-### Configure the build for Homebrew dependencies
-
-Run the following cmake command to configure the project with the recommended default settings for development. You don't need to run this command each time you want to build Mixxx, you only need to run this command again whenever you want to change the build settings.
-
-```shell
-cmake -DCOREAUDIO=ON -DCMAKE_BUILD_TYPE=Debug -DDEBUG_ASSERTIONS_FATAL=ON -DQt5_DIR=/usr/local/opt/qt5/cmake/Qt5/ -DCMAKE_PREFIX_PATH=/usr/local/opt/ ..
-```
-
-### Configure the build for pre-built environment
+### Configure the build
 You don't need to follow this steps each time you want to build Mixxx, you only need to run again the commands on this section whenever you want to change the build settings.
 
 Before configuring the build, make sure to disable macOS Gatekeeper as described in [this article](https://www.imore.com/how-open-apps-anywhere-macos-catalina-and-mojave). Otherwise, macOS will prevent the pre-built environment bundled binaries from executing.
@@ -138,9 +124,7 @@ Before configuring the build, make sure to disable macOS Gatekeeper as described
 Run the following cmake command to configure the project with the recommended default settings for development.
 
 ```shell
-export PREBUILT_ENV_PATH=~/2.3-7b6dfe7-sdk10.15-macosminimum10.12-x86_64 # path where you extracted the build environment archive
-export PATH="${PREBUILT_ENV_PATH}/bin:$PATH" # to add cmake and ccache to your $PATH
-cmake -DCOREAUDIO=ON -DCMAKE_BUILD_TYPE=Debug -DDEBUG_ASSERTIONS_FATAL=ON -DQt5_DIR=${PREBUILT_ENV_PATH}/Qt-5.12.10/lib/cmake/Qt5 -DCMAKE_PREFIX_PATH=${PREBUILT_ENV_PATH} ..
+cmake -DCOREAUDIO=ON -DCMAKE_BUILD_TYPE=Debug -DDEBUG_ASSERTIONS_FATAL=ON -DQt5_DIR="$QT_DIR" -DCMAKE_PREFIX_PATH="$DEPENDENCIES_PATH" ..
 ```
 
 Now you can enable Gatekeeper again as described in this [article](https://www.imore.com/how-open-apps-anywhere-macos-catalina-and-mojave).
@@ -167,6 +151,7 @@ You can pass arguments to this as if you were running the `mixxx` binary directl
 You can run the `mixxx` binary directly, but you would need to set the `QT_QPA_PLATFORM_PLUGIN_PATH` environment variable to point to the `plugins` directory under the Qt directory in the build environment.
 
 ### Building a DMG image with an .app bundle inside
+
 Generating the .app has some expensive scanning and relinking steps. So, for development, we recommend using the bare binary instead of creating a bundle. Generally you would only need to build a bundle locally if you are working on the bundle building process.
 
 Add `-DMACOS_BUNDLE=ON` to the first `cmake` command above when configuring the build.

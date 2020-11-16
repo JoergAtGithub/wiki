@@ -195,26 +195,23 @@ to [Using Git](https://github.com/mixxxdj/mixxx/wiki/Using%20Git) for more detai
 
 ## CMake
 
+### Configure
 Mixxx uses the CMake build system as of Mixxx 2.3. Building and installing Mixxx follows the standard CMake procedures.
 
-To build with CMake, first create a new directory and enter it. This is typically under the project root, but it can be anywhere you want.
+To build with CMake, first create a new directory and enter it. This is typically under the project root, but it can be anywhere you want. This guide will assume you have the Mixxx source code in ~/mixxx. If you have it somewhere else, replace ~/mixxx with the path where the source code is.
 ```shell
-mkdir cmake_build
-cd cmake_build
+mkdir ~/mixxx/cmake_build
 ```
 
 Now configure CMake. This only needs to be done once; you don't need to repeat it when you compile Mixxx again. This step checks if you have all the dependencies installed, similar to the configure script of GNU autotools. `/usr` is used as the installation path in this example, but
 you can set this to anywhere as long as your `$PATH` environment variable includes a `bin` directory under the installation path (`/usr/bin` if the installation path is `/usr`).
 ```shell
-cmake -DCMAKE_INSTALL_PREFIX=/usr .. # Replace .. with the path to the project root if you are outside it
+cmake -DCMAKE_INSTALL_PREFIX=/usr -S ~/mixxx -B ~/mixxx/cmake_build
 ```
 
 ### Compile Mixxx
-Set the `--parallel` option to the number of CPU cores
-you have. This will take a while, depending on the speed of your
-computer.
-```sh
-cmake --build . --parallel `nproc`
+```shell
+cmake --build ~/mixxx/cmake_build --parallel `nproc`
 ```
 
 Contrary to the behavior of the old SCons build system, CMake does not move the produced binaries into the root folder of the project.
@@ -222,7 +219,7 @@ Contrary to the behavior of the old SCons build system, CMake does not move the 
 ### Install Mixxx
 If you want to compile and install in one step, you can skip the compilation step above and just run this command.
 ```sh
-cmake --build . --target install --parallel `nproc`
+cmake --build ~/mixxx/cmake_build --target install --parallel `nproc`
 ```
 ### Debug build
 

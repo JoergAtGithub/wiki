@@ -24,7 +24,7 @@ page](https://www.mixxx.org/download), or checkout a snapshot from our git repos
   - For the latest beta branch: `git clone -b 2.3 https://github.com/mixxxdj/mixxx.git`
   - For the latest stable branch: `git clone -b 2.2 https://github.com/mixxxdj/mixxx.git`
 
-To update to the latest version of a git branch, enter (`cd` into) the directory you cloned the git repository into and run `git pull`. Refer to [Using Git](Using Git) for more details.
+To update to the latest version of a git branch, enter (`cd` into) the directory you cloned the git repository into and run `git pull`. Refer to [Using Git](https://github.com/mixxxdj/mixxx/wiki/Using%20Git) for more details.
 
 ## Install build dependencies
 

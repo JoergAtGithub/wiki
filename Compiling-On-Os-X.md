@@ -96,7 +96,7 @@ brew install libid3tag libmad mp4v2 faad2
 
 **These instructions only work for Mixxx 2.3 and later.**
 
-Download the [prebuilt environment here](https://github.com/Be-ing/buildserver/suites/1503889010/artifacts/26328962). The GitHub Action artifact wraps the tar.gz archive within a redundant zip archive.
+Download the [prebuilt environment here](https://github.com/Be-ing/buildserver/suites/1506041269/artifacts/26401744). The GitHub Action artifact wraps the tar.gz archive within a redundant zip archive.
 
 There is currently an issue with a hardcoded path in the PkgConfig file for taglib in the build environment, so you must fix it before building or your build will fail to link at the end.
 ```shell

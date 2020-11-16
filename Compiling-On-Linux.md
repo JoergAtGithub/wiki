@@ -205,7 +205,7 @@ cd cmake_build
 
 Now configure CMake. This only needs to be done once; you don't need to repeat it when you compile Mixxx again. This step checks if you have all the dependencies installed, similar to the configure script of GNU autotools. `/usr` is used as the installation path in this example, but
 you can set this to anywhere as long as your `$PATH` environment variable includes a `bin` directory under the installation path (`/usr/bin` if the installation path is `/usr`).
-```sh
+```shell
 cmake -DCMAKE_INSTALL_PREFIX=/usr .. # Replace .. with the path to the project root if you are outside it
 ```
 
@@ -232,15 +232,10 @@ assertions are violated or to abort Mixxx immediately. This ensures that message
 
 ### ccache
 
-We highly recommend installing [CCache](https://ccache.dev/) if you will
-be contributing code to Mixxx. If you won't be writing or testing code
-and are just building Mixxx to use it for yourself, you can skip
-installing CCache. CCache drastically speeds up the time to recompile
-Mixxx, especially when switching between git branches. CMake works with
-CCache automatically.
+We highly recommend installing [CCache](https://ccache.dev/) if you will be contributing code to Mixxx. If you won't be writing or testing code and are just building Mixxx to use it for yourself, you can skip installing CCache. CCache drastically speeds up the time to recompile
+Mixxx, especially when switching between git branches. CMake works with CCache automatically.
 
-You will probably want to increase the default ccache size of 5.0GB to
-something much larger to accommodate Mixxx's large build sizes. You can
+You will probably want to increase the default ccache size of 5.0GB to something much larger to accommodate Mixxx's large build sizes. You can
 adjust the cache size with the --set-config flag:
 ```sh
 ccache --set-config=max_size=20.0G
@@ -257,8 +252,8 @@ Mixxx 2.2 and earlier use the SCons build system. Mixxx 2.3 also supports SCons,
 Once you have the source code, change to the newly created "mixxx" directory (run `cd mixxx`). Mixxx uses the [SCons](http://scons.org/)
 build system rather than the more common GNU autotools and GNU make. Running `scons -h` in the "mixxx" directory shows a complete list of
 build flags if you'd like to customize. To compile without any special options, as a regular user, run:
-```sh
-scons prefix=INSTALLATION_DIRECTORY -j NUMBER_OF_CPU_CORES optimize=native
+```shell
+scons prefix=INSTALLATION_DIRECTORY -j `nproc` optimize=native
 ```
 Change INSTALLATION\_DIRECTORY to the location you want to install Mixxx to. If you want to install Mixxx for all users of the OS, you do not
 need to specify a prefix and can leave it as the default, which is /usr/local. If you only want to install Mixxx for your user, you can specify a location in your home directory such as ~/local
@@ -268,7 +263,7 @@ many threads at a time while compiling. This speeds up compilation on multi-core
 simultaneously with the `lscpu` command (look for the `CPU(s)` field in the output). Setting more threads than your CPU can handle will decrease performance.
 
 Once Mixxx has compiled, if you set the prefix options for scons to a directory that your normal user does not have write access to, run
-```sh
+```shell
 sudo scons prefix=INSTALLATION_DIRECTORY install
 ```
 to install it. If you set the prefix to a directory your user does have write access to, then you do not need `sudo` before `scons`. The prefix option must be the same as before or scons will recompile Mixxx before installing it.

@@ -35,7 +35,7 @@ Download the [prebuilt environment here](https://github.com/Be-ing/buildserver/s
 The GitHub Action artifact wraps the tar.gz archive within a redundant zip archive. First, extract it:
 
 ```shell
-export PREBUILT_ENV_NAME=2.3-7b6dfe7-sdk10.15-macosminimum10.12-x86_64
+export PREBUILT_ENV_NAME=2.3-1db6c06-sdk10.15-macosminimum10.12-x86_64
 unzip ~/Downloads/macOS-build-environment.zip -d ~/Downloads
 tar xf ~/Downloads/${PREBUILT_ENV_NAME}.tar.gz -C ~
 ```
@@ -44,7 +44,7 @@ Then set some environment variables which will be used when configuring `cmake` 
 
 ```
 export DEPENDENCIES_PATH=~/${PREBUILT_ENV_NAME} # or wherever you extracted the tar.gz archive to
-export QT_DIR="$(find '${DEPENDENCIES_PATH}' -type d -path '*/cmake/Qt5')"
+export QT_DIR="$(find "${DEPENDENCIES_PATH}" -type d -path "*/cmake/Qt5")"
 export PATH="${DEPENDENCIES_PATH}/bin:$PATH" # to add cmake and ccache to your $PATH
 ```
 

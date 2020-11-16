@@ -13,7 +13,7 @@ xcode-select --install
 Click *Install* on the software update popup window that will appear and wait for the download and installation to finish (about 150 MB). It
 gets placed in the following directory: `/Library/Developer/CommandLineTools/`
 
-If Xcode is already installed in your system, then Command Line Tools are installed as well (you can check this by trying to run `clang` or `make` from the terminal). To install the latest available version of Xcode for your macOS release, go to <https://developer.apple.com/download/>. Downloading it requires a free registration at Apple's developer site.
+If Xcode is already installed in your system, then Command Line Tools are installed as well (you can check this by trying to run `clang` or `make` from the terminal). To install the latest available version of Xcode for your macOS release, [download it from Apple](https://developer.apple.com/download/). Downloading it requires a free registration at Apple's developer site.
 
 ## Download Mixxx source code
 

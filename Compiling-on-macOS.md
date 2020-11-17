@@ -30,7 +30,7 @@ You have several options how to install the libraries and build tools Mixxx requ
 
 ## Recommended: Pre-built environment
 
-Download the [prebuilt environment here](https://github.com/Be-ing/buildserver/suites/1506041269/artifacts/26401744). It is what we use to build the official builds, so we recommend using it for local development for consistency.
+Download the [prebuilt environment here](https://github.com/Be-ing/buildserver/suites/1506041269/artifacts/26401744). You must be logged into GitHub to download it. It is what we use to build the official builds, so we recommend using it for local development for consistency.
 
 The GitHub Action artifact wraps the tar.gz archive within a redundant zip archive. First, extract it:
 

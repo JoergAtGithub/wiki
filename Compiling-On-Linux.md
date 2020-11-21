@@ -44,7 +44,7 @@ sudo apt-get install g++ git scons cmake ccache libportmidi-dev libopusfile-dev 
   libavcodec-dev libavformat-dev libavutil-dev libswresample-dev \
   libgl-dev liblilv-dev \
   libjack-dev libjack0 portaudio19-dev \
-  libmp3lame-dev libebur128-dev
+  libmp3lame-dev libebur128-dev qt5keychain-dev libmodplug-dev
 ```
 
 And build with:

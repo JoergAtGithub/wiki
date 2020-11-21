@@ -53,7 +53,7 @@ And build with:
 scons faad=0 ffmpeg=1
 ```
 
-If you are building the Mixxx **master** or **2.3** git branch, additionally run:
+If you are building the Mixxx **main** or **2.3** git branch, additionally run:
 
 ``` sh
 sudo apt-get install qt5-default qt5keychain-dev qtdeclarative5-dev libqt5opengl5-dev qtscript5-dev libqt5svg5-dev libqt5x11extras5-dev libvamp-sdk2v5 libhidapi-libusb0 libqt5sql5-sqlite libmodplug-dev

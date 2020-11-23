@@ -103,9 +103,7 @@ You can use the [scripts used to make the prebuilt environment](https://github.c
 
 Before configuring the build, make sure to disable macOS Gatekeeper as described in [this article](https://www.imore.com/how-open-apps-anywhere-macos-catalina-and-mojave). Otherwise, macOS will prevent the pre-built environment bundled binaries from executing.
 
-This assumes you cloned the Mixxx Git repository to `~/mixxx`. If you have the source code somewhere other than `~/mixxx`, substitute that for `~/mixxx` in the following commands.
-
-Run the following `cmake` command to configure the project with the recommended default settings for development. This assumes you have set the environment variables after installing dependencies as described above. For convenience, you can substitute the values of those variables in the command so that you can easily go back to it in your shell history (Ctrl + R then start typing `cmake -DC`) without having to set the variables again.
+Run the following `cmake` command to configure the project with the recommended default settings for development. This assumes you have set the environment variables after installing dependencies as described above and you cloned the Mixxx Git repository to `~/mixxx`. If you have the source code somewhere other than `~/mixxx`, substitute that for `~/mixxx` in the following commands.
 
 ```shell
 cmake -DCMAKE_BUILD_TYPE=Debug -DDEBUG_ASSERTIONS_FATAL=ON -S ~/mixxx -B ~/mixxx/cmake_build

@@ -30,7 +30,7 @@ You have several options how to install the libraries and build tools Mixxx requ
 
 ## Recommended: Pre-built environment
 
-Download the [prebuilt environment here](https://downloads.mixxx.org/builds/buildserver/2.3.x-unix/2.3-55d9a17-sdk10.15-macosminimum10.12-x86_64.tar.gz). You must be logged into GitHub to download it. It is what we use to build the official builds, so we recommend using it for local development for consistency.
+Download the [prebuilt environment here](https://downloads.mixxx.org/builds/buildserver/2.3.x-unix/2.3-55d9a17-sdk10.15-macosminimum10.12-x86_64.tar.gz). It is what we use to build the official builds, so we recommend using it for local development for consistency.
 
 The GitHub Action artifact wraps the tar.gz archive within a redundant zip archive. First, extract it:
 

@@ -32,20 +32,19 @@ You have several options how to install the libraries and build tools Mixxx requ
 
 Download the [prebuilt environment here](https://downloads.mixxx.org/builds/buildserver/2.3.x-unix/2.3-55d9a17-sdk10.15-macosminimum10.12-x86_64.tar.gz). It is what we use to build the official builds, so we recommend using it for local development for consistency.
 
-The GitHub Action artifact wraps the tar.gz archive within a redundant zip archive. First, extract it:
+First, extract the archive:
 
 ```shell
 export PREBUILT_ENV_NAME=2.3-55d9a17-sdk10.15-macosminimum10.12-x86_64
-unzip ~/Downloads/macOS-build-environment.zip -d ~/Downloads
 tar xf ~/Downloads/${PREBUILT_ENV_NAME}.tar.gz -C ~
 ```
 
 Then set some environment variables which will be used when configuring `cmake` below:
 
 ```shell
-export DEPENDENCIES_PATH=~/${PREBUILT_ENV_NAME} # or wherever you extracted the tar.gz archive to
-export QT_DIR="$(find "${DEPENDENCIES_PATH}" -type d -path "*/cmake/Qt5")"
-export PATH="${DEPENDENCIES_PATH}/bin:$PATH" # to add cmake and ccache to your $PATH
+export CMAKE_PREFIX_PATH=~/${PREBUILT_ENV_NAME} # or wherever you extracted the tar.gz archive to
+export Qt5_DIR="$(find "${CMAKE_PREFIX_PATH}" -type d -path "*/cmake/Qt5")"
+export PATH="${CMAKE_PREFIX_PATH}/bin:$PATH" # to add cmake and ccache to your $PATH
 ```
 
 ## Homebrew
@@ -62,8 +61,8 @@ brew install scons cmake ccache pkg-config portaudio libsndfile libogg libvorbis
 Then set some environment variables which will be used to configure `cmake` below: 
 
 ```shell
-export QT_DIR=/usr/local/opt/qt5/cmake/Qt5/
-export DEPENDENCIES_PATH=/usr/local/opt/
+export CMAKE_PREFIX_PATH=/usr/local/opt/
+export Qt5_DIR=/usr/local/opt/qt5/cmake/Qt5/
 ```
 
 ### Optional: ModPlug support
@@ -102,18 +101,14 @@ You can use the [scripts used to make the prebuilt environment](https://github.c
 
 # Configure CMake
 
-First, create the directory where `cmake` will output the built files. For convenience we suggest making this within the Mixxx source code directory, which is assumed to be `~/mixxx` for this example, however, the build directory can be located anywhere you have write access. If you have the source code somewhere other than `~/mixxx`, substitute that for `~/mixxx` in the following commands.
-
-```shell
-mkdir ~/mixxx/cmake_build
-```
-
 Before configuring the build, make sure to disable macOS Gatekeeper as described in [this article](https://www.imore.com/how-open-apps-anywhere-macos-catalina-and-mojave). Otherwise, macOS will prevent the pre-built environment bundled binaries from executing.
+
+This assumes you cloned the Mixxx Git repository to `~/mixxx`. If you have the source code somewhere other than `~/mixxx`, substitute that for `~/mixxx` in the following commands.
 
 Run the following `cmake` command to configure the project with the recommended default settings for development. This assumes you have set the environment variables after installing dependencies as described above. For convenience, you can substitute the values of those variables in the command so that you can easily go back to it in your shell history (Ctrl + R then start typing `cmake -DC`) without having to set the variables again.
 
 ```shell
-cmake -DCOREAUDIO=ON -DCMAKE_BUILD_TYPE=Debug -DDEBUG_ASSERTIONS_FATAL=ON -DQt5_DIR="$QT_DIR" -DCMAKE_PREFIX_PATH="$DEPENDENCIES_PATH" -S ~/mixxx -B ~/mixxx/cmake_build
+cmake -DCMAKE_BUILD_TYPE=Debug -DDEBUG_ASSERTIONS_FATAL=ON -S ~/mixxx -B ~/mixxx/cmake_build
 ```
 
 Now you can enable Gatekeeper again as described in this [article](https://www.imore.com/how-open-apps-anywhere-macos-catalina-and-mojave).

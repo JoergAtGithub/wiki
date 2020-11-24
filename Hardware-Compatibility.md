@@ -525,12 +525,7 @@ with microphones. As explained in the manual, **USB microphones are not
 recommended** because they cannot be used with direct monitoring with
 Mixxx.
 
-The table of
-[\#USB-audio-interfaces](#USB-audio-interfaces)-below-has-notes-regarding-use-of-some-audio-interfaces-with-microphones.-As-[explained
-in the
-manual](https://mixxx.org/manual/latest/en/chapters/microphones.html#hardware-mixers),
-**Behringer Xenyx and Yamaha AG03/AG06 mixers are not recommended**
-because their audio interfaces only have 2 channels for output.
+The table of [USB audio interfaces](#USB-audio-interfaces) below has notes regarding use of some audio interfaces with microphones. As [explained in the manual](https://mixxx.org/manual/latest/en/chapters/microphones.html#hardware-mixers), **Behringer Xenyx and Yamaha AG03/AG06 mixers are not recommended** because their audio interfaces only have 2 channels for output.
 
 ## Splitter cables
 

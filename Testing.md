@@ -19,7 +19,7 @@ If you would really like to be on the bleeding edge, you can try out [pull reque
 they get merged to the main branch. This way you can be involved in the design of new features as they are being implemented. If there is an
 issue with a build from a pull request, comment on the pull request on GitHub instead of opening a bug on Launchpad.
 
-GitHub Actions automatically builds every pull request. They are not uploaded to downloads.mixxx.org, but you can access them through GitHub. Go to the bottom of the pull request and look at the report of the builds & test results above the box below the last comment on the page. Where it says "Build / YOUR_OPERATING_SYSTEM", click the "Details" link.
+GitHub Actions automatically builds every pull request. They are not uploaded to downloads.mixxx.org, but you can access them through GitHub. Go to the bottom of the pull request and look at the report of the builds & test results below the last comment on the page. Where it says "Build / YOUR_OPERATING_SYSTEM", click the "Details" link.
 ![Screenshot of GitHub Actions checks on a pull request](https://user-images.githubusercontent.com/9455094/100259209-94a73b00-2f0d-11eb-9ec1-1bef45b1ba14.png)
 
 On the next page, click the "Artifacts" link in the top right to show a menu of the build artifacts (assuming the builds succeeded).

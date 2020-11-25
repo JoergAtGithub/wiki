@@ -30,6 +30,6 @@ Pull request builds are not code signed, so macOS and Windows will warn you abou
 
 To run unsigned builds on macOS, right click on the Mixxx.app file in Finder and select "Open". macOS will warn you about the build being from an unidentified developer but it will let you run it anyway. Refer to this [article](https://www.howtogeek.com/205393/gatekeeper-101-why-your-mac-only-allows-apple-approved-software-by-default/) for more details.
 
-To run unsigned builds on Windows, double click the .msi installer as usual. In the popup that says "Windows protected your PC", click the "More info" just below the "Windows protected your PC" text. Then, a button will appear in the bottom right of the popup that says "Run anyway". Click that new "Run anyway" button.
+To run unsigned builds on Windows, double click the .msi installer as usual. In the popup that says "Windows protected your PC", click the "More info" link just below the "Windows protected your PC" text. Then, a button will appear in the bottom right of the popup that says "Run anyway". Click that new "Run anyway" button.
 
 For Linux distributions other than Ubuntu, you will need to [compile Mixxx from source](home#compile-mixxx-from-source-code) yourself. Refer to the [Using Git](https://github.com/mixxxdj/mixxx/wiki/using-git) wiki page for how to set up Git on your computer for downloading the code to test pull requests.

@@ -12,8 +12,7 @@ Click "Install" on the software update popup window that will appear and wait fo
 
 # Download Mixxx source code
 
-If you want to compile Mixxx, you'll need to download the source code. Source archives for the latest release are on our [downloads
-page](https://www.mixxx.org/download), but if you want to contribute to Mixxx, we recommend checking out a snapshot from our git repository instead:
+If you want to compile Mixxx, you'll need to download the source code. Source archives for releases are on [downloads.mixxx.org](https://downloads.mixxx.org/), but if you want to contribute to Mixxx, we recommend checking out a snapshot from our git repository instead:
 
   - For the latest development (main) branch: `git clone https://github.com/mixxxdj/mixxx.git`
   - For the latest beta branch: `git clone -b 2.3 https://github.com/mixxxdj/mixxx.git`
@@ -102,6 +101,8 @@ brew install libid3tag libmad mp4v2 faad2
 You can use the [scripts used to make the prebuilt environment](https://github.com/mixxxdj/buildserver) locally if you want to do it yourself. Generally this is a waste of time unless you are working on changing the prebuilt environment. Refer to the [GitHub Actions CI script](https://github.com/mixxxdj/buildserver/blob/2.3.x-unix/.github/workflows/build-environment-build.yml) for how to use the build scripts.
 
 # Configure CMake
+
+_CMake support is new in Mixxx 2.3. The rest of this page does not apply for earlier versions of Mixxx._
 
 Before configuring the build, make sure to disable macOS Gatekeeper as described in [this article](https://www.imore.com/how-open-apps-anywhere-macos-catalina-and-mojave). Otherwise, macOS will prevent the pre-built environment bundled binaries from executing.
 

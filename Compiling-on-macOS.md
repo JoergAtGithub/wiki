@@ -1,4 +1,4 @@
-Compiling Mixxx for macOS is simple if you follow the step-by-step instructions below. This guide assumes you have basic knowledge about using the command line. If you need help, feel free to ask questions on our [Zulip chat](https://mixxx.zulipchat.com/#narrow/stream/247620-development-help).
+Compiling Mixxx for macOS is simple if you follow the step-by-step instructions below. This guide assumes you have basic knowledge about using the command line. If you need help after reading this page, feel free to ask questions on our [Zulip chat](https://mixxx.zulipchat.com/#narrow/stream/247620-development-help).
 
 # Install Xcode Command Line Tools
 

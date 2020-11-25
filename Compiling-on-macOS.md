@@ -2,21 +2,21 @@ Compiling Mixxx for macOS is simple once you have all the dependencies installed
 
 # Install Xcode Command Line Tools
 
-Launch the Terminal application, and type the following command string:
+First, install the clang compiler and macOS SDK in the Xcode command line tools. Launch the Terminal application, and type the following command:
 
 ```shell
 xcode-select --install
 ```
 
-Click *Install* on the software update popup window that will appear and wait for the download and installation to finish (about 150 MB). It
+Click "Install" on the software update popup window that will appear and wait for the download and installation to finish (about 150 MB). It
 gets placed in the following directory: `/Library/Developer/CommandLineTools/`
 
 If Xcode is already installed in your system, then Command Line Tools are installed as well (you can check this by trying to run `clang` or `make` from the terminal). To install the latest available version of Xcode for your macOS release, [download it from Apple](https://developer.apple.com/download/). Downloading it requires a free registration at Apple's developer site.
 
 # Download Mixxx source code
 
-If you want to compile Mixxx, you'll need to download the source code. Either grab the source for the latest release from our [downloads
-page](https://www.mixxx.org/download), or checkout a snapshot from our git repository:
+If you want to compile Mixxx, you'll need to download the source code. Source archives for the latest release are on our [downloads
+page](https://www.mixxx.org/download), but if you want to contribute to Mixxx, we recommend checking out a snapshot from our git repository instead:
 
   - For the latest development (main) branch: `git clone https://github.com/mixxxdj/mixxx.git`
   - For the latest beta branch: `git clone -b 2.3 https://github.com/mixxxdj/mixxx.git`
@@ -30,7 +30,7 @@ You have several options how to install the libraries and build tools Mixxx requ
 
 ## Recommended: Pre-built environment
 
-There is a script in the Mixxx Git repository which automatically downloads an archive with all the precompiled dependencies and build tools that Mixxx requires (apart from the Xcode command line tools explained above). The script also sets environment variables needed to compile Mixxx. Assuming you have your Git repository in ~/mixxx, run it with `source` to set up your build environment:
+There is a script in the Mixxx source code repository which automatically downloads an archive with all the precompiled dependencies and build tools that Mixxx requires (apart from the Xcode command line tools [explained above](#install-xcode-command-line-tools)). The script also sets environment variables needed to compile Mixxx. Assuming you have your Git repository in ~/mixxx, run it with `source` to set up your build environment:
 
 ```shell
 source ~/mixxx/tools/macos_buildenv.sh setup
@@ -55,9 +55,9 @@ The script is compatible with both zsh and bash.
 ## Homebrew
 
 **There is currently a major performance problem with current versions of Qt in Homebrew and Mixxx on macOS. We recommend [using our prebuilt
-dependencies](#Recommended-Pre-built-environment) with Qt 5.12 until this is [fixed](https://github.com/mixxxdj/mixxx/pull/1974).**
+dependencies](#Recommended-Pre-built-environment) with Qt 5.12 until this is [fixed](https://mixxx.zulipchat.com/#narrow/stream/109171-development/topic/QOpenGLWidget.20migration).**
 
-[Homebrew](https://github.com/Homebrew/brew) is a package manager for macOS. Assuming you have already installed Homebrew and gotten it working, open the [Terminal](http://www.apple.com/macosx/apps/all.html#terminal) application and use the following command to install the necessary libraries:
+We generally recommend using the [prebuilt environment](#recommended-pre-built-environment) so that you are using the same versions of dependencies as our official builds from GitHub Actions. However, if you want to use [Homebrew](https://github.com/Homebrew/brew) instead, you can do so. Assuming you have already installed Homebrew and gotten it working, open the [Terminal](http://www.apple.com/macosx/apps/all.html#terminal) application and use the following command to install the necessary libraries:
 
 ```shell
 brew install scons cmake ccache pkg-config portaudio libsndfile libogg libvorbis portmidi git taglib libshout protobuf flac libjpeg qt5 chromaprint rubberband fftw vamp-plugin-sdk opusfile lilv lame qtkeychain
@@ -102,7 +102,7 @@ brew install libid3tag libmad mp4v2 faad2
 
 ## Build dependencies yourself
 
-You can use the [scripts used to make the prebuilt environment](https://github.com/mixxxdj/buildserver) locally if you want to do it yourself. Generally this is a waste of time unless you are working on changing the prebuilt environment.
+You can use the [scripts used to make the prebuilt environment](https://github.com/mixxxdj/buildserver) locally if you want to do it yourself. Generally this is a waste of time unless you are working on changing the prebuilt environment. Refer to the [GitHub Actions CI script](https://github.com/mixxxdj/buildserver/blob/2.3.x-unix/.github/workflows/build-environment-build.yml) for how to use the build scripts.
 
 # Configure CMake
 
@@ -120,11 +120,15 @@ This step only needs to be done once or repeated when you want to change the cma
 
 # Build Mixxx
 
+Run:
 ```shell
 cmake --build ~/mixxx/cmake_build --parallel $(sysctl -n hw.physicalcpu)
 ```
+This could take a long time depending on the speed of your CPU. Future builds will be much faster (depending on how much code has changed) because cmake automatically uses [ccache](https://ccache.dev/). ccache is included in the [prebuilt environment](#recommended-pre-built-environment).
 
 # Run Mixxx
+
+The `mixxx` binary is output in the cmake build directory:
 ```shell
 ~/mixxx/cmake_build/mixxx
 ```

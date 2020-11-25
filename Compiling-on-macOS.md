@@ -51,9 +51,9 @@ The script is compatible with both zsh and bash.
 ## Homebrew
 
 **There is currently a major performance problem with current versions of Qt in Homebrew and Mixxx on macOS. We recommend [using our prebuilt
-dependencies](#Recommended-Pre-built-environment) with Qt 5.12 until this is [fixed](https://mixxx.zulipchat.com/#narrow/stream/109171-development/topic/QOpenGLWidget.20migration).**
+dependencies](#Recommended-Pre-built-environment) with Qt 5.12 until this is [fixed](https://github.com/mixxxdj/mixxx/pull/1974).**
 
-We generally recommend using the [prebuilt environment](#recommended-pre-built-environment) so that you are using the same versions of dependencies as our official builds from GitHub Actions. However, if you want to use [Homebrew](https://github.com/Homebrew/brew) instead, you can do so. Assuming you have already installed Homebrew and gotten it working, open the [Terminal](http://www.apple.com/macosx/apps/all.html#terminal) application and use the following command to install the necessary libraries:
+We generally recommend using the [prebuilt environment](#recommended-pre-built-environment) so that you are using the same versions of dependencies as our official builds from GitHub Actions. However, if you want to use [Homebrew](https://brew.sh/) instead, you can do so. Assuming you have already installed Homebrew and gotten it working, open the [Terminal](http://www.apple.com/macosx/apps/all.html#terminal) application and use the following command to install the necessary libraries:
 
 ```shell
 brew install scons cmake ccache pkg-config portaudio libsndfile libogg libvorbis portmidi git taglib libshout protobuf flac libjpeg qt5 chromaprint rubberband fftw vamp-plugin-sdk opusfile lilv lame qtkeychain

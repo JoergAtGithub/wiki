@@ -8,8 +8,7 @@ First, install the clang compiler and macOS SDK in the Xcode command line tools.
 xcode-select --install
 ```
 
-Click "Install" on the software update popup window that will appear and wait for the download and installation to finish (about 150 MB). It
-gets placed in `/Library/Developer/CommandLineTools/`
+Click "Install" on the software update popup window that will appear and wait for the download and installation to finish (about 150 MB).
 
 # Download Mixxx source code
 

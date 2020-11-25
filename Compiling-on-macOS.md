@@ -30,7 +30,7 @@ You have several options how to install the libraries and build tools Mixxx requ
 
 ## Recommended: Pre-built environment
 
-There is a script in the Mixxx source code repository which automatically downloads an archive with all the precompiled dependencies and build tools that Mixxx requires (apart from the Xcode command line tools [explained above](#install-xcode-command-line-tools)). The script also sets environment variables needed to compile Mixxx. Assuming you have your Git repository in ~/mixxx, run it with `source` to set up your build environment:
+There is a script at `tools/macos_buildenv.sh` inside the Mixxx source code repository which automatically downloads an archive with all the precompiled dependencies and build tools that Mixxx requires (apart from the Xcode command line tools [explained above](#install-xcode-command-line-tools)). The script also sets environment variables needed to compile Mixxx. Run the script with `source` to set up your build environment. Assuming you have the Mixxx source code in ~/mixxx, run the following command (replace ~/mixxx if you put the source code elsewhere):
 
 ```shell
 source ~/mixxx/tools/macos_buildenv.sh setup

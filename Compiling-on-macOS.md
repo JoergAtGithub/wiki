@@ -2,7 +2,7 @@ Compiling Mixxx for macOS is simple if you follow the step-by-step instructions 
 
 # Install Xcode Command Line Tools
 
-First, install the clang compiler and macOS SDK in the Xcode command line tools. Launch the Terminal application, and type the following command:
+First, install the clang compiler and macOS SDK in the Xcode command line tools. If you have the Xcode IDE installed, you already have the command line tools too. To install them, launch the Terminal application, and type the following command:
 
 ```shell
 xcode-select --install
@@ -10,8 +10,6 @@ xcode-select --install
 
 Click "Install" on the software update popup window that will appear and wait for the download and installation to finish (about 150 MB). It
 gets placed in the following directory: `/Library/Developer/CommandLineTools/`
-
-If Xcode is already installed in your system, then Command Line Tools are installed as well (you can check this by trying to run `clang` or `make` from the terminal). To install the latest available version of Xcode for your macOS release, [download it from Apple](https://developer.apple.com/download/). Downloading it requires a free registration at Apple's developer site.
 
 # Download Mixxx source code
 

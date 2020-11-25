@@ -9,7 +9,7 @@ xcode-select --install
 ```
 
 Click "Install" on the software update popup window that will appear and wait for the download and installation to finish (about 150 MB). It
-gets placed in the following directory: `/Library/Developer/CommandLineTools/`
+gets placed in `/Library/Developer/CommandLineTools/`
 
 # Download Mixxx source code
 

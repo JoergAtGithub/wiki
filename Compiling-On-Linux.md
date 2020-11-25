@@ -1,5 +1,5 @@
 Compiling software is the process of turning human-readable source code into machine code a computer can execute. Compiling Mixxx is fairly
-straightforward on Linux. The steps below outline what to do.
+straightforward on Linux. The steps below outline what to do. If you need help after reading this page, feel free to ask questions on our [Zulip chat](https://mixxx.zulipchat.com/#narrow/stream/247620-development-help).
 
 # Install build dependencies
 

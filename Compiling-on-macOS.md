@@ -135,9 +135,9 @@ If you get an error saying `Could not find the Qt platform plugin "cocoa" in ""`
 
 # Build Mixxx.app bundle and DMG image
 
-Generating the .app has some expensive scanning and relinking steps. So, for development, we recommend skipping this step. Generally you would only need to build a bundle locally if you are working on the bundle building process.
+Generating the .app has some expensive scanning and relinking steps. So, for development, we recommend skipping this step. Generally you would only need to build a bundle locally if you are working on the bundle building process. GitHub Actions automatically builds bundles with each Git commit pushed to Git hub (including in your own fork) so you can direct users to download the GitHub Actions artifact if you want to ask someone to test your code.
 
-Add `-DMACOS_BUNDLE=ON` to the first `cmake` command above when configuring the build. You must rerun the `cmake` configure command with this option if you have already run it before.
+Add `-DMACOS_BUNDLE=ON` to the first `cmake` command above when [configuring the build](#configure-cmake). You must rerun the `cmake` configure command with this option if you have already run it before.
 
 To sign the `.app` bundle inside the DMG image, add `-DAPPLE_CODESIGN_IDENTITY=<your signing identity>` to the `cmake` command. This must be done at the initial `cmake` configure step, not when running `cpack` later. You can run `security find-identity -p codesigning` to find what identities you have installed on your keychain.
 

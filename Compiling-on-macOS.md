@@ -30,22 +30,27 @@ You have several options how to install the libraries and build tools Mixxx requ
 
 ## Recommended: Pre-built environment
 
-Download the [prebuilt environment here](https://downloads.mixxx.org/builds/buildserver/2.3.x-unix/2.3-55d9a17-sdk10.15-macosminimum10.12-x86_64.tar.gz). It is what we use to build the official builds, so we recommend using it for local development for consistency.
-
-First, extract the archive:
+There is a script in the Mixxx Git repository which automatically downloads an archive with all the precompiled dependencies and build tools that Mixxx requires (apart from the Xcode command line tools explained above). The script also sets environment variables needed to compile Mixxx. Assuming you have your Git repository in ~/mixxx, run it with `source` to set up your build environment:
 
 ```shell
-export PREBUILT_ENV_NAME=2.3-55d9a17-sdk10.15-macosminimum10.12-x86_64
-tar xf ~/Downloads/${PREBUILT_ENV_NAME}.tar.gz -C ~
+source ~/mixxx/tools/macos_buildenv.sh setup
 ```
 
-Then set some environment variables which will be used when configuring `cmake` below:
+To avoid having to manually run this to set the environment variables every time you start a new shell, you can have your shell automatically run it on startup. If you use zsh (the default shell with macOS >= 10.15), set this up by running this once:
 
 ```shell
-export CMAKE_PREFIX_PATH=~/${PREBUILT_ENV_NAME} # or wherever you extracted the tar.gz archive to
-export Qt5_DIR="$(find "${CMAKE_PREFIX_PATH}" -type d -path "*/cmake/Qt5")"
-export PATH="${CMAKE_PREFIX_PATH}/bin:$PATH" # to add cmake and ccache to your $PATH
+echo "source ~/mixxx/tools/macos_buildenv.sh setup --profile" >> ~/.zprofile
 ```
+
+If you use bash (the default shell with macOS <= 10.14), set this up by running this once:
+
+```shell
+echo "source ~/mixxx/tools/macos_buildenv.sh setup --profile" >> ~/.profile
+```
+
+The `--profile` option prevents the script from spamming your terminal every time you start a new shell.
+
+The script is compatible with both zsh and bash.
 
 ## Homebrew
 
@@ -121,16 +126,10 @@ cmake --build ~/mixxx/cmake_build --parallel $(sysctl -n hw.physicalcpu)
 
 # Run Mixxx
 ```shell
-~/mixxx/cmake_build/run-mixxx.sh
+~/mixxx/cmake_build/mixxx
 ```
 
-You can pass arguments to this as if you were running the `mixxx` binary directly. For example:
-
-```shell
-~/mixxx/cmake_build/run-mixxx.sh --logLevel debug
-```
-
-You can run the `mixxx` binary directly, but you would need to set the `QT_QPA_PLATFORM_PLUGIN_PATH` environment variable to point to the `plugins` directory under the Qt directory in the build environment.
+If you get an error saying `Could not find the Qt platform plugin "cocoa" in ""`, you have not set the `QT_QPA_PLATFORM_PLUGIN_PATH` environment variable. Source the [macos_buildenv.sh script](#recommended-pre-built-environment) to set it.
 
 # Build Mixxx.app bundle and DMG image
 

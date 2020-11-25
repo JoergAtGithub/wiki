@@ -1,6 +1,6 @@
 Compiling Mixxx for macOS is simple if you follow the step-by-step instructions below. This guide assumes you have basic knowledge about using the command line. If you need help after reading this page, feel free to ask questions on our [Zulip chat](https://mixxx.zulipchat.com/#narrow/stream/247620-development-help).
 
-# Install Xcode Command Line Tools
+# Install Xcode command line tools
 
 First, install the clang compiler and macOS SDK in the Xcode command line tools. If you have the Xcode IDE installed, you already have the command line tools too. To install them, launch the Terminal application, and type the following command:
 

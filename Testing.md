@@ -32,4 +32,4 @@ To run unsigned builds on macOS, right click on the Mixxx.app file in Finder and
 
 To run unsigned builds on Windows, double click the .msi installer as usual. In the popup that says "Windows protected your PC", click the "More info" link just below the "Windows protected your PC" text. Then, a button will appear in the bottom right of the popup that says "Run anyway". Click that new "Run anyway" button.
 
-For Linux distributions other than Ubuntu, you will need to [compile Mixxx from source](home#compile-mixxx-from-source-code) yourself. Refer to the [Using Git](https://github.com/mixxxdj/mixxx/wiki/using-git) wiki page for how to set up Git on your computer for downloading the code to test pull requests.
+For Linux distributions other than Ubuntu, you will need to [compile Mixxx from source](https://github.com/mixxxdj/mixxx/wiki/compiling-on-Linux) yourself. Refer to the [Using Git](https://github.com/mixxxdj/mixxx/wiki/using-git) wiki page for how to set up Git on your computer for downloading the code to test pull requests.

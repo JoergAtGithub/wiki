@@ -1,4 +1,5 @@
-Compiling Mixxx for macOS is simple if you follow the step-by-step instructions below. This guide assumes you have basic knowledge about using the command line. If you need help after reading this page, feel free to ask questions on our [Zulip chat](https://mixxx.zulipchat.com/#narrow/stream/247620-development-help).
+Compiling software is the process of turning human-readable source code into machine code a computer can execute. Compiling Mixxx is fairly
+straightforward on macOS. The steps below outline what to do. If you need help after reading this page, feel free to ask questions on our [Zulip chat](https://mixxx.zulipchat.com/#narrow/stream/247620-development-help).
 
 # Install Xcode command line tools
 

@@ -477,71 +477,40 @@ Supported Mappings](#Community%20Supported%20Mappings) table above.
 
 ### Not mapped controllers
 
-There are too many DJ controllers out there to list. Some of these
-controllers may have mappings (of unverified quality and may be
-incomplete) posted on [the
-forums](http://www.mixxx.org/forums/viewforum.php?f=7) that have not
-(yet) been included with Mixxx. If a controller you own or are
-interested in getting is not listed here, [search the
-forum](http://mixxx.org/forums/search.php?fid[]=7) to see if anyone has
-posted a mapping. If you are willing to put in the effort to map one of
-these controllers, please get the controller, map it, and [contribute
-the mapping to Mixxx](contributing%20mappings).
+There are too many DJ controllers out there to list. Some of these controllers may have mappings (of unverified quality and may be
+incomplete) posted on [the forums](https://mixxx.discourse.group/c/controller-mappings/10) that have not
+(yet) been included with Mixxx. If a controller you own or are interested in getting is not listed here, search the
+forum to see if anyone has posted a mapping. If you are willing to put in the effort to map one of these controllers, please get the controller, map it, and [contribute the mapping to Mixxx](contributing%20mappings).
 
 #### Note regarding Native Instruments controllers
 
-Native Instruments' newer DJ controllers are USB HID class compliant
-devices
-([source](http://www.native-instruments.com/en/support/knowledge-base/show/1925/i-cannot-find-the-driver-for-my-ni-device-on-the-website-mac-os-x/)).
-The Windows and macOS drivers can translate the HID signals to MIDI, but
-this is not available on GNU/Linux. So, if you make a mapping for these
-controllers, please make an HID mapping so it is compatible with every
-OS that Mixxx runs on.
+Native Instruments' newer DJ controllers are USB HID class compliant devices ([source](http://www.native-instruments.com/en/support/knowledge-base/show/1925/i-cannot-find-the-driver-for-my-ni-device-on-the-website-mac-os-x/)). The Windows and macOS drivers can translate the HID signals to MIDI, but this is not available on GNU/Linux. So, if you make a mapping for these controllers, please make an HID mapping so it is compatible with every OS that Mixxx runs on.
 
-Native Instruments' older DJ controllers use a proprietary protocol
-called NHL that Mixxx does not support. The Windows and macOS drivers
-can switch these controllers to a MIDI mode by pressing certain buttons
-(see [the Native Instruments
+Native Instruments' older DJ controllers use a proprietary protocol called NHL that Mixxx does not support. The Windows and macOS drivers
+can switch these controllers to a MIDI mode by pressing certain buttons (see [the Native Instruments
 website](https://www.native-instruments.com/en/support/knowledge-base/show/3659/how-to-use-your-native-instruments-controller-in-midi-mode/)
-for the button combination for each controller), which could be mapped
-to Mixxx. Unfortunately, because this is done by the driver and not the
-controller firmware, these controllers cannot be used as MIDI
-controllers on GNU/Linux. However, the snd-usb-caiaq driver in Linux
-supports the audio interfaces in at least some of these devices. It also
-registers the signals from some of the controllers as generic Linux
-input events. To get these devices to work with Mixxx on GNU/Linux,
-either the driver would need to be modified to translate these signals
-to HID or MIDI, Mixxx would need to be able to read Linux input events,
-or a program would need to translate the Linux input events to HID or
-MIDI.
+for the button combination for each controller), which could be mapped to Mixxx. Unfortunately, because this is done by the driver and not the controller firmware, these controllers cannot be used as MIDI controllers on GNU/Linux. However, the snd-usb-caiaq driver in Linux
+supports the audio interfaces in at least some of these devices. It also registers the signals from some of the controllers as generic Linux
+input events. To get these devices to work with Mixxx on GNU/Linux, either the driver would need to be modified to translate these signals
+to HID or MIDI, Mixxx would need to be able to read Linux input events, or a program would need to translate the Linux input events to HID or MIDI.
 
 ## Microphones
 
-Mixxx can work with any microphone that can be plugged into your audio
-interface. Refer to the [Mixxx
-Manual](https://mixxx.org/manual/latest/en/chapters/microphones.html)
-for a detailed explanation of different options for setting up Mixxx
-with microphones. As explained in the manual, **USB microphones are not
-recommended** because they cannot be used with direct monitoring with
-Mixxx.
+Mixxx can work with any microphone that can be plugged into your audio interface. Refer to the [Mixxx
+Manual](https://mixxx.org/manual/latest/en/chapters/microphones.html) for a detailed explanation of different options for setting up Mixxx
+with microphones. As explained in the manual, **USB microphones are not recommended** because many of them cannot be used with direct monitoring with Mixxx.
 
 The table of [USB audio interfaces](#USB-audio-interfaces) below has notes regarding use of some audio interfaces with microphones. As [explained in the manual](https://mixxx.org/manual/latest/en/chapters/microphones.html#hardware-mixers), **Behringer Xenyx and Yamaha AG03/AG06 mixers are not recommended** because their audio interfaces only have 2 channels for output.
 
 ## Splitter cables
 
-Splitter cables are **the cheapest way** to get two separate sound
-outputs from your computer. These plug into the onboard audio interface
-built into computer motherboards and split the stereo signal into two
-separate mono signals. However, onboard audio interfaces are not good
-quality, and you lose the stereo effect of hearing different sounds
-arranged in space.
+Splitter cables are **the cheapest way** to get two separate sound outputs from your computer. These plug into the onboard audio interface
+built into computer motherboards and split the stereo signal into two separate mono signals. However, onboard audio interfaces are not good
+quality, and you lose the stereo effect of hearing different sounds arranged in space.
 
-Devices marketed as "headphone splitter" instead of DJ splitters
-duplicate one stereo signal in two jacks. These cannot be used for
-headphone cueing. Also, generic stereo-to-mono splitter cables or
-adapters typically have two mono jack outputs. Plugging headphones or
-stereo speakers into a generic stereo-to-mono splitter will only play
-sound on one side of the headphones or speakers.
+Devices marketed as "headphone splitter" instead of DJ splitters duplicate one stereo signal in two jacks. These cannot be used for
+headphone cueing. Also, generic stereo-to-mono splitter cables or adapters typically have two mono jack outputs. Plugging headphones or
+stereo speakers into a generic stereo-to-mono splitter will only play sound on one side of the headphones or speakers.
 
 Available DJ splitter cables:
 
@@ -551,24 +520,16 @@ Available DJ splitter cables:
 
 ## Audio interfaces
 
-To be able to hear the next track you want to mix in before your
-audience hears it, you need two separate sound outputs. Most computers
-come with an audio interface built into the motherboard with only 1
-stereo 1/8“ headphone output (2 mono channels). Onboard audio interfaces
-built into computers generally have bad sound quality and may pick up
-interference from other devices in the computer, especially the charger
-or power supply. **It is recommended to use one audio interface with at
-least 4 mono output channels (2 stereo channels).** For vinyl control,
-it is recommended to use an audio interface with phono preamplifiers.
+To be able to hear the next track you want to mix in before your audience hears it, you need two separate sound outputs. Most computers
+come with an audio interface built into the motherboard with only 1 stereo 1/8“ headphone output (2 mono channels). Onboard audio interfaces
+built into computers generally have bad sound quality and may pick up interference from other devices in the computer, especially the charger or power supply. **It is recommended to use one audio interface with at least 4 mono output channels (2 stereo channels).** For vinyl control, it is recommended to use an audio interface with phono preamplifiers.
 
 ### Compatibility
 
-As stated above, Mixxx can use any audio interface that your OS has a
-driver to use. All USB audio interfaces listed in the table below work
+As stated above, Mixxx can use any audio interface that your OS has a driver to use. All USB audio interfaces listed in the table below work
 with Windows, macOS, and Linux.
 
-Thunderbolt audio interfaces can operate at lower latencies than USB or
-Firewire audio interfaces, but are generally only compatible with macOS.
+Thunderbolt audio interfaces can operate at lower latencies than USB or Firewire audio interfaces, but are generally only compatible with macOS.
 
 ### USB audio interfaces
 
@@ -587,7 +548,7 @@ generally get the sound quality you pay for with audio interfaces. The [Mixxx ma
 
 | Device                                                                                                                                 | Price (USD) \[36\] | Channels out | Balanced outputs | Channels in | Microphone input with direct monitoring | Phono preamp | Notes                                                                                                                                                                                                                                                                                                                                                                                                                                        |
 | -------------------------------------------------------------------------------------------------------------------------------------- | ------------------ | ------------ | ---------------- | ----------- | --------------------------------------- | ------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Generic USB audio interfaces                                                                                                           | \< $10             | 2            | no               | 0-2         | no                                      | no           | These look similar to USB flash drives. They tend to be poor quality, sometimes even worse than onboard audio interfaces. [\#Splitter cables](#Splitter%20cables) are another option in this price range.                                                                                                                                                                                                                                    |
+| Generic USB audio interfaces                                                                                                           | \< $10             | 2            | no               | 0-2         | no                                      | no           | These look similar to USB flash drives. They tend to be poor quality, sometimes even worse than onboard audio interfaces. [Splitter cables](#Splitter-cables) are another option in this price range.                                                                                                                                                                                                                                    |
 | [Behringer U-Phono UFO202](https://www.behringer.com/product.html?modelCode=P0A12)             | $40                | 2            | no               | 2           | no                                      | yes          | Cheapest option for vinyl control, but requires using 2 of them and making [a small hardware modification](https://mixxx.discourse.group/t/modifying-the-behringer-ufo202-for-use-with-mixxx/11352). Not to be confused with the Behringer U-Control **UCA**202 & **UCA**222, which do not have phono preamps and cannot be used for vinyl control.                                                                                                                                 |
 | [Behringer U-Phoria UMC204HD](https://www.behringer.com/product.html?modelCode=P0BK0)                  | $130                | 4            | yes              | 2           | yes                                     | no           | Cheapest option for broadcasting with a microphone input and independent main & headphone outputs. However, it has no loopback input, so it is more complicated to [configure the microphone input](https://mixxx.org/manual/latest/en/chapters/microphones.html#direct-monitoring). Sound quality is [adequate but not great](https://www.audiosciencereview.com/forum/index.php?threads/behringer-umc204-hd-audio-interface-review.9856/). |
 | [ESI Maya 44 USB+](http://www.esi-audio.com/products/maya44usb+/)                                                                      | $140               | 4            | no               | 4           | no                                      | no           | Does not have phono preamps on the inputs, but has been reported to work for vinyl control.                                                                                                                                                                                                                                                                                                                                                  |

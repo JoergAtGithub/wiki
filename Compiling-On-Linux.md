@@ -21,7 +21,7 @@ sudo apt-get install g++ git scons cmake ccache libportmidi-dev libopusfile-dev 
   libshout-dev libtag1-dev libprotobuf-dev protobuf-compiler \
   libusb-1.0-0-dev libfftw3-dev libmad0-dev portaudio19-dev \
   libchromaprint-dev librubberband-dev libsqlite3-dev \
-  libid3tag0-dev libflac-dev libsndfile -dev libupower-glib-dev \
+  libid3tag0-dev libflac-dev libsndfile-dev libupower-glib-dev \
   libavcodec-dev libavformat-dev \
   libgl-dev liblilv-dev \
   libjack-dev libjack0 portaudio19-dev \

@@ -8,6 +8,12 @@ If you've got a question that's not answered here, please post in the
 latest version of Mixxx before you ask for help. The latest version is
 available on [the download page](http://mixxx.org/download).
 
+## I hear crackling
+
+Your audio latency may be set lower than your system can handle. See the [Adjusting Audio Latency](Adjusting%20Audio%20Latency) page for tips on adjusting your latency.
+
+Updating to Windows 10 20H2 has made this worse for some users. Raising the audio buffer size or downgrading to an earlier version of Windows may work around the issue.
+
 ## Broadcasting or recording signal is silent
 
 Check if you have anything configured for the Record/Broadcast input in
@@ -293,12 +299,6 @@ to hear yet (or push the crossfader all the way to the opposite side)
 then press the headphone ('PFL') button for that deck. This will not
 turn down the volume in your headphones; it will only turn down the
 volume on the main output.
-
-## I hear crackling
-
-Your audio latency may be set lower than your system can handle. See the
-[Adjusting Audio Latency](Adjusting%20Audio%20Latency) page for tips on
-adjusting your latency.
 
 ## There is a delay before I hear a change in the audio
 

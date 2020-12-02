@@ -8,7 +8,7 @@ If you've got a question that's not answered here, please post in the
 latest version of Mixxx before you ask for help. The latest version is
 available on [the download page](http://mixxx.org/download).
 
-## I hear crackling
+## Audio is crackling
 
 Your audio latency may be set lower than your system can handle. See the [Adjusting Audio Latency](Adjusting%20Audio%20Latency) page for tips on adjusting your latency.
 

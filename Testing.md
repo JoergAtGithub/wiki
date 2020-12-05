@@ -21,11 +21,15 @@ issue with a build from a pull request, comment on the pull request on GitHub in
 
 GitHub Actions automatically builds every pull request. They are not uploaded to downloads.mixxx.org, but you can access them through GitHub. If you do not have a GitHub account already, you will need to [register one](https://github.com/join) and log in to download pull request builds.
 
-Go to the bottom of the pull request and look at the report of the builds & test results below the last comment on the page. Where it says "Build / YOUR_OPERATING_SYSTEM", click the "Details" link.
+Go to the bottom of the pull request and look at the report of the builds & test results below the last comment on the page. Click "Show all checks"
+![Screenshot of GitHub Actions checked on a pull request (collapsed)](https://user-images.githubusercontent.com/9455094/101260541-73f19900-36f6-11eb-8874-1375bfe4c368.png)
+
+Where it says "Build / YOUR_OPERATING_SYSTEM", click the "Details" link.
 ![Screenshot of GitHub Actions checks on a pull request](https://user-images.githubusercontent.com/9455094/100259209-94a73b00-2f0d-11eb-9ec1-1bef45b1ba14.png)
 
 On the next page, click the "Artifacts" link in the top right to show a menu of the build artifacts (assuming the builds succeeded).
 ![GitHub Action artifact download menu](https://user-images.githubusercontent.com/9455094/100259372-c1f3e900-2f0d-11eb-82df-6d3ecb343f19.png)
+
 Click the link to download the build for your operating system. GitHub Actions automatically wraps the installer in a ZIP file, so you need to extract the ZIP file before running the installer.
 
 Pull request builds are not code signed, so macOS and Windows will warn you about installing them.

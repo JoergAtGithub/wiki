@@ -93,51 +93,45 @@ General:
   - Start Eclipse.
   - Window -\> Preferences
   - Expand General -\> Editors -\> Autosave
-  - Check Save automatically before build
-  - Uncheck Build automatically
+    - Check Save automatically before build
+    - Uncheck Build automatically
   - Expand C/C++ -\> Indexer
-  - Skip files larger than 80 MB
-  - Skip include files larger than 160 MB
+    - Skip files larger than 80 MB
+    - Skip include files larger than 160 MB
   - Expand C/C++ -\> Build -\> console
-  - Limit console output = 10000
-  - Verify Project Explorer is visible. If not go to Window -\> Show
+    - Limit console output = 10000
+    - Verify Project Explorer is visible. If not go to Window -\> Show
     View -\> Project Explorer
   - In the Project tree, right-click on the build folder and choose
     Properties
-  - Check 'Exclude resource from build', Apply and Close
-  - Repeat for the cache folder
+    - Check 'Exclude resource from build', Apply and Close
+    - Repeat for the cache folder
 
 For Scons builds:
 
   - File -\> New -\> Makefile Project with Existing Code.
-  - Set Project Name to `mixxx`.
-  - Browse to your Mixxx folder e.g. `~/eclipse-workspace/mixxx`.
-  - Check only C++ language (uncheck C).
-  - Select Toolchain for indexer setting = `Linux GCC` (this would be
-    for a Linux host, substitute your OS as applicable).
-  - Finish.
+    - Set Project Name to `mixxx`.
+    - Browse to your Mixxx folder e.g. `~/eclipse-workspace/mixxx`.
+    - Check only C++ language (uncheck C).
+    - Select Toolchain for indexer setting = `Linux GCC` (this would be
+      for a Linux host, substitute your OS as applicable).
+    - Finish.
   - Right click on the new project in Project Explorer -\> Properties
     -\> C/C++ Build
-  - Uncheck "Use default build command".
-  - Build command
-
-<!-- end list -->
-
-```
-   * Linux ''scons faad=1 test=1''
-   * Mac ''scons stdlib=libc++ hss1394=0 mad=0 coreaudio=1 test=1''
-* Switch to Behavior tab.
-* Build: remove ''all''.
-* Clean: remove ''clean'' and set instead ''-c''.
-* Check "Enable parallel builds".
-* On Mac only: Expand C/C++ Build -> Environment
-* Add the following Variable-Value pairs: <code>
-```
-
-CFLAGS | -I/usr/local/include -I/usr/local/include/opus CXXFLAGS |
--I/usr/local/include -I/usr/local/include/opus LDFLAGS |
--L/usr/local/lib QTDIR | /\<path to Qt install directory\>/%VERSION%
-\#eg /usr/local/Cellar/qt5/5.10.1 \</code\>
+    - Uncheck "Use default build command".
+    - Build command
+      * Linux `scons faad=1 test=1`
+      * Mac `scons stdlib=libc++ hss1394=0 mad=0 coreaudio=1 test=1`
+  - Switch to Behavior tab.
+    - Build: remove ''all''.
+    - Clean: remove ''clean'' and set instead ''-c''.
+    - Check "Enable parallel builds".
+  - On Mac only: Expand C/C++ Build -> Environment
+    - Add the following Variable-Value pairs: <code>
+CFLAGS | -I/usr/local/include -I/usr/local/include/opus
+CXXFLAGS | -I/usr/local/include -I/usr/local/include/opus
+LDFLAGS | -L/usr/local/lib
+QTDIR | /\<path to Qt install directory\>/%VERSION%\#eg /usr/local/Cellar/qt5/5.10.1 \</code\>
 
   - Replace `%VERSION%` with the folder name for your version of Qt.
   - You may also have to manually add to the system PATH setting to
@@ -148,18 +142,18 @@ CFLAGS | -I/usr/local/include -I/usr/local/include/opus CXXFLAGS |
     CXX | clang++
     `
   - Expand "C/C++ General" -\> "Preprocessor Include Paths, Macros etc."
-  - Select Providers Tab -\> CDT GCC Build Output Parser
-  - Set Compiler command pattern to
+    - Select Providers Tab -\> CDT GCC Build Output Parser
+    - Set Compiler command pattern to
     `(g?cc)|([gc]\+\+)|(clang)|([clang]\+\+)`
-  - Under 'Container to keep discovered entries' (you may need to expand
+    - Under 'Container to keep discovered entries' (you may need to expand
     the window for this to be visible) select 'Project (use when
     settings are the same for all files in the project)':
 
 [[/media/outputparser.png|]]
 
   - Select "Providers Tab" -\> "CDT GCC Built-In Compiler settings"
-  - Uncheck "Use global providers ..."
-  - Edit the command to `${COMMAND} ${FLAGS} -std=c++11 -E -P -v -dD
+    - Uncheck "Use global providers ..."
+    - Edit the command to `${COMMAND} ${FLAGS} -std=c++11 -E -P -v -dD
     "${INPUTS}"`
   - Note: The indexer should work after a full rebuild that allows
     Eclipse to parse all compiler arguments.
@@ -172,15 +166,15 @@ For CMake Builds (experimental)
   - Follow the install Wizzard and restart Eclipse
   - File -\> New -\> Project... -\> C++ Project (\!**Not** File -\> New
     -\> C/C++ Project)
-  - Set Project Name to `mixxx`
-  - Uncheck "Use default location"
-  - Browse to your Mixxx source folder e.g. `~/eclipse-workspace/mixxx`.
-  - Project Type: CMake driven -\> Empty Project
-  - click Finish
+    - Set Project Name to `mixxx`
+    - Uncheck "Use default location"
+    - Browse to your Mixxx source folder e.g. `~/eclipse-workspace/mixxx`.
+    - Project Type: CMake driven -\> Empty Project
+    - click Finish
   - Right click on the new project in Project Explorer -\> Properties
     -\> C/C++ Build
-  - Switch to Behavior tab.
-  - Check "Enable parallel builds" and select "Use optimal jobs"
+    - Switch to Behavior tab.
+    - Check "Enable parallel builds" and select "Use optimal jobs"
 
 Now Mixxx should build within Eclipse with "Build Project" (Hammer
 icon).
@@ -192,19 +186,19 @@ icon).
   - Run -\> Run configurations.
   - Select C/C++ Application.
   - Press "New launch configuration" button.
-  - Main tab:
-  - C/C++ Application = `mixxx`.
-  - Disable auto build.
-  - Arguments tab
-  - Program arguments = `--resourcePath res --developer`
+    - Main tab:
+      - C/C++ Application = `mixxx`.
+      - Disable auto build.
+    - Arguments tab
+      - Program arguments = `--resourcePath res --developer`
   - "Run" button for run Mixxx
 
 #### Set up Debug
   - Run -\> Debug configurations
   - Next step similar to "Setup run"
-  - Arguments tab
-  - Program arguments = `--resourcePath res --developer --debugAssertBreak`
-  - For stepping through the Qt source, you need to place it in your
+    - Arguments tab
+      - Program arguments = `--resourcePath res --developer --debugAssertBreak`
+    - For stepping through the Qt source, you need to place it in your
     workspace folder
 	```sh
 	cd eclipse-workspace
@@ -289,26 +283,24 @@ you can help things along by adding the required info manually:
 
   - Right click on the project -\> Properties -\> C/C++ General -\> Path
     and Symbols -\> Fill in tabs "Includes" and "Symbols".
-  - Add the src/ folder in your workspace, and select "add to all
+  - Add the `src/` folder in your workspace, and select "add to all
     languages" and "add to all configurations."
-  - Add the lib/ folder. Again, add to all languages and configurations.
+  - Add the `lib/` folder. Again, add to all languages and configurations.
   - Also add /usr/include as a filesystem path.
   - Also add:
-  - /usr/include/qt4
-  - /usr/include/qt4/Qt
-  - /usr/include/qt4/QtCore
-  - /usr/include/qt4/QtGui
-
-<!-- end list -->
+    - /usr/include/qt4
+    - /usr/include/qt4/Qt
+    - /usr/include/qt4/QtCore
+    - /usr/include/qt4/QtGui
 
   - If you are using Qt5:
-  - /usr/include/qt5/Qt
-  - /usr/include/qt5/QtCore
-  - /usr/include/qt5/QtWidgets
-  - /usr/include/qt5/QtGui
-  - /usr/include/qt5/QtTest
-  - /usr/include/qt5/QtXml
-  - /usr/include/qt5/QtSvg
+    - /usr/include/qt5/Qt
+    - /usr/include/qt5/QtCore
+    - /usr/include/qt5/QtWidgets
+    - /usr/include/qt5/QtGui
+    - /usr/include/qt5/QtTest
+    - /usr/include/qt5/QtXml
+    - /usr/include/qt5/QtSvg
 
 After changing these settings, the index needs to be rebuilt. Eclipse
 will usually detect that changes have been made to Symbols settings and

@@ -175,8 +175,6 @@ username = user
 
 Transifex will pick up the changes to the template after a short while, and notify maintainers/subscribers by email.
 
-**TODO:** make the sconscript do this as part of a normal build so code changes that change or add strings automatically update the templates.
-
 ## Updating translations
 
 *This procedure updates Mixxx with translations (*.ts files) that have been contributed by Transifex users.*
@@ -184,9 +182,9 @@ Transifex will pick up the changes to the template after a short while, and noti
   * Fetch all translation files from Transifex, even ones which don’t exist already locally. If the option ''-a'' isn’t included, only the files that exist locally will be updated Transifex. The working directory for these instructions is the root of the repository.
   * <code>tx pull -a -f --parallel --minimum-perc 1</code>
   * Note: If you only want to pull translations for a subset of [[https://github.com/mixxxdj/mixxx/blob/master/.tx/config|Mixxx resources]], use -l lang instead of -a. For more information see [[https://docs.transifex.com/client/pull#pulling-specific-sets-of-translation-files| Transifex docs]].
-  * For every mixxx_xx.ts file in res/translations/, <code>lrelease -nounfinished res/translations/mixxx_xx.ts -qm res/translations/mixxx_xx.qm</code>
-  * In ZSH: <code>for XX in res/translations/mixxx_*.ts; do lrelease -nounfinished $XX -qm res/translations/${$(basename $XX)%.*}.qm; done</code>
-  * In bash: <code>for XX in res/translations/mixxx_*.ts; do lrelease -nounfinished $XX -qm ${XX/%.ts/.qm}; done</code>
+  * For every mixxx_xx.ts file in res/translations/, <code>lrelease-qt5 -nounfinished res/translations/mixxx_xx.ts -qm res/translations/mixxx_xx.qm</code>
+  * In ZSH: <code>for XX in res/translations/mixxx_*.ts; do lrelease-qt5 -nounfinished $XX -qm res/translations/${$(basename $XX)%.*}.qm; done</code>
+  * In bash: <code>for XX in res/translations/mixxx_*.ts; do lrelease-qt5 -nounfinished $XX -qm ${XX/%.ts/.qm}; done</code>
   * If you are testing a translation and would like untranslated strings to show up as blank, do not give the 'nounfinished' argument to lrelease.
   * Add all new translation translation TS and QM files to Git
   * In ZSH: <code>git add res/translations/mixxx_*.(ts|qm)</code>
@@ -196,15 +194,9 @@ Transifex will pick up the changes to the template after a short while, and noti
   * Push changes to remote repository
   * <code>git push origin branchname</code>
 
-**TODO:** make the sconscript do this as part of a normal build so Mixxx contains the latest translations.
-
-Note: The process for updating the translations of Mixxx windows installer is documented in the [[https://github.com/mixxxdj/mixxx/blob/master/build/wix/Localization/README-Translations.md|Github branch]]
-
 ## Git & Merging
 
 The following files should be excluded when merging between release or development branches:
-  * ''/build/wix/Localization/po/*.po''
-  * ''/build/wix/Localization/po/*.wxl''
   * ''/res/translations/*.ts''
   * ''/res/translations/*.qm''
 Please refer to the instructions in the file ''/.gitattributes'' on how to configure your Git settings to respect those rules when performing a merge locally.

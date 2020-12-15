@@ -188,7 +188,6 @@ Transifex will pick up the changes to the template after a short while, and noti
   * If you are testing a translation and would like untranslated strings to show up as blank, do not give the 'nounfinished' argument to lrelease.
   * Add all new translation translation TS and QM files to Git
   * In ZSH: <code>git add res/translations/mixxx_*.(ts|qm)</code>
-  * **Update res/mixxx.qrc file to add any new languages that were not previously present.**
   * Commit changes to HEAD
   * <code>git commit -m "Pull latest translations from https://www.transifex.com/mixxx-dj-software/mixxxdj/branchname/. Compile QM files out of TS files that are used by the localized app"</code>
   * Push changes to remote repository

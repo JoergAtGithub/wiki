@@ -1,5 +1,4 @@
-Compiling software is the process of turning human-readable source code into machine code a computer can execute. Compiling Mixxx is fairly
-straightforward on macOS. The steps below outline what to do. If you need help after reading this page, feel free to ask questions on our [Zulip chat](https://mixxx.zulipchat.com/#narrow/stream/247620-development-help).
+Compiling software is the process of turning human-readable source code into machine code a computer can execute. Compiling Mixxx is fairly straightforward on macOS. The steps below outline what to do. If you need help after reading this page, feel free to ask questions on our [Zulip chat](https://mixxx.zulipchat.com/#narrow/stream/247620-development-help).
 
 # Install Xcode command line tools
 
@@ -110,7 +109,7 @@ Before configuring the build, make sure to disable macOS Gatekeeper as described
 Run the following `cmake` command to configure the project with the recommended default settings for development. This assumes you have set the environment variables after installing dependencies as [described above](#install-build-dependencies) and you have the Mixxx source code in `~/mixxx`. If you have the source code elsewhere, substitute that for `~/mixxx` in the following commands.
 
 ```shell
-cmake -DCMAKE_BUILD_TYPE=Debug -DDEBUG_ASSERTIONS_FATAL=ON -S ~/mixxx -B ~/mixxx/cmake_build
+cmake -DCMAKE_BUILD_TYPE=Debug -DDEBUG_ASSERTIONS_FATAL=ON -S ~/mixxx -B ~/mixxx/build
 ```
 
 Now you can enable Gatekeeper again as described in this [article](https://www.imore.com/how-open-apps-anywhere-macos-catalina-and-mojave).
@@ -121,7 +120,7 @@ This step only needs to be done once or repeated when you want to change the cma
 
 Run:
 ```shell
-cmake --build ~/mixxx/cmake_build --parallel $(sysctl -n hw.physicalcpu)
+cmake --build ~/mixxx/build --parallel $(sysctl -n hw.physicalcpu)
 ```
 This could take a long time depending on the speed of your CPU. Future builds will be much faster (depending on how much code has changed) because cmake automatically uses [ccache](https://ccache.dev/). ccache is included in the [prebuilt environment](#recommended-pre-built-environment).
 
@@ -129,7 +128,7 @@ This could take a long time depending on the speed of your CPU. Future builds wi
 
 The `mixxx` binary is output in the cmake build directory:
 ```shell
-~/mixxx/cmake_build/mixxx
+~/mixxx/build/mixxx
 ```
 
 If you get an error saying `Could not find the Qt platform plugin "cocoa" in ""`, you have not set the `QT_QPA_PLATFORM_PLUGIN_PATH` environment variable. Source the [macos_buildenv.sh script](#recommended-pre-built-environment) to set it.
@@ -144,11 +143,11 @@ To sign the `.app` bundle inside the DMG image, add `-DAPPLE_CODESIGN_IDENTITY=<
 
 To create the DMG image with the .app bundle inside, run
 ```shell
-cd ~/mixxx/cmake_build
+cd ~/mixxx/build
 cpack -G DragNDrop
 ```
 
-The DMG file is created in ~/mixxx/cmake_build. You can run the bundle by double clicking the DMG image in Finder then dragging and dropping the Mixxx.app file inside to /Applications or wherever you would like.
+The DMG file is created in ~/mixxx/build. You can run the bundle by double clicking the DMG image in Finder then dragging and dropping the Mixxx.app file inside to /Applications or wherever you would like.
 
 # Set up development tools
 

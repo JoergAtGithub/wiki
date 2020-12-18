@@ -114,6 +114,12 @@ Using the `SKIP` var is preferable to using `git commit --no-verify`
 (which also disables the checks) because it won't prevent catching
 other, unrelated issues.
 
+**macOS**: GUI-based git clients may [have issues](https://stackoverflow.com/questions/17538460/using-git-pre-commit-hooks-in-context-of-github-client) executing pre-commit hooks.
+
+E.g. with [Atlassian Sourcetree](https://www.sourcetreeapp.com) try installing
+the Sourcetree command line client from the preferences, then call the following
+from a terminal: ``stree``.
+
 # Test a pull request
 
 Developers propose changes to the Mixxx code by opening "pull requests"

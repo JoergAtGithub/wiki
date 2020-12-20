@@ -8,13 +8,13 @@ Mixxx 2.2 and below used Scons instead of CMake.
 
 ## Programs to install
 
-  - [Visual Studio 2017/2019 Community Edition](Visual%20Studio%20Community) or the Visual Studio 2017/2019 Build Tools.
+  - [Visual Studio 2019 Community Edition](Visual%20Studio%20Community) or the Visual Studio 2019 Build Tools.
 
     Follow the installation instructions on that link to setup the compiler and CMake.
 
-    (Visual Studio 2015 may work, but will likely stop working once we
-    start using C++ features that are not implemented by VS2015 
-    and requires manual CMake installation and setup).
+    (Visual studio 2017 support for CMake is not good enough for building Mixxx, 
+    and Visual Studio 2015 will likely stop working once we
+    start using C++ features that are not implemented by its compiler).
   - A Git client like [Git for Windows](https://git-scm.com/download/win),
     [TortoiseGit](https://tortoisegit.org) (requires Git for Windows to be installed) or the
 	[github windows client](http://github-windows.s3.amazonaws.com/GitHubSetup.exe)

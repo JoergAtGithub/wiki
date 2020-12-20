@@ -11,13 +11,13 @@ improves that support.
 
 ### Installation
 
-First, when installing Visual studio, you need to specify at least the
-following elements:
+First, when installing Visual studio, you need to select at least the
+following elements on the setup wizard:
 
   - Desktop development with C++
   - Windows 10 SDK
   - C++ CMake Tools for Windows
-  - MSVC v141 - VS 2017 C++ Build tools (These allow to compile with
+  - Optional: MSVC v141 - VS 2017 C++ Build tools (These allow to compile with
     2017 compilers on Visual Studio 2019)
 
 ### Opening Mixxx source code

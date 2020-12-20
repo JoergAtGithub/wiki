@@ -47,7 +47,7 @@ or build them from source.
 ### Option 1: Download pre-built Mixxx dependencies automatically
 
 The easiest option to get the built dependencies is to use the script located in 
-**MIXXX\_REPO**/tools/windows_buildenv.cmd.
+**MIXXX\_REPO**/tools/windows_buildenv.bat.
 
 This script will download the appropriate file from Mixxx servers, and autogenerate a 
 CMakeSettings.json file which can later be used to build Mixxx with 
@@ -115,7 +115,7 @@ Go have lunch.
 
 ## Build Mixxx
 ### From Visual Studio
-1. If you have not run **MIXXX\_REPO**/tools/windows_buildenv.cmd, it is recommended to do so. 
+1. If you have not run **MIXXX\_REPO**/tools/windows_buildenv.bat, it is recommended to do so. 
    It will also generate a CMakeSettings.json that is used by Visual Studio 
    so you don't need to generate it manually.
 
@@ -178,7 +178,7 @@ Go have lunch.
 ### Build 32bit version of Mixxx
 
 1. Get the dependencies for 32bit:
-   Either set the environment variable PLATFORM=x86 previous to execute the tools/windows_buildenv.cmd script, 
+   Either set the environment variable PLATFORM=x86 previous to execute the tools/windows_buildenv.bat script, 
    or manually download the one for x86, 
    or build it manually
 

@@ -4,10 +4,9 @@
 
 **Microsoft Visual Studio** is the full-featured IDE from Microsoft for
 multiple languages. Since version 2015, there is a free-to-use Community
-edition.
+edition and 2017 added initial support for CMake projects.
 
-Since version 2017, it includes support for CMake projects, version 2019
-improves that support.
+Only version 2019 has good CMake support required for Mixxx, so this one is the recommended version.
 
 ### Installation
 

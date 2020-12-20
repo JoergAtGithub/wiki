@@ -24,6 +24,9 @@ following elements on the setup wizard:
 Note: CMake support has been added to Mixxx 2.3. You need this version
 or newer in order to use these instructions.
 
+Also note that the script in Mixxx sources tools\windows_buildenv.bat 
+can generate a CMakeSettings.json
+
 Open Visual Studio, go to File-Open-\>CMake... and select the
 CMakelists.txt from the root of the Mixxx source folder.
 

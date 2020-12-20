@@ -173,7 +173,7 @@ Go have lunch.
 4. Once it completes without errors, you can type `cmake --build .` so that it starts building. 
   Depending on your processor, a full build can take from 5 to 20 minutes.
 
-  In order to do a clean build, you can do so with `cmake --build --clean-first .`
+  In order to do a clean build, you can do so with `cmake --build . --clean-first`
 
 ### Build 32bit version of Mixxx
 

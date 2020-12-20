@@ -2,26 +2,41 @@
 page](Build%20Windows%20installer).)*
 
 # Building Mixxx on Windows
-
-*FIXME Mixxx is fading out SCons in favor of [cmake](https://cmake.org)
-starting in 2.3 and [will completely switch
-in 2.4](https://github.com/mixxxdj/mixxx/pull/2777). This page isn't
-updated with the appropriate instructions yet.*
+Note: These instructions are valid for Mixxx 2.3 onwards. 
+Mixxx 2.2 and below used Scons instead of CMake.
+ You will find instructions for that older release in the History of this wiki page.
 
 ## Programs to install
 
-  - Visual Studio 2017 Community Edition or the Visual Studio 2017 Build Tools.  
+  - [Visual Studio 2017/2019 Community Edition](Visual%20Studio%20Community) or the Visual Studio 2017/2019 Build Tools.
+
+    Follow the installation instructions on that link to setup the compiler and CMake.
+
     (Visual Studio 2015 may work, but will likely stop working once we
-    start using C++ features that are not implemented by VS2015).
-  - [Python](http://python.org/download/) 2.7.x  
-    Ensure Python is on
-    your system PATH (there is an option in the installer to do this).
-    Don't use Python 3.x as [Scons is not compatible with it](https://github.com/SCons/scons/wiki/FrequentlyAskedQuestions#what-version-of-python-do-i-need).
-  - [Latest version of SCONS](http://scons.org/pages/download.html)
+    start using C++ features that are not implemented by VS2015 
+    and requires manual CMake installation and setup).
   - A Git client like [Git for Windows](https://git-scm.com/download/win),
-    [TortoiseGit](https://code.google.com/p/tortoisegit/) or the
+    [TortoiseGit](https://tortoisegit.org) (requires Git for Windows to be installed) or the
 	[github windows client](http://github-windows.s3.amazonaws.com/GitHubSetup.exe)
-    (featuring a unix like command line)
+
+    Both Git for Windows and github windows feature a unix like command line.
+  - Optional: [Python](http://python.org/download/) 3.x  and [clcache](https://github.com/frerich/clcache/)
+
+    This is needed if you want to use clcache when building from commandline.
+
+    When installing Python, set it on your system PATH (there is an option in the installer to do this).
+
+    When installed, open a console window (With admin privileges if you have 
+    installed Python on C:\Program Files) and type
+    `python -m pip install git+https://github.com/frerich/clcache.git`  
+    (We take it directly from git, because it needs a version greater than 4.2.0 to work)
+
+## Download Mixxx's source code
+
+1.  Clone the [Mixxx](https://github.com/mixxxdj/mixxx.git) repository.
+
+    Remember the folder to which the repository was saved. We will refer
+    to that folder as **MIXXX\_REPO** later.
 
 ## Acquire Mixxx dependencies
 
@@ -29,16 +44,28 @@ To build Mixxx, you need built copies of its dependencies.
 You may download pre-built versions of them from the Mixxx team (recommended)
 or build them from source.
 
-### Option 1: Download pre-built Mixxx dependencies
+### Option 1: Download pre-built Mixxx dependencies automatically
 
-You can find pre-built Mixxx dependencies at the bottom of this [Github
-Page](https://github.com/mixxxdj/buildserver).
+The easiest option to get the built dependencies is to use the script located in 
+**MIXXX\_REPO**/tools/windows_buildenv.cmd.
+
+This script will download the appropriate file from Mixxx servers, and autogenerate a 
+CMakeSettings.json file which can later be used to build Mixxx with 
+the default settings from Visual Studio.
+
+It will download the dependencies to **MIXXX\_REPO**\buildenv\2.3-j00019-x64-release-fastbuild-static-55e94982-minimal
+We will refer to this folder as **WINLIB\_PATH** later.
+
+### Option 2: Download pre-built Mixxx dependencies manually
+
+Alternatively, you can find links to pre-built Mixxx dependencies at the bottom 
+of this [Github Page](https://github.com/mixxxdj/buildserver).
 
 The folder `2.?.x-windows` contains build environments for the `2.?`
 release of Mixxx. If you are working on the master branch, always pick
 the latest version. If you want to work on a specific branch, pick the
 corresponding folder. Check the
-[build/windows/golden\_environment](https://github.com/mixxxdj/mixxx/blob/master/build/windows/golden_environment)
+[packaging/windows/build\_environment](https://github.com/mixxxdj/mixxx/blob/master/packaging/windows/build_environment)
 file in the Mixxx codebase to see what version of the build environment
 is currently used for builds.
 
@@ -58,11 +85,12 @@ You may choose between the "release-fastbuild" and "release" variants.
 If you want to build a 32-bit version of Mixxx, choose an "x86" variant.
 For 64-bit, choose an "x64" variant.
 
-Download and unzip one of these environments. Remember the folder to
-which the repository was saved. We will refer to that folder as
-**WINLIB\_PATH** later.
+Download and unzip one of these environments. 
+The current recommended folder is inside **MIXXX\_REPO**\buildenv 
+(example: **MIXXX\_REPO**\buildenv\2.3-j00019-x64-release-fastbuild-static-55e94982-minimal).
+We will refer to this folder as **WINLIB\_PATH** later.
 
-### Option 2: Compile Mixxx dependencies from source
+### Option 3: Compile Mixxx dependencies from source
 
 If you want to build the Mixxx dependencies from source instead of
 downloading pre-built ones:
@@ -85,150 +113,91 @@ downloading pre-built ones:
 This step will take 2-3 hours depending on how many CPU cores you have.
 Go have lunch.
 
-## Download Mixxx's source code
+## Build Mixxx
+### From Visual Studio
+1. If you have not run **MIXXX\_REPO**/tools/windows_buildenv.cmd, it is recommended to do so. 
+   It will also generate a CMakeSettings.json that is used by Visual Studio 
+   so you don't need to generate it manually.
 
-1.  Clone the [Mixxx](https://github.com/mixxxdj/mixxx.git) repository.
-    Remember the folder to which the repository was saved. We will refer
-    to that folder as **MIXXX\_REPO** later.
-2.  Start a command prompt (it doesn't need to be a Windows SDK prompt)
-    and change into the **MIXXX\_REPO** directory.
-3.  If you are building Mixxx 2.1 or 2.2, create a file called
-    `build.bat` with the following content:
+2. Open Visual Studio. 
 
-    ```bat
-	@echo off
-    SETLOCAL
-    REM Clean up after old builds.
-    del /q /f *.exe
-    rmdir /s /q dist32
-    rmdir /s /q dist64
-    
-    REM this can be either release or debug. For development you want to use debug
-    set BUILD_TYPE=release
-    
-    REM This determines if you build a 32bit or 64bit version of mixxx. 
-    REM 32bit = i386, 64bit = amd64
-    set ARCHITECTURE=i386
-    
-    REM set this to the folder where you built the dependencies
-    set WINLIB_PATH="**Enter Path to WINLIB_PATH**"
-    SET BIN_DIR=%WINLIB_PATH%\bin
-    REM make sure the Qt version matches the version in WINLIB_PATH.
-    set QT_VERSION=5.11.2
-    SET QTDIR=%WINLIB_PATH%\Qt-%QT_VERSION%
-    
-    if "%ARCHITECTURE%" == "i386" (
-            set TARGET_MACHINE=x86
-            set VCVARS_ARCH=x86
-    ) else ( 
-            set TARGET_MACHINE=amd64
-            set VCVARS_ARCH=x86_amd64
-    )
-    
-    REM Adjust to your environment
-    call "C:\Program Files (x86)\Microsoft Visual
-    Studio 14.0\VC\vcvarsall.bat" %VCVARS_ARCH%
-    
-    rem /MP Use all CPU cores.
-    rem /FS force synchronous PDB writes (prevents PDB corruption with
-    /MP)
-    rem /EHsc Do not handle SEH in try / except blocks.
-    set CL=/MP /FS /EHsc
-    
-    set PATH=%BIN_DIR%;%PATH%
-    REM Set the -j value to the number of CPU cores (not HT "virtual" cores but physical cores) you have
-    scons -j2 toolchain=msvs winlib=%WINLIB_PATH% build=%BUILD_TYPE%
-    staticlibs=1 staticqt=1 verbose=0 machine=%TARGET_MACHINE%
-    qtdir=%QTDIR% hss1394=1 mediafoundation=1 opus=1 localecompare=1
-    optimize=portable virtualize=0 test=1 qt_sqlite_plugin=0
-    build_number_in_title_bar=0 bundle_pdbs=1
-    ENDLOCAL
-    ```
+   It will ask to open a project, select open Folder and select **MIXXX\_REPO**. 
+   It will detect it as a CMake project. 
+   You can also do so from File-Open->CMake... and select the CMakeLists.txt file 
+   from **MIXXX\_REPO**.
 
-	This script will setup the build environment and call scons with
-    the appropriate flags. You have to edit the **WINLIB\_PATH**
-    variable and set it to the absolute path of the folder where you
-    compiled the dependencies for mixxx. If you build the environment
-    yourself instead of using the precompiled environment, you will need
-    to adjust the **QTDIR** variable too.
+   Select the correct build configuration on the toolbar. 
+   The CMakeSettings uses names like x64__fastbuild and so on.
+   By default it will also generate the CMake cache using the configuration. 
+   You can also run it manually (and clean and regenerate it) by selecting the 
+   CMakeLists.txt file, and use the options Generate cache or CMake cache -> delete cache.
 
-    If you are building Mixxx 2.3, create a file called `build.bat` with
-    the following content
+3. Go to Compile -> Compile All Menu option. The build should start. 
+   Depending on your processor, a full build can take from 5 to 20 minutes.
 
-	```bat
-	@echo off
-    SETLOCAL enableDelayedExpansion
-    
-    if "%1" == "clean" (
-    REM Clean up after old builds.
-    del /q /f *.exe
-    del /q /f .sconsign.dblite
-    del config.h
-    rmdir /s /q dist32
-    rmdir /s /q dist64
-    rmdir /s /q .sconf_temp
-    rmdir /s /q win32_build
-    rmdir /s /q win64_build
-    rmdir /s /q cache
-    )
-    
-    REM x86 or x64
-    SET LOCAL_PROCESSOR=x64
-    
-    REM debug, release or release-fastbuild. Warning: The debug buildenv is not prebuilt so you need to build it yourself.
-    SET LOCAL_BUILDMODE=release-fastbuild
-    
-    REM The name of the directory where the libraries are located (and the name of the file to download).
-    REM For the precompiled ones, it is automatically filled from ./build/windows/golden_environment 
-    REM You can replace this detection with the correct name if it does not apply to your setup.
-    set /P LOCAL_WINLIB_NAME=<build/windows/golden_environment
-    set LOCAL_WINLIB_NAME=!LOCAL_WINLIB_NAME:PLATFORM=%LOCAL_PROCESSOR%!
-    set
-    LOCAL_WINLIB_NAME=!LOCAL_WINLIB_NAME:CONFIGURATION=%LOCAL_BUILDMODE%!
-    
-    REM %~dp0.. means the parent folder of your mixxx source code.
-    SET LOCAL_WINLIB_PARENT=%~dp0..
-    
-    REM This sets the number of processors to half or what Windows reports. 
-    REM This is done because most processors have some sort of hyperthreading and we want only real cores.
-    IF %NUMBER_OF_PROCESSORS% GTR 1 (
-            SET /A LOCAL_NUMBER_PROCS=%NUMBER_OF_PROCESSORS%/2
-    ) ELSE (
-            SET /A LOCAL_NUMBER_PROCS=%NUMBER_OF_PROCESSORS%
-    )
-    SET SCONS_NUMBER_PROCESSORS=-j%LOCAL_NUMBER_PROCS%
-    
-    call ./build/windows/install_buildenv.bat
-    http://downloads.mixxx.org/builds/buildserver/2.3.x-windows/
-    %LOCAL_WINLIB_NAME% %LOCAL_WINLIB_PARENT%
-    if ERRORLEVEL 1 ENDLOCAL && EXIT /b
-    
-    REM skiptest means that we don't want to build and execute the mixxx-test.
-    REM skipinstaller means that we don't want to generate the installer after the build.
-    ./build/appveyor/build_mixxx.bat %LOCAL_PROCESSOR% %LOCAL_BUILDMODE% %LOCAL_WINLIB_PARENT%\%LOCAL_WINLIB_NAME% skiptest skipinstaller
-    
-    ENDLOCAL
-    ```
 
-4.  When you are ready, type: `build.bat`
+### From commandline
 
-## Build 64bit version of Mixxx
+1. Open the application "x64 Native Tools command prompt for VS2019" from the Windows Start menu.
+   There, go to **MIXXX\_REPO** folder
 
-You have to follow the above guide with two changes.
+2. Create a folder where we will setup cmake and build the sources. 
+   Usually we call this **MIXXX\_REPO**\build\
+   It is recomended that you actually create subfolders for different builds, as in: 
 
-1.  Build the dependencies with: `build_environment x64 Release` or make
-    sure you have downloaded the x64 version of the pre-built
-    dependencies.
-2.  Use **set ARCHITECTURE=amd64** in **build.bat**
+   `**MIXXX\_REPO**\build\x64__fastbuild`
 
-**WARNING**: DO NOT mix 32 and 64 bits build in the same CMD Shell
-window or you will have undetermined results. If you need 32 and 64 bits
-environments together, use different terminal window for 32 bits and 64
-bits build\_environment and mixxx compilation
+   `**MIXXX\_REPO**\build\x86__fastbuild`
+
+   `**MIXXX\_REPO**\build\x64__debug`
+
+   Do the same for the install subdir ( **MIXXX\_REPO**\install\x64_fastbuild)
+
+3. enter into this directory, ` cd build\x64__fastbuild` and type the following:
+   `cmake -G "Ninja" -DCMAKE_BUILD_TYPE=Release 
+ -DCMAKE_PREFIX_PATH="**WINLIB\_PATH**;**WINLIB\_PATH**\Qt-5.14.2" 
+ -DCMAKE_INSTALL_PREFIX=**MIXXX\_REPO**\install\x64_fastbuild 
+ -DDEBUG_ASSERTIONS_FATAL=ON -DHSS1394=ON -DKEYFINDER=OFF -DLOCALECOMPARE=ON 
+ -DMAD=ON -DMEDIAFOUNDATION=ON -DSTATIC_DEPS=ON -DBATTERY=ON -DBROADCAST=ON -DBULK=ON 
+ -DHID=ON -DLILV=ON -DOPUS=ON -DQTKEYCHAIN=ON -DVINYLCONTROL=ON ..\..`
+
+  You need to replace **WINLIB\_PATH** and **MIXXX\_REPO** for your paths, 
+  as well as adapting the install subdir if you build a different one.
+  Also, the last part of the command "..\\.." means **MIXXX\_REPO** as seen from 
+  the cmake build dir (in our case  **MIXXX\_REPO**\build\x64__fastbuild, so two subfolders)
+
+  Finally, set -DDEBUG_ASSERTIONS_FATAL=OFF instead of ON if you get assertion errors
+  that close Mixxx. This is intended to detect errors quickly, but 
+  might be completely unexpected sometimes.
+
+4. Once it completes without errors, you can type `cmake --build .` so that it starts building. 
+  Depending on your processor, a full build can take from 5 to 20 minutes.
+
+  In order to do a clean build, you can do so with `cmake --build --clean-first .`
+
+### Build 32bit version of Mixxx
+
+1. Get the dependencies for 32bit:
+   Either set the environment variable PLATFORM=x86 previous to execute the tools/windows_buildenv.cmd script, 
+   or manually download the one for x86, 
+   or build it manually
+
+2. Follow the instructions to build from commandline, but instead open a 
+   *x86 Native tools command prompt for VS2019* 
+   (or x86_64 cross compile command prompt for VS2019). (Preferably the latter)
+
+**WARNING**: DO NOT mix 32 and 64 bits builds. Use separate console windows 
+and separate precompiled directories and cmake build directories
+
 
 ## Build debug version of Mixxx
 
-You have to follow the above guide with two changes.
+1. There are no precompiled environments for debug, so this means that you have to  
+    compile Mixxx dependencies from source as explained above. 
+    You will need to indicate this commandline to generate them in debug: 
+    `build_environment xxx Debug`
+2. Follow the instructions to build from commandline, but on the cmake instructions 
+   specify **-DCMAKE_BUILD_TYPE=Debug** instead of *DCMAKE_BUILD_TYPE=Release*.
 
-1.  Build the dependencies with: `build_environment xxx Debug`
-2.  Use **set BUILD\_TYPE=debug** in **build.bat**
+**WARNING**: DO NOT mix release and debug builds. Use separate console windows 
+and separate precompiled directories and cmake build directories

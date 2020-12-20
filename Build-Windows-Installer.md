@@ -1,3 +1,5 @@
+FIXME Mixxx is fading out SCons in favor of cmake starting in 2.3 and will completely switch in 2.4. This page isn't updated with the appropriate instructions yet.
+
 # Making a Windows installer package
 
 Mixxx uses the [WIX Toolset](http://wixtoolset.org/releases/) for

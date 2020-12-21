@@ -486,7 +486,7 @@ forum to see if anyone has posted a mapping. If you are willing to put in the ef
 
 Native Instruments' newer DJ controllers are USB HID class compliant devices ([source](http://www.native-instruments.com/en/support/knowledge-base/show/1925/i-cannot-find-the-driver-for-my-ni-device-on-the-website-mac-os-x/)). The Windows and macOS drivers can translate the HID signals to MIDI, but this is not available on GNU/Linux. So, if you make a mapping for these controllers, please make an HID mapping so it is compatible with every OS that Mixxx runs on.
 
-Native Instruments' older DJ controllers use a proprietary protocol called NHL that Mixxx does not support. The Windows and macOS drivers
+Native Instruments' first generation DJ controllers use a proprietary protocol called NHL that Mixxx does not support. The Windows and macOS drivers
 can switch these controllers to a MIDI mode by pressing certain buttons (see [the Native Instruments
 website](https://www.native-instruments.com/en/support/knowledge-base/show/3659/how-to-use-your-native-instruments-controller-in-midi-mode/)
 for the button combination for each controller), which could be mapped to Mixxx. Unfortunately, because this is done by the driver and not the controller firmware, these controllers cannot be used as MIDI controllers on GNU/Linux. However, the snd-usb-caiaq driver in Linux

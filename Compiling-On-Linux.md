@@ -204,7 +204,7 @@ mkdir ~/mixxx/build
 ```
 
 Now configure CMake. This only needs to be done once; you don't need to repeat it when you compile Mixxx again. This step checks if you have all the dependencies installed, similar to the configure script of GNU autotools. `/usr/local` is used as the installation path in this example, but
-you can set this to anywhere as long as your `$PATH` environment variable includes a `bin` directory under the installation path (`/usr/local/bin` if the installation path is `/usr/local`). Don't use the prefix /usr, because it is reserved for packaged version of Mixxx (deb/rpm/...) and will interfere with the update process of you package manager. 
+you can set this to anywhere as long as your `$PATH` environment variable includes a `bin` directory under the installation path (`/usr/local/bin` if the installation path is `/usr/local`). Don't use the prefix /usr, because it is reserved for packaged version of Mixxx (deb/rpm/...) and will interfere with the update process of your package manager. 
 ```shell
 cmake -DCMAKE_INSTALL_PREFIX=/usr/local -S ~/mixxx -B ~/mixxx/build
 ```

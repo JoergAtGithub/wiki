@@ -203,10 +203,10 @@ To build with CMake, first create a new directory and enter it. This is typicall
 mkdir ~/mixxx/build
 ```
 
-Now configure CMake. This only needs to be done once; you don't need to repeat it when you compile Mixxx again. This step checks if you have all the dependencies installed, similar to the configure script of GNU autotools. `/usr` is used as the installation path in this example, but
-you can set this to anywhere as long as your `$PATH` environment variable includes a `bin` directory under the installation path (`/usr/bin` if the installation path is `/usr`).
+Now configure CMake. This only needs to be done once; you don't need to repeat it when you compile Mixxx again. This step checks if you have all the dependencies installed, similar to the configure script of GNU autotools. `/usr/local` is used as the installation path in this example, but
+you can set this to anywhere as long as your `$PATH` environment variable includes a `bin` directory under the installation path (`/usr/local/bin` if the installation path is `/usr/local`).
 ```shell
-cmake -DCMAKE_INSTALL_PREFIX=/usr -S ~/mixxx -B ~/mixxx/build
+cmake -DCMAKE_INSTALL_PREFIX=/usr/local -S ~/mixxx -B ~/mixxx/build
 ```
 
 ### Compile Mixxx
@@ -253,7 +253,7 @@ build flags if you'd like to customize. To compile without any special options, 
 scons prefix=INSTALLATION_DIRECTORY -j `nproc` optimize=native
 ```
 Change INSTALLATION\_DIRECTORY to the location you want to install Mixxx to. If you want to install Mixxx for all users of the OS, you do not
-need to specify a prefix and can leave it as the default, which is /usr/local. If you only want to install Mixxx for your user, you can specify a location in your home directory such as ~/local
+need to specify a prefix and can leave it as the default, which is /local. If you only want to install Mixxx for your user, you can specify a location in your home directory such as ~/local
 
 Running `scons` will take some time, depending on the speed of your computer. Specifying NUMBER\_OF\_CPU\_CORES will tell scons to run that
 many threads at a time while compiling. This speeds up compilation on multi-core CPUs. You can check how many threads your CPU can run

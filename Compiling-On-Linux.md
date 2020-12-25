@@ -8,7 +8,7 @@ or checkout a snapshot from our git repository:
 
   - For the latest development (main) branch: `git clone https://github.com/mixxxdj/mixxx.git`
   - For the latest beta branch: `git clone -b 2.3 https://github.com/mixxxdj/mixxx.git`
-  - For the latest stable branch: `git clone -b 2.2 https://github.com/mixxxdj/mixxx.git`
+  - For the latest stable branch: `git clone -b 2.2 https://github.com/mixxxdj/mixxx.git` (refer to [old instructions below](#mixxx--22))
 
 To update to the latest version of a git branch, enter (`cd` into) the directory you cloned the git repository into and run `git pull`. Refer
 to [Using Git](https://github.com/mixxxdj/mixxx/wiki/Using%20Git) for more details.

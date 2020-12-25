@@ -1,73 +1,28 @@
 Compiling software is the process of turning human-readable source code into machine code a computer can execute. Compiling Mixxx is fairly
 straightforward on Linux. The steps below outline what to do. If you need help after reading this page, feel free to ask questions on our [Zulip chat](https://mixxx.zulipchat.com/#narrow/stream/247620-development-help).
 
+# Download Mixxx source code
+
+Either download the source for the latest release from the [downloads page on the website](https://www.mixxx.org/download), 
+or checkout a snapshot from our git repository:
+
+  - For the latest development (main) branch: `git clone https://github.com/mixxxdj/mixxx.git`
+  - For the latest beta branch: `git clone -b 2.3 https://github.com/mixxxdj/mixxx.git`
+  - For the latest stable branch: `git clone -b 2.2 https://github.com/mixxxdj/mixxx.git`
+
+To update to the latest version of a git branch, enter (`cd` into) the directory you cloned the git repository into and run `git pull`. Refer
+to [Using Git](https://github.com/mixxxdj/mixxx/wiki/Using%20Git) for more details.
+
 # Install build dependencies
 
-Mixxx relies on several external libraries for various features.
-
 ## Debian / Ubuntu / Raspbian
+There is a script in the code repository that will download and install all dependencies. Assuming you have downloaded the source code to `~/mixxx`, run it with:
 
-First of all install cmake, the tool that we need to build the project, running:
-
-```sh
-sudo apt-get install cmake
+```shell
+~/sw/mixxx/tools/ubuntu_buildenv.sh setup
 ```
 
-If your distribution is Debian 9/10 based (such as Ubuntu 16.04/18.04), you can install
-them by running:
-
-```sh
-sudo apt-get install g++ git scons cmake ccache libportmidi-dev libopusfile-dev \
-  libshout-dev libtag1-dev libprotobuf-dev protobuf-compiler \
-  libusb-1.0-0-dev libfftw3-dev libmad0-dev portaudio19-dev \
-  libchromaprint-dev librubberband-dev libsqlite3-dev \
-  libid3tag0-dev libflac-dev libsndfile-dev libupower-glib-dev \
-  libavcodec-dev libavformat-dev \
-  libgl-dev liblilv-dev \
-  libjack-dev libjack0 portaudio19-dev \
-  libfaad-dev libmp4v2-dev \
-  libmp3lame-dev libebur128-dev qt5keychain-dev libmodplug-dev 
-```
-
-Note: `libfaad-dev libmp4v2-dev` are required for M4A support. The
-installation order is [important](https://bugs.launchpad.net/mixxx/+bug/1464120).
-
-Beginning with Debian 10 (Ubuntu 20.04) support for libmp4v2 has been dropped.
-Instead install additional FFmpeg packages to build Mixxx with FFmpeg enabled:
-
-```sh
-sudo apt-get install g++ git scons cmake ccache libportmidi-dev libopusfile-dev \
-  libshout-dev libtag1-dev libprotobuf-dev protobuf-compiler \
-  libusb-1.0-0-dev libfftw3-dev libmad0-dev portaudio19-dev \
-  libchromaprint-dev librubberband-dev libsqlite3-dev \
-  libid3tag0-dev libflac-dev libsndfile-dev libupower-glib-dev \
-  libavcodec-dev libavformat-dev libavutil-dev libswresample-dev \
-  libgl-dev liblilv-dev \
-  libjack-dev libjack0 portaudio19-dev \
-  libmp3lame-dev libebur128-dev qt5keychain-dev libmodplug-dev
-```
-
-And build with:
-
-```
-scons faad=0 ffmpeg=1
-```
-
-If you are building the Mixxx **main** or **2.3** git branch, additionally run:
-
-``` sh
-sudo apt-get install qt5-default qt5keychain-dev qtdeclarative5-dev libqt5opengl5-dev qtscript5-dev libqt5svg5-dev libqt5x11extras5-dev libvamp-sdk2v5 libhidapi-libusb0 libqt5sql5-sqlite libmodplug-dev
-```
-
-If you are building Mixxx **2.2**, additionally run:
-``` sh
-sudo apt-get install qt5-default qtdeclarative5-dev libqt5opengl5-dev qtscript5-dev libqt5svg5-dev libqt5x11extras5-dev libqt5sql5-sqlite libmodplug-dev
-```
-
-If you are building Mixxx **2.1**, additionally run:
-``` sh
-sudo apt-get install libqt4-dev libqt4-sql-sqlite libqt4-opengl-dev libqt4-svg libqt4-xmlpatterns libqt4-sql
-```
+Despite the script name, this should work on Debian too.
 
 ## Fedora
 
@@ -176,20 +131,6 @@ also need the corresponding -dev or -devel packages for each package. If you can
   - [libmp4](http://www.mpeg4ip.net/) (or
     [libmp4v2](http://code.google.com/p/mp4v2/)) (optional, for M4A file
     support)
-
-# Download Mixxx source code
-
-If you are still running as root from installing packages, return to using your normal unprivileged user account (press Ctrl + D or run
-`exit`).
-
-Either download the source for the latest release from the [downloads page on the website](https://www.mixxx.org/download), 
-or checkout a snapshot from our git repository:
-
-  - For the latest development (master) branch: `git clone https://github.com/mixxxdj/mixxx.git`
-  - For the latest stable branch: `git clone -b <version> https://github.com/mixxxdj/mixxx.git`
-
-To update to the latest version of a git branch, enter (`cd` into) the directory you cloned the git repository into and run `git pull`. Refer
-to [Using Git](https://github.com/mixxxdj/mixxx/wiki/Using%20Git) for more details.
 
 # Configure
 Mixxx uses the CMake build system. Building and installing Mixxx follows the standard CMake procedures.

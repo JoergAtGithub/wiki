@@ -58,8 +58,6 @@ sudo pacman -S --needed libid3tag libmad portaudio qt libogg \
 
 ## Nix & NixOS
 
-If you have the nix package manager installed (can be done on any Linux system), or you are running [NixOS](https://nixos.org/), getting started is the easiest.
-
 ### Creating a release
 
 ```
@@ -103,9 +101,8 @@ You can use following task for building mixxx inside the nix development environ
 
 ## Non-system Qt
 
-If your distribution's Qt package is older than the version required by Mixxx, download the latest [Qt source
-code](https://download.qt.io/archive/qt/). For each Qt version, it is available at that link in a directory called "single" and has a filename
-like `qt-everywhere-src-VERSION.tar.xz`. Extract that archive and compile the source code:
+To build Mixxx with a version of Qt older or newer than your distribution's package manager, download the latest [Qt source
+code](https://download.qt.io/archive/qt/). For each Qt version, it is available at that link in a directory called "single" and has a filename like `qt-everywhere-src-VERSION.tar.xz`. Extract that archive and compile the source code:
 
 ```shell
 tar xf qt-everywhere-src-VERSION.tar.xz
@@ -114,23 +111,6 @@ cd qt-everywhere-src-VERSION
 make -j`nproc`
 make install
 ```
-
-## Other
-
-For other distributions, you will need to install the following through your distribution's package manager. On most distributions, you will
-also need the corresponding -dev or -devel packages for each package. If you cannot find a package listed here that starts with "lib", try searching for the package name without the "lib" prefix.
-
-  - cmake
-  - libid3tag
-  - libmad
-  - [PortAudio-v19](http://www.portaudio.com)
-  - Qt 5
-  - libogg, libvorbis, libvorbisfile
-  - libsndfile
-  - [PortMidi & PortTime](http://portmedia.sourceforge.net/portmidi)
-  - [libmp4](http://www.mpeg4ip.net/) (or
-    [libmp4v2](http://code.google.com/p/mp4v2/)) (optional, for M4A file
-    support)
 
 # Configure
 Mixxx uses the CMake build system. Building and installing Mixxx follows the standard CMake procedures.

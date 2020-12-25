@@ -191,71 +191,70 @@ or checkout a snapshot from our git repository:
 To update to the latest version of a git branch, enter (`cd` into) the directory you cloned the git repository into and run `git pull`. Refer
 to [Using Git](https://github.com/mixxxdj/mixxx/wiki/Using%20Git) for more details.
 
-# Compile and install
+# Configure
+Mixxx uses the CMake build system. Building and installing Mixxx follows the standard CMake procedures.
 
-## CMake
+Before compiling, you need to configure with CMake. This only needs to be done once; you don't need to repeat it when you compile Mixxx again.
 
-### Configure
-Mixxx uses the CMake build system as of Mixxx 2.3. Building and installing Mixxx follows the standard CMake procedures.
+This step checks if you have all the dependencies installed, similar to the configure script of GNU autotools. `/usr/local` is used as the installation path in this example, but you can set this to anywhere as long as your `$PATH` environment variable includes a `bin` directory under the installation path (`/usr/local/bin` if the installation path is `/usr/local`). Don't use the prefix /usr, because it is reserved for packaged version of Mixxx (deb/rpm/...) and will interfere with the update process of your package manager.
 
-To build with CMake, first create a new directory and enter it. This is typically under the project root, but it can be anywhere you want. This guide will assume you have the Mixxx source code in ~/mixxx. If you have it somewhere else, replace ~/mixxx with the path where the source code is.
-```shell
-mkdir ~/mixxx/build
-```
+These examples assume you have the Mixxx source code at `~/mixxx`. If you have it elsewhere, use that path instead in the following commands.
 
-Now configure CMake. This only needs to be done once; you don't need to repeat it when you compile Mixxx again. This step checks if you have all the dependencies installed, similar to the configure script of GNU autotools. `/usr/local` is used as the installation path in this example, but
-you can set this to anywhere as long as your `$PATH` environment variable includes a `bin` directory under the installation path (`/usr/local/bin` if the installation path is `/usr/local`). Don't use the prefix /usr, because it is reserved for packaged version of Mixxx (deb/rpm/...) and will interfere with the update process of your package manager. 
 ```shell
 cmake -DCMAKE_INSTALL_PREFIX=/usr/local -S ~/mixxx -B ~/mixxx/build
 ```
 
-### Compile Mixxx
+# Compile
 ```shell
 cmake --build ~/mixxx/build --parallel `nproc`
 ```
 
-Contrary to the behavior of the old SCons build system, CMake does not move the produced binaries into the root folder of the project.
-
-### Install Mixxx
-If you want to compile and install in one step, you can skip the compilation step above and just run this command.
-```sh
+# Install
+```shell
 cmake --build ~/mixxx/build --target install --parallel `nproc`
 ```
-### Debug build
+
+If you want to compile and install in one step, you can skip the compilation step above and just run this command.
+
+# Run without installing
+The `mixxx` binary will be in the CMake build directory. You can simply run it directly:
+```shell
+~/mixxx/build/mixxx
+```
+
+# ccache
+
+We highly recommend installing [CCache](https://ccache.dev/) if you are building Mixxx frequently, whether for development or testing. CCache drastically speeds up the time to recompile Mixxx, especially when switching between git branches. CMake works with CCache automatically.
+
+You will probably want to increase the default ccache size of 5.0GB to something much larger to accommodate Mixxx's large build sizes. You can adjust the cache size with the --set-config flag:
+```sh
+ccache --set-config=max_size=20.0G
+```
+
+# Development tips
+
+## Debug build and assertions
 
 If you want to make a debug build, add `-DCMAKE_BUILD_TYPE=Debug -DDEBUG_ASSERTIONS_FATAL=ON` to the end of the cmake configure command.
 Debug builds should be started with the command line option `--debugAssertBreak` to trigger a breakpoint in the debugger if debug
 assertions are violated or to abort Mixxx immediately. This ensures that messages about violated debug assertions are not missed between various other debug log messages. We recommend this if you are working on Mixxx code, but not if you are performing with Mixxx.
 
-### ccache
-
-We highly recommend installing [CCache](https://ccache.dev/) if you will be contributing code to Mixxx. If you won't be writing or testing code and are just building Mixxx to use it for yourself, you can skip installing CCache. CCache drastically speeds up the time to recompile
-Mixxx, especially when switching between git branches. CMake works with CCache automatically.
-
-You will probably want to increase the default ccache size of 5.0GB to something much larger to accommodate Mixxx's large build sizes. You can
-adjust the cache size with the --set-config flag:
-```sh
-ccache --set-config=max_size=20.0G
-```
-
-### Non-System-Qt
+## Non-System Qt
 
 Append `-DCMAKE_PREFIX_PATH=/path/to/qt/install` (where `/path/to/qt/install` is the path you used when [building Qt](compiling_on_linux#non-system_qt)) to the cmake configure command to instruct cmake to prefer the Qt version from that path.
 
-### SCons
+# Mixxx <= 2.2
 
-Mixxx 2.2 and earlier use the SCons build system. Mixxx 2.3 also supports SCons, but SCons support will be removed in Mixxx 2.4.
+Mixxx 2.2 and earlier used the SCons build system.
 
-Once you have the source code, change to the newly created "mixxx" directory (run `cd mixxx`). Mixxx uses the [SCons](http://scons.org/)
-build system rather than the more common GNU autotools and GNU make. Running `scons -h` in the "mixxx" directory shows a complete list of
-build flags if you'd like to customize. To compile without any special options, as a regular user, run:
+Once you have the source code, change to the newly created "mixxx" directory (run `cd mixxx`). Running `scons -h` in the "mixxx" directory shows a complete list of build flags if you'd like to customize. To compile without any special options, as a regular user, run:
 ```shell
 scons prefix=INSTALLATION_DIRECTORY -j `nproc` optimize=native
 ```
-Change INSTALLATION\_DIRECTORY to the location you want to install Mixxx to. If you want to install Mixxx for all users of the OS, you do not
+Change INSTALLATION_DIRECTORY to the location you want to install Mixxx to. If you want to install Mixxx for all users of the OS, you do not
 need to specify a prefix and can leave it as the default, which is /local. If you only want to install Mixxx for your user, you can specify a location in your home directory such as ~/local
 
-Running `scons` will take some time, depending on the speed of your computer. Specifying NUMBER\_OF\_CPU\_CORES will tell scons to run that
+Running `scons` will take some time, depending on the speed of your computer. Specifying NUMBER_OF_CPU_CORES will tell scons to run that
 many threads at a time while compiling. This speeds up compilation on multi-core CPUs. You can check how many threads your CPU can run
 simultaneously with the `lscpu` command (look for the `CPU(s)` field in the output). Setting more threads than your CPU can handle will decrease performance.
 
@@ -269,7 +268,7 @@ If you want to be able to run Mixxx on different types of CPUs, change `optimize
 
 To compile on a Raspberry Pi (only compatible on Rapsberry Pi 3 and later), use the arguments: `optimize=native machine=armhf` with scons.
 
-#### Debug build
+### Debug build
 
 To catch bugs early during development build and run Mixxx with the following options.
 
@@ -280,12 +279,12 @@ build=debug debug_assertions_fatal=1
 Debug builds should be started with the command line option `--debugAssertBreak` to trigger a breakpoint in the debugger if debug
 assertions are violated or to abort Mixxx immediately. This ensures that messages about violated debug assertions are not missed between various other debug log messages. We recommend this if you are working on Mixxx code, but not if you are performing with Mixxx.
 
-#### Optional: Build with m4a/AAC file support
+### Optional: Build with m4a/AAC file support
 
 If you want to play m4a files, add `faad=1` to your scons commands above. This requires the libraries faad2 and libmp4v2 (or libmp4) to be
 installed.
 
-#### Optional: Compile with Clang
+### Optional: Compile with Clang
 
 [Clang](http://clang.llvm.org) is a C/C++ compiler based on [LLVM](http://llvm.org).
 Using Clang has various benefits:
@@ -312,13 +311,13 @@ You can now use clang-specific SCons options.
   - To enable colorized output, use the `color=1` scons flag.
   - To enable Address Sanitizer, use the `asan=1` scons flag.
 
-#### Troubleshooting scons
+### Troubleshooting scons
 
 If scons can't find installed dependencies, try
 
     scons --config=force
 
-#### Uninstall
+### Uninstall
 
 To uninstall a copy of Mixxx that you compiled with SCons, `cd` into the directory where you ran `scons` before, then run:
 
@@ -327,11 +326,11 @@ To uninstall a copy of Mixxx that you compiled with SCons, `cd` into the directo
 INSTALLATION_DIRECTORY must be the same as that used when compiling and installing. If you needed to use `sudo` to install, also use `sudo` to
 uninstall.
 
-#### Clean up
+### Clean up
 
 If `scons` fails with mysterious errors about not finding dependencies that you know are installed, it may be using outdated cached information to look for the dependencies. This can happen after upgrading your GNU/Linux distribution. To resolve this, try running `scons -c` and recompiling Mixxx.
 
-## Run without installing
+### Run without installing
 
 If you want to run your compiled version without installing, from the same directory, run:
 

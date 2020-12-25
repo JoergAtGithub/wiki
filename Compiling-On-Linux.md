@@ -22,7 +22,7 @@ There is a script in the code repository that will download and install all depe
 ~/sw/mixxx/tools/ubuntu_buildenv.sh setup
 ```
 
-Despite the script name, this should work on Debian too.
+Despite the script name, this should work on Debian too. Please let us know on [Zulip](https://mixxx.zulipchat.com/) if it does not.
 
 ## Fedora
 

@@ -113,6 +113,8 @@ make install
 ```
 
 # Configure
+_If you're building Mixxx 2.2 or earlier, refer to the [old instructions below](#mixxx--22)._
+
 Mixxx uses the CMake build system. Building and installing Mixxx follows the standard CMake procedures.
 
 Before compiling, you need to configure with CMake. This only needs to be done once; you don't need to repeat it when you compile Mixxx again.

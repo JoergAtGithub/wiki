@@ -565,7 +565,7 @@ on the available space. Size policy refers to the Qt
 [QSizePolicy](https://doc.qt.io/qt-4.8/qsizepolicy.html#Policy-enum).
 
 | SizePolicy       | Skin Abbreviation | What it does |
-| ---------------- | ----------------- | ------------ |  |
+| ---------------- | ----------------- | ------------ | 
 | Fixed | f | The size in the given dimension is fixed and should not grow or shrink. |
 | Minimum | min | The widget size in this dimension is the minimum it should be. It can grow but will not be smaller than this. |
 | Maximum | max | The widget size in this dimension is the maximum it should be. It can shrink but will not be larger than this. |
@@ -601,9 +601,9 @@ like to use a tooltip, you should make the TooltipId the word "example"
 for the appropriate tooltip.
 
 | Examples: | |
-| -------------------------------------- |  |
+| -------------------------------------- | ---------- |
 | `<TooltipId>track_artist</TooltipId>` | Use the "track_artist" tooltip from the tooltip file. |
-<TooltipId>eject</TooltipId>` | Use the "eject" tooltip from the tooltip file. |
+| <TooltipId>eject</TooltipId>` | Use the "eject" tooltip from the tooltip file. |
 
 #### \<Tooltip\>
 
@@ -632,31 +632,20 @@ Currently supported properties:
     \<ConfigKey\> equals N. QSS code: \#NameOfObject\[highlight="N"\] {
     ... }
 
-| Examples:                                                                                                                                                                                                                                       |                                                                                                                     |
-| ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------- |
-| `<Connection>
+Example:
+```
+<Connection>
+  <!-- ConfigKey of the ControlObject Widget proprty -->
   <ConfigKey>[EffectRack1_EffectUnit1],single_effect_focus</ConfigKey>
   <BindProperty>highlight</BindProperty>
   <Transform>
-    <Invert/>
-    <Not/>
-    <Add>0.5</Add>
-    <IsEqual>2</IsEqual>
+    <Invert/>      <!-- p = -co -->
+    <Not/>         <!-- p = !co -->
+    <Add>0.5</Add> <!-- p = co + 0.5 -->
+    <IsEqual>2</IsEqual> <!-- p = (co == 2) New in Mixxx 2.1 -->
   </Transform>
 </Connection>
-` | `
-
-ConfigKey of the ControlObject
-Widget proprty
-
-p = -co
-p = !co
-p = co + 0.5
-New in Mixxx 2.1: p = (co == 2)
-
-
-
-` |
+```
 
 ### Skin Color Scheme
 

@@ -152,62 +152,6 @@ The various elements of the skin are marked and explained below.
   - WidgetStack - allows to switch between multiple different widgets to
     occupy a certain space
 
-### Skin FAQ
-
-#### How to install a skin
-
-Additional skins for Mixxx can be downloaded in the
-[forum](http://mixxx.org/forums/viewforum.php?f=8).
-
-    In this example we are going to install the file "NewSkin.zip"
-    
-    1. Close Mixxx.
-    2. Download & unzip "NewSkin.zip" and copy the whole unzipped folder "NewSkin" to the corresponding path:
-    
-    Linux
-    *************
-    /usr/share/mixxx/skins/
-    so you get
-    /usr/share/mixxx/skins/NewSkin
-    
-    Note that you may get permission errors while copying,
-    make sure you have root privileges.
-    
-    Another method would be to backup the official skins,
-    then create a link 'skins' to a regular user folder there.
-    This allows to simply put new skins into ~/Downloads/newMixxxSkins
-    without having to worry about root.
-    
-    sudo mv /usr/share/mixxx/skins/ /usr/share/mixxx/skins_backup/
-    sudo ln -s /home/yourUserName/Downloads/newMixxxSkins /usr/share/mixxx/skins/
-    
-    Windows
-    *************
-    C:\Program Files\Mixxx\skins
-    so you get
-    C:\Program Files\Mixxx\skins\NewSkin
-    
-    macOS
-    *************
-    -  In the Finder, go to the Applications folder and select Mixxx.
-    -  Right Click and choose "Show Package Contents" from the Action menu.
-    -  goto Contents/Resources/skins
-    
-    or straight via Terminal
-    /Applications/Mixxx.app/Contents/Resources/skins
-    so you get
-    /Applications/Mixxx.app/Contents/Resources/skins/NewSkin
-    
-    Double-check that the skin.xml is in the "NewSkin" root folder and not in a subfolder, otherwise Mixxx may throw an error when starting that skin.
-    
-    3. Start Mixxx , goto "Preferences-->Interface" and select "Skin-->NewSkin"
-       Make sure you have "Waveform Display-->Waveform" selected
-       Save preferences with OK.
-    
-    4. The new skin should now be displayed.
-    
-    5. Done.
-
 #### The filters (e.g. blur) used in my svg files are not visible. Why ?
 
 So you created a nice button with a drop shadow blur effect in svg
@@ -216,6 +160,60 @@ Mixxx? [Qt](https://en.wikipedia.org/wiki/Qt_\(software\)) supports the
 [static features](https://www.w3.org/TR/SVGMobile12/feature.html) of SVG
 1.2 Tiny. ECMA scripts and DOM manipulation are currently not supported,
 see <http://doc.qt.io/qt-5/svgrendering.html>
+
+### How to install a skin
+
+Additional skins for Mixxx can be downloaded in the
+[skin section of the Mixxx forum](https://mixxx.discourse.group/c/skins/11).
+
+In this example we are going to install the file "NewSkin.zip"
+
+1. Close Mixxx.
+2. Download & unzip "NewSkin.zip" and copy the whole unzipped folder "NewSkin" to the corresponding path:
+
+**Linux**
+
+`/usr/share/mixxx/skins/`  
+so you get  
+`/usr/share/mixxx/skins/NewSkin`  
+
+Note that you may get permission errors while copying,
+make sure you have root privileges.
+
+Another method would be to backup the official skins,
+then create a link 'skins' to a regular user folder there.
+This allows to simply put new skins into ~/Downloads/newMixxxSkins
+without having to worry about root.
+
+```
+sudo mv /usr/share/mixxx/skins/ /usr/share/mixxx/skins_backup/
+sudo ln -s /home/yourUserName/Downloads/newMixxxSkins /usr/share/mixxx/skins/
+```
+
+**Windows**
+
+`C:\Program Files\Mixxx\skins`  
+so you get  
+`C:\Program Files\Mixxx\skins\NewSkin`  
+
+**macOS**
+
+-  In the Finder, go to the Applications folder and select Mixxx.
+-  Right Click and choose "Show Package Contents" from the Action menu.
+-  goto Contents/Resources/skins
+
+or straight via Terminal:
+`/Applications/Mixxx.app/Contents/Resources/skins`  
+so you get
+`/Applications/Mixxx.app/Contents/Resources/skins/NewSkin`  
+
+Double-check that the skin.xml is in the "NewSkin" root folder and not in a subfolder, otherwise Mixxx may throw an error when starting that skin.
+
+3. Start Mixxx , goto `Preferences` > `Interface` and select `Skin` > `NewSkin`
+
+4. Save preferences with **Apply**.
+
+5. Done, the new skin should now be displayed.
 
 ### Skin licensing & copyright
 

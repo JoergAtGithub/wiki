@@ -187,6 +187,12 @@ In this example we are going to install the file "NewSkin.zip"
 
 6. Done, the new skin should now be displayed.
 
+If you want to tweak an existing skin the procedure is the same, except that you pick (and rename) an existing skin folder from the Mixxx resource directory:  
+  **Linux**: `/usr/share/mixxx/skins/`  
+  **Windows**: `C:\Program Files\Mixxx\skins`  
+  **macOS**: `/Applications/Mixxx.app/Contents/Resources/skins`  
+**TODO** Verify paths for Mixxx 2.3
+
 
 # Skin licensing & copyright
 

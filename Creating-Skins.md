@@ -2,14 +2,14 @@ Skins can change the look and feel of Mixxx. Some skins merely make the
 program more aesthetically pleasing while others rearrange elements of
 the interface to fit different use-cases.
 
-### Getting started
+# Getting started
 
 A skin for Mixxx is basically a folder with various images, a text file
 named skin.xml, other XML template files and a [style.qss file](#qss-style).
 The skin.xml and template files define all the elements (widgets) of the
 skin, what the images are used for and where they are placed on screen.
 
-To create a new skin, navigate to your local [Mixxx resource folder](#skin-faq),
+To create a new skin, navigate to your local [Mixxx resource folder](#How-to-install-a-skin),
 duplicate the directory of the skin you want to base your work on and
 rename it. Use the content of the new folder as starting point for your
 first skin. Read this page, understand how things were done in the skin
@@ -161,7 +161,7 @@ Mixxx? [Qt](https://en.wikipedia.org/wiki/Qt_\(software\)) supports the
 1.2 Tiny. ECMA scripts and DOM manipulation are currently not supported,
 see <http://doc.qt.io/qt-5/svgrendering.html>
 
-### How to install a skin
+# How to install a skin
 
 Additional skins for Mixxx can be downloaded in the
 [skin section of the Mixxx forum](https://mixxx.discourse.group/c/skins/11).
@@ -169,53 +169,26 @@ Additional skins for Mixxx can be downloaded in the
 In this example we are going to install the file "NewSkin.zip"
 
 1. Close Mixxx.
-2. Download & unzip "NewSkin.zip" and copy the whole unzipped folder "NewSkin" to the corresponding path:
 
-**Linux**
+2. Create a folder `skins` in the [folder where the Mixxx config file is located](https://github.com/mixxxdj/mixxx/wiki/Finding-the-mixxx.log-file):  
+  **Linux**: `~/.mixxx/
+  **Windows** (Vista and up): `%LOCALAPPDATA%\Mixxx\`  
+  **Windows** (XP and below): `%USERPROFILE%\Local Settings\Application Data\Mixxx\`  
+  **macOS** (Mixxx 2.2.x and earlier): `~/Library/Application Support/Mixxx`  
+  **macOS** (Mixxx 2.3.x): `~/Library/Containers/org.mixxx.mixxx/Data/Library/Application Support/Mixxx`  
 
-`/usr/share/mixxx/skins/`  
-so you get  
-`/usr/share/mixxx/skins/NewSkin`  
+3. Download & unzip `NewSkin.zip` and copy the whole unzipped folder `NewSkin` to the new `skins` folder
 
-Note that you may get permission errors while copying,
-make sure you have root privileges.
+4. Start Mixxx
 
-Another method would be to backup the official skins,
-then create a link 'skins' to a regular user folder there.
-This allows to simply put new skins into ~/Downloads/newMixxxSkins
-without having to worry about root.
+5. Open `Options` > `Preferences` > `Interface`, in the `Skin` drop-down menu select `NewSkin`
 
-```
-sudo mv /usr/share/mixxx/skins/ /usr/share/mixxx/skins_backup/
-sudo ln -s /home/yourUserName/Downloads/newMixxxSkins /usr/share/mixxx/skins/
-```
+5. Save preferences with **Apply**.
 
-**Windows**
+6. Done, the new skin should now be displayed.
 
-`C:\Program Files\Mixxx\skins`  
-so you get  
-`C:\Program Files\Mixxx\skins\NewSkin`  
 
-**macOS**
-
--  In the Finder, go to the Applications folder and select Mixxx.
--  Right Click and choose "Show Package Contents" from the Action menu.
--  goto Contents/Resources/skins
-
-or straight via Terminal:
-`/Applications/Mixxx.app/Contents/Resources/skins`  
-so you get
-`/Applications/Mixxx.app/Contents/Resources/skins/NewSkin`  
-
-Double-check that the skin.xml is in the "NewSkin" root folder and not in a subfolder, otherwise Mixxx may throw an error when starting that skin.
-
-3. Start Mixxx , goto `Preferences` > `Interface` and select `Skin` > `NewSkin`
-
-4. Save preferences with **Apply**.
-
-5. Done, the new skin should now be displayed.
-
-### Skin licensing & copyright
+# Skin licensing & copyright
 
 The principles on licensing found on the [Creative Common
 Wiki](https://wiki.creativecommons.org/index.php?title=Considerations_for_licensors_and_licensees)
@@ -246,7 +219,7 @@ Further reads:
   - [Frequently Asked Questions about the GNU
     GPL](http://www.gnu.org/licenses/gpl-faq.html)
 
-### Tools
+# Tools
 
   - Free Code editors - Cross-platform ([Visual Code
     Studio](https://code.visualstudio.com/)), ([Atom](https://atom.io/))

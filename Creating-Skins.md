@@ -302,18 +302,20 @@ which is similar to a [Cascading Style
 Sheet](https://developer.mozilla.org/en-US/docs/Web/CSS) (CSS) file used
 to specify how web pages look. The QSS file is linked to the skin XML
 with a \<Style\> element that is a child of the root \<skin\> element:
-
+```xml
     <skin>
       <manifest>
         <!-- skin manifest goes here -->
       </manifest>
     
-      <Style src="skin:style.qss" src-windows="skin:style-windows.qss"
-       src-mac="skin:style-mac.qss" src-linux="skin:style-linux.qss"/>
+      <Style src="skin:style.qss"
+             src-windows="skin:style-windows.qss"
+             src-mac="skin:style-mac.qss"
+             src-linux="skin:style-linux.qss"/>
     
       <!-- rest of skin goes here -->
     </skin>
-
+```
 All the skins included in Mixxx name the QSS file as `style.qss` in the
 root directory of the skin. Any name with the `*.qss` or `*.css` file
 extension will work. Optionally, you can add up to three additional QSS
@@ -329,23 +331,23 @@ override attributes in case of conflicts.
 Widgets are selected in QSS by the name of their widget type (the "Mixxx
 internal name" column in the table below) or by a defined name. To
 define a name for a widget, use the `<ObjectName>` element. For example:
-
+```xml
     <WidgetGroup>
       <ObjectName>SomeWidgetGroup</ObjectName>
       <Children>
         <!-- A group of widgets you want to apply style to go here -->
       </Children>
     </WidgetGroup>
-
+```
 This is similar to setting an `id` attribute on an element in HTML
 except that multiple widgets can share the same `<ObjectName>`. To style
 the above `<WidgetGroup>` in QSS, you would select it with `#`. For
 example:
-
+```css
     #SomeWidgetGroup {
       background-color: black;
     }
-
+```
 Knowing what options are available to style is tricky and it involves
 knowing what Qt widget the associated Mixxx widget derives from.
 
@@ -363,29 +365,29 @@ Here is a potentially out-of-date list of which Mixxx widgets derive
 from which Qt widgets. If not listed, the widget inherits from
 `QWidget`.
 
-| Skin Tag        | Mixxx Internal Name | Qt Widget                   |
-| --------------- | ------------------- | --------------------------- |
-| WidgetStack     | WWidgetStack        | QStackedWidget              |
-| WidgetGroup     | WWidgetGroup        | QGroupBox                   |
-| (none)          | WTrackTableView     | QTableView                  |
-| (none)          | WLibraryTableView   | QTableView                  |
-| Library         | WLibrary            | QStackedWidget              |
-| LibrarySidebar  | WLibrarySidebar     | QTreeView                   |
-| SearchBox       | WSearchLineEdit     | QLineEdit                   |
-| Spinny          | WSpinny             | QGLWidget                   |
-| Visual          | WWaveformViewer     | QWidget                     |
-| NumberRate      | WNumberRate         | QWidget with a QLabel child |
-| NumberPos       | WNumberPos          | QWidget with a QLabel child |
-| NumberBpm       | WNumber             | QWidget with a QLabel child |
-| Number          | WNumber             | QWidget with a QLabel child |
-| Label           | WLabel              | QWidget with a QLabel child |
-| Text            | WTrackText          | QWidget with a QLabel child |
-| TrackProperty   | WTrackProperty      | QWidget with a QLabel child |
-| Time            | WTime               | QWidget with a QLabel child |
-| Key             | WKey                | QWidget with a QLabel child |
-| Splitter        | WSplitter           | QSplitter                   |
-| DefineSingleton | WSingletonContainer | QWidget                     |
-| EffectSelector  | WEffectSelector     | QComboBox                   |
+| Skin Tag          | Mixxx Internal Name   | Qt Widget                     |
+| ---------------   | -------------------   | ---------------------------   |
+| `WidgetStack`     | `WWidgetStack`        | `QStackedWidget`              |
+| `WidgetGroup`     | `WWidgetGroup`        | `QGroupBox`                   |
+| (none)            | `WTrackTableView`     | `QTableView`                  |
+| (none)            | `WLibraryTableView`   | `QTableView`                  |
+| `Library`         | `WLibrary`            | `QStackedWidget`              |
+| `LibrarySidebar`  | `WLibrarySidebar`     | `QTreeView`                   |
+| `SearchBox`       | `WSearchLineEdit`     | `QLineEdit`                   |
+| `Spinny`          | `WSpinny`             | `QGLWidget`                   |
+| `Visual`          | `WWaveformViewer`     | `QWidget`                     |
+| `NumberRate`      | `WNumberRate`         | `QWidget` with a QLabel child |
+| `NumberPos`       | `WNumberPos`          | `QWidget` with a QLabel child |
+| `NumberBpm`       | `WNumber`             | `QWidget` with a QLabel child |
+| `Number`          | `WNumber`             | `QWidget` with a QLabel child |
+| `Label`           | `WLabel`              | `QWidget` with a QLabel child |
+| `Text`            | `WTrackText`          | `QWidget` with a QLabel child |
+| `TrackProperty`   | `WTrackProperty`      | `QWidget` with a QLabel child |
+| `Time`            | `WTime`               | `QWidget` with a QLabel child |
+| `Key`             | `WKey`                | `QWidget` with a QLabel child |
+| `Splitter`        | `WSplitter`           | `QSplitter`                   |
+| `DefineSingleton` | `WSingletonContainer` | `QWidget`                     |
+| `EffectSelector`  | `WEffectSelector`     | `QComboBox`                   |
 
 ### Set Variables
 

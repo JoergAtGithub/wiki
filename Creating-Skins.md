@@ -171,7 +171,7 @@ In this example we are going to install the file "NewSkin.zip"
 1. Close Mixxx.
 
 2. Create a folder `skins` in the [folder where the Mixxx config file is located](https://github.com/mixxxdj/mixxx/wiki/Finding-the-mixxx.log-file):  
-  **Linux**: `~/.mixxx/
+  **Linux**: `~/.mixxx/`  
   **Windows** (Vista and up): `%LOCALAPPDATA%\Mixxx\`  
   **Windows** (XP and below): `%USERPROFILE%\Local Settings\Application Data\Mixxx\`  
   **macOS** (Mixxx 2.2.x and earlier): `~/Library/Application Support/Mixxx`  
@@ -253,43 +253,46 @@ favorite [text editor](#tools) and get started :-)
 
 ### Skin Manifest
 
-_New in Mixxx 1.11.0_
-
-The skin manifest section tells Mixxx details about the skin. Some of
-the details are currently unused but may be used in a future version.
-Additionally we may expand the manifest to include things like
-minimum-Mixxx-version required or recommended screen resolution.
+The skin manifest section tells Mixxx details about the skin:
 
 ```xml
-<manifest><!-- start manifest tag -->
-  <title>...</title><!-- Skin title -->
-  <author>...</author><!-- Skin author -->
+<manifest>
+  <title>...</title>
+  <author>...</author>
   <version>...</version><!-- Skin version (not the Mixxx version) -->
-  <description>...</description><!-- A brief description of the skin -->
+  <description>...</description>
   <language>en</language><!-- Skin language (if language-independent, omit or put *) -->
-  <license>...</license><!-- Skin copyright license (e.g. Creative Commons Attribution, Share-Alike 3.0 Unported) -->
-  <attributes><!-- Begin skin attributes -->
-    <!-- Set \"[Master],num_decks\" ConfigKey to 4 when skin is loaded.
-      Requires additional code per Deck in the skin.xml -->
-    <attribute config_key=\"[Master],num_decks\">4</attribute>
-    <attribute config_key=\"[Master],num_samplers\">16</attribute>
-    <attribute config_key=\"[Master],num_preview_decks\">1</attribute>
-    <!-- Set \"[Samplers],show_samplers\" WidgetGroup to be visible by default.
-      Works for existing WidgetGroups with <BindProperty>visible</BindProperty>key -->
-    <attribute config_key=\"[Samplers],show_samplers\">1</attribute>
-  </attributes><!-- End skin attributes -->
-</manifest><!-- end manifest tag -->
+  <license>...</license>
+  <attributes>
+    <!-- Set "[Master],num_decks" config key to 4 when skin is loaded.-->
+    <attribute config_key="[Master],num_decks">4</attribute>
+    <attribute config_key="[Master],num_samplers">16</attribute>
+    <attribute config_key="[Master],num_preview_decks">1</attribute>
+    
+    <!-- Persist a custom skin config key "[Skin],show_some_widget". 
+         This allows for hiding/showing/highlighting widgets. (see <Connection> )-->
+    <attribute persist="true" config_key="[Skin],show_some_widget">1</attribute>
+  </attributes>
+</manifest>
 ```
 
-**The only part of the manifest that is used in 1.11.0 is the
-\<attributes\> section.** This section allows the skin to specify
-changes to Mixxx controls that should be executed when the skin is
-loaded. For example, Mixxx defaults to 2-decks in its mixing engine but
-when you load a skin that supports 4-decks, the skin can specify that
-the Control "\[Master\],num\_decks" should be set to 4 (see the above
-example). This will enable a 3rd and 4th deck in Mixxx's engine for the
-skin to interact with. This attribute list can change any Mixxx control
-but will only take effect when the skin is loaded.
+The main part of the manifest that is the `<attributes>` section.  Attributes
+can specify changes to Mixxx controls that should be executed when the skin is
+loaded.
+
+For example, Mixxx defaults to 2-decks in its mixing engine but when you load a
+skin that supports 4-decks, the skin can specify that the control
+`[Master],num_decks` should be set to 4 (as in the above example). This will
+enable a 3rd and 4th deck in Mixxx's engine for the skin to interact with.  This
+attribute list can change any Mixxx control but will only take effect when the
+skin is loaded.
+
+Attributes can also be used to persist settings specific to the skin itself.
+Config keys in the form `[GroupFoo],control_bar` (see [control
+naming](https://github.com/mixxxdj/mixxx/wiki/developer_guide_control#control-naming))
+can be set or unset in conjunction with [`<Connection>`](https://github.com/mixxxdj/mixxx/wiki/Creating-Skins#connection)
+ in order to show, hide or highlight widgets particular to the skin.
+
 
 ### QSS Style
 

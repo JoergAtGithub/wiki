@@ -389,63 +389,59 @@ from which Qt widgets. If not listed, the widget inherits from
 | `DefineSingleton` | `WSingletonContainer` | `QWidget`                     |
 | `EffectSelector`  | `WEffectSelector`     | `QComboBox`                   |
 
-### Set Variables
+### Using Variables
 
 You can use variables throughout the skin templates for various
 purposes, as well as in [colour
 schemes](http://mixxx.org/wiki/doku.php/skin_colour_scheme_architecture),
 to set channel numbers, effect numbers, `<ObjectName>`s or to define
 colors for widgets, just to name a few.  
-If a skin contains color schemes, this would be the the first place
-where the skin parser would look for them. As variables are inherited by
-all child templates the `<Scheme>` node would also be a good place to
-define scheme-specific properties like RGB signal colors, background
-colors or the alignment of cue markers in all waveform and overview
-widgets in decks, samplers and preview decks.  
-If the skin doesn't bring color schemes, the second best place to make
-variables available to multiple templates is in `skin.xml` directly
-after the first `<Children>` opening tag, before any other template is
-loaded.
 
-Set variables like this: `<SetVariable
-name="veryDescriptiveName">String</SetVariable>`<br>
-Recall variables: `<Variable name="veryDescriptiveName"/>`<br>
-
-**Note:** Variables can not be used within tags or within values:
+Set variables like this: 
 ```xml
-<Template src="skin:deck_container_<Variable name="side"/>.xml"/> <!-- Wrong. skin parser will fail -->
-<Template <SetVariable name="Alignment">left|top</SetVariable>src="skin:library.xml"/> <!-- Wrong... -->
+<SetVariable name="veryDescriptiveName">String</SetVariable>
+```
+and recall variables like this:
+```xml
+<Variable name="veryDescriptiveName"/> <!-- replaced with String -->
 ```
 
-For example, let's load a deck template, pass the channel number and
-deck side to it and define a background color:
+Global variables are inherited by all child templates. Scheme specific
+variables should be set under `<Scheme>` nodes whereas other global variables
+in `skin.xml` should be set directly after the first `<Children>` opening tag,
+before any other template is loaded.
+
+Variables can also be passed to templates explicitly.  For example, here
+we load a deck template, specifying the channel number, side and
+background color it should use:
 
 ```xml
-<Template src="skin:deck_container.xml>
+<Template src="skin:deck_container.xml">
    <SetVariable name="side">Left</SetVariable>
    <SetVariable name="channum">1</SetVariable>
    <SetVariable name="SignalBgColor">#0a0a0a</SetVariable>  <!-- dark grey -->
 </Template>
 ```
 
-`channum` is a perfect example of how to make use of the inheritance:
-the variable is automatically passed on to button templates or
-[Spinny](#spinning-vinyl-image-spinny) templates loaded by that specific
-deck template (other deck templates would load with other variables).  
-Here, the variables defined above are used to set up a waveform overview
-widget:
+The variables defined above might be used in the template to set up a waveform overview
+widget for example:
 
 ```xml
+  <!-- deck_container.xml -->
   <Overview>
-    <Size>XX,YY</Size>
-    <Objectname>Overview<Variable name="side"/></Overview> <!-- = <Objectname>OverviewLeft</Overview> -->
+    <Size>...</Size>
+    <Objectname>Overview<Variable name="side"/></Overview> <!--  <Objectname>OverviewLeft</Overview> -->
     ...
-    <Channel><Variable name="channum"/></Channel> <!-- = <Channel>1</Channel> -->
-    <!-- Or, if this was a sampler we'd inject the variable 'samplernum': -->
-    <Group>[Sampler<Variable name="samplernum"/>]</Group>
-    <BgColor><Variable name="SignalBgColor"/></BgColor> <!-- exactly, it's <BgColor>#0a0a0a</BgColor> -->
+    <Channel><Variable name="channum"/></Channel> <!--  <Channel>1</Channel> -->
+    <BgColor><Variable name="SignalBgColor"/></BgColor> <!--  <BgColor>#0a0a0a</BgColor> -->
     ...
   </Overview>
+```
+
+**Note:** Variables **cannot** be used within tags or within values:
+```xml
+<Template src="skin:deck_container_<Variable name="side"/>.xml"/> <!-- Wrong -->
+<Template <SetVariable name="Alignment">left|top</SetVariable>src="skin:library.xml"/> <!-- Wrong... -->
 ```
 
 ### Properties Common to All Widgets

@@ -290,7 +290,7 @@ skin is loaded.
 Attributes can also be used to persist settings specific to the skin itself.
 Config keys in the form `[GroupFoo],control_bar` (see [control
 naming](https://github.com/mixxxdj/mixxx/wiki/developer_guide_control#control-naming))
-can be set or unset in conjunction with [`<Connection>`](https://github.com/mixxxdj/mixxx/wiki/Creating-Skins#connection)
+can be set or unset in conjunction with [`<Connection>`](#\<connection\>)
  in order to show, hide or highlight widgets particular to the skin.
 
 
@@ -481,16 +481,13 @@ of the widget's parent.
 
 #### \<Size\>
 
-`<Size>` tags tells Mixxx what size to make a widget. The size tag has a
-lot of historical baggage associated with it because it has been around
-since the first version of Mixxx and has a bunch of hacks added to it.
+`<Size>` tags tells Mixxx what size to make a widget. The size tag has a lot of
+historical baggage associated with it because it has been around since the first
+version of Mixxx and has a bunch of hacks added to it.
 
-`<Size>` is formatted as the horizontal size and the vertical size
-separated by a comma. You can also specify a size policy using the size
-tag alone. As of Mixxx 2.00.0 there is a dedicated `<SizePolicy>` tag
-for this. Simply append the SizePolicy skin abbreviation (see the table
-in the `<SizePolicy>` section below) at the end of each dimension's
-value.
+It is formatted as the horizontal size and the vertical size in pixels separated
+by a comma. You can also specify a size policy as shown below, however later
+versions of Mixxx add the [`<SizePolicy>`](#\<sizepolicy\>) tag for this. 
 
 | Examples: |   |
 | ----- | ------ |
@@ -503,12 +500,12 @@ value.
 
 _New in Mixxx 2.00.0_
 
-`<MinimumSize>` tags tell Mixxx the smallest size a widget should be.
-The widget will never be resized to be smaller than this size.
+`<MinimumSize>` tags tell Mixxx the smallest size a widget should be.  The
+widget will never be resized to be smaller than this size.
 
-`<MinimumSize>` is formatted as the minimum horizontal size and the
-minimum vertical size separated by a comma. A value of -1 for a
-dimension means no minimum in that dimension.
+It is formatted as the minimum horizontal size and the minimum vertical size in
+pixels separated by a comma. A value of -1 for a dimension means no minimum in
+that dimension.
 
 | Examples: |   |
 | ----- | ------ |
@@ -523,9 +520,9 @@ _New in Mixxx 2.00.0_
 `<MaximumSize>` tags tell Mixxx the largest size a widget should be. The
 widget will never be resized to be larger than this size.
 
-`<MaximumSize>` is formatted as the maximum horizontal size and the
-maximum vertical size separated by a comma. A value of -1 for a
-dimension means no maximum in that dimension.
+It is formatted as the maximum horizontal size and the maximum vertical size in
+pixels separated by a comma. A value of -1 for a dimension means no maximum in
+that dimension.
 
 Examples:
 | value | result |
@@ -538,8 +535,8 @@ Examples:
 
 _New in Mixxx 2.00.0_
 
-`<SizePolicy>` tags tell Mixxx how widgets should grow or shrink based
-on the available space. Size policy refers to the Qt
+`<SizePolicy>` tags tell Mixxx how widgets should grow or shrink based on the
+available space. Size policy refers to the Qt
 [QSizePolicy](https://doc.qt.io/qt-4.8/qsizepolicy.html#Policy-enum).
 
 | SizePolicy       | Skin Abbreviation | What it does |
@@ -552,9 +549,9 @@ on the available space. Size policy refers to the Qt
 | MinimumExpanding | me | The widget size in this dimension is the minimum it should be. The widget can make use of extra space in this dimension so it should receive as much space as possible. |
 | Ignored | i | The widget size in this dimension is ignored. The widget will get as much space as possible. |
 
-The `<SizeHint>` property is formatted as the skin abbreviation (from
-the above table) for the horizontal size and the skin abbreviation for
-the vertical size policy separated by a comma.
+The `<SizePolicy>` property is formatted as the skin abbreviation (from the
+above table) for the horizontal size and the skin abbreviation for the vertical
+size policy separated by a comma.
 
 | Examples: | |
 | ------------------------------------ | ------------ |
@@ -564,24 +561,24 @@ the vertical size policy separated by a comma.
 
 #### \<TooltipId\>
 
-`<TooltipId>` tags indicate what tooltip Mixxx should use for the
-widget. We used to embed tooltips directly into skins but then we found
-this was a massive hassle to keep up to date and translate into
-different languages. As a result, we have created a list of standard
-tooltips that you can use in most cases.
+`<TooltipId>` tags indicate what tooltip Mixxx should use for the widget. We
+used to embed tooltips directly into skins but then we found this was
+impractical to keep up to date and translate into different languages. As a
+result, we have created a list of standard tooltips that you can use in most
+cases.
 
-The `<TooltipId>` tag tells Mixxx to use an existing tooltip that is
-built into Mixxx. To see the list of tooltips that exist, the only
-current way is to browse the
+The `<TooltipId>` tag tells Mixxx to use an existing tooltip that is built into
+Mixxx.
+
+For an up to date list of tooltips, see
 [src/skin/tooltips.cpp](https://github.com/mixxxdj/mixxx/blob/master/src/skin/tooltips.cpp)
-and look at all the `add("example")` lines in the file. If you would
-like to use a tooltip, you should make the TooltipId the word "example"
-for the appropriate tooltip.
+and look at all the `add("some_tooltip_id")` lines in the file. You'll use
+whatever `some_tooltip_id` actually is as shown below:
 
-| Examples: | |
-| -------------------------------------- | ---------- |
-| `<TooltipId>track_artist</TooltipId>` | Use the "track_artist" tooltip from the tooltip file. |
-| <TooltipId>eject</TooltipId>` | Use the "eject" tooltip from the tooltip file. |
+| Examples:                              |                                                       |
+| -------------------------------------- | ----------                                            |
+| `<TooltipId>track_artist</TooltipId>`  | Use the `track_artist` tooltip from the tooltip file. |
+| `<TooltipId>eject</TooltipId>`         | Use the `eject` tooltip from the tooltip file.        |
 
 #### \<Tooltip\>
 
@@ -593,43 +590,70 @@ using the `<Tooltip>` tag.
 | `<Tooltip>My Custom Tooltip</Tooltip>` | Use the phrase "My Custom Tooltip" as the widget tooltip. |
 
 Translation or internationalization of these tooltips is not currently
-possible.
+possible, so avoid using them unless really necessary.
 
 #### \<Connection\>
 
-The connection block can be used to bind a ControlObject to the widget.
-It binds either to the default connection or to any widget property
-using the \<BindProperty\> element.  
-The ControlObject value can be transformed using on or more
-transformers.  
-Currently supported properties:
+The connection block is a means for widgets to interact with Mixxx's
+[control system](https://github.com/mixxxdj/mixxx/wiki/developer_guide_control).
 
-  - `visible` Display the widget only if (transformed) \<ConfigKey\>
-    equals `1`
-  - `highlight`' Apply styles to the widget via qss when (transformed)
-    \<ConfigKey\> equals N. QSS code: \#NameOfObject\[highlight="N"\] {
-    ... }
+It requires the `<ConfigKey>` tag to specify the control to be bound to the
+widget.
 
-Example:
+If no further tags are present, the widget is bound on its default connection.
+For example a `<PushButton>` or a `<Knob>` will update the control specified by
+ `<ConfigKey>` with their state as it changes.
+
+The following optional tags are also accepted within a `<Connect>` block:
+
+| Tag              |                                                  |
+|------------------|--------------------------------------------------|
+| `<BindProperty>` | specify a widget property to bind the control to |
+| `<Transform>`    | transform the value of the bound control         |
+
+
+`<BindProperty>` only accepts one of the following two values:
+
+* `visible` displays the widget when the value of the config key is 1
+* `highlight` apply a qss style to the widget based on the config key value:
+ 
+  For example, for a widget with `<ObjectName>Foo</ObjectName>`, when 
+  `<ConfigKey>`'s values is `N`, apply the QSS defined by `#Foo[highlight="N"] {...}` to the widget.
+
+A `<Transform>` block can accept the following tags:
+
+| Tag                    | Config Key Value | Transformed Value |
+|------------------------|------------------|-------------------|
+| `<Invert/>`            | value            | -value            |
+| `<Not/>`               | value            | !value            |
+| `<Add>n</Add>`         | value            | value + `n`       |
+| `<IsEqual>n</IsEqual>` | value            | value == `n`      |
+
+Illustratory example (look at existing skins for actual use cases as they're more complex):
+```xml
+<!-- Show the label below when pressed -->
+<PushButton>
+  <NumberStates>1</NumberStates>
+  <Size>me,me</Size>
+  <State>
+    <Number>0</Number>
+    <Text>Show</Text>
+  </State>
+  <Connection>
+    <ConfigKey>[Foo],show</ConfigKey>
+  </Connection>
+</PushButton>
+
+
+<Label>
+  <Size>me,me</Size>
+  <Text>Hello</Text>
+  <Connection>
+    <ConfigKey>[Foo],show</ConfigKey>
+    <BindProperty>visible</BindProperty>
+  </Connection>
+</Label>
 ```
-<Connection>
-  <!-- ConfigKey of the ControlObject Widget proprty -->
-  <ConfigKey>[EffectRack1_EffectUnit1],single_effect_focus</ConfigKey>
-  <BindProperty>highlight</BindProperty>
-  <Transform>
-    <Invert/>      <!-- p = -co -->
-    <Not/>         <!-- p = !co -->
-    <Add>0.5</Add> <!-- p = co + 0.5 -->
-    <IsEqual>2</IsEqual> <!-- p = (co == 2) New in Mixxx 2.1 -->
-  </Transform>
-</Connection>
-```
-
-### Skin Color Scheme
-
-Allows the creation of different color schemes, see [Color scheme
-architecture](http://mixxx.org/wiki/doku.php/skin_colour_scheme_architecture)
-for details
 
 ### Library display
 

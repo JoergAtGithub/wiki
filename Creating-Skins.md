@@ -662,33 +662,54 @@ the tracks you want to play and load them into a deck or sampler.
 
 The library typically consist of:
 
-  - library sidebar: Contains different collections of music, and let
+  - Library sidebar: Contains different collections of music, and let
     you browse for files.
-  - library table: The track list view displays the tracks in those
+  - Library table: The track list view displays the tracks in those
     collections.
   - Library searchbox: The search function filters the currently
     displayed list (e.g. a playlist, a crate, or even the whole library)
     for tracks that match your search query.
 
-FIXME: Add code example for typical library
+The following example uses [`splitters`](#splitter) to implement a simple
+library with the above elements:
 
-#### Library Sidebar
-
-|                                     |
-| ----------------------------------- |
-| `<LibrarySidebar></LibrarySidebar>` |
-
-#### Library Table
-
-|                       |
-| --------------------- |
-| `<Library></Library>` |
-
-#### Library SearchBox
-
-|                           |
-| ------------------------- |
-| `<SearchBox></SearchBox>` |
+```xml
+<WidgetGroup>
+  <Layout>vertical</Layout>
+  <Children>
+    <WidgetGroup>
+      <Layout>vertical</Layout>
+      <Children>
+        <Splitter>
+          <Orientation>horizontal</Orientation>
+          <SizePolicy>me,me</SizePolicy>
+          <Collapsible>0,0</Collapsible>
+          <Children>
+            <Splitter>
+              <Orientation>vertical</Orientation>
+              <Collapsible>0,0</Collapsible>
+              <Size>f, f</Size>
+              <Children>
+                <!-- The library searchbox -->
+                <SearchBox></SearchBox>
+                
+                <!-- The library sidebar -->
+                <LibrarySidebar></LibrarySidebar>
+              </Children>
+            </Splitter>
+            
+            <!-- The library table showing all your tracks -->
+            <Library>
+              <Size>me, me</Size>
+              <ShowButtonText>false</ShowButtonText>
+            </Library>
+          </Children>
+        </Splitter>
+      </Children>
+    </WidgetGroup>
+  </Children>
+</WidgetGroup>
+```
 
 ## Section: Visual
 

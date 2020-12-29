@@ -16,13 +16,11 @@ to [Using Git](https://github.com/mixxxdj/mixxx/wiki/Using%20Git) for more detai
 # Install build dependencies
 
 ## Debian & Derivatives (e.g. Ubuntu, Raspbian)
-There is a script in the code repository that will download and install all dependencies:
 
-```shell
+There is a script in the code repository that will download and install all dependencies:
+```sh
 tools/debian_buildenv.sh setup
 ```
-
-Despite the script name, this should work on Debian too. Please let us know on [Zulip](https://mixxx.zulipchat.com) if it does not.
 
 ## Fedora
 
@@ -37,8 +35,8 @@ sudo dnf builddep mixxx
 
 ## Arch & Derivatives
 
-If you are developing in Arch, you should have the
-[base-devel group](https://www.archlinux.org/groups/x86_64/base-devel/)
+If you are developing on Arch, you should have the
+[base-devel group](https://www.archlinux.org/groups/x86_64/base-devel)
 installed.
 
 The tools you are going to need for working with Mixxx are:
@@ -54,7 +52,7 @@ sudo pacman -S --needed protobuf vamp-plugin-sdk rubberband soundtouch \
     lame libogg libmad libvorbis libmp4v2 faad2 opusfile \
     libshout libsndfile portmidi portaudio \
     sqlite upower lilv \
-    qt5-declarative qtkeychain-qt5
+    qt5-declarative qtkeychain-qt5 qt5-svg
 ```
 
 ## Nix & NixOS

@@ -189,9 +189,8 @@ In this example we are going to install the file "NewSkin.zip"
 
 If you want to tweak an existing skin the procedure is the same, except that you pick (and rename) an existing skin folder from the Mixxx resource directory:  
   **Linux**: `/usr/share/mixxx/skins/`  
-  **Windows**: `C:\Program Files\Mixxx\skins`  
+  **Windows**: `C:\Program Files\Mixxx\SKINS`  
   **macOS**: `/Applications/Mixxx.app/Contents/Resources/skins`  
-**TODO** Verify paths for Mixxx 2.3
 
 
 # Skin licensing & copyright
@@ -715,188 +714,162 @@ library with the above elements:
 
 ### Waveform
 
-|                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
-| ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `<Visual>
+The waveform is a composite element which is central to most user interfaces. It
+displays the current play position scrolling through a track's waveform in real
+time as audio playback occurs.
+
+It is highly customizable and can be set with various different color
+values etc. for most of its constituent elements. It can also be orientated
+vertically or horizontally.
+
+```xml
+<Visual>
   <TooltipId>waveform_display</TooltipId>
-  <Channel>X</Channel>
-  <Pos>X,Y</Pos>
-  <Size>W,H</Size>
+  <Channel>N</Channel>
   <BgColor>#</BgColor>
-  <BgPixmap>custom_background.png</BgPixmap>
-  <Orientation>X</Orientation>
-  <Align>X</Align>
-  <SignalColor>#</SignalColor>
+  <BgPixmap>optional_custom_background.png</BgPixmap>
+  <Orientation>X</Orientation> <!-- horizontal (default) or vertical) -->
+  <Align>X</Align> <!-- centered (default), bottop or top (if horizontal), 
+                                            left or right (if vertical) -->
+                                            
+  <!-- Color values for various frequencies -->                                           
+  <SignalColor>#</SignalColor> 
   <SignalLowColor>#</SignalLowColor>
   <SignalMidColor>#</SignalMidColor>
   <SignalHighColor>#</SignalHighColor>
   <SignalRGBLowColor>#</SignalRGBLowColor>
   <SignalRGBMidColor>#</SignalRGBMidColor>
   <SignalRGBHighColor>#</SignalRGBHighColor>
-  <BeatColor>#</BeatColor>
-  <EndOfTrackColor>#</EndOfTrackColor>
-  <AxesColor>#</AxesColor>
-  <PlayPosColor>#</PlayPosColor>
-  <BeatHighlightColor>#</BeatHighlightColor>
-  <HfcColor>#</HfcColor>
-  <MarkerColor>#</MarkerColor>
-  <CueColor>#</CueColor>
+  <BeatColor>#</BeatColor> <!-- Beatgrid color -->
+  <EndOfTrackColor>#</EndOfTrackColor> <!-- The overlay displayed when a track's about to end-->
+  <AxesColor>#</AxesColor> <!-- static horizontal line -->
+  <PlayPosColor>#</PlayPosColor> <!-- static vertical line -->
+  
+  <!-- Customize various marks on the waveform (SEE BELOW) -->
+  <DefaultMark>
+    ...
+  </Mark>
+  <Mark>
+    ...
+  </Mark>
+  <MarkRange>
+    ...
+  </MarkRange>
+</Visual>
+```
+
+#### Marks
+
+Several marks are made on waveforms for for cue points, loop markers, hot cues etc.
+They share many of the same basic options which you can use to customize them:
+
+**The cue point:**
+```xml
 <Visual>
+  ...
+  <Mark>
+    <Control>cue_point</Control> <!-- max one per channel -->
+    <Pixmap>option_custom_marker.png</Pixmap> <!-- optional override of the default triangle -->
+    <Text>CUEPOINT</Text> <!-- when no custom marker is used -->
+    
+    <!-- Defines where text is positioned:
+         X = left, hcenter or right
+         Y = top or vcenter or bottom
+         Note: center can be used as a shorthand for hcenter or vcenter. -->
+    <Align>X|Y</Align>
+    <Color>#</Color>
+    <TextColor>#</TextColor>
+  </Mark>
+  ...
+</Visual>
+```
 
-` | ``begin Visual tag
-Tooltip to be displayed on mouseover, depends on selected ID`s. Make sure to select the correct ID for each key, available IDs are in //src/skin/tooltips.cpp//
-Which channel the settings are connected to (X=1 or 2)
-Defines the element position
-Defines the element size
-Color of waveform background  (until Mixxx 1.10. a default gradient was added , not for #000000)
-New in Mixxx 1.10: Loads a background image and will tile it when smaller than the waveform widget
-New in Mixxx 2.1: Indicates whether to display horizontal or vertical waveform ( X = "horizontal" or "vertical" ). Default is horizontal.
-New in Mixxx 1.11: Show full waveform centered (default) or only bottom/top half ( X = "bottom" or "top" ) (for horizontal waveform) or only left/right half ( X = "left" or "right" ) (for vertical waveform).
-Color of waveform
-New in Mixxx 1.11: Colors of low frequencies in waveform. If no low/mid/high colors are provided, fallback to <SignalColor>
-New in Mixxx 1.11: Colors of mid frequencies in waveform
-New in Mixxx 1.11: Colors of high frequencies in waveform
-New in Mixxx 2.00: Colors of low frequencies in RGB waveform. Allows separate color config for RGB waveforms, if selected in ''Preferences>Waveforms>Summery Type>RGB (GL)''
-New in Mixxx 2.00: Colors of mid frequencies in RGB waveform.
-New in Mixxx 2.00: Colors of high frequencies in RGB waveform
-Color of beatgrid (multiple vertical lines)
-New in Mixxx 1.11: Color of notification overlay displayed within the last seconds of a track
-New in Mixxx 1.11: Color of static horizontal line
-New in Mixxx 1.11: Color of static vertical line
-Deprecated in Mixxx 1.11: Highlight color when beatgrid is near playback position
-Deprecated in Mixxx 1.11: Color of horizontal line
-Deprecated in Mixxx 1.11: Color center marker (single vertical line)
-Deprecated in Mixxx 1.11: Color of Cuepoint marker
-end Visual tag
 
-`` |
+**Hot cues:**
 
-|                                                                                                                                                                                    |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
-| ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `<Mark>
-  <Control>cue_point</Control>
-  <Pixmap>custom_marker.png</Pixmap>
-  <Text>CUEPOINT</Text>
-  <Align>X\|Y</Align>
-  <Color>#</Color>
-  <TextColor>#</TextColor>
-</Mark>
+```xml
+<Visual>
+  ...
+  <DefaultMark>
+    <Pixmap>optional_custom_marker.svg</Pixmap>
+    <Align>X|Y</Align>
+    
+    <!--The below aren't used in Mixxx 2.3 as hotcues are customised
+        individually through their context menus -->
+    <Color>#</Color>
+    <TextColor>#</TextColor>
+    <Text> %1 </Text>
+  </DefaultMark>
+  ...
+</Visual>
+```
 
-` | `begin Mark tag
-Defines the Cuepoint, max. one cuepoint per channel
-Optional: Uses an image from the skin's folder to define a custom marker, if available it overrides the default triangle
-Text visible when Cuepoint is set (and no custom marker is defined)
-Defines where text is positioned (X = "left" or "hcenter" or "right"; Y = "top" or "vcenter" or "bottom"). Note: "center" can be used as a shorthand for "hcenter\|vcenter".
-Defines text background color
-Defines text color
-end Mark tag
-` |
+**Loops:**
+```xml
+<Visual>
+  ...
+  <Mark>
+    <Control>loop_start_position</Control>
+    <Pixmap>optional_custom_marker.png</Pixmap>
+    <Text>LOOP OUT</Text>
+    <Align>X|Y</Align>
+    <Color>#</Color>
+    <TextColor>#</TextColor>
+  </Mark>
+  <Mark>
+    <Control>loop_end_position</Control>
+    <Pixmap>optional_custom_marker.png</Pixmap>
+    <Text>LOOP OUT</Text>
+    <Align>X|Y</Align>
+    <Color>#</Color>
+    <TextColor>#</TextColor>
+  </Mark>
+  <!-- Customize the loop overlay on the area from the start to end position -->
+  <MarkRange>
+    <StartControl>loop_start_position</StartControl>
+    <EndControl>loop_end_position</EndControl>
+    <EnabledControl>loop_enabled</EnabledControl>
+    <Color>#</Color>
+    <Opacity>0.8</Opacity>
+    <DisabledColor>#</DisabledColor>
+    <DisabledOpacity>0.5</DisabledOpacity>
+  </MarkRange>
+  ...
+</Visual>
+```
 
-|                                                                                                                                                                                             |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
-| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `
-<Mark>
-  <Control>hotcue_X_position</Control>
-  <Pixmap>custom_marker.png</Pixmap>
-  <Text>HOTCUE X</Text>
-  <Align>X\|Y</Align>
-  <Color>#</Color>
-  <TextColor>#</TextColor>
-</Mark>
+**Intro/Outro marks and overlays:**
 
-` | `begin Mark tag
-max. 36 Hotcues(X=1-36), define every Hotcue for its own
-Optional: uses an image from the skin's folder to define a custom marker, if available it overrides the default triangle
-Text visible when Hotcue point is set (and no custom marker is defined)
-Defines where text is positioned (X = "left" or "hcenter" or "right"; Y = "top" or "vcenter" or "bottom"). Note: "center" can be used as a shorthand for "hcenter\|vcenter".
-Defines text background color
-Defines text color
-end Mark tag
-` |
+Similar to the loop example above, Mixxx 2.3 adds separate intro and outro
+controls which have their own marks to delineate intro and outro sections:
 
-|                                                                                                                                                                                             |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
-| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `
-<Mark>
-  <Control>hotcue_X_position</Control>
-  <Pixmap>custom_marker.png</Pixmap>
-  <Text>HOTCUE X</Text>
-  <Align>X\|Y</Align>
-  <Color>#</Color>
-  <TextColor>#</TextColor>
-</Mark>
-
-` | `begin Mark tag
-max. 36 Hotcues(X=1-36), define every Hotcue for its own
-Optional: uses an image from the skin's folder to define a custom marker, if available it overrides the default triangle
-Text visible when Hotcue point is set (and no custom marker is defined)
-Defines where text is positioned (X = "left" or "hcenter" or "right"; Y = "top" or "vcenter" or "bottom"). Note: "center" can be used as a shorthand for "hcenter\|vcenter".
-Defines text background color
-Defines text color
-end Mark tag
-` |
-
-|                                                                                                                                                                |                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
-| -------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `
-<DefaultMark>
-  <Pixmap>custom_marker.png</Pixmap>
-  <Align>X\|Y</Align>
-  <Color>#</Color>
-  <TextColor>#</TextColor>
-  <Text> %1 </Text>
-</DefaultMark>
-
-` | `begin Mark tag
-Optional: Uses an image from the skin's folder to define a custom marker, if available it overrides the default triangle
-Defines where text is positioned (X = "left" or "hcenter" or "right"; Y = "top" or "vcenter" or "bottom"). Note: "center" can be used as a shorthand for "hcenter\|vcenter".
-Defines text background color
-Defines text color
-Is filled with Hotcue number when not defined by respective custom mark
-end Mark tag
-` |
-
-|                                                                                                                                                                                             |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
-| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| `
-<Mark>
-  <Control>loop_end_position</Control>
-  <Pixmap>custom_marker.png</Pixmap>
-  <Text>LOOP OUT</Text>
-  <Align>X\|Y</Align>
-  <Color>#</Color>
-  <TextColor>#</TextColor>
-</Mark>
-
-` | `begin Mark tag
-Defines a loops end point
-Optional: Uses an image from the skin's folder to define a custom marker, if available it overrides the default triangle
-Text visible when end point is set (and no custom marker is defined)
-Defines where text is positioned (X = "left" or "hcenter" or "right"; Y = "top" or "vcenter" or "bottom"). Note: "center" can be used as a shorthand for "hcenter\|vcenter".
-Defines text background color
-Defines text color
-end Mark tag
-` |
-
-|                                                                                                                                                                                                                                     |                                                                                                                                                                                                                                 |
-| ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `
-<MarkRange>
-  <StartControl>loop_start_position</StartControl>
-  <EndControl>loop_end_position</EndControl>
-  <EnabledControl>loop_enabled</EnabledControl>
-  <Color>#</Color>
-  <DisabledColor>#</DisabledColor>
-</MarkRange>
-
-` | `begin MarkRange tag
-\
-\|---for drawing the color overlay between loop-in & loop-out, these lines are not variable
-/
-Defines overlay color when loop is enabled
-Defines overlay color when loop is disabled
-end MarkRange tag
-` |
+```xml
+<Visual>
+  ...
+  <!-- Outro marks are exactly the same, just replace intro_* for outro_* -->
+  <Mark>
+    <Control>intro_start_position</Control>
+    <Text>START</Text>
+    <Align>X|Y</Align>
+    <Color>#</Color>
+    <TextColor>#</TextColor>
+  </Mark>
+  <Mark>
+    <Control>intro_end_position</Control>
+    <Text>END</Text>
+    <Align>X|Y</Align>
+    <Color>#</Color>
+    <TextColor>#</TextColor>
+  </Mark>
+  <MarkRange>
+    <StartControl>intro_start_position</StartControl>
+    <EndControl>intro_end_position</EndControl>
+    <Color>#0000FF</Color>
+    <Opacity>0.1</Opacity>
+  </MarkRange>
+  ...
+</Visual>
+```
 
 ### Waveform overview
 

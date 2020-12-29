@@ -51,7 +51,7 @@ sudo pacman -S --needed protobuf vamp-plugin-sdk rubberband soundtouch \
     chromaprint libid3tag taglib \
     lame libogg libmad libvorbis libmp4v2 faad2 opusfile \
     libshout libsndfile portmidi portaudio \
-    sqlite upower lilv \
+    sqlite upower lilv libopenmpt-modplug \
     qt5-declarative qtkeychain-qt5 qt5-svg
 ```
 

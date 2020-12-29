@@ -15,14 +15,14 @@ to [Using Git](https://github.com/mixxxdj/mixxx/wiki/Using%20Git) for more detai
 
 # Install build dependencies
 
-## Debian / Ubuntu / Raspbian
-There is a script in the code repository that will download and install all dependencies. Assuming you have downloaded the source code to `~/mixxx`, run it with:
+## Debian & Derivatives (e.g. Ubuntu, Raspbian)
+There is a script in the code repository that will download and install all dependencies:
 
 ```shell
-~/sw/mixxx/tools/ubuntu_buildenv.sh setup
+tools/debian_buildenv.sh setup
 ```
 
-Despite the script name, this should work on Debian too. Please let us know on [Zulip](https://mixxx.zulipchat.com/) if it does not.
+Despite the script name, this should work on Debian too. Please let us know on [Zulip](https://mixxx.zulipchat.com) if it does not.
 
 ## Fedora
 
@@ -49,11 +49,12 @@ Alternatively, you can substitute gcc with clang.
 
 Then install the dependencies:
 ``` sh
-sudo pacman -S --needed libid3tag libmad portaudio qt libogg \
-    libvorbis libsndfile portmidi libmp4v2 faad2 libshout \
-    taglib protobuf vamp-plugin-sdk rubberband \
-    chromaprint sqlite upower lilv lame \
-    soundtouch opusfile
+sudo pacman -S --needed protobuf vamp-plugin-sdk rubberband soundtouch \
+    chromaprint libid3tag taglib \
+    lame libogg libmad libvorbis libmp4v2 faad2 opusfile \
+    libshout libsndfile portmidi portaudio \
+    sqlite upower lilv \
+    qt5-declarative qtkeychain-qt5
 ```
 
 ## Nix & NixOS

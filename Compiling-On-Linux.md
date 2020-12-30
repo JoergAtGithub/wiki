@@ -49,11 +49,13 @@ Then install the dependencies:
 ``` sh
 sudo pacman -S --needed protobuf vamp-plugin-sdk rubberband soundtouch \
     chromaprint libid3tag taglib \
-    lame libogg libmad libvorbis libmp4v2 faad2 opusfile \
+    lame libogg libmad libvorbis libmp4v2 faad2 opusfile wavpack \
     libshout libsndfile portmidi portaudio \
     sqlite upower lilv libopenmpt-modplug \
     qt5-declarative qtkeychain-qt5 qt5-svg
 ```
+
+> Note: This will soon be integrated with the AUR packages (https://aur.archlinux.org/packages/mixxx-git and https://aur.archlinux.org/packages/mixxx_beta-git)
 
 ## Nix & NixOS
 

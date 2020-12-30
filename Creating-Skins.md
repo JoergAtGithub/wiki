@@ -871,59 +871,46 @@ controls which have their own marks to delineate intro and outro sections:
 </Visual>
 ```
 
-### Waveform overview
+### Waveform Overview
 
-|                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
-| ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `<Overview>
+The waveform overview is probably the most important visual element used by a
+DJ. It shares many of the same configuration options as the visual waveform
+explained above, including signal colors and marks.
+
+```xml
+<Overview>
   <TooltipId>waveform_overview</TooltipId>
   <Channel>X</Channel>
   <Pos>X,Y</Pos>
   <Size>W,H</Size>
-  <BgColor>#AARRGGBB</BgColor>
-  <BgPixmap>custom_background.png</BgPixmap>
+  <BgColor>#</BgColor>
+  <BgPixmap>optional_custom_background.png</BgPixmap>
+  
+  <!-- Color values for various frequencies (low, mid, high fallback to
+       SignalColor if they're not provided) -->                                           
   <SignalColor>#</SignalColor>
   <SignalLowColor>#</SignalLowColor>
   <SignalHighColor>#</SignalHighColor>
   <SignalLowColor>#</SignalLowColor>
-  <EndOfTrackColor>#</EndOfTrackColor>
-  <AxesColor>#AARRGGBB</AxesColor>
-  <PlayPosColor>#AARRGGBB</PlayPosColor>
-  <PlayedOverlayColor>#AARRGGBB</PlayedOverlayColor>
-  <Orientation>X</Orientation>
-  <MarkerColor>#</MarkerColor>
-  <ProgressColor>#</ProgressColor>
-  <ProgressAlpha>X</ProgressAlpha>
-  <Connection>
+  <EndOfTrackColor>#</EndOfTrackColor> <!-- Overlay shown at end of track -->
+  <PlayedOverlayColor>#</PlayedOverlayColor> <!-- Overlay shown over played area -->
+  <Orientation>X</Orientation> <!-- horizontal (default) or vertical -->
+  <PlayPosColor>#</PlayPosColor>
+  <DefaultMark>
+  ... 
+  </DefaultMark>
+  <MarkRange>    <!-- See the previous example -->
+  ...
+  </MarkRange>
+  <Mark>
+  ...
+  </Mark>
+  <Connection><!-- connect to the playposition control of the channel -->
     <ConfigKey>[ChannelX],playposition</ConfigKey>
     <EmitOnDownPress>false</EmitOnDownPress>
   </Connection>
-</Overview>` | `
-begin Overview tag
-Tooltip to be displayed on mouseover
-Which channel the settings are connected to (X=1, 2, or more, depending on the number of decks in the skin)
-Defines the element position
-Defines the element size
-Background color. New in Mixxx 1.9.1: If <BgColor> is not provided, the background is treated as transparent. New in Mixxx 2: Support ARGB notation, e.g. ``#B3000000`` for semi transparent black
-New in Mixxx 1.10: Loads a background image and will tile it when smaller than the waveform widget
-Color of waveform overview
-New in Mixxx 1.11: Colors of low frequencies in waveform overview. If no low/mid/high colors are provided, fallback to <SignalColor>
-New in Mixxx 1.11: Colors of mid frequencies in waveform overview
-New in Mixxx 1.11: Colors of high frequencies in waveform overview
-New in Mixxx 1.11: Color of notification overlay displayed within the last seconds of a track
-New in Mixxx 1.11: Color of static horizontal line. New in Mixxx 2: Support ARGB notation
-New in Mixxx 1.11: Color of moving vertical line (playing position indicator). New in Mixxx 2: Support ARGB notation
-New in Mixxx 2.1: Color of overlay for the played portion of the track. Support ARGB notation
-New in Mixxx 2.1: Orientation of waveform overview. (X = "horizontal" or "vertical") Default is horizontal.
-Deprecated in Mixxx 1.11: Color of vertical line
-Deprecated in Mixxx 1.11 (was new in v1.10): Color of track analysis progress visualization, color defaults to the signal color if not set
-Deprecated in Mixxx 1.11 (was new in v1.10): Alpha of track analysis progress visualization, default alpha is 80 out of 255
-
-Must be same value as under <Channel> above, (X = 1 or 2)
-Defines if action is performed on click on element ( true or false); Can be omitted in Mixxx >= 2.00
-
-end Overview tag
-` |
+</Overview>
+```
 
 ### Spinning vinyl image (Spinny)
 

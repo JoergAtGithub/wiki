@@ -913,94 +913,68 @@ explained above, including signal colors and marks.
 ```
 
 ### Spinning vinyl image (Spinny)
+The spinny can be configured to display a spinning image (over optional cover
+art) when a track is playing.
 
-_New in Mixxx 1.10.0_
-
-|                                                                                                                                                                                                                                                                                                                 |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
-| --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| `<Spinny>
+```xml
+<Spinny>
   <TooltipId>spinny</TooltipId>
   <Channel>X</Channel>
   <Size>W,H</Size>
-  <PathBackground>background.svg</PathBackground>
-  <PathMask>mask.svg</PathMask>
+  <!-- The image sets the overall size unless scalemode="STRETCH" is set -->
+  <PathBackground scalemode="STRETCH">background.svg</PathBackground>
+  <!-- Used to mask the cover art (e.g., with a circle so it looks like a record) -->
+  <PathMask scalemode="STRETCH">mask.svg</PathMask>
+  <!-- Shown as the spinning top layer -->
   <PathForeground>foreground.svg</PathForeground>
+  <!-- TODO: Is the ghost image still used? -->
   <PathGhost>foreground_ghost.svg</PathGhost>
   <ShowCover>true</ShowCover>
 </Spinny>
-` | `Beginn Spinny tag
-Tooltip to be displayed on mouseover
-Optionally, defines the appearance of the Spinny widget
-Which channel the settings are connected to (X=1, 2, or more, depending on the # of decks in the skin)
-Defines the element position
-Defines the element size
-Background image (from the skin's folder, shows as bottom layer). Sets the spinny's overall size, unless scalemode="STRETCH" is set (New in Mixxx 2.00).
-New in Mixxx 2.00: Mask image (from the skin's folder, shows above the cover layer but below the foreground image.  This is often used to overlay a circular outline on top of the cover art so it appears like a round record label.
-Foreground image (from the skin's folder, shows as top layer). New in Mixxx 1.11: Center the images according to their own size
-Ghost Foreground image (from the skin's folder, shows as top layer on right-click)
-New in Mixxx 2.00: Set to true to enable showing of covers in spinny widgets (default false). Spinny background images will only appear if there is no cover art, or if this feature is off.
-End Spinny tag
-` |
+```
 
 ### Volume level display
-
-|                                                                                                                                                                                                                                                                                                                                                                                             |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
-| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `<VuMeter>
+```xml
+<VuMeter>
   <TooltipId>channel_VuMeter</TooltipId>
+  <!-- Main image shown as top layer -->
   <PathVu>active.png</PathVu>
+  <!-- Background image shown as bottom layer -->
   <PathBack>default.png</PathBack>
   <Pos>X,Y</Pos>
   <Horizontal>false</Horizontal>
+  <!-- Size of peak (in pixels); cropped from top of image defined in <PathVu>,
+       default is 5 -->
   <PeakHoldSize>5</PeakHoldSize>
+  <!-- Time a peak is displayed (in ms), default is 400 -->
   <PeakHoldTime>400</PeakHoldTime>
+  <!-- Time a peak falls down (in ms), default is 20 -->
   <PeakFallTime>80</PeakFallTime>
+  <!-- Number of steps (in pixels) a peaks falls down in <PeakFallTime>, Default is 1 -->
   <PeakFallStep>5</PeakFallStep>
   <Connection>
+    <!-- Defines connected Channel & Stereo-balance (X = Channel1 .. 4 or
+        Master), (Y= VuMeter or VuMeterL or VuMeterR) -->
     <ConfigKey>[X],Y</ConfigKey>
   </Connection>
 </VuMeter>
-
-` | `begin VuMeter tag
-Tooltip to be displayed on mouseover
-Button/slider main image (from the skin's folder, shows as top layer)
-Button/slider background image (from the skin's folder, shows as bottom layer)
-Defines the element position
-Orientation (false=vertical, true=horizontal)
-Size of peak (in pixels); cropped from top of image defined in <PathVu>, default is 5
-Time a peak is displayed (in ms), default is 400
-Time a peak falls down (in ms), default is 20
-Number of steps (in pixels) a peaks falls down in <PeakFallTime>, Default is 1
-
-Defines connected Channel & Stereo-balance (X = Channel1 .. 4 or Master), (Y= VuMeter or VuMeterL or VuMeterR)
-
-end VuMeter tag
-` |
+```
 
 ### Volume peak indicator
-
-|                                                                                                                                                                                                                                       |                                                                                                                                                                                                                                                                                                                                                                                 |
-| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `<StatusLight>
+```xml
+<StatusLight>
   <TooltipId>PeakIndicator</TooltipId>
+  <!-- Main image shown as top layer -->
   <PathVu>active.png</PathVu>
+  <!-- Background image shown as bottom layer -->
   <PathBack>default.png</PathBack>
   <Pos>X,Y</Pos>
   <Connection>
+    <!-- Defines connected Channel (X = Channel1 .. 4 or Master) -->
     <ConfigKey>[X],PeakIndicator</ConfigKey>
   </Connection>
 </StatusLight>
-
-` | `begin StatusLight (Volume Peak Indicator) tag
-Tooltip to be displayed on mouseover
-peak indicator main image (from the skin's folder, shows as top layer)
-peak indicator background image (from the skin's folder, shows as bottom layer)
-Defines the element position
-
-Defines connected Channel (X = Channel1 .. 4 or Master)
-
-end StatusLight (Volume Peak Indicator) tag
-` |
+```
 
 ## Section: Text
 

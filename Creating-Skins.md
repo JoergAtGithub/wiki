@@ -925,9 +925,9 @@ art) when a track is playing.
   <PathBackground scalemode="STRETCH">background.svg</PathBackground>
   <!-- Used to mask the cover art (e.g., with a circle so it looks like a record) -->
   <PathMask scalemode="STRETCH">mask.svg</PathMask>
-  <!-- Shown as the spinning top layer -->
+  <!-- Shown as the spinning top layer, mostly a bar-like path like a sticker on vinyls -->
   <PathForeground>foreground.svg</PathForeground>
-  <!-- TODO: Is the ghost image still used? -->
+  <!-- Additional spinning layer for indicating the Slip mode position -->
   <PathGhost>foreground_ghost.svg</PathGhost>
   <ShowCover>true</ShowCover>
 </Spinny>

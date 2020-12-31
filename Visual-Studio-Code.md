@@ -1,12 +1,12 @@
 # Setting up Visual Studio Code for Mixxx development
 
 **Visual Studio Code** is a free open source code editor / IDE that is
-easy to set-up.  
-It is a completely different editor than [Visual Studio
-Community](Visual%20Studio%20Community).  
+easy to set-up. VS code runs on Windows, Linux and MacOS.<br>
 VSCode is very well suited for [Controller Scripting](midi_scripting) as
-well as [working on Mixxx's core with
-C++](home#developer_documentation).
+well as [working on Mixxx's core with C++](home#developer_documentation).
+
+Note, that VS code is a completely different editor than [Visual Studio 2019](Visual%20Studio%20Community).<br>
+_If you intend to build Mixxx on Windows, use the Visual Studio 2019 (Community Edition) as described [here](Compiling-On-Windows)!_
 
 ## Setting up VScode for C++
 

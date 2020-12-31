@@ -5,8 +5,8 @@ easy to set-up. VS code runs on Windows, Linux and MacOS.<br>
 VSCode is very well suited for [Controller Scripting](midi_scripting) as
 well as [working on Mixxx's core with C++](home#developer_documentation).
 
-Note, that VSCode is a completely different editor than 'Visual Studio', which is also available as free, but closed source, [Community Edition](Visual%20Studio%20Community).<br>
-_If you intend to build Mixxx on Windows, use the Visual Studio 2019 (Community Edition) as described [here](Compiling-On-Windows)!_
+_Note, that VSCode is a completely different editor than 'Visual Studio', which is also available as free, but closed source, [Community Edition](Visual%20Studio%20Community).<br>
+If you intend to build Mixxx on Windows, use the Visual Studio 2019 (Community Edition) as described [here](Compiling-On-Windows)!_
 
 ## Setting up VScode for C++
 

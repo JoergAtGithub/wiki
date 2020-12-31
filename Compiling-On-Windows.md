@@ -12,9 +12,9 @@ Mixxx 2.2 and below used Scons instead of CMake.
 
     Follow the installation instructions on that link to setup the compiler and CMake.
 
-    (Visual studio 2017 support for CMake is not good enough for building Mixxx, 
-    and Visual Studio 2015 will likely stop working once we
-    start using C++ features that are not implemented by its compiler).
+    _'Visual Studio Code' is not suitable for building Mixxx on Windows!<br>_
+    _The CMake version that comes with 'Visual Studio 2017' is too old for building Mixxx!_
+
   - A Git client like [Git for Windows](https://git-scm.com/download/win),
     [TortoiseGit](https://tortoisegit.org) (requires Git for Windows to be installed) or the
 	[github windows client](http://github-windows.s3.amazonaws.com/GitHubSetup.exe)

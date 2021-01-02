@@ -10,7 +10,7 @@
 * [Change Log](#change-log)
 * [Under development / investigation](#under-development--investigation)
 * [Wish List](#wish-list)
-* [Contact and DJ Web Sites](#contact-and-dj-web-sites)
+* [Contact, DJ Web Sites and Tutorials](#contact-dj-web-sites-and-tutorials)
 
 [[/media/hardware/denondj-img-mc7000.jpg]]
 
@@ -436,7 +436,7 @@ All additional wishes will be listed here (help appreciated):
   - colored Hot Cue
   - Secondary PAD functions
 
-## Contact and DJ Web Sites
+## Contact, DJ Web Sites and Tutorials
 
 If you like to contact me then please visit [the
 Forum](https://mixxx.discourse.group/t/denon-mc7000-mapping/18235) or contact

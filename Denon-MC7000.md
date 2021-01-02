@@ -32,13 +32,6 @@ enable two DJs to play together. This controller includes Denon's high
 build quality and superior 24-bit audio reproduction, makes this suited
 to both mobile and club DJs.
 
-The dual 6" platters have a touch-capacitive design with rotational LED
-displays. The MC7000 has exclusive and dedicated Key Matching and
-Changing controls that deliver an unprecedented ability to instantly and
-harmonically match musical keys. The unit’s comprehensive, multi-input
-mixer also provides access to line/phono inputs from both authentic
-analogue (vinyl) and digital sources.
-
 ### Features
 
   - 4-channel DJ controller with digital mixer
@@ -49,34 +42,21 @@ analogue (vinyl) and digital sources.
   - 2 mic inputs with dedicated controls
   - XLR Booth and Master connections
 
-## Compatibility
+### Compatibility
 
   - **Mac** users should be just fine connecting the MC7000 and go.
   - **Windows** users need to install the Windows Driver from [Denon
     Download Site](https://www.denondj.com/downloads).
   - **Linux** users need to know that the MC7000 internal audio
     interface is not available out-of-the-box for older Linux Kernels.
-    You should upgrade your **Kernel** to minimum versions LTS:
-    **4.19.105** or **5.4.21**, stable branch **5.6.x** or mainline
-    **5.7.x** (valid at date 2020-04-28). Newer Kernels will also
-    provide native audio support for this controller. Linux Kernel 5.3.x
-    does not support that device and together with 5.5.x reached
-    End-Of-Life.
-    * Linux Distributions built upon Ubuntu 18.04 and derivatives, like
-    Linux Mint, KDE Neon etc. must update the Kernel to one of the
-    mentioned above. As of July 2020 the Kernel 5.4.x is available from 
-    the Ubuntu 18.04 Update repo... Get latest upgrades with "sudo apt dist-upgrade".
-    Alternatively, there is a [Kernel update script](https://github.com/pimlie/ubuntu-mainline-kernel.sh)
-    available that helps fetching and installing different Linux Kernels
-    from the Ubuntu Kernel PPA.
-    * Ubuntu 20.04 already comes with Kernel 5.4.x so it supports the
-    MC7000 Audio Interface out-of-the-box. A fresh install is
-    recommended but you can read further how to [upgrade Ubuntu 18.04
-    to 20.04](https://ubuntu.com/tutorials/tutorial-upgrading-ubuntu-desktop#1-before-you-start).
-    * OpenSUSE Tumbleweed is currently on Kernel 5.6.x supporting the
-    MC7000 Audio Interface.
-    * Manjaro Linux 19.0 and 20.0 feature Linux Kernel 5.4.x supporting
-    the MC7000 Audio Interface.
+    You have to upgrade your Kernel to minimum versions LTS: 4.19.105 or 5.4.21. All kernel versions 5.6.x and following are supporting the device. All recent Linux distributions are shipped with Audio support for the MC7000, like
+
+    - Ubuntu 20.04 and 20.10
+    - Ubuntu based like Linux Mint and KDE Neon
+    - Manjaro Linux 19.x & 20.x
+    - OpenSUSE Tumbleweed
+    - Gentoo stable
+
 
 ## Mapping
 
@@ -85,6 +65,8 @@ analogue (vinyl) and digital sources.
 For MIXXX 2.2.4 and following the mapping will be included in the
 Software. You don't need to download.
 
+If you like to add the mapping manually for any other version then read on...
+
 The version for MIXXX 2.2.2 or MIXXX 2.2.3 is on GitHub. You need both
 files so please just right click each of the links and "save link as".
 
@@ -92,6 +74,12 @@ files so please just right click each of the links and "save link as".
     file](https://github.com/mixxxdj/mixxx/raw/2.2/res/controllers/Denon-MC7000.midi.xml)
   - [Denon MC7000 Mapping \*.js
     file](https://github.com/mixxxdj/mixxx/raw/2.2/res/controllers/Denon-MC7000-scripts.js)
+
+The latest development mapping can be found here:
+  - [Denon MC7000 Mapping \*.xml
+    file](https://github.com/toszlanyi/mixxx/raw/Denon_MC7000_mapping/res/controllers/Denon-MC7000.midi.xml)
+  - [Denon MC7000 Mapping \*.js
+    file](https://github.com/toszlanyi/mixxx/raw/Denon_MC7000_mapping/res/controllers/Denon-MC7000-scripts.js)
 
 Read further [where to place the mapping
 files](https://github.com/mixxxdj/mixxx/wiki/controller_mapping_file_locations)
@@ -421,6 +409,12 @@ Platter Ring LEDs are correlated with the VINYL button.
 **Release for Mixxx 2.3**
   - added Library sort function for Artist, Title, BPM, Key
   - added Softtakeover for Pitch faders
+  - combine Censor/Reverse with Slip Mode
+  - use Shift + Key Select/Reset Knob for Waveform Zoom/Reset
+  - add Search through track using Shift + Jog Wheel
+  - use Parameter buttons to add or delete stars
+  - use Shift + Parameter to cycle track color in library
+  - use library select knob to eject track
   - some minor code cleaning and improvements
 
 **Release for Mixxx 2.2.4**
@@ -430,20 +424,13 @@ Platter Ring LEDs are correlated with the VINYL button.
     function
 
 ### Under investigation / development
-  - combine Censor/Reverse with Slip Mode
-  - use Shift + Key Select/Reset Knob for Waveform Zoom/Reset
-  - add Search through track using Shift + Jog Wheel
-  - use Parameter buttons to add or delete stars
-  - use Shift + Parameter to cycle track color in library
-  - use library select knob to eject track as well
+  - add slicer LEDs for beat count
+  - code improvements to send LED Midi signals only when needed
 
 ### Wish List
 
 All additional wishes will be listed here (help appreciated):
 
-  - improve Platter Ring LED performance. Currently only 26 signals are
-    sent for one complete turn around for 48 LEDs. This is gonna be
-    solved using MIXXX 2.3
   - let Platter Ring LEDs flash during the last minute (or other time
     period) of a track
   - colored Hot Cue
@@ -455,10 +442,10 @@ If you like to contact me then please visit [the
 Forum](https://mixxx.discourse.group/t/denon-mc7000-mapping/18235) or contact
 me on [Facebook](http://www.facebook.com/OsZ.DJ/).
 
-To check out my performances with this MC7000 using MIXXX please visit
-me on [Mixcloud](http://www.mixcloud.com/DJ_OsZ/uploads/) or
-[Hearthis.at](http://www.hearthis.at/osz/).
+To listen sets made with this MC7000 using MIXXX please visit
+me on [Mixcloud](http://www.mixcloud.com/DJ_OsZ/uploads/). You can also find me on [YouTube](https://www.youtube.com/channel/UClBxBvYLTkjcAeTga1g3h0A) providing Techno sets and Mixxx tutorials.
 
 Listen 24/7 to Techno shows (recorded and live) directly on our website
-[Techno Connection](http://www.technoconnection.com) or at [Radio
-Garden](https://radio.garden/listen/techno-connection/).
+[Techno Connection](https://www.technoconnection.com/radio-links-and-chat), at [Radio
+Garden](https://radio.garden/listen/techno-connection/oosngiMz) or with the Android app [MüzikoOo](https://play.google.com/store/apps/details?id=com.dndmix.muzikooo)
+

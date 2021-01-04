@@ -103,12 +103,33 @@ General:
     - Verify Project Explorer is visible. 
       - If not go to Window -\> Show View -\> Project Explorer
       - Close Welcome Window
-  - In the Project tree, right-click on the build folder and choose
-    Properties
-    - Check 'Exclude resource from build', Apply and Close
-    - Repeat for the cache folder
 
-For Scons builds:
+For CMake builds (2.3 and main)
+
+  - Install cmake4eclipse via the Eclipse Marketplace
+  - Help -\> Eclipse Marketplace...
+  - search for cmake4eclipse and press Install.
+  - Follow the install Wizzard and restart Eclipse
+  - File -\> New -\> Project... -\> C++ Project (\!**Not** File -\> New
+    -\> C/C++ Project)
+    - Set Project Name to `mixxx`
+    - Uncheck "Use default location"
+    - Browse to your Mixxx source folder e.g. `~/eclipse-workspace/mixxx`.
+    - Project Type: CMake driven -\> Empty Project
+    - click Finish
+  - Right click on the new project in Project Explorer -\> Properties
+    -\> C/C++ Build
+    - Switch to Behavior tab.
+    - Check "Enable parallel builds" and select "Use optimal jobs"
+
+Now Mixxx should build within Eclipse with "Build Project" (Hammer
+icon).
+
+  - Right click on the new project in Project Explorer -\> Clean Project
+  - Right click on the new project in Project Explorer -\> Build Project
+
+
+For Scons builds (2.2):
 
   - File -\> New -\> Makefile Project with Existing Code.
     - Set Project Name to `mixxx`.
@@ -158,30 +179,12 @@ QTDIR | /\<path to Qt install directory\>/%VERSION%\#eg /usr/local/Cellar/qt5/5.
     "${INPUTS}"`
   - Note: The indexer should work after a full rebuild that allows
     Eclipse to parse all compiler arguments.
+  - In the Project tree, right-click on the build folder and choose
+    Properties
+    - Check 'Exclude resource from build', Apply and Close
+    - Repeat for the cache folder
 
-For CMake Builds (experimental)
 
-  - Install cmake4eclipse via the Eclipse Marketplace
-  - Help -\> Eclipse Marketplace...
-  - search for cmake4eclipse and press Install.
-  - Follow the install Wizzard and restart Eclipse
-  - File -\> New -\> Project... -\> C++ Project (\!**Not** File -\> New
-    -\> C/C++ Project)
-    - Set Project Name to `mixxx`
-    - Uncheck "Use default location"
-    - Browse to your Mixxx source folder e.g. `~/eclipse-workspace/mixxx`.
-    - Project Type: CMake driven -\> Empty Project
-    - click Finish
-  - Right click on the new project in Project Explorer -\> Properties
-    -\> C/C++ Build
-    - Switch to Behavior tab.
-    - Check "Enable parallel builds" and select "Use optimal jobs"
-
-Now Mixxx should build within Eclipse with "Build Project" (Hammer
-icon).
-
-  - Right click on the new project in Project Explorer -\> Clean Project
-  - Right click on the new project in Project Explorer -\> Build Project
 
 #### Set up Run
   - Run -\> Run configurations.

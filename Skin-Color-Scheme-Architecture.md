@@ -1,12 +1,9 @@
-# Skin Colour Scheme Architecture
-
 ## Overview
 
-Creating a new skin from scratch is a lot of work and involves editing a
-lot of images, it's not really very practical to do it just to create a
-different coloured version of a skin. You can easily create different
-coloured version of a skin by making use of the color filtering
-architecture in Mixxx.
+Creating a new skin from scratch is a lot of work and involves editing a lot of
+images - not very sensible when merely creating a different colored version of
+a skin. The color filtering architecture in Mixxx makes it easy to create
+a differently colored version of a skin.
 
 ## Tips and Tool
 
@@ -36,10 +33,11 @@ drop-down menu is grayed out.
 **Alternative Color Scheme (Dark) for Shade skin (Depicted here for
 Mixxx 2.3)**  
 [[/media/skinning/color_scheme/capture_2019-02-17_09-36-35_am.png|]]  
-\===== Technical Stuff =====
 
-There are two techniques of colour changing implemented. A color
-filtering, for changing pixmaps and a color schema style sheet.
+## Technical Stuff
+
+There are two techniques of color changing implemented. A color filtering, for
+changing pixmaps and a color schema style sheet.
 
 The color filtering architecture is implemented as a chain of plugins
 which are queried by the user interface code as the skin is initialised.
@@ -53,11 +51,11 @@ new class which implements the function doColorCorrection and performs
 some color mapping. The hooks for using the filters in a skin.xml file
 are in mixxxview.cpp.
 
-The capability is also there to implement non-colour based filters by
-extending ImgProcessor directly, although it's important to note that
-the filter is applied to individual pixmaps as they're loaded, not to
-the skin as a whole. So for example a blur filter wouldn't blur the
-edges of a control outside the rectangle of the pixmap.
+The capability is also there to implement non-color based filters by extending
+ImgProcessor directly, although it's important to note that the filter is
+applied to individual pixmaps as they're loaded, not to the skin as a whole. So
+for example a blur filter wouldn't blur the edges of a control outside the
+rectangle of the pixmap.
 
 ### Filters
 
@@ -67,10 +65,10 @@ moment we have (with their arguments):
   - Invert - Inverts image
   - HueInv - Sets hue to that of inverse. For example inverse followed
     by hueinv is equivalent to a hue invariant inverse.
-  - Add - Adds a constant value to all colour components (clipped to
+  - Add - Adds a constant value to all color components (clipped to
     [0-255](0-255))
   - Amount - Value to add (int)
-  - ScaleWhite - Scales low saturation (\<50) colours by a factor
+  - ScaleWhite - Scales low saturation (\<50) colors by a factor
   - Amount - Factor to multiply by (float)
   - HSVTweak - Manipulate the Hue Saturation Value (HSV values),
     probably the most useful one

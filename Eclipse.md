@@ -86,15 +86,15 @@ sudo update-alternatives --config java
 
 ## Step-by-Step Setup
 
-For Eclipse 2018-09
+For Eclipse 2020-12
 
 General:
 
   - Start Eclipse.
   - Window -\> Preferences
-  - Expand General -\> Editors -\> Autosave
-    - Check Save automatically before build
-    - Uncheck Build automatically
+  - Expand General -\> Workspace -\> Build
+    - Check "Save automatically before manual build"
+    - Uncheck "Build automatically"
   - Expand C/C++ -\> Indexer
     - Skip files larger than 80 MB
     - Skip include files larger than 160 MB

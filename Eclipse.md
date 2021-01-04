@@ -100,8 +100,9 @@ General:
     - Skip include files larger than 160 MB
   - Expand C/C++ -\> Build -\> console
     - Limit console output = 10000
-    - Verify Project Explorer is visible. If not go to Window -\> Show
-    View -\> Project Explorer
+    - Verify Project Explorer is visible. 
+      - If not go to Window -\> Show View -\> Project Explorer
+      - Close Welcome Window
   - In the Project tree, right-click on the build folder and choose
     Properties
     - Check 'Exclude resource from build', Apply and Close

@@ -5,7 +5,7 @@ images - not very sensible when merely creating a different colored version of
 a skin. The color filtering architecture in Mixxx makes it easy to create
 a differently colored version of a skin.
 
-## Tips and Tool
+## Tips and Tools
 
 For a "walkthrough" on creating schemes, see [Skin Color Schemes Tips
 and Tool](Skin%20Color%20Schemes%20Tips%20and%20Tool). It also contains
@@ -19,9 +19,9 @@ schemes.
 
 How to change a skin and the skins color scheme in Mixxx:
 
-  - Go to Preferences -\> Interface
+  - Go to `Options` -\> `Preferences` -\> Interface`
   - Select one of the skins like in the picture below 
-  - Select a scheme from the drop down menu and click *OK*
+  - Select a scheme from the drop down menu and click *Apply*/*OK*
 
 If you select a skin that does not support color schemes, the *Scheme*
 drop-down menu is grayed out.
@@ -36,9 +36,11 @@ Mixxx 2.3)**
 
 ## Technical Stuff
 
-There are two techniques of color changing implemented:
+There are two basic techniques of color changing implemented:
 * color filtering, for changing the colors of pixmaps
-* a color schema style sheet
+* a color schema [style sheet](https://github.com/mixxxdj/mixxx/wiki/Creating-Skins#qss-style)  
+
+Additionally, you can use [variables](https://github.com/mixxxdj/mixxx/wiki/Creating-Skins#using-variables) to make widget templates use different source images, for example configuring pushbutton icons. Check [skin.xml](https://github.com/mixxxdj/mixxx/blob/2.3/res/skins/LateNight/skin.xml#L122) of the LateNight skin in Mixxx 2.3: schemes adjust waveform colors, font sizes and many other aspects of skin widgets.
 
 The color filtering architecture is implemented as a chain of plugins
 which are queried by the user interface code as the skin is initialised.
@@ -59,30 +61,6 @@ applied to individual pixmaps as they're loaded, not to the skin as a whole. So
 for example a blur filter wouldn't blur the edges of a control outside the
 rectangle of the pixmap.
 
-### Filters
-
-The filters have only been implemented as a quick test so far. At the
-moment we have (with their arguments):
-
-  - Invert - Inverts image
-  - HueInv - Sets hue to that of inverse. For example inverse followed
-    by hueinv is equivalent to a hue invariant inverse.
-  - Add - Adds a constant value to all color components (clipped to
-    [0-255](0-255))
-  - Amount - Value to add (int)
-  - ScaleWhite - Scales low saturation (\<50) colors by a factor
-  - Amount - Factor to multiply by (float)
-  - HSVTweak - Manipulate the Hue Saturation Value (HSV values),
-    probably the most useful one
-  - HMin - Minimum hue to modify
-  - HMax - Maximum hue to modify
-  - SMin, SMax, VMin, VMax - As above but for saturation and brightness
-  - HFact, SFact, VFact - Factor to scale values by
-  - HConst, SConst, VConst - Constant to add to values
-
-You can experiment in your [Image editor](creating_skins#tools) to get
-the "right" values for the filters or try the [Color Scheme
-Designer](http://colorschemedesigner.com/) online.
 
 ### Scheme Format
 
@@ -150,3 +128,29 @@ General structure of the color scheme section in skin.xml.
     </Scheme>
 </Schemes>      // general closing tag for color schemes
 ```
+
+
+### Filters
+
+The filters have only been implemented as a quick test so far. At the
+moment we have (with their arguments):
+
+  - Invert - Inverts image
+  - HueInv - Sets hue to that of inverse. For example inverse followed
+    by hueinv is equivalent to a hue invariant inverse.
+  - Add - Adds a constant value to all color components (clipped to
+    [0-255](0-255))
+  - Amount - Value to add (int)
+  - ScaleWhite - Scales low saturation (\<50) colors by a factor
+  - Amount - Factor to multiply by (float)
+  - HSVTweak - Manipulate the Hue Saturation Value (HSV values),
+    probably the most useful one
+  - HMin - Minimum hue to modify
+  - HMax - Maximum hue to modify
+  - SMin, SMax, VMin, VMax - As above but for saturation and brightness
+  - HFact, SFact, VFact - Factor to scale values by
+  - HConst, SConst, VConst - Constant to add to values
+
+You can experiment in your [Image editor](creating_skins#tools) to get
+the "right" values for the filters or try the [Color Scheme
+Designer](http://colorschemedesigner.com/) online.

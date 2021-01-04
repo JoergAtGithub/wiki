@@ -20,7 +20,7 @@ Developers
 [[Coding Guidelines]]  
 [[Using Git]]  
 [[Developer Guide]]  
-[[Creating Skins|creating-skins]]  
+[Creating Skins](Creating-Skins)  
 
 Mapping Creators
 -----

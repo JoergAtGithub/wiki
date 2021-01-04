@@ -111,12 +111,10 @@ this wiki, please fix it.
 
 ## Skin Documentation
 
-  - [Creating Skins](Creating%20Skins)
+  - [Creating Skins](Creating-Skins) - the most up to date guide
   - [Skin Guidelines](Skin%20Guidelines)
-  - [Skin Colour Scheme
-    Architecture](Skin%20Colour%20Scheme%20Architecture)
-  - [Skin Color Schemes Tips and
-    Tool](Skin%20Color%20Schemes%20Tips%20and%20Tool)
+  - [Skin Color Scheme Architecture](Skin%20Color%20Scheme%20Architecture)
+  - [Skin Color Schemes Tips and Tool](Skin%20Color%20Schemes%20Tips%20and%20Tool)
   - [On Icons and Images](On%20Icons%20and%20Images)
   - [Skin System Changelog](Skin%20System%20Changelog)
   - [Skins forum](http://mixxx.org/forums/viewforum.php?f=8): search for

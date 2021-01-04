@@ -107,9 +107,9 @@ General:
 For CMake builds (2.3 and main)
 
   - Install cmake4eclipse via the Eclipse Marketplace
-  - Help -\> Eclipse Marketplace...
-  - search for cmake4eclipse and press Install.
-  - Follow the install Wizzard and restart Eclipse
+    - Help -\> Eclipse Marketplace...
+    - search for cmake4eclipse and press Install.
+  - Follow the install wizard and restart Eclipse
   - File -\> New -\> Project... -\> C++ Project (\!**Not** File -\> New
     -\> C/C++ Project)
     - Set Project Name to `mixxx`

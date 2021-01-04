@@ -4,7 +4,6 @@ Mixxx is a free and open-source DJ software.
 
 [[Wiki Home|Home]]  
 [Website](https://mixxx.org)  
-[[GSoC 2020|GSOC#2020]]
 
 Users
 -----
@@ -21,6 +20,8 @@ Developers
 [[Coding Guidelines]]  
 [[Using Git]]  
 [[Developer Guide]]  
+
+[[Creating Skins]]
 
 Mapping Creators
 -----

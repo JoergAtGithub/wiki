@@ -289,7 +289,7 @@ skin is loaded.
 Attributes can also be used to persist settings specific to the skin itself.
 Config keys in the form `[GroupFoo],control_bar` (see [control
 naming](https://github.com/mixxxdj/mixxx/wiki/developer_guide_control#control-naming))
-can be set or unset in conjunction with [`<Connection>`](#\<connection\>)
+can be set or unset in conjunction with [`<Connection>`](#connection)
  in order to show, hide or highlight widgets particular to the skin.
 
 

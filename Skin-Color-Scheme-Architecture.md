@@ -36,20 +36,22 @@ Mixxx 2.3)**
 
 ## Technical Stuff
 
-There are two techniques of color changing implemented. A color filtering, for
-changing pixmaps and a color schema style sheet.
+There are two techniques of color changing implemented:
+* color filtering, for changing the colors of pixmaps
+* a color schema style sheet
 
 The color filtering architecture is implemented as a chain of plugins
 which are queried by the user interface code as the skin is initialised.
 The filter chain is configured by a series of elements in the skin's
 [skin.xml](creating_skins#skinxml_in-depth_reviews) file.
 
-So the core of the structure is laid out in imgsource.h. Most filters
+So the core of the structure is laid out in [src/skin/imgsource.h](https://github.com/mixxxdj/mixxx/blob/main/src/skin/imgsource.h).
+Most filters
 will be implemented as an ImgColorProcessor. Some examples are in
-imgcolor.cpp. To implement a new ImgColorProcessor you need to create a
+[src/skin/imgcolor.cpp](https://github.com/mixxxdj/mixxx/blob/main/src/skin/imgcolor.cpp). To implement a new ImgColorProcessor you need to create a
 new class which implements the function doColorCorrection and performs
 some color mapping. The hooks for using the filters in a skin.xml file
-are in mixxxview.cpp.
+are in [src/skin/colorschemeparser.cpp](https://github.com/mixxxdj/mixxx/blob/main/src/skin/colorschemeparser.cpp).
 
 The capability is also there to implement non-color based filters by extending
 ImgProcessor directly, although it's important to note that the filter is
@@ -89,156 +91,62 @@ added to the skin.xml. See [Creating
 Skins](creating_skins#skinxml_in-depth_reviews) for reference.
 
 General structure of the color scheme section in skin.xml.
-
-| syntax                                                                                                                                                                                                                                              | Info                                                                                                                                                                                                                                                                                                                                                                                |
-| --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `<Schemes>
-  <Scheme>
-   <Name>Name Scheme #1</Name>
-   <Filters>
-    <Add>
-     <Amount>Value</Amount>
-    </Add>
-    ... Some more filters ...
-   </Filters>
-   <Style src="skin:dark.qss"/>
-  </Scheme>
-  ... Some more schemes ...
-</Schemes>
-` | `General color scheme opening tag so Mixxx "know"
-Opening tag for scheme #1
-Naming tag for scheme #1, name will be displayed in Mixxx preferences
-Opening tag for filters
-
-Filter Value
-
-optional: add even more filters
-Closing tag for filters
-Set a stylesheed for the color schema
-Closing tag for scheme #1
-optional: add even more schemes 
-General color scheme closing tag` |
-
-### Scheme in-depth
-
-In this section all elements and the values of their keys are explained
-on the example of **Outline**\`s skin.xml. So open up the skin.xml with
-your favorite [text editor](creating_skins#tools) and get started
-
-|                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |  |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
-| ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |  | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `<Schemes>
-    <Scheme>
-    <Name>11pm (Dark Mixxx)</Name>
-    <Filters>
-        <Invert/>
-        <HueInv/>
-        <Add>
-            <Amount>50</Amount>
-        </Add>
-        <ScaleWhite>
-            <Amount>1.5</Amount>
-        </ScaleWhite>
-        <Add>
-            <Amount>-50</Amount>
-        </Add>
-    </Filters>
+``` xml
+<Schemes>     // General color scheme opening tag to tell Mixxx the skin supports color schemes
+    <Scheme>  // Opening tag for Scheme#1 (default scheme)
+        <Name>11pm (Dark Mixxx)</Name> // Scheme name
+        <Filters>     // Opening tag for color filters
+            <Invert/> // Invert filter, inverts the skins original images (i.e. white to black)
+            <HueInv/> // Hue Invert Filter, sets hue to that of the inverted images
+            <Add>     // Look at the "Filters" section for the specific filters and their arguments
+                <Amount>50</Amount> // Filter value
+            </Add>
+            <ScaleWhite>
+                <Amount>1.5</Amount>
+            </ScaleWhite>
+            <Add>
+                <Amount>-50</Amount>
+            </Add>
+        </Filters>    // Closing tag for color filters
+    </Scheme>
+    
+    <Scheme> // Another scheme
+        <Name>5pm (Classic Mixxx)</Name>
+        <Filters/>    // blank filter,the skins original images too be shown
     </Scheme>
     
     <Scheme>
-    <Name>5pm (Classic Mixxx)</Name>
-    <Filters/>
+        <Name>8pm (Summer Sunset Mixxx)</Name>
+        <Filters>
+            <HSVTweak>
+                <SMin>100</SMin>
+                <VFact>0.7</VFact>
+                <HFact>0.3</HFact>
+            </HSVTweak>
+            <HSVTweak>
+                <SMax>50</SMax>
+                <HFact>0</HFact>
+                <HConst>50</HConst>
+                <SConst>120</SConst>
+                <VConst>-10</VConst>
+            </HSVTweak>
+        </Filters>
     </Scheme>
     
     <Scheme>
-    <Name>8pm (Summer Sunset Mixxx)</Name>
-    <Filters>
-        <HSVTweak>
-            <SMin>100</SMin>
-            <VFact>0.7</VFact>
-            <HFact>0.3</HFact>
-        </HSVTweak>
-        <HSVTweak>
-            <SMax>50</SMax>
-            <HFact>0</HFact>
-            <HConst>50</HConst>
-            <SConst>120</SConst>
-            <VConst>-10</VConst>
-        </HSVTweak>
-    </Filters>
+        <Name>3am (Still Awake Mixxx)</Name>
+        <Filters>
+            <Invert/>
+            <Add>
+                <Amount>50</Amount>
+            </Add>
+            <ScaleWhite>
+                <Amount>1.5</Amount>
+            </ScaleWhite>
+            <Add>
+                <Amount>-50</Amount>
+            </Add>
+        </Filters>
     </Scheme>
-    
-    <Scheme>
-    <Name>3am (Still Awake Mixxx)</Name>
-    <Filters>
-        <Invert/>
-        <Add>
-            <Amount>50</Amount>
-        </Add>
-        <ScaleWhite>
-            <Amount>1.5</Amount>
-        </ScaleWhite>
-        <Add>
-            <Amount>-50</Amount>
-        </Add>
-    </Filters>
-    </Scheme>
-</Schemes>
-` |  | `General color scheme opening tag so Mixxx "know" the skin supports color schemes
-Opening tag for default scheme (scheme #1) 
-Scheme Name "11pm (Dark Mixxx)" to be displayed in Mixxx preferences
-Opening tag for the schemes filters
-Invert filter, inverts the skins original images (i.e. white to black)
-Hue Invert Filter, sets hue to that of the inverted images
-
-
-
-
-Look at the "Filters" section for the specific filters and their arguments
-
-
-
-
-Closing tag for the schemes filters
-Closing tag for default scheme (scheme #1)
-
-Opening tag for scheme #2
-Scheme Name "5pm (Classic Mixxx)" to be displayed in Mixxx preferences
-blank filter,the skins original images too be shown
-Closing tag for scheme #2
-
-Opening tag for scheme #3) 
-Scheme Name "8pm (Summer Sunset Mixxx" to be displayed in Mixxx preferences
-Opening tag for the schemes filters
-
-
-
-
-
-
-Look at the "Filters" section for the specific filters and their arguments
-
-
-
-
-
-Closing tag for the schemes filters
-Closing tag for scheme #3
-
-Opening tag for scheme #4 
-Scheme Name "3am (Still Awake Mixxx)" to be displayed in Mixxx preferences
-Opening tag for the schemes filters
-Invert filter, inverts the skins original images
-
-
-
-
-Look at the "Filters" section for the specific filters and their arguments
-
-
-
-
-Closing tag for the schemes filters
-Closing tag for scheme #4
-General color scheme closing tag
-` |
+</Schemes>      // general closing tag for color schemes
+```

@@ -77,8 +77,8 @@ The various elements of the skin are marked and explained below.
   - Manifest - specifies information about the skin (title, artist,
     description, version) and allows you to set Mixxx controls when the
     skin is loaded (e.g. enable 4-deck mode).
-  - Skin Colour Scheme - allows the creation of different [colour
-    schemes](http://mixxx.org/wiki/doku.php/skin_colour_scheme_architecture)
+  - Skin Color Scheme - allows the creation of different [color
+    schemes](https://github.com/mixxxdj/mixxx/wiki/Skin-Color-Scheme-Architecture)
     of a skin
   - Library display - Widget holds all your music information,
     playlists, search bar etc.
@@ -322,8 +322,8 @@ files to your skin directory, e.g. to work around platform-dependent
 quirks in styling: `src-windows="..."`, `src-mac="..."` `and
 src-linux="..."`
 
-**Note:** You can add style sheets to [colour
-schemes](http://mixxx.org/wiki/doku.php/skin_colour_scheme_architecture),
+**Note:** You can add style sheets to [color
+schemes](https://github.com/mixxxdj/mixxx/wiki/Skin-Color-Scheme-Architecture),
 as well. They are added to the style sheets described above and will
 override attributes in case of conflicts.
 
@@ -391,8 +391,8 @@ from which Qt widgets. If not listed, the widget inherits from
 ### Using Variables
 
 You can use variables throughout the skin templates for various
-purposes, as well as in [colour
-schemes](http://mixxx.org/wiki/doku.php/skin_colour_scheme_architecture),
+purposes, as well as in [color
+schemes](https://github.com/mixxxdj/mixxx/wiki/Skin-Color-Scheme-Architecture),
 to set channel numbers, effect numbers, `<ObjectName>`s or to define
 colors for widgets, just to name a few.  
 
@@ -2666,7 +2666,7 @@ the selected skin, show a preview screenshots for a set of color
 variations to choose from in Preferences -\> Interface -\> Color Scheme.
 Save as `skin_preview_$SchemeName.png` ( replace *$SchemeName* with the
 actual value of the respective
-[\<Name\>](skin_colour_scheme_architecture#scheme_format) key) in the
+[\<Name\>](https://github.com/mixxxdj/mixxx/wiki/Skin-Color-Scheme-Architecture#scheme-format) key) in the
 root folder of the corresponding skin.
 
 ### Launch Image
@@ -2911,8 +2911,8 @@ performed action (Y=lfoDelay or lfoDepth or lfoPeriod)
 
 # Useful Links
 
-  - [Skin Colour Scheme
-    Architecture](Skin%20Colour%20Scheme%20Architecture) - Explains how
+  - [Skin Color Scheme
+    Architecture](https://github.com/mixxxdj/mixxx/wiki/Skin-Color-Scheme-Architecture#scheme-format) - Explains how
     color schemes work in Mixxx 1.6.0+
   - [Mixxx Skinning Guidelines](Skin%20Guidelines)
   - [Skin Color Schemes Tips and

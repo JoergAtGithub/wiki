@@ -105,7 +105,7 @@ The various elements of the skin are marked and explained below.
   - Pitch rate information - shows how much the song is speed up /
     slowed down (in percent)
 
-[4.Slider](#sectionslider)
+[4.Slider](#section-slider)
 
   - Channel Volume - controls the volume of the selected channel
   - Crossfader - fade between the channels
@@ -113,7 +113,7 @@ The various elements of the skin are marked and explained below.
   - \[InternalClock\], bpm - tempo of the internal master sync clock
     (also viewable as plain text)
 
-[5.Buttons](#sectionbuttons)
+[5.Buttons](#section-buttons)
 
   - Play - plays / pauses a song
   - Cue - places a Cue-point at the current position
@@ -133,7 +133,7 @@ The various elements of the skin are marked and explained below.
   - Repeat - repeats track if you go past the end or before the start
   - Frequency Kill - cuts the high, mid and low frequencies
 
-[6.Knobs (Rotary fader)](#sectionknobs-rotaryfader-)
+[6.Knobs (Rotary fader)](#section-knobs-rotaryfader-)
 
   - Master Volume - controls the volume and of the master output
   - Balance - controls the balance (stereo distribution) of the master

@@ -72,7 +72,7 @@ The various elements of the skin are marked and explained below.
 
 [[/media/skinning/creating_skins/mixxx1.9_gui_explained_outline.png|]]
 
-[1.General](#sectiongeneral-)
+[1.General](#general)
 
   - Manifest - specifies information about the skin (title, artist,
     description, version) and allows you to set Mixxx controls when the
@@ -83,7 +83,7 @@ The various elements of the skin are marked and explained below.
   - Library display - Widget holds all your music information,
     playlists, search bar etc.
 
-[2.Visual](#sectionvisual-)
+[2.Visual](#visual)
 
   - Waveform - shows the loaded tracks waveforms near the playback
     position
@@ -92,7 +92,7 @@ The various elements of the skin are marked and explained below.
     master
   - Peak indicator - shows if a songs / master volume is too high
 
-[3.Text](#sectiontext)
+[3.Text](#text)
 
   - Label - displays a text label
   - Clock - displays the current time
@@ -249,7 +249,7 @@ with examples.
 Open up the skin.xml in the skin folder you duplicated earlier with your
 favorite [text editor](#tools) and get started :-)
 
-## Section: General
+## General
 
 ### Skin Manifest
 
@@ -711,7 +711,7 @@ library with the above elements:
 </WidgetGroup>
 ```
 
-## Section: Visual
+## Visual
 
 ### Waveform
 
@@ -977,7 +977,7 @@ art) when a track is playing.
 </StatusLight>
 ```
 
-## Section: Text
+## Text
 
 ### Label
 

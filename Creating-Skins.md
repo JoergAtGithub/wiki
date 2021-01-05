@@ -94,11 +94,12 @@ The various elements of the skin are marked and explained below.
 
 [3.Text](#sectiontext)
 
-  - Label (not shown) - displays a text label
-  - Clock (not shown) - displays the current time
+  - Label - displays a text label
+  - Clock - displays the current time
   - Track information - shows some ID3 information of the song ( Name,
     Artist )
   - BPM Information - shows the tempo of the song
+  - Musical key - shows the key of the song
   - Playing position / Time remaining - shows current playback position
     or remaining time (click to switch)
   - Pitch rate information - shows how much the song is speed up /
@@ -980,131 +981,89 @@ art) when a track is playing.
 
 ### Label
 
-|                                                                               |  |                                                                                                             |
-| ----------------------------------------------------------------------------- |  | ----------------------------------------------------------------------------------------------------------- |
-| `<Label>
+A simple text label widget:
+```xml
+<Label>
   <Pos>X,Y</Pos>
   <Size>W,H</Size>
   <Text>Hello</Text>
- </Label>
-` |  | `
-Displays a text label.
-Defines the element position
-Defines the element size
-The text to be displayed
-
-
-` |
+</Label>
+```
 
 ### Clock
 
-_New in Mixxx 1.10_
-
-|                                                                                                                                                        |  |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
-| ------------------------------------------------------------------------------------------------------------------------------------------------------ |  | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `<Time>
+A widget to display the current time:
+```xml
+<Time>
   <TooltipId>time</TooltipId>
   <Pos>X,Y</Pos>
   <Size>W,H</Size>
-  <ShowSeconds>false</ShowSeconds>
-  <ClockFormat>24</ClockFormat>
+  <ShowSeconds>false</ShowSeconds> <!-- false (default) or true -->
+  
+  <ClockFormat>24</ClockFormat> <!-- DEPRECATED (defaults to locale) -->
+  
+  <!-- Overrides ClockFormat. Use QTime::toString expressions 
+       see: https://doc.qt.io/qt-5/qtime.html#toString -->
+  <CustomFormat>...</CustomFormat>
 </Time>
-` |  | `
-This widget displays the current time.
-Tooltip to be displayed on mouseover
-Defines the element position
-Defines the element size
-Determines, whether seconds are shown ("true") or not ("false"). Default is "false".
-Deprecated as of v2.00. We display the time with a format appropriate to the chosen locale instead. Has determined, whether the time is shown in 24 hour format or 12 hour format.
-"24" and "24hrs" set the format to 24 hour format. "12", "12hrs" and "12ap" set the format to
-12 hour format (e.g. 1:45 am). "12AP" sets it to 12 hour format with capitalized AM/PM
-(e.g. 1:45 AM). Default is "12AP". <ShowSeconds> determines, whether seconds are shown or not. Default was false.
-You could set a custom format with <CustomFormat> instead of <ClockFormat>, which accepts the same expressions as QTime::toString (https://doc.qt.io/qt-4.8/qtime.html#toString)
-` |
+```
 
-### Track information
+### TrackProperty
 
-_New in Mixxx 1.9_
+Used to display track information:
 
-You can replace the whole \<Text\> node with
-[TrackProperty](/creating_skins#trackproperty)\`s to display more
-advanced track informations.
-
-|                                                                                                           |  |                                               |
-| --------------------------------------------------------------------------------------------------------- |  | --------------------------------------------- |
-| `<Text>
-  <TooltipId>text</TooltipId>
+```xml
+<TrackProperty>
+  <TooltipId>track_title</TooltipId>
+  <SizePolicy>me,min</SizePolicy>
+  <Property>title</Property>
   <Channel>X</Channel>
-  <Pos>X,Y</Pos>
-  <Size>W,H</Size>
-</Text>` |  | `
+  <Elide>right</Elide>
+</TrackProperty>
+```
 
-Defines connected Channel (X = 1 or 2)
+The following are some options that can be used with the `<Property>` tag:
+- artist            
+- title             
+- album             
+- albumArtist       
+- genre             
+- composer          
+- grouping          
+- year              
+- track_number      
+- track_total       
+- times_played      
+- comment           
+- durationFormatted 
+- info              
 
+### BPM display
 
-` |
+Used to display the BPM of a track:
 
-### BPM number display
-
-Changed in Mixxx 2.00
-
-Use `visual_bpm` key instead `bpm`
-
-|                                                                                                                                                                                                                                              |  |                                                                                                                  |
-| -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |  | ---------------------------------------------------------------------------------------------------------------- |
-| `<NumberBpm>
+```xml
+<NumberBpm>
   <TooltipId>visual_bpm</TooltipId>
   <Channel>X</Channel>
-  <Pos>X,Y</Pos>
-  <Size>W,H</Size>
-  <NumberOfDigits>6</NumberOfDigits>
   <Connection>
-  <ConfigKey>[ChannelX],visual_bpm</ConfigKey>
+    <ConfigKey>[ChannelX],visual_bpm</ConfigKey>
   </Connection>
-</NumberBpm>` |  | `
+</NumberBpm>
+```
 
+### Musical key display
+Displays the tracks key (in the notation set in Mixxx's preferences):
 
-Defines connected Channel (X = 1 .. 4)
-
-
-
-
-?
-
-Must be same value as under <Channel> above, (X = 1 or 2)
-
-
-
-` |
-
-### Effective musical key display
-
-_New in Mixxx 2.00_
-
-|                                                                                                                                                                                                          |  |                                                                 |
-| -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |  | --------------------------------------------------------------- |
-| `<Key>
+```xml
+<Key>
   <TooltipId>visual_key</TooltipId>
-  <Pos>X,Y</Pos>
-  <Size>W,H</Size>
-  <DisplayCents>true</DisplayCents>
+  <DisplayCents>true</DisplayCents> <!-- false (default) or true) -->
   <Connection>
-  <ConfigKey>[ChannelX],visual_key</ConfigKey>
+    <ConfigKey>[ChannelX],visual_key</ConfigKey>
   </Connection>
-</Key>` |  | `
-
-
-
-
-
-
-Display the distance to the next key
-
-(X = 1 .. 4)
-
-
-
-` |
+</Key>
+```
 
 ### Playing position / Time remaining
 

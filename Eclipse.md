@@ -278,7 +278,7 @@ Environment. Here you must add variable `DISPLAY` and set its value to
 
 This was tested without the SCons plugin installed.
 
-#### Eclipse indexer
+#### Eclipse indexer (Scons only)
 
 To enable the full power of Eclipse indexer Eclipse needs to know all
 include files and symbols. Eclipse is able to discover path and symbols

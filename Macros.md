@@ -21,6 +21,7 @@ show_macros not yet implemented because GUI is very ad-hoc
 | macro\_X\_enable   | binary            | Whether the Macro will automatically be started when the track is loaded. Automatically set to true on play. Can be toggled. |
 | macro\_X\_loop     | binary            | Whether the Macro should loop infinitely.                                                            |
 | macro\_X\_activate | binary            | If playing, seek to beginning and start over. If recorded, start playing. If unset, start recording.                               |
+| macro\_X\_toggle   | binary            | Toggle playback or recording, whichever fits the current state.                              |
 | macro\_X\_clear    | binary            | If status is recorded(3), remove all actions. Keeps the label unless it was auto-generated.                             |
 
 

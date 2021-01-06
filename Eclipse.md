@@ -135,6 +135,7 @@ For CMake builds (2.3 and main)
     - Now all Indexer based features should be available 
   - Known issues: 
     - False positive Semantic errors for connect() calls and others 
+    - https://bugs.eclipse.org/bugs/show_bug.cgi?id=570130
 
 For Scons builds (2.2):
 

@@ -98,6 +98,7 @@ General:
   - Expand C/C++ -\> Indexer
     - Skip files larger than 80 MB
     - Skip include files larger than 160 MB
+    - Uncheck all indexer options 
   - Expand C/C++ -\> Build -\> console
     - Limit console output = 10000
     - Verify Project Explorer is visible. 
@@ -131,7 +132,9 @@ For CMake builds (2.3 and main)
     - Right click on the new project in Project Explorer -\> Clean Project
     - Right click on the new project in Project Explorer -\> Build Project
   - Wait until the indexer has also finished 
-    - Verify that no lines are marked red .. 
+    - Now all Indexer based features should be available 
+  - Known issues: 
+    - False positive Semantic errors for connect() calls and others 
 
 For Scons builds (2.2):
 

@@ -117,17 +117,21 @@ For CMake builds (2.3 and main)
     - Browse to your Mixxx source folder e.g. `~/eclipse-workspace/mixxx`.
     - Project Type: CMake driven -\> Empty Project
     - click Finish
-  - Right click on the new project in Project Explorer -\> Properties
-    -\> C/C++ Build
+  - Right click on the new project in Project Explorer -\> Properties -\> C/C++ Build
     - Switch to Behavior tab.
     - Check "Enable parallel builds" and select "Use optimal jobs"
-
-Now Mixxx should build within Eclipse with "Build Project" (Hammer
-icon).
-
-  - Right click on the new project in Project Explorer -\> Clean Project
-  - Right click on the new project in Project Explorer -\> Build Project
-
+    - Click "Apply and Close"
+  - Right click on the new project in Project Explorer -\> Properties -\> C/C++ General -\> Preprocessor...
+    - Switch to Providers tab.
+    - Verify that **only** these providers are checked 
+      - CMAKE_EXPORT_COMPILE_COMMANDS Parser     
+      - CMAKE_EXPORT_COMPILE_COMMANDS Compiler Build-ins
+  - Now Mixxx should build within Eclipse with "Build Project" (Hammer icon).
+    - Alternative:
+    - Right click on the new project in Project Explorer -\> Clean Project
+    - Right click on the new project in Project Explorer -\> Build Project
+  - Wait until the indexer has also finished 
+    - Verify that no lines are marked red .. 
 
 For Scons builds (2.2):
 

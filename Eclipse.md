@@ -27,7 +27,7 @@ command line, as outlined here:
 min on the fist time.
 
 #### Using CMake (experimental)
-To save during comiling time after switching branches make sure ccache
+To speed up compiling after switching branches make sure `ccache`
 is installed.
 
 ``` bash

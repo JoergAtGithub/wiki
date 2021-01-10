@@ -88,7 +88,7 @@ sudo update-alternatives --config java
 
 For Eclipse 2020-12
 
-General:
+### General:
 
   - Start Eclipse.
   - Window -\> Preferences
@@ -105,7 +105,7 @@ General:
       - If not go to Window -\> Show View -\> Project Explorer
       - Close Welcome Window
 
-For CMake builds (2.3 and main)
+### For CMake builds (2.3 and main):
 
   - Install cmake4eclipse via the Eclipse Marketplace
     - Help -\> Eclipse Marketplace...
@@ -118,41 +118,40 @@ For CMake builds (2.3 and main)
     - Browse to your Mixxx source folder e.g. `~/eclipse-workspace/mixxx`.
     - Project Type: CMake driven -\> Empty Project
     - click Finish
-  - Right click on the new project in Project Explorer -\> Properties -\> C/C++ Build
+  - Project -\> Properties -\> C/C++ Build
     - Switch to Behavior tab.
     - Check "Enable parallel builds" and select "Use optimal jobs"
     - Click "Apply and Close"
-  - Right click on the new project in Project Explorer -\> Properties -\> C/C++ General -\> Preprocessor...
+  - Project -\> Properties -\> C/C++ General -\> Preprocessor...
     - Switch to Providers tab.
     - Verify that **only** these providers are checked 
       - CMAKE_EXPORT_COMPILE_COMMANDS Parser     
       - CMAKE_EXPORT_COMPILE_COMMANDS Compiler Build-ins
   - Now Mixxx should build within Eclipse with "Build Project" (Hammer icon).
     - Alternative:
-    - Right click on the new project in Project Explorer -\> Clean Project
-    - Right click on the new project in Project Explorer -\> Build Project
+    - Project -\> Clean Project
+    - Project -\> Build Project
   - Wait until the indexer has also finished 
     - Now all Indexer based features should be available 
   - Known issues: 
     - False positive Semantic errors for connect() calls and others 
     - https://bugs.eclipse.org/bugs/show_bug.cgi?id=570130
 
-For Scons builds (2.2):
+### For Scons builds (2.2):
 
-  - File -\> New -\> Makefile Project with Existing Code.
+  - File -\> New -\> Makefile Project with Existing Code
     - Set Project Name to `mixxx`.
     - Browse to your Mixxx folder e.g. `~/eclipse-workspace/mixxx`.
     - Check only C++ language (uncheck C).
     - Select Toolchain for indexer setting = `Linux GCC` (this would be
       for a Linux host, substitute your OS as applicable).
     - Finish.
-  - Right click on the new project in Project Explorer -\> Properties
-    -\> C/C++ Build
+  - Project  -\> Properties -\> C/C++ Build
     - Uncheck "Use default build command".
     - Build command
       * Linux `scons faad=1 test=1`
       * Mac `scons stdlib=libc++ hss1394=0 mad=0 coreaudio=1 test=1`
-  - Switch to Behavior tab.
+  - Switch to Behavior tab
     - Build: remove ''all''.
     - Clean: remove ''clean'' and set instead ''-c''.
     - Check "Enable parallel builds".
@@ -257,7 +256,7 @@ QTDIR | /\<path to Qt install directory\>/%VERSION%\#eg /usr/local/Cellar/qt5/5.
 
 For git integration (in case of using a git clone of mixxx):
 
-  - Right click on the project in Project Explorer -\> Team -\> Share
+  - Project -\> Team -\> Share
     Project.
   - Select git.
   - Next -\> Finish.
@@ -318,7 +317,7 @@ After changing these settings, the index needs to be rebuilt. Eclipse
 will usually detect that changes have been made to Symbols settings and
 will rebuild the index on clicking Apply and Close. To do it manually:
 
-Right-click in Project Explorer Pane -\> Index -\> Rebuild
+Project -\> Index -\> Rebuild
 
 Troubleshooting:
 
@@ -356,7 +355,7 @@ After changing these settings, the index needs to be rebuilt. Eclipse
 will usually detect that changes have been made and will rebuild the
 index on clicking Apply and Close. To do it manually:
 
-Right-click in Project Explorer Pane -\> Index -\> Rebuild
+Project -\> Index -\> Rebuild
 
 Troubleshooting:
 

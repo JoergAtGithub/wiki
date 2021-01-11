@@ -9,7 +9,7 @@ The default location on Linux would be
     ~/eclipse-workspace/mixxx
 
 This guide assumes you have already setup you personal GitHub repository
-as described [here](using_git). From you terminal or git shell
+as described in [Using-Git](Using-git). From you terminal or git shell
 (Windows):
 
 ``` bash
@@ -20,11 +20,11 @@ git remote add upstream https://github.com/mixxxdj/mixxx.git
 ```
 
 Now have to setup the Mixxx source and manage to compile it via the
-command line, as outlined here:
-[compiling\_on\_linux](compiling_on_linux) or
-[compiling\_on\_os\_x](compiling_on_os_x) or
-[compiling\_on\_windows](compiling_on_windows) This may take up to 60
-min on the fist time.
+command line, as outlined here:  
+[Compiling-On-Linux](https://github.com/mixxxdj/mixxx/wiki/Compiling-On-Linux) or  
+[Compiling-On-Windows](https://github.com/mixxxdj/mixxx/wiki/Compiling-On-Windows) or  
+[Compiling-on-macOS](https://github.com/mixxxdj/mixxx/wiki/Compiling-On-macOS)  
+Depending on your computer this may take up to 60 min on the fist time.
 
 #### Using CMake (Mixxx 2.3)
 To speed up compiling after switching branches make sure `ccache`

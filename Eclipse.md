@@ -26,18 +26,20 @@ command line, as outlined here:
 [compiling\_on\_windows](compiling_on_windows) This may take up to 60
 min on the fist time.
 
-#### Using CMake (experimental)
+#### Using CMake (Mixxx 2.3)
 To speed up compiling after switching branches make sure `ccache`
 is installed.
 
 ``` bash
-mkdir build/Debug
-cd build/Debug
+mkdir build/Debug #
+cd build/Debug # 'Debug' is one of the default Eclipse build configurations
+# DCMAKE_EXPORT_COMPILE_COMMANDS allows Eclipse to read includes from
+# /build/Debug/compile_commands.json later on
 cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_EXPORT_COMPILE_COMMANDS:BOOL=ON ../..
 cmake --build . -j4 # replace 4 with the number of CPU cores that can be utilized
 ```
 
-#### Using Scons (Mixx 2.2)
+#### Using Scons (Mixxx 2.2)
 ``` bash
 scons -j4 # replace 4 with the number of CPU cores that can be utilized
 ```
@@ -119,14 +121,22 @@ For Eclipse 2020-12
     - Project Type: CMake driven -\> Empty Project
     - click Finish
   - Project -\> Properties -\> C/C++ Build
-    - Switch to Behavior tab.
+    - Switch to Behavior tab
     - Check "Enable parallel builds" and select "Use optimal jobs"
     - Click "Apply and Close"
-  - Project -\> Properties -\> C/C++ General -\> Preprocessor...
+  - Project -\> Properties -\> C/C++ Build -\> Cmake4eclipse
+    - Switch to General tab
+    - Set the Build Output Location to `build/${ConfigName}`
+    - Click "Apply"
+  - Project -\> Properties -\> C/C++ General -\> Preprocessor...  
+    _Note_: it may be possible this page is not visble (bug probably).  
+    It is not strictly necesary, though: the important flag when configuring cmake is  
+    `-DCMAKE_EXPORT_COMPILE_COMMANDS:BOOL=ON`
     - Switch to Providers tab.
     - Verify that **only** these providers are checked 
       - CMAKE_EXPORT_COMPILE_COMMANDS Parser     
       - CMAKE_EXPORT_COMPILE_COMMANDS Compiler Build-ins
+    - Click "Apply"
   - Now Mixxx should build within Eclipse with "Build Project" (Hammer icon).
     - Alternative:
     - Project -\> Clean Project

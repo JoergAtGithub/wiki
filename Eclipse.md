@@ -46,8 +46,8 @@ scons -j4 # replace 4 with the number of CPU cores that can be utilized
 
 #### Test your build
 ``` bash
-./mixxx
-./mixxx_test
+./mixxx # run Mixxx
+./mixxx_test # run the Mixxx tests
 ```
 
 ## Install Eclipse (packages or source)
@@ -113,7 +113,8 @@ For Eclipse 2020-12
     - Help -\> Eclipse Marketplace...
     - search for cmake4eclipse and press Install.
   - Follow the install wizard and restart Eclipse
-  - File -\> New -\> Project... -\> C/C++ -\> C++ Project (\!**Not** File -\> New
+  - File -\> New -\> Project... -\> C/C++ -\> C++ Project  
+    (\!**Not** File -\> New
     -\> C/C++ Project)
     - Set Project Name to `mixxx`
     - Uncheck "Use default location"

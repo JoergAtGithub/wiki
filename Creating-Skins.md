@@ -230,7 +230,7 @@ Further reads:
   - Free Code editors - Cross-platform ([Visual Code
     Studio](https://code.visualstudio.com/)), ([Atom](https://atom.io/))
   - Free Images editors - Online
-    ([Phoenix](http://aviary.com/tools/phoenix),
+    ([Photopea](https://www.photopea.com/),
     [Pixlr](http://www.pixlr.com/)), Windows
     ([Paint.net](http://www.getpaint.net/)) macOS
     ([Pixelmator](http://www.pixelmator.com/) -trial-), Linux (Gimp,

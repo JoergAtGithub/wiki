@@ -12,7 +12,7 @@ Translating helps to reach a wider audience, provides a better user experience, 
   * You should be familiar with human language constructs: nouns, verbs, articles, etc., different types of each, and be able to identify variations of their contexts in English.
   * Experience in Djìng and using audio software in general -- you'll benefit from it because you already know the typical concepts and terms.
 
-To keep your translations consistent with those of other translators, our [[https://www.transifex.com/projects/p/mixxxdj/glossary/l/en/|glossary]] helps you to get familiar with the core features of Mixxx. It contains a collection of terms with definitions, uses, and associated notes.
+To keep your translations consistent with those of other translators, our [glossary](https://www.transifex.com/projects/p/mixxxdj/glossary/l/en/) helps you to get familiar with the core features of Mixxx. It contains a collection of terms with definitions, uses, and associated notes.
 
 ### About Locales
 Locales customize programs to languages and regional dialects. Often locales correspond to countries, as is the case with Portuguese (Portugal) and Portuguese (Brazil). The default locale of Mixxx is English (United States) (en_US).
@@ -34,7 +34,7 @@ https://docs.transifex.com/getting-started/translators
 ### Ok, I have my Transifex account and I am ready to get busy. How to translate then?
 
   * [Log in](https://www.transifex.com/signin/?next=/home/)
-  * Go to the [[https://www.transifex.com/mixxx-dj-software/public/|Mixxx Translation Project Dashboard]]
+  * Go to the [Mixxx Translation Project Dashboard](https://www.transifex.com/mixxx-dj-software/public/)
   * Select from a available a projects (application, manual, website etc.)
   * Hover over a language and requesting to join the project's team.
   * Click **Join Team**, select a language and accept the CLA, finish by clicking **Join**
@@ -45,15 +45,15 @@ https://docs.transifex.com/getting-started/translators
   * Click the **Save** button to save your translated string.
   * Congrats, you just translated your first string in Mixxx. Easy.
 
-As a translator, you will be spending most of your time in the translation editor. It's the place where you can see all the text (strings) that need to be translated, submit translations, and collaborate with others. Take a look at Transifex' [[https://docs.transifex.com/translation/translating-with-the-web-editor|Introduction to the Web Editor]] to get acquainted with the basics.
+As a translator, you will be spending most of your time in the translation editor. It's the place where you can see all the text (strings) that need to be translated, submit translations, and collaborate with others. Take a look at Transifex' [Introduction to the Web Editor](https://docs.transifex.com/translation/translating-with-the-web-editor) to get acquainted with the basics.
 
-Should you run into any questions about using Transifex, check out their [[https://docs.transifex.com/|support portal]].
+Should you run into any questions about using Transifex, check out their [support portal](https://docs.transifex.com/).
 
 ### How can i be notified for languages I translate?
 
 You can get notified whenever the translation of a resource is modified. When watching Mixxx or one of its languages, you will receive email notifications, whenever the translation sources are updated and there is translation work to be done.
 
-You can find the links to watch Mixxx or a specific language at the bottom of the [[https://www.transifex.com/projects/p/mixxxdj/|main project]] and language page respectively. You can also subscribe to the [[https://www.transifex.com/projects/p/mixxxdj/feed/|Mixxx translation RSS-feed]]
+You can find the links to watch Mixxx or a specific language at the bottom of the [main project](https://www.transifex.com/projects/p/mixxxdj/) and language page respectively. You can also subscribe to the [Mixxx translation RSS-feed](https://www.transifex.com/projects/p/mixxxdj/feed/)
 
 ## Resources
 
@@ -61,32 +61,34 @@ You can find the links to watch Mixxx or a specific language at the bottom of th
 
 A glossary makes the translation process much easier for translators as terms have agreed-upon definitions and translations, shortening the amount of time required to translate Mixxx.
 
-  * [[https://www.transifex.com/projects/p/mixxxdj/glossary/l/en/|Mixxx glossary]]  - The Mixxx glossary in english, translatable to your own language.
-  * [[https://www.microsoft.com/Language|microsoft.com/Language]] - Search Microsoft’s terminology and glossaries in 70 languages.
-  * [[https://developer.apple.com/downloads/index.action?name=localization|developer.apple.com]] - Download Apple OS X glossaries.
+  * [Mixxx glossary](https://www.transifex.com/projects/p/mixxxdj/glossary/l/en/)  - The Mixxx glossary in english, translatable to your own language.
+  * [Microsoft Language Portal](https://www.microsoft.com/en-us/language) - Search Microsoft’s terminology and glossaries in 70 languages.
 
 ### Translation memory (TM)
 
 TM systems promote quality and consistency. They provide automatic suggestions based on similarities between source strings, allowing translators to leverage previous translations. Translators can use TM suggestions or adjust them to create new, more contextually appropriate translations.
 
-  * [[https://www.transifex.com/projects/p/mixxxdj/|Mixxx TM]] - The available TM entries are under the ‘suggestions’ tab of each translatable string of your language.
-  * [[http://mymemory.translated.net/|mymemory.translated.net]] - The world largest collaborative translation archive.
+  * [Mixxx TM](https://www.transifex.com/projects/p/mixxxdj/) - The available TM entries are under the ‘suggestions’ tab of each translatable string of your language.
+  * [MyMemory](http://mymemory.translated.net/) - The world largest collaborative translation archive.
 
 ### Online Translation and Dictionaries
 
-   * [[http://www.yourdictionary.com/|yourdictionary.com]] - The easiest to use on-line dictionary and thesaurus. Clear. Clean. Uncluttered.
-   * [[http://tradukka.com/|tradukka.com]] - Translate in real time with definitions and forums for your questions.
-   * [[http://www.omegawiki.org/|omegawiki.org]] - A multilingual dictionary with lexicological, terminological and thesaurus information.
-   * [[http://imtranslator.net/translation/|imtranslator.net]] - Provides dictionaries and instant translation of words, phrases and texts in many languages.
+   * [DeepL](https://www.deepl.com/translator) - Translate your texts with one of the best machine translation available.
+   * [Omegawiki](http://www.omegawiki.org/|) - A multilingual dictionary with lexicological, terminological and thesaurus information.
+   * [Yourdictionary](http://www.yourdictionary.com/) - The easiest to use on-line dictionary and thesaurus. Clear. Clean. Uncluttered.
+   * [Tradukka](http://tradukka.com/) - Translate in real time with definitions and forums for your questions.
+
+### Cloud based translation services
+
+   * [Matecat](https://www.matecat.com) -  A free and open source online CAT tool.
 
 ### Offline Translation software
 
 If you are more comfortable translating locally on your computer, instead online in a web browser.
 
-  * [[https://doc.qt.io/qt-5/qtlinguist-index.html|Qt Linguist]] - Provides a set of tools that speed the translation and internationalisation of applications. Windows, Linux, macOS. [[https://github.com/lelegard/qtlinguist-installers|Standalone Installer]]
-  * [[http://www.lingoes.net/| Lingoes]] - An easy and intuitive dictionary and text translation software. Windows
-  * [[https://omegat.org/|OmegaT]] - A free translation memory application written in Java. It is a tool intended for professional translators. Windows, Linux, macOS
-  * [[http://www.kde.org/applications/development/lokalize/|Lokalize]] - A computer-aided translation system that focuses on productivity and quality assurance. Windows, Linux
+  * [Qt Linguist](https://doc.qt.io/qt-5/qtlinguist-index.html) - Provides a set of tools that speed the translation and internationalisation of applications. Windows, Linux, macOS. [Standalone Installer](https://github.com/lelegard/qtlinguist-installers)
+  * [OmegaT](https://omegat.org/) - Is a free translation memory application that works on Windows, Linux, macOS.
+  * [Lokalize](https://apps.kde.org/en/lokalize) - A computer-aided translation system that focuses on productivity and quality assurance. Linux
 
 ## Common Pitfalls in Translation
 ### Ampersands (&)
@@ -129,28 +131,28 @@ When translating in the Transifex Web editor, red arrows indicate that there is 
 The following tools are used to update the Mixxx translation templates and to merge updated translations submitted by translators.
 
 **Required**
-  * //lupdate// and //lrelease//, part of [[http://qt-project.org/downloads|Qt development toolkit]]
-  * for Ubuntu: <code>sudo apt-get install qttools5-dev-tools</code> 
-  * [[https://docs.transifex.com/client/installing-the-client|Transifex CLI- client]]
-  * for Ubuntu: <code>sudo apt-get install transifex-client</code>
-  * Note the Xenial version is broken lp:1557957 use the Debian Stretch package [[https://packages.debian.org/stretch/all/transifex-client/download|Debian Stretch package]] 
+  * _lupdate_ and _lrelease_, part of [Qt development toolkit](http://qt-project.org/downloads)
+     * for Ubuntu: <code>sudo apt-get install qttools5-dev-tools</code> 
+  * [Transifex CLI- client](https://docs.transifex.com/client/installing-the-client)
+     * for Ubuntu: <code>sudo apt-get install transifex-client</code>
+     * Note the Xenial version [is broken](https://bugs.launchpad.net/ubuntu/+source/transifex-client/+bug/1557957), use the [Debian Stretch package](https://packages.debian.org/stretch/all/transifex-client/download)
 
 **Optional**
-  * [[http://www.zsh.org/|Zsh]] (Z shell), a powerful shell that operates as both an interactive shell and as a scripting language interpreter.
+  * [Zsh](http://www.zsh.org/) (Z shell), a powerful shell that operates as both an interactive shell and as a scripting language interpreter.
 
 ## Installation example
 ### macOS
 
-  * Install the [[https://www.qt.io/download|Qt development toolkit]]
-  * Install the [[https://docs.transifex.com/client/installing-the-client|Transifex CLI- client]]
+  * Install the [Qt development toolkit](https://www.qt.io/download)
+  * Install the [Transifex CLI-client](https://docs.transifex.com/client/installing-the-client)
       * <code>sudo easy_install pip 
 sudo pip install transifex-client</code>
-  * Optional, install Zsh using [[https://brew.sh/|Brew]]
+  * Optional, install Zsh using [Brew](https://brew.sh/)
       * <code>brew install zsh</code>
 
 ### Updating translation templates
 
-//This procedure extracts translatable strings from Mixxx's code into QT template files (*.ts) so that Transifex' interface can present the most current strings to translators. Check the required [[https://docs.transifex.com/teams/understanding-user-roles|user permissions on Transifex]]//
+This procedure extracts translatable strings from Mixxx's code into QT template files (*.ts) so that Transifex' interface can present the most current strings to translators. Check the required [user permissions on Transifex](https://docs.transifex.com/teams/understanding-user-roles).
 
   * **Make a clean checkout of the Mixxx code branch you are in. NO EXCEPTIONS**
   * Update source template
@@ -177,11 +179,11 @@ Transifex will pick up the changes to the template after a short while, and noti
 
 ## Updating translations
 
-*This procedure updates Mixxx with translations (*.ts files) that have been contributed by Transifex users.*
+This procedure updates Mixxx with translations (*.ts files) that have been contributed by Transifex users.
 
   * Fetch all translation files from Transifex, even ones which don’t exist already locally. If the option ''-a'' isn’t included, only the files that exist locally will be updated Transifex. The working directory for these instructions is the root of the repository.
   * <code>tx pull -a -f --parallel --minimum-perc 1</code>
-  * Note: If you only want to pull translations for a subset of [[https://github.com/mixxxdj/mixxx/blob/master/.tx/config|Mixxx resources]], use -l lang instead of -a. For more information see [[https://docs.transifex.com/client/pull#pulling-specific-sets-of-translation-files| Transifex docs]].
+  * Note: If you only want to pull translations for a subset of [Mixxx resources](https://github.com/mixxxdj/mixxx/blob/master/.tx/config), use -l lang instead of -a. For more information see [Transifex docs](https://docs.transifex.com/client/pull#pulling-specific-sets-of-translation-files).
   * For every mixxx_xx.ts file in res/translations/, <code>lrelease-qt5 -nounfinished res/translations/mixxx_xx.ts -qm res/translations/mixxx_xx.qm</code>
   * In ZSH: <code>for XX in res/translations/mixxx_*.ts; do lrelease-qt5 -nounfinished $XX -qm res/translations/${$(basename $XX)%.*}.qm; done</code>
   * In bash: <code>for XX in res/translations/mixxx_*.ts; do lrelease-qt5 -nounfinished $XX -qm ${XX/%.ts/.qm}; done</code>
@@ -196,8 +198,9 @@ Transifex will pick up the changes to the template after a short while, and noti
 ## Git & Merging
 
 The following files should be excluded when merging between release or development branches:
-  * ''/res/translations/*.ts''
-  * ''/res/translations/*.qm''
-Please refer to the instructions in the file ''/.gitattributes'' on how to configure your Git settings to respect those rules when performing a merge locally.
+  * _/res/translations/*.ts_
+  * _/res/translations/*.qm_
+
+Please refer to the instructions in the file _/.gitattributes_ on how to configure your Git settings to respect those rules when performing a merge locally.
 
 **Note: All translations files without conflicts or new files still need to be excluded manually from those merge commits!**

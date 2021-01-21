@@ -164,6 +164,8 @@ see <http://doc.qt.io/qt-5/svgrendering.html>
 
 # How to install a skin
 
+### Install a new skin
+
 Additional skins for Mixxx can be downloaded in the
 [skin section of the Mixxx forum](https://mixxx.discourse.group/c/skins/11).
 
@@ -188,11 +190,14 @@ In this example we are going to install the file "NewSkin.zip"
 
 6. Done, the new skin should now be displayed.
 
+### Change an existing skin
+
 If you want to tweak an existing skin the procedure is the same, except that you pick (and rename) an existing skin folder from the Mixxx resource directory:  
   **Linux**: `/usr/share/mixxx/skins/`  
   **Windows**: `C:\Program Files\Mixxx\SKINS`  
   **macOS**: `/Applications/Mixxx.app/Contents/Resources/skins`  
 
+**Note**: Copy an existing folder, otherwise your changes will be overwritten next time you update Mixxx.
 
 # Skin licensing & copyright
 

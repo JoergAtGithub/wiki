@@ -9,7 +9,7 @@ named skin.xml, other XML template files and a [style.qss file](#qss-style).
 The skin.xml and template files define all the elements (widgets) of the
 skin, what the images are used for and where they are placed on screen.
 
-To create a new skin, navigate to your local [Mixxx resource folder](#How-to-install-a-skin),
+To create a new skin, navigate to your local [Mixxx skin resource folder](#change-an-existing-skin),
 duplicate the directory of the skin you want to base your work on and
 rename it. Use the content of the new folder as starting point for your
 first skin. Read this page, understand how things were done in the skin

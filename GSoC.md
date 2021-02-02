@@ -3,7 +3,21 @@
 annual program that provides paid internships for students to work on
 free software projects.
 
-# 2020
+# 2021
+
+GSoC 2021 has announced a few changes. The most significant change is the halved project size.
+For more details read [here](https://opensource.googleblog.com/2020/10/google-summer-of-code-2021-is-bringing.html)
+
+This means we have to change the type of project we can offer. In the past we took the chance to start long wanted projects that are hard to do as a spare time contributor, because they require lot of time at a stretch and research. 
+
+This year we considering to offer projects consisting smaller tasks that suits to get familiar with Mixxx's code base, C++ and our community at the whole. We have collected many wishlist bugs and stalled projects which are important for some users but have not yet attracted a contributor to spend his spare time.  
+
+- See the list of suggested projects (under construction): **[GSoC 2021
+    Ideas](gsoc2021ideas)**
+
+## Past Years
+
+### 2020
 
 Mixxx has been accepted for Google Summer of Code 2020\!
 
@@ -21,8 +35,6 @@ The following projects were accepted for Google Summer of Code 2020:
     Phrases](measures_downbeats_bars_and_phrases) by Harshit
     Maurya (hacksdump)
   - [Mixxx Macros](Mixxx%20Macros) by Janek (xerus2000)
-
-## Past Years
 
 ### 2019
 

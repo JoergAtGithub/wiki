@@ -15,11 +15,11 @@ Open Sound Control (OSC) is a descriptive network protocol that suits to remote 
 
 There where various promising attempts to integrate that into Mixxx, but nothing has landed into the code base yet. 
 
-https://github.com/mixxxdj/mixxx/wiki/OSC%20Backend
-https://github.com/mixxxdj/mixxx/wiki/OSC-Client
-https://github.com/mixxxdj/mixxx/pull/2078
-https://github.com/mixxxdj/mixxx/pull/2064
-https://github.com/mixxxdj/mixxx/pull/2062
+  - https://github.com/mixxxdj/mixxx/wiki/OSC%20Backend
+  - https://github.com/mixxxdj/mixxx/wiki/OSC-Client
+  - https://github.com/mixxxdj/mixxx/pull/2078
+  - https://github.com/mixxxdj/mixxx/pull/2064
+  - https://github.com/mixxxdj/mixxx/pull/2062
 
 # Spin-Up/Spin-Down effect 
 

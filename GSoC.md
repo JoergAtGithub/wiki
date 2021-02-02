@@ -12,8 +12,10 @@ This means we have to change the type of project we can offer. In the past we to
 
 This year we considering to offer projects consisting smaller tasks that suits to get familiar with Mixxx's code base, C++ and our community at the whole. We have collected many wishlist bugs and stalled projects which are important for some users but have not yet attracted a contributor to spend his spare time.  
 
-- See the list of suggested projects (under construction): **[GSoC 2021
+  - See the list of suggested projects (under construction): **[GSoC 2021
     Ideas](gsoc2021ideas)**
+  - Advice for students thinking of applying: [GSoC Advice for
+    Students](gsocadvice)
 
 ## Past Years
 

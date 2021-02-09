@@ -55,6 +55,10 @@ Mixxx should do it automatically .
 
 Allow to create a Windows widget form skins. 
 
+# *Custom Tags* UI
+
+[PR #2656](https://github.com/mixxxdj/mixxx/pull/2656) allows to assign *custom tags* to tracks. The feature is almost finished (database and file import/export) but lacking a decent UI for managing and searching custom tags.
+
 # Something Else\!
 
 As always with Summer of Code, you aren't limited to the suggestions

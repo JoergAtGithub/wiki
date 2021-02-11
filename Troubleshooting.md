@@ -65,13 +65,20 @@ You can also manually set a scale factor by running
     set QT_SCREEN_SCALE_FACTORS=your-scale-factor
 
 Then type the full path to your Mixxx.exe file, or cd to the directory
-where it is and run it. Usually `C:\\Program Files\\Mixxx\\Mixxx.exe`
+where it is and run it. Usually
+
+    C:\Program Files\Mixxx\Mixxx.exe
 
 To avoid needing to run these commands every time you run Mixxx, you can
-create a batch file (which is a text file with the extensions .bat or
-.cmd). It should contain the commands you need, each on a separate line.
-Then doubleclick this file instead of Mixxx shortcut
-to launch it.
+create a batch file. This is a text file with the extensions `.bat` or
+`.cmd` that should contain the commands you need, each on a separate line.
+For example:
+
+    set QT_AUTO_SCREEN_SCALE_FACTOR=0
+    set QT_SCREEN_SCALE_FACTORS=1.75
+    C:\Program Files\Mixxx\Mixxx.exe
+
+Then doubleclick this file instead of Mixxx shortcut to launch it.
 
 Refer to [Qt's
 documentation](http://doc.qt.io/qt-5/highdpi.html#high-dpi-support-in-qt)

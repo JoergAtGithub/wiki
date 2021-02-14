@@ -185,7 +185,7 @@ This procedure updates Mixxx with translations (*.ts files) that have been contr
   * <code>tx pull -a -f --parallel --minimum-perc 1</code>
   * Note: If you only want to pull translations for a subset of [Mixxx resources](https://github.com/mixxxdj/mixxx/blob/master/.tx/config), use -l lang instead of -a. For more information see [Transifex docs](https://docs.transifex.com/client/pull#pulling-specific-sets-of-translation-files).
   * For every mixxx_xx.ts file in res/translations/, <code>lrelease-qt5 -nounfinished res/translations/mixxx_xx.ts -qm res/translations/mixxx_xx.qm</code>
-  * In ZSH: <code>for XX in res/translations/mixxx_*.ts; do lrelease-qt5 -nounfinished $XX -qm res/translations/${$(basename $XX)%.*}.qm; done</code>
+  * In ZSH: `for XX in res/translations/mixxx_*.ts; do lrelease-qt5 -nounfinished $XX -qm res/translations/${$(basename $XX)%.*}.qm; done`
   * In bash: <code>for XX in res/translations/mixxx_*.ts; do lrelease-qt5 -nounfinished $XX -qm ${XX/%.ts/.qm}; done</code>
   * If you are testing a translation and would like untranslated strings to show up as blank, do not give the 'nounfinished' argument to lrelease.
   * Add all new translation translation TS and QM files to Git

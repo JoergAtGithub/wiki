@@ -21,6 +21,10 @@ There where various promising attempts to integrate that into Mixxx, but nothing
   - https://github.com/mixxxdj/mixxx/pull/2064
   - https://github.com/mixxxdj/mixxx/pull/2062
 
+In this project you should evaluate the exiting OSC Mixxx code for building a custom touch controller using Open Stage Control https://openstagecontrol.ammd.net/
+
+The discovered issues and short comings shall be ironed out and you should finally deliver a stream lined experience for integrating Mixxx and Open Stage Control.
+
 # Spin-Up/Spin-Down effect 
 
 Some Controller mappings have implemented a Spin-Up/Spin-Down to mimic the inertia of a turn table. 
@@ -38,12 +42,12 @@ This can be improved by considering the time stamps of the midi messages.
 
 # Sharp Scratching
 
-Currently crossfader changes are streched on audio buffer time to avoid pop sounds. 
+Currently crossfader changes are stretched on audio buffer time to avoid pop sounds. 
 This is too long for some scratching styles. 
 
 # Resample options
 
-Mixxx uses a linar resampler when scratching. This is blazing fast, but the sound can be improved. 
+Mixxx uses a linear resample when scratching. This is blazing fast, but the sound can be improved. 
 Here Mixxx should provide more resample options. 
 
 # graceful recovery of controllers

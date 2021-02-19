@@ -4,7 +4,23 @@ As we develop new features and fix bugs for Mixxx, we need feedback from users. 
 
 Before switching from a stable release of Mixxx to a development version, it is recommended to make a backup copy of your settings and
 library database. We try to ensure that upgrading to new versions does not interfere with settings from older versions, but we might not catch every potential issue immediately. You can make a backup by copying the whole folder [where the mixxx.log file
-is](https://github.com/mixxxdj/mixxx/wiki/finding-the-mixxx.log-file). If you want to switch back to a stable release of Mixxx after testing a development version, you can copy your backed up settings folder to its original location.
+is](https://github.com/mixxxdj/mixxx/wiki/finding-the-mixxx.log-file):  
+
+**Linux**  
+`\~/.mixxx/mixxx.log`  
+Note: make sure you have 'Show hidden files' enabled in your file manager
+in order to show all dot-files and folders.
+
+**Windows**  
+Vista and up: `%LOCALAPPDATA%\Mixxx\`  
+XP and below: `%USERPROFILE%\Local Settings\Application Data\Mixxx\`  
+Type either of those into the location bar of a Computer or Folder window.
+
+**macOS**  
+Mixxx 2.3: `~/Library/Containers/org.mixxx.mixxx/Data/Library/Application Support/Mixxx`  
+Mixxx 2.2 and earlier: `~/Library/Application Support/Mixxx`  
+
+If you want to switch back to a stable release of Mixxx after testing a development version, you can copy your backed up settings folder to its original location.
 
 ## Main branch builds
 

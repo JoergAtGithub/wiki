@@ -2,12 +2,11 @@ As we develop new features and fix bugs for Mixxx, we need feedback from users. 
 
 ## Backup settings and database
 
-Before switching from a stable release of Mixxx to a development version, it is recommended to make a backup copy of your settings and
-library database. We try to ensure that upgrading to new versions does not interfere with settings from older versions, but we might not catch every potential issue immediately. You can make a backup by copying the whole folder [where the mixxx.log file
-is](https://github.com/mixxxdj/mixxx/wiki/finding-the-mixxx.log-file):  
+We try to ensure that upgrading to new versions does not interfere with settings from older versions, but we might not catch every potential issue immediately. Before switching from a stable release of Mixxx to a development version, it is recommended to make a backup copy of your settings and library database, as well as your controller mappings and track waveforms (if you chose to store them).  
+You can backup all that by copying this whole folder:  
 
 **Linux**  
-`\~/.mixxx/mixxx.log`  
+`\~/.mixxx/`  
 Note: make sure you have 'Show hidden files' enabled in your file manager
 in order to show all dot-files and folders.
 

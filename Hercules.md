@@ -89,44 +89,44 @@ forum:
 
 ## Hercules DJ Console MK2 and Hercules MP3 Control
 
-> > **Note:** Both the MP3 and MK2 controllers are mapped the same way,
-> > but have different configuration files, picking the wrong config
-> > file will result in some buttons failing to perform as indicated.
+> **Note:** Both the MP3 and MK2 controllers are mapped the same way,
+> but have different configuration files, picking the wrong config
+> file will result in some buttons failing to perform as indicated.
 
 [[/media/hercules_mk2_top_face.png|]]
 
-| Hercules MP3/MK2 Controls |                       |                             |  |
-| ------------------------- | --------------------- | --------------------------- |  |
-| Control                   | Default Mixxx Mapping |                             |  |
-|                           | 3 (3)                 | Kill High                   |  |
-|                           | 2 (3)                 | Kill Mid                    |  |
-|                           | 1 (3)                 | Kill Low                    |  |
-|                           | FX/Cue/Loop (3)       | Reverse                     |  |
-|                           | Master Tempo Left     | Select Prev Track in List   |  |
-|                           | Master Tempo Right    | Select Next Track in List   |  |
-|                           | Left Joy Button (4)   | Load selected to Left Deck  |  |
-|                           | Right Joy Button (4)  | Load selected to Right Deck |  |
-|                           | Autobeat (11)         | Sync                        |  |
-|                           | Joystick (4)          | Unmapped                    |  |
-|                           | Mic Functions         | Not Available in Mixxx      |  |
+| Hercules MP3/MK2 Controls |                       |                             |
+| ------------------------- | --------------------- | --------------------------- |
+| Control                   | Default Mixxx Mapping |                             |
+|                           | 3 (3)                 | Kill High                   |
+|                           | 2 (3)                 | Kill Mid                    |
+|                           | 1 (3)                 | Kill Low                    |
+|                           | FX/Cue/Loop (3)       | Reverse                     |
+|                           | Master Tempo Left     | Select Prev Track in List   |
+|                           | Master Tempo Right    | Select Next Track in List   |
+|                           | Left Joy Button (4)   | Load selected to Left Deck  |
+|                           | Right Joy Button (4)  | Load selected to Right Deck |
+|                           | Autobeat (11)         | Sync                        |
+|                           | Joystick (4)          | Unmapped                    |
+|                           | Mic Functions         | Not Available in Mixxx      |
 
   
   
 
-| Hercules MK2 Controls - Mixxx 1.7 Additions |                               |                                                                                     |  |
-| ------------------------------------------- | ----------------------------- | ----------------------------------------------------------------------------------- |  |
-| Control                                     | Default Mixxx Mapping         |                                                                                     |  |
-|                                             | FX/Cue/Loop (3)               | MIDI Script: Select mode - EQ Kill/FX/Cue/Loop                                      |  |
-|                                             | FX/Cue/Loop LEDs (5)          | MIDI Script: Indicates current mode - None lit (the default) indicates EQ Kill mode |  |
-|                                             | \[EQ Kill mode\] 3/2/1 (3)    | MIDI Script: Kill high/mid/low                                                      |  |
-|                                             | \[FX mode\] 3/2/1 (3)         | MIDI Script: Toggle flanger on/off                                                  |  |
-|                                             | \[FX mode\] 1 (3) + Pitch (2) | MIDI Script: Adjust flanger Depth                                                   |  |
-|                                             | \[FX mode\] 2 (3) + Pitch (2) | MIDI Script: Adjust flanger Delay                                                   |  |
-|                                             | \[FX mode\] 3 (3) + Pitch (2) | MIDI Script: Adjust flanger LFO                                                     |  |
+| Hercules MK2 Controls - Mixxx 1.7 Additions |                               |                                                                                     |
+| ------------------------------------------- | ----------------------------- | ----------------------------------------------------------------------------------- |
+| Control                                     | Default Mixxx Mapping         |                                                                                     |
+|                                             | FX/Cue/Loop (3)               | MIDI Script: Select mode - EQ Kill/FX/Cue/Loop                                      |
+|                                             | FX/Cue/Loop LEDs (5)          | MIDI Script: Indicates current mode - None lit (the default) indicates EQ Kill mode |
+|                                             | \[EQ Kill mode\] 3/2/1 (3)    | MIDI Script: Kill high/mid/low                                                      |
+|                                             | \[FX mode\] 3/2/1 (3)         | MIDI Script: Toggle flanger on/off                                                  |
+|                                             | \[FX mode\] 1 (3) + Pitch (2) | MIDI Script: Adjust flanger Depth                                                   |
+|                                             | \[FX mode\] 2 (3) + Pitch (2) | MIDI Script: Adjust flanger Delay                                                   |
+|                                             | \[FX mode\] 3 (3) + Pitch (2) | MIDI Script: Adjust flanger LFO                                                     |
 
-> > **Note for the MK2:** Although selectable, cue and loop modes are
-> > currently unsupported pending the functionality being available in
-> > Mixxx
+> **Note for the MK2:** Although selectable, cue and loop modes are
+> currently unsupported pending the functionality being available in
+> Mixxx
 
 ## Hercules Dj Console Mk1
 

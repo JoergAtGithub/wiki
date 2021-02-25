@@ -16,9 +16,8 @@ card. It has two integrated stereo outputs (line and 1/8" / 3.5 mm TRS),
 headphone outputs (1/8" / 3.5 mm TRS) and microphone inputs (1/4" / 6.3
 mm TRS). The MK3 uses the standard HID protocol to send and receive
 signals from a computer, so it can work with Mixxx. The Kontrol S2 MK3
-can run from USB bus power, but using the separate power supply
-increases the brightness of the LEDs, which is helpful for using it in
-daylight, and increases the volume of the headphone output.
+can run from USB bus power, and using a separate power supply
+has no impact on the output level or LED brightness ([as opposed to the MK2](https://support.native-instruments.com/hc/en-us/articles/360001108518)).
 
 ### Mixxx Sound Hardware Preferences
 
@@ -32,6 +31,8 @@ daylight, and increases the volume of the headphone output.
 Have a look at the corresponding thread in the forums for questions and
 feedback:
 <https://www.mixxx.org/forums/viewtopic.php?uid=14478&f=7&t=12999&start=0>
+
+Since v2.3 the Master knob is intentionally not linked to Mixxx's Main Gain, [following NI's suggestions](https://support.native-instruments.com/hc/en-us/community/posts/360005413857-The-Traktor-S2MK3-Low-output-issue-en-us-?page=1#community_comment_360000742537).
 
 [[/media/hardware/nativeinstruments/traktorkontrols2mk3-schema.png|]]
 
@@ -61,7 +62,7 @@ feedback:
 | Samples mode             | If track is loaded into corresponding slot, go to CUE point and play                                                                                        | If track is playing, CUE default behaviour. Otherwise eject track   |
 | (18) Tempo fader         | Speed control                                                                                                                                               |                                                                     |
 | (19) Quantize button     | Toggles quantization for both decks                                                                                                                         |                                                                     |
-| (20) Gain knob           | Adjusts the gain for the master output                                                                                                                      |                                                                     |
+| (20) Gain knob           | Adjusts the hardware gain - it is unlinked to the software main gain since v2.3                                                                                                                    |                                                                     |
 | (21) Microphone button   | Toggles microphone talkover, long press for permanent activation                                                                                            |                                                                     |
 | (22) Pre-Gain knob       | Adjusts the pre-fader gain of the deck                                                                                                                      |                                                                     |
 | (23) HI knob             | High frequency filter                                                                                                                                       |                                                                     |

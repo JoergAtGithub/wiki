@@ -28,6 +28,9 @@ Mixxx 2.2 and below used Scons instead of CMake.
     `cargo install --git https://github.com/Be-ing/sccache.git --branch fix_msvc_fp`  
     (Temporarily using a fork to fix an error with the /FP parameter)
 
+    Windows Powershell 5.1 or later
+    Windows 10 comes with this 5.1, for older Windows releases it need to be downloaded here: https://docs.microsoft.com/en-us/powershell/scripting/windows-powershell/install/installing-windows-powershell?view=powershell-5.1#upgrading-existing-windows-powershell
+
 ## Download Mixxx's source code
 
 1.  Clone the [Mixxx](https://github.com/mixxxdj/mixxx.git) repository.

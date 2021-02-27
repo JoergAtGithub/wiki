@@ -20,16 +20,13 @@ Mixxx 2.2 and below used Scons instead of CMake.
 	[github windows client](http://github-windows.s3.amazonaws.com/GitHubSetup.exe)
 
     Both Git for Windows and github windows feature a unix like command line.
-  - Optional: [Python](http://python.org/download/) 3.x  and [clcache](https://github.com/frerich/clcache/)
+  - Optional: [Rust](https://www.rust-lang.org/) and [sccache](https://github.com/mozilla/sccache)
 
-    This is needed if you want to use clcache when building from commandline.
+    This is needed if you want to use sccache when building from commandline.
 
-    When installing Python, set it on your system PATH (there is an option in the installer to do this).
-
-    When installed, open a console window (With admin privileges if you have 
-    installed Python on C:\Program Files) and type
-    `python -m pip install git+https://github.com/frerich/clcache.git`  
-    (We take it directly from git, because it needs a version greater than 4.2.0 to work)
+    When Rust is installed, open a console window and type
+    `cargo install --git https://github.com/Be-ing/sccache.git --branch fix_msvc_fp`  
+    (Temporarily using a fork to fix an error with the /FP parameter)
 
 ## Download Mixxx's source code
 
@@ -176,6 +173,7 @@ Go have lunch.
   In order to do a clean build, you can do so with `cmake --build . --clean-first`
 
 ### Build 32bit version of Mixxx
+32bit versions are no longer being built, so they might stop working at some point. Anyway, these are some instructions on how you can do that.
 
 1. Get the dependencies for 32bit:
    Either set the environment variable PLATFORM=x86 previous to execute the tools/windows_buildenv.bat script, 

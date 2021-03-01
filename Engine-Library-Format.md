@@ -211,10 +211,10 @@ Meanings of the `type` column:
 
 <!-- end list -->
 
-1.  \*Unused - no entries should be made in `Metadata` for this value of
+14.  \*Unused - no entries should be made in `Metadata` for this value of
     `type`\*
-2.  **TBC** - seems to always be set to 1
-3.  **TBC** - seems to always be set to 1
+15.  Analysed flag. Is set to 1 if track is analyzed. Setting this to 0 triggers track analysis (when automatic is set in preferences)
+16.  **TBC** - seems to always be set to 1
 
 | Column | Type    | Meaning                                                          |
 | ------ | ------- | ---------------------------------------------------------------- |

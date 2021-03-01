@@ -243,7 +243,7 @@ Meanings of the `type` column:
     values should be interpreted as follows:
 
 <!-- end list -->
-
+  - 0 =\> 8B / C major
   - 1 =\> 8A / A minor
   - 2 =\> 9B / G major
   - 3 =\> 9A / E minor
@@ -267,7 +267,7 @@ Meanings of the `type` column:
   - 21 =\> 6A / G minor
   - 22 =\> 7B / F major
   - 23 =\> 7A / D minor
-  - 24 =\> 8B / C major (**TBC** confirm this is 24, as opposed to 0)
+
 
 <!-- end list -->
 

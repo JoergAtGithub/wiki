@@ -271,7 +271,7 @@ Meanings of the `type` column:
 
 <!-- end list -->
 
-1.  **TBC** - unsure, seems to be set to zero for all sample tracks
+5.  Rating, a value in [0, 20, 40, 60, 80, 100, 120]. 100 and 120 both relate to 5 stars, so 120 is probably a bug from Engine Prime's user interface.
 2.  **TBC** - unsure, not populated for any sample tracks
 3.  **TBC** - unsure, not populated for any sample tracks
 4.  **TBC** - unsure, not populated for any sample tracks

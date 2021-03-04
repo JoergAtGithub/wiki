@@ -25,6 +25,10 @@ In this project you should evaluate the exiting OSC Mixxx code for building a cu
 
 The discovered issues and short comings shall be ironed out and you should finally deliver a stream lined experience for integrating Mixxx and Open Stage Control.
 
+# New controller system
+
+The current controller mapping system has a lot of inconveniences and limitations. The community has been brainstorming [plans](https://github.com/mixxxdj/mixxx/wiki/New-controller-system) for a new controller mapping system. This project would start implementing the new system.
+
 # Spin-Up/Spin-Down effect 
 
 Some Controller mappings have implemented a Spin-Up/Spin-Down to mimic the inertia of a turn table. 

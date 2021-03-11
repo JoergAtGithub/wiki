@@ -5,6 +5,10 @@ free software projects.
 
 # 2021
 
+Mixxx applied as a mentor organization for Google Summer of Code, 2021 but was declined this year in order to make room for newer organizations
+
+To all the students who were interested, you don't have to get involved with Mixxx through GSoC! If you'd like we can work with you to scope out a project and get your work in the hands of DJs worldwide. Working on Mixxx (and open source in general) is a great learning experience and also looks good on a resume.
+
 GSoC 2021 has announced a few changes. The most significant change is the halved project size.
 For more details read [here](https://opensource.googleblog.com/2020/10/google-summer-of-code-2021-is-bringing.html)
 
@@ -12,10 +16,8 @@ This means we have to change the type of project we can offer. In the past we to
 
 This year we considering to offer projects consisting smaller tasks that suits to get familiar with Mixxx's code base, C++ and our community at the whole. We have collected many wishlist bugs and stalled projects which are important for some users but have not yet attracted a contributor to spend his spare time.  
 
-  - See the list of suggested projects (under construction): **[GSoC 2021
+  - See the list of suggested projects: **[GSoC 2021
     Ideas](gsoc2021ideas)**
-  - Advice for students thinking of applying: [GSoC Advice for
-    Students](gsocadvice)
 
 ## Past Years
 

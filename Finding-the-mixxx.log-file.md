@@ -32,7 +32,7 @@ and press Enter.
 ***
 
 ### **macOS**
-Mixxx 2.3: `~/Library/Containers/org.mixxx.mixxx/Data/Library/Application Support/Mixxx`
+Mixxx 2.3: `~/Library/Containers/org.mixxx.mixxx/Data/Library/Application Support/Mixxx`  
 Mixxx 2.2 and earlier: `~/Library/Application Support/Mixxx`  
 **Note**: The user library folder is hidden by default, so use one of
 the following methods to open the Mixxx folder.

@@ -103,9 +103,9 @@ For Eclipse 2020-12
     - Uncheck all indexer options 
   - Expand C/C++ -\> Build -\> console
     - Limit console output = 10000
-    - Verify Project Explorer is visible. 
-      - If not go to Window -\> Show View -\> Project Explorer
-      - Close Welcome Window
+  - Verify Project Explorer is visible. 
+    - If not go to Window -\> Show View -\> Project Explorer
+    - Close Welcome Window
 
 ### For CMake builds (2.3 and main):
 

@@ -29,7 +29,7 @@ You only need to enable the *free* repository; the *nonfree* repository is not n
 Then run:
 ``` sh
 sudo dnf groupinstall "Development Tools"
-sudo dnf install gcc-c++ ccache qt5-qtdeclarative-devel
+sudo dnf install gcc-c++ ccache qt5-qtdeclarative-devel zlib
 sudo dnf builddep mixxx
 ```
 

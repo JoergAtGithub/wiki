@@ -91,10 +91,12 @@ this automatically every time you commit your changes by using the
 [pre-commit framework](https://pre-commit.com). We strongly recommend
 using it.
 
-First, [install pre-commit](https://pre-commit.com/#install). You'll
-need at least Python 3.6. If you have got Python2 and Python3 installed
-in parallel, like on Ubuntu 20.04, where Python2 is set as default
-then you can install a script making Paython3 the default:
+First, [install pre-commit](https://pre-commit.com/#install) (On Ubuntu 20.04
+you alternatively have to run `sudo pip3 install pre-commit`).
+
+You'll need at least Python 3.6. If you have got Python2 and Python3 installed
+in parallel, like on Ubuntu 20.04, where Python2 is set as default then you
+can install a script making Python3 the default:
 
     sudo apt install python-is-python3
 

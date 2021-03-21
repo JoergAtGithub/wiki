@@ -91,8 +91,18 @@ this automatically every time you commit your changes by using the
 [pre-commit framework](https://pre-commit.com). We strongly recommend
 using it.
 
-First, [install pre-commit](https://pre-commit.com/#install) (you'll
-need at least Python 3.6). Then, you have to set up the hooks that will
+First, [install pre-commit](https://pre-commit.com/#install). You'll
+need at least Python 3.6. If you have got Python2 and Python3 installed
+in parallel, like on Ubuntu 20.04, where Python2 is set as default
+then you can install a script making Paython3 the default:
+
+    sudo apt install python-is-python3
+
+Confirm / Check the default Python version by:
+
+    python --version
+
+Then, you have to set up the hooks that will
 check your code every time you commit. Run these from a shell within the
 mixxx git repository:
 

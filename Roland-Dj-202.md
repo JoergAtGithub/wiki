@@ -1,9 +1,13 @@
 # Roland DJ-202
 
+![https://static.roland.com/assets/images/products/gallery/dj-202_t_gal.jpg](https://static.roland.com/assets/images/products/gallery/dj-202_t_gal.jpg)
+
+
+
   - [Manufacturer's product
     page](https://www.roland.com/global/products/dj-202/)
   - [Forum
-    thread](https://www.mixxx.org/forums/viewtopic.php?f=7&t=11664#p37423)
+    thread](https://mixxx.discourse.group/t/mapping-the-roland-rj-202/17099#p37423)
 
 The Roland DJ-202 is an all-in-one USB MIDI controller with a built in
 sound card. It has controls for 2 decks that can be toggled between
@@ -41,44 +45,39 @@ enable generic mode in the system settings:
 A mapping is currently being developed, see
 [Github](https://github.com/Lykos153/mixxx/tree/Mapping-DJ-202)
 
-  - Pitch control
-  - `Shift+Tempo Fader` – adjust pitch continuously
-  - Jog wheel
-  - `shift-jog` – strip search
-  - FX
+ ### Pitch control
+  - `Shift + Tempo Fader` – adjust pitch continuously
+### Jog wheel
+  - `Shift + jog` – strip search
+ ### FX
   - `FX1-3` (long) – focus FX1-3
   - `FX1-3` (short) – toggle effect 1-3 on/off
-  - `(Shift-)FX tap` – Cycle focused effect forward/backward
-  - `fx-level` – set FX meta depth
-  - `shift-fx-level` – set effects rack dry/wet
-  - `shift-fx1-3` – Routing mode - toggle sending respective deck output
+  - `(Shift) + FX tap` – Cycle focused effect forward/backward
+  - `FX level` – set FX meta depth
+  - `Shift + FX-level` – set effects rack dry/wet
+  - `Shift + FX1-3` – Routing mode - toggle sending respective deck output
     to fx1 on/off, fx2 on/off, headphones on/off
-  - General
-  - `Shift-Sync` – Toggle quantize on/off
+### General
+  - `Shift + Sync` – Toggle quantize on/off
   - `Slip` (double tap) – Latch slip mode
   - `Deck 3/4` (hold) – Toggle other deck temporarily, return to
     previous deck on release
   - `Deck 3/4` (press) – Toggle other deck
-  - `Key lock-Param+/-` – Shift pitch up/down
-  - `Key lock-Param+-Param` – Reset pitch
-  - `Shift-cue` (long) – align beatgrid to other deck’s grid
-  - `Shift-cue` (once) – align beatgrid to current play position
-  - `Shift-cue` (tap multiple) – tap BPM
+  - `Key lock + Param+/-` – Shift pitch up/down
+  - `Key lock + Param+-Param` – Reset pitch
+  - `Shift + cue` (long) – align beatgrid to other deck’s grid
+  - `Shift + cue` (once) – align beatgrid to current play position
+  - `Shift + cue` (tap multiple) – tap BPM
   - `Sync` (double tap) – Reset BPM
-  - Performance pad groups
-  - Hot cue mode
-
-<!-- end list -->
-
-``` 
-    * ''Param+/-'' – beat jump forward/backward
-    * ''Shift-Param+/-'' – increment/decrement beat jump distance
-    * ''Pad 1-8'' – Save/jump to hot-cue
-    * ''Shift-Pad 1-8'' (while playing) – Save hot-cue (overwrite existing)
-    * ''Shift-Pad 1-8'' (while stopped) – Delete hot-cue
-* Loop mode
-    * ''Param+/-'' – move beatloop forward/backward
-    * ''Shift-Param+/-'' – Double/halve beatloop size
-    * ''Pad 1-4'' – toggle beatloop of length 1,2,4,8
-    * ''Pad 5-8'' – Manual loop controls (in, out, exit, on/off)
-```
+### Performance pad groups
+### Hot cue mode
+  - `Param+/-` – beat jump forward/backward
+  - `Shift + Param+/-` – increment/decrement beat jump distance
+  - `Pad 1-8` – Save/jump to hot-cue
+  - `Shift + Pad 1-8` (while playing) – Save hot-cue (overwrite existing)
+  - `Shift + Pad 1-8` (while stopped) – Delete hot-cue
+### Loop mode
+  - `Param+/-` – move beatloop forward/backward
+  - `Shift + Param+/-` – Double/halve beatloop size
+  - `Pad 1-4` – toggle beatloop of length 1,2,4,8
+  - `Pad 5-8` – Manual loop controls (in, out, exit, on/off)

@@ -1,4 +1,4 @@
-![Mixxx Wiki](https://github.com/mixxxdj/mixxx/blob/master/res/images/mixxx_logo.svg)
+![Mixxx Wiki](https://github.com/mixxxdj/mixxx/blob/main/res/images/mixxx_logo.svg)
 --
 Mixxx is a free and open-source DJ software.
 

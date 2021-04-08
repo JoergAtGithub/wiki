@@ -130,7 +130,12 @@ or tools.
 5.  Copy the lldb output. Select the terminal output by using the mouse,
     and then doing a right click and selecting *Copy*
 
-For more informations, go to <http://lldb.llvm.org/lldb-gdb.html>
+For more information, go to <http://lldb.llvm.org/lldb-gdb.html>
+
+
+**Note:**
+
+To debug a code-signed application on macOS, you need to turn off System Integrity Protection (SIP). This manifests itself in *lldb* error messages like ``error: process exited with status -1 (Error 1)``. For current state of SIP run ``csrutil status``. You can disable parts of SIP while leaving others enabled while booted into Recovery mode.  ``csrutil enable --without debug``
 
 # Windows: creating a dump file
 

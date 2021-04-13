@@ -1,4 +1,4 @@
-## Mixxx logs debugging information, [MIDI/HID/etc.
+Mixxx logs debugging information, [MIDI/HID/etc.
 messages](command_line_options) it receives and controller mapping files
 it loads in the `mixxx.log` file. When you [report a
 bug](reporting%20bugs) or ask for help on the Mixxx forum or IRC

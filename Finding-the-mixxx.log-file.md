@@ -5,18 +5,19 @@ bug](reporting%20bugs) or ask for help on the Mixxx forum or IRC
 channel, please attach your `mixxx.log` file to help us help you. This
 is a plain text file that can be read with any text editor.
 
-### **Linux**
-\~/.mixxx/mixxx.log  
+### Linux
+
+    ~/.mixxx/mixxx.log
+
 **Note**: make sure you have 'Show hidden files' enabled in your file manager
 in order to show all dot-files and folders.
 
-***
+### Windows
 
-### **Windows**
+- `%LOCALAPPDATA%\Mixxx\mixxx.log` on Vista and up  
+- `%USERPROFILE%\Local Settings\Application Data\Mixxx\mixxx.log` on
+XP and below.
 
-`%LOCALAPPDATA%\Mixxx\mixxx.log` on Vista and up  
-`%USERPROFILE%\Local Settings\Application Data\Mixxx\mixxx.log` on
-XP and below.  
 You can just type either of those into the Location
 bar of a Computer or Folder window, or even under Start -\> Run...
 and press Enter.
@@ -29,26 +30,25 @@ and press Enter.
     See [How to show or hide file name extensions in Windows
     Explorer](http://support.microsoft.com/kb/865219).
 
-***
+### macOS
+ - `~/Library/Containers/org.mixxx.mixxx/Data/Library/Application Support/Mixxx` (Mixxx 2.3)
+- `~/Library/Application Support/Mixxx` (Mixxx 2.2 and earlier)
 
-### **macOS**
-Mixxx 2.3: `~/Library/Containers/org.mixxx.mixxx/Data/Library/Application Support/Mixxx`  
-Mixxx 2.2 and earlier: `~/Library/Application Support/Mixxx`  
 **Note**: The user library folder is hidden by default, so use one of
 the following methods to open the Mixxx folder.
 
-**Method A**:
+#### Method A
 When attaching a file to a bug report, forum post, or Zulip message and your browser is asking you to pick a file
 * press Command + Shift + G
 * in the Go To Folder dialog, type ''~/Library/Application Support/Mixxx''
 * Click Go.
 
-**Method B**:
+#### Method B
 * In the Finder, choose Go > Go To Folder.
 * In the Go To Folder dialog, type ''~/Library/Application Support/Mixxx''
 * Click Go.
 
-**Method C**:
+#### Method C
 * Hold down the Alt (Option) key when using the Go menu
 * The user library folder is listed below the current users home directory
 * Navigate to ''Application Support/Mixxx''

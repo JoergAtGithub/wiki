@@ -278,7 +278,7 @@ MyController.FlashOff = function() {
 MyController.flashOnceOn = function() {
     //Light up the LED
     midi.sendShortMsg(0x90, 0x3A, 0x7F);
-    MyController.flashOnceTimer = engine.beginTimer(MyController.flashDuration, "MyController.flashOnceOff()", true);
+    MyController.flashOnceTimer = engine.beginTimer(MyController.num_ms_on, "MyController.flashOnceOff()", true);
 };
 
 // Call back function (called in flashOnceOn() )

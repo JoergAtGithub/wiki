@@ -68,6 +68,18 @@ This is the b-side of the chart single "Color Him Father" from 1969. It contains
 
 After these breaks, a odd measure follows that shift the downbeat by a half beat. A normal 4/4 measure is played and that a odd measure shifts the downbeat back to the original position.  
 
+## Procs - Frigolitpuffens Magiska Trampdyna 
+
+<https://sanatonrecords.bandcamp.com/track/procs-frigolitpuffens-magiska-trampdyna>
+
+This is a challenging track for the beat detector, because it is has 139.98 BPM instead, and must not be rounded to 140,00 BPM for an optimal beat grid. This track is a good example why too aggressive rounding is not always a good solution.
+
+## Already Maged - Circle Dance Of Cold Constellations 
+
+<https://sanatonrecords.bandcamp.com/track/already-maged-circle-dance-of-cold-constellations>
+
+This is a challenging track for the beat detector, because it is 10:46 long, but has many regions of different BPMs detected by the original QM beat detector. A perfect beat grid hat fully 151 BPM 
+
 
 # External Sources
 

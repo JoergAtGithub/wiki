@@ -39,7 +39,18 @@ crashed.
 
 ## Linux & Mac OS X with Xcode 4.x
 
-1.  From a command prompt/terminal, type "gdb mixxx" and press Enter.
+
+1.  Make sure you have the debug symbols installed. This is the case if you have build 
+Mixxx yourselves like described here https://github.com/mixxxdj/mixxx/wiki/compiling%20on%20linux or if you have installed a debug symbol package via your package manager. If you are using a Mixxx version installed from our Launchpad PPA, you can install
+the dbgsym package as follows (Make sure to replace `YOUR_UBUNTU_VERSION_HERE` with your Ubuntu version like `focal` and use the right ppa `mixxx`, `mixxxbetas` or `nightlies`): 
+
+```
+echo "deb http://ppa.launchpad.net/mixxx/mixxx/ubuntu YOUR_UBUNTU_VERSION_HERE main/debug" | sudo tee /etc/apt/sources.list.d/mixxx-ubuntu-mixxx-YOUR_UBUNTU_VERSION_HERE.list
+sudo apt-get update
+sudo apt-get install mixxx-dbgsym
+```
+
+2.  From a command prompt/terminal, type "gdb mixxx" and press Enter.
 
 <!-- end list -->
 
@@ -50,7 +61,7 @@ crashed.
 
 <!-- end list -->
 
-1.  [Continue below](#for-all-of-the-above)
+3.  [Continue below](#for-all-of-the-above)
 
 ## For all of the above
 

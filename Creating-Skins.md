@@ -617,7 +617,7 @@ The following optional tags are also accepted within a `<Connect>` block:
 | `<Transform>`    | transform the value of the bound control         |
 
 
-`<BindProperty>` only accepts one of the following two values:
+`<BindProperty>` accepts any property of the underlying QWidget but was testet with only one of the following two properties:
 
 * `visible` displays the widget when the value of the config key is 1
 * `highlight` apply a qss style to the widget based on the config key value:
@@ -659,6 +659,8 @@ Illustratory example (look at existing skins for actual use cases as they're mor
   </Connection>
 </Label>
 ```
+
+To avoid unneccessary GUI updates from frequent changing COs, the resulting property value is only written once.
 
 ### Library display
 

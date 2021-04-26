@@ -660,7 +660,7 @@ Illustratory example (look at existing skins for actual use cases as they're mor
 </Label>
 ```
 
-To avoid unneccessary GUI updates from frequent changing COs, the resulting property value is only written once.
+In Mixxx 2.3, to avoid unnecessary GUI updates from frequent changing COs, the resulting property value is only written once.
 
 ### Library display
 

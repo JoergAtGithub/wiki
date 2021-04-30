@@ -157,8 +157,6 @@ This procedure extracts translatable strings from Mixxx's code into QT template 
   * **Make a clean checkout of the Mixxx code branch you are in. NO EXCEPTIONS**
   * Update source template
   * <code>lupdate-qt5 src -recursive -noobsolete -extensions cpp,h,ui -ts res/translations/mixxx.ts</code>
-  * Workaround for error message "English pluralized strings should contain 2 plurals" while uploading mixxx.ts:
-     - Duplicate all singular <code>\<numerusform>\</numerusform></code> XML tags in mixxx.ts, i.e. replace them by <code>\<numerusform>\</numerusform>\<numerusform>\</numerusform></code>
   * Commit changes to HEAD
   * <code>git commit -a -m "Update Translation template. Found XXXX source text(s) (XX new and XXXX already existing)"</code>
   * Push changes to remote repository

@@ -5,6 +5,31 @@ discussing Mixxx features along. They have been either used in community
 discussions, pushing one musical property to the max or are just well
 known for a particular feature.
 
+## ABBA - Dancing Queen
+
+<https://www.youtube.com/watch?v=xFrGuyw1V8s>
+
+This 1976 Disco track is a typical manually played 100 bpm track at that
+time. It is interesting, because we Mixxx 2.3 beat detector can handle
+it well. The non const beat mode cycles around 100 bpm makes it useless
+for auto sync and the a const beat grid is heavily off at many places of
+the track.
+
+## Already Maged - Circle Dance Of Cold Constellations
+
+<https://sanatonrecords.bandcamp.com/track/already-maged-circle-dance-of-cold-constellations>
+
+This is a challenging track for the beat detector, because it is 10:46 long, but has many regions of different BPMs detected by the original QM beat detector. A perfect beat grid hat fully 151 BPM
+
+## Atenna - Zorba The Greek
+
+<https://www.youtube.com/watch?v=nrCu94kpE1Q>
+
+This is a 1995 Club Mix of Sirtaki, taken from the 1965 movie with the
+same name. It starts with gentle 105 bpm and speeds up to 180 bpm. It
+has clear sections, some with constant bpm and some with increasing
+tempo.
+
 ## Dave Brubeck - Take Five
 
 <https://www.youtube.com/watch?v=vmDDOFXSgAs>
@@ -15,6 +40,15 @@ The Wikipedia contains a detailed description of the section and phrases
 structure of the track. <https://en.wikipedia.org/wiki/Take_Five>
 
 Key: E♭ minor Tempo: 174 bpm
+
+## Green Day - Holiday
+
+<https://www.youtube.com/watch?v=A1OqtIqzScI>
+
+This 2004 Punk track is one of the loudest recorded tracks. A mp3
+version of this track is clipping after decoding due to the additional
+noise added by the compression algorithm. The calculated replay gain is
+-12 dB where a typical values are around -6 dB.
 
 ## Kashmir - Led Zeppelin
 
@@ -32,33 +66,11 @@ This 1987 Electronic Pop track has on of the most famous key change. It
 comes along with a "CHANGE" in the lyrics at \~2:45. The key changes
 from G Major to A♭ Major.
 
-## Green Day - Holiday
+## Procs - Frigolitpuffens Magiska Trampdyna 
 
-<https://www.youtube.com/watch?v=A1OqtIqzScI>
+<https://sanatonrecords.bandcamp.com/track/procs-frigolitpuffens-magiska-trampdyna>
 
-This 2004 Punk track is one of the loudest recorded tracks. A mp3
-version of this track is clipping after decoding due to the additional
-noise added by the compression algorithm. The calculated replay gain is
--12 dB where a typical values are around -6 dB.
-
-## ABBA - Dancing Queen
-
-<https://www.youtube.com/watch?v=xFrGuyw1V8s>
-
-This 1976 Disco track is a typical manually played 100 bpm track at that
-time. It is interesting, because we Mixxx 2.3 beat detector can handle
-it well. The non const beat mode cycles around 100 bpm makes it useless
-for auto sync and the a const beat grid is heavily off at many places of
-the track.
-
-## Atenna - Zorba The Greek
-
-<https://www.youtube.com/watch?v=nrCu94kpE1Q>
-
-This is a 1995 Club Mix of Sirtaki, taken from the 1965 movie with the
-same name. It starts with gentle 105 bpm and speeds up to 180 bpm. It
-has clear sections, some with constant bpm and some with increasing
-tempo.
+This is a challenging track for the beat detector, because it is has 139.98 BPM instead, and must not be rounded to 140,00 BPM for an optimal beat grid. This track is a good example why too aggressive rounding is not always a good solution.
 
 ## The Winstons - Amen Brother
 
@@ -66,20 +78,7 @@ tempo.
 
 This is the b-side of the chart single "Color Him Father" from 1969. It contains the most used sample (> 2000 times) of all: the "Amen Break". It consists of just 8 beats starting at 1:27.
 
-After these breaks, a odd measure follows that shift the downbeat by a half beat. A normal 4/4 measure is played and that a odd measure shifts the downbeat back to the original position.  
-
-## Procs - Frigolitpuffens Magiska Trampdyna 
-
-<https://sanatonrecords.bandcamp.com/track/procs-frigolitpuffens-magiska-trampdyna>
-
-This is a challenging track for the beat detector, because it is has 139.98 BPM instead, and must not be rounded to 140,00 BPM for an optimal beat grid. This track is a good example why too aggressive rounding is not always a good solution.
-
-## Already Maged - Circle Dance Of Cold Constellations 
-
-<https://sanatonrecords.bandcamp.com/track/already-maged-circle-dance-of-cold-constellations>
-
-This is a challenging track for the beat detector, because it is 10:46 long, but has many regions of different BPMs detected by the original QM beat detector. A perfect beat grid hat fully 151 BPM 
-
+After these breaks, a odd measure follows that shift the downbeat by a half beat. A normal 4/4 measure is played and that a odd measure shifts the downbeat back to the original position.
 
 # External Sources
 

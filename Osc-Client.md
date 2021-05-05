@@ -38,7 +38,7 @@ own server. An example implementation can be found here:
 | /mixxx/deck/volume   | The real volume of the deck. Including crossfader. Zero if not playing | deckNr (int) volume (float)   |
 | /mixxx/deck/pos      | The relative play-position                                             | deckNr (int) position (float) |
 | /mixxx/deck/duration | The absolute duration                                                  | deckNr (int) duration (float) |
-| /mixxx/deck/title    | The title of the playing song                                          | deckNr (int) title (sting)    |
+| /mixxx/deck/title    | The title of the playing song                                          | deckNr (int) title (string)    |
 
 The messages are sent every half second and on ui changes (e.g. if play
 was pressed)

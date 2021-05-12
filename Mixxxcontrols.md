@@ -1,6 +1,6 @@
 # Mixxx Controls
 
-Documentation for Mixxx Controls has been [moved to the manual for Mixxx 2.3](https://manual.mixxx.org/2.3/en/chapters/advanced_topics.html#mixxx-controls).
+Documentation for Mixxx Controls has been [moved to the manual for Mixxx 2.3](https://manual.mixxx.org/2.3/en/chapters/appendix/mixxx_controls.html).
 
 ## Naming Conventions
 

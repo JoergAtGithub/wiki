@@ -1,11 +1,11 @@
-### The full mapping documentation has been moved to the [Mixxx User Manual](https://manual.mixxx.org/2.3/en/hardware/controllers/denon_mc7000.html).
-I gonna maintain additional information here inside the Wiki for people who wanna help to improve the functionality.
+### The full mapping documentation has been moved to the [Mixxx User Manual](https://manual.mixxx.org/2.3/en/hardware/controllers/denon_mc7000.html) since Mixxx v 2.3.
+I gonna maintain additional information here inside the Wiki for people who wanna get more information, alternative mappings or help to improve the functionality.
 
 ### Content of this page:
 
 * [How to get mappings that are not included with Mixxx](#how-to-get-additional-mappings)
 * [Change Log](#change-log)
-* [Under development / investigation](#under-development--investigation)
+* [Under investigation / development](#under-investigation--development)
 * [Wish List](#wish-list)
 * [Contact, DJ Web Sites and Tutorials](#contact-dj-web-sites-and-tutorials)
 

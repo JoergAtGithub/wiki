@@ -1073,19 +1073,18 @@ Displays the tracks key (in the notation set in Mixxx's preferences):
 ```
 
 ### Playing position / Time remaining
-
-|                                                                                                                                                                                                                                                |  |                                                                                                                  |
-| ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |  | ---------------------------------------------------------------------------------------------------------------- |
-| `<NumberPos>
+```xml
+<NumberPos>
   <TooltipId>track_time</TooltipId>
   <Channel>X</Channel>
   <Pos>X,Y</Pos>
   <Size>W,H</Size>
   <NumberOfDigits>6</NumberOfDigits>
   <Connection>
-  <ConfigKey>[ChannelX],playposition</ConfigKey>
+    <ConfigKey>[ChannelX],playposition</ConfigKey>
   </Connection>
-</NumberPos>` |  | `
+</NumberPos>
+```
 
 
 Defines connected Channel (X = 1 or 2)
@@ -1098,34 +1097,27 @@ Defines connected Channel (X = 1 or 2)
 Must be same value as under <Channel> above, (X = 1 or 2)
 
 
-
-` |
-
 ### Recording duration
 
 _New in Mixxx 2.1_
 
-|                                                                                                                     |  |                                                                                                                                                                                              |
-| ------------------------------------------------------------------------------------------------------------------- |  | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `<RecordingDuration>
+```xml
+<RecordingDuration>
   <Pos>X,Y</Pos>
   <Size>W,H</Size>
   <InactiveText>foo</InactiveText>
  </RecordingDuration>
-` |  | `
+```
 Displays the duration of the running recording.
 Defines the element position
 Defines the element size
 Custom text to be displayed when recording is inactive/stopped, default is “–:–”
 
 
-` |
-
 ### Pitch rate display
 
-|                                                                                                                                                                                                        |  |                                                                                                                                                                                                            |
-| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |  | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `<NumberRate>
+```xml
+<NumberRate>
   <TooltipId>rate_display</TooltipId>
   <Channel>X</Channel>
   <Pos>X,Y</Pos>
@@ -1134,35 +1126,27 @@ Custom text to be displayed when recording is inactive/stopped, default is “�
   <ConfigKey>[ChannelX],rate</ConfigKey>
   </Connection>
 </NumberRate>
-` |  | `
+```
 
 
 Defines connected Channel (X = 1 or 2)
 
-
-
-
 Remove the whole <Connection> </Connection> block for Mixxx v1.10+, needed in older versions
 Must be same value as under <Channel> above, (X = 1 or 2)
-
-
-
-` |
 
 ### dB display
 
 _New in Mixxx 2.00_
 
-|                                                                                                                                        |  |                                                                                                                 |
-| -------------------------------------------------------------------------------------------------------------------------------------- |  | --------------------------------------------------------------------------------------------------------------- |
-| `<NumberDb>
+```xml
+<NumberDb>
   ...
   <Text>Gain %1 dB</Text>
   <Connection>
     <ConfigKey>[Channel1],pregain</ConfigKey>
   </Connection>
 </NumberDb>
-` |  | `
+```
 
 
 Optional Text. %1 is replaced by the bB value.
@@ -1171,15 +1155,12 @@ like "-39 dB"
 
 
 
-` |
-
 ## Section: Slider
 
 ### Channel Volume
 
-|                                                                                                                                                                                                                                                                                                                     |                                                                                                                                                                                                                                                            |
-| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `<SliderComposed>
+```xml
+<SliderComposed>
   <TooltipId>channel_volume</TooltipId>
   <Handle>handle.png</Handle>
   <Slider>slider.png</Slider>
@@ -1189,7 +1170,8 @@ like "-39 dB"
     <ConfigKey>[ChannelX],volume</ConfigKey>
     <EmitOnDownPress>false</EmitOnDownPress>
   </Connection>
-</SliderComposed>` | `
+</SliderComposed>
+```
 
 
 Slider image (knob) which can de dragged with mouse
@@ -1201,14 +1183,10 @@ Defines connected Channel (X = 1 or 2 )
 Can be omitted in Mixxx >= 2.00
 
 
-
-` |
-
 ### Crossfader
 
-|                                                                                                                                                                                                                                                                                                                  |                                                                                                                                                                                                                                                |
-| ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `<SliderComposed>
+```xml
+<SliderComposed>
   <TooltipId>crossfader</TooltipId>
   <Handle>handle.png</Handle>
   <Slider>slider.png</Slider>
@@ -1218,7 +1196,8 @@ Can be omitted in Mixxx >= 2.00
     <ConfigKey>[Master],crossfader</ConfigKey>
     <EmitOnDownPress>false</EmitOnDownPress>
   </Connection>
-</SliderComposed>` | `
+</SliderComposed>
+```
 
 
 Slider image (knob) which can de dragged with mouse
@@ -1231,13 +1210,10 @@ Can be omitted in Mixxx >= 2.00
 
 
 
-` |
-
 ### Pitch control
 
-|                                                                                                                                                                                                                                                                                                         |                                                                                                                                                                                                                                                            |
-| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `<SliderComposed>
+```xml
+<SliderComposed>
   <TooltipId>rate</TooltipId>
   <Handle>handle.png</Handle>
   <Slider>slider.png</Slider>
@@ -1247,7 +1223,8 @@ Can be omitted in Mixxx >= 2.00
     <ConfigKey>[ChannelX],rate</ConfigKey>
     <EmitOnDownPress>false</EmitOnDownPress>
   </Connection>
-</SliderComposed>` | `
+</SliderComposed>
+```
 
 
 Slider image (knob) which can de dragged with mouse
@@ -1258,9 +1235,6 @@ Orientation (false or true, means vertical or horizontal)
 Defines connected Channel (X = 1 .. 4 )
 Can be omitted in Mixxx >= 2.00
 
-
-
-` |
 
 ## Section: Buttons
 
@@ -1284,9 +1258,8 @@ be triggered when that particular mouse button (left or right) is down.
 
 ### Recording
 
-|                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |                                                                                                                                                                                                                                                                                                                                                                        |
-| ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `<PushButton>
+```xml
+<PushButton>
   <TooltipId>???</TooltipId>
   <NumberStates>3</NumberStates>
   <LeftClickIsPushButton>true</LeftClickIsPushButton>
@@ -1321,19 +1294,13 @@ be triggered when that particular mouse button (left or right) is down.
     <ConnectValueFromWidget>false</ConnectValueFromWidget>
   </Connection>
 </PushButton>
-` | `New in Mixxx 1.11
+```
+
+New in Mixxx 1.11
 
 Button that allows toggle of recording and notifies "[Recording],status" of status changes.
 Can be omitted in Mixxx >= 2.00
 Can be omitted in Mixxx >= 2.00
-
-
-
-
-
-
-
-
 
 
 

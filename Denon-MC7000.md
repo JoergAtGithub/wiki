@@ -57,7 +57,12 @@ chose the MC7000 mapping.**
   - secondary PAD functions need to be implemented yet
 
 ### Under investigation / development
-  - none right now
+  - exit SLIP mode after scratching jumps to original timeline of track
+  - exit SLIP mode after Hot Cue play jumps to original timeline of track
+  - changed (simplified) jog calculations
+  - changed scratch parameters
+  - stop to play current sampler when a new one is triggered
+  -
 
 ### Wish List
 

@@ -24,7 +24,8 @@ files so please just right click each of the links and "save link as".
   - [Denon MC7000 Mapping \*.js
     file](https://github.com/mixxxdj/mixxx/raw/2.2/res/controllers/Denon-MC7000-scripts.js)
 
-I am continuously working on fine tuning and for testing you can find the latest development mapping here:
+I am continuously working on fine tuning the mapping - see below section "Under investigation / development"
+For testing you can find the latest development mapping here:
   - [Denon MC7000 Mapping \*.xml
     file](https://github.com/toszlanyi/mixxx/raw/Denon_MC7000_mapping/res/controllers/Denon-MC7000.midi.xml)
   - [Denon MC7000 Mapping \*.js
@@ -57,12 +58,14 @@ chose the MC7000 mapping.**
   - secondary PAD functions need to be implemented yet
 
 ### Under investigation / development
-  - exit SLIP mode after scratching jumps to original timeline of track
-  - exit SLIP mode after Hot Cue play jumps to original timeline of track
+  - several SLIP mode improvements. With activated SLIP mode it will be switched off automatically and therefore jump to the original time position inside the track after:
+    - scratching
+    - after Hot Cue jump
+    - after backspin
   - changed (simplified) jog calculations
   - changed scratch parameters
   - stop to play current sampler when a new one is triggered
-  -
+  - 
 
 ### Wish List
 

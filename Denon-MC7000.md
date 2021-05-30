@@ -24,7 +24,8 @@ files so please just right click each of the links and "save link as".
   - [Denon MC7000 Mapping \*.js
     file](https://github.com/mixxxdj/mixxx/raw/2.2/res/controllers/Denon-MC7000-scripts.js)
 
-I am continuously working on fine tuning the mapping - see below section "Under investigation / development"
+I am continuously working on fine tuning the mapping - see below section [Under investigation / development](#under-investigation--development)
+
 For testing you can find the latest development mapping here:
   - [Denon MC7000 Mapping \*.xml
     file](https://github.com/toszlanyi/mixxx/raw/Denon_MC7000_mapping/res/controllers/Denon-MC7000.midi.xml)

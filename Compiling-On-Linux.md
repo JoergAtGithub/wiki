@@ -26,11 +26,18 @@ tools/debian_buildenv.sh setup
 
 On Fedora, [enable the RPMFusion package repository](http://rpmfusion.org/Configuration).
 You only need to enable the *free* repository; the *nonfree* repository is not necessary for Mixxx.
+
 Then run:
 ``` sh
 sudo dnf groupinstall "Development Tools"
-sudo dnf install gcc-c++ ccache qt5-qtdeclarative-devel zlib
+sudo dnf install gcc-c++ ccache
 sudo dnf builddep mixxx
+```
+
+The following extra dependencies are needed for building the *main* branch in addition to those
+from *2.3* that have been installed by `builddep`:
+``` sh
+sudo dnf install qt5-qtdeclarative-devel qt5-qtquickcontrols qt5-qtquickcontrols2 zlib
 ```
 
 ## Arch & Derivatives

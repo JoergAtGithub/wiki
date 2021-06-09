@@ -70,18 +70,11 @@ corresponding folder. Check the
 file in the Mixxx codebase to see what version of the build environment
 is currently used for builds.
 
-You may choose between the "release-fastbuild" and "release" variants.
-
-  - release-fastbuild is built with link-time code-generation (LTCG)
-    disabled. This leads to faster builds but potentially results in a
-    slower version of Mixxx (we haven't measured it so we don't know).
-    When we build Mixxx on AppVeyor for continuous integration, this is
-    the version we use.
-  - release is the version used to produce Mixxx releases. It is
-    compiled with LTCG enabled and requires at least 8 GB of memory (or
-    equivalent free space on the disk with your [paging
-    file](https://www.howtogeek.com/126430/htg-explains-what-is-the-windows-page-file-and-should-you-disable-it/))
-    to link Mixxx.
+The current recommended variant is "release". Release is the version used 
+to produce Mixxx releases. It is compiled with LTCG enabled and requires 
+at least 8 GB of memory (or equivalent free space on the disk with your [paging
+file](https://www.howtogeek.com/126430/htg-explains-what-is-the-windows-page-file-and-should-you-disable-it/))
+to link Mixxx.
 
 If you want to build a 32-bit version of Mixxx, choose an "x86" variant.
 For 64-bit, choose an "x64" variant.
@@ -144,20 +137,20 @@ Go have lunch.
 
 2. Create a folder where we will setup cmake and build the sources. 
    Usually we call this **MIXXX\_REPO**\build\
-   It is recomended that you actually create subfolders for different builds, as in: 
+   It is recommended that you actually create subfolders for different builds, as in: 
 
-   `**MIXXX\_REPO**\build\x64__fastbuild`
+   `**MIXXX\_REPO**\build\x64__portable`
 
-   `**MIXXX\_REPO**\build\x86__fastbuild`
+   `**MIXXX\_REPO**\build\x86__portable`
 
    `**MIXXX\_REPO**\build\x64__debug`
 
-   Do the same for the install subdir ( **MIXXX\_REPO**\install\x64_fastbuild)
+   Do the same for the install subdir ( **MIXXX\_REPO**\install\x64_portable)
 
-3. enter into this directory, ` cd build\x64__fastbuild` and type the following:
+3. enter into this directory, ` cd build\x64__portable` and type the following:
    `cmake -G "Ninja" -DCMAKE_BUILD_TYPE=Release 
  -DCMAKE_PREFIX_PATH="**WINLIB\_PATH**;**WINLIB\_PATH**\Qt-5.14.2" 
- -DCMAKE_INSTALL_PREFIX=**MIXXX\_REPO**\install\x64_fastbuild 
+ -DCMAKE_INSTALL_PREFIX=**MIXXX\_REPO**\install\x64_portable 
  -DDEBUG_ASSERTIONS_FATAL=ON -DHSS1394=ON -DKEYFINDER=OFF -DLOCALECOMPARE=ON 
  -DMAD=ON -DMEDIAFOUNDATION=ON -DSTATIC_DEPS=ON -DBATTERY=ON -DBROADCAST=ON -DBULK=ON 
  -DHID=ON -DLILV=ON -DOPUS=ON -DQTKEYCHAIN=ON -DVINYLCONTROL=ON ..\..`
@@ -165,7 +158,7 @@ Go have lunch.
   You need to replace **WINLIB\_PATH** and **MIXXX\_REPO** for your paths, 
   as well as adapting the install subdir if you build a different one.
   Also, the last part of the command "..\\.." means **MIXXX\_REPO** as seen from 
-  the cmake build dir (in our case  **MIXXX\_REPO**\build\x64__fastbuild, so two subfolders)
+  the cmake build dir (in our case  **MIXXX\_REPO**\build\x64__portable, so two subfolders)
 
   Finally, set -DDEBUG_ASSERTIONS_FATAL=OFF instead of ON if you get assertion errors
   that close Mixxx. This is intended to detect errors quickly, but 

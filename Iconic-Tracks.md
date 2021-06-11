@@ -83,6 +83,14 @@ This is the b-side of the chart single "Color Him Father" from 1969. It contains
 
 After these breaks, a odd measure follows that shift the downbeat by a half beat. A normal 4/4 measure is played and that a odd measure shifts the downbeat back to the original position.
 
+## N35 - Missing In Action
+
+https://twoshell.bandcamp.com/track/missing-in-action
+
+With Mixxx 2.3 this track is detected false with 130.08 BPM. This is because the track has non rhythmic bridges an a rhythm that make it hard to decide for a onset as beats. The phase of the the detected beats by QM is shifted throughout the regions of the track.
+
+The rounding code has no access to the onsets and tries to find a common BPM that aligns with most of the beats from QM leading to a 130.08. It cannot round to 130, because than the the annotate beats are off with the QM detected beats.  
+
 # External Sources
 
 Key changes:

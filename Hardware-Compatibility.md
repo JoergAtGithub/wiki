@@ -472,6 +472,15 @@ Supported Mappings](#Community%20Supported%20Mappings) table above.
 <td>MIDI</td>
 <td>2014</td>
 </tr>
+<tr class="even">
+<td>[[Denon Prime 4]]</td>
+<td>$1,899</td>
+<td>4 deck standalone unit + controller</td>
+<td>yes</td>
+<td>yes</td>
+<td>MIDI</td>
+<td>2019</td>
+</tr>
 </tbody>
 </table>
 

@@ -1,0 +1,27 @@
+# Denon Prime 4
+
+![Photo of Prime 4](https://d1jtxvnvoxswj8.cloudfront.net/wysiwyg/denondj/catalog/prime-4/DenonDJ-img-Prime4TopIntro.jpg)
+
+The Denon Prime 4 is a powerful, 4-Deck, standalone DJ unit with a lot of powerful features:
+* Built-in sound card
+* Small drive bay for holding a large in-house music library
+* 8 velocity-sensitive performance pads on each deck with different performance modes
+* Large, touch-capacitive jog wheels
+* 4 USB ports for multiple devices with different DJ libraries
+* Online integration with SoundCloud, Tidal, Beatport, Beatsource, and Dropbox
+* Plug-and-play integration with Serato DJ and Virtual DJ
+* Computer Mode for sending and receiving MIDI signals to other software for custom mappings
+
+[Mixxx Forum Thread](https://mixxx.discourse.group/t/denon-prime-4-mapping/22404/2) | [Manufacturer's Product Page](https://www.denondj.com/prime-4-prime4xus)
+
+## Drivers & Firmware
+
+To download frimware updates and the Windows driver for the Prime 4:
+* Go to <https://www.denondj.com/downloads/>
+* Click "STANDALONE DJ SYSTEMS"
+* Click "PRIME 4"
+* Download necessary files and follow on-screen instructions where necessary
+
+## Mapping
+
+A mapping for the Denon Prime 4 is currently under development on [this GitHub fork](https://github.com/whanake-music/mixxx/tree/prime4_mapping).

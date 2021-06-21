@@ -66,7 +66,7 @@ chose the MC7000 mapping.**
   - changed (simplified) jog calculations
   - changed scratch parameters
   - stop to play current sampler when a new one is triggered
-  - 
+  - Rate Range change now considers start point from Mixxx preferences for changing range up and down
 
 ### Wish List
 

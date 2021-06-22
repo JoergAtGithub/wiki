@@ -161,13 +161,14 @@ This procedure extracts translatable strings from Mixxx's code into QT template 
   * Push changes to remote repository
   * <code>git push origin branchname</code>
   * If you are a maintainer, create a credetial file ~/.transifexrc
-  * <code>[https://www.transifex.com]
+```
+[https://www.transifex.com]
 api_hostname = https://api.transifex.com
 hostname = https://www.transifex.com
-password = ******
+password = <password>
 token = 
-username = user
-</code> 
+username = <username>
+``` 
 
   * Push changed *.ts template (the translation source file) to Transifex
   * <code>tx push -s</code>

@@ -155,7 +155,7 @@ This procedure extracts translatable strings from Mixxx's code into QT template 
 
   * **Make a clean checkout of the Mixxx code branch you are in. NO EXCEPTIONS**
   * Update source template
-  * <code>lupdate-qt5 src -recursive -noobsolete -extensions cpp,h,ui -ts res/translations/mixxx.ts</code>
+  * <code>lupdate src -recursive -noobsolete -extensions cpp,h,ui -ts res/translations/mixxx.ts</code>
   * Commit changes to HEAD
   * <code>git commit -a -m "Update Translation template. Found XXXX source text(s) (XX new and XXXX already existing)"</code>
   * Push changes to remote repository
@@ -182,9 +182,9 @@ This procedure updates Mixxx with translations (*.ts files) that have been contr
   * Fetch all translation files from Transifex, even ones which don’t exist already locally. If the option ''-a'' isn’t included, only the files that exist locally will be updated Transifex. The working directory for these instructions is the root of the repository.
   * <code>tx pull -a -f --parallel --minimum-perc 1</code>
   * Note: If you only want to pull translations for a subset of [Mixxx resources](https://github.com/mixxxdj/mixxx/blob/master/.tx/config), use -l lang instead of -a. For more information see [Transifex docs](https://docs.transifex.com/client/pull#pulling-specific-sets-of-translation-files).
-  * For every mixxx_xx.ts file in res/translations/, <code>lrelease-qt5 -nounfinished res/translations/mixxx_xx.ts -qm res/translations/mixxx_xx.qm</code>
-    * In ZSH: `for XX in res/translations/mixxx_*.ts; do lrelease-qt5 -nounfinished $XX -qm res/translations/${$(basename $XX)%.*}.qm; done`
-    * In bash: <code>for XX in res/translations/mixxx_*.ts; do lrelease-qt5 -nounfinished $XX -qm ${XX/%.ts/.qm}; done</code>
+  * For every mixxx_xx.ts file in res/translations/, <code>lrelease -nounfinished res/translations/mixxx_xx.ts -qm res/translations/mixxx_xx.qm</code>
+    * In ZSH: `for XX in res/translations/mixxx_*.ts; do lrelease -nounfinished $XX -qm res/translations/${$(basename $XX)%.*}.qm; done`
+    * In bash: <code>for XX in res/translations/mixxx_*.ts; do lrelease -nounfinished $XX -qm ${XX/%.ts/.qm}; done</code>
   * If you are testing a translation and would like untranslated strings to show up as blank, do not give the 'nounfinished' argument to lrelease.
   * Add all new translation translation TS and QM files to Git
   * In ZSH: <code>git add res/translations/mixxx_*.(ts|qm)</code>

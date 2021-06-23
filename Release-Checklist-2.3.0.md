@@ -22,10 +22,8 @@ summary](https://launchpad.net/mixxx/+milestone/2.3.0/)
         1.  macOS can produce particularly pretty drop-shadow
             screenshots with `Shift-Command-4` followed by the spacebar,
             then click the window to screenshot.
-4.  ⌛ Update manual.
-    1.  ✓ Verify that https://github.com/mixxxdj/manual/tree/2.3
+4. ✓ Manual: Verify that https://github.com/mixxxdj/manual/tree/2.3
         published the latest version to <https://mixxx.org/manual/2.3/>
-    2.  ⌛ Check that the manual is no longer marked as developer version 
 5.  ⌛ Update files:
     1.  ✓ LICENSE (update copyright year, version number)
     2.  ⌛ CMakeLists.txt Update VERSION and MIXXX_VERSION_PRERELEASE
@@ -57,7 +55,8 @@ summary](https://launchpad.net/mixxx/+milestone/2.3.0/)
     4.  Update the Stable and Beta PPAs.
         1.  TODO ...
         2.  
-10. ⌛ Release announcement:
+10. ⌛ Manual: Remove the developer version warning https://github.com/mixxxdj/manual/pull/376 and verify it at <https://mixxx.org/manual/2.3/>    
+11. ⌛ Release announcement:
     1.  ~~Write to announcement in new forum thread. For the "Post topic as"
         option below the text box to type the post, select
         "Announcement".~~

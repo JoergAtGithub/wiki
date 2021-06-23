@@ -58,9 +58,9 @@ summary](https://launchpad.net/mixxx/+milestone/2.3.0/)
         1.  TODO ...
         2.  
 10. ⌛ Release announcement:
-    1.  Write announcement in new forum thread. For the "Post topic as"
+    1.  ~~Write to announcement in new forum thread. For the "Post topic as"
         option below the text box to type the post, select
-        "Announcement". 
+        "Announcement".~~
     2.  Cross-post to Zulip \#announce stream
     3.  Cross-post to mixxx-devel
     4.  Cross-post to Facebook
@@ -71,15 +71,15 @@ summary](https://launchpad.net/mixxx/+milestone/2.3.0/)
         2.  hide beta downloads
         3.  move current release to previous
         4.  replace current with new links
-        5.  update Google Analytics labels
-    2.  Update frontpage / features page / etc.
-    3.  Update screenshot downloads on Press page.
+        5.  ~~update Google Analytics labels~~
+    2. ✓ Update frontpage / features page / etc.
+    3. ✓ Update screenshot downloads on Press page.
     4.  Update screenshot in OpenGraph markup (so social shares have
         updated images\!)
     5.  Update credits for contributors to latest release.
     6.  Update <https://mixxx.org/manual/latest> symlink to point to
-        2.2.
-    7.  Update copyright date here and on the blog
+        2.3.
+    7. ✓ Update copyright date here and on the blog
 13. ⌛ Launchpad Updates
     1.  Mark milestone released
     2.  Change "Fix committed" bugs to "Fix released"

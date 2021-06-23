@@ -1,7 +1,5 @@
 # Mixxx 2.3.0 Release Checklist
 
-#UNDER CONSTRUCTION#
-
 This process is followed when it is time for a release (after betas and
 release candidates).
 

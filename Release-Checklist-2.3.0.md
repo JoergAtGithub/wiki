@@ -8,11 +8,10 @@ release candidates).
 [Release milestone
 summary](https://launchpad.net/mixxx/+milestone/2.3.0/)
 
-1.  ✓ Ensure QA testing is complete and all tests pass.
-2.  ✓ Update translations
+1. ✓ Update translations
     1.  Push and pull translations for Mixxx as described here:
         [Internationalization](Internationalization)
-3. ✓ Take release screenshots for press page and blog post.
+2. ✓ Take release screenshots for press page and blog post.
     1.  Deere, LateNight, Shade, Tango
     2.  Load up samplers, preview deck, etc. 
     3.  Make all the screenshots roughly uniform (same view, same tracks
@@ -22,27 +21,27 @@ summary](https://launchpad.net/mixxx/+milestone/2.3.0/)
         1.  macOS can produce particularly pretty drop-shadow
             screenshots with `Shift-Command-4` followed by the spacebar,
             then click the window to screenshot.
-4. ✓ Manual: Verify that https://github.com/mixxxdj/manual/tree/2.3
-        published the latest version to <https://mixxx.org/manual/2.3/>
-5.  ⌛ Update files:
-    1.  ✓ LICENSE (update copyright year, version number)
+3. ✓ Update files from Git log 
+    1. credits in `src/dialog/dlgabout.cpp`
+    2. CHANGELOG.md
+4. Verify 
+    1. ✓ the latest version of https://github.com/mixxxdj/manual/tree/2.3 is published to <https://mixxx.org/manual/2.3/>
+    2. ✓ copyright year and version number in LICENSE
+    3. ✓ .github/workflows/build.yml and tools/deploy.py
+    4. ✓ Check Debian Changelog and PPA destination (TODO: automate it for dot releases) 
+5. ⌛ Build release candidates:
     2.  ⌛ CMakeLists.txt Update VERSION and MIXXX_VERSION_PRERELEASE
-    3.  ⌛ Check Debian Changelog and change PPA destination 
-6.  ✓ Go through Git log, update credits in `src/dialog/dlgabout.cpp`.
-7.  ⌛ Build release packages with the build server.
-    1.  macOS Intel
-    2.  Ubuntu i386 / amd64
-    3.  Windows i386 / amd64
-8.  ⌛ Add a git tag with a GPG signature (release-2.2.0)`git tag -s
-    release-2.2.0 -m "Mixxx 2.2.0"
-    git push --tags upstream release-2.2.0`
+6. ⌛ Perform QA testing with all release candidate binaries (Smoke Test) 
+7. ⌛ Add a git tag with a GPG signature 
+    ```git tag -s 2.3.0 -m "Mixxx 2.3.0"```
+    ```git push --tags upstream 2.3.0```
     1.  This can be done to a commit after it has been pushed or merged
-        from a PR, so wait until you're sure you're ready to tag the
+        from the release candidate PR, so wait until you're sure you're ready to tag the
         release commit.
     2.  **Once pushed, a tag is forever. Never delete a tag from a
         remote.** 
-9.  ⌛ Upload packages.
-    1.  TODO ...
+9.  ⌛ Release
+    1.  Make a release in GitHub 
     2.  Record SHA256sum of all packages in the [Release Checksums
         Google
         Doc](https://docs.google.com/spreadsheets/d/1E5vFa0gKf47P3LMMXpnr3JzsZ7-ENI03IgOkj9lxYQo/edit#gid=0)
@@ -52,18 +51,10 @@ summary](https://launchpad.net/mixxx/+milestone/2.3.0/)
         1.  Go to [2.3.0
             Milestone](https://launchpad.net/mixxx/+milestone/2.3.0).
         2.  Mark milestone released
-    4.  Update the Stable and Beta PPAs.
-        1.  TODO ...
-        2.  
+        3. 2.  Change "Fix committed" bugs to "Fix released"
+    4.  Update copy the release builds from beta to the release PPA.
 10. ⌛ Manual: Remove the developer version warning https://github.com/mixxxdj/manual/pull/376 and verify it at <https://mixxx.org/manual/2.3/>    
-11. ⌛ Release announcement:
-    1.  ~~Write to announcement in new forum thread. For the "Post topic as"
-        option below the text box to type the post, select
-        "Announcement".~~
-    2.  Cross-post to Zulip \#announce stream
-    3.  Cross-post to mixxx-devel
-    4.  Cross-post to Facebook
-12. ⌛ Update the website
+11. ⌛ Update the website
     1.  Update download page:
         1.  Do this after posting the announcement forum thread so you
             can link to the announcement
@@ -79,9 +70,14 @@ summary](https://launchpad.net/mixxx/+milestone/2.3.0/)
     6.  Update <https://mixxx.org/manual/latest> symlink to point to
         2.3.
     7. ✓ Update copyright date here and on the blog
-13. ⌛ Launchpad Updates
-    1.  Mark milestone released
-    2.  Change "Fix committed" bugs to "Fix released"
+12. ⌛ Release announcement:
+    1.  ~~Write to announcement in new forum thread. For the "Post topic as"
+        option below the text box to type the post, select
+        "Announcement".~~
+    2.  Cross-post to Zulip \#announce stream
+    3.  Cross-post to mixxx-devel
+    4.  Cross-post to Facebook
+    
 
 ## Promotion
 

@@ -27,9 +27,9 @@ summary](https://launchpad.net/mixxx/+milestone/2.3.0/)
         published the latest version to <https://mixxx.org/manual/2.3/>
     2.  ⌛ Check that the manual is no longer marked as developer version 
 5.  ⌛ Update files:
-    2.  ✓ LICENSE (update copyright year, version number)
-    3.  ⌛ CMakeLists.txt Update VERSION and MIXXX_VERSION_PRERELEASE
-    6.  ⌛ Check Debian Changelog and change PPA destination 
+    1.  ✓ LICENSE (update copyright year, version number)
+    2.  ⌛ CMakeLists.txt Update VERSION and MIXXX_VERSION_PRERELEASE
+    3.  ⌛ Check Debian Changelog and change PPA destination 
 6.  ✓ Go through Git log, update credits in `src/dialog/dlgabout.cpp`.
 7.  ⌛ Build release packages with the build server.
     1.  macOS Intel

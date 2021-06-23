@@ -28,31 +28,33 @@ summary](https://launchpad.net/mixxx/+milestone/2.3.0/)
     1. ✓ the latest version of https://github.com/mixxxdj/manual/tree/2.3 is published to <https://mixxx.org/manual/2.3/>
     2. ✓ copyright year and version number in LICENSE
     3. ✓ .github/workflows/build.yml and tools/deploy.py
-    4. ✓ Check Debian Changelog and PPA destination (TODO: automate it for dot releases) 
+    4. ✓ Check Debian Changelog and PPA destination 
 5. ⌛ Build release candidates:
-    2.  ⌛ CMakeLists.txt Update VERSION and MIXXX_VERSION_PRERELEASE
+    1.  ⌛ CMakeLists.txt Update VERSION and MIXXX_VERSION_PRERELEASE
 6. ⌛ Perform QA testing with all release candidate binaries (Smoke Test) 
 7. ⌛ Add a git tag with a GPG signature 
-    ```git tag -s 2.3.0 -m "Mixxx 2.3.0"```
-    ```git push --tags upstream 2.3.0```
-    1.  This can be done to a commit after it has been pushed or merged
+    1. ```git tag -s 2.3.0 -m "Mixxx 2.3.0"```
+    2. ```git push --tags upstream 2.3.0```
+    3.  This can be done to a commit after it has been pushed or merged
         from the release candidate PR, so wait until you're sure you're ready to tag the
         release commit.
-    2.  **Once pushed, a tag is forever. Never delete a tag from a
-        remote.** 
-9.  ⌛ Release
-    1.  Make a release in GitHub 
-    2.  Record SHA256sum of all packages in the [Release Checksums
+    4.  **Once pushed, a tag is forever. Never delete a tag from a
+        remote.**
+8. ⌛ Verify release binaries are available
+    1. https://downloads.mixxx.org/releases/2.3.0/
+    2. https://launchpad.net/~mixxx/+archive/ubuntu/mixxx  
+9. ⌛ Release
+    1.  Record SHA256sum of all packages in the [Release Checksums
         Google
         Doc](https://docs.google.com/spreadsheets/d/1E5vFa0gKf47P3LMMXpnr3JzsZ7-ENI03IgOkj9lxYQo/edit#gid=0)
         as a backup and record independent of downloads.mixxx.org (for
         forensic purposes).
+    2.  Make a release in GitHub 
     3.  Update Launchpad
         1.  Go to [2.3.0
             Milestone](https://launchpad.net/mixxx/+milestone/2.3.0).
         2.  Mark milestone released
         3. 2.  Change "Fix committed" bugs to "Fix released"
-    4.  Update copy the release builds from beta to the release PPA.
 10. ⌛ Manual: Remove the developer version warning https://github.com/mixxxdj/manual/pull/376 and verify it at <https://mixxx.org/manual/2.3/>    
 11. ⌛ Update the website
     1.  Update download page:
@@ -112,5 +114,5 @@ summary](https://launchpad.net/mixxx/+milestone/2.3.0/)
 ## Post-Release
 
 1.  ⌛ Create 2.4 branch in mixxx manual and vcpkg 
-3.  ⌛ Update `main` README, CMakeList.txt for 2.5 
-5.  ⌛ Verify .github/workflow/build.yml  
+2.  ⌛ Update `main` README, CMakeList.txt for 2.5 
+3.  ⌛ Remove beta PPA upload in the 2.3 branch from .github/workflow/build.yml  

@@ -30,6 +30,9 @@ summary](https://launchpad.net/mixxx/+milestone/2.3.0/)
 5. ✓ Build release candidates:
     1.  CMakeLists.txt Update VERSION and MIXXX_VERSION_PRERELEASE
 6. ⌛ Perform QA testing with all release candidate binaries (Smoke Test) 
+    1. ✓ macOS 
+    2. ✓ Ubuntu
+    3. Windows
 7. ⌛ Add a git tag with a GPG signature 
     1. ```git tag -s 2.3.0 -m "Mixxx 2.3.0"```
     2. ```git push --tags upstream 2.3.0```

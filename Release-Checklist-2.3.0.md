@@ -56,8 +56,8 @@ summary](https://launchpad.net/mixxx/+milestone/2.3.0/)
             Milestone](https://launchpad.net/mixxx/+milestone/2.3.0).
         2.  Mark milestone released
         3. 2.  Change "Fix committed" bugs to "Fix released"
-10. ⌛ Manual: Remove the developer version warning https://github.com/mixxxdj/manual/pull/376 and verify it at <https://mixxx.org/manual/2.3/>    
-11.  Update the website
+10. ✓ Manual: Remove the developer version warning https://github.com/mixxxdj/manual/pull/376 and verify it at <https://mixxx.org/manual/2.3/>    
+11. ✓ Update the website
     1. ✓ Update download page:
         1.  Do this after posting the announcement forum thread so you
             can link to the announcement
@@ -67,10 +67,8 @@ summary](https://launchpad.net/mixxx/+milestone/2.3.0/)
         5.  ~~update Google Analytics labels~~
     2. ✓ Update frontpage / features page / etc.
     3. ✓ Update screenshot downloads on Press page.
-    4.  Update screenshot in OpenGraph markup (so social shares have
-        updated images!)
-    5.  Update credits for contributors to latest release.
-    6.  Update <https://mixxx.org/manual/latest> symlink to point to
+    4. ✓ Update credits for contributors to latest release.
+    5. ✓ Update <https://mixxx.org/manual/latest> symlink to point to
         2.3.
     7. ✓ Update copyright date here and on the blog
 12. ⌛ Release announcement:

@@ -41,24 +41,24 @@ summary](https://launchpad.net/mixxx/+milestone/2.3.0/)
         release commit.
     4.  **Once pushed, a tag is forever. Never delete a tag from a
         remote.**
-8. ⌛ Verify release binaries are available
+8. ✓ Verify release binaries are available
     1. https://downloads.mixxx.org/releases/2.3.0/
     2. https://launchpad.net/~mixxx/+archive/ubuntu/mixxx  
 9. ⌛ Release
-    1.  Record SHA256sum of all packages in the [Release Checksums
+    1. ✓  Record SHA256sum of all packages in the [Release Checksums
         Google
         Doc](https://docs.google.com/spreadsheets/d/1E5vFa0gKf47P3LMMXpnr3JzsZ7-ENI03IgOkj9lxYQo/edit#gid=0)
         as a backup and record independent of downloads.mixxx.org (for
         forensic purposes).
-    2.  Make a release in GitHub 
+    2. ✓ Make a release in GitHub 
     3.  Update Launchpad
         1.  Go to [2.3.0
             Milestone](https://launchpad.net/mixxx/+milestone/2.3.0).
         2.  Mark milestone released
         3. 2.  Change "Fix committed" bugs to "Fix released"
 10. ⌛ Manual: Remove the developer version warning https://github.com/mixxxdj/manual/pull/376 and verify it at <https://mixxx.org/manual/2.3/>    
-11. ⌛ Update the website
-    1.  Update download page:
+11.  Update the website
+    1. ✓ Update download page:
         1.  Do this after posting the announcement forum thread so you
             can link to the announcement
         2.  hide beta downloads
@@ -68,7 +68,7 @@ summary](https://launchpad.net/mixxx/+milestone/2.3.0/)
     2. ✓ Update frontpage / features page / etc.
     3. ✓ Update screenshot downloads on Press page.
     4.  Update screenshot in OpenGraph markup (so social shares have
-        updated images\!)
+        updated images!)
     5.  Update credits for contributors to latest release.
     6.  Update <https://mixxx.org/manual/latest> symlink to point to
         2.3.

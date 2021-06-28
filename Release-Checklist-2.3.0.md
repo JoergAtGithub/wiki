@@ -33,7 +33,7 @@ summary](https://launchpad.net/mixxx/+milestone/2.3.0/)
     1. ✓ macOS 
     2. ✓ Ubuntu
     3. ✓ Windows
-7. ⌛ Add a git tag with a GPG signature 
+7. ✓ Add a git tag with a GPG signature 
     1. ```git tag -s 2.3.0 -m "Mixxx 2.3.0"```
     2. ```git push --tags upstream 2.3.0```
     3.  This can be done to a commit after it has been pushed or merged

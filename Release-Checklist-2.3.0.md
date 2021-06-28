@@ -71,9 +71,9 @@ summary](https://launchpad.net/mixxx/+milestone/2.3.0/)
     5. ✓ Update <https://mixxx.org/manual/latest> symlink to point to
         2.3.
     7. ✓ Update copyright date here and on the blog
-12. ⌛ Release announcement:
+12. ✓ Release announcement:
     2. ✓ Cross-post to Zulip \#announce stream
-    3.  Cross-post to mixxx-devel
+    3. ~~Cross-post to mixxx-devel~~
     4. ✓ Cross-post to Facebook
     5. ✓ Cross-post to Twitter
     
@@ -83,7 +83,7 @@ summary](https://launchpad.net/mixxx/+milestone/2.3.0/)
 1.  ⌛ Email package maintainers
     1.  Debian/Ubuntu - <https://packages.debian.org/testing/mixxx>
     2.  Gentoo
-    3.  Arch - <http://www.archlinux.org/packages/?q=mixxx>
+    3.  ✓ Arch - <http://www.archlinux.org/packages/?q=mixxx>
     4.  Fedora
 2.  ⌛ E-mail bloggers
 3.  ⌛ Ask other Mixxx users to post on their blogs
@@ -101,7 +101,7 @@ summary](https://launchpad.net/mixxx/+milestone/2.3.0/)
         -- Boost Post $$ (optional)
     2.  ✓ Twitter
     3.  LinkedIn Connected DJs group
-    4.  Reddit r/DJs
+    4.  ✓ Reddit r/DJs & r/Mixxx
     5.  DJTechTools Forums
     6.  TranceAddict Forums
     7.  omgubuntu.co.uk

@@ -107,6 +107,7 @@ summary](https://launchpad.net/mixxx/+milestone/2.3.0/)
     6.  TranceAddict Forums
     7.  omgubuntu.co.uk
     8.  YouTube channels: Crossfader https://www.youtube.com/channel/UCM4u0gp8gm99w9MXQ7ZI8Mw
+    9.  ✓ librearts.org
 9.  ⌛ Update [SourceForge](https://sourceforge.net/projects/mixxx/) to
     point people to the newest version
 

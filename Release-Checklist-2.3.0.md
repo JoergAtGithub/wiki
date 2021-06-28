@@ -29,7 +29,7 @@ summary](https://launchpad.net/mixxx/+milestone/2.3.0/)
     4. ✓ Check Debian Changelog and PPA destination 
 5. ✓ Build release candidates:
     1.  CMakeLists.txt Update VERSION and MIXXX_VERSION_PRERELEASE
-6. ⌛ ✓ Perform QA testing with all release candidate binaries (Smoke Test) 
+6. ✓ Perform QA testing with all release candidate binaries (Smoke Test) 
     1. ✓ macOS 
     2. ✓ Ubuntu
     3. ✓ Windows

@@ -97,9 +97,9 @@ summary](https://launchpad.net/mixxx/+milestone/2.3.0/)
     2.  ~~OhLoh~~ [OpenHub](https://www.openhub.net/p/mixxx)
     3.  [Macupdate.com](https://www.macupdate.com/app/mac/33059/mixxx)
 8.  ⌛ Social Media / Forums
-    1.  [Facebook](https://www.facebook.com/Mixxx-DJ-Software-21723485212/)
-        -- Boost Post ($$)
-    2.  Twitter
+    1.  ✓ [Facebook](https://www.facebook.com/Mixxx-DJ-Software-21723485212/)
+        -- Boost Post $$ (optional)
+    2.  ✓ Twitter
     3.  LinkedIn Connected DJs group
     4.  Reddit r/DJs
     5.  DJTechTools Forums

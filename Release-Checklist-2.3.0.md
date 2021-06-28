@@ -72,6 +72,7 @@ summary](https://launchpad.net/mixxx/+milestone/2.3.0/)
         2.3.
     7. ✓ Update copyright date here and on the blog
 12. ✓ Release announcement:
+    1. Discourse is updated automatically after publishing the blog post and visiting it on the website
     2. ✓ Cross-post to Zulip \#announce stream
     3. ~~Cross-post to mixxx-devel~~
     4. ✓ Cross-post to Facebook

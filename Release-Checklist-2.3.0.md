@@ -102,7 +102,7 @@ summary](https://launchpad.net/mixxx/+milestone/2.3.0/)
         -- Boost Post $$ (optional)
     2.  ✓ Twitter
     3.  LinkedIn Connected DJs group
-    4.  ✓ Reddit r/DJs & r/Mixxx
+    4.  ✓ Reddit r/DJs, r/Mixxx, r/linuxaudio, r/linux
     5.  DJTechTools Forums
     6.  TranceAddict Forums
     7.  omgubuntu.co.uk

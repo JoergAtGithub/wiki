@@ -1,4 +1,8 @@
-Press articles written about Mixxx
+Press articles written about Mixxx 
+
+## 2.3 
+
+  - [9to5Linux](https://9to5linux.com/mixxx-2-3-open-source-dj-software-adds-new-default-skin-new-codecs-and-more/)
 
 ## 2.0
 

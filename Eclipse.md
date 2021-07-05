@@ -240,24 +240,23 @@ QTDIR | /\<path to Qt install directory\>/%VERSION%\#eg /usr/local/Cellar/qt5/5.
     dir ~/eclipse-workspace/qt5/src/gui/kernel
     dir ~/eclipse-workspace/qt5/src/network
     dir ~/eclipse-workspace/qt5/src/sql
-    dir ~/eclipse-workspace/qt5/src/sql/drivers/sqlite
     dir ~/eclipse-workspace/qt5/src/opengl
-    dir ~/eclipse-workspace/sqlite/sqlite3-3.7.4
-    dir ~/eclipse-workspace/portaudio/src/hostapi/alsa/
     
     python
-    import sys
-    
+    import sys 
     sys.path.insert(0, '/home/<user_name>/eclipse-workspace')
     from qt import register_qt_printers
     register_qt_printers (None)
     end
+
     set print pretty 1
     set charset UTF-8
     ```
 
-  - Qt pretty printer
+  - copy Qt pretty printer files to /home/<user_name>/eclipse-workspace
     [qt.py](https://github.com/KDE/kdevelop/blob/master/plugins/gdb/printers/qt.py).
+    [helper.py](https://github.com/KDE/kdevelop/blob/master/plugins/gdb/printers/helper.py).
+
   - "Debug" button for run Mixxx.
   - Mac users running OS X 10.9 Mavericks or later are recommended to
     use LLDB for debugging. In recent versions of OS X, it is difficult

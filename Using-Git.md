@@ -322,16 +322,16 @@ should be merged into current stable release, but started from the
 
 In these cases you need to
 [rebase](https://git-scm.com/book/en/Git-Branching-Rebasing) your work
-on the correct branch. For example, the current stable version is 2.2.3
-and you want your changes to be a part of the 2.2.4 release, but you
-based your work on `main` (which will become the 2.3 release), you
-need to rebase onto the `2.2` branch.
+on the correct branch. For example, the current stable version is 2.3.0
+and you want your changes to be a part of the 2.3.1 release, but you
+based your work on `main` (which will become the 2.4 release), you
+need to rebase onto the `2.3` branch.
 
 To rebase your work in the `fixing_some_bug` branch from `main` onto
-`2.2`, run:
+`2.3`, run:
 
     git fetch upstream
-    git rebase --onto upstream/2.2 upstream/main fixing_some_bug
+    git rebase --onto upstream/2.3 upstream/main fixing_some_bug
 
 Since this changes commits that you already pushed to the server, you
 need to use the `-f` flag when pushing the changes to the remote

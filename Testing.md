@@ -19,8 +19,6 @@ Type either of those into the location bar of a Computer or Folder window.
 Mixxx 2.3: `~/Library/Containers/org.mixxx.mixxx/Data/Library/Application Support/Mixxx`  
 Mixxx 2.2 and earlier: `~/Library/Application Support/Mixxx`  
 
-If you want to switch back to a stable release of Mixxx after testing a development version, you can copy your backed up settings folder to its original location.
-
 ## Main branch builds
 
 Every time we change the code, GitHub Actions makes a build and uploads it to [https://downloads.mixxx.org/builds/main/](https://downloads.mixxx.org/builds/main/). We try to keep the main branch reasonably stable and not merge new features until we're fairly confident they are not going to create serious issues. However, if you want to perform with these, do so at your own risk. If you do decide to perform with a main branch build, test the same build for several practice sets before your gig to check that it works with your particular setup. If you encounter a bug, please [report it](reporting-bugs).

@@ -1,7 +1,6 @@
-# Registering MIDI input handlers from JavaScript
+# Registering MIDI Input Handlers From JavaScript
 
-This feature is in planning. It will not be included in Mixxx 2.1.
-Hopefully it will be ready for Mixxx 2.2.
+This feature is in planning. It is currently not included in Mixxx.
 
 ## Background
 

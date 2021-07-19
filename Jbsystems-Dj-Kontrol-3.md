@@ -123,12 +123,7 @@ Now the controller should work with Mixxx\!
   - Pitch Fader are inverted (up = + , down = -)
   - Shift Btn is mapped as toggle (press to activate, press again to
     deactivate)
+  - Shift + Set Cue = SpinBack
+  - Shift + 2 / 4 / 8 = Play Sampler 1 / 2 / 3
 
-### not working (yet)
-
-  - Xfader Curve Btn
-  - Pitch Lock Btn
-  - S.Start Btn
-  - Zoom Push Btn
-  - Reverse Btn
-  - Jogwheel Led Animations
+  

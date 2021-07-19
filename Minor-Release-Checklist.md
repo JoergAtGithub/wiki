@@ -10,11 +10,11 @@ This process is followed when it is time for a minor release to the stable branc
     1. macOS 
     2. Ubuntu
     3. Windows
-7. Add a git tag with a GPG signature. (Should be signed by a Core Team member)
+7. Add a git tag with a GPG signature. (Should be signed by a Core Team member).
+    1. This should be done to the commit that was at HEAD for the creation of the binaries.
     1. ```export VERSION=X.Y.Z``` 
     1. ```git tag -s $VERSION -m "Mixxx $VERSION"```  (double check identity / email you are using to tag!)
     2. ```git push --tags upstream $VERSION```
-    * This should be done to the commit that was at HEAD for the creation of the binaries.
 8. Wait and Verify release binaries are available
     1. https://downloads.mixxx.org/releases/X.Y.Z/
     2. https://launchpad.net/~mixxx/+archive/ubuntu/mixxx  

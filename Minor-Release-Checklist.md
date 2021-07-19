@@ -3,10 +3,10 @@
 This process is followed when it is time for a minor release to the stable branch.
 
 
-1. Update CHANGELOG.md
-5. Build release candidates:
-    1.  CMakeLists.txt Update VERSION and MIXXX_VERSION_PRERELEASE
-6. Perform QA testing with all release candidate binaries (Smoke Test) 
+1. Source updates:
+    1. Update CHANGELOG.md with significant user-visible changes / bugfixes
+    1. Update CMakeLists.txt VERSION
+6. Perform QA testing with release candidate binaries (Smoke Test) 
     1. macOS 
     2. Ubuntu
     3. Windows

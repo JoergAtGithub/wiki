@@ -26,6 +26,6 @@ To download frimware updates and the Windows driver for the Prime 4:
 
 A mapping for the Denon Prime 4 is currently under development on [this GitHub fork](https://github.com/whanake-music/mixxx/tree/prime4_mapping).
 
-## Mapping Progress
+### Mapping Progress
 
 Currently, the EQ, Gain, Headphone Mix and Library scroll knobs work as expected, as does the Master Gain knob on the top right of the unit. I am slowly getting to grips with using Components JS for the buttons on each Deck and FX section, and so far the Cue and Play/Stop buttons on the left deck work, but with no LED feedback at present.

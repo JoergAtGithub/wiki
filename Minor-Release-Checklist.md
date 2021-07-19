@@ -6,7 +6,7 @@ This process is followed when it is time for a minor release to the stable branc
 1. Source updates:
     1. Update CHANGELOG.md: Add list of significant user-visible changes / bugfixes.
     1. Update CHANGELOG.md: Also add the actual date of the previous release.
-    1. Update CMakeLists.txt: VERSION (Looks like `project(mixxx VERSION X.Y.Z)`)
+    1. Update CMakeLists.txt: Increment VERSION (Looks like `project(mixxx VERSION X.Y.Z)`)
 6. Perform Smoke testing with release candidate binaries (Does it launch, does it play music)
     1. macOS 
     2. Ubuntu

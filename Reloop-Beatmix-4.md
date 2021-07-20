@@ -25,7 +25,7 @@ have any control on the mic and you can not use ducking in Mixxx.
 
 The master volume and head volume knobs directly control hardware and
 don't change Mixxx controls. So be sure to adjust Mixxx controls to the
-desired level using the mouse or keayboard.
+desired level using the mouse or keyboard.
 
 # Mixxx mapping description
 

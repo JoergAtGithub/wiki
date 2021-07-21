@@ -1,6 +1,6 @@
 # Graphical development tools
 
-It is recommended to use an Integrated Development Environment that
+It is recommended to use an [Integrated Development Environment](https://www.codecademy.com/articles/what-is-an-ide) that
 works with C++. Mixxx is a large C++ project spread across many files.
 Without an IDE that can help navigate around code split across multiple
 files, it can be difficult to understand how the code fits together.

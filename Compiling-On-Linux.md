@@ -3,15 +3,15 @@ straightforward on Linux. The steps below outline what to do. If you need help a
 
 # Download Mixxx source code
 
-Either download the source for the latest release from the [downloads page on the website](https://www.mixxx.org/download), 
-or checkout a snapshot from our git repository:
+If you want to compile Mixxx, you'll need to download the source code. Source archives for releases are on [downloads.mixxx.org](https://downloads.mixxx.org/), but if you want to contribute to Mixxx, we recommend checking out a snapshot from our git repository instead:
 
   - For the latest development (main) branch: `git clone https://github.com/mixxxdj/mixxx.git`
   - For the latest beta branch: `git clone -b 2.3 https://github.com/mixxxdj/mixxx.git`
-  - For the latest stable branch: `git clone -b 2.2 https://github.com/mixxxdj/mixxx.git` (refer to [old instructions below](#mixxx--22))
+  - For the latest stable branch: `git clone -b 2.2 https://github.com/mixxxdj/mixxx.git`
 
-To update to the latest version of a git branch, enter (`cd` into) the directory you cloned the git repository into and run `git pull`. Refer
-to [Using Git](https://github.com/mixxxdj/mixxx/wiki/Using%20Git) for more details.
+To update to the latest version of a git branch, enter (`cd` into) the directory you cloned the git repository into and run `git pull`. Refer to [Using Git](https://github.com/mixxxdj/mixxx/wiki/Using%20Git) for more details.
+
+If you plan to contribute back your code changes to the official Mixxx project, you should fork Mixxx and clone your fork instead. See [Using Git](https://github.com/mixxxdj/mixxx/wiki/Using%20Git) for more info.
 
 # Install build dependencies
 

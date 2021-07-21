@@ -20,6 +20,8 @@ If you want to compile Mixxx, you'll need to download the source code. Source ar
 
 To update to the latest version of a git branch, enter (`cd` into) the directory you cloned the git repository into and run `git pull`. Refer to [Using Git](https://github.com/mixxxdj/mixxx/wiki/Using%20Git) for more details.
 
+If you plan to contribute back your code changes to the official Mixxx project, you should fork Mixxx and clone your fork instead. See [Using Git](https://github.com/mixxxdj/mixxx/wiki/Using%20Git) for more info.
+
 # Install build dependencies
 
 You have several options how to install the libraries and build tools Mixxx requires.

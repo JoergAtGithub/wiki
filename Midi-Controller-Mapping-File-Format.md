@@ -50,13 +50,13 @@ slash before the `>`, for example, `<SelectKnob/>`.
 Each XML mapping file starts with a header with metadata:
 
     <?xml version="1.0" encoding="utf-8"?>
-        <MixxxMIDIPreset schemaVersion="1" mixxxVersion="1.11.0+"> <!-- Schema version number to help compatibility, should the MIDI format change -->
+        <MixxxControllerPreset mixxxVersion="2.0" schemaVersion="1"> <!-- Schema version number to help compatibility, should the MIDI format change -->
         <info>
             <name>Example MIDI Preset for Mixxx</name>
             <author>Tom Care</author>
             <description>This is an example XML MIDI preset for Mixxx. The scope of the preset could be from a small functionality addition, to a complete mapping for a controller, to a complex personal setup with multiple controllers. This description is intended for distribution and could include comments about the extent of the functionality.</description>
-                    <wiki>Encoded URL to Mixxx wiki page documenting this controller mapping</wiki>
-                    <forums>Encoded URL to Mixxx discussion forums page for this controller mapping</forums>
+            <wiki>Encoded URL to Mixxx wiki page documenting this controller mapping</wiki>
+            <forums>Encoded URL to Mixxx discussion forums page for this controller mapping</forums>
         </info>
         <controller id="controller name"> <!-- Many controllers in one file supported. A controller should only appear once -->
 
@@ -193,5 +193,5 @@ file.
 
 ``` 
     </controller>
-</MixxxMIDIPreset>
+</MixxxControllerPreset>
 ```

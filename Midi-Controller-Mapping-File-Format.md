@@ -60,7 +60,7 @@ Each XML mapping file starts with a header with metadata:
         </info>
         <controller id="controller name"> <!-- Many controllers in one file supported. A controller should only appear once -->
 
-The schemaVersion and mixxxVersion attributes of the MixxxMIDIPreset
+The schemaVersion and mixxxVersion attributes of the MixxxControllerPreset
 element are important for future compatibility as the Mixxx MIDI mapping
 format changes. The child elements of the \<info\> element are used to
 display information about the mapping in the Mixxx controller

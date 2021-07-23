@@ -3,7 +3,7 @@ The Mixxx settings folder contains all user data and settings of your Mixxx inst
 ## Location
 
 **Linux**  
-`\~/.mixxx/`  
+`~/.mixxx/`  
 Note: make sure you have 'Show hidden files' enabled in your file manager
 in order to show all dot-files and folders.
 

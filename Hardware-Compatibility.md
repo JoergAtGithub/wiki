@@ -473,7 +473,7 @@ Supported Mappings](#Community%20Supported%20Mappings) table above.
 <td>2014</td>
 </tr>
 <tr class="even">
-<td>[[Denon Prime 4]]</td>
+<td>[[Denon DJ Prime 4]]</td>
 <td>$1,899</td>
 <td>4 deck standalone unit + controller</td>
 <td>yes</td>

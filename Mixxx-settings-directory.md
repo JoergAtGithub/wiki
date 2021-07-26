@@ -1,11 +1,11 @@
-The Mixxx settings folder contains all user data and settings of your Mixxx installation.
+The Mixxx settings directory contains all user data and settings of your Mixxx installation.
 
 ## Location
 
 **Linux**  
 `~/.mixxx/`  
 Note: make sure you have 'Show hidden files' enabled in your file manager
-in order to show all dot-files and folders.
+in order to show all dot-files and directories.
 
 **Windows**  
 Vista and up: `%LOCALAPPDATA%\Mixxx\`  
@@ -18,14 +18,14 @@ Mixxx 2.2 and earlier: `~/Library/Application Support/Mixxx`
 
 ## Content
 
-`analysis` folder  
+`analysis` directory  
 This contains all waveform analysis, i.e. the data used to compose a track's scrolling waveform and track overview.  
 If not existent, this data will be recreated each time a track is loaded into a Mixxx deck. Thus it does not belong to the essential data to be backed up.  
 
-`broadcast_profiles` folder  
+`broadcast_profiles` directory  
 All broadcast profiles you have configured.  
 
-`controllers` folder  
+`controllers` directory  
 All controller mappings you stored. This can be downloaded and self-built mappings, as well as built-in mappings that you modified in Preferences > Controllers > YourController manually or with the MIDI Wizard.  
 
 `effects.xml` (TODO update for the new effects system)  

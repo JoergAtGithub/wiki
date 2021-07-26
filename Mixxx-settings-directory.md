@@ -44,7 +44,7 @@ The Mixxx library database. All track locations, all track metadata, saved cues,
 Stores tracks currently loaded to sample decks.  
 
 `sandbox.cfg`  
-??  
+This is used under macOS to track which files Mixxx will have access to  
 
 `soundconfig.xml`  
 Sound device configuration from Preferences > Sound Hardware  

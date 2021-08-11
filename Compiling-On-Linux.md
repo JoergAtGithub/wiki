@@ -21,15 +21,14 @@ You only need to enable the *free* repository; the *nonfree* repository is not n
 
 Then run:
 ``` sh
-sudo dnf groupinstall "Development Tools"
-sudo dnf install gcc-c++ ccache
+sudo dnf install gcc-c++ ccache ninja-build
 sudo dnf builddep mixxx
 ```
 
-The following extra dependencies are needed for building the *main* branch in addition to those
+The following dependencies are needed for building the *main* branch in addition to those
 from *2.3* that have been installed by `builddep`:
 ``` sh
-sudo dnf install qt5-qtdeclarative-devel qt5-qtquickcontrols qt5-qtquickcontrols2 zlib
+sudo dnf install qt5-qtdeclarative-devel qt5-qtquickcontrols qt5-qtquickcontrols2
 ```
 
 ## Arch & Derivatives

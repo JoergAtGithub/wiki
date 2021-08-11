@@ -144,6 +144,8 @@ The `mixxx` binary will be in the CMake build directory. You can simply run it d
 ~/mixxx/build/mixxx
 ```
 
+If you use Wayland you need to add `-platform xcb` when running the mixxx executable for the waveforms to work. Unfortunately this will not be resolved until we switch to Qt6 and rewrite the waveform renderers.
+
 # ccache
 
 We highly recommend installing [CCache](https://ccache.dev/) if you are building Mixxx frequently, whether for development or testing. CCache drastically speeds up the time to recompile Mixxx, especially when switching between git branches. CMake works with CCache automatically.

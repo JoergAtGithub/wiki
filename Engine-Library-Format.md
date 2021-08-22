@@ -109,8 +109,6 @@ crate.
 
 ### `CrateParentList`
 
-Each row represents **???**
-
 | Column        | Type    | Meaning                                                                        |
 | ------------- | ------- | ------------------------------------------------------------------------------ |
 | crateOriginId | INTEGER | ID of crate in the Crate view, foreign key to `Crate.id`                       |

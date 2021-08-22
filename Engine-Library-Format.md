@@ -91,11 +91,11 @@ database? Is the file copied too (assume not, because of space reasons)?
 Each row represents a 'Crate', i.e. a unique subset of unordered tracks
 in the overall collection, grouped together for DJ convenience.
 
-| Column | Type    | Meaning                   |
-| ------ | ------- | ------------------------- |
-| id     | INTEGER | Surrogate primary key     |
-| title  | TEXT    | Short title for the crate |
-| path   | TEXT    | **??**                    |
+| Column | Type    | Meaning                                                              |
+| ------ | ------- | ---------------------------------------------------------------------|
+| id     | INTEGER | Surrogate primary key                                                |
+| title  | TEXT    | Short title for the crate                                            |
+| path   | TEXT    | Parent crate(s) separated by semicolons ending with the crate's name |
 
 ### `CrateHierarchy`
 
@@ -111,10 +111,10 @@ crate.
 
 Each row represents **???**
 
-| Column        | Type    | Meaning                            |
-| ------------- | ------- | ---------------------------------- |
-| crateOriginId | INTEGER | **???**, foreign key to `Crate.id` |
-| crateParentId | INTEGER | **???**, foreign key to `Crate.id` |
+| Column        | Type    | Meaning                                                                        |
+| ------------- | ------- | ------------------------------------------------------------------------------ |
+| crateOriginId | INTEGER | ID of crate in the Crate view, foreign key to `Crate.id`                       |
+| crateParentId | INTEGER | ID the the crate's IMMEDIATE parent from Crate view, foreign key to `Crate.id` |
 
 ### `CrateTrackList`
 

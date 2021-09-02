@@ -133,6 +133,14 @@ ignore, e.g.:
 | `0bbf6400`        | `bf 64 00`   |
 | `09900100`        | `90 01 00`   |
 
+For HID, run:
+
+```
+tshark -i usbmon1 -Y '(usb.capdata && usb.transfer_type == 1 )|| usbhid.data' -e usb.capdata -e usbhid.data -Tfields
+```
+
+The `usb.capdata` filter only matches input and `usb.transfer_type == 1` filters for USB interrupt transfers. `usbhid.data` only matches HID output packets.
+
 ### Wireshark GUI example
 
 Here you can find a Wireshark example running wireshark-gtk (for KDE you

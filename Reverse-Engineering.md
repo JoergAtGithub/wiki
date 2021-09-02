@@ -139,7 +139,7 @@ For HID, run:
 tshark -i usbmon1 -Y '(usb.capdata && usb.transfer_type == 1)|| usbhid.data' -e usb.capdata -e usbhid.data -Tfields
 ```
 
-The `usb.capdata` filter only matches input and `usb.transfer_type == 1` filters for USB interrupt transfers. `usbhid.data` only matches HID output packets.
+The `usb.capdata` filter only matches input and `usb.transfer_type == 1` filters for USB interrupt transfers. `usbhid.data` only matches HID output packets. To filter for specific input reports, use `usb.capdata[0] == REPORTID`. To filter for specific output reports, use `usbhid.data.report_id == REPORTID`.
 
 ### Wireshark GUI example
 

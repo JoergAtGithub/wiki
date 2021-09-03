@@ -6,7 +6,7 @@ We try to ensure that upgrading to new versions does not interfere with settings
 You can backup all that by copying this whole folder:  
 
 **Linux**  
-`\~/.mixxx/`  
+`~/.mixxx/`  
 Note: make sure you have 'Show hidden files' enabled in your file manager
 in order to show all dot-files and folders.
 

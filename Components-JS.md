@@ -676,6 +676,15 @@ Pot Components support an optional relative mode as an alternative to
 dealing with soft takeover. To use it, set the `relative` property to
 `true` in the options object for the constructor. In this mode, moving
 the Pot will adjust the Mixxx Control relative to its current value.
+For example:
+```javascript
+var tempoFader = new components.Pot({
+    midi: [0xB1, 0x32],
+    group: '[Channel1]',
+    inKey: 'rate',
+    relative: true,
+});
+```
 
 ## Encoder
 

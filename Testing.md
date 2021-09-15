@@ -21,7 +21,7 @@ Mixxx 2.2 and earlier: `~/Library/Application Support/Mixxx`
 
 ## Main branch builds
 
-Every time we change the code, GitHub Actions makes a build and uploads it to [https://downloads.mixxx.org/builds/main/](https://downloads.mixxx.org/builds/main/). We try to keep the main branch reasonably stable and not merge new features until we're fairly confident they are not going to create serious issues. However, if you want to perform with these, do so at your own risk. If you do decide to perform with a main branch build, test the same build for several practice sets before your gig to check that it works with your particular setup. If you encounter a bug, please [report it](reporting-bugs).
+Every time we change the code, GitHub Actions makes a build and uploads it to [https://downloads.mixxx.org/snapshots/main/](https://downloads.mixxx.org/snapshots/main/?C=M;O=D). We try to keep the main branch reasonably stable and not merge new features until we're fairly confident they are not going to create serious issues. However, if you want to perform with these, do so at your own risk. If you do decide to perform with a main branch build, test the same build for several practice sets before your gig to check that it works with your particular setup. If you encounter a bug, please [report it](reporting-bugs).
 
 If you are using a Linux distribution other than Ubuntu or a derivative distribution that is incompatible with Ubuntu .deb packages,
 you will need to [compile from source code](https://github.com/mixxxdj/mixxx/wiki/compiling-on-Linux) to test the main Git branch.

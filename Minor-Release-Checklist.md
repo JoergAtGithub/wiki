@@ -49,5 +49,5 @@ This process is followed when it is time for a minor release to the stable branc
     1.  [Facebook](https://www.facebook.com/Mixxx-DJ-Software-21723485212/)
     2.  Twitter
     3.  LinkedIn Connected DJs group
-    4.  Reddit r/DJs, r/Mixxx, r/linuxaudio, r/linux
+    4.  Reddit r/DJs, r/Mixxx, r/linuxaudio
     5.  DJTechTools Forums

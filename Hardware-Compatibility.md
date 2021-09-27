@@ -82,7 +82,10 @@ used with Mixxx on Linux, macOS, and Windows.
 
 ### Mixxx Certified Mappings
 
-Click the name of the controller for more information.
+Click the name of the controller for more information.  
+_Note: this list is possibly incomplete! See the 
+[Hardware section in the Manual](https://manual.mixxx.org/latest/en/hardware/manuals.html) 
+for a complete list of mappings included in mixxx_
 
 | Device                                                                           | Price (USD) \[1\] | Description                                             | Integrated Sound Card | Balanced outputs | Signal protocol | Supported since Mixxx version | Released |
 | -------------------------------------------------------------------------------- | ----------------- | ------------------------------------------------------- | --------------------- | ---------------- | --------------- | ----------------------------- | -------- |

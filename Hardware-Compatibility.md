@@ -411,7 +411,15 @@ Supported Mappings](#Community%20Supported%20Mappings) table above.
 <td>MIDI</td>
 <td>2018</td>
 </tr>
-
+<tr class="odd">
+<td>[[Hercules DJControl Inpulse 500]]</a></td>
+<td>$300</td>
+<td>2 deck all-in-one controller</td>
+<td>yes</td>
+<td>yes</td>
+<td>MIDI</td>
+<td>2020</td>
+</tr>
 <tr class="odd">
 <td><a href="Hercules DJControl AIR Plus">Hercules DJControl AIR Plus</a></td>
 <td>Discontinued</td>

@@ -5,6 +5,7 @@
 page](https://www.numark.com/product/party-mix//)  
 \* [Forum
 thread](https://mixxx.discourse.group/t/numark-party-mix-midi-mapping/16712/20)  
+\* [Mapping](https://github.com/fiveangle/mixxx_numark_partymix/)
 
 ## Compatibility
 

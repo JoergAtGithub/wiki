@@ -358,13 +358,13 @@ Supported Mappings](#Community%20Supported%20Mappings) table above.
 <td>2014</td>
 </tr>
 <tr class="even">
-<td><a href="Roland DJ-202">Roland DJ-202</a></td>
-<td>$300</td>
-<td>2 deck[32] all-in-one</td>
+<td>[[Denon DJ Prime 4]]</td>
+<td>$1,899</td>
+<td>4 deck standalone unit + controller</td>
 <td>yes</td>
-<td>no</td>
+<td>yes</td>
 <td>MIDI</td>
-<td>2017</td>
+<td>2019</td>
 </tr>
 <tr class="odd">
 <td><a href="Hercules DJ Control Instinct P8">Hercules DJ Control Instinct P8</a></td>
@@ -456,15 +456,6 @@ Supported Mappings](#Community%20Supported%20Mappings) table above.
 <td>HID</td>
 <td>2012</td>
 </tr>
-<tr class="odd">
-<td><a href="Soundless Studio joyMIDI">Soundless Studio joyMIDI</a></td>
-<td>$85</td>
-<td>2 deck controller</td>
-<td>no</td>
-<td>no</td>
-<td>MIDI</td>
-<td>2019</td>
-</tr>
 <tr class="even">
 <td><a href="Numark DJ2GO2 Touch">Numark DJ2GO2 Touch</a></td>
 <td>$79</td>
@@ -484,11 +475,29 @@ Supported Mappings](#Community%20Supported%20Mappings) table above.
 <td>2014</td>
 </tr>
 <tr class="even">
-<td>[[Denon DJ Prime 4]]</td>
-<td>$1,899</td>
-<td>4 deck standalone unit + controller</td>
+<td>[[Numark Party Mix]]</td>
+<td>$119</td>
+<td>USB-powered 2-deck portable dj controller with built-in light show</td>
 <td>yes</td>
+<td>no</td>
+<td>MIDI</td>
+<td>2016</td>
+</tr>
+<tr class="even">
+<td><a href="Roland DJ-202">Roland DJ-202</a></td>
+<td>$300</td>
+<td>2 deck[32] all-in-one</td>
 <td>yes</td>
+<td>no</td>
+<td>MIDI</td>
+<td>2017</td>
+</tr>
+<tr class="odd">
+<td><a href="Soundless Studio joyMIDI">Soundless Studio joyMIDI</a></td>
+<td>$85</td>
+<td>2 deck controller</td>
+<td>no</td>
+<td>no</td>
 <td>MIDI</td>
 <td>2019</td>
 </tr>

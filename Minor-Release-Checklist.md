@@ -12,7 +12,7 @@ This process is followed when it is time for a minor release to the stable branc
     2. Ubuntu
     3. Windows
 7. Add a git tag with a GPG signature. (Should be signed by a Core Team member).
-    1. This should be done to the commit that was at HEAD for the creation of the binaries.
+    1. Update CHANGELOG.md with the current date and push.  
     1. ```export VERSION=X.Y.Z``` 
     1. ```git tag -s $VERSION -m "Mixxx $VERSION"```  (double check identity / email you are using to tag!)
     2. ```git push --tags upstream $VERSION```

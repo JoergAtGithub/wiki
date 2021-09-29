@@ -218,10 +218,11 @@ page for the controller.
 Please name your mapping files according to these conventions before
 making a pull request to have your mapping included in Mixxx.
 
-All mapping files should use the same root naming convention of `{manufacturer}-{device}` combined with the suffix of the file type:
+All mapping files should use the same root naming convention of `{manufacturer}-{device}`
+combined with the suffix of the file type:
 * XML MIDI mapping files use the `.midi.xml` suffix, for example, `Stanton-SCS3d.midi.xml`.
 * XML HID mapping files use the `.hid.xml` suffix, for example, `Stanton-SCS3d.hid.xml`.
-* JavaScript files use the `-scripts.js` suffix, for example `Stanton-SCS3d-scripts.js`.
+* JavaScript files use the `.scripts.js` suffix, for example `Stanton-SCS3d.scripts.js`.
 
 ## Design guidelines
 

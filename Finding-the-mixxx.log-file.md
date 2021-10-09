@@ -7,7 +7,7 @@ is a plain text file that can be read with any text editor.
 
 ### Linux
 
-    ~/.mixxx/mixxx.log
+`~/.mixxx/mixxx.log`
 
 **Note**: make sure you have 'Show hidden files' enabled in your file manager
 in order to show all dot-files and folders.

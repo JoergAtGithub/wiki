@@ -21,7 +21,7 @@ This process is followed when it is time for a minor release to the stable branc
     2. https://launchpad.net/~mixxx/+archive/ubuntu/mixxx  
 9. Release
     1. Make a release in GitHub
-    2. Upload tarball to the [Internet Archive Software Collection](https://archive.org/details/software)
+    2. Upload *source code and executables* to the [Internet Archive Software Collection](https://archive.org/details/software)
     3. Update Launchpad
         1.  Change "Fix committed" bugs to "Fix released"
 10. Website updates:

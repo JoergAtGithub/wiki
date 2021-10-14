@@ -20,12 +20,8 @@ This process is followed when it is time for a minor release to the stable branc
     1. https://downloads.mixxx.org/releases/X.Y.Z/
     2. https://launchpad.net/~mixxx/+archive/ubuntu/mixxx  
 9. Release
-    1.  Record SHA256sum of all packages in the [Release Checksums
-        Google
-        Doc](https://docs.google.com/spreadsheets/d/1E5vFa0gKf47P3LMMXpnr3JzsZ7-ENI03IgOkj9lxYQo/edit#gid=0)
-        as a backup and record independent of downloads.mixxx.org (for
-        forensic purposes).
-    2. Make a release in GitHub 
+    1. Make a release in GitHub
+    2. Upload tarball to the [Internet Archive Software Collection](https://archive.org/details/software)
     3. Update Launchpad
         1.  Change "Fix committed" bugs to "Fix released"
 10. Website updates:

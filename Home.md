@@ -1,7 +1,7 @@
 
 ### Mixxx 2.3.1 (Stable Version)
 
-<a href="https://linkify.me/jPmkVMO"><img src="https://github.com/aidenlab/JuiceboxLegacy/wiki/images/winlogo.png" width=100 align="middle"/></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://linkify.me/jPmkVMO">Mixxx for Windows</a>
+<a href="https://linkify.me/9F9c7Mc"><img src="https://github.com/aidenlab/JuiceboxLegacy/wiki/images/winlogo.png" width=100 align="middle"/></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://linkify.me/9F9c7Mc">Mixxx for Windows</a>
 
 <a href="https://mixxx.org/download/#stable"><img src="https://github.com/aidenlab/JuiceboxLegacy/wiki/images/maclogo.png" width=100 align="middle"/></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://mixxx.org/download/#stable">Mixxx for Mac</a>
 

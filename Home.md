@@ -1,7 +1,7 @@
 
 ### Mixxx 2.3.1 (Stable Version)
 
-Mixxx has an broad community for an open-source project,
+Mixxx has a broad community for an open-source project,
 encompassing performing musicians, C++ addicts, amateur DJs, Internet
 radio broadcasters, and casual users. The Mixxx Wiki contains useful
 information for users, developers, and artists, and is summarized in the

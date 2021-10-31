@@ -430,7 +430,7 @@ driver and using the free nouveau driver.
 
 There is an issue with many OpenGL programs with the Nahimic driver these use.
 The easy solution is to uninstall the programs if you don't use them, if you do you can blacklist mixxx.exe.
-[More Details](https://bugs.launchpad.net/mixxx/+bug/1948441)
+[More Details](https://bugs.launchpad.net/mixxx/+bug/1948441#yui_3_10_3_1_1635723656004_1166)
 
 ## Errors on starting Mixxx
 

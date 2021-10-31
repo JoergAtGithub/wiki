@@ -426,6 +426,12 @@ may be newer.
 If you are using GNU/Linux, try uninstalling the proprietary nVidia
 driver and using the free nouveau driver.
 
+## Mixxx goes unresponsive when starting on a secondary monitor with SonicStudio3 / SonicRadar3 installed (Windows)
+
+There is an issue with many OpenGL programs with the Nahimic driver these use.
+The easy solution is to uninstall the programs if you don't use them, if you do you can blacklist mixxx.exe.
+[More Details](https://bugs.launchpad.net/mixxx/+bug/1948441)
+
 ## Errors on starting Mixxx
 
 **`Could not open xml file: "/usr/local/share/mixxx/schema.xml"`**

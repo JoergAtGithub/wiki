@@ -1,7 +1,16 @@
 
 ### Mixxx 2.3.1 (Stable Version)
 
-Mixxx has a broad community for an open-source project,
+<a href="https://linkify.me/9F9c7Mc"><img src="https://github.com/aidenlab/JuiceboxLegacy/wiki/images/winlogo.png" width=100 align="middle"/></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://linkify.me/9F9c7Mc">Mixxx for Windows</a>
+
+<a href="https://mixxx.org/download/#stable"><img src="https://github.com/aidenlab/JuiceboxLegacy/wiki/images/maclogo.png" width=100 align="middle"/></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://mixxx.org/download/#stable">Mixxx for Mac</a>
+
+<a href="https://mixxx.org/download/#stable"><img src="https://www.rvmis.com/vendor/Tux.svg.png" width=100 align="middle"/></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://mixxx.org/download/#stable">Mixxx for Linux</a>
+
+
+
+
+Mixxx has an unusually broad community for an open-source project,
 encompassing performing musicians, C++ addicts, amateur DJs, Internet
 radio broadcasters, and casual users. The Mixxx Wiki contains useful
 information for users, developers, and artists, and is summarized in the

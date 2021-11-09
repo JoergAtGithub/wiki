@@ -56,8 +56,8 @@ brew install scons cmake ccache pkg-config portaudio libsndfile libogg libvorbis
 Then set some environment variables which will be used to configure `cmake` below: 
 
 ```shell
-export CMAKE_PREFIX_PATH=/usr/local/opt/
-export Qt5_DIR=/usr/local/opt/qt5/cmake/Qt5/
+export CMAKE_PREFIX_PATH=$(brew --prefix)/opt/
+export Qt5_DIR=$(brew --prefix)/opt/qt5/lib/cmake/Qt5/
 ```
 
 ### Optional: ModPlug support

@@ -50,7 +50,7 @@ dependencies](#Recommended-Pre-built-environment) with Qt 5.12 until this is [fi
 We generally recommend using the [prebuilt environment](#recommended-pre-built-environment) so that you are using the same versions of dependencies as our official builds from GitHub Actions. However, if you want to use [Homebrew](https://brew.sh/) instead, you can do so. Assuming you have already installed Homebrew and gotten it working, open the [Terminal](http://www.apple.com/macosx/apps/all.html#terminal) application and use the following command to install the necessary libraries:
 
 ```shell
-brew install scons cmake ccache pkg-config portaudio libsndfile libogg libvorbis portmidi git taglib libshout protobuf flac libjpeg qt5 chromaprint rubberband fftw vamp-plugin-sdk opusfile lilv lame qtkeychain
+brew install scons cmake ccache pkg-config portaudio libsndfile libogg libvorbis portmidi git taglib libshout protobuf flac libjpeg qt5 chromaprint rubberband fftw vamp-plugin-sdk opusfile lilv lame qtkeychain sound-touch libebur128
 ```
 
 Then set some environment variables which will be used to configure `cmake` below: 

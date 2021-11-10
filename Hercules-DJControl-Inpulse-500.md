@@ -38,7 +38,7 @@ for more details about the audio configuration in Mixxx as well as to [learn how
 ### Mapping description
 
 ***
-Save both MIDI and script files to your [user controller mapping
+Save both [MIDI](https://mixxx.discourse.group/uploads/short-url/iM3HIi1t8Rk2UzyvVzt7ihr4W9J.xml) and [script](https://mixxx.discourse.group/uploads/short-url/kSoIcpk36f5XXAqin2wuNNKwmC7.js) files to your [user controller mapping
 folder](https://github.com/mixxxdj/mixxx/wiki/controller%20mapping%20file%20locations#user%20controller%20mapping%20folder),
 then load the preset as described in [the user
 manual](https://mixxx.org/manual/latest/en/chapters/controlling_mixxx.html#using-midi-hid-controllers)

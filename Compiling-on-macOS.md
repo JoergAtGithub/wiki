@@ -16,10 +16,6 @@ If you want to compile Mixxx, you'll need to download the source code. Source ar
 
 # Install build dependencies
 
-You have several options how to install the libraries and build tools Mixxx requires.
-
-## Recommended: Pre-built environment
-
 There is a script at `tools/macos_buildenv.sh` inside the Mixxx source code repository which automatically downloads an archive with all the precompiled dependencies and build tools that Mixxx requires (apart from the Xcode command line tools [explained above](#install-xcode-command-line-tools)). The script also sets environment variables needed to compile Mixxx. Run the script with `source` to set up your build environment. Assuming you have the Mixxx source code in ~/mixxx, run the following command (replace ~/mixxx if you put the source code elsewhere):
 
 ```shell
@@ -41,58 +37,6 @@ echo "source ~/mixxx/tools/macos_buildenv.sh setup --profile" >> ~/.profile
 The `--profile` option prevents the script from spamming your terminal every time you start a new shell.
 
 The script is compatible with both zsh and bash.
-
-## Homebrew
-
-**There is currently a major performance problem with current versions of Qt in Homebrew and Mixxx on macOS. We recommend [using our prebuilt
-dependencies](#Recommended-Pre-built-environment) with Qt 5.12 until this is [fixed](https://github.com/mixxxdj/mixxx/pull/1974).**
-
-We generally recommend using the [prebuilt environment](#recommended-pre-built-environment) so that you are using the same versions of dependencies as our official builds from GitHub Actions. However, if you want to use [Homebrew](https://brew.sh/) instead, you can do so. Assuming you have already installed Homebrew and gotten it working, open the [Terminal](http://www.apple.com/macosx/apps/all.html#terminal) application and use the following command to install the necessary libraries:
-
-```shell
-brew install scons cmake ccache pkg-config portaudio libsndfile libogg libvorbis portmidi git taglib libshout protobuf flac libjpeg qt5 chromaprint rubberband fftw vamp-plugin-sdk opusfile lilv lame qtkeychain sound-touch libebur128
-```
-
-Then set some environment variables which will be used to configure `cmake` below: 
-
-```shell
-export CMAKE_PREFIX_PATH=$(brew --prefix)/opt/
-export Qt5_DIR=$(brew --prefix)/opt/qt5/lib/cmake/Qt5/
-```
-
-### Optional: ModPlug support
-
-To enable [libmodplug](http://modplug-xmms.sourceforge.net/) based
-module tracker support.
-
-```shell
-brew install libmodplug
-```
-
-If you get the error `No available formula for libmodplug` , enter the
-following:
-
-```shell
-brew create http://sourceforge.net/projects/modplug-xmms/files/latest/download
-```
-
-Enter Formula name `libmodplug` if asked for, then enter:
-
-```shell
-brew install libmodplug
-```
-
-### Optional: Alternative MP3/AAC support
-
-Mixxx supports using macOS-provided versions of the MP3 and AAC codec, so you do not need this step for MP3/AAC support. If you don't want to use the macOS versions of these codecs you can build the codecs into Mixxx directly. To do this, you have to install the MP3 and AAC codecs using Homebrew:
-
-```shell
-brew install libid3tag libmad mp4v2 faad2
-```
-
-## Build dependencies yourself
-
-You can use the [scripts used to make the prebuilt environment](https://github.com/mixxxdj/buildserver) locally if you want to do it yourself. Generally this is a waste of time unless you are working on changing the prebuilt environment. Refer to the [GitHub Actions CI script](https://github.com/mixxxdj/buildserver/blob/2.3.x-unix/.github/workflows/build-environment-build.yml) for how to use the build scripts.
 
 # Configure CMake
 

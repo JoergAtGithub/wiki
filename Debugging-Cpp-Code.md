@@ -7,11 +7,11 @@ to print logs of failed tests.
 ### gdb
 Use `gdb` to get backtraces in case of crashes
 
-Enter `gdb` with `gdb mixxx-test`
+Enter gdb through `gdb mixxx-test` from the build directory 
 (or `gdb --args mixxx-test --gtest_filter=TESTNAME\*` to run only specific tests)
 and wait until it has read all the symbols.
 Enter `run` to execute the program.
-`gdb` will automatically stop on crash,
+Gdb will automatically stop on crash,
 then use `backtrace` to inspect the call-sites.
 
 Use a debugger with breakpoints at suspicious lines to inspect program state.

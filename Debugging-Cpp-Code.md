@@ -1,18 +1,18 @@
 ## Tests
-Run tests with `ctest --output-on-failure`
+Run the tests with `ctest --output-on-failure`
 or set the environment variable `CTEST_OUTPUT_ON_FAILURE`
 to print logs of failed tests.
 
 ## Debugging
 ### gdb
-Use `gdb` to get backtraces in case of crashes
+Use `gdb` to get backtraces in case of crashes.
 
-Enter gdb through `gdb mixxx-test` from the build directory 
-(or `gdb --args mixxx-test --gtest_filter=TESTNAME\*` to run only specific tests)
-and wait until it has read all the symbols.
-Enter `run` to execute the program.
-Gdb will automatically stop on crash,
-then use `backtrace` to inspect the call-sites.
+- Enter gdb through `gdb mixxx-test --gtest_filter=CLASS.TESTNAME`
+  from the build directory and wait until it has read all the symbols.
+  (always isolate a single test when using `mixxx-test` directly)
+- `run` the test
+- Gdb will automatically stop on crash,
+  then use `backtrace` to inspect the call-sites.
 
 Use a debugger with breakpoints at suspicious lines to inspect program state.
 

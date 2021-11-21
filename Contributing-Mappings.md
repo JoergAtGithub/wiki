@@ -100,7 +100,7 @@ request when they have time available. Mappings will be reviewed to
 - check that they follow the [design guidelines](#design-guidelines) and
 - [coding conventions for JavaScript](#coding-conventions-for-JavaScript) and
 - [coding conventions for XML](#coding-conventions-for-XML)
-- to check that the mapping is [documented well on the wiki](#documenting-the-mapping)
+- to check that the mapping is [documented well in a seperate manual PR](#documenting-the-mapping)
 - to look for potential bugs
 
 To update your mapping in response to reviewers' comments, edit

@@ -120,7 +120,7 @@ time-stretch" in 1.8.x and below) Mixxx will use a vocoder-based
 algorithm from the SoundTouch library, which sounds a lot better (but is
 not recommended when scratching).
 
-## How can I move my music to another folder or hard drive without loosing information like bpm or cue points?
+## How can I move my music to another folder or hard drive without losing information like bpm or cue points?
 
 Unfortunately, this does not yet work automagically but needs some
 manual fiddling with the music configuration files. Here is one way of

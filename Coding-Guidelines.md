@@ -744,15 +744,17 @@ operator+. Use + in favour of % for better readability.
 
 In the C++ community are two mutually exclusive styles established:
 
-1.) Google/Qt: "References can be confusing, as they have value syntax
+1.) Google(original)/Qt: "References can be confusing, as they have value syntax
 but pointer semantics."
-<https://google.github.io/styleguide/cppguide.html#Reference_Arguments>
+
+_Note: Because of controversial opinions, Google has recently dropped the related paragraph without replacement. Here a link to the original version:_
+<https://drake.mit.edu/styleguide/cppguide.html#Reference_Arguments>
 
 2.) Cpp Core Guidelines: "This makes it clear to callers that the object
 is assumed to be modified"
 <https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#f17-for-in-out-parameters-pass-by-reference-to-non-const>
 
-Since we follow the Google style we avoid using value syntax to change
+Since we have followed the original Google style we avoid using value syntax to change
 variables via a lvalue reference. Using rvalue references to access
 nested variables is permitted.
 

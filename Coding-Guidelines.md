@@ -780,7 +780,7 @@ T& X::refIObject();
 
 T& object = refObject(); 
 ...
-object->setValue(5); // It looks like a local variable is changed.  
+object.setValue(5); // It looks like a local variable is changed.  
 ```
 
 ## C++17

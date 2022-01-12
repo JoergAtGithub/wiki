@@ -138,6 +138,7 @@ MIDI note numbers 1 through 40 that turn on when sent value 0x7f and
 turn off when sent value 0x00, your script could start with:
 
 ``` js
+// eslint-disable-next-line no-var
 var MyController = {};
 
 MyController.init = function (id, debugging) {

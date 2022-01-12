@@ -112,6 +112,7 @@ In your script file, you need to have a declaration of the controller's
 object. It looks like this:
 
 ``` js
+// eslint-disable-next-line no-var
 var MyController = {};
 ```
 

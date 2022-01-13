@@ -52,14 +52,10 @@ sudo apt-get install mixxx-dbgsym
 
 2.  From a command prompt/terminal, type "gdb mixxx" and press Enter.
 
-<!-- end list -->
-
   - **OSX users** need to specify the path for the executable file, e.g
     `gdb /Applications/Mixxx.app/Contents/MacOS/mixxx`
   - Use the gdb "--args" option to pass arguments, e.g. `gdb --args
     ./mixxx --controllerDebug --developer --resourcePath res`
-
-<!-- end list -->
 
 3.  [Continue below](#for-all-of-the-above)
 
@@ -75,8 +71,6 @@ sudo apt-get install mixxx-dbgsym
     gdb prompt: `quit`
 5.  Copying the gdb info:
 
-<!-- end list -->
-
   - **Windows users** can copy the terminal buffer into a text file:
     1.  Click the window's icon in the top left corner.
     2.  Choose *Edit*--\>*Select All*. Everything selected will be
@@ -90,24 +84,16 @@ sudo apt-get install mixxx-dbgsym
   - **Linux/OSX users** should be able to select terminal output by
     using the mouse, and then doing a right click and selecting *Copy*.
 
-<!-- end list -->
-
-1.  [Report a bug](https://bugs.launchpad.net/mixxx/+filebug) using the
+6.  [Report a bug](https://bugs.launchpad.net/mixxx/+filebug) using the
     [Mixxx bug reporting system on
-    Launchpad](https://bugs.launchpad.net/mixxx/). Bugs filed here are
+    Launchpad](https://bugs.launchpad.net/mixxx/). Bugs filed there are
     tracked by developers and will not fall through the cracks as easily
-    as using the IRC channel or mixxx-devel. (If another bug matches
+    as posting them in the forum. (If another bug matches
     your issue, please make a comment on that one including your system
     details instead of filing a new bug.) Make sure to **attach** your
     back-trace (click *Add attachment or patch*.) Do not paste it in the
     comment.
-2.  If you do not want to use Launchpad, post the results in the forum,
-    email them to mixxx-devel, or [pastebin](http://www.pastebin.ca)
-    them and drop the link on [Zulip](https://mixxx.zulipchat.com/) or
-    IRC. We'll then try to figure out where the crash is. Do not assume
-    a developer will hear you in IRC, using a static system (bug
-    tracker, e-mail, forum) is much preferred. The IRC channel is great
-    for technical support though.
+7.  If you do not want to use Launchpad, post the results in the [Help & Suport forum](https://mixxx.discourse.group/c/support/6)
 
 **Note:** To get a backtrace for a thread freeze you can do the same
 thing as above, but to get the gdb prompt, you have to press CTRL+Z in

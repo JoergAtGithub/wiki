@@ -12,7 +12,7 @@ This year Google has announced a set of changes. GSoC is no longer limited to st
 This year we considering to offer mainly medium sized projects projects, consisting smaller tasks that suits to get familiar with Mixxx's code base, C++ and our community at the whole. We have collected many wishlist bugs and stalled projects which are important for some users but have not yet attracted a contributor to spend his spare time.  
 
   - See the list of suggested projects: **[GSoC 2022
-    Ideas](gsoc2022ideas)**
+    Ideas](GSoC_2022_Ideas)**
 
 ## Past Years
 

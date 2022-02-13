@@ -57,6 +57,16 @@ Mixxx should look up our download page and automatically update itself in case a
 
 Mixxx shall suggest compatible tracks matching the current playing one. The feature may use existing mateadata like bpm genre and key or tab online resources like LastFM and similar. 
 
+# Transpose / Pitch shift effect
+
+There should be an independent effect for pitch shifting. This should be implemented as a freely iterated effect.  
+
+# Native Jack/Pipewire client
+
+Currently the sound devices are directly accessed through the jack API. This should be changed to a mode where Mixxx exposes all outputs a Jack ports ready to be routed with an external tool like QJackCtrl
+https://bugs.launchpad.net/mixxx/+bug/1172299  
+
+
 
 # Something Else\!
 

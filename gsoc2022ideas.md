@@ -1,7 +1,6 @@
 ## Student Project Ideas for Google Summer of Code 2022
 
-This page lists the suggested projects for students working on Mixxx as
-part of [Google Summer of Code 2022](https://summerofcode.withgoogle.com/). 
+This page lists the suggested tasks to build a GSoC medium or large project for [Google Summer of Code 2022](https://summerofcode.withgoogle.com/). Please pick one or two of these task and define your own project from it by putting it into a time frame and extend it with our own ideas for improving Mixxx. 
 
 If you are interested in applying to GSoC, read [GSoC Advice](gsocadvice)
 before applying or getting involved. Only students that are active members

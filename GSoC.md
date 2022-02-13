@@ -1,9 +1,22 @@
 
 [Google Summer of Code](https://summerofcode.withgoogle.com/) is an
-annual program that provides paid internships for students to work on
+annual program that provides paid internships all adults to work on
 free software projects.
 
-# 2021
+# 2022
+
+Mixxx will apply for taking part in GSoC 2022 
+
+This year Google has announced a set of changes. GSoC is no longer limited to students, but open to all adults. The project length is now more flexible and can be adjusted for medium ~175 hours or larger ~350 hours projects. These hours can be timed into a 22 week period. More details can be found in the [Google Open-Source Blog](https://opensource.googleblog.com/2021/11/expanding-google-summer-of-code-in-2022.html).
+
+This year we considering to offer mainly medium sized projects projects, consisting smaller tasks that suits to get familiar with Mixxx's code base, C++ and our community at the whole. We have collected many wishlist bugs and stalled projects which are important for some users but have not yet attracted a contributor to spend his spare time.  
+
+  - See the list of suggested projects: **[GSoC 2022
+    Ideas](gsoc2022ideas)**
+
+## Past Years
+
+### 2021
 
 Mixxx applied as a mentor organization for Google Summer of Code, 2021 but was declined this year in order to make room for newer organizations
 
@@ -18,8 +31,6 @@ This year we considering to offer projects consisting smaller tasks that suits t
 
   - See the list of suggested projects: **[GSoC 2021
     Ideas](gsoc2021ideas)**
-
-## Past Years
 
 ### 2020
 

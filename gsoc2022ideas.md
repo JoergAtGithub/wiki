@@ -12,27 +12,27 @@ use cases with us.
 # Spin-Up/Spin-Down effect 
 
 Some Controller mappings have implemented a Spin-Up/Spin-Down to mimic the inertia of a turn table. 
-This should be moved into the engine, so that it is accessible without a controller.
+This should be moved into the engine, so that it is accessible without a controller. https://bugs.launchpad.net/mixxx/+bug/1692261
 
 # Fader-Start Feature
 
 Some Controller mappings have implemented a Fader-Start feature. This allows to start a track by pulling the line fader-up.
-This should be accessible without a controller.  
+This should be accessible without a controller.  https://bugs.launchpad.net/mixxx/+bug/661917
  
 # Scratch smoothing.
 
 Our scratching algorithm suffers from jitter noise created by the latency of the midi messages. 
-This can be improved by considering the time stamps of the midi messages.
+This can be improved by considering the time stamps of the midi messages. https://bugs.launchpad.net/mixxx/+bug/1157573
 
 # Sharp Scratching
 
 Currently crossfader changes are stretched on audio buffer time to avoid pop sounds. 
-This is too long for some scratching styles. 
+This is too long for some scratching styles. https://bugs.launchpad.net/mixxx/+bug/1703475
 
 # Resample options
 
 Mixxx uses a linear resample when scratching. This is blazing fast, but the sound can be improved. 
-Here Mixxx should provide more resample options.
+Here Mixxx should provide more resample options. https://bugs.launchpad.net/mixxx/+bug/1775164
 
 # Graceful recovery of controllers
 
@@ -55,11 +55,11 @@ Mixxx should look up our download page and automatically update itself in case a
 
 # Track suggestion feature
 
-Mixxx shall suggest compatible tracks matching the current playing one. The feature may use existing mateadata like bpm genre and key or tab online resources like LastFM and similar. 
+Mixxx shall suggest compatible tracks matching the current playing one. The feature may use existing meta data like bpm genre and key or tab online resources like LastFM and similar. https://bugs.launchpad.net/mixxx/+bug/889898
 
 # Transpose / Pitch shift effect
 
-There should be an independent effect for pitch shifting. This should be implemented as a freely iterated effect.  
+There should be an independent effect for pitch shifting. This should be implemented as a freely iterated effect. https://bugs.launchpad.net/mixxx/+bug/1299035  
 
 # Native Jack/Pipewire client
 

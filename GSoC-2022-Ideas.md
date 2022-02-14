@@ -43,11 +43,6 @@ Mixxx should do it automatically.
 Mixxx should be able to continue playing after cumming back from the suspend state of the PC. 
 https://bugs.launchpad.net/mixxx/+bug/1744641
 
-# Graceful recovery of soundcards
-
-If a soundcard is unplugged it has to be manually reconfigured, which is a party stopper. 
-Mixxx should do it automatically. https://bugs.launchpad.net/mixxx/+bug/364803
-
 # Auto Updater for Windows and MacOs
 
 Mixxx should look up our download page and automatically update itself in case an update is available.
@@ -59,12 +54,6 @@ Mixxx shall suggest compatible tracks matching the current playing one. The feat
 # Transpose / Pitch shift effect
 
 There should be an independent effect for pitch shifting. In addition to our main pitch shift feature this should be implemented as an independent effect with a wider range of parameter values. https://bugs.launchpad.net/mixxx/+bug/1299035  
-
-# Native Jack/Pipewire client
-
-Currently the sound devices are directly accessed through the jack API. This should be changed to a mode where Mixxx exposes all outputs a Jack ports ready to be routed with an external tool like QJackCtrl
-https://bugs.launchpad.net/mixxx/+bug/1172299  
-
 
 
 # Something Else\!

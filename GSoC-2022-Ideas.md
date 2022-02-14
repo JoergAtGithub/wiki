@@ -38,7 +38,7 @@ Here Mixxx should provide more resample options. https://bugs.launchpad.net/mixx
 If a controller is accidentally unplugged it has to be manually reconfigured, which is a party stopper. 
 Mixxx should do it automatically.
 
-# Graceful syspend/resume support: 
+# Graceful suspend/resume support: 
 
 Mixxx should be able to continue playing after cumming back from the suspend state of the PC. 
 https://bugs.launchpad.net/mixxx/+bug/1744641

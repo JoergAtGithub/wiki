@@ -58,7 +58,7 @@ Mixxx shall suggest compatible tracks matching the current playing one. The feat
 
 # Transpose / Pitch shift effect
 
-There should be an independent effect for pitch shifting. This should be implemented as a freely iterated effect. https://bugs.launchpad.net/mixxx/+bug/1299035  
+There should be an independent effect for pitch shifting. In addition to our main pitch shift feature this should be implemented as an independent effect with a wider range of parameter values. https://bugs.launchpad.net/mixxx/+bug/1299035  
 
 # Native Jack/Pipewire client
 

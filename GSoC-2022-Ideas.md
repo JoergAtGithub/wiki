@@ -11,22 +11,32 @@ use cases with us.
 # Spin-Up/Spin-Down effect 
 
 Some Controller mappings have implemented a Spin-Up/Spin-Down to mimic the inertia of a turn table. 
-This should be moved into the engine, so that it is accessible without a controller. https://bugs.launchpad.net/mixxx/+bug/1692261
+This should be moved into the engine, so that it is accessible without a controller. 
+
+Part of the project is to record the spin up of a real turn table to get to know of the real acceleration curve and model this via software. You may also deal with the BPM sync feature, in a way that the spin up and down integrates faultlessly into a mix. 
+ 
+https://bugs.launchpad.net/mixxx/+bug/1692261
 
 # Fader-Start Feature
 
 Some Controller mappings have implemented a Fader-Start feature. This allows to start a track by pulling the line fader-up.
-This should be accessible without a controller.  https://bugs.launchpad.net/mixxx/+bug/661917
+This should be accessible independent from a certain a controller mapping. This is one of some more missing feature for Broadcasting DJs. The main goal of this project is working towards of making broadcast DJs first class citizen.    
+
+https://bugs.launchpad.net/mixxx/+bug/661917
  
 # Scratch smoothing.
 
-Our scratching algorithm suffers from jitter noise created by the latency of the midi messages. 
-This can be improved by considering the time stamps of the midi messages. https://bugs.launchpad.net/mixxx/+bug/1157573
+Our scratching algorithm suffers from jitter noise created by the latency of the midi messages. It also suffers from a so called sticker drift, an incrementing offset shifting away form the original scratch sample. 
+Part of this project is to filter the discrete messages from the controller in a way that you can either "play" the track without much wobbling by turning the jog wheel, and keep the position during scratching. 
+
+We may also make use of the time stamps of the midi messages. https://bugs.launchpad.net/mixxx/+bug/1157573
 
 # Sharp Scratching
 
 Currently crossfader changes are stretched on audio buffer time to avoid pop sounds. 
-This is too long for some scratching styles. https://bugs.launchpad.net/mixxx/+bug/1703475
+This is too long for some scratching styles. During this project you need to dive into the audio engine code find the code that is responsible for crossfading and make it independent from the audio buffer size. 
+
+ https://bugs.launchpad.net/mixxx/+bug/1703475
 
 # Resample options
 
@@ -36,7 +46,7 @@ Here Mixxx should provide more resample options. https://bugs.launchpad.net/mixx
 # Graceful recovery of controllers
 
 If a controller is accidentally unplugged it has to be manually reconfigured, which is a party stopper. 
-Mixxx should do it automatically.
+Mixxx should do it automatically. This project has two stages, fist behave like a real DJ: fix the issue but faster. So the the time of silence on the dance floor is kept short. The advance stage of this project is to implement real Hot Plug And Play. In order to that you likely need to touch the low level inside third party libraries.  
 
 # Graceful suspend/resume support: 
 

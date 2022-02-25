@@ -93,10 +93,10 @@ https://bugs.launchpad.net/mixxx/+bug/1744641
 
 # Auto Updater for Windows and MacOs
 
-Mixxx should look up our download page and automatically update itself in case an update is available.
+Mixxx should look up our download page and automatically update itself in case an update is available. This shall be implement using Sparkle on MacOS and WinSparkle on windows like Wireshark.  
 
 * **Expected Outcome:** A working update notifier, frontend and server part. 
-* **Skills:** Experine with MacOs, C++
+* **Skills:** Experience with MacOs and Windows, C++
 * **Possible Mentor:** Daniel Schürmann
 * **Difficulty:** Easy 
 * **Size:** 175 h
@@ -113,7 +113,7 @@ Mixxx shall suggest compatible tracks matching the current playing one. The feat
 
 # Transpose / Pitch shift effect
 
-There should be an independent effect for pitch shifting. In addition to our main pitch shift feature this should be implemented as an independent effect with a wider range of parameter values. https://bugs.launchpad.net/mixxx/+bug/1299035  
+There should be an independent effect for pitch shifting. In addition to our main pitch shift feature this should be implemented as an independent effect with a wider range of parameter values. This can be implemented by a independent instance of RubberBand or other suitable library. https://bugs.launchpad.net/mixxx/+bug/1299035  
 
 * **Expected Outcome:** An additional effect for chipmunk voices.
 * **Skills:** Experience with sound processing, C++

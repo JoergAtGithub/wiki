@@ -1,6 +1,6 @@
 ## Student Project Ideas for Google Summer of Code 2022
 
-This page lists the suggested tasks to build a GSoC medium or large project for [Google Summer of Code 2022](https://summerofcode.withgoogle.com/). Please pick one or two of these task and define your own project from it by putting it into a time frame and extend it with our own ideas for improving Mixxx. 
+This page lists the suggested tasks to build a 175 hour (medium sized) or 350 hour (large project) for [Google Summer of Code 2022](https://summerofcode.withgoogle.com/). The ideas are already assigned to a example project, but feel free to use for building your own project adding your own ideas, to make it suit perfectly to you and your time line.
 
 If you are interested in applying to GSoC, read [GSoC Advice](gsocadvice)
 before applying or getting involved. Only students that are active members

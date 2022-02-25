@@ -1,6 +1,6 @@
 ## Student Project Ideas for Google Summer of Code 2022
 
-This page lists the suggested tasks to build a 175 hour (medium sized) or 350 hour (large project) for [Google Summer of Code 2022](https://summerofcode.withgoogle.com/). The ideas are already assigned to a example project, but feel free to use them for building your own project adding your own ideas, to make it suit perfectly to you, your skills and your time line.
+This page lists the suggested tasks to build a 175 hour (medium sized) or 350 hour (large project) for [Google Summer of Code 2022](https://summerofcode.withgoogle.com/). The ideas are already assigned to example project, but you are encouraged to use them for building your own project adding your own ideas and make it suit perfectly to you, your skills and your time line.
 
 If you are interested in applying to GSoC, read [GSoC Advice](gsocadvice)
 before applying or getting involved. Only students that are active members
@@ -58,28 +58,67 @@ This is too long for some scratching styles. During this project you need to div
 Mixxx uses a linear resample when scratching. This is blazing fast, but the sound can be improved. 
 Here Mixxx should provide more resample options. https://bugs.launchpad.net/mixxx/+bug/1775164
 
+
+* **Expected Outcome:** Optional replacement of the linear resampler.
+* **Skills:** Good understanding of sound processing, C++
+* **Possible Mentor:** Owen Williams
+* **Difficulty:** Easy
+* **Size:** 175 h
+
 # Graceful recovery of controllers
 
 If a controller is accidentally unplugged it has to be manually reconfigured, which is a party stopper. 
-Mixxx should do it automatically. This project has two stages, fist behave like a real DJ: fix the issue but faster. So the the time of silence on the dance floor is kept short. The advance stage of this project is to implement real Hot Plug And Play. In order to that you likely need to touch the low level inside third party libraries.  
+Mixxx should do it automatically. This project has two stages, fist behave like a real DJ: fix the issue but faster. So the the time of silence on the dance floor is kept short. The advance stage of this project is to implement real Hot Plug And Play. In order to that you likely need to touch the low level inside third party libraries. 
+
+The required controller can be provided on loan.
+
+ 
+* **Expected Outcome:** Re-power the controller and continue to use it, on your target platform. 
+* **Skills:** Good understanding of the USB stack, C++
+* **Possible Mentor:** Daniel Schürmann
+* **Difficulty:** Easy 
+* **Size:** 175 h
 
 # Graceful suspend/resume support: 
 
 Mixxx should be able to continue playing after cumming back from the suspend state of the PC. 
 https://bugs.launchpad.net/mixxx/+bug/1744641
 
+* **Expected Outcome:** The sound output shall continue after sleep. 
+* **Skills:** Good understanding of the USB stack, C++
+* **Possible Mentor:** Daniel Schürmann
+* **Difficulty:** Difficult
+* **Size:** 175 h
+
 # Auto Updater for Windows and MacOs
 
 Mixxx should look up our download page and automatically update itself in case an update is available.
+
+* **Expected Outcome:** A working update notifier, frontend and server part. 
+* **Skills:** Experine with MacOs, C++
+* **Possible Mentor:** Daniel Schürmann
+* **Difficulty:** Easy 
+* **Size:** 175 h
 
 # Track suggestion feature
 
 Mixxx shall suggest compatible tracks matching the current playing one. The feature may use existing meta data like bpm genre and key or tab online resources like LastFM and similar. https://bugs.launchpad.net/mixxx/+bug/889898
 
+* **Expected Outcome:** A dynamically changing list of suggested tracks.
+* **Skills:** Experience with web services, C++
+* **Possible Mentor:** Daniel Schürmann
+* **Difficulty:** Medium
+* **Size:** 350 h
+
 # Transpose / Pitch shift effect
 
 There should be an independent effect for pitch shifting. In addition to our main pitch shift feature this should be implemented as an independent effect with a wider range of parameter values. https://bugs.launchpad.net/mixxx/+bug/1299035  
 
+* **Expected Outcome:** An additional effect for chipmunk voices.
+* **Skills:** Experience with sound processing, C++
+* **Possible Mentor:** Daniel Schürmann
+* **Difficulty:** Easy
+* **Size:** 175 h
 
 # Something Else\!
 

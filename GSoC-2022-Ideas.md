@@ -77,8 +77,8 @@ The required controller can be provided on loan.
 * **Expected Outcome:** Re-power the controller and continue to use it, on your target platform. 
 * **Skills:** Good understanding of the USB stack, C++
 * **Possible Mentor:** Daniel Schürmann
-* **Difficulty:** Easy 
-* **Size:** 175 h
+* **Difficulty:** Easy / (Hot Plug And Play = Difficult)  
+* **Size:** 175 h  / (Hot Plug And Play = 350 h)
 
 # Graceful suspend/resume support: 
 

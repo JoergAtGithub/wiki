@@ -8,7 +8,7 @@ of the Mixxx community are accepted. If this is not the case yet, just
 say hello at <https://mixxx.zulipchat.com> and discuss your Ideas and
 use cases with us.
 
-# Spin-Up/Spin-Down effect 
+# Spin-Up/Spin-Down effect
 
 Some Controller mappings have implemented a Spin-Up/Spin-Down to mimic the inertia of a turn table. 
 This should be moved into the engine, so that it is accessible without a controller. 
@@ -17,7 +17,11 @@ Part of the project is to record the spin up of a real turn table to get to know
  
 https://bugs.launchpad.net/mixxx/+bug/1692261
 
-# Fader-Start Feature
+* Expected Outcome: A flawlessly working spin up and down effect accessible without controller
+* Skills: Good understanding of sound processing
+* Possible Mentor: Owen Williams
+* Difficulty: Medium 
+* Size 350 h
 
 Some Controller mappings have implemented a Fader-Start feature. This allows to start a track by pulling the line fader-up.
 This should be accessible independent from a certain a controller mapping. This is one of some more missing feature for Broadcasting DJs. The main goal of this project is working towards of making broadcast DJs first class citizen.    

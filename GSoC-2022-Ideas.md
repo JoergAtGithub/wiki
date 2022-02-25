@@ -1,6 +1,6 @@
 ## Student Project Ideas for Google Summer of Code 2022
 
-This page lists the suggested tasks to build a 175 hour (medium sized) or 350 hour (large project) for [Google Summer of Code 2022](https://summerofcode.withgoogle.com/). The ideas are already assigned to a example project, but feel free to use for building your own project adding your own ideas, to make it suit perfectly to you and your time line.
+This page lists the suggested tasks to build a 175 hour (medium sized) or 350 hour (large project) for [Google Summer of Code 2022](https://summerofcode.withgoogle.com/). The ideas are already assigned to a example project, but feel free to use them for building your own project adding your own ideas, to make it suit perfectly to you, your skills and your time line.
 
 If you are interested in applying to GSoC, read [GSoC Advice](gsocadvice)
 before applying or getting involved. Only students that are active members
@@ -35,7 +35,8 @@ The required controller can be provided as a loan.
 
 * **Expected Outcome:** Wobble fee scratching using a joggwheel
 * **Skills:** Good understanding of real time processing, C++
-* **Possible Mentor:** Owen Williams
+* **Possible Mentor:** Daniel Schürmann
+s
 * **Difficulty:** Hard
 * **Size:** 350 h
 
@@ -45,6 +46,12 @@ Currently crossfader changes are stretched on audio buffer time to avoid pop sou
 This is too long for some scratching styles. During this project you need to dive into the audio engine code find the code that is responsible for crossfading and make it independent from the audio buffer size. 
 
  https://bugs.launchpad.net/mixxx/+bug/1703475
+
+* **Expected Outcome:** Cut type Crossfader curve, suitable for scratching.
+* **Skills:** Good understanding of sound processing, C++
+* **Possible Mentor:** Daniel Schürmann
+* **Difficulty:** Medium 
+* **Size:** 175 h
 
 # Resample options
 

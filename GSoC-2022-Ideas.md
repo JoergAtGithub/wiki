@@ -82,7 +82,7 @@ The required controller can be provided on loan.
 
 # Graceful suspend/resume support: 
 
-Mixxx should be able to continue playing after cumming back from the suspend state of the PC. 
+Mixxx should be able to continue playing after cumming back from the suspend state of the PC. This requires to detect the faulty state after resume and reinitialize the required parts of Mixxx.   
 https://bugs.launchpad.net/mixxx/+bug/1744641
 
 * **Expected Outcome:** The sound output shall continue after sleep. 

@@ -17,16 +17,12 @@ Part of the project is to record the spin up of a real turn table to get to know
  
 https://bugs.launchpad.net/mixxx/+bug/1692261
 
-* Expected Outcome: A flawlessly working spin up and down effect accessible without controller
-* Skills: Good understanding of sound processing
-* Possible Mentor: Owen Williams
-* Difficulty: Medium 
-* Size 350 h
+* **Expected Outcome:** A flawlessly working spin up and down effect accessible without controller
+* **Skills:** Good understanding of sound processing, C++
+* **Possible Mentor:** Owen Williams
+* **Difficulty:** Medium 
+* **Size:** 350 h
 
-Some Controller mappings have implemented a Fader-Start feature. This allows to start a track by pulling the line fader-up.
-This should be accessible independent from a certain a controller mapping. This is one of some more missing feature for Broadcasting DJs. The main goal of this project is working towards of making broadcast DJs first class citizen.    
-
-https://bugs.launchpad.net/mixxx/+bug/661917
  
 # Scratch smoothing.
 

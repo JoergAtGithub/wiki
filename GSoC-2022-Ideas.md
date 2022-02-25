@@ -31,6 +31,14 @@ Part of this project is to filter the discrete messages from the controller in a
 
 We may also make use of the time stamps of the midi messages. https://bugs.launchpad.net/mixxx/+bug/1157573
 
+The required controller can be provided as a loan.
+
+* **Expected Outcome:** Wobble fee scratching using a joggwheel
+* **Skills:** Good understanding of real time processing, C++
+* **Possible Mentor:** Owen Williams
+* **Difficulty:** Hard
+* **Size:** 350 h
+
 # Sharp Scratching
 
 Currently crossfader changes are stretched on audio buffer time to avoid pop sounds. 

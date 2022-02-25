@@ -55,7 +55,9 @@ This is too long for some scratching styles. During this project you need to div
 # Resample options
 
 Mixxx uses a linear resample when scratching. This is blazing fast, but the sound can be improved. 
-Here Mixxx should provide more resample options. https://bugs.launchpad.net/mixxx/+bug/1775164
+Here Mixxx should provide more resample options. This project involves to review the already used resample libraries RubberBand and Soundtouch and compare them with other candidates. The one with the best Sound/CPU load trade of shall be selected. Make sure that it supports on the fly changing of the sample rate without artefacts. This project may also involve to contribute a missing feature to such library.  
+
+https://bugs.launchpad.net/mixxx/+bug/1775164
 
 
 * **Expected Outcome:** Optional replacement of the linear resampler.

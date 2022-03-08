@@ -3,7 +3,7 @@
 This page lists the suggested tasks to build a 175 hour (medium sized) or 350 hour (large project) for [Google Summer of Code 2022](https://summerofcode.withgoogle.com/). The ideas are already assigned to example project, but you are encouraged to use them for building your own project adding your own ideas and make it suit perfectly to you, your skills and your time line.
 
 If you are interested in applying to GSoC, read [GSoC Advice](gsocadvice)
-before applying or getting involved. Only students that are active members
+before applying or getting involved. Only beginner contributors that are active members
 of the Mixxx community are accepted. If this is not the case yet, just
 say hello at <https://mixxx.zulipchat.com> and discuss your Ideas and
 use cases with us.

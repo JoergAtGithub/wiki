@@ -3,7 +3,7 @@
 If you think you've found a bug in the software, first make sure you're
 using the latest version from www.mixxx.org, then **check the
 [Troubleshooting](Troubleshooting) page and the
-[forums](http://mixxx.org/forums)** to see if there is a known solution
+[forums](https://mixxx.discourse.group/)** to see if there is a known solution
 or workaround or if other people are having the same problem.
 
 If you don't find anything there, our bug tracking system is hosted on

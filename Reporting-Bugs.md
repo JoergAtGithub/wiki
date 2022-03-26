@@ -82,9 +82,7 @@ collect one yourself it may be more informative.
 #### Mixxx.log
 
 Find and attach this file to the bug. (Don't just paste it into the text
-area because it's long\!) See the [Troubleshooting
-FAQ](troubleshooting#where_is_the_mixxxlog_file) for information on
-where it can be found.
+area because it's long\!) See the [Finding the mixxx.log file](https://github.com/mixxxdj/mixxx/wiki/Finding%20the%20mixxx.log%20file).
 
 #### Debugging Logs
 

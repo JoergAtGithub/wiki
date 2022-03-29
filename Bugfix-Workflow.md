@@ -28,8 +28,8 @@ information.
 Read the code to figure out what it is doing. Insert
 [qDebug](http://doc.qt.io/qt-4.8/qdebug.html) statements to help
 understand what is happening at specific points in the code. Note that
-you must run mixxx with the `--debugLevel 2` argument to have all
-debugging messages printed to the console.
+you must run mixxx with the `--logLevel debug` argument to have all
+debugging messages printed to the console. Alternatively you may use the `--developer` argument to enable developer features. 
 
 ## Ask for hints and help
 

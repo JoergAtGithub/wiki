@@ -10,7 +10,7 @@ available on [the download page](http://mixxx.org/download).
 
 ## Audio is crackling
 
-Your audio latency may be set lower than your system can handle. See the [Adjusting Audio Latency](Adjusting%20Audio%20Latency) page for tips on adjusting your latency.
+Your audio latency may be set lower than your system can handle. First, raise your audio buffer size in Preferences > Sound Hardware until sound is flawless. Furthermore, see the [Adjusting Audio Latency](Adjusting%20Audio%20Latency) page for tips on tweaking the latency in your operating system.
 
 Updating to Windows 10 20H2 has made this worse for some users. Raising the audio buffer size or downgrading to an earlier version of Windows may work around the issue.
 

@@ -24,11 +24,7 @@ following elements on the setup wizard:
 Note: CMake support has been added to Mixxx 2.3. You need this version
 or newer in order to use these instructions.
 
-Also note that the script in Mixxx sources tools\windows_buildenv.bat 
-can generate a CMakeSettings.json
-
-Open Visual Studio, go to File-Open-\>CMake... and select the
-CMakelists.txt from the root of the Mixxx source folder.
+The required settings file `CMakeSettings.json` can be generated via a script in Mixxx sources: `tools\windows_buildenv.bat`. To execute it, open `x64 Native Tools Command Prompt for VS 2019` from the Windows Start Menu, change to the tools folder and type `windows_buildenv.bat`. The script is not compatible to PowerShell, which is used from Windows 10 when executed by double-click on the file.
 
 Then, open the CMake configuration (One place where you can do this is
 selecting the CMakelists.txt file, right click and select the configure

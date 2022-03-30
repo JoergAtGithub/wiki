@@ -148,15 +148,3 @@ so you will need to tell it to use it from the sources, like this:
 Now, you can build Mixxx with Compile -\> Compile All, and run and debug
 Mixxx using the Debug menu ( F5 shortcut)
 
-### Generate a working directory
-
-As explained above, you cannot execute mixxxx.exe from the build
-directory without adding additional parameters. This is because it will
-miss the resources, like skins or translations.
-
-In order to generate a working directory (like an installer would do),
-use the Compile-\> Install mixxx option from Visual studio.
-
-This does not install the application to the local machine, but instead
-generates a new directory ( out/install/Build-Type/ ) which will have
-all the requires files in place.

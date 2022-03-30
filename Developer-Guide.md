@@ -45,20 +45,20 @@ see them in other sections.
 
   - [Startup](developer_guide_startup)
   - [Library](developer_guide_library)
-  - [Shoutcast](developer_guide_shoutcast)
+  - Shoutcast
   - [Mixing Engine](developer_guide_engine)
   - [Deck/Sampler Processing](developer_guide_engine_player)
   - [Effects Framework](developer_guide_effects)
-  - [SoundManager (OS audio interface)](developer_guide_soundmanager)
-  - [SoundSource (per-format audio
-    decoding)](developer_guide_soundsource)
+  - SoundManager (OS audio interface)
+  - SoundSource (per-format audio
+    decoding)
   - [Analysers (beat detection, key detection, waveform analysis,
     replaygain, etc.)](developer_guide_analysers)
-  - [Vinyl Control](developer_guide_vinyl_control)
-  - [Controllers (MIDI, HID,
-    etc.)](start#controller_mapping_documentation)
-  - [Keyboard Control](developer_guide_keyboard)
-  - [Preferences Dialogs](developer_guide_preferences)
-  - [Waveform](developer_guide_waveform)
+  - Vinyl Control
+  - Controllers (MIDI, HID,
+    etc.)
+  - Keyboard Control
+  - Preferences Dialogs
+  - Waveforms
   - [Skins](start#skin_documentation)
   - [GUI Widgets (non-skin)](developer_guide_widgets)

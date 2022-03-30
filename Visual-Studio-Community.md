@@ -6,7 +6,7 @@
 multiple languages. Since version 2015, there is a free-to-use Community
 edition and 2017 added initial support for CMake projects.
 
-Only version 2019 has good CMake support required for Mixxx, so this one is the recommended version.
+Only since version 2019 onwards the CMake support is good enough for Mixxx sources:
 
 ### Installation
 

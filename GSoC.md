@@ -5,7 +5,7 @@ free software projects.
 
 # 2022
 
-Mixxx will apply for taking part in GSoC 2022 
+Mixxx has been accepted for taking part in GSoC 2022 
 
 This year Google has announced a set of changes. GSoC is no longer limited to students, but open to all adults. The project length is now more flexible and can be adjusted for medium ~175 hours or larger ~350 hours projects. These hours can be timed into a 22 week period. More details can be found in the [Google Open-Source Blog](https://opensource.googleblog.com/2021/11/expanding-google-summer-of-code-in-2022.html).
 

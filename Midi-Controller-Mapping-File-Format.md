@@ -144,11 +144,32 @@ XML, write:
     controller
   - **Soft-takeover**: prevents the physical control from affecting
     Mixxx until it's close to the on-screen control's position.
-  - **fourteen-bit-lsb**/**fourteen-bit-msb**: 14-bit (high resolution)
+  - **fourteen-bit-lsb**/**fourteen-bit-msb** *New in 1.12*  
+    14-bit (high resolution)
     MIDI least/most significant byte. Some controls, most often pitch
     faders, send two MIDI messages so their values can be combined to
     form 127<sup>2</sup> (16,384) possible values rather than 127 for
-    more precise control. *New in 1.12*
+    more precise control. Use two controls to catch both messages:
+    ```
+	 <control>
+	     <group>[Channel1]</group>
+	     <key>rate</key>
+	     <status>0xB0</status>
+	     <midino>0x29</midino>
+	     <options>
+	         <fourteen-bit-lsb/>
+	     </options>
+	 </control>
+	 <control>
+	     <group>[Channel1]</group>
+	     <key>rate</key>
+	     <status>0xB0</status>
+	     <midino>0x09</midino>
+	     <options>
+	         <fourteen-bit-msb/>
+	     </options>
+	 </control>
+    ```
 
 ## Outputs
 

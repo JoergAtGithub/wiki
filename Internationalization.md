@@ -19,6 +19,11 @@ Locales customize programs to languages and regional dialects. Often locales cor
 
 You can do a translation for any locale, such as German (Germany) (de_DE) or German (Austria) (de_AT), to adjust for regional spelling and idioms. A locale will define how characters are sorted, how the date and time are represented, the names of the days of the week and months of the year.
 
+By default Mixxx loads the system language. For instance, if the system is Portuguese (Brazil) (pt_BR), Mixxx automatically loads correct translation pt_BR. In case of Portuguese (Angola) (pt-AO) it falls back to just Portuguese (pt) because by now we have no pt-AO translation. If this is would be not available it will fall back to English and not pick Portuguese (Portugal). That's why we should provide fallback language without country extension for all languages where only some countries are supported.   
+
+A list of all known language, country combinations can be found here: 
+https://www.localeplanet.com/icu/iso639.html
+
 ## Getting Started
 
 ### I want to help translate Mixxx, what do I need to do?

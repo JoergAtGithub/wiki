@@ -90,6 +90,8 @@ BrowseEncoder {
 ```
 You can easily read from this, that the controller likely sends a midi message with the "address" 6 (the second byte in the three midi bytes), when the browse encoder is being pressed and a midi CC message with "address"/"control number" 6 when its being turned. Unfortunately, not all required information can be read from these files. How do you interpret the values coming from the hardware? What values do you need to send to which "address" to control the LED ring around the encoder? You probably need to do some guesswork from here. Its plausible that the address of the LED ring is the same as its related input controls (5 or 6). We know the `ledType` is `Simple`, but what does that mean exactly? We can see from looking at the actual controller that its a single-color led, but is it just on-off or can it be dimmed? Figuring that out involves guesswork where you have to find out what works by plain trial-and-error. The sections below explain some more tools how you can make this easier.
 
+Before starting work on these controllers, you should consider researching whether something is known about the other controllers in the family above have already been reverse engineered as many things are likely shared between them (how to interpret LED values and so forth).
+
 ## Observing MIDI/HID messages with other DJ software
 
 [Wireshark](https://wireshark.org/) is an excellent, free, cross

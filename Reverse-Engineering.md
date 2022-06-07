@@ -75,6 +75,36 @@ Use `usbaudio.midi.event` as the filter in Wireshark to separate audio
 signals from MIDI. The `usbaudio.sysex.reassembled.data` filter shows
 only system exclusive (sysex) messages.
 
+## Denon Engine DJ Hardware
+
+[Geoffrey Huntley](https://github.com/ghuntley) has been able to [extract the EngineOS](https://github.com/ghuntley/denon-prime4) running on the Denon PRIME 4 controller. Along with EngineOS, a bunch of [controller mapping definitions have been "leaked"](https://github.com/ghuntley/denon-prime4/tree/trunk/engineos/usr/Engine/AssignmentFiles/PresetAssignmentFiles). This includes the following Denon hardware:
+
+| Denon ID | Consumer name |
+| ---------| ------------- |
+| JC11 | PRIME 4 |
+| JC16 | PRIME 2 |
+| JC20 | LC6000 |
+| JP07 | SC5000 |
+| JP07 | SE1000 |
+| JP08 | SC5000M |
+| JP11 | PRIME GO |
+| JP13 | SC6000 |
+| JP14 | SC6000M |
+| JP20 | SCX-2 |
+| JP21 | SCX-4 |
+| NH08/NH10 | MIXSTREAM PRO |
+| NH09 | MIXSTREAM |
+
+The information contained in these files can significantly speed up the tedious parts of Reverse-Engineering hardware. For example, the [Prime GO Mapping](https://github.com/ghuntley/denon-prime4/blob/dfb7c339a2f6c29909d4bd24abadf858ae7c6b9e/engineos/usr/Engine/AssignmentFiles/PresetAssignmentFiles/JP11/JP11_Controller_Assignments.qml#L33) contains this QML snippet:
+```qml
+BrowseEncoder {
+	pushNote: 6
+	turnCC: 5
+	ledType: LedType.Simple
+}
+```
+You can easily read from this, that the controller likely sends a midi message with the "address" 6 (the second byte in the three midi bytes), when the browse encoder is being pressed and a midi CC message with "address"/"control number" 6 when its being turned. Unfortunately, not all required information can be read from these files. How do you interpret the values coming from the hardware? What values do you need to send to which "address" to control the LED ring around the encoder? You probably need to do some guesswork from here. Its plausible that the address of the LED ring is the same as its related input controls (5 or 6). We know the `ledType` is `Simple`, but what does that mean exactly? We can see from looking at the actual controller that its a single-color led, but is it just on-off or can it be dimmed? Figuring that out involves guesswork where you have to find out what works by plain trial-and-error. The sections below explain some more tools how you can make this easier.
+
 ### Running VMs on a Linux host
 
 If you are using Linux, you can run other DJ software in a Windows virtual machine and record the USB traffic with Wireshark (macOS is a

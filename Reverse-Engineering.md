@@ -60,21 +60,6 @@ purposes of mapping.
     [MIDI Controller Mapping File
     Format](midi_controller_mapping_file_format#inputs) page.
 
-## Observing MIDI/HID messages with other DJ software
-
-[Wireshark](https://wireshark.org/) is an excellent, free, cross
-platform program to record and analyze computer communication data. It
-is most known for analyzing network traffic, but it can also be used for
-USB traffic. Wireshark has a [USB Audio
-filter](https://www.wireshark.org/docs/dfref/u/usbaudio.html) that can
-be used to analyze traffic for USB Audio and MIDI devices (MIDI is part
-of the USB Audio Class standard). Wireshark also has a [USB HID
-filter](https://www.wireshark.org/docs/dfref/u/usbhid.html).
-
-Use `usbaudio.midi.event` as the filter in Wireshark to separate audio
-signals from MIDI. The `usbaudio.sysex.reassembled.data` filter shows
-only system exclusive (sysex) messages.
-
 ## Denon Engine DJ Hardware
 
 [Geoffrey Huntley](https://github.com/ghuntley) has been able to [extract the EngineOS](https://github.com/ghuntley/denon-prime4) running on the Denon PRIME 4 controller. Along with EngineOS, a bunch of [controller mapping definitions have been "leaked"](https://github.com/ghuntley/denon-prime4/tree/trunk/engineos/usr/Engine/AssignmentFiles/PresetAssignmentFiles). This includes the following Denon hardware:
@@ -104,6 +89,21 @@ BrowseEncoder {
 }
 ```
 You can easily read from this, that the controller likely sends a midi message with the "address" 6 (the second byte in the three midi bytes), when the browse encoder is being pressed and a midi CC message with "address"/"control number" 6 when its being turned. Unfortunately, not all required information can be read from these files. How do you interpret the values coming from the hardware? What values do you need to send to which "address" to control the LED ring around the encoder? You probably need to do some guesswork from here. Its plausible that the address of the LED ring is the same as its related input controls (5 or 6). We know the `ledType` is `Simple`, but what does that mean exactly? We can see from looking at the actual controller that its a single-color led, but is it just on-off or can it be dimmed? Figuring that out involves guesswork where you have to find out what works by plain trial-and-error. The sections below explain some more tools how you can make this easier.
+
+## Observing MIDI/HID messages with other DJ software
+
+[Wireshark](https://wireshark.org/) is an excellent, free, cross
+platform program to record and analyze computer communication data. It
+is most known for analyzing network traffic, but it can also be used for
+USB traffic. Wireshark has a [USB Audio
+filter](https://www.wireshark.org/docs/dfref/u/usbaudio.html) that can
+be used to analyze traffic for USB Audio and MIDI devices (MIDI is part
+of the USB Audio Class standard). Wireshark also has a [USB HID
+filter](https://www.wireshark.org/docs/dfref/u/usbhid.html).
+
+Use `usbaudio.midi.event` as the filter in Wireshark to separate audio
+signals from MIDI. The `usbaudio.sysex.reassembled.data` filter shows
+only system exclusive (sysex) messages.
 
 ### Running VMs on a Linux host
 

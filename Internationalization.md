@@ -184,7 +184,7 @@ Transifex will pick up the changes to the template after a short while, and noti
 
 This procedure updates Mixxx with translations (*.ts files) that have been contributed by Transifex users.
 
-  * Fetch all translation files from Transifex, even ones which don’t exist already locally. If the option ''-a'' isn’t included, only the files that exist locally will be updated Transifex. The working directory for these instructions is the root of the repository.
+  * Fetch all translation files from Transifex, even ones which don’t exist already locally. If the option ''-a'' isn’t included, only the files that exist locally will be updated Transifex. The option ''-f'' overwrites local change, to ensure we finally commit the Transiflex version and ''--minimum-perc 1'' skips languges below 1% of translated strings. The working directory for these instructions is the root of the repository.
   * <code>tx pull -a -f --parallel --minimum-perc 1</code>
   * Note: If you only want to pull translations for a subset of [Mixxx resources](https://github.com/mixxxdj/mixxx/blob/master/.tx/config), use -l lang instead of -a. For more information see [Transifex docs](https://docs.transifex.com/client/pull#pulling-specific-sets-of-translation-files).
   * For every mixxx_xx.ts file in res/translations/, <code>lrelease -nounfinished res/translations/mixxx_xx.ts -qm res/translations/mixxx_xx.qm</code>

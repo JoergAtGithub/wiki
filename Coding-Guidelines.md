@@ -460,6 +460,12 @@ Remember to actually go back and investigate your `TODO`'s :).
 // TODO Make this more general
 ```
 
+## C++ Guideline Support Library
+
+Use the [GSL](https://github.com/Microsoft/GSL) when applicable or recommended
+by the C++ Core Guidelines, but prefer constructs from the C++ standard library
+if possible.
+
 ## C++ Header Files
 
 This section outlines our various standards for writing header (.h)
@@ -761,6 +767,10 @@ is assumed to be modified"
 Since we have followed the original Google style we avoid using value syntax to change
 variables via a lvalue reference. Using rvalue references to access
 nested variables is permitted.
+
+If method in question does not accept `nullptr`, pass `gsl::not_null<T*>` 
+instead of `*T` to force the nullcheck to happen in the caller instead
+of the callee.
 
 **Good:**
 

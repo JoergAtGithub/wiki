@@ -6,7 +6,11 @@ When you're writing code for open source projects, the most important
 rule to follow is this:
 **Try to make your code blend in with the existing code.**
 
-When in doubt, use the
+Stick closely to the 
+[CppCoreGuidelines](https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines)
+and follow its recommendations unless otherwise noted below. It has been written
+by very active members of the C++ committee. We also recommend
+to take a look at the 
 [Google C++ Style Guide](https://google.github.io/styleguide/cppguide.html). 
 It's a treasure trove of C++ advice. Just double Google's indentation - 
 2 spaces become 4 spaces; 4 spaces become 8 spaces.

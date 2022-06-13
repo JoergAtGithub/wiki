@@ -1138,3 +1138,52 @@ Use it when not checking the return value is a program error like a
 memory leak. Don't use it everywhere, like in simple getter functions
 where the compiler will discard the call if the return value is not
 used.
+
+### `gsl::not_null<T*>` checking
+
+When passing pointers via `gsl::not_null<T*>`, make sure to check the
+the pointer for `nullptr` explicitly. Otherwise `not_null` might 
+terminate the programm, which is fatal in live-situation.
+
+**Good:**
+```cpp
+#include <gsl/pointers>
+
+void foo(gsl::not_null<T*> pWidget);
+
+void bar(Widget* pWidget) {
+    VERIFY_OR_DEBUG_ASSERT(pWidget == nullptr) {
+        // safe handling of "unhappy path"
+        // since this method just returns void, we can just return
+        // but other handling might be required in your case.
+        return;
+    }
+    // depending on context and compiler-optimization the 
+    // potentially terminating null-check is even optimized out.
+    foo(gsl::not_null<T*>(pWidget));
+}
+
+void baz() {
+    bar(nullptr);
+}
+```
+
+
+**Bad:**
+```cpp
+#include <gsl/pointers>
+
+void foo(gsl::not_null<T*> pWidget);
+
+void bar(Widget* pWidget) {
+    // potentially crash
+    // be warry of the implicit conversion too!
+    foo(pWidget);
+}
+
+void baz() {
+    // either guaranteed crash or compile-time error depending on 
+    // compiler-optimization
+    bar(nullptr);
+}
+```

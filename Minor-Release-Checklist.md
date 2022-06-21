@@ -4,7 +4,7 @@ This process is followed when it is time for a minor release to the stable branc
 
 
 1. Source updates:
-    1. Update CHANGELOG.md: Add list of significant user-visible changes / bugfixes. (PROBLEM: This is *very* hard right now, requiring Core Team members to weigh in on which PRs are "significant". We need to fix this step)
+    1. Update CHANGELOG.md: Add list of significant user-visible changes / bugfixes. Instead of a date use "(unreleased)" (PROBLEM: This is *very* hard right now, requiring Core Team members to weigh in on which PRs are "significant". We need to fix this step)
     1. Update CHANGELOG.md: Also/verify add the actual date of the previous release.
     1. Add the automatically generated entry of the previous release to packaging/debian/changelog. The entry and version number of the current release is added automatically. 
     1. Update CMakeLists.txt: Increment VERSION (Looks like `project(mixxx VERSION X.Y.Z)`)

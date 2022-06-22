@@ -224,6 +224,9 @@ combined with the suffix of the file type:
 * XML HID mapping files use the `.hid.xml` suffix, for example, `Stanton-SCS3d.hid.xml`.
 * JavaScript files use the `.scripts.js` suffix, for example, `Stanton-SCS3d.scripts.js`.
 
+## systemd hwdb
+For USB HID controllers, in addition to making a pull request for Mixxx, the device needs to be added to systemd's hwdb so Linux users can use the device without administrator (root) privileges. Fork the [systemd repository](https://github.com/systemd/systemd), add your controller's USB vendor and product ID to [this file](https://github.com/systemd/systemd/blob/main/hwdb.d/70-av-production.hwdb), and make a pull request upstream for systemd. You can get the USB vendor and product ID by running `lsusb` in a shell with the device plugged in. Please link to your systemd pull request in your pull request for Mixxx.
+
 ## Design guidelines
 
 These are all general guidelines to keep in mind when making your

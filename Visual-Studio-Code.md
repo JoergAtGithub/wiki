@@ -42,7 +42,7 @@ it if it doesn't exist already) into the \`.vscode\` folder.
             "name": "Linux",
             "compilerPath": "/usr/bin/gcc",
             "cStandard": "c11",
-            "cppStandard": "c++17",
+            "cppStandard": "c++20",
             "intelliSenseMode": "gcc-x64",
             "compileCommands": "${workspaceFolder}/cbuild/compile_commands.json"
         }

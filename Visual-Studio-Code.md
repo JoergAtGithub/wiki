@@ -20,7 +20,6 @@ the config file templates given.
     - If you haven't done this yet, follow the instructions for your
     operating system [here](home#compile_mixxx_from_source_code).
 2.  Create `cbuild` in the root folder of the locally cloned repository.
-    operating system [here](home#compile_mixxx_from_source_code).
 3.  Install Microsoft C/C++ extension.
     -  Open the extensions pane and search for "c++". Click the install
         button for the Microsoft extension.

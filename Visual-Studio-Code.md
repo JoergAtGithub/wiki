@@ -19,12 +19,14 @@ the config file templates given.
 1.  Check out Mixxx source and build it.
     - If you haven't done this yet, follow the instructions for your
     operating system [here](home#compile_mixxx_from_source_code).
-2.  Install Microsoft C/C++ extension.
+2.  Create `cbuild` in the root folder of the locally cloned repository.
+    operating system [here](home#compile_mixxx_from_source_code).
+3.  Install Microsoft C/C++ extension.
     -  Open the extensions pane and search for "c++". Click the install
         button for the Microsoft extension.
 
         [[/media/code_install_c_etension.png|]]
-3.  Select File -\> Open... and open the mixxx source folder.
+4.  Select File -\> Open... and open the mixxx source folder.
     - Visual Studio Code saves it's configuration in a folder named
       .vscode in the mixxx source folder. Next time you want to work on
       mixxx you only need to open the mixxx source folder again.

@@ -28,7 +28,7 @@ sudo dnf builddep mixxx
 The following dependencies are needed for building the *main* branch in addition to those
 from *2.3* that have been installed by `builddep`:
 ``` sh
-sudo dnf install qt5-qtdeclarative-devel qt5-qtquickcontrols qt5-qtquickcontrols2
+sudo dnf install guidelines-support-library-devel qt5-qtdeclarative-devel qt5-qtquickcontrols qt5-qtquickcontrols2
 ```
 
 ## Arch & Derivatives

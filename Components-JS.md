@@ -393,7 +393,7 @@ MyController.quantize = new components.Button({
     midi: [0x91, 0x01],
     group: '[Channel1]',
     key: 'quantize',
-    type: Button.prototype.types.toggle,
+    type: components.Button.prototype.types.toggle,
     on: MyController.padColors.red,
     off: MyController.padColors.blue,
 });

@@ -672,6 +672,13 @@ significant byte) for higher precision, map the incoming signals to the
 Pot's `inputLSB` and `inputMSB` functions instead of `input` in the XML
 file. Nothing extra needs to be done in JavaScript.
 
+The Pot components supports `max` values up to 16384 (`2^14`). So if 
+(for some obscure reason) a control only sends 6 bytes of precision,
+you can map `input` as if the control had 7 bits of precision and then
+specify `max: 64`. The same would work for 10 bits for example, just
+map `inputLSB` and `inputMSB` as if the control sent 14 bits of
+precision and then specify `max: 1024`. 
+
 Pot Components support an optional relative mode as an alternative to
 dealing with soft takeover. To use it, set the `relative` property to
 `true` in the options object for the constructor. In this mode, moving

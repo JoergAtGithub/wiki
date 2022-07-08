@@ -473,7 +473,7 @@ controller.
 
 Option 1 is the simplest and most common method for most controllers.
 You must figure out which MIDI values correspond to which colors and the
-correlate it with the [predefined hotcue colors](hotcue_colors) (the
+correlate it with the [predefined hotcue colors](Hotcue-Colors) (the
 controller's manual from the manufacturer may document this). Creating
 such HotcueButton could look like this:
 

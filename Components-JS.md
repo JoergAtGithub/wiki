@@ -624,6 +624,7 @@ var samplerButton[1] = new components.SamplerButton(
 )};
 ```
 
+
 ### EffectAssignmentButton
 
 An EffectAssignmentButton routes a deck through an EffectUnit. It is
@@ -726,6 +727,31 @@ property for the constructor.
 
 Encoders can often be pushed like a button. Usually, it is best to use a
 separate Button Component to handle the MIDI signals from pushing it.
+
+### JogWheelBasic
+
+Since mapping [Jogwheels in mixxx can be cumbersome](https://github.com/mixxxdj/mixxx/wiki/midi%20scripting#scratching-and-jog-wheels)
+we introduced a new component called `JogWheelBasic` in Mixxx 2.3.4.
+
+```js
+this.jogWheel = components.JogWheelBasic({
+  deck: 1, // whatever deck this jogwheel controls
+  wheelResolution: 1000, // how many ticks per revolution the jogwheel has
+  alpha: 1/8 // alpha-filter
+  beta: 1/8/32 // optional
+  rpm: 33 + 1/3 // optional
+  group: // optional
+});
+```
+See the [Jogwheel guide](https://github.com/mixxxdj/mixxx/wiki/midi%20scripting#scratching-and-jog-wheels) on a more 
+in-depth explanation of the available properties. The XML should
+map `jogWheel.inputWheel` to the messages containing rotation information
+of the wheel and `jogWheel.inputTouch` on messages that contain info on whether the
+top of the platter was touched. If you need to make some adjustments how the
+wheel interprets the incoming rotation information, you can overwrite
+`onValueScale(midiValue)`. If your controller has an option to enable/disable
+vinylmode, you can set `jogWheel.vinylMode` and the controller will behave
+appropriately (touching the jogwheel platter is ignored when `vinylMode` is `false`). 
 
 ## ComponentContainer and Managing Layers
 

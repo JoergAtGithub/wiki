@@ -119,7 +119,8 @@ For Eclipse 2020-12
     - Set Project Name to `mixxx`
     - Uncheck "Use default location"
     - Browse to your Mixxx source folder e.g. `~/eclipse-workspace/mixxx`.
-    - Project Type: CMake driven -\> Empty Project
+    - Project Type: cmake4eclipse -\> Empty Project 
+    - Toolchains: CMake driven
     - click Finish
   - Project -\> Properties -\> C/C++ Build
     - Switch to Behavior tab

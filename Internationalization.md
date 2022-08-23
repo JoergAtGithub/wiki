@@ -192,7 +192,7 @@ This procedure updates Mixxx with translations (*.ts files) that have been contr
     * In bash: <code>for XX in res/translations/mixxx_*.ts; do lrelease -nounfinished $XX -qm ${XX/%.ts/.qm}; done</code>
   * If you are testing a translation and would like untranslated strings to show up as blank, do not give the 'nounfinished' argument to lrelease.
   * Commit changes to HEAD
-  * <code>git commit -m -a "Pull latest translations from https://www.transifex.com/mixxx-dj-software/mixxxdj/branchname/. Compile QM files out of TS files that are used by the localized app"</code>
+  * <code>git commit -a -m "Pull latest translations from https://www.transifex.com/mixxx-dj-software/mixxxdj/branchname/. Compile QM files out of TS files that are used by the localized app"</code>
   * For the main branch you may also consider to add new languages after verifying hat they are working. 
   * All new translation translation TS and QM files are added to Git by: 
   * In ZSH: <code>git add res/translations/mixxx_*.(ts|qm)</code>

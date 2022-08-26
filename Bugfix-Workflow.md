@@ -17,11 +17,9 @@ syntax highlighting, though it's not quite as thorough as many of the
 graphical ones. See [Developer Tools](Developer%20Tools) for more
 information.
 
-## Adopt an easy bug on Launchpad
+## Adopt an easy bug on Github Issues
 
-[List of bugs tagged as easy](https://bugs.launchpad.net/mixxx/+bugs?field.tag=easy&field.status%3Alist=CONFIRMED)
-
-[More info about the Bug Tracker](launchpad_bugs)
+[List of bugs tagged as easy](https://github.com/mixxxdj/mixxx/issues?q=is%3Aopen+is%3Aissue+label%3Aeasy)
 
 ## Study the code and debug it
 

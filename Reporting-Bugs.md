@@ -6,28 +6,23 @@ using the latest version from www.mixxx.org, then **check the
 [forums](https://mixxx.discourse.group/)** to see if there is a known solution
 or workaround or if other people are having the same problem.
 
-If you don't find anything there, our bug tracking system is hosted on
-[Launchpad](https://bugs.launchpad.net/mixxx). First try a few searches
+If you don't find anything there, take a look at our bug tracking system [Github Issues](https://github.com/mixxxdj/mixxx/issues/). First try a few searches
 on various keywords related to the problem to see if it's already been
-reported and what the current status is. If you find one or more that
-relate, click change on "This bug doesn't affect me" to "vote" for the
-bug (you may need to sign in to see this.)
+reported and what the current status is.
 
 If no existing bugs cover your issue, please gather the following
-information to report [a new bug on
-Launchpad](https://bugs.launchpad.net/mixxx/+filebug).
+information to report [a new issue](https://github.com/mixxxdj/mixxx/issues/new).
 
   - Steps to reproduce the problem. **Please be as detailed as you can
     be.** For example, rather than saying "Foo doesn't work", say "When
     I clicked on the Bar button, Foo did not put the Bazes in the right
     place. I expected the Bazes to be put in Folder 1, but instead Mixxx
     put them in Folder 2." If you cannot write well in English, please
-    write your description in both English and another language you are
-    more comfortable writing in.
+    use a translator, e.g. https://translate.google.com/ or https://www.linguee.com/
   - Operating system (Windows, Linux, OSX, etc.) and version
   - CPU architecture (Athlon, Core 2 Duo, Celeron, Pentium II, etc.) and
     speed (in MHz or GHz)
-  - Your video and sound hardware (Brands, models, options, etc.)
+  - Your video and sound hardware if relevant (Brands, models, options, etc.)
   - [Information logs](reporting_bugs#gathering_logs)
   - Screenshots of the bug, if applicable
 
@@ -56,8 +51,7 @@ pressing `Alt + F2` to invoke the run dialog, enter:
     ubuntu-bug mixxx --save mixxx.crash
 
 This will create a mixxx.crash file in your home directory which you can
-attach to the bug report you file on our [Bug
-Tracker](https://bugs.launchpad.net/mixxx). However, since this isn't a
+attach to the bug report you file in [Mixxx Github Issues](https://github.com/mixxxdj/mixxx/issues/). However, since this isn't a
 crash from an actual run of Mixxx, it will not contain details on your
 specific bug -- just background information about your system that will
 be useful to us. If you are reporting a crash bug, it would be useful if

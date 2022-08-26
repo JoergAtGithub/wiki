@@ -1,0 +1,1 @@
+moved to https://github.com/mixxxdj/mixxx/wiki/Mixxx-bugs-and-feature-requests

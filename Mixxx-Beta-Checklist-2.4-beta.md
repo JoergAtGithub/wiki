@@ -13,3 +13,5 @@ This process is followed when it is time to branch out a new beta and make the m
     2. in License
     3. define a new resource branch in .tx/config (It will be created online via `tx push -s`)
     4. add a new section in CHANGELOG.md 
+
+EDIT (Niko): We should use issues in the future for tracking things like this IMO. Makes it easier to keep the discussion in one place.

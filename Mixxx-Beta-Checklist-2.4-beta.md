@@ -5,7 +5,11 @@ This process is followed when it is time to branch out a new beta and make the m
 1. ✓ Update translations
     1.  Push and pull translations for Mixxx as described here:
         [Internationalization](Internationalization)
-2. Bump the version in main to 2.5-alpha 
+2. Update files from Git log
+    credits in src/dialog/dlgabout.cpp
+    CHANGELOG.md
+
+3. Bump the version in main to 2.5-alpha 
     1. in CMakeLists.txt
     2. in License
     3. define a new resource branch in .tx/config (It will be created online via `tx push -s`)

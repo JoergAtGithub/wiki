@@ -6,9 +6,8 @@ This process is followed when it is time to branch out a new beta and make the m
     1.  Push and pull translations for Mixxx as described here:
         [Internationalization](Internationalization)
 2. Update files from Git log
-    credits in src/dialog/dlgabout.cpp
-    CHANGELOG.md
-
+    1. credits in src/dialog/dlgabout.cpp
+    2. CHANGELOG.md
 3. Bump the version in main to 2.5-alpha 
     1. in CMakeLists.txt
     2. in License

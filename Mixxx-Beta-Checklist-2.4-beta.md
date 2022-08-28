@@ -7,7 +7,10 @@ This process is followed when it is time to branch out a new beta and make the m
         [Internationalization](https://github.com/mixxxdj/manual#update-source-translations)
 2. Bump the version in https://github.com/mixxxdj/manual main to 2.4
     1. source/conf.py: Update version and release
-    2. define a new resource branch in .tx/config (It will be created online via `tx push -s`)
+    2. create a new Project on Transiflex "Mixxx DJ manual 2.3"
+    3. edit the .tx/config file to point to the new project "mixxx-dj-manual-24"
+    4. upload translation sources source `tx push -s`
+    5. upload the existing translations `tx push -t`
 3. ✓ Update translations in [mixxx](https://github.com/mixxxdj/mixxx)
     1.  Push and pull translations for Mixxx as described here:
         [Internationalization](Internationalization)

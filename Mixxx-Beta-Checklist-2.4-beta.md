@@ -2,7 +2,7 @@
 
 This process is followed when it is time to branch out a new beta and make the main branch a new alpha 
 
-1. ✓ Update translations in [manual](https://github.com/mixxxdj/manual)
+1. Update translations in [manual](https://github.com/mixxxdj/manual)
     1.  Push and pull translations for the Manual as described here:
         [Internationalization](https://github.com/mixxxdj/manual#update-source-translations)
 2. Bump the version in https://github.com/mixxxdj/manual main to 2.4

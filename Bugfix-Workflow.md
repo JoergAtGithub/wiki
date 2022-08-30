@@ -1,7 +1,7 @@
 This is a brief step by step description about a typical workflow of
 fixing a first Mixxx bug. Follow the links for more details.
 - [Fork](https://help.github.com/articles/fork-a-repo) [Mixxx on GitHub](https://github.com/mixxxdj/mixxx)
-- [Set up git for Mixxx](using_git) and [create a branch](https://neval8.wordpress.com/2013/07/07/en-typical-workflow-with-github-on-shared-project)
+- [Set up git for Mixxx](home#using-git) and [create a branch](https://neval8.wordpress.com/2013/07/07/en-typical-workflow-with-github-on-shared-project)
 - [Build Mixxx](home#compile-mixxx-from-source-code)
 
 ## Choose a working environment

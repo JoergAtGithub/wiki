@@ -9,7 +9,7 @@ This process is followed when it is time to branch out a new beta and make the m
     1. create a new Project on Transiflex "Mixxx DJ manual 2.5"
     2. source/conf.py: Update version and release
     3. edit the .tx/config file to point to the new project "mixxx-dj-manual-25"
-    4. `git commit -a -m"Bump version to 2.5`
+    4. `git commit -a -m"Bump version to 2.5"`
     5. `git push upstream main`
     6. upload translation sources source `tx push -s`
     7. upload the existing translations `tx push -t`

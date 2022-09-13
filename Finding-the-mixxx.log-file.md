@@ -5,6 +5,13 @@ bug](reporting%20bugs) or ask for help on the Mixxx forum or IRC
 channel, please attach your `mixxx.log` file to help us help you. This
 is a plain text file that can be read with any text editor.
 
+### All Operating Systems (from within Mixxx)
+
+* open the **Options** menu, select **Preferences**
+* select **Library**, scroll to the bottom
+* click **Open Mixxx settings folder**
+* find `mixxx.log` file
+
 ### Linux
 
 `~/.mixxx/mixxx.log`

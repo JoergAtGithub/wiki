@@ -23,7 +23,7 @@ This process is followed when it is time to branch out a new beta and make the m
 5. Update files from Git log in [mixxx](https://github.com/mixxxdj/mixxx)
     1. credits in src/dialog/dlgabout.cpp
     2. CHANGELOG.md
-6. Bump the version in [mixxx](https://github.com/mixxxdj/mixxx) main to 2.5-alpha 
+6. Bump the version in [mixxx](https://github.com/mixxxdj/mixxx) main to 2.5-alpha. Required to avoid two concurrent 2.4 versions in two branches.  
     1. in CMakeLists.txt: Update VERSION and MIXXX_VERSION_PRERELEASE
     2. in License
     3. define a new resource branch in .tx/config (It will be created online via `tx push -s`)

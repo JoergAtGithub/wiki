@@ -63,7 +63,7 @@ this wiki, please fix it.
 
 ### Contributing
 
-  - [Bug tracker hosted on Launchpad](https://bugs.launchpad.net/mixxx)
+  - [Bug tracker hosted on Github](https://github.com/mixxxdj/mixxx/issues/)
   - [Internationalization](Internationalization): Help translate Mixxx
     into other languages
   - Source code is hosted on [GitHub](https://github.com/mixxxdj/mixxx)
@@ -132,25 +132,16 @@ this wiki, please fix it.
 
   - [Contribution Guidelines](Contribution%20Guidelines)
   - [Coding Guidelines](Coding%20Guidelines)
-
-<!-- end list -->
-
   - [Developer Guide](Developer%20Guide): high level overview of Mixxx's
     architecture
   - [Developer Tools](Developer%20Tools)
   - [Using Git](Using%20Git)
-  - [Bug Tracker](launchpad_bugs)
-
-<!-- end list -->
-
+  - [Bug & feautre request tracker](https://github.com/mixxxdj/mixxx/wiki/Mixxx-bugs-and-feature-requests)
   - [Bugfix Workflow](Bugfix%20Workflow) 
   - [Creating Backtraces](Creating%20Backtraces): helpful for debugging
     crashes
   - [Code profiling](Profiling) to see what parts of the code are using
     more CPU time than others
-
-<!-- end list -->
-
   - [Learning Resources](Learning%20Resources)
 
 ### Development Topics
@@ -159,15 +150,9 @@ this wiki, please fix it.
   - [Unit tests](Unit%20tests) help prevent regressions. Writing tests
     is essential for new code\!
   - [Iconic Tracks](Iconic%20Tracks) A list of tracks, useful for
-    discussing Mixxx features.
-
-<!-- end list -->
-
+    discussing Mixxx features
   - [Development Roadmap](Development%20Roadmap)
   - [Feature Design Documents](feature%20discussion)
-
-<!-- end list -->
-
   - [Google Summer of Code](gsoc) student projects and information.
   - [Google Code-in](gci) task list and information
 

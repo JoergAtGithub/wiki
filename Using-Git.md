@@ -91,18 +91,29 @@ this automatically every time you commit your changes by using the
 [pre-commit framework](https://pre-commit.com). We strongly recommend
 using it.
 
-First, [install pre-commit](https://pre-commit.com/#install) (On Ubuntu 20.04
-you alternatively have to run `sudo pip3 install pre-commit`).
-
 You'll need at least Python 3.6. If you have got Python2 and Python3 installed
-in parallel, like on Ubuntu 20.04, where Python2 is set as default then you
-can install a script making Python3 the default:
+in parallel, make sure python3 is default. You can check your python version by:
+
+    python --version 
+
+Ubuntu 20.04 (focal): Python2 is default. You can change it by installing: 
 
     sudo apt install python-is-python3
+
+Ubuntu 22.04 (jammy): The default package python3.10 3.10.6-1/3.10.4-3 is [broken](https://github.com/pre-commit/pre-commit/issues/2299).
+The [deadsnakes PPA](https://launchpad.net/~deadsnakes/+archive/ubuntu/python3.10-jammy) provides a fixed version: 
+
+    sudo add-apt-repository ppa:deadsnakes/python3.10-jammy
+    sudo apt update
+    sudo apt install python3.10
+
 
 Confirm / Check the default Python version by:
 
     python --version
+
+Than, [install pre-commit](https://pre-commit.com/#install) (On Ubuntu 20.04
+you alternatively may run `sudo pip3 install pre-commit`).
 
 Then, you have to set up the hooks that will
 check your code every time you commit. Run these from a shell within the

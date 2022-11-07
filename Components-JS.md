@@ -535,7 +535,7 @@ The third option is similar to the second one. You need to define a
 `sendRGB` method again, but in this Mixxx provides the color palette
 automatically and you do not provide a `colors` object for the
 HotcueButton. The `sendRGB(color)` method gets passed a color object
-(more on the color API [here](midi_scripting#color_api)). Such a button
+(more on the color API [here](https://github.com/mixxxdj/mixxx/wiki/midi-scripting#color-api)). Such a button
 could be defined like this:
 
 ```javascript

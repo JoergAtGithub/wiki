@@ -1,5 +1,7 @@
 Compiling software is the process of turning human-readable source code into machine code a computer can execute. Compiling Mixxx is fairly straightforward on macOS. The steps below outline what to do. If you need help after reading this page, feel free to ask questions on our [Zulip chat](https://mixxx.zulipchat.com/#narrow/stream/247620-development-help).
 
+This is a guide for x64 architecture. Building on Apple Silicon/M1/aarch64 is not yet official supported, but possible. Consult our [Zulip chat](https://mixxx.zulipchat.com) 
+
 # Install Xcode command line tools
 
 First, install the clang compiler and macOS SDK from the Xcode command line tools. If you have the Xcode IDE installed, you already have the command line tools too. To install the Xcode command line tools without the Xcode IDE, launch the Terminal application, and type the following command:

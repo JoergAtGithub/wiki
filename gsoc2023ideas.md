@@ -111,6 +111,21 @@ Mixxx shall suggest compatible tracks matching the current playing one. The feat
 * **Difficulty:** Medium
 * **Size:** 350 h
 
+# First class Pipewire support
+
+Currently Mixxx supports Pipewire via Portaudio and Jack. These two gue layers leads to a limited feature support with a weak user experience. 
+In this project you need to consider solutions to improve the situation. Desired features are
+* Better audio routing using external tools
+* Route sound to/from other applications from inside Mixxx
+* Access to DAC timing info of the soundcards 
+* Acesss to analog volume settings of the soundcards.   
+
+* **Expected Outcome:** A rock solid interface to Pipewire.
+* **Skills:** Experience with Audio processing and  C++
+* **Possible Mentor:**
+* **Difficulty:** Difficult
+* **Size:** 350 h
+
 # Something Else\!
 
 As always with Summer of Code, you aren't limited to the suggestions

@@ -133,7 +133,7 @@ we've made here. If you've got a great idea for a project involving
 Mixxx then we're looking forward to hearing about it. We recommend
 spending more than a few days using Mixxx and participating in the
 community to develop a better understanding of areas where Mixxx could
-use improvement. Our bug tracker is full of [wishlist bugs](https://bugs.launchpad.net/mixxx/+bugs?field.importance%3Alist=WISHLIST) and other
+use improvement. Our issue tracker is full of [feature requests](https://github.com/mixxxdj/mixxx/issues?q=is%3Aopen+is%3Aissue+label%3Afeature) and other
 ideas scattered throughout, so if you browse through it, you may find
 many more ideas for GSoC projects.
 

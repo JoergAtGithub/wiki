@@ -133,8 +133,7 @@ streaming protocols used by platforms like Twitch, Youtube or Mixcloud.
 
 * They use the RTMP protocol, which is also the most common input format for OBS.
 * While RTMP is still the defacto standard, OBS reccomends to use SRT in future.
-* Both protocols are implemented in FFMPEG, which is also used inside Mixxx for
-* other purposes.
+* Both protocols are implemented in FFMPEG, which is also used inside Mixxx for other purposes.
 
 * **Expected Outcome:** A rock solid RTMP and SRT audio streaming output.
 * **Skills:** Experience with FFMPEG and C++

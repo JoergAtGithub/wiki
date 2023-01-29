@@ -3,18 +3,28 @@
 annual program that provides paid internships all adults to work on
 free software projects.
 
-# 2022
+## 2023
+
+Mixxx is preparing for application for taking part in GSoC 2023 
+
+Like last year adult ambitious developers can a take part as a contributor (formally student) or mentor. The project length is flexible and can be adjusted for medium ~175 hours or larger ~350 hours projects. These hours can be timed into a 22 week period. More details can be found in the [Google Open-Source Blog](https://opensource.googleblog.com/2022/11/get-ready-for-google-summer-of-code-2023.html).
+
+We prefer medium sized projects, consisting smaller tasks that suits to get familiar with Mixxx's code base, C++ and our community at the whole. For inspiration you may crawl our [Github Issues](https://github.com/mixxxdj/mixxx/issues)
+
+Currently we are working on our list of suggested projects: **[GSoC 2023 Ideas](gsoc2023ideas)**  
+
+## Past Years
+
+### 2022
 
 Mixxx has been accepted for taking part in GSoC 2022 
 
 This year Google has announced a set of changes. GSoC is no longer limited to students, but open to all adults. The project length is now more flexible and can be adjusted for medium ~175 hours or larger ~350 hours projects. These hours can be timed into a 22 week period. More details can be found in the [Google Open-Source Blog](https://opensource.googleblog.com/2021/11/expanding-google-summer-of-code-in-2022.html).
 
-This year we considering to offer mainly medium sized projects projects, consisting smaller tasks that suits to get familiar with Mixxx's code base, C++ and our community at the whole. We have collected many wishlist bugs and stalled projects which are important for some users but have not yet attracted a contributor to spend his spare time.  
+This year we considering to offer mainly medium sized projects, consisting smaller tasks that suits to get familiar with Mixxx's code base, C++ and our community at the whole. We have collected many wishlist bugs and stalled projects which are important for some users but have not yet attracted a contributor to spend his spare time.  
 
   - See the list of suggested projects: **[GSoC 2022
     Ideas](GSoC-2022-Ideas)**
-
-## Past Years
 
 ### 2021
 

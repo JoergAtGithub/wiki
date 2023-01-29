@@ -127,8 +127,10 @@ In this project you need to consider solutions to improve the situation. Desired
 * **Size:** 350 h
 
 # Support of RTMP and SRT as additional streaming protocols
-* Mixxx supports the Shoutcast and Icecast protocols for radio DJs, but not the
-* streaming protocols used by platforms like Twitch, Youtube or Mixcloud.
+
+Mixxx supports the Shoutcast and Icecast protocols for radio DJs, but not the
+streaming protocols used by platforms like Twitch, Youtube or Mixcloud.
+
 * They use the RTMP protocol, which is also the most common input format for OBS.
 * While RTMP is still the defacto standard, OBS reccomends to use SRT in future.
 * Both protocols are implemented in FFMPEG, which is also used inside Mixxx for

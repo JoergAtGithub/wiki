@@ -141,6 +141,20 @@ streaming protocols used by platforms like Twitch, Youtube or Mixcloud.
 * **Difficulty:** Medium
 * **Size:** 175 h
 
+# Track encoding offset correction
+
+Different codecs used to encode sound files introduce slight shift in the audio samples comparing the input with the output stream. 
+This is no issue when you use always the same file and the same decoder. It becomes however an issue when the decoder is updated or replaced because than all stored metadata like waveform, beat-grids and cue points are no longer at the correct position. To protect against surprises Mixxx has unit-tests to verify that seeks inside that track do not introduce an offset and checks if the fist sound sample can be found at the expected time.  
+
+We have currently the issue that the Microsoft has introduced such a breaking change in Windows 11. https://github.com/mixxxdj/mixxx/issues/11094 In this project we need to investigate the issue and implement a fix so that the stored metadata of a user are still valid after an upgrade to Windows 11. As a project extension, this may also fix an issues that prevents us from moving to ffmpeg as an encoder wrapper where the underlying encoder library is no longer in control of us. 
+
+* **Expected Outcome:** No Beat-Grid offset after Windows 11 update
+* **Skills:** Experience and C++
+* **Possible Mentor:**
+* **Difficulty:** Medium
+* **Size:** 175 h (350 h for a general solution) 
+
+
 # Something Else\!
 
 As always with Summer of Code, you aren't limited to the suggestions

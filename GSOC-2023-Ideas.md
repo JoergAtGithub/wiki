@@ -24,7 +24,7 @@ https://github.com/mixxxdj/mixxx/issues/8867
 * **Size:** 350 h
 
  
-# Scratch smoothing.
+# Scratch smoothing
 
 Our scratching algorithm suffers from jitter noise created by the latency of the midi messages. It also suffers from a so called sticker drift, an incrementing offset shifting away form the original scratch sample. 
 Part of this project is to filter the discrete messages from the controller in a way that you can either "play" the track without much wobbling by turning the jog wheel, and keep the position during scratching. 

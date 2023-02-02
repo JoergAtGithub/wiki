@@ -11,7 +11,7 @@ Like last year adult ambitious developers can a take part as a contributor (form
 
 We prefer medium sized projects, consisting smaller tasks that suits to get familiar with Mixxx's code base, C++ and our community at the whole. For inspiration you may crawl our [Github Issues](https://github.com/mixxxdj/mixxx/issues)
 
-Currently we are working on our list of suggested projects: **[GSoC 2023 Ideas](gsoc2023ideas)**  
+Currently we are working on our list of suggested projects: **[GSoC 2023 Ideas](GSOC-2023-Ideas)**  
 
 ## Past Years
 

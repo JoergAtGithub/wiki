@@ -160,9 +160,9 @@ Sometimes we have reports of hard to find crashes that my have to do with dangli
 This project is for contributors who have real experience with such memory sanitizer facility. We like to learn from you, what is reasonable to use and how we can integrate checks in out continuous integration. This may also something integrated in Mixxx itself to have more info users can provide in case of a crash.
 
 * **Expected Outcome:** A new workflow how to deal with crasher bugs along with an improved set of tools. 
-* **Skills:** Experience with address sanitizer tools 
+* **Skills:** Experience with address sanitizer tools and CMake
 * **Possible Mentor:**
-* **Difficulty:** Hard
+* **Difficulty:** Medium
 * **Size:** 175 h
 
 # Something Else\!

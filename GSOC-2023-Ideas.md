@@ -8,18 +8,27 @@ of the Mixxx community are accepted. If this is not the case yet, just
 say hello at <https://mixxx.zulipchat.com> and discuss your Ideas and
 discus cases with us.
 
-# Spin-Up/Spin-Down effect
+# Turn table inertia model 
 
 Some Controller mappings have implemented a Spin-Up/Spin-Down to mimic the inertia of a turn table. 
-This should be moved into the engine, so that it is accessible without a controller.
+This should be generalized into a "turn table inertia model" that models all moving parts like the platter and the slip pad. 
 
-Part of the project is to record the spin up of a real turn table to get to know of the real acceleration curve and model this via software. You may also deal with the BPM sync feature, in a way that the spin up and down integrates faultlessly into a mix. 
- 
-https://github.com/mixxxdj/mixxx/issues/8867
+Some DJ actions on the controller or keyboard should be applied to that model rather than directly to Mixxx transport unit.
+The transport is than controlled by the turn table model. This should make all transport effects/actions sound more natural. 
+
+It allows Spin-Up/Spin-Down effects and keyboard/mouse scratching.   
+
+Part of the project is to record the spin up of a real turn table to get to know of the real acceleration curve and model this via software. 
+
+These are related feature requests: 
+https://github.com/mixxxdj/mixxx/issues/8867 https://github.com/mixxxdj/mixxx/issues/11250
+
+Here you can see such a model in action: 
+https://www.youtube.com/watch?v=4caExBY1s_M
 
 * **Expected Outcome:** A flawlessly working spin up and down effect accessible without controller
 * **Skills:** Good understanding of sound processing, C++
-* **Possible Mentor:** 
+* **Possible Mentor:** Daniel Schürmann
 * **Difficulty:** Medium 
 * **Size:** 350 h
 
@@ -35,7 +44,7 @@ The required controller can be provided as a loan.
 
 * **Expected Outcome:** Wobble fee scratching using a joggwheel
 * **Skills:** Good understanding of real time processing, C++
-* **Possible Mentor:**
+* **Possible Mentor:** Daniel Schürmann
 * **Difficulty:** Hard
 * **Size:** 350 h
 
@@ -44,11 +53,11 @@ The required controller can be provided as a loan.
 Currently crossfader changes are stretched on audio buffer time to avoid pop sounds. 
 This is too long for some scratching styles. During this project you need to dive into the audio engine code find the code that is responsible for crossfading and make it independent from the audio buffer size. 
 
- https://github.com/mixxxdj/mixxx/issues/8899
+ https://github.com/mixxxdj/mixxx/issues/8899 https://github.com/mixxxdj/mixxx/issues/11253
 
 * **Expected Outcome:** Cut type crossfader curve, suitable for scratching.
 * **Skills:** Good understanding of sound processing, C++
-* **Possible Mentor:**
+* **Possible Mentor:** Daniel Schürmann
 * **Difficulty:** Medium 
 * **Size:** 175 h
 
@@ -62,7 +71,7 @@ https://github.com/mixxxdj/mixxx/issues/9328
 
 * **Expected Outcome:** Optional replacement of the linear resampler.
 * **Skills:** Good understanding of sound processing, C++
-* **Possible Mentor:**
+* **Possible Mentor:** Daniel Schürmann 
 * **Difficulty:** Easy
 * **Size:** 175 h
 
@@ -72,7 +81,6 @@ If a controller is accidentally unplugged it has to be manually reconfigured, wh
 Mixxx should do it automatically. This project has two stages, fist behave like a real DJ: fix the issue but faster. So the the time of silence on the dance floor is kept short. The advance stage of this project is to implement real Hot Plug And Play. In order to that you likely need to touch the low level inside third party libraries. 
 
 The required controller can be provided on loan.
-
  
 * **Expected Outcome:** Re-power the controller and continue to use it, on your target platform. 
 * **Skills:** Good understanding of the USB stack, C++
@@ -80,40 +88,9 @@ The required controller can be provided on loan.
 * **Difficulty:** Easy / (Hot Plug And Play = Difficult)  
 * **Size:** 175 h  / (Hot Plug And Play = 350 h)
 
-# Graceful suspend/resume support: 
-
-Mixxx should be able to continue playing after cumming back from the suspend state of the PC. This requires to detect the faulty state after resume and reinitialize the required parts of Mixxx.   
-https://github.com/mixxxdj/mixxx/issues/9099
-
-* **Expected Outcome:** The sound output shall continue after sleep. 
-* **Skills:** Good understanding of the USB stack, C++
-* **Possible Mentor:** 
-* **Difficulty:** Difficult
-* **Size:** 175 h
-
-# Auto Updater for Windows and MacOs
-
-Mixxx should look up our download page and automatically update itself in case an update is available. This shall be implement using Sparkle on MacOS and WinSparkle on windows like Wireshark.  
-
-* **Expected Outcome:** A working update notifier, frontend and server part. 
-* **Skills:** Experience with MacOs and Windows, C++
-* **Possible Mentor:**
-* **Difficulty:** Easy 
-* **Size:** 175 h
-
-# Track suggestion feature
-
-Mixxx shall suggest compatible tracks matching the current playing one. The feature may use existing meta data like bpm genre and key or tab online resources like LastFM and similar. https://github.com/mixxxdj/mixxx/issues/9328
-
-* **Expected Outcome:** A dynamically changing list of suggested tracks.
-* **Skills:** Experience with web services, C++
-* **Possible Mentor:**
-* **Difficulty:** Medium
-* **Size:** 350 h
-
 # First class Pipewire support
 
-Currently Mixxx supports Pipewire via Portaudio and Jack. These two gue layers leads to a limited feature support with a weak user experience. 
+Currently Mixxx supports Pipewire via Portaudio and Jack. These two glue layers leads to a limited feature support with a weak user experience. 
 In this project you need to consider solutions to improve the situation. Desired features are
 * Better audio routing using external tools
 * Route sound to/from other applications from inside Mixxx
@@ -122,23 +99,8 @@ In this project you need to consider solutions to improve the situation. Desired
 
 * **Expected Outcome:** A rock solid interface to Pipewire.
 * **Skills:** Experience with Audio processing and  C++
-* **Possible Mentor:**
+* **Possible Mentor:** Daniel Schürmann
 * **Difficulty:** Difficult
-* **Size:** 350 h
-
-# Support of RTMP and SRT as additional streaming protocols
-
-Mixxx supports the Shoutcast and Icecast protocols for radio DJs, but not the
-streaming protocols used by platforms like Twitch, Youtube or Mixcloud.
-
-* They use the RTMP protocol, which is also the most common input format for OBS.
-* While RTMP is still the defacto standard, OBS reccomends to use SRT in future.
-* Both protocols are implemented in FFMPEG, which is also used inside Mixxx for other purposes.
-
-* **Expected Outcome:** A rock solid RTMP and SRT audio streaming output.
-* **Skills:** Experience with FFMPEG and C++
-* **Possible Mentor:**
-* **Difficulty:** Medium
 * **Size:** 350 h
 
 # Track encoding offset correction
@@ -150,7 +112,7 @@ We have currently the issue that the Microsoft has introduced such a breaking ch
 
 * **Expected Outcome:** No Beat-Grid offset after Windows 11 update
 * **Skills:** Experience and C++
-* **Possible Mentor:**
+* **Possible Mentor:** Daniel Schürmann 
 * **Difficulty:** Medium
 * **Size:** 175 h (350 h for a general solution) 
 

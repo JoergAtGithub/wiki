@@ -52,7 +52,7 @@ beginning your application. Here are some ways to get started:
     code contribution to fix a bug or enhance an existing feature.
   - Help users with technical questions about Mixxx on the
     [forum](https://mixxx.org/forums/).
-  - Report bugs on our [bug tracker](https://bugs.launchpad.net/mixxx/).
+  - Report bugs on our [issue tracker](https://github.com/mixxxdj/mixxx/issues).
 
 We expect that you make an effort to answer your own questions like
 reading the source or exploring this wiki before asking us. We are happy

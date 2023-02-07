@@ -161,7 +161,7 @@ This project is for contributors who have real experience with such memory sanit
 
 * **Expected Outcome:** A new workflow how to deal with crasher bugs along with an improved set of tools. 
 * **Skills:** Experience with address sanitizer tools like ASAN or Valgrind and CMake
-* **Possible Mentor: Jörg Wartenberg
+* **Possible Mentor:** Jörg Wartenberg
 * **Difficulty:** Medium
 * **Size:** 175 h
 

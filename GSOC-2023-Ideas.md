@@ -170,18 +170,22 @@ This project is for contributors who have real experience with such memory sanit
 Mixxx on MacOS Intel uses an older Qt version, due to a nasty performance bug, which occurs with the OpenGL based waveform code. Furthermore the OpenGL waveform code uses the deprecated https://doc.qt.io/qt-5/qglwidget.html class, which is no longer available in Qt6.
 But there is already a reimplementation https://github.com/mixxxdj/mixxx/pull/10959 and https://github.com/mixxxdj/mixxx/pull/10989 which solves the performance issue for one waveform type on MacOS Intel using the https://doc.qt.io/qt-6/qopenglwindow.html class, which is available in modern Qt versions.
 This is a huge maintenance burden for the Mixxx developers.
+
 The project consists of several steps:
-* Make the QOpenGLWindow waveform implementation working on all platforms (MacOS Intel, Linux and Windows) using Qt5.15
-** This requires extensive testing on all platforms and providing test builds to other Mixxx users 
-* Add OpenGL code to implement all remaining waveform styles using the QOpenGLWindow 
-* Delete all QGLWidget based code and clean up the waveform render code in Mixxx
+
+1.  Make the QOpenGLWindow waveform implementation working on all platforms (MacOS Intel, Linux and Windows) using Qt5.15
+This requires extensive testing on all platforms and providing test builds to other Mixxx users 
+2. * Add OpenGL code to implement all remaining waveform styles using the QOpenGLWindow 
+3. * Delete all QGLWidget based code and clean up the waveform render code in Mixxx
 
 * **Expected Outcome:** QOpenGLWindow based waveforms running on all three platforms using the same source code on Qt5.15
 * **Hardware:** Student need to have a MacOS system with Intel processor and access to Windows or Linux systems
 * **Skills:** Experience with C++ programming on MacOS
-* **Possible Mentor: Jörg Wartenberg
+* **Possible Mentor:** Jörg Wartenberg
 * **Difficulty:** Difficult
 * **Size:** 350 h
+
+
 # Something Else\!
 
 As always with Summer of Code, you aren't limited to the suggestions

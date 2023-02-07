@@ -25,7 +25,7 @@ https://github.com/mixxxdj/mixxx/issues/8867 https://github.com/mixxxdj/mixxx/is
 
 Here you can see such a model in action:
  
-[![Keyboard scratch with VirtualDJ](https://img.youtube.com/vi/4caExBY1s_M/0.jpg)](https://www.youtube.com/watch?v=4caExBY1s_M)
+[![Keyboard scratch with VirtualDJ](https://img.youtube.com/vi/4caExBY1s_M/1.jpg)](https://www.youtube.com/watch?v=4caExBY1s_M)
 
 * **Expected Outcome:** A flawlessly working spin up and down effect accessible without controller
 * **Skills:** Good understanding of sound processing, C++

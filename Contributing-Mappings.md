@@ -124,8 +124,8 @@ Controller documentation in the manual should include:
   - A link to the Mixxx forum thread for the controller.
   - A brief description of the controller
   - Notes about (in)compatibility with Windows, Linux, and macOS.
-    Document whether it is USB class compliant (if it is compatible with
-    macOS and the manufacturer does not provide a macOS driver, it is
+    Document whether it is [USB Audio Device Class](https://www.usb.org/document-library/usb-audio-devices-rev-30-and-adopters-agreement) compliant  (if it is compatible with
+    macOS and the manufacturer does not provide a macOS driver, it is audio
     class compliant).
   - Notes about any features of the controller that are not (yet)
     supported in Mixxx

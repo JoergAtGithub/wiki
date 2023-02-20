@@ -84,8 +84,7 @@ Instructions for working on your mapping and other branches simultaneously are o
 
 ### Submitting your mapping for review
 
-When your mapping is complete, [documented on the
-wiki](#Documenting-the-mapping), and you are ready to submit your
+When your mapping is complete, [documented in the Mixxx manual](#Documenting-the-mapping), and you are ready to submit your
 mapping for inclusion in Mixxx, make a pull request on GitHub. Make sure
 that the target branch of mixxxdj/mixxx for your pull request is the
 branch that you started your git branch from (if it isn't, you'll see

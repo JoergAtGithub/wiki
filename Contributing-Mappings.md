@@ -145,7 +145,7 @@ Controller documentation in the manual should include:
 Controller documentation in the manual should *not* include:
   - Information about MIDI/HID messages or other stuff that is only relevant to
     programmers (Put that in a comment the mappings file itself)
-  - Links to reviews (optional, but nice to have)
+  - Links to reviews
   - Product photos that we don't have permission to use
   - Information how the mapping worked in earlier versions of Mixxx (old
     versions of the manual are still readily avaible)

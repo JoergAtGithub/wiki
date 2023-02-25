@@ -5,7 +5,7 @@ free software projects.
 
 ## 2023
 
-Mixxx is preparing for application for taking part in GSoC 2023 
+Mixxx has been accepted for taking part in GSoC 2023 
 
 Like last year adult ambitious developers can a take part as a contributor (formally student) or mentor. The project length is flexible and can be adjusted for medium ~175 hours or larger ~350 hours projects. These hours can be timed into a 22 week period. More details can be found in the [Google Open-Source Blog](https://opensource.googleblog.com/2022/11/get-ready-for-google-summer-of-code-2023.html).
 

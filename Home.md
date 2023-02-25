@@ -37,6 +37,7 @@ this wiki, please fix it.
   - [Testing](Testing) the latest features helps speed up development 
   - [Getting Involved in Mixxx](Getting%20Involved): Want Mixxx to be
     even more awesome? You don't need to be a programmer to help us.
+  - [Google Summer of Code](https://github.com/mixxxdj/mixxx/wiki/Gsoc) 
 
 ### Extras
 

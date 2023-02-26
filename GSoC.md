@@ -13,7 +13,7 @@ We prefer medium sized projects, consisting smaller tasks that suits to get fami
 
 The list of suggested projects can be found here: **[GSoC 2023 Ideas](GSOC-2023-Ideas)**
 
-If you'd like to help people learn about GSoC, here you will find (flyers)[GSoC-Flyers] you can use to spread the word!  
+If you'd like to help people learn about GSoC, here you will find [flyers](GSoC-Flyers) you can use to spread the word!  
 
 ## Past Years
 

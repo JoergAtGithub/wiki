@@ -408,10 +408,10 @@ controllers typically use an opcode of 9 to indicate a button press and
 8 to indicate a button release. Both the press and release signals need
 to be mapped in the XML file to the Button's `input` method. To make
 Button work for such a controller, reimplement the prototype `isPress`
-function in your mappings's `init` function:
+function:
 
 ```javascript
-components.Button.prototype.isPress = function (channel, control, value, status) {
+components.Button.prototype.isPress = function(channel, control, value, status) {
     return (status & 0xF0) === 0x90;
 }
 ```

@@ -3,7 +3,7 @@
 ## Preparation
 
 First of all, we must install all build Mixxx dependencies (read about
-it [Compiling on Linux](Compiling on Linux)).
+it [Compiling on Linux]).
 
 Keep in mind, that SCons is written to work with any Python version \>=
 2.4 and \< 3.0. So, you must have one installed in your system.

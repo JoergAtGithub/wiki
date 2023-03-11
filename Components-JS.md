@@ -14,7 +14,7 @@ modes.
 Components JS is new in Mixxx 2.1 and does not work with older versions
 of Mixxx. To use the library, in the `<scriptfiles>` element at the top
 of your mapping's [XML
-file](MIDI%20controller%20mapping%20file%20format), load the Lodash
+file](MIDI-controller-mapping-file-format), load the Lodash
 library and the Components library (above the link to your controller's
 script file):
 
@@ -24,7 +24,7 @@ script file):
 <file functionprefix="MyController" filename="My_Controller_SCRIPT.js"/>
 ```
 
-Components JS uses a few functions from [Lodash](http://lodash.com/),
+Components JS uses a few functions from [Lodash](https://lodash.com/),
 which is why they both need to be loaded. Importing the
 midi-components-0.0.js file makes the library accessible by an object
 called `components` (plural, lower case).
@@ -39,7 +39,7 @@ section of that tutorial.
 
 ## File structure
 
-To map most controllers, create a custom subtype of [\#Deck](#Deck) and
+To map most controllers, create a custom subtype of [\#Deck](#deck) and
 create instances of your custom Deck objects in your controller's `init`
 function. Use the custom Deck's constructor function to create all the
 Components you need for your particular controller. The example below is
@@ -129,12 +129,12 @@ MIDI signals out to the controller to activate its LED(s).
 
 Components should generally be properties of a
 [ComponentContainer](#componentcontainer-and-managing-layers) object. Most Components
-should be properties of a custom [\#Deck](#Deck) object as demonstrated
+should be properties of a custom [\#Deck](#deck) object as demonstrated
 in the example in the previous section.
 
 In general, you should not use the basic Component constructor directly;
-instead, use one of its subtypes ([Button](#Button), [Pot](#Pot), or
-[Encoder](#Encoder)). If you do need to use Component directly, do not
+instead, use one of its subtypes ([Button](#button), [Pot](#pot), or
+[Encoder](#encoder)). If you do need to use Component directly, do not
 confuse it with the `components` object (plural, lower case) that
 contains all the objects for the library; access Component as
 `components.Component` (plural lower case then singular upper case).
@@ -158,14 +158,14 @@ MIDI signals in the XML file. For example:
 ```
 
 In the future Mixxx will be able to [register MIDI inputs from
-JavaScript](registering%20midi%20input%20handlers%20from%20javascript),
+JavaScript](registering-midi-input-handlers-from-javascript),
 so that will not be necessary. Until then, if you decide to rename a
 Component or map it to different MIDI input signals, you need to edit
 the XML file and reload the mapping in Mixxx's Preferences. The output
 does not need to be mapped in XML. It is handled by the library in
 JavaScript.
 
-Create Components by calling the constructor with JavaScript's "new"
+Create Components by calling the constructor with JavaScript's `new`
 keyword. The Component constructor takes a single object as an argument.
 Generally you should provide this as an [object
 literal](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Grammar_and_types#Object_literals).
@@ -177,16 +177,16 @@ properties defined:
 
   - `midi` (array with 2 numbers): the first two MIDI bytes that the
     controller sends/receives when the physical component changes state.
-    Refer to the [MIDI Crash Course](MIDI%20Crash%20Course) if you do
+    Refer to the [MIDI Crash Course](MIDI-Crash-Course) if you do
     not understand what this means.
   - `inKey` (string): the key of the [Mixxx
-    ControlObject](mixxxcontrols) that this Component manipulates when
+    ControlObject](https://manual.mixxx.org/latest/chapters/appendix/mixxx_controls.html) that this Component manipulates when
     it receives a MIDI input signal
-  - `outKey` (string): when the [Mixxx ControlObject](mixxxcontrols)
+  - `outKey` (string): when the [Mixxx ControlObject](https://manual.mixxx.org/latest/chapters/appendix/mixxx_controls.html)
     specified by this key changes value, the `output` function will be
     called
   - `group` (string): the group of the [Mixxx
-    ControlObjects](mixxxcontrols) for both inKey and outKey, for
+    ControlObjects](https://manual.mixxx.org/latest/chapters/appendix/mixxx_controls.html) for both inKey and outKey, for
     example `[Channel1]` for deck 1
 
 For example:
@@ -224,23 +224,23 @@ most cases the defaults (from the inherited prototype Component) will
 work so you do not need to define them yourself:
 
   - `input`: the [function that receives MIDI
-    input](MIDI%20scripting#MIDI%20input%20handling%20functions)
+    input](midi-scripting#midi-input-handling-functions)
   - `output`: the [function that gets called when outKey changes
-    value](midi%20scripting#Connect%20output%20callback%20functions).
+    value](midi-scripting#connect-output-callback-functions).
     Typically this sends MIDI output to the controller to change the
     state of an LED, but it can do anything.
   - `connect`: register `output` as the callback function that gets
-    executed when the value of the [Mixxx ControlObject](mixxxcontrols)
+    executed when the value of the [Mixxx ControlObject](https://manual.mixxx.org/latest/chapters/appendix/mixxx_controls.html)
     specified by `group`, `outKey` changes. This is called automatically
     by the Component constructor if `group` and `outKey` are defined
     (otherwise it needs to be called after construction). Implement a
     custom function if you need to connect callbacks for multiple Mixxx
     ControlObjects in one Component. Refer to the source code of
-    [SamplerButton.prototype.connect](#SamplerButton) for an example.
+    [SamplerButton.prototype.connect](#samplerbutton) for an example.
 
 The following methods are called by the default Component `input` and
 `output` methods, as well as the default `input` functions of
-[Button](#Button), [Pot](#Pot), and [Encoder](#Encoder). If you do
+[Button](#button), [Pot](#pot), and [Encoder](#encoder). If you do
 not need to implement complex custom behavior, you can overwrite these
 instead of the default `input` and `output` methods:
 
@@ -325,8 +325,8 @@ Components JS provides convenient shortcuts for common situations.
 
 To avoid typing out the group for the constructor of each Component,
 Components that share a group can be part of a ComponentContainer and
-the [ComponentContainer's](#ComponentContainer) `reconnectComponents`
-method can assign the group to all of them. Refer to the [\#Deck](#Deck)
+the [ComponentContainer's](#componentcontainer-and-managing-layers) `reconnectComponents`
+method can assign the group to all of them. Refer to the [\#Deck](#deck)
 ComponentContainer documentation for an example.
 
 If a Component only needs its `midi` property specified for its
@@ -362,7 +362,7 @@ off. Button adds the following properties to Component:
     values:
     - `Button.prototype.types.push` (default): set inKey to 1 on button
     press and 0 on button release. For example, use this type with the
-    beatloop\_activate [Control](mixxxcontrols)
+    beatloop\_activate [Control](https://manual.mixxx.org/latest/chapters/appendix/mixxx_controls.html)
     - `Button.prototype.types.toggle`: invert value of inKey on button
     press. Use this with Controls whose values indicate the state of a
     switch, for example pfl
@@ -629,7 +629,7 @@ var samplerButton[1] = new components.SamplerButton(
 
 An EffectAssignmentButton routes a deck through an EffectUnit. It is
 separate from the
-[EffectUnit](#EffectUnit) ComponentContainer because it is-meant to be a part of a [Deck](#Deck). Using `Deck.setCurrentDeck`
+[EffectUnit](#EffectUnit) ComponentContainer because it is-meant to be a part of a [Deck](#deck). Using `Deck.setCurrentDeck`
 to switch decks will switch the deck an EffectAssignmentButton assigns
 an EffectUnit to.
 
@@ -649,7 +649,7 @@ for (var u = 1; u <= 4; u++) {
 A Pot is a Component subtype for potentiometers (faders and knobs) with
 finite ranges. Pot's `connect` and `disconnect` methods take care of
 soft takeover when switching layers with
-[ComponentContainer's](#ComponentContainer) `reconnectComponents` or
+[ComponentContainer's](#componentcontainer-and-managing-layers) `reconnectComponents` or
 `applyLayer` methods. Soft takeover is not activated until the first
 input signal is received, so it does not interfere with setting initial
 values for controllers that can report that information.
@@ -730,7 +730,7 @@ separate Button Component to handle the MIDI signals from pushing it.
 
 ### JogWheelBasic
 
-Since mapping [Jogwheels in mixxx can be cumbersome](https://github.com/mixxxdj/mixxx/wiki/midi%20scripting#scratching-and-jog-wheels)
+Since mapping [Jogwheels in mixxx can be cumbersome](https://github.com/mixxxdj/mixxx/wiki/midi-scripting#scratching-and-jog-wheels)
 we introduced a new component called `JogWheelBasic` in Mixxx 2.3.4.
 
 ```js
@@ -743,7 +743,7 @@ this.jogWheel = components.JogWheelBasic({
   group: // optional
 });
 ```
-See the [Jogwheel guide](https://github.com/mixxxdj/mixxx/wiki/midi%20scripting#scratching-and-jog-wheels) on a more 
+See the [Jogwheel guide](https://github.com/mixxxdj/mixxx/wiki/midi-scripting#scratching-and-jog-wheels) on a more 
 in-depth explanation of the available properties. The XML should
 map `jogWheel.inputWheel` to the messages containing rotation information
 of the wheel and `jogWheel.inputTouch` on messages that contain info on whether the
@@ -831,12 +831,12 @@ the ComponentContainer will be executed (if it exists). When the shift
 button is released, call `ComponentContainer.unshift()` to call each
 Component's `unshift` method.
 
-Note that any *Button.prototype.types.push* type [Buttons](#Button) in
+Note that any *Button.prototype.types.push* type [Buttons](#button) in
 the ComponentContainer will have their inKey reset to 0 if the user
 happens to have them pressed when `ComponentContainer.shift()` or
 `ComponentContainer.unshift()` is called. This prevents the Button's
 inKey from getting stuck in a pressed (1) state, which can cause
-confusing behavior with some [MixxxControls](MixxxControls).
+confusing behavior with some [MixxxControls](https://manual.mixxx.org/latest/chapters/appendix/mixxx_controls.html).
 
 For convenience, the Component constructor will automatically call the
 `unshift` function if it exists. This allows you to avoid redundancy
@@ -859,11 +859,11 @@ layer, you can create another system of methods for each Component that
 changes properties of the Component when a layer is activated, and
 within those methods, you can assign the `shift` and `unshift`
 properties of the Component to different functions. Refer to the source
-code of [\#EffectUnit](#EffectUnit) for an example.
+code of [\#EffectUnit](#effectunit) for an example.
 
 ## Deck
 
-Deck is a [\#ComponentContainer](#ComponentContainer) with methods for
+Deck is a [\#ComponentContainer](#componentcontainer-and-managing-layers) with methods for
 conveniently changing the `group` attributes of contained Components to
 switch the deck that a set of Components is manipulating. The
 `setCurrentDeck` method takes the new deck as a string and sets the
@@ -874,12 +874,12 @@ The Deck constructor takes one argument, which is an array of deck
 numbers to cycle through with the `toggle` method. Typically this will
 be `[1, 3]` or `[2, 4]`.
 
-Refer to the [\#File structure](#File%20structure) section above for an
+Refer to the [\#File structure](#file-structure) section above for an
 example.
 
 ## EffectUnit
 
-EffectUnit is a [\#ComponentContainer](#ComponentContainer) that
+EffectUnit is a [\#ComponentContainer](#componentcontainer-and-managing-layers) that
 contains Components designed to be mapped to the common arrangement of 4
 knobs and 4 buttons for controlling effects. If your controller's
 effects section has fewer components, the EffectUnit object provided by
@@ -892,23 +892,23 @@ just want to use the EffectUnit from the library.
 
 The Components provided are:
 
-  - dryWetKnob ([\#Pot](#Pot))
-  - effectFocusButton ([\#Button](#Button))
-  - enableButtons\[1-3\] ([\#ComponentContainer](#ComponentContainer) of
-    [\#Button](#Button)s)
-  - knobs\[1-3\] ([\#ComponentContainer](#ComponentContainer) of
-    [\#Pot](#Pot)s)
+  - dryWetKnob ([\#Pot](#pot))
+  - effectFocusButton ([\#Button](#button))
+  - enableButtons\[1-3\] ([\#ComponentContainer](#componentcontainer-and-managing-layers) of
+    [\#Button](#button)s)
+  - knobs\[1-3\] ([\#ComponentContainer](#componentcontainer-and-managing-layers) of
+    [\#Pot](#pot)s)
 
-Refer to the [Standard Effects Mapping](Standard%20Effects%20Mapping)
+Refer to the [Standard Effects Mapping](Standard-Effects-Mapping)
 page for a description of how to use the EffectUnit object. On the wiki
 page for your controller, link to the [Standard Effects
-Mapping](Standard%20Effects%20Mapping) page instead of rewriting a
+Mapping](Standard-Effects-Mapping) page instead of rewriting a
 description for your controller.
 
 ### Setup
 
 To map an EffectUnit for your controller, call the constructor like the
-[\#Deck](#Deck) constructor. The only argument to the constructor is an
+[\#Deck](#deck) constructor. The only argument to the constructor is an
 array of numbers that specifies which EffectUnits pressing the
 effectFocusButton with shift toggles between. Then, set the midi
 attributes for the showParametersButton, enableButtons\[1-3\], and
@@ -963,8 +963,8 @@ the EffectUnit on button press/release. Also, if your controller sends
 different MIDI signals when shift is pressed, map those as well as the
 unshifted signals to the `input` method of each Component in your XML
 file. If the EffectUnit is a property of another
-[\#ComponentContainer](#ComponentContainer) (for example a
-[\#Deck](#Deck)), calling `shift` and `unshift` on the parent
+[\#ComponentContainer](#componentcontainer-and-managing-layers) (for example a
+[\#Deck](#deck)), calling `shift` and `unshift` on the parent
 ComponentContainer will recursively call it on the EffectUnit too (just
 like it will for any other ComponentContainer).
 
@@ -986,7 +986,7 @@ MyController.effectUnit = new components.EffectUnit([1, 3],true);
 ### Assignment switches
 
 Generally, most controllers should use
-[EffectAssignmentButton](#EffectAssignmentButton)s in [Deck](#Deck)s
+[EffectAssignmentButton](#effectassignmentbutton)s in [Deck](#deck)s
 to enable effect units on decks. If you have a dedicated effects
 controller that does not manipulate decks, the enableOnChannelButtons
 provided by EffectUnit would be more appropriate. You can easily create

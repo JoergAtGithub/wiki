@@ -139,7 +139,7 @@ confuse it with the `components` object (plural, lower case) that
 contains all the objects for the library; access Component as
 `components.Component` (plural lower case then singular upper case).
 
-### Setup
+### Component Setup
 
 The input function of each Component needs to be mapped to the incoming
 MIDI signals in the XML file. For example:
@@ -175,17 +175,17 @@ functionality of the Component. The constructors for all Component
 subtypes work the same way. Most Components need at least these
 properties defined:
 
-  - `midi` (array with 2 numbers): the first two MIDI bytes that the
+- `midi` (array with 2 numbers): the first two MIDI bytes that the
     controller sends/receives when the physical component changes state.
     Refer to the [MIDI Crash Course](MIDI-Crash-Course) if you do
     not understand what this means.
-  - `inKey` (string): the key of the [Mixxx
+- `inKey` (string): the key of the [Mixxx
     ControlObject](https://manual.mixxx.org/latest/chapters/appendix/mixxx_controls.html) that this Component manipulates when
     it receives a MIDI input signal
-  - `outKey` (string): when the [Mixxx ControlObject](https://manual.mixxx.org/latest/chapters/appendix/mixxx_controls.html)
+- `outKey` (string): when the [Mixxx ControlObject](https://manual.mixxx.org/latest/chapters/appendix/mixxx_controls.html)
     specified by this key changes value, the `output` function will be
     called
-  - `group` (string): the group of the [Mixxx
+- `group` (string): the group of the [Mixxx
     ControlObjects](https://manual.mixxx.org/latest/chapters/appendix/mixxx_controls.html) for both inKey and outKey, for
     example `[Channel1]` for deck 1
 
@@ -223,13 +223,13 @@ that happen to be functions) must be defined for every Component, but in
 most cases the defaults (from the inherited prototype Component) will
 work so you do not need to define them yourself:
 
-  - `input`: the [function that receives MIDI
+- `input`: the [function that receives MIDI
     input](midi-scripting#midi-input-handling-functions)
-  - `output`: the [function that gets called when outKey changes
+- `output`: the [function that gets called when outKey changes
     value](midi-scripting#connect-output-callback-functions).
     Typically this sends MIDI output to the controller to change the
     state of an LED, but it can do anything.
-  - `connect`: register `output` as the callback function that gets
+- `connect`: register `output` as the callback function that gets
     executed when the value of the [Mixxx ControlObject](https://manual.mixxx.org/latest/chapters/appendix/mixxx_controls.html)
     specified by `group`, `outKey` changes. This is called automatically
     by the Component constructor if `group` and `outKey` are defined
@@ -244,40 +244,40 @@ The following methods are called by the default Component `input` and
 not need to implement complex custom behavior, you can overwrite these
 instead of the default `input` and `output` methods:
 
-  - `inValueScale`: takes the third byte of the incoming MIDI signal
+- `inValueScale`: takes the third byte of the incoming MIDI signal
     as its first argument and returns the value to set `group`, `inKey`
     to
-  - `outValueScale`: takes the value of `group`, `outKey` as its first
+- `outValueScale`: takes the value of `group`, `outKey` as its first
     argument and returns the third byte of the outgoing MIDI signal
 
 Each Component also has these methods that you probably should not
 overwrite:
 
-  - `disconnect`: disconnect the `output` function from being called
+- `disconnect`: disconnect the `output` function from being called
     when `group`, `outKey` changes
-  - `trigger`: manually call `output` with the same arguments as if
+- `trigger`: manually call `output` with the same arguments as if
     `group`, `outKey` had changed
-  - `send`: send a 3 byte (short) MIDI message out to the controller.
+- `send`: send a 3 byte (short) MIDI message out to the controller.
     The first two bytes of the MIDI message are specified by the
     Component's `midi` property. The third MIDI byte is provided as the
     first argument to the `send` function.
-  - `inGetParameter`: returns the value of `group`, `inKey` normalized
+- `inGetParameter`: returns the value of `group`, `inKey` normalized
     to a 0-1 scale
-  - `inSetParameter`: sets the value of `group`, `inKey` to the
+- `inSetParameter`: sets the value of `group`, `inKey` to the
     function's first argument, normalized to a 0-1 scale
-  - `inGetValue`: returns the value of `group`, `inKey`
-  - `inSetValue`: sets the value of `group`, `inKey` to the function's
+- `inGetValue`: returns the value of `group`, `inKey`
+- `inSetValue`: sets the value of `group`, `inKey` to the function's
     first argument
-  - `inToggle`: sets `group`, `inKey` to its inverse (0 if it is \>0;
+- `inToggle`: sets `group`, `inKey` to its inverse (0 if it is \>0;
     1 if it is 0)
-  - `outGetParameter`: returns the value of `group`, `outKey`
+- `outGetParameter`: returns the value of `group`, `outKey`
     normalized to a 0-1 scale
-  - `outSetParameter`: sets the value of `group`, `outKey` to the
+- `outSetParameter`: sets the value of `group`, `outKey` to the
     function's first argument, normalized to a 0-1 scale
-  - `outGetValue`: returns the value of `group`, `outKey`
-  - `outSetValue`: sets the value of `group`, `outKey` to the
+- `outGetValue`: returns the value of `group`, `outKey`
+- `outSetValue`: sets the value of `group`, `outKey` to the
     function's first argument
-  - `outToggle`: sets `group`, `outKey` to its inverse (0 if it is
+- `outToggle`: sets `group`, `outKey` to its inverse (0 if it is
     \>0; 1 if it is 0)
 
 ### Optional properties
@@ -287,10 +287,10 @@ to the Component constructor to customize the Component's
 initialization. Changing their value after creating the Component does
 not do anything.
 
-  - `outConnect` (boolean, default true): whether to call `connect` in
+- `outConnect` (boolean, default true): whether to call `connect` in
     the constructor (assuming `group` and `outKey` were specified in the
     options object)
-  - `outTrigger` (boolean, default true): whether to call `trigger` in
+- `outTrigger` (boolean, default true): whether to call `trigger` in
     the constructor (assuming `group` and `outKey` were specified in the
     options object)
 
@@ -300,24 +300,26 @@ for when the shift button is not pressed. To avoid defining two
 Components for every physical component of your controller, set the
 following options as appropriate:
 
-  - `sendShifted` (boolean, default false): whether to send a second,
+- `sendShifted` (boolean, default false): whether to send a second,
     shifted MIDI message for every call to `send`
-  - `shiftChannel` (boolean, default false): whether the shifted MIDI
+- `shiftChannel` (boolean, default false): whether the shifted MIDI
     message changes the MIDI channel (second nybble of the first byte of
     the MIDI signal)
-  - `shiftControl` (boolean, default false): whether the shifted MIDI
+- `shiftControl` (boolean, default false): whether the shifted MIDI
     message changes the MIDI control number (second byte) of the MIDI
     signal
-  - `shiftOffset` (number, default 0): how much to shift the MIDI
+- `shiftOffset` (number, default 0): how much to shift the MIDI
     channel or control number by
 
 To avoid having to define those properties for every Component, you can
 change the properties of `components.Component.prototype` in your
 controller's `init` function. For example:
 
-    components.Component.prototype.shiftOffset = 3;
-    components.Component.prototype.shiftChannel = true;
-    components.Component.prototype.sendShifted = true;
+```javascript
+components.Component.prototype.shiftOffset = 3;
+components.Component.prototype.shiftChannel = true;
+components.Component.prototype.sendShifted = true;
+```
 
 ### Syntactic sugar
 
@@ -358,24 +360,24 @@ A generic Button toggles the state of a binary `inKey` and sends
 outgoing MIDI messages indicating whether a binary `outKey` is on or
 off. Button adds the following properties to Component:
 
-  - `type`: determines the behavior of the Button. Can be any of these
+- `type`: determines the behavior of the Button. Can be any of these
     values:
-    - `Button.prototype.types.push` (default): set inKey to 1 on button
+  - `Button.prototype.types.push` (default): set inKey to 1 on button
     press and 0 on button release. For example, use this type with the
     beatloop\_activate [Control](https://manual.mixxx.org/latest/chapters/appendix/mixxx_controls.html)
-    - `Button.prototype.types.toggle`: invert value of inKey on button
+  - `Button.prototype.types.toggle`: invert value of inKey on button
     press. Use this with Controls whose values indicate the state of a
     switch, for example pfl
-    - `Button.prototype.types.powerWindow`: like toggle, but toggles the
+  - `Button.prototype.types.powerWindow`: like toggle, but toggles the
     value of inKey again on button up when long pressed, for example
     with \[EffectRack1\_EffectUnit2\_Effect1\], enabled Control.
-  - `on` (number, default 127): number to send as the third byte of
+- `on` (number, default 127): number to send as the third byte of
     outgoing MIDI messages when `group`, `outKey` is on (its value is \>
     0)
-  - `off` (number, default 0): number to send as the third byte of
+- `off` (number, default 0): number to send as the third byte of
     outgoing MIDI messages when `group`, `outKey` is off (its value is
     0)
-  - `isPress` (function): function that takes the same first 4
+- `isPress` (function): function that takes the same first 4
     arguments as a MIDI input function (channel, control, value, status)
     and returns a boolean indicating whether the button was pressed.
 
@@ -467,9 +469,9 @@ HotcueButton can show hotcue colors on the controller. There are three
 ways of implementing this. Which one to choose depends on the
 controller.
 
-1.  Set color via single byte based on controller internal palette
-2.  Set color via SysEx based on custom palette.
-3.  Set color via SysEx based on predefined colors by Mixxx.
+1. Set color via single byte based on controller internal palette
+2. Set color via SysEx based on custom palette.
+3. Set color via SysEx based on predefined colors by Mixxx.
 
 Option 1 is the simplest and most common method for most controllers.
 You must figure out which MIDI values correspond to which colors and the
@@ -575,7 +577,7 @@ for (var n = 1; n <= 8; n++) {
         number: n,
         midi: [0x91, 0x02],
     });
-)};
+};
 ```
 
 You can also make the SamplerButtons velocity sensitive by setting the
@@ -592,9 +594,8 @@ for (var n = 1; n <= 8; n++) {
         midi: [0x91, 0x02],
         volumeByVelocity: true,
     });
-)};
+};
 ```
-
 
 When the sampler is loaded, the LED will be sent a MIDI message with the
 value of the `on` property (default 127) When the sampler is empty, the
@@ -615,21 +616,20 @@ MyController.padColors = {
     off: 0
 };
 var samplerButton = [];
-var samplerButton[1] = new components.SamplerButton(
+var samplerButton[1] = new components.SamplerButton({
     midi: [0x91, 0x02],
     number: 1,
     on: MyController.padColors.blue,
     playing: MyController.padColors.red,
     // off is inherited from Button.prototype
-)};
+});
 ```
-
 
 ### EffectAssignmentButton
 
 An EffectAssignmentButton routes a deck through an EffectUnit. It is
 separate from the
-[EffectUnit](#EffectUnit) ComponentContainer because it is-meant to be a part of a [Deck](#deck). Using `Deck.setCurrentDeck`
+[EffectUnit](#effectunit) ComponentContainer because it is-meant to be a part of a [Deck](#deck). Using `Deck.setCurrentDeck`
 to switch decks will switch the deck an EffectAssignmentButton assigns
 an EffectUnit to.
 
@@ -640,7 +640,7 @@ for (var u = 1; u <= 4; u++) {
         midi: [0x92, 0x20 + u],
         effectUnit: u,
         group: '[Channel1]',
-    )};
+    });
 }
 ```
 
@@ -673,18 +673,19 @@ significant byte) for higher precision, map the incoming signals to the
 Pot's `inputLSB` and `inputMSB` functions instead of `input` in the XML
 file. Nothing extra needs to be done in JavaScript.
 
-The Pot components supports `max` values up to 16384 (`2^14`). So if 
+The Pot components supports `max` values up to 16384 (`2^14`). So if
 (for some obscure reason) a control only sends 6 bytes of precision,
 you can map `input` as if the control had 7 bits of precision and then
 specify `max: 64`. The same would work for 10 bits for example, just
 map `inputLSB` and `inputMSB` as if the control sent 14 bits of
-precision and then specify `max: 1024`. 
+precision and then specify `max: 1024`.
 
 Pot Components support an optional relative mode as an alternative to
 dealing with soft takeover. To use it, set the `relative` property to
 `true` in the options object for the constructor. In this mode, moving
 the Pot will adjust the Mixxx Control relative to its current value.
 For example:
+
 ```javascript
 var tempoFader = new components.Pot({
     midi: [0xB1, 0x32],
@@ -743,7 +744,8 @@ this.jogWheel = components.JogWheelBasic({
   group: // optional
 });
 ```
-See the [Jogwheel guide](https://github.com/mixxxdj/mixxx/wiki/midi-scripting#scratching-and-jog-wheels) on a more 
+
+See the [Jogwheel guide](https://github.com/mixxxdj/mixxx/wiki/midi-scripting#scratching-and-jog-wheels) on a more
 in-depth explanation of the available properties. The XML should
 map `jogWheel.inputWheel` to the messages containing rotation information
 of the wheel and `jogWheel.inputTouch` on messages that contain info on whether the
@@ -751,7 +753,7 @@ top of the platter was touched. If you need to make some adjustments how the
 wheel interprets the incoming rotation information, you can overwrite
 `onValueScale(midiValue)`. If your controller has an option to enable/disable
 vinylmode, you can set `jogWheel.vinylMode` and the controller will behave
-appropriately (touching the jogwheel platter is ignored when `vinylMode` is `false`). 
+appropriately (touching the jogwheel platter is ignored when `vinylMode` is `false`).
 
 ## ComponentContainer and Managing Layers
 
@@ -760,7 +762,7 @@ properties. ComponentContainer has methods to easily iterate through the
 Components, which makes it easy to manage different layers of
 functionality. The basic ComponentContainer methods are:
 
-  - `forEachComponent`: Iterate over all Components in this
+- `forEachComponent`: Iterate over all Components in this
     ComponentContainer and perform an operation on them. The operation
     is a function provided as the first argument to `forEachComponent`.
     The operation function takes each Component as its first argument.
@@ -770,11 +772,11 @@ functionality. The basic ComponentContainer methods are:
     properties of this ComponentContainer. If you do not want
     `forEachComponent` to operate recursively, pass `false` as the
     second argument to `forEachComponent`.
-  - `reconnectComponents`: Call each Component's `disconnect` method,
+- `reconnectComponents`: Call each Component's `disconnect` method,
     optionally perform an operation on it, then call its `connect` and
     `trigger` methods to sync the state of the controller's LEDs.
     Arguments are the same as `forEachComponent`.
-  - `shutdown`: Iterate over all Components and call their shutdown
+- `shutdown`: Iterate over all Components and call their shutdown
     methods. The Button is the only component with a predefined shutdown
     method. All other components have to be implemented manually if they
     require anything to be done when Mixxx shuts down.
@@ -784,7 +786,7 @@ callback passed to reconnectComponents can manipulate each Component's
 properties as appropriate for the new layer. Below is a basic example
 for switching between decks 1 and 3. This is a simple example that does
 not handle the complexities presented by EQs, QuickEffects, or
-EffectAssignmentButtons like [Deck.setCurrentDeck](#Deck) does.
+EffectAssignmentButtons like [Deck.setCurrentDeck](#deck) does.
 
 ```javascript
 // Define a constructor for a ComponentContainer that adds some Components to it
@@ -892,11 +894,11 @@ just want to use the EffectUnit from the library.
 
 The Components provided are:
 
-  - dryWetKnob ([\#Pot](#pot))
-  - effectFocusButton ([\#Button](#button))
-  - enableButtons\[1-3\] ([\#ComponentContainer](#componentcontainer-and-managing-layers) of
+- dryWetKnob ([\#Pot](#pot))
+- effectFocusButton ([\#Button](#button))
+- enableButtons\[1-3\] ([\#ComponentContainer](#componentcontainer-and-managing-layers) of
     [\#Button](#button)s)
-  - knobs\[1-3\] ([\#ComponentContainer](#componentcontainer-and-managing-layers) of
+- knobs\[1-3\] ([\#ComponentContainer](#componentcontainer-and-managing-layers) of
     [\#Pot](#pot)s)
 
 Refer to the [Standard Effects Mapping](Standard-Effects-Mapping)
@@ -905,7 +907,7 @@ page for your controller, link to the [Standard Effects
 Mapping](Standard-Effects-Mapping) page instead of rewriting a
 description for your controller.
 
-### Setup
+### EffectUnit Setup
 
 To map an EffectUnit for your controller, call the constructor like the
 [\#Deck](#deck) constructor. The only argument to the constructor is an

@@ -131,7 +131,7 @@ doing it:
 2.  Move your music folder to the new folder or new hard drive
 3.  Install *SQLite Manager*, which is a Firefox extension that lets you
     manipulate the mixxx database:
-    <https://addons.mozilla.org/de/firefox/addon/sqlite-manager/>
+    <https://addons.mozilla.org/en-US/firefox/addon/sqlite-manager-webext>
 4.  Open the SQLite Manager from within firefox. Within SQLite Manager
     open the file `mixxxdb.sqlite` that can be found in your mixxx
     configuration folder

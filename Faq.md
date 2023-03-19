@@ -137,14 +137,16 @@ doing it:
     configuration folder
 5.  Go on `Execute SQL` and enter:  
     ```
-        update track_locations set directory = replace (directory, '/old/path/DJ/Music/', '/new/path/DJ/Music/');  
-        update track_locations set location = replace (location, '/old/path/DJ/Music/', '/new/path/DJ/Music/');  
+    update track_locations set directory = replace (directory, '/old/path/DJ/Music', '/new/path/DJ/Music');
+    update track_locations set location = replace (location, '/old/path/DJ/Music', '/new/path/DJ/Music');
     ```
-    where the old and new paths point to your corresponding music folders. 
+    where the old and new paths point to your corresponding music folders.  
+    **Note:** `directory` data is stored without a trailing `/`. 
+If, for some reason, you have multiple similiar directories selected (`/Music`, `/Music123` etc.) and you only want to migrate `/Music` you need to append a `/` to each old and new path in both lines. This however, will no migrate tracks that reside directly in `/Music`, only those in sub-directories.
 6.  Then hit `Run SQL`. The above statements will replace all instances
     of `/old/path/DJ/Music/` to `/new/path/DJ/Music/` in the field of
     *location* and *directory* of *track\_locations* table.
-7.  Start `mixxx` and under settings change your music folder to the new
+7.  Start `mixxx` and in Preferences > Library > Music Directories change your music folder to the new
     one. If you want you can do a rescan to check that the music files
     do not turn up twice suddenly (if you are on linux, do especially
     check music files which where in symbolically linked directory).

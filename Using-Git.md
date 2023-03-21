@@ -38,14 +38,11 @@ this command in your shell:
 
     git clone git@github.com:YOUR-GITHUB-USER-NAME/mixxx.git
 
-Open the `.git/config` file in the new `mixxx` folder that was created
-by the above `git clone` command with your favorite text editor. Copy
-and paste the following lines at the top of the file:
+Change to the new `mixxx` folder that was created by the above
+`git clone` command and run the following command to add the
+`upstream` remote:
 
-    [remote "upstream"]
-        url = https://github.com/mixxxdj/mixxx.git
-        fetch = +refs/heads/*:refs/remotes/upstream/*
-        fetch = +refs/pull/*/head:refs/remotes/upstream/pr/*
+    git remote add upstream https://github.com/mixxxdj/mixxx.git
 
 This makes it easy to interact with the upstream [mixxxdj/mixxx
 repository on GitHub's server](https://github.com/mixxxdj/mixxx).

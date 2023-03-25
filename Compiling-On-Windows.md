@@ -38,7 +38,7 @@ If you want to compile Mixxx, you'll need to download the source code. Source ar
 
 ## Acquire Mixxx dependencies
 
-To build Mixxx, you need built copies of its dependencies.
+To build Mixxx, you need built copies of its dependencies. Mixxx uses the VCPKG pacakge manager to build the dependencies (also called build environment or buildenv). this is maintained in the repo https://github.com/mixxxdj/vcpkg
 You may download pre-built versions of them from the Mixxx team (recommended)
 or build them from source.
 
@@ -51,58 +51,34 @@ This script will download the appropriate file from Mixxx servers, and autogener
 CMakeSettings.json file which can later be used to build Mixxx with 
 the default settings from Visual Studio.
 
-It will download the dependencies to **MIXXX\_REPO**\buildenv\2.3-j00019-x64-release-fastbuild-static-55e94982-minimal
-We will refer to this folder as **WINLIB\_PATH** later.
+It will download the dependencies to **MIXXX\_REPO**\buildenv\mixxx-deps-2.4-x64-windows-92b7b90.zip and extract the ZIP archive to a directory with the same name.
 
 ### Option 2: Download pre-built Mixxx dependencies manually
 
-Alternatively, you can find links to pre-built Mixxx dependencies at the bottom 
-of this [Github Page](https://github.com/mixxxdj/buildserver).
-
+You find the ZIP archives at: https://downloads.mixxx.org/dependencies/2.4/Windows/
 The folder `2.?.x-windows` contains build environments for the `2.?`
-release of Mixxx. If you are working on the master branch, always pick
+release of Mixxx. If you are working on the Main branch, always pick
 the latest version. If you want to work on a specific branch, pick the
 corresponding folder. Check the
-[packaging/windows/build\_environment](https://github.com/mixxxdj/mixxx/blob/master/packaging/windows/build_environment)
+[packaging/windows/build\_environment](https://github.com/mixxxdj/mixxx/blob/main/packaging/windows/build_environment)
 file in the Mixxx codebase to see what version of the build environment
 is currently used for builds.
 
-The current recommended variant is "release". Release is the version used 
-to produce Mixxx releases. It is compiled with LTCG enabled and requires 
-at least 8 GB of memory (or equivalent free space on the disk with your [paging
-file](https://www.howtogeek.com/126430/htg-explains-what-is-the-windows-page-file-and-should-you-disable-it/))
-to link Mixxx.
-
-If you want to build a 32-bit version of Mixxx, choose an "x86" variant.
-For 64-bit, choose an "x64" variant.
-
 Download and unzip one of these environments. 
 The current recommended folder is inside **MIXXX\_REPO**\buildenv 
-(example: **MIXXX\_REPO**\buildenv\2.3-j00019-x64-release-fastbuild-static-55e94982-minimal).
-We will refer to this folder as **WINLIB\_PATH** later.
+(example: **MIXXX\_REPO**\buildenv\mixxx-deps-2.4-x64-windows-92b7b90).
 
 ### Option 3: Compile Mixxx dependencies from source
 
 If you want to build the Mixxx dependencies from source instead of
 downloading pre-built ones:
 
-1.  Clone the [Mixxx buildserver repository](https://github.com/mixxxdj/buildserver).  
-    Remember the folder to which the repository was saved. We will refer
-    to that folder as **WINLIB\_PATH** later.
-2.  In the buildserver repository, checkout the **2.?.x-windows**
-    branch, depending on which version of Mixxx you are building the
-    dependencies for.
-3.  Start a Windows command prompt (you do not need a Windows SDK
-    command prompt). Open the Start Menu and type "cmd" into the search
-    box and hit enter. 
-4.  Change into the **WINLIB\_PATH** directory.  
-    `cd WINLIB_PATH_GOES_HERE`
-5.  Build the environment:
-    - 32-bit: `build_environment x86 Release`
-    - 64-bit: `build_environment x64 Release`
+1.  Clone the [Mixxx buildserver repository](https://github.com/mixxxdj/VCPKG).  
+    Remember the folder to which the repository was saved.
+2.  Github actions will build it automatically according the setup (including the list of dependencies) in https://github.com/mixxxdj/vcpkg/blob/2.4/.github/workflows/build.yml
+3.  When Github Action finishes the build, you can download the buildenv as ZIP file from the artifacts.
 
-This step will take 2-3 hours depending on how many CPU cores you have.
-Go have lunch.
+The build will take some hours.
 
 ## Build Mixxx
 ### From Visual Studio
@@ -138,21 +114,21 @@ Go have lunch.
 
    `**MIXXX\_REPO**\build\x64__portable`
 
-   `**MIXXX\_REPO**\build\x86__portable`
+   `**MIXXX\_REPO**\build\x64__native`
 
-   `**MIXXX\_REPO**\build\x64__debug`
+   `**MIXXX\_REPO**\build\x64__off`
 
    Do the same for the install subdir ( **MIXXX\_REPO**\install\x64_portable)
 
 3. enter into this directory, ` cd build\x64__portable` and type the following:
    `cmake -G "Ninja" -DCMAKE_BUILD_TYPE=Release 
- -DCMAKE_PREFIX_PATH="**WINLIB\_PATH**;**WINLIB\_PATH**\Qt-5.14.2" 
+ -DCMAKE_PREFIX_PATH="**MIXXX\_REPO**\buildenv;**MIXXX\_REPO**\buildenv\Qt-5.14.2" 
  -DCMAKE_INSTALL_PREFIX=**MIXXX\_REPO**\install\x64_portable 
  -DDEBUG_ASSERTIONS_FATAL=ON -DHSS1394=ON -DKEYFINDER=OFF -DLOCALECOMPARE=ON 
  -DMAD=ON -DMEDIAFOUNDATION=ON -DSTATIC_DEPS=ON -DBATTERY=ON -DBROADCAST=ON -DBULK=ON 
  -DHID=ON -DLILV=ON -DOPUS=ON -DQTKEYCHAIN=ON -DVINYLCONTROL=ON ..\..`
 
-  You need to replace **WINLIB\_PATH** and **MIXXX\_REPO** for your paths, 
+  You need to replace **MIXXX\_REPO**\buildenv and **MIXXX\_REPO** for your paths, 
   as well as adapting the install subdir if you build a different one.
   Also, the last part of the command "..\\.." means **MIXXX\_REPO** as seen from 
   the cmake build dir (in our case  **MIXXX\_REPO**\build\x64__portable, so two subfolders)

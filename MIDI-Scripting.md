@@ -913,6 +913,11 @@ Here is a list of functions available to you from the always-loaded
     values back to controllers. *New in 1.12*
   - **script.deckFromGroup**(group) - Takes a group string for a deck
     such as "\[Channel1\]" and returns the deck number (in this case, 1)
+  - **script.posMod**(dividend, divisor) - Calculates the [euclidian remainder]
+    (https://commons.wikimedia.org/wiki/File:Divmod_Euclidean.svg)
+    of `dividend % divisor`, which is always in the range $[0 , \text{divisor}[$.
+    useful for indexing into arrays for instance. Added in Mixxx 2.3.5
+
     
   - **bpm.tapButton**(deck) - Call this every time the desired tap
     button is pressed. It takes the progressive average of the last 8

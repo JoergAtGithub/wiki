@@ -99,7 +99,7 @@ The build will take some hours.
    You can also run it manually (and clean and regenerate it) by selecting the 
    CMakeLists.txt file, and use the options Generate cache or CMake cache -> delete cache.
 
-3. Go to Compile -> Compile All Menu option. The build should start. 
+3. Go to Build-> Build All Menu option. The build should start. 
    Depending on your processor, a full build can take from 5 to 20 minutes.
 
 

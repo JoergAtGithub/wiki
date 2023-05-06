@@ -160,7 +160,7 @@ This procedure extracts translatable strings from Mixxx's code into QT template 
 
   * **Make a clean checkout of the Mixxx code branch you are in. NO EXCEPTIONS**
   * Update source template
-  * <code>lupdate src -recursive -noobsolete -extensions cpp,h,ui -ts res/translations/mixxx.ts</code>
+  * <code>lupdate src -recursive -no-obsolete -extensions cpp,h,ui -Isrc -ts res/translations/mixxx.ts</code>
   * Commit changes to HEAD
   * <code>git commit -a -m "Update Translation template. Found XXXX source text(s) (XX new and XXXX already existing)"</code>
   * Push changes to remote repository

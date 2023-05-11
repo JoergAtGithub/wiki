@@ -1,10 +1,10 @@
-# Component JS ES7 Brainstorming
+# Components JS ES7 Brainstorming
 
 ## Purpose
 
 This Document aims to document some design goals and decisions made for an updated ComponentsJS version.
 
-## Lessons learned from ``midi-components-0.0.js`
+## Lessons learned from `midi-components-0.0.js`
 
 ### What was great?
 

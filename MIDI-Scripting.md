@@ -332,8 +332,8 @@ a convenient shortcut.
 To keep the state of your controller in sync with the state of Mixxx,
 register callback functions that Mixxx will execute when the state of a
 [Mixxx Control](MixxxControls) changes. Typically these callback
-functions will [\#send MIDI output to the
-controller](#send%20MIDI%20output%20to%20the%20controller), but they can
+functions will [send MIDI output to the
+controller](#send-MIDI-output-to-the-controller), but they can
 also be used to change the state of script variables.
 
 Callback functions are registered with the `engine.makeConnection`

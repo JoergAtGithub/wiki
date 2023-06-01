@@ -189,12 +189,13 @@ messages.
             <output>
                 <group>[Channel1]</group>
                 <key>play</key>
-                <status>0x7F</status>  <!-- First byte sent to device -->
-                <midino>0x08</midino>  <!-- Second byte -->
-                <on>0x01</on>  <!-- Third byte. If not specified, 0x7F is used. -->
-                <off>0x00</off> <!-- Alternate third byte. 0x00 is the default. If set to 0xFF, nothing is sent.-->
-                <maximum>0.99</maximum>  <!-- Optional upper value for the Mixxx control, above which the 'off' value is sent. 1.0 is the default. -->
-                <minimum>0.9</minimum>   <!-- Lower value for the Mixxx control, below which the 'off' value is sent -->
+                <status>0x7F</status>    <!-- First byte sent to device -->
+                <midino>0x08</midino>    <!-- Second byte -->
+                <on>0x01</on>            <!-- Third byte. If not specified, 0x7F is used. -->
+                <off>0x00</off>          <!-- Alternate third byte. 0x00 is the default. If set to 0xFF, nothing is sent.-->
+                <minimum>0.9</minimum>   <!-- Required: Lower value for the Mixxx control, below which the 'off' value is sent -->
+                <maximum>0.99</maximum>  <!-- Optional: upper value for the Mixxx control, above which the 'off' value is sent.
+                                              1.0 is the default. -->
             </output>
         </outputs>
 ```

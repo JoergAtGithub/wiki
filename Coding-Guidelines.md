@@ -526,22 +526,22 @@ that is defined in `<QtGlobal>`.
 
 **Example:**
 
-```cpp
-#include <math.h>
-#include <sys/types.h>
+  ```cpp
+  #include <math.h>
+  #include <sys/types.h>
 
-#include <QtCore>
-#include <QtDebug>
-#include <QTreeView>
+  #include <QtCore>
+  #include <QtDebug>
+  #include <QTreeView>
 
-#include <taglib/taglib.h>
+  #include <taglib/taglib.h>
 
-#include "library/library.h"
+  #include "library/library.h"
 
-QT_FORWARD_DECLARE_CLASS(QDomNode);
+  QT_FORWARD_DECLARE_CLASS(QDomNode);
 
-class Cue;
-```
+  class Cue;
+  ```
 
 ### Class Declaration
 
@@ -642,14 +642,12 @@ Initialization](http://en.wikipedia.org/wiki/Resource_Acquisition_Is_Initializat
     rule](https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md#es60-avoid-new-and-delete-outside-resource-management-functions).
     Instead of using `new` and `delete` statements, use one of the
     following "smart pointers" to convey ownership right from the start:
-  - `std::unique_ptr` for exclusive ownership: e.g. `auto p =
+    - `std::unique_ptr` for exclusive ownership: e.g. `auto p =
     std::make_unique<T>(...)`
-  - `std::shared_ptr` for shared ownership: e.g. `auto p =
+    - `std::shared_ptr` for shared ownership: e.g. `auto p =
     std::make_shared<T>(...)`
-  - `parented_ptr` for ownership by the QT object tree: e.g. `auto p =
+    - `parented_ptr` for ownership by the QT object tree: e.g. `auto p =
     make_parented<T>(...)`
-
-<!-- end list -->
 
   - Pass reference `const T&` or `T&` if no ownership is transfered.
     Pass raw pointer `const T*` or `T*` if no ownership is transfered
@@ -659,27 +657,20 @@ Initialization](http://en.wikipedia.org/wiki/Resource_Acquisition_Is_Initializat
     exception is the parent pointer passed into the constructor of a
     `QObject` and internally stored as a non owning reference.
 
-<!-- end list -->
-
   - Pass smart pointers by value if ownership is transfered
     (`std::unique_ptr`) or shared (`std::shared_ptr`). Do not pass smart
     pointers by reference.
-
-<!-- end list -->
 
   - Use `make_parented` to create objects derived from `QObject` that
     will be assigned to a parent (and will therefore be managed by the
     Qt object tree). The created object must get a parent before the
     `parented_ptr` is destructed. Example:
-
-<!-- end list -->
-
-``` 
-  auto pBrowseButton = make_parented<QPushButton>(tr("Browse"));
-  // *pBrowseButton is not assigned to a parent yet
-  pLayout->addWidget(pBrowseButton);
-  // Now *pLayout is the parent
-```
+    ```cpp
+    auto pBrowseButton = make_parented<QPushButton>(tr("Browse"));
+    // *pBrowseButton is not assigned to a parent yet
+    pLayout->addWidget(pBrowseButton);
+    // Now *pLayout is the parent
+    ```
 
   - The destructor of `parented_ptr` asserts that the pointed-to object
     actually has a parent. This ensures that the pointed-to object isn't
@@ -689,8 +680,6 @@ Initialization](http://en.wikipedia.org/wiki/Resource_Acquisition_Is_Initializat
     inside exact the parent. If the lifetime of the pointer relative to
     the parent is not clear then store the output of
     `parented_ptr::toWeakRef()` instead of a `parented_ptr`.
-
-<!-- end list -->
 
   - Any exceptions to these guidelines must be clearly documented inline
     in the code.

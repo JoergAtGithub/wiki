@@ -136,9 +136,9 @@ Controller documentation in the manual should include:
     but mention if there is anything else to set up. Document if the
     microphone inputs are available to the computer (more details
     [below](#microphone-inputs)).
-  - Labelled diagrams of the controller. Often you can find one in the
-    manufacturer's manual. This is not strictly required but it is
-    helpful for explaining the mapping.
+  - Labelled diagrams of the controller. As you can find them in the
+    manufacturer's manual (respect copyright). This is not strictly required but it is
+    helpful for explaining the mapping. 
   - An explanation of how the mapping works
 
 Controller documentation in the manual should *not* include:

@@ -137,7 +137,10 @@ For Eclipse 2020-12
     - Switch to Providers tab.
     - Verify that **only** these providers are checked 
       - CMAKE_EXPORT_COMPILE_COMMANDS Parser     
-      - CMAKE_EXPORT_COMPILE_COMMANDS Compiler Build-ins
+      - CMAKE_EXPORT_COMPILE_COMMANDS Compiler Build-ins  
+    - **Note:** at least with Eclipse 2023-06-R and newer cmake4eclipse versions these
+    providers are deprecated, i.e. not present anymore.
+    Uncheck all potentially checked providers and use only **CMake Compilation DB**.
     - Click "Apply"
   - Now Mixxx should build within Eclipse with "Build Project" (Hammer icon).
     - Alternative:

@@ -152,6 +152,15 @@ For Eclipse 2020-12
     - False positive Semantic errors for connect() calls and others 
     - https://bugs.eclipse.org/bugs/show_bug.cgi?id=570130
 
+  **Hint:** (noticed with Eclipse 2023-06-R and cmake4eclipse 4.0.1)
+  If you build from the command line and use compile_commands.json for include resolution
+  make sure to use the same build system. The Eclipse 'Default build system' default is Ninja
+  while cmake may use Unix Makefiles. Using the 'CMake Compilation DB' provider in Eclipse
+  differing systems will results in the warning "mixxx/build/dir/compile_commands.json' does not exist!",
+  and include resolution and indexer won't work.  
+  **Eclipse:** -> Window -> C/C++ -> Cmake4eclipse -> General -> Default build system  
+  **Cmake:** -G [build system]
+
 ### For Scons builds (2.2):
 
   - File -\> New -\> Makefile Project with Existing Code

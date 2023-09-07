@@ -128,7 +128,11 @@ For Eclipse 2020-12
     - Click "Apply and Close"
   - Project -\> Properties -\> C/C++ Build -\> Cmake4eclipse
     - Switch to General tab
-    - Set the Build Output Location to `build/${ConfigName}`
+    - Set the Build Output Location to `build/${ConfigName}`  
+      **Note:** if you want to build out-of-tree, i.e. `build` is not in your
+      source/workspace directory, you need to use "Create.." and 'Advanced'
+      -> 'Link to folder in file system' and pick the build directory.
+
     - Click "Apply"
   - Project -\> Properties -\> C/C++ General -\> Preprocessor...  
     _Note_: it may be possible this page is not visble (bug probably).  

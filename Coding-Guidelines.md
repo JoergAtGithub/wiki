@@ -1128,6 +1128,16 @@ memory leak. Don't use it everywhere, like in simple getter functions
 where the compiler will discard the call if the return value is not
 used.
 
+## specifier `nexecept` 
+
+We follow the Google style guide regarding `noexcept`. In addition the following rules apply:
+1. **Use** `noexcept` for on special member functions where recommended by clang-tidy and where it might be used for optimizations using conditions like the [`*_nothrow_*` classes of `<type_traits>`](https://en.cppreference.com/w/cpp/header/type_traits)*
+2. **Do not use** on functions where not required for significant optimization or where the compiler can infer noexcept based on the implementation.
+
+*Hints:* 
+* you may use `try-catch` in functions that should be `noexcept` when handling the exception is possible and makes sense.
+* you may use `noexcept(expression)` for using `noexcept` in templates 
+
 ### `gsl::not_null<T*>` checking
 
 When passing pointers via `gsl::not_null<T*>`, make sure to check the

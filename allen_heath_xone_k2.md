@@ -1,0 +1,1 @@
+You will find the page here: https://github.com/mixxxdj/mixxx/wiki/Allen-&-Heath-Xone-K2-K1

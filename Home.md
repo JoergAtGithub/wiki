@@ -1,18 +1,8 @@
 ### Mixxx 
-Mixxx has a broad community for an open-source project,
-encompassing performing musicians, C++ addicts, amateur DJs, Internet
-radio broadcasters, and casual users. The Mixxx Wiki contains useful
-information for users, developers, and artists, and is summarized in the
-categories below.
 
-Some pages have translations available. You can read them by clicking
-the language icon at the bottom of a page.
+Mixxx is open-source software with a broad community encompassing performing musicians, amateur DJs, internet radio broadcasters and casual users. The Mixxx Wiki contains useful information for users, developers and artists. It covers first steps if you are new to DJing, has a hardware guide to learn about supported controllers, provides help so you don't get stuck when running into trouble and is a great resource for developers. 
 
-Most of the contents of this wiki can be edited by anyone, the main
-exception to this is the [development roadmap](development%20roadmap)
-which is a fairly authoritative description of the development team's
-plans. If you find outdated, incorrect, or incomplete information on
-this wiki, please fix it.
+Due to spam attacks, wiki editing has been restricted. However you are welcome to add information or change existing documentation. To do so, please send your suggestions by creating a new topic in the [Documentation Stream on Zulip](https://mixxx.zulipchat.com/#narrow/stream/109176-documentation).  If you find outdated, incorrect or incomplete information on the wiki, sending corrections would be very much appreciated.
 
 ## User Documentation
 

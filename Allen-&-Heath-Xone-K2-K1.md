@@ -95,42 +95,7 @@ toggles the bottom button grid between a loop layer (amber) and a hotcue
 layer (red). Holding shift then holding the bottom left layer button at
 the same time activates supershift mode.
 
-### Mixxx 2.1 - 2.2
-
-  - Top encoder: jog
-      - shift: key
-      - supershift: gain
-  - Top encoder press: sync
-      - shift: reset key
-      - supershift: reset gain
-  - Knobs: high/mid/low equalizer knobs
-  - Top button 1: headphones/PFL
-      - shift: reset tempo
-      - supershift: set beatgrid to current position
-  - Top button 2: cue
-      - shift: go to beginning of track and stop
-      - supershift: keylock
-  - Top button 3: play
-      - shift: reverse
-      - supershift: quantize
-  - Fader: volume
-  - Bottom buttons (loop layer):
-  - Bottom button 1 (red): reloop/disable loop
-      - shift: jump to to beginning of loop, stop playback, and activate loop
-      - supershift: set loop in point. Hold to move loop in point with play position.
-  - Bottom button 2 (green): activate loop of selected size
-      - shift: activate rolling loop of selected size
-      - supershift: set loop out point. Hold to move loop out point with play position.
-  - Bottom button 3 (amber): beatjump forward by selected size if no loop is enabled. If loop is enabled, move the loop forward by the beatjump size.
-      - shift: double loop size
-      - supershift: double beatjump size
-  - Bottom button 4 (amber): beatjump backward by selected size if no loop is enabled. If loop is enabled, move the loop backward by the beatjump size.
-      - shift: halve loop size
-      - supershift: halve beatjump size
-  - Bottom buttons (hotcue layer, red): activate hotcues 1-4 or set the hotcue if the is not one set yet
-* shift: delete hotcues 1-4
-
-### Mixxx 2.3
+### Mixxx 2.3 and above
 
   - Top encoder: gain
       - shift: jog
@@ -174,6 +139,45 @@ the same time activates supershift mode.
   - Bottom button 4 (amber): halve loop size
       - shift: beatjump backward by selected size if no loop is enabled. If loop is enabled, move the loop backward by the beatjump size.
       - supershift: halve beatjump size
+
+### Mixxx 2.1 - 2.2
+<details>
+<summary>Click to expand</summary>
+
+  - Top encoder: jog
+      - shift: key
+      - supershift: gain
+  - Top encoder press: sync
+      - shift: reset key
+      - supershift: reset gain
+  - Knobs: high/mid/low equalizer knobs
+  - Top button 1: headphones/PFL
+      - shift: reset tempo
+      - supershift: set beatgrid to current position
+  - Top button 2: cue
+      - shift: go to beginning of track and stop
+      - supershift: keylock
+  - Top button 3: play
+      - shift: reverse
+      - supershift: quantize
+  - Fader: volume
+  - Bottom buttons (loop layer):
+  - Bottom button 1 (red): reloop/disable loop
+      - shift: jump to to beginning of loop, stop playback, and activate loop
+      - supershift: set loop in point. Hold to move loop in point with play position.
+  - Bottom button 2 (green): activate loop of selected size
+      - shift: activate rolling loop of selected size
+      - supershift: set loop out point. Hold to move loop out point with play position.
+  - Bottom button 3 (amber): beatjump forward by selected size if no loop is enabled. If loop is enabled, move the loop forward by the beatjump size.
+      - shift: double loop size
+      - supershift: double beatjump size
+  - Bottom button 4 (amber): beatjump backward by selected size if no loop is enabled. If loop is enabled, move the loop backward by the beatjump size.
+      - shift: halve loop size
+      - supershift: halve beatjump size
+  - Bottom buttons (hotcue layer, red): activate hotcues 1-4 or set the hotcue if the is not one set yet
+* shift: delete hotcues 1-4
+
+</details>
 
 ## Effects
 

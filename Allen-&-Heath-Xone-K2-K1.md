@@ -140,9 +140,8 @@ the same time activates supershift mode.
       - shift: beatjump backward by selected size if no loop is enabled. If loop is enabled, move the loop backward by the beatjump size.
       - supershift: halve beatjump size
 
-### Mixxx 2.1 - 2.2
 <details>
-<summary>Click to expand</summary>
+<summary>### Mixxx 2.1 - 2.2</summary>
 
   - Top encoder: jog
       - shift: key

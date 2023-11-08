@@ -459,11 +459,11 @@ doing it:
 6.  Then hit `Run SQL`. The above statements will replace all instances
     of `/old/path/DJ/Music/` to `/new/path/DJ/Music/` in the field of
     *location* and *directory* of *track\_locations* table.
-7.  Start `mixxx` and under settings change your music folder to the new
-    one. If you want you can do a rescan to check that the music files
-    do not turn up twice suddenly (if you are on linux, do especially
-    check music files which where in symbolically linked directory).
-    Check if bpm and other meta infomation like cue points are still
+7.  Start `mixxx`, go to Options -> Preferences -> Library and *Relink* your music directories to the new
+    locations. If you want you can do a rescan to check that the music files
+    do not turn up twice suddenly (if you are on Linux, do especially
+    check music files which where in symbolically linked directories).
+    Check if BPM and other meta infomation like cue points are still
     stored with the files.
 
 ## Starting with a new configuration

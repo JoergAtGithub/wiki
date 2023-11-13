@@ -1,7 +1,7 @@
 # Serato System Exclusive Midi Messages
 
 According to the [list of MIDI manufacturer
-IDs](https://www.midi.org/specifications/item/manufacturer-id-numbers),
+IDs](https://www.midi.org/specifications-old/item/manufacturer-id-numbers),
 Serato has a MIDI manufacturer ID of `[0x00, 0x20, 0x7F]`.
 
 Controller manufacturers and Serato use this manufacturer ID to exchange
@@ -20,7 +20,7 @@ which means:
 
   - F0 ⇒ Begin SysEx Message
   - 00 20 7F ⇒ it's the Serato Manufacturer according to
-    <https://www.midi.org/specifications/item/manufacturer-id-numbers>
+    <https://www.midi.org/specifications-old/item/manufacturer-id-numbers>
   - 03 01 ⇒ The Serato's proprietary message (controller dump)
   - F7 ⇒ End of SysEx Message
 

@@ -129,7 +129,7 @@ detected on both).
 
 ## Jog wheel and pitch slider
 
-[[/media/Reloop-Beatmix4_JogWheel.png|]]
+[[/media/reloop-beatmix4_jogwheel.png|]]
 [[/media/reloop-beatmix4_pitchslider.png|]]
 
 Touch and move the jog wheel to scratch (either deck playing or not).

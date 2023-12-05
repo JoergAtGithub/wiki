@@ -4,9 +4,10 @@ In order to support the features of many MIDI controllers, Mixxx offers
 what we call MIDI Scripting (introduced in Mixxx v1.7.0). It enables
 MIDI controls to be mapped to
 [QtScript](http://doc.trolltech.com/4.5/qtscript.html) (also known as
-[Javascript](http://en.wikipedia.org/wiki/JavaScript_syntax)/[EMCAScript](http://www.ecma-international.org/publications/standards/Ecma-262.htm))
-functions, allowing mappings to manage complex behaviors. These
-user-created functions can then do anything desired with the MIDI event
+[Javascript](http://en.wikipedia.org/wiki/JavaScript_syntax)/[EMCAScript](http://www.ecma-international.org/publications/standards/Ecma-262.htm)) functions, allowing mappings to manage complex behaviors. 
+**New in Mixxx 2.4:** Mappings now run within a [QJSEngine](https://doc.qt.io/qt-5/qjsengine.html)
+and can leverage the entire feature-set of ES7 (excluding ES6 Modules for now).
+These user-created functions can then do anything desired with the MIDI event
 info such as affect different controls depending on whether another
 button is pressed, adjust incoming control values to work better with
 Mixxx (i.e. for [scratching](#Scratching-and-jog-wheels)), send messages
@@ -143,7 +144,7 @@ var MyController = {};
 
 MyController.init = function (id, debugging) {
     // turn on all LEDs
-    for (var i = 1; i <= 40; i++) { // Repeat the following code for the numbers 1 through 40
+    for (let i = 1; i <= 40; i++) { // Repeat the following code for the numbers 1 through 40
                                 // see https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for
         midi.sendShortMsg(0x90, i, 0x7f);
     }
@@ -151,7 +152,7 @@ MyController.init = function (id, debugging) {
 
 MyController.shutdown = function() {
    // turn off all LEDs
-   for (var i = 1; i <= 40; i++) {
+   for (let i = 1; i <= 40; i++) {
         midi.sendShortMsg(0x90, i, 0x00);
     }
 }
@@ -160,8 +161,9 @@ MyController.shutdown = function() {
 The ID parameter of the init function is the `controller id` attribute
 from the XML file. This can be used to identify the particular
 controller instance in print statements. The `debugging` parameter is
-set to 'true' if the user specified the `--controllerDebug` parameter on
-the command line (`--midiDebug` until Mixxx 1.10).
+set to 'true' if the user specified the `--controller-debug` parameter on
+the command line (`--midiDebug` until Mixxx 1.10, 
+`--controllerDebug` until Mixxx 2.3).
 
 **Note**: Instead of using global variables, define properties of your
 controller object (`MyController` in this example) to avoid name
@@ -170,9 +172,9 @@ collisions with other scripts that may be loaded.
 ### Link MIDI input signals to JavaScript
 
 To link a script function to an incoming MIDI message, put the full
-function name in the \<key\> tag of the MIDI message's \<control\>
-element in the XML file, with a \<Script-Binding/\> tag in the
-\<options\> block, like so:
+function name in the `<key>` tag of the MIDI message's `<control>`
+element in the XML file, with a `<Script-Binding/>` tag in the
+`<options>` block, like so:
 
 ``` XML
 <control>    <!--    Pitch slider    -->
@@ -186,22 +188,22 @@ element in the XML file, with a \<Script-Binding/\> tag in the
 </control>
 ```
 
-The value for \<group\> doesn't matter when using a script function, but
+The value for `<group>` doesn't matter when using a script function, but
 it is available to the script function as an extra parameter. This can
 be useful so one script function can be used for manipulate decks.
 
 When Mixxx receives a MIDI signal with the first two bytes matching the
-\`\<status\>\` and \`\<midino\>\` elements, the named script function is
+`<status>` and `<midino>` elements, the named script function is
 called. That function then determines how to change the state of Mixxx
 and/or script variables.
 
 For system exclusive messages, the status byte must be `0xF0` and there
-does not need to be a `midino` element. If the controller can send
+does not need to be a `<midino>` element. If the controller can send
 multiple different SysEx messages, the one script function specified by
 the `<key>` element is responsible for deciding which has been received
 then taking the appropriate action.
 
-*New in 2.1*: The value of the \<key\> element can be any snippet of
+*New in 2.1*: The value of the `<key>` element can be any snippet of
 JavaScript code that evaluates to a function (when executed in the
 global context).
 
@@ -240,14 +242,16 @@ So, `MyController.functionName` is a variable that could be reassigned
 to a different function by the script at any time to change how the
 mapping handles input for this MIDI signal.
 
-You can leave off parameters you don't need from the end of the function
-declaration, but the parameters must stay in order. For example, if you
-don't need the `status` or `group` variables, you can define an input
-handling function like:
+Your function should always take all parameters. But if you only use
+some of them, prefix those parameter names with a single `_`.
+For example if you're only using the `value` in your handler function:
 
 ``` javascript
-ControllerName.functionName = function (channel, control, value) {
-    // your custom code goes here
+// notice all parameters (except `value`) are prefixed with an underscore
+// to indicate that they're unused in the function body. 
+ControllerName.functionName = function (_channel, _control, value, _status, _group) {
+    // some example code that only makes use of `value`.
+    console.log(value);
 }
 ```
 
@@ -261,7 +265,7 @@ Data passed from SysEx messages to functions are, in order:
 Therefore, function definition should look like:
 
 ``` javascript
-ControllerName.inboundSysex = function (data, length) {
+ControllerName.inboundSysex = function (data, _length) {
     ...
 }
 ```
@@ -282,7 +286,8 @@ details.*
 ### Interact with Mixxx
 
 Scripts can access the state of Mixxx through the [Mixxx
-Control](MixxxControls) system using the following functions:
+Control](https://manual.mixxx.org/latest/chapters/appendix/mixxx_controls) 
+system using the following functions:
 
 ``` javascript
 engine.getParameter(string group, string key);
@@ -296,7 +301,7 @@ To check a Mixxx control value, call `engine.getParameter()` with the
 which can be found [here](mixxxcontrols). For example:
 
 ``` javascript
-var currentValue = engine.getParameter("[Channel1]", "rate");
+const currentValue = engine.getParameter("[Channel1]", "rate");
 ```
 
 Values can be set by calling `engine.setParameter()` with the `group`
@@ -320,12 +325,16 @@ single controller working with Mixxx's multiple virtual decks (assuming
 you've defined `currentDeck` and `currentValue` here):
 
 ``` javascript
-engine.setValue("[Channel"+currentDeck+"]", "rate", (currentValue+10)/2);
+engine.setValue(`[Channel ${currentDeck}]`, "rate", (currentValue+10)/2);
 ```
 
 **Tip**: For toggling the state of a binary Mixxx Control, the
 `script.toggleControl(string group, string key)` function can be used as
 a convenient shortcut.
+**Tip**: ES7 (added in Mixxx 2.4) enables you to use [template literals]
+(https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals)
+which make it much more pleasant to assemble group-and key-strings such as 
+[`EffectRack1_EffectUnitN_EffectM`](https://manual.mixxx.org/latest/chapters/appendix/mixxx_controls#the-effects-framework) and [`hotcue_X_activate`](https://manual.mixxx.org/latest/chapters/appendix/mixxx_controls#control-[ChannelN]-hotcue_X_activate)
 
 ### Connect output callback functions
 
@@ -350,11 +359,11 @@ function, which takes 3 parameters:
 For example:
 
 ``` javascript
-var syncButtonOutputCallback = function (value, group, control) {
+const syncButtonOutputCallback = function (value, group, control) {
     midi.sendShortMsg(byte 1, byte 2, value * 127); // see section below for an explanation of this example line
 };
 
-var syncConnection = engine.makeConnection('[Channel1]', 'sync_enabled', syncButtonOutputCallback);
+const syncConnection = engine.makeConnection('[Channel1]', 'sync_enabled', syncButtonOutputCallback);
 ```
 
 `engine.makeConnection` returns an object that represents the callback
@@ -362,9 +371,9 @@ connection. This object should be stored in a script variable. To switch
 the controller between different modes, such as controlling a different
 deck:
 
- - disconnect the old connection object by calling its ''disconnect'' method (with no arguments)
- - register the new connection with ''engine.makeConnection''
- - call the ''trigger'' method of the new connection object (with no arguments) to immediately execute the callback using the state of the new Mixxx Control.
+ - disconnect the old connection object by calling its `disconnect` method (with no arguments)
+ - register the new connection with `engine.makeConnection`
+ - call the `trigger` method of the new connection object (with no arguments) to immediately execute the callback using the state of the new Mixxx Control.
 
 For example:
 
@@ -380,19 +389,23 @@ checking `isConnected` or by comparing the return value of
 `disconnect()`:
 
 ``` javascript
-var syncConnection = engine.makeConnection('[Channel1]', 'sync_enabled', function () {});
+const syncConnection = engine.makeConnection('[Channel1]', 'sync_enabled', function () {});
 
-print(syncConnection.isConnected); // prints true
-var successful_disconnect = syncConnection.disconnect();
+console.log(syncConnection.isConnected); // prints true
+const successful_disconnect = syncConnection.disconnect();
 if (successful_disconnect) {
-    print("syncConnection has been successfully disconnected");
+    console.log("syncConnection has been successfully disconnected");
 } else {
-    print("There was an error disconnecting SyncConnection");
+    console.log("There was an error disconnecting SyncConnection");
     // can happen when the connection has already been disconnected
 }
-print(syncConnection.isConnected); // prints false in most cases
+console.log(syncConnection.isConnected); // prints false in most cases
 
 ```
+
+This is not to say that you should always check the return value of 
+`disconnect` like in the example above, but just that this exists and 
+may be useful if you're doing something special in your mapping.
 
 #### Mixxx 2.0 and older
 
@@ -464,7 +477,7 @@ For system-exclusive messages, call `midi.sendSysexMsg()` with:
 <!-- end list -->
 
 ``` javascript
-var byteArray = [ 0xF0, byte2, byte3, ..., byteN, 0xF7 ];
+const byteArray = [ 0xF0, byte2, byte3, ..., byteN, 0xF7 ];
 midi.sendSysexMsg(byteArray, byteArray.length);
 ```
 
@@ -486,11 +499,15 @@ function.
 
 As mentioned above, you don't have to restart Mixxx, when you're testing
 your scripts. Every time you save your file, Mixxx will reload it
-immediately. Additionally if you specify `--controllerDebug` (or
-`--midiDebug` prior to verion 1.11), Mixxx then logs all incoming and
-outgoing MIDI messages. Also you can use `print()` in your script to
-output further messages. The second parameter passed to your `init()`
-functions specifies if the controller debug mode is enabled.
+immediately. Additionally if you specify `--controller-debug` (or
+`--controllerDebug` prior to verion 2.3), Mixxx then logs all incoming and
+outgoing MIDI messages. The second parameter passed to your `init()`
+functions specifies if the controller debug mode is enabled. Starting with  Mixxx 2.4,
+you can also use a subset of the usual functions on `console` such as
+`console.log`. See the [Qt Console API docs](https://doc.qt.io/qt-5/qtquick-debugging.html#console-api)
+for an exhaustive list of the available functions. Prior to Mixxx 2.4
+the only way to log anything from a controlller script, was using
+`print()`, but it's use is discouraged when `console.log` is available.
 
 ## Components library
 
@@ -562,7 +579,7 @@ bool engine.isScratching(int deck);
 
 Here is how to use them:
 
-**When you want to start scratching** (such as when the wheel is touched,) call `engine.scratchEnable()` with:
+**When you want to start scratching** (such as when the wheel is touched) call `engine.scratchEnable()` with:
 
 - the virtual deck number you want to scratch
 - the resolution of the MIDI control (in intervals per revolution, typically 128.)
@@ -631,7 +648,7 @@ MyController.wheelTurn = function (channel, control, value, status, group) {
 }
 ```
 
-And that's it\! Just make sure to map the button/touch sensor and wheel
+And that's it! Just make sure to map the button/touch sensor and wheel
 to these script functions [as described
 above](#Linking-MIDI-signals-to-JavaScript-functions) and you'll be
 ready to tear up some tracks.
@@ -649,19 +666,21 @@ Here are the functions:
     just once (if *one-shot* is true) the given number of milliseconds
     (1/1000 second) pass. It returns an ID number for the timer (0 on
     failure) that you'll want to store in a variable so you can stop it
-    later if it's a repeating timer. When the function is executed
-    `this` is set to whatever `this` was where `engine.beginTimer` was
-    called.
+    later if it's a repeating timer.
+    **Prior to Mixxx 2.4:** when the function was executed
+    `this` was set to whatever `this` was where `engine.beginTimer` was
+    called. **This is not the case anymore in Mixxx 2.4 and later**
   - **engine.stopTimer**(*timer ID*) - Stops the specified timer.
 
 If you need to pass arguments to a function used with
-`engine.beginTimer`, wrap the function call in an anonymous function
-expression, for example:
+`engine.beginTimer`, wrap the function call in an [arrow function
+expression](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions),
+for example:
 
 ``` js
-    engine.beginTimer(250, function() {
-        someFunctionToExecute(parameter1, parameter2, parameter3);
-    });
+    engine.beginTimer(250, 
+        () => someFunctionToExecute(parameter1, parameter2, parameter3)
+    );
 ```
 
 Note that within the function expression, you can access variables from
@@ -674,8 +693,8 @@ remember to stop them as soon as you're done with them. (Not to mention
 that overall performance decreases as the number and/or frequency of
 timers increase.)
 
-**NEVER use busy-wait loops\!** (Loops that do nothing but delay. They
-can cause Mixxx to stutter.) **Always use a timer instead\!**
+**NEVER use busy-wait loops!** (Loops that do nothing but delay. They
+can cause Mixxx to stutter.) **Always use a timer instead!**
 
 See the [script timers](script%20timers) page for more details on best
 practices for using timers.
@@ -690,19 +709,19 @@ scripts.
 ## Spinback, brake and soft start effect
 
 A forwards or backwards brake effect can be enabled/disabled using
-engine.brake() or engine.spinback(). engine.spinback() just calls
-engine.brake() with default settings to make it behave like a spinback.
+`engine.brake()` or `engine.spinback()`. `engine.spinback()` just calls
+`engine.brake()` with default settings to make it behave like a spinback.
 
 To achieve a forward acceleration effect from standstill to normal speed
-use engine.softStart().
+use `engine.softStart()`.
 
 When disabled while active, all three functions would jump to normal
 playback speed.
 
-Both engine.softStart() and engine.brake()/engine.spinback() can
-interrupt each other: slow down a track with engine.brake() and (even
+Both `engine.softStart()` and `engine.brake()`/`engine.spinback()` can
+interrupt each other: slow down a track with `engine.brake()` and (even
 before track has stopped) get it back to normal speed with
-engine.softStart(). See last example how to map this to press/release of
+`engine.softStart()`. See last example how to map this to press/release of
 just one button.
 
 ``` javascript
@@ -730,8 +749,8 @@ Activate brake on button press, jump to normal speed on button release
 
 ``` javascript
     MyControllerPrefix.brake_button = function(channel, control, value, status, group) {
-        var deck = parseInt(group.substring(8,9)); // work out which deck we are using 
-        var activate = value > 0;
+        const deck = script.deckFromGroup(group); // work out which deck we are using
+        const activate = value > 0;
         
         if (activate) {
             engine.brake(deck, true); // enable brake effect
@@ -746,7 +765,7 @@ Activate brake on button press, jump to normal speed on button release
 
 ``` javascript
     MyControllerPrefix.brake_button = function(channel, control, value, status, group) {
-        var deck = parseInt(group.substring(8,9)); // work out which deck we are using 
+        const deck = parseInt(group.substring(8,9)); // work out which deck we are using 
         engine.brake(deck, value > 0, 1.2, -10); // start at a rate of -10 and decrease at a factor of 1.2
     }
 ```
@@ -756,7 +775,7 @@ release
 
 ``` javascript
     MyControllerPrefix.spinback_button = function(channel, control, value, status, group) {
-        var deck = parseInt(group.substring(8,9)); // work out which deck we are using
+        const deck = script.deckFromGroup(group); // work out which deck we are using
         engine.spinback(deck, value > 0, 2.5); // use default starting rate of -10 but decrease speed more quickly
     }
 ```
@@ -766,7 +785,7 @@ release
 
 ``` javascript
     MyControllerPrefix.softStart_button = function(channel, control, value, status, group) {
-        var deck = parseInt(group.substring(8,9)); // work out which deck we are using
+        const deck = script.deckFromGroup(group); // work out which deck we are using
         engine.softStart(deck, value > 0, 2.0); // double the default acceleration
     }
 ```
@@ -775,8 +794,8 @@ Brake on button press, softStart on button release
 
 ``` javascript
     MyControllerPrefix.brake_SoftStart_button = function(channel, control, value, status, group) {
-        var deck = parseInt(group.substring(8,9)); // work out which deck we are using
-        var activate = value > 0;
+        const deck = script.deckFromGroup(group); // work out which deck we are using
+        const activate = value > 0;
         if (activate) { // act on button press
             engine.brake(deck, true); // slow down the track
         } else { // act on button release
@@ -826,7 +845,7 @@ passing an object with RGB codes as the keys and the corresponding MIDI
 codes as values:
 
 ``` js
-    var myControllerColorMapper = new ColorMapper({
+    myController.ColorMapper = new ColorMapper({
         0xFF0000: 1, // red
         0x00FF00: 2, // green
         0x0000FF: 3, // blue
@@ -849,7 +868,7 @@ Connect a callback to `[ChannelN]`, `hotcue_X_color` to set LEDs to
 match the hotcue color, for example:
 
 ``` js
-    var hotcueLEDcallback = engine.makeConnection('[Channel1]', 'hotcue_2_color', function (value, group, control) {
+    const hotcueLEDcallback = engine.makeConnection('[Channel1]', 'hotcue_2_color', (value, _group, _control) => {
       if (value !== -1) { // hotcue is set
         midi.sendShortMsg(0x90, 0x60, myControllerColorMapper.getNearestColor(value));
       } else { // hotcue is unset, turn off LED
@@ -870,7 +889,8 @@ Here is a list of functions available to you from the always-loaded
 
   - **nop**() - Does nothing (No OPeration.) Empty function you can use
     as a place-holder while developing to avoid errors.
-  - **print**(*string*) - Prints the passed in string to the console.
+  - **print**(*string*) - Prints the passed in string to the console. 
+    *Deprecated:*  use `console.log` instead.    
   - **secondstominutes**(*seconds*) - Returns the given quantity of
     seconds in `MM:SS` format.
   - **msecondstominutes**(*milliseconds*) - Returns the given quantity
@@ -882,7 +902,8 @@ Here is a list of functions available to you from the always-loaded
     from anywhere in your function to see what the current values of
     these variables are. You can also of course put it in the \<key/\>
     tag of your XML to make sure the values being passed to the script
-    are what you expect.
+    are what you expect. 
+    `Deprecated:` use `--controller-debug` commandline flag instead.
   - **script.midiPitch**(LSB, MSB, status) - Intended to be called from
     another script function, pass this the values from a MIDI Pitch
     control and it will return a corresponding value suitable for
@@ -912,7 +933,11 @@ Here is a list of functions available to you from the always-loaded
     The inverse of the above function. This is useful for sending MIDI
     values back to controllers. *New in 1.12*
   - **script.deckFromGroup**(group) - Takes a group string for a deck
-    such as "\[Channel1\]" and returns the deck number (in this case, 1)
+    such as "\[Channel1\]" and returns the deck number (in this case, 1).
+    Keep in mind that this function does string manipulation and parsing
+    and thus is not very cheap. If you can determine the deck via some
+    other way (for example by looking the midi channel of the message),
+    prefer that instead.  
   - **script.posMod**(dividend, divisor) - Calculates the [euclidian remainder](https://commons.wikimedia.org/wiki/File:Divmod_Euclidean.svg)
     of `dividend % divisor`, which is always in the range $[0 , \text{divisor}[$.
     useful for indexing into arrays for instance. Added in Mixxx 2.3.5
@@ -934,6 +959,14 @@ Here is a list of functions available to you from the always-loaded
 Here are some examples to get you started. These examples start simple
 and get progressively more complex.
 
+**Note:** Most of the features demonstrated in these examples exist in much
+easier to use and most importantly review form in [Components JS](Components%20JS)!
+So if you plan on submitting your hard work, please prefer writing your
+mapping in ComponentsJS from the start. It is by far the preferred paradigm
+for mappings that aren't simple enough to fit into less then 50 lines.
+For easier comparision, most of the below examples will contain a hint
+to the corresponding ComponentsJS feature.
+
 ### Button presses
 
 MIDI buttons usually send a signal with a value of 0x7f (127) when the
@@ -944,29 +977,34 @@ something when the button is pressed, wrap the function in an if
 statement checking the value parameter:
 
 ``` javascript
-MyController.someButton = function (channel, control, value, status, group) {
+MyController.someButton = function (_channel, _control, value, _status, _group) {
     if (value === 127) {
         // do something when this button is pressed
     }
 }
 ```
 
+*ComponentsJS: [`Button#isPress`](Components%20JS#button)*
+
 ### Rescale incoming values
 
 To reduce the sensitivity of a relative-mode (touch strip) pitch slider:
-(assuming \<group\> is specified appropriately in the XML file)
+(assuming `<group>` is specified appropriately in the XML file)
 
 ``` javascript
-MyController.pitchSlider = function (channel, control, value, status, group) {   // Lower the sensitivity of the pitch slider
-    var currentValue = engine.getValue(group,"rate");
+MyController.pitchSlider = function (_channel, _control, value, _status, group) {   // Lower the sensitivity of the pitch slider
+    const currentValue = engine.getValue(group,"rate");
     engine.setValue(group,"rate",currentValue+(value-64)/128);
 }
 ```
 
-**IMPORTANT NOTE:** You must always declare variables with "var" when
-you first use them inside a function since it establishes scope. If you
+*ComponentsJS: [`Component#inValueScalue`](Components%20JS#methods)*
+
+**IMPORTANT NOTE:** You must always declare variables with `const` or `let`
+when you first use them inside a function since it establishes scope. If you
 omit this, the variable becomes global and will clobber anything else
 with the same name even if it's in another script file.
+If you're using Mixxx 2.3 or below, use `var` instead of `const` and `let`.
 
 ### Storing commonly used MIDI codes in JS objects
 
@@ -1001,6 +1039,8 @@ MyController.colorCodes = {
     'blue': 0x03
 }
 ```
+
+*ComponentsJS: [`Component#midi`/`Component#on`/`Component#off`](Components%20JS#component-setup)*
 
 Now, when writing code to change an LED to green, instead of typing the
 note number for the LED and the value for green directly, you can
@@ -1070,6 +1110,8 @@ be sufficient. However, if this is not the case, to have controls do
 something different depending on whether a shift button or layer
 switching button is active, you need to use JavaScript. There are
 multiple ways this can be accomplished.
+
+*ComponentsJS: [`Component#shift`/`Component#unshift`/`ComponentContainer`](Components%20JS#shift-layers)
 
 #### Tracking the state of the modifier in a variable
 
@@ -1159,6 +1201,8 @@ MyController.shiftButton = function (channel, control, value, status, group) {
 }
 ```
 
+*ComponentsJS: [`ComponentContainer`](Components%20JS#componentcontainer-and-managing-layers)
+
 ### Turning a 2 deck controller into a 4 deck controller
 
 With the magic of MIDI scripting, you can turn a 2 deck controller into
@@ -1177,6 +1221,10 @@ with 'group = MyController.deck\[group\]'. Use \[Channel1\] as the value
 for the \<group\> element in the XML file for controls that manipulate
 decks 1/3 and \[Channel2\] for decks 2/4. Map the buttons you want to
 change between decks 1/3 and decks 2/4 to the deckToggleButton function.
+
+This can be achieved much easier in ComponentsJS through the use
+of the [`Deck`](Components%20JS#deck)
+Component!
 
 Click the tab below labeled 'deckToggleExample.js' to download this
 example as a file to open in your text editor.

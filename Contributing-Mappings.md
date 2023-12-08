@@ -485,52 +485,52 @@ For example:
 <?xml version="1.0" encoding="utf-8"?>
 <MixxxControllerPreset mixxxVersion="1.12.0+" schemaVersion="1">
     <info>
-    <name>Manufacturer Product-100</name>
-    <author>Template Author</author>
-    <forums>http://www.mixxx.org</forums>
-    <wiki>http://mixxx.org/wiki/doku.php</wiki>
+        <name>Manufacturer Product-100</name>
+        <author>Template Author</author>
+        <forums>http://www.mixxx.org</forums>
+        <wiki>http://mixxx.org/wiki/doku.php</wiki>
     </info>
     <controller id="Manufacturer Product-100">
-    <scriptfiles>
-        <file filename="Manufacturer-Product-100-scripts.js" functionprefix="ManufacturerProduct100"/>
-    </scriptfiles>
-    <controls>
-        <!-- Comment -->
-        <control>
-        <group>[Channel1]</group>
-        <midino>0x01</midino>
-        <status>0xB0</status>
-        <key>play</key>
-        </control>
-        <control>
-        <group>[Channel1]</group>
-        <midino>0x02</midino>
-        <status>0xB0</status>
-        <key>pfl</key>
-        </control>
-    </controls>
-    <outputs>
-        <!-- Use play_indicator control object rather than play -->
-        <output>
-        <group>[Channel1]</group>
-        <key>play_indicator</key>
-        <status>0x90</status>
-        <midino>0x01</midino>
-        <on>0x7F</on>
-        <off>0x00</off>
-        <minimum>0.5</minimum>
-        </output>
-        <!-- PFL -->
-        <output>
-        <group>[Channel1]</group>
-        <key>pfl</key>
-        <status>0x90</status>
-        <midino>0x02</midino>
-        <on>0x7F</on>
-        <off>0x00</off>
-        <minimum>0.5</minimum>
-        </output>
-    </outputs>
+        <scriptfiles>
+            <file filename="Manufacturer-Product-100-scripts.js" functionprefix="ManufacturerProduct100"/>
+        </scriptfiles>
+        <controls>
+            <!-- Comment -->
+            <control>
+                <group>[Channel1]</group>
+                <midino>0x01</midino>
+                <status>0xB0</status>
+                <key>play</key>
+            </control>
+            <control>
+                <group>[Channel1]</group>
+                <midino>0x02</midino>
+                <status>0xB0</status>
+                <key>pfl</key>
+            </control>
+        </controls>
+        <outputs>
+            <!-- Use play_indicator control object rather than play -->
+            <output>
+                <group>[Channel1]</group>
+                <key>play_indicator</key>
+                <status>0x90</status>
+                <midino>0x01</midino>
+                <on>0x7F</on>
+                <off>0x00</off>
+                <minimum>0.5</minimum>
+            </output>
+            <!-- PFL -->
+            <output>
+                <group>[Channel1]</group>
+                <key>pfl</key>
+                <status>0x90</status>
+                <midino>0x02</midino>
+                <on>0x7F</on>
+                <off>0x00</off>
+                <minimum>0.5</minimum>
+            </output>
+        </outputs>
     </controller>
 </MixxxControllerPreset>
 ```

@@ -162,8 +162,7 @@ The ID parameter of the init function is the `controller id` attribute
 from the XML file. This can be used to identify the particular
 controller instance in print statements. The `debugging` parameter is
 set to 'true' if the user specified the `--controller-debug` parameter on
-the command line (`--midiDebug` until Mixxx 1.10, 
-`--controllerDebug` until Mixxx 2.3).
+the command line (`--controllerDebug` until Mixxx 2.3).
 
 **Note**: Instead of using global variables, define properties of your
 controller object (`MyController` in this example) to avoid name
@@ -933,7 +932,7 @@ Here is a list of functions available to you from the always-loaded
     Mixxx control.
   - **script.absoluteNonLinInverse**(value, low, mid, high, min, max) -
     The inverse of the above function. This is useful for sending MIDI
-    values back to controllers. *New in 1.12*
+    values back to controllers.
   - **script.deckFromGroup**(group) - Takes a group string for a deck
     such as "\[Channel1\]" and returns the deck number (in this case, 1).
     Keep in mind that this function does string manipulation and parsing
@@ -953,8 +952,6 @@ Here is a list of functions available to you from the always-loaded
     seconds pass between taps, the history is erased.
   - **String**.prototype**.toInt** - returns an ASCII byte array for all
     the characters in any string. Use like so: `"Test string".toInt()`
-
-<sup>1</sup> Introduced in 1.11.0 <sup>2</sup> Renamed in 1.11.
 
 ## Additional examples
 

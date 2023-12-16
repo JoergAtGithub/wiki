@@ -22,21 +22,28 @@ release candidates).
         1.  macOS can produce particularly pretty drop-shadow
             screenshots with `Shift-Command-4` followed by the spacebar,
             then click the window to screenshot.
-6. Update files from Git log 
+6. Send out pre-announcement to the DJ press (to ensure, that they have enough time to write articles and record review videos)<br>
+    Public press contacts are:
+     *   [press@wearecrossfader.co.uk](mailto:press@wearecrossfader.co.uk)
+     *   [editor@djtechtools.com](mailto:editor@djtechtools.com)
+     *   [info@digitaldjtips.com](mailto:info@digitaldjtips.com)
+     *   [redaktion@remise3.de](mailto:redaktion@remise3.de)
+     *   [info@dj-lab.de](mailto:info@dj-lab.de)
+7. Update files from Git log 
     1. credits in `src/dialog/dlgabout.cpp`
     2. CHANGELOG.md
-7. Verify 
+8. Verify 
     1. the latest version of https://github.com/mixxxdj/manual/tree/2.4 is published to <https://mixxx.org/manual/2.4/>
     2. copyright year and version number in LICENSE
     3. .github/workflows/build.yml and tools/deploy.py
     4. Check Debian Changelog and PPA destination 
-8. Build release candidates:
+9. Build release candidates:
     1.  CMakeLists.txt Update VERSION and MIXXX_VERSION_PRERELEASE
-9. Perform QA testing with all release candidate binaries (Smoke Test) 
+10. Perform QA testing with all release candidate binaries (Smoke Test) 
     1. macOS 
     2. Ubuntu
     3. Windows
-10. Add a git tag with a GPG signature 
+11. Add a git tag with a GPG signature 
     1. ```git tag -s 2.4.0 -m "Mixxx 2.4.0"```  (double check identity / email you are using to tag!)
     2. ```git push --tags upstream 2.4.0```
     3.  This can be done to a commit after it has been pushed or merged
@@ -44,10 +51,10 @@ release candidates).
         release commit.
     4.  **Once pushed, a tag is forever. Never delete a tag from a
         remote.**
-11. Verify release binaries are available
+12. Verify release binaries are available
     1. https://downloads.mixxx.org/releases/2.4.0/
     2. https://launchpad.net/~mixxx/+archive/ubuntu/mixxx  
-12. Release
+13. Release
     1. Record SHA256sum of all packages in the [Release Checksums
         Google
         Doc](https://docs.google.com/spreadsheets/d/1E5vFa0gKf47P3LMMXpnr3JzsZ7-ENI03IgOkj9lxYQo/edit#gid=0)
@@ -57,8 +64,8 @@ release candidates).
     3. Update GitHub issues 
         1.  Create a 2.4.1 milestone 
         2.  Target all 2.4.0 issues that have not been fixed to 2.4.1 (or remove the milestone entirely) 
-13. Manual: Remove the developer version warning https://github.com/mixxxdj/manual/pull/376 and verify it at <https://mixxx.org/manual/2.4/>    
-11. Update the website
+14. Manual: Remove the developer version warning https://github.com/mixxxdj/manual/pull/376 and verify it at <https://mixxx.org/manual/2.4/>    
+15. Update the website
     1. Update download page:
         1.  Do this after posting the announcement forum thread so you
             can link to the announcement
@@ -72,12 +79,13 @@ release candidates).
     5. Update <https://mixxx.org/manual/latest> symlink to point to
         2.3.
     7. Update copyright date here and on the blog
-12. Release announcement:
+16. Release announcement:
     1. Discourse is updated automatically after publishing the blog post and visiting it on the website
     2. Cross-post to Zulip \#announce stream
-    3. Cross-post to mixxx-devel~~
-    4. Cross-post to Facebook
-    5. Cross-post to Twitter
+    3. Inform the press contacts (that were informed in step 5.) that the final release now happend
+    4. Cross-post to mixxx-devel~~
+    5. Cross-post to Facebook
+    6. Cross-post to Twitter
     
 
 ## Promotion

@@ -82,7 +82,7 @@ release candidates).
 16. Release announcement:
     1. Discourse is updated automatically after publishing the blog post and visiting it on the website
     2. Cross-post to Zulip \#announce stream
-    3. Inform the press contacts (that were informed in step 5.) that the final release now happend
+    3. Inform the press contacts (that were informed in step 6.) that the final release now happend
     4. Cross-post to mixxx-devel~~
     5. Cross-post to Facebook
     6. Cross-post to Twitter

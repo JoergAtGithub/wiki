@@ -384,6 +384,15 @@ syncConnection = engine.makeConnection('[Channel3]', 'sync_enabled', syncButtonO
 syncConnection.trigger();
 ```
 
+An alternative to trigger all connections of a particular control at once is:
+  - **engine.trigger**(*control group*, *control name*) - Cause the
+    specified Mixxx Control signal to fire so the connected script
+    function is called with the updated value even if it hasn't changed,
+    such as when forcing LEDs to update on a mode change. If multiple
+    callbacks are connected, they will all be executed. This will only
+    trigger connected JavaScript functions and will not refresh outputs
+    connected in XML.
+
 *New in Mixxx 2.3:* You can check if a connection is disconnected by
 checking `isConnected` or by comparing the return value of
 `disconnect()`:
@@ -426,13 +435,6 @@ understand old code.
     specified script function. However, this only works when the script
     function is specified as a string of JavaScript code that evaluates
     to a function, not when an actual JavaScript function is passed.
-  - **engine.trigger**(*control group*, *control name*) - Cause the
-    specified Mixxx Control signal to fire so the connected script
-    function is called with the updated value even if it hasn't changed,
-    such as when forcing LEDs to update on a mode change. If multiple
-    callbacks are connected, they will all be executed. This will only
-    trigger connected JavaScript functions and will not refresh outputs
-    connected in XML.
 
 ### Send MIDI output to the controller
 

@@ -110,7 +110,7 @@ to
 On Windows, the recommended ASIO sound API typically requires that only
 one program uses a sound card at a time. Refer to the Mixxx manual for
 more information about [sound
-APIs](https://mixxx.org/manual/latest/en/chapters/preferences.html#sound-api).
+APIs](https://manual.mixxx.org/latest/chapters/preferences/sound_hardware#sound-api).
 
 ## I can't select my sound card in the Sound Hardware preferences
 

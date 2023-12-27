@@ -20,11 +20,12 @@ Developers
 [[Coding Guidelines]]  
 [[Using Git]]  
 [[Developer Guide]]  
-[Creating Skins](Creating-Skins)  
+[Creating Skins](https://github.com/mixxxdj/mixxx/wiki/Creating-Skins)  
 
 Mapping Creators
 -----
 [[Contributing Mappings]]  
-[[Mixxx Controls|mixxxcontrols]]  
+[Mixxx Controls](https://manual.mixxx.org/latest/chapters/appendix/mixxx_controls.html)  
 [[MIDI Scripting]]  
-[[Components JS]]
+[[Components JS]]  
+[HID Scripting](https://github.com/mixxxdj/mixxx/wiki/HID-Mapping)

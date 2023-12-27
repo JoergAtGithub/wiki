@@ -1,3 +1,5 @@
+**This page is outdated**. Today we use VCPKG to build our Windows and macOS dependencies: https://github.com/mixxxdj/vcpkg 
+
 # Building Mixxx's dependencies on Windows
 
 We assume you've installed and configured Visual Studio Express and the

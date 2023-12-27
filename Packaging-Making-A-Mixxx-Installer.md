@@ -67,9 +67,8 @@ Works as of 1.9+:
 
 ## Building a .DMG
 
-1.  [Build Mixxx using SCons](compiling_on_os_x)
-2.  `scons bundle package`
+see [Making a macOS DMG bundle](https://github.com/mixxxdj/mixxx/wiki/Compiling-on-macOS#build-mixxxapp-bundle-and-dmg-image)
 
 # Windows
 
-see [Making a Windows installer package](build_windows_installer)
+see [Making a Windows MSI installer package](https://github.com/mixxxdj/mixxx/wiki/Build-Windows-Installer)

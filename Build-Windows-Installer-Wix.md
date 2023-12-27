@@ -1,0 +1,1 @@
+Moved to: [Build-Windows-Installer](https://github.com/mixxxdj/mixxx/wiki/Build-Windows-Installer)

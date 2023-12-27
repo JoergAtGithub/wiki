@@ -1,8 +1,8 @@
 # Controller Scripting
 
 In order to support the features of many MIDI controllers, Mixxx offers
-what we call MIDI Scripting (introduced in Mixxx v1.7.0). It enables
-MIDI controls to be mapped to
+what we call Controler Scripting. It enables
+hardware controls to be mapped to
 [QtScript](http://doc.trolltech.com/4.5/qtscript.html) (also known as
 [Javascript](http://en.wikipedia.org/wiki/JavaScript_syntax)/[EMCAScript](http://www.ecma-international.org/publications/standards/Ecma-262.htm)) functions, allowing mappings to manage complex behaviors. 
 **New in Mixxx 2.4:** Mappings now run within a [QJSEngine](https://doc.qt.io/qt-5/qjsengine.html)
@@ -28,7 +28,7 @@ XML, the language used for Mixxx's [MIDI controller mapping file
 format](MIDI%20controller%20mapping%20file%20format). The [\#additional
 examples](#additional%20examples) section at the bottom of this page is
 aimed at people with little or no programming experience. It has
-examples for common uses of MIDI scripting to help get you started
+examples for common uses of controller scripting for MIDI to help get you started
 writing code in an organized and maintainable way from the start. This
 will make it easier for you and other people to edit the code later.
 
@@ -1204,7 +1204,7 @@ MyController.shiftButton = function (channel, control, value, status, group) {
 
 ### Turning a 2 deck controller into a 4 deck controller
 
-With the magic of MIDI scripting, you can turn a 2 deck controller into
+With the magic of controller scripting, you can turn a 2 deck controller into
 a 4 deck controller by setting up your script following the example
 below. This example is complex, so if you are new to programming, it is
 recommended that you read the examples above before trying to understand

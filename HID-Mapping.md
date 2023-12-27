@@ -1,7 +1,7 @@
-# HID/USB Bulk controller mapping
+# HID controller mapping
 
-Mixxx doesn't currently have a mapping format for HID or USB
-bulk-transfer mode controllers so they must be handled entirely in
+Mixxx doesn't currently have a semantic mapping format for HID or USB
+bulk-transfer mode controllers, so they must be handled entirely in
 script. That said, the procedure to do so is exactly the same as for
 [MIDI controllers that use scripting](midi-scripting), but you also add
 an `incomingData` function to handle all input from the controller.

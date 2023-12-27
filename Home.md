@@ -160,5 +160,5 @@ Due to spam attacks, wiki editing has been restricted. However you are welcome t
   - Bazaar (legacy) code browsing on
     [Launchpad](https://code.launchpad.net/mixxx/+branches)
   - SVN (even more legacy) code browsing on
-    [Sourceforge](http://mixxx.svn.sourceforge.net/viewvc/mixxx/)
-  - [Blog](http://mixxxblog.blogspot.com)
+    [Sourceforge](https://mixxx.svn.sourceforge.net/viewvc/mixxx/)
+  - [Blog](https://mixxxblog.blogspot.com)

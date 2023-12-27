@@ -10,7 +10,7 @@ Due to spam attacks, wiki editing has been restricted. However you are welcome t
 
   - [Beginner DJ Links](Beginner%20DJ%20Links)
   - [DJ Hardware Guide](Hardware%20compatibility)
-  - [Manual](http://mixxx.org/manual)
+  - [Manual](https://mixxx.org/manual)
 
 ### Troubleshooting
 
@@ -40,15 +40,14 @@ Due to spam attacks, wiki editing has been restricted. However you are welcome t
 
 ## Community Resources
 
-  - [Mixxx website](http://www.mixxx.org)
+  - [Mixxx website](https://www.mixxx.org)
   - [Development
-    builds](http://downloads.mixxx.org/builds/master/release): Please
+    builds](https://downloads.mixxx.org/snapshots/main/): Please
     help us test the latest code and report bugs. We try to make sure
     code is reasonably stable before including it in these, but only use
     development builds if you are comfortable using bleeding edge
     software. Do not upgrade to a new version without adequate time to
     test it before a performance.
-  - [Blog](http://mixxxblog.blogspot.com)
   - [List of open-source music production
     software](List%20of%20open-source%20music%20production%20software)
 
@@ -96,7 +95,7 @@ Due to spam attacks, wiki editing has been restricted. However you are welcome t
     be manipulated by controller mappings
   - [Controller Engine versions](Controller%20Engine%20versions)
   - [Controller mapping
-    forum](http://mixxx.org/forums/viewforum.php?f=7): search for
+    forum](https://mixxx.discourse.group/c/controller-mappings/10): search for
     mappings, share your mappings, and ask for help
 
 ## Skin Documentation
@@ -107,7 +106,7 @@ Due to spam attacks, wiki editing has been restricted. However you are welcome t
   - [Skin Color Schemes Tips and Tool](Skin%20Color%20Schemes%20Tips%20and%20Tool)
   - [On Icons and Images](On%20Icons%20and%20Images)
   - [Skin System Changelog](Skin%20System%20Changelog)
-  - [Skins forum](http://mixxx.org/forums/viewforum.php?f=8): search for
+  - [Skins forum](https://mixxx.discourse.group/c/skins/11): search for
     skins, share your skins, and ask for help
 
 ## Developer Documentation
@@ -162,3 +161,4 @@ Due to spam attacks, wiki editing has been restricted. However you are welcome t
     [Launchpad](https://code.launchpad.net/mixxx/+branches)
   - SVN (even more legacy) code browsing on
     [Sourceforge](http://mixxx.svn.sourceforge.net/viewvc/mixxx/)
+  - [Blog](http://mixxxblog.blogspot.com)

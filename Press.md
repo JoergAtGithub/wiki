@@ -1,3 +1,5 @@
+**Press mirror** is no maintained on the [Mixxx Press](https://mixxx.org/press/#pressmirror) page.
+
 Press articles written about Mixxx 
 
 ## 2.3 

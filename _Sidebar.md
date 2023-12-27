@@ -8,7 +8,7 @@ Mixxx is a free and open-source DJ software.
 Users
 -----
 
-[Manual](http://mixxx.org/manual)  
+[Manual](https://mixxx.org/manual)  
 [[Hardware Compatibility]]  
 [[Reporting Bugs]]  
 [[Getting Involved]]  

@@ -1,1 +1,0 @@
-Moved to [Compiling on macOS](https://github.com/mixxxdj/mixxx/wiki/Compiling%20on%20macOS)

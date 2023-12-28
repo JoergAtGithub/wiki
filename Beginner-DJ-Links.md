@@ -2,34 +2,15 @@
 
 Before delving into Mixxx, ask yourself what you want to do with music.
 DJing is the art of mixing together music that has already been
-recorded; making original music is producing. If you want to DJ, you are
-in the right place. If you want make your own original music from start
+recorded; making original music is producing. 
+* If you want to DJ, you are
+in the right place!
+* If you want make your own original music from start
 to finish, Mixxx is not the right tool for the job. Music production is
 done with a type program called a digital audio workstation (DAW), such
 as [Ardour](http://ardour.org/) or [LMMS](http://lmms.io/), rather than
 a DJ program.
 
-## Background information
-
-  - [7 Rules for Great DJ Sound
-    Quality](http://www.digitaldjtips.com/2012/12/7-rules-for-great-dj-sound-quality/)
-  - [A DJ's Guide to Audio Files and
-    Bitrates](http://djtechtools.com/2012/09/26/a-djs-guide-to-audio-files-and-bitrates/)
-  - [The Essential Guide To Audio Cables For
-    DJs](http://www.digitaldjtips.com/2011/07/the-essential-guide-to-audio-cables-for-djs/)
-  - [Wrap a Cable the Right Way "Over
-    Under"](https://www.youtube.com/watch?v=B2SUoAvGxVs): it's not as
-    obvious as you might think
-  - [24/192 Music Downloads are Very Silly
-    Indeed](https://xiph.org/~xiphmont/demo/neil-young.html): explains
-    why 16 bit depth music at 44.1 kHz sampling rate is all you need to
-    DJ
-  - [Rod Elliot's Audio
-    Articles](http://sound.westhost.com/articles.htm): detailed
-    technical articles about many aspects of audio equipment
-  - [Public Address Systems for Musical
-    Applications](http://sound.westhost.com/articles/pa.htm): advice for
-    anyone shopping for a PA system
 
 ## Using Mixxx
 

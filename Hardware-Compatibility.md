@@ -62,7 +62,7 @@ interfaces, both stand-alone and integrated into controllers, do not
 need any special drivers for Linux or macOS. On Windows, they can be
 used without any special drivers, but a driver is needed from the
 manufacturer to use the recommended [ASIO sound
-API](http://mixxx.org/manual/latest/chapters/configuration.html#audio-api).
+API](http://mixxx.org/manual/latest/chapters/preferences/sound_hardware#sound-api).
 Sound cards that are advertised for use with iOS devices are class
 compliant.
 

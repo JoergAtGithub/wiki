@@ -3,7 +3,7 @@ page](Build%20Windows%20installer).)*
 
 # Building Mixxx on Windows
 Note: These instructions are valid for Mixxx 2.3 onwards. 
- You will find instructions for that older release in the History of this wiki page.
+ You will find instructions for older release in the History of this wiki page.
 
 ## Programs to install
 

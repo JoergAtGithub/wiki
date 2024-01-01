@@ -3,34 +3,33 @@ page](Build%20Windows%20installer).)*
 
 # Building Mixxx on Windows
 Note: These instructions are valid for Mixxx 2.3 onwards. 
-Mixxx 2.2 and below used Scons instead of CMake.
  You will find instructions for that older release in the History of this wiki page.
 
 ## Programs to install
 
-  - [Visual Studio 2019 Community Edition](Visual%20Studio%20Community) or the Visual Studio 2019 Build Tools.
+  - [Visual Studio 2022 Community Edition](Visual%20Studio%20Community) or the Visual Studio 2022 Build Tools.
 
-    Follow the installation instructions on that link to setup the compiler and CMake.
-
-    _'Visual Studio Code' is not suitable for building Mixxx on Windows!<br>_
-    _The CMake version that comes with 'Visual Studio 2017' is too old for building Mixxx!_
+    * 'Visual Studio 2019 Community Edition' and 'Visual Studio 2022 Build Tools' are supported too.
+    * 'Visual Studio 2017' is **too old** for building Mixxx, because the CMake version that comes with it is too old.
+    * 'Visual Studio Code' is **not suitable** for building Mixxx on Windows!
 
   - A Git client like [Git for Windows](https://git-scm.com/download/win),
     [TortoiseGit](https://tortoisegit.org) (requires Git for Windows to be installed) or the
 	[github windows client](http://github-windows.s3.amazonaws.com/GitHubSetup.exe)
 
     Both Git for Windows and github windows feature a unix like command line.
-  - Optional: [Rust](https://www.rust-lang.org/) and [sccache](https://github.com/mozilla/sccache)
-
-    This is needed if you want to use sccache when building from commandline.
-
-    When Rust is installed, open a console window and type
-    `cargo install --git https://github.com/Be-ing/sccache.git --branch fix_msvc_fp`  
-    (Temporarily using a fork to fix an error with the /FP parameter)
 
   - Windows Powershell 5.1 or later
     
     (Windows 10 comes with 5.1) for older Windows releases it need to be downloaded here: https://docs.microsoft.com/en-us/powershell/scripting/windows-powershell/install/installing-windows-powershell?view=powershell-5.1#upgrading-existing-windows-powershell
+
+  - **Optional**: The compiler cache [sccache](https://github.com/mozilla/sccache) and the [Rust](https://www.rust-lang.org/) framework
+
+    This can accelerate repeated builds, when you often switch between different branches. But in many other cases the build without sccache, but with pre-compiled headers (PCH) instead (enabled by default), is faster.
+
+    When Rust is installed, open a console window and type
+    `cargo install --git https://github.com/Be-ing/sccache.git --branch fix_msvc_fp`  
+    (Temporarily using a fork to fix an error with the /FP parameter)
 
 ## Download Mixxx's source code
 

@@ -26,10 +26,10 @@ Helpful but not strictly necessary:
   - powered USB hub
   - [custom fader and knob caps](custom%20caps) to customize your gear
 
-See [the manual](http://mixxx.org/manual/latest/chapters/setup.html) for
+See [the manual](http://mixxx.org/manual/latest/chapters/example_setups) for
 diagrams and descriptions of setups with different kinds of hardware.
 
-See the [Beginner DJ Links](Beginner%20DJ%20Links) page for more helpful
+See the [Beginner DJ Links](https://github.com/mixxxdj/mixxx/wiki/Beginner%20DJ%20Links) page for more helpful
 resources.
 
 ## Hardware compatibility

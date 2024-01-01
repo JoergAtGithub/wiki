@@ -9,7 +9,7 @@ Note: These instructions are valid for Mixxx 2.3 onwards.
 
   - [Visual Studio 2022 Community Edition](Visual%20Studio%20Community) or the Visual Studio 2022 Build Tools.
 
-    * 'Visual Studio 2019 Community Edition' and 'Visual Studio 2022 Build Tools' are supported too.
+    * 'Visual Studio 2019 Community Edition' and 'Visual Studio 2019 Build Tools' are supported too.
     * 'Visual Studio 2017' is **too old** for building Mixxx, because the CMake version that comes with it is too old.
     * 'Visual Studio Code' is **not suitable** for building Mixxx on Windows!
 

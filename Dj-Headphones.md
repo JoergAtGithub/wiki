@@ -1,0 +1,1 @@
+Page moved into the [headphones chapter](https://manual.mixxx.org/latest/de/chapters/hardware#headphones) of the Mixxx manual.

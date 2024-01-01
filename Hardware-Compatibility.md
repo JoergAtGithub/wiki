@@ -5,7 +5,9 @@
 Bare minimum equipment for DJing:
 
   - computer (preferably a laptop)
-  - [splitter cable](#splitter-cables) or [audio interface](#audio-interfaces)
+  - Audio output solution for speaker and headphones 
+    - [splitter cable](https://manual.mixxx.org/latest/en/chapters/hardware#hardware-splitter-cables) - _e.g. the [Native Instruments Traktor DJ Cable](http://www.native-instruments.com/en/products/traktor/traktor-for-ios/traktor-dj-cable/) for ~10€_
+    - [audio interface](#audio-interfaces) - usually a USB device with multiple analog audio channels (inputs and outputs)
   - [headphones](DJ%20headphones)
   - speakers
   - audio cables and adapters
@@ -532,22 +534,6 @@ Manual](https://mixxx.org/manual/latest/en/chapters/microphones.html) for a deta
 with microphones. As explained in the manual, **USB microphones are not recommended** because many of them cannot be used with direct monitoring with Mixxx.
 
 The table of [USB audio interfaces](#USB-audio-interfaces) below has notes regarding use of some audio interfaces with microphones. As [explained in the manual](https://mixxx.org/manual/latest/en/chapters/microphones.html#hardware-mixers), **Behringer Xenyx and Yamaha AG03/AG06 mixers are not recommended** because their audio interfaces only have 2 channels for output.
-
-## Splitter cables
-
-Splitter cables are **the cheapest way** to get two separate sound outputs from your computer. These plug into the onboard audio interface
-built into computer motherboards and split the stereo signal into two separate mono signals. However, onboard audio interfaces are not good
-quality, and you lose the stereo effect of hearing different sounds arranged in space.
-
-Devices marketed as "headphone splitter" instead of DJ splitters duplicate one stereo signal in two jacks. These cannot be used for
-headphone cueing. Also, generic stereo-to-mono splitter cables or adapters typically have two mono jack outputs. Plugging headphones or
-stereo speakers into a generic stereo-to-mono splitter will only play sound on one side of the headphones or speakers.
-
-Available DJ splitter cables:
-
-  - [Native Instruments Traktor DJ
-    Cable](http://www.native-instruments.com/en/products/traktor/traktor-for-ios/traktor-dj-cable/):
-    $10
 
 ## Audio interfaces
 

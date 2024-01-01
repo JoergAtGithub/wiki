@@ -5,7 +5,7 @@
 Bare minimum equipment for DJing:
 
   - computer (preferably a laptop)
-  - Audio output solution for speaker and headphones 
+  - Audio output solution for speakers and headphones 
     - [splitter cable](https://manual.mixxx.org/latest/en/chapters/hardware#hardware-splitter-cables) - _e.g. the [Native Instruments Traktor DJ Cable](http://www.native-instruments.com/en/products/traktor/traktor-for-ios/traktor-dj-cable/) for ~10€_
     - [audio interface](#audio-interfaces) - usually a USB device with multiple analog audio channels
   - [headphones](DJ%20headphones)

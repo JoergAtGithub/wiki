@@ -8,7 +8,7 @@ Bare minimum equipment for DJing:
   - Audio output solution for speakers and headphones 
     - [splitter cable](https://manual.mixxx.org/latest/en/chapters/hardware#hardware-splitter-cables) - _e.g. the [Native Instruments Traktor DJ Cable](http://www.native-instruments.com/en/products/traktor/traktor-for-ios/traktor-dj-cable/) for ~10€_
     - [audio interface](#audio-interfaces) - usually a USB device with multiple analog audio channels
-  - [headphones](DJ%20headphones)
+  - [headphones](https://manual.mixxx.org/latest/de/chapters/hardware#headphones)
   - speakers
   - audio cables and adapters
 
@@ -16,7 +16,7 @@ Helpful but not strictly necessary:
 
   - [audio interface](#audio-interfaces) with 4 mono output channels (2 stereo pairs)
   - [controller](#controllers) and/or [turntables with timecode vinyl](http://mixxx.org/manual/latest/chapters/vinyl_control.html)
-  - [laptop stand](laptop%20stands)
+  - [laptop stand](https://github.com/mixxxdj/mixxx/wiki/Laptop-Stands)
   - [microphone (analog)](https://manual.mixxx.org/latest/en/chapters/microphones) - USB microphones are not recommended
   - surge protector
   - cases for laptop, controller, and headphones

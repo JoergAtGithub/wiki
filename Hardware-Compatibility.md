@@ -17,6 +17,7 @@ Helpful but not strictly necessary:
   - [audio interface](#audio-interfaces) with 4 mono output channels (2 stereo pairs)
   - [controller](#controllers) and/or [turntables with timecode vinyl](http://mixxx.org/manual/latest/chapters/vinyl_control.html)
   - [laptop stand](laptop%20stands)
+  - [microphone (analog)](https://manual.mixxx.org/latest/en/chapters/microphones) - USB microphones are not recommended
   - surge protector
   - cases for laptop, controller, and headphones
   - backpack or other carrying case
@@ -526,14 +527,6 @@ for the button combination for each controller), which could be mapped to Mixxx.
 supports the audio interfaces in at least some of these devices. It also registers the signals from some of the controllers as generic Linux
 input events. To get these devices to work with Mixxx on GNU/Linux, either the driver would need to be modified to translate these signals
 to HID or MIDI, Mixxx would need to be able to read Linux input events, or a program would need to translate the Linux input events to HID or MIDI.
-
-## Microphones
-
-Mixxx can work with any microphone that can be plugged into your audio interface. Refer to the [Mixxx
-Manual](https://mixxx.org/manual/latest/en/chapters/microphones.html) for a detailed explanation of different options for setting up Mixxx
-with microphones. As explained in the manual, **USB microphones are not recommended** because many of them cannot be used with direct monitoring with Mixxx.
-
-The table of [USB audio interfaces](#USB-audio-interfaces) below has notes regarding use of some audio interfaces with microphones. As [explained in the manual](https://mixxx.org/manual/latest/en/chapters/microphones.html#hardware-mixers), **Behringer Xenyx and Yamaha AG03/AG06 mixers are not recommended** because their audio interfaces only have 2 channels for output.
 
 ## Audio interfaces
 

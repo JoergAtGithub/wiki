@@ -1,4 +1,9 @@
-# Setting up a Windows Builder
+
+
+This page describe a former build procedure, replaced since Mixxx 2.3 by a new CMake/VCPKG based system.
+
+
+# Setting up a Windows Builder (Mixxx <= 2.2)
 
 # Environment
 

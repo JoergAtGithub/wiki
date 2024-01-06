@@ -4,20 +4,14 @@
 
   - [Manufacturer's product
     page](https://www.native-instruments.com/de/products/traktor/traktor-for-ios/traktor-kontrol-z1/)
-  - [GitHub pull request for
-    mapping](https://github.com/mixxxdj/mixxx/pull/1989)
+  - [Mixxx 2.4 manual page for the Traktor Kontrol Z1](https://manual.mixxx.org/2.4/en/hardware/controllers/native_instruments_traktor_kontrol_z1)
 
 The Traktor Kontrol Z1 is a small, portable 2-deck controller with an
 integrated soundcard.
 
 ## Usage
 
-A mapping for the Kontrol Z1 exists that maps all controls to Mixxx just
-as they are labelled. A few extra functions are available to make this
-controller usable by itself without other controllers:
-
-  - Mode + Filter on: play
-  - Mode + headphones: cue
+A mapping for the Kontrol Z1 was added to Mixxx 2.4.
 
 You can use the Kontrol Z1 as a sound output. Channel 1-2 will go to the
 Main Out, two RCA jacks at the top of the controller, with volume being

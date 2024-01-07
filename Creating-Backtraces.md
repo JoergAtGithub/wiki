@@ -5,36 +5,35 @@ crashed.
 
 ## Windows (using x64dbg)
 
-1.  Download [x64dbg](https://x64dbg.com/), an
-    open-source x64/x32 debugger for Windows that runs without
-    installation from a folder and support the symbols file mixxx.pdb.
-2.  Extract the downloaded zip file into a folder of your choice. (When
-    writing this we get snapshot\_2017-03-19\_13-21.zip) 
-3.  Install Mixxx's debug symbol file: 
-    *  If neccessary Re-install Mixxx select "Change" and enable "PDB debug
-        files" 
-4.  Copy the mixxx.pdb file from the mixxx install folder to the x64dbg
-    symbols folder, create the folder if not exist 
-    *  64 bit: `%PROGRAMFILES%\\Mixxx\\mixxx.pdb -\>`
-        `snapshot\_2017-03-19\_13-21\\release\\x64\\symbols`
-5.  Start x64dbg via double click on the bug icon of 
-    *  64 bit: snapshot\_2017-03-19\_13-21\\release\\x96dbg.exe
-    *  Select x64dbg in the Launcher dialog       
-       ![grafik](https://github.com/mixxxdj/mixxx/assets/64457745/24bcb5cb-4a17-4121-b923-90193e554bf5)
-    *  Uncheck all 'Break on' checkboxes in Menu -> Options -> Preferences -> Events
+x64dbg is an open-source x64/x32 debugger for Windows that runs without 
+installation from any directory and supports the symbols file mixxx.pdb.
 
-       ![grafik](https://github.com/mixxxdj/mixxx/assets/64457745/5f407eb1-b0cf-4861-adf7-10422419f838)
+1.  Download x64dbg from [https://x64dbg.com/](https://x64dbg.com/)
+    (when writing this we get snapshot\_2024-01-06\_21-29.zip)
+2.  Extract the downloaded zip file into a directory of your choice. 
+3.  Copy Mixxx's debug symbol file `mixxx.pdb` from the mixxx installation directory  
+    `%PROGRAMFILES%\Mixxx\mixxx.pdb`  
+    to the x64dbg symbols folder (create that directory if does not exist)  
+    `snapshot_2024-01-06_21-29\release\x64\symbols`  
+    **Note:** If mixxx.pdb does not exist you need to re-install Mixxx, select "Change"
+    and enable "PDB debug files"
+4.  Start x64dbg via double click on the bug icon of 
+    * 64 bit: `snapshot_2017-03-19_13-21\release\x96dbg.exe`
+    * Select x64dbg in the Launcher dialog       
+      ![grafik](https://github.com/mixxxdj/mixxx/assets/64457745/24bcb5cb-4a17-4121-b923-90193e554bf5)
+    * Uncheck all 'Break on' checkboxes in Menu -> Options -> Preferences -> Events
+      ![grafik](https://github.com/mixxxdj/mixxx/assets/64457745/5f407eb1-b0cf-4861-adf7-10422419f838)
 
-6.  Load mixxx.exe: File -\> open -\> browse to Mixxx.exe (F3) 
-    *  64 bit: %PROGRAMFILES%\\Mixxx\\mixxx.exe
-7.  Start and continue Mixxx: Debug -\> Run (F9)
-8.  Make Mixxx crash. 
-9.  When it does, Go to the Call Stack View: View -\> Call Stack
+5.  Load mixxx.exe: File -\> open -\> browse to Mixxx.exe (F3) 
+    * 64 bit: %PROGRAMFILES%\\Mixxx\\mixxx.exe
+6.  Start and continue Mixxx: Debug -\> Run (F9)
+7.  Make Mixxx crash. 
+8.  When it does, Go to the Call Stack View: View -\> Call Stack
     (Ctrl+K)
-10. Right Click: Copy -\> Full Table, To Log 
-11. Go to the log: View -\> Log Window (Ctrl+L) 
-12. Right Click: Copy 
-13. [Continue below at 6.](#for-all-of-the-above)
+9. Right Click: Copy -\> Full Table, To Log 
+10. Go to the log: View -\> Log Window (Ctrl+L) 
+11. Right Click: Copy 
+12. [Continue below at 5.](#for-all-of-the-above)
 
 ## Linux & Mac OS X with Xcode 4.x
 

@@ -3,32 +3,31 @@
 Found a crash? Generate a back-trace so we can see exactly where Mixxx
 crashed.
 
-## Windows
+## Windows (using x64dbg)
 
 1.  Download [x64dbg](https://x64dbg.com/), an
     open-source x64/x32 debugger for Windows that runs without
     installation from a folder and support the symbols file mixxx.pdb.
-    (The alternative [GDB for
-    Windows](http://www.equation.com/servlet/equation.cmd?fa=gdb) is not
-    able to read the pdb file) 
 2.  Extract the downloaded zip file into a folder of your choice. (When
     writing this we get snapshot\_2017-03-19\_13-21.zip) 
 3.  Install Mixxx's debug symbol file: 
-    1.  Re-install Mixxx select "Change" and enable "PDB debug
+    *  If neccessary Re-install Mixxx select "Change" and enable "PDB debug
         files" 
 4.  Copy the mixxx.pdb file from the mixxx install folder to the x64dbg
     symbols folder, create the folder if not exist 
-    1.  64 bit: %PROGRAMFILES%\\Mixxx\\mixxx.pdb -\>
-        snapshot\_2017-03-19\_13-21\\release\\x64\\symbols
-    2.  32 bit: %PROGRAMFILES(x86)%\\Mixxx\\mixxx.pdb -\>
-        snapshot\_2017-03-19\_13-21\\release\\x32\\symbols
+    *  64 bit: `%PROGRAMFILES%\\Mixxx\\mixxx.pdb -\>`
+        `snapshot\_2017-03-19\_13-21\\release\\x64\\symbols`
 5.  Start x64dbg via double click on the bug icon of 
-    1.  64 bit: snapshot\_2017-03-19\_13-21\\release\\x64\\x64dbg.exe
-    2.  32 bit: snapshot\_2017-03-19\_13-21\\release\\x32\\x32dbg.exe
+    *  64 bit: snapshot\_2017-03-19\_13-21\\release\\x96dbg.exe
+    *  Select x64dbg in the Launcher dialog       
+       ![grafik](https://github.com/mixxxdj/mixxx/assets/64457745/24bcb5cb-4a17-4121-b923-90193e554bf5)
+    *  Uncheck all 'Break on' checkboxes in Menu -> Options -> Preferences -> Events
+
+       ![grafik](https://github.com/mixxxdj/mixxx/assets/64457745/5f407eb1-b0cf-4861-adf7-10422419f838)
+
 6.  Load mixxx.exe: File -\> open -\> browse to Mixxx.exe (F3) 
-    1.  64 bit: %PROGRAMFILES%\\Mixxx\\mixxx.exe
-    2.  32 bit: %PROGRAMFILES(x86)%\\Mixxx\\mixxx.exe
-7.  Start and continue Mixxx: Debug -\> Run (F9) (three times) 
+    *  64 bit: %PROGRAMFILES%\\Mixxx\\mixxx.exe
+7.  Start and continue Mixxx: Debug -\> Run (F9)
 8.  Make Mixxx crash. 
 9.  When it does, Go to the Call Stack View: View -\> Call Stack
     (Ctrl+K)

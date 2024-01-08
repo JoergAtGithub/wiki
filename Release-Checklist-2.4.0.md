@@ -125,7 +125,7 @@ release candidates).
 9.  [ ] Update [SourceForge](https://sourceforge.net/projects/mixxx/) to
     point people to the newest version
 
-## [ ] Post-Release
+## Post-Release
 
 1.  [ ] Create 2.4 branch in mixxx manual and vcpkg 
 2.  [ ] Update `main` README, CMakeList.txt for 2.5 

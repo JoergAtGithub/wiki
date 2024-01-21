@@ -26,7 +26,7 @@ For more details read our [Google Summer of Code Advice](gsocadvice) and get in 
 
 ## 2024
 
-Mixxx is preparing to apply for GSoC 2024. We will add information here soon.  
+Mixxx is preparing to apply for GSoC 2024. We will add/update information here soon.  
 
 Like last year adult ambitious developers can a take part as a contributor (formally student) or mentor. The project length is flexible and can be adjusted for small ~90 hours, medium ~175 hours or larger ~350 hours projects. These hours can be timed into a 22 week period. 
 

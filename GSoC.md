@@ -22,7 +22,7 @@
 [Google Summer of Code](https://summerofcode.withgoogle.com/) is an annual program that provides paid internships to all adults for working on
 free software projects.
 
-Get in contact with via a **new** topic in our [Introduce Yourself](https://mixxx.zulipchat.com/#narrow/stream/109123-introduce-yourself) Zulip stream. 
+For more details read our [Google Summer of Code Advice](gsocadvice) and get in contact with us via a **new** topic in our [Introduce Yourself](https://mixxx.zulipchat.com/#narrow/stream/109123-introduce-yourself) Zulip stream. 
 
 ## 2024
 

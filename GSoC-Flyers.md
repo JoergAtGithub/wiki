@@ -5,4 +5,4 @@ Here you will find flyers you can simply print out and post it on the bulletin b
 * [GSoC-Flyer-German.pdf](https://github.com/mixxxdj/mixxx/files/10839023/GSoC-Flyer-German.pdf)
 
 The official Google flyer can be found here: 
-* https://developers.google.com/open-source/gsoc/resources/downloads/GSoC2023Flyer.pdf
+* https://developers.google.com/open-source/gsoc/resources/downloads/GSoC2024Flyer.pdf

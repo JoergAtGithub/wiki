@@ -15,12 +15,14 @@
 
 ## **You want to ignite your passion for music and your programming skills in the Google Summer of code?**
 
-**With Mixxx and GSoC, you can realise your ideas in your own project during the summer break. With the help of our experienced team of volunteers, you will be introduced to the world of free and open source software development (FOSS), expand your experience and spice up your CV. Your work will improve the user experience with Mixxx for thousands of DJs world wide. ... and make "DJ your way"** 
+**With Mixxx and GSoC, you can realise your ideas in your own project during the summer break. With the help of our experienced team of volunteers, you will be introduced to the world of free and open source software development (FOSS), expand your experience and spice up your CV. Your work will improve the user experience with Mixxx for thousands of DJs worldwide. ...and make "DJ your way".** 
 
 [Mixxx](http://www.mixxx.org) is a DJ platform that brings DJs worldwide on their way without any license fees. At the same time it is in no way inferior to the market leaders and impresses with its flexible application options.  
  
 [Google Summer of Code](https://summerofcode.withgoogle.com/) is an annual program that provides paid internships to all adults for working on
 free software projects.
+
+Get in contact with via a **new** topic in our [Introduce Yourself](https://mixxx.zulipchat.com/#narrow/stream/109123-introduce-yourself) Zulip stream. 
 
 ## 2024
 

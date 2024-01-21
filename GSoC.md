@@ -15,54 +15,49 @@
 
 ## **You want to ignite your passion for music and your programming skills in the Google Summer of code?**
 
-**With Mixxx and GSoC, you can realise your ideas in your own project during the summer break. With the help of our experienced team of volunteers, you will be introduced to the world of free and open source software development (FOSS), expand your experience and spice up your CV. Your work will improve the user experience with Mixxx for thousands of DJs world wide.** 
+**With Mixxx and GSoC, you can realise your ideas in your own project during the summer break. With the help of our experienced team of volunteers, you will be introduced to the world of free and open source software development (FOSS), expand your experience and spice up your CV. Your work will improve the user experience with Mixxx for thousands of DJs world wide. ... and make "DJ your way"** 
 
 [Mixxx](http://www.mixxx.org) is a DJ platform that brings DJs worldwide on their way without any license fees. At the same time it is in no way inferior to the market leaders and impresses with its flexible application options.  
  
-[Google Summer of Code](https://summerofcode.withgoogle.com/) is an
-annual program that provides paid internships all adults to work on
+[Google Summer of Code](https://summerofcode.withgoogle.com/) is an annual program that provides paid internships to all adults for working on
 free software projects.
 
-## 2023
+## 2024
 
-Mixxx has been accepted for taking part in GSoC 2023 
+Mixxx is preparing to apply for GSoC 2024. We will add information here soon.  
 
 Like last year adult ambitious developers can a take part as a contributor (formally student) or mentor. The project length is flexible and can be adjusted for medium ~175 hours or larger ~350 hours projects. These hours can be timed into a 22 week period. More details can be found in the [Google Open-Source Blog](https://opensource.googleblog.com/2022/11/get-ready-for-google-summer-of-code-2023.html).
 
 We prefer medium sized projects, consisting smaller tasks that suits to get familiar with Mixxx's code base, C++ and our community at the whole. For inspiration you may crawl our [Github Issues](https://github.com/mixxxdj/mixxx/issues)
 
-The list of suggested projects can be found here: **[GSoC 2023 Ideas](GSOC-2023-Ideas)**
+The list of suggested projects can be found here: **[GSoC 2024 Ideas](GSOC-2024-Ideas)**
 
 If you'd like to help people learn about GSoC, here you will find [flyers](GSoC-Flyers) you can use to spread the word!  
 
+
 ## Past Years
+
+
+### 2023
+
+Mixxx has been accepted for taking part in GSoC 2023 
+
+  - See the list of suggested projects: **[GSoC 2023 Ideas](gsoc-2023-ideas)**
+
+No projects were accepted.
 
 ### 2022
 
 Mixxx has been accepted for taking part in GSoC 2022 
 
-This year Google has announced a set of changes. GSoC is no longer limited to students, but open to all adults. The project length is now more flexible and can be adjusted for medium ~175 hours or larger ~350 hours projects. These hours can be timed into a 22 week period. More details can be found in the [Google Open-Source Blog](https://opensource.googleblog.com/2021/11/expanding-google-summer-of-code-in-2022.html).
+  - See the list of suggested projects: **[GSoC 2022 Ideas](gsoc-2022-ideas)**
 
-This year we considering to offer mainly medium sized projects, consisting smaller tasks that suits to get familiar with Mixxx's code base, C++ and our community at the whole. We have collected many wishlist bugs and stalled projects which are important for some users but have not yet attracted a contributor to spend his spare time.  
+The following projects were accepted for Google Summer of Code 2022: 
 
-  - See the list of suggested projects: **[GSoC 2022
-    Ideas](GSoC-2022-Ideas)**
 
 ### 2021
 
 Mixxx applied as a mentor organization for Google Summer of Code, 2021 but was declined this year in order to make room for newer organizations
-
-To all the students who were interested, you don't have to get involved with Mixxx through GSoC! If you'd like we can work with you to scope out a project and get your work in the hands of DJs worldwide. Working on Mixxx (and open source in general) is a great learning experience and also looks good on a resume.
-
-GSoC 2021 has announced a few changes. The most significant change is the halved project size.
-For more details read [here](https://opensource.googleblog.com/2020/10/google-summer-of-code-2021-is-bringing.html)
-
-This means we have to change the type of project we can offer. In the past we took the chance to start long wanted projects that are hard to do as a spare time contributor, because they require lot of time at a stretch and research. 
-
-This year we considering to offer projects consisting smaller tasks that suits to get familiar with Mixxx's code base, C++ and our community at the whole. We have collected many wishlist bugs and stalled projects which are important for some users but have not yet attracted a contributor to spend his spare time.  
-
-  - See the list of suggested projects: **[GSoC 2021
-    Ideas](gsoc2021ideas)**
 
 ### 2020
 
@@ -70,8 +65,6 @@ Mixxx has been accepted for Google Summer of Code 2020\!
 
   - See the list of suggested projects: **[GSoC 2020
     Ideas](gsoc2020ideas)**
-  - Advice for students thinking of applying: [GSoC Advice for
-    Students](gsocadvice)
 
 The following projects were accepted for Google Summer of Code 2020:
 
@@ -88,12 +81,6 @@ The following projects were accepted for Google Summer of Code 2020:
 Mixxx applied as a mentor organization for [Google Summer of
 Code, 2019](https://www.google-melange.com/gsoc/homepage/google/gsoc2019?PageSpeed=noscript)
 but was declined this year in order to make room for newer organizations
-
-To all the students who were interested, you don't have to get involved
-with Mixxx through GSoC\! If you'd like we can work with you to scope
-out a project and get your work in the hands of DJs worldwide. Working
-on Mixxx (and open source in general) is a great learning experience and
-also looks good on a resume.
 
   - See the list of suggested projects: [GSoC 2019 Ideas](gsoc2019ideas)
 

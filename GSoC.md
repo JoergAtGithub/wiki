@@ -1,4 +1,16 @@
 
+<p align="center">
+  <a href="https://summerofcode.withgoogle.com/">
+  <img src="https://github.com/mixxxdj/mixxx/assets/1777442/6d84f170-e186-4fc9-9bb1-f436503f82f6" width=50% align="center">
+</p>
+
+<p align="center">
+  <a href="https://www.mixxx.org/">
+  <img src="https://mixxx.org/theme/images/mixxx-logo.svg" width=25%>
+</p>
+
+
+
 [Google Summer of Code](https://summerofcode.withgoogle.com/) is an
 annual program that provides paid internships all adults to work on
 free software projects.

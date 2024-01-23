@@ -24,15 +24,16 @@ free software projects.
 
 For more details read our [Google Summer of Code Advice](gsocadvice) and get in contact with us via a **new** topic in our [Introduce Yourself](https://mixxx.zulipchat.com/#narrow/stream/109123-introduce-yourself) Zulip stream. 
 
-## 2024
+## This Year (2024)
 
 Mixxx is preparing to apply for GSoC 2024. We will add/update information here soon.  
 
 Like last year adult ambitious developers can a take part as a contributor (formally student) or mentor. The project length is flexible and can be adjusted for small ~90 hours, medium ~175 hours or larger ~350 hours projects. These hours can be timed into a 22 week period. 
 
-We prefer medium sized projects, consisting smaller tasks that suits to get familiar with Mixxx's code base, C++ and our community at the whole. For inspiration you may crawl our [Github Issues](https://github.com/mixxxdj/mixxx/issues)
+We prefer medium sized projects, consisting smaller tasks that suits to get familiar with Mixxx's code base, C++ and our community at the whole. 
 
-The list of suggested projects can be found here: **[GSoC 2024 Ideas](GSOC-2024-Ideas)**
+The list of suggested projects can be found here: **[GSoC 2024 Ideas](GSOC-2024-Ideas)** 
+For more inspiration you may crawl our [Github Issues](https://github.com/mixxxdj/mixxx/issues)
 
 If you'd like to help people learn about GSoC, here you will find [flyers](GSoC-Flyers) you can use to spread the word!  
 

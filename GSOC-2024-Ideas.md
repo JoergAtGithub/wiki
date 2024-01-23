@@ -8,6 +8,28 @@ of the Mixxx community are accepted. If this is not the case yet, just
 say hello at <https://mixxx.zulipchat.com> and discuss your Ideas and
 discus cases with us.
 
+# Multi channel mixing support (STEMS)  
+
+Lately various AI driven algorithms have been published that are able to extract single instrument recordings ([STEM](https://en.wikipedia.org/wiki/Stem_(audio))) from an audio track file. Native Instruments has introduced an open definition for stem files STEMS to store these extracts. A Stem file contains the original a stereo track and four additional channel with the musical elements: A drums stem, a bassline stem, a melody stem and a vocal stem, in a m4a container. 
+
+Currently Mixxx is only capable of playing the stereo track. The goal of this project is to extract all channels and allow the user to mix them individually. In a fist version the Stem mixer can replace the equalizer in the Mixxx GUI. In an advanced version an integration with effects system is desired. 
+
+* **Expected Outcome:** Playing and remixing of stem files
+* **Skills:** Good understanding of sound processing, C++
+* **Possible Mentor:** tbd.
+* **Difficulty:** Medium 
+* **Size:** 175 h
+
+# AI driven STEMS analyzer
+
+Currently creation of stem files files is a manual process in preparation of a DJ set. Many DJs can't effort the time and the storage space for extracting stem files. In this project a temporary stem file should be created on demand from the Mixxx GUI. Part of the project should be evaluation of already published algorithms. Integration of one of them into the Mixxx analyzer and Handling of the caching an the required GUI for this feature. 
+
+* **Expected Outcome:** Playing and remixing of stem files
+* **Skills:** Good understanding of sound processing, C++
+* **Possible Mentor:** tbd.
+* **Difficulty:** Medium 
+* **Size:** 175 h
+
 # Turn table inertia model 
 
 Some Controller mappings have implemented a Spin-Up/Spin-Down to mimic the inertia of a turn table. 

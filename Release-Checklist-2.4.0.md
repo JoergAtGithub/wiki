@@ -3,13 +3,13 @@
 This process is followed when it is time for a release (after betas and
 release candidates).
 
-1.  [ ] Take care of the known regressions
+1.  [x] Take care of the known regressions
    https://github.com/mixxxdj/mixxx/labels/regression
    Fix and merge them, or document them in the CHANGELOG? Release Notes.  
 2.  [x] Release 2.3.6 
-3.  [ ] "Close" the 2.3 branch by target all 2.3 PRs to 2.4 
-4.  [ ] Update translations
-    1.   [ ] Push and pull translations for Mixxx as described here:
+3.  [x] "Close" the 2.3 branch by target all 2.3 PRs to 2.4 
+4.  [x] Update translations
+    1.   [x] Push and pull translations for Mixxx as described here:
         [Internationalization](Internationalization)
 5. [ ] Take release screenshots for press page and blog post.
     1.  [ ] Deere, LateNight, Shade, Tango
@@ -28,14 +28,14 @@ release candidates).
      *   [info@digitaldjtips.com](mailto:info@digitaldjtips.com)
      *   [redaktion@remise3.de](mailto:redaktion@remise3.de)
      *   [info@dj-lab.de](mailto:info@dj-lab.de)
-7. [ ] Update files from Git log 
+7. [x] Update files from Git log 
     1. credits in `src/dialog/dlgabout.cpp`
     2. CHANGELOG.md
 8. [ ] Verify 
     1. [ ] the latest version of https://github.com/mixxxdj/manual/tree/2.4 is published to <https://mixxx.org/manual/2.4/>
-    2. [ ] copyright year and version number in LICENSE
-    3. [ ] .github/workflows/build.yml and tools/deploy.py
-    4. [ ] Check Debian Changelog and PPA destination 
+    2. [x] copyright year and version number in LICENSE
+    3. [x] .github/workflows/build.yml and tools/deploy.py
+    4. [x] Check Debian Changelog and PPA destination 
 9. [ ] Build release candidates:
     1.  [ ] CMakeLists.txt Update VERSION and MIXXX_VERSION_PRERELEASE
 10. [ ] Perform QA testing with all release candidate binaries (Smoke Test) 

@@ -33,6 +33,9 @@ Regrettably, due to the core problem of developers never feeling fully ready, th
 The result is what we see in the timeline above. This heightening the pressure even more to delay a release further, because missing a deadline causes a long wait for new features to be included in the next cycle.
 And as always after a release we promise to keep the next release cycle short, which has never worked out. 
 
+![grafik](https://github.com/mixxxdj/mixxx/assets/1777442/bbf6b1cc-7836-4aad-adaf-ddf48f12f65c)
+
+
 This leads to commits like this extreme one, committed at 2018-10-18, merged to main and not even released today. 
 https://github.com/mixxxdj/mixxx/commit/052fd744c53e167148fe12ef16c2c3b6b2dfc579
 This situation is particularly disheartening for contributors who take pride in their work and like to receive kudos form users. Users know a feature to be ready but are unable to enjoy its benefits due to delayed releases.

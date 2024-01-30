@@ -65,6 +65,8 @@ I am afraid the the 60 day will create a sprint, because everyone is eager to in
 
 The only difference is, that we have the Qt6 release already released. I consider it as pretty stable and since there are not many features merged, there is plenty of time for polish it for a release every one at the own pace.   
 
+See https://github.com/daschuer/mixxx/blob/2.5_changelog/CHANGELOG.md
+
 
 
 

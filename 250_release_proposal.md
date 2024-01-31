@@ -4,6 +4,11 @@ These are the proposals how we may target the problem described in [Release Stra
 
 ![grafik](https://github.com/mixxxdj/mixxx/assets/1777442/84557070-78ec-4147-bf0c-c631123eb4b9)
 
+Reduced merging effort, because only two branches open in feature phase.
+
+Only one deadline at a time (developers are not forced to choose between working on the feature they want in the version next, and spending time for the release of the actual version).
+
+
 # Proposal 2 (3 Branch model) 
 
 ![grafik](https://github.com/mixxxdj/mixxx/assets/1777442/0b569dc7-1384-46f8-8ddb-944b6460ec26)

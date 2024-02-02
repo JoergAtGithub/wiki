@@ -75,7 +75,7 @@ understand what Mixxx currently does well and what areas could be
 improved. In general, your project proposal can be inspired by any of
 the following:
 
-  - A project from our [GSoC 2023 Ideas Page](GSOC-2023-Ideas)
+  - A project from our [GSoC 2024 Ideas Page](GSOC-2024-Ideas)
   - A project you come up with\! Make sure to contact us on
     [Zulip](https://mixxx.zulipchat.com/) **before** submitting to get
     feedback if this is your plan. Spend more than a few days using

@@ -39,9 +39,9 @@ release candidates).
 9. [ ] Build release candidates:
     1.  [ ] CMakeLists.txt Update VERSION and MIXXX_VERSION_PRERELEASE
 10. [ ] Perform QA testing with all release candidate binaries (Smoke Test) 
-    1. [ ] macOS 
+    1. [x] macOS 
     2. [ ] Ubuntu
-    3. [ ] Windows
+    3. [x] Windows
 11. [ ] Add a git tag with a GPG signature 
     1. [ ] ```git tag -s 2.4.0 -m "Mixxx 2.4.0"```  (double check identity / email you are using to tag!)
     2. [ ] ```git push --tags upstream 2.4.0```

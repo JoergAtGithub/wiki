@@ -38,9 +38,9 @@ release candidates).
     4. [x] Check Debian Changelog and PPA destination 
 9. [ ] Build release candidates:
     1.  [ ] CMakeLists.txt Update VERSION and MIXXX_VERSION_PRERELEASE
-10. [ ] Perform QA testing with all release candidate binaries (Smoke Test) 
+10. [x] Perform QA testing with all release candidate binaries (Smoke Test) 
     1. [x] macOS 
-    2. [ ] Ubuntu
+    2. [x] Ubuntu
     3. [x] Windows
 11. [ ] Add a git tag with a GPG signature 
     1. [ ] ```git tag -s 2.4.0 -m "Mixxx 2.4.0"```  (double check identity / email you are using to tag!)

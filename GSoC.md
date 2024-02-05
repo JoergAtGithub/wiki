@@ -15,7 +15,7 @@
 
 ## **You want to ignite your passion for music and your programming skills in the Google Summer of code?**
 
-**With Mixxx and GSoC, you can realise your ideas in your own project during the summer break. With the help of our experienced team of volunteers, you will be introduced to the world of free and open source software development (FOSS), expand your experience and spice up your CV. Your work will improve the user experience with Mixxx for thousands of DJs worldwide. ...and make "DJ your way".** 
+**With Mixxx and GSoC, you can realise your ideas in your own project during the summer break. With the help of our experienced team of volunteers, you will be introduced to the world of free and open source software development (FOSS), expand your experience and spice up your CV. Your work will improve the user experience with Mixxx for thousands of DJs worldwide. ..."DJ your way".** 
 
 [Mixxx](http://www.mixxx.org) is a DJ platform that brings DJs worldwide on their way without any license fees. At the same time it is in no way inferior to the market leaders and impresses with its flexible application options.  
  
@@ -28,14 +28,14 @@ For more details read our [Google Summer of Code Advice](gsocadvice) and get in 
 
 Mixxx is preparing to apply for GSoC 2024. We will add/update information here soon.  
 
-Like last year adult ambitious developers can a take part as a contributor (formally student) or mentor. The project length is flexible and can be adjusted for small ~90 hours, medium ~175 hours or larger ~350 hours projects. These hours can be timed into a 22 week period. 
+Like last year, ambitious students and adults developer can contribute to Mixxx or mentor a project. The project length is flexible and can be adjusted for small ~90 hours, medium ~175 hours or larger ~350 hours projects. These hours can be timed into a 22 week period. 
 
-We prefer medium sized projects, consisting smaller tasks that suits to get familiar with Mixxx's code base, C++ and our community at the whole. 
+We prefer medium sized projects, consisting of smaller tasks that make a difference to our users. This way you will get familiar with Mixxx's code base, C++ and our community at the whole. 
 
 The list of suggested projects can be found here: **[GSoC 2024 Ideas](GSOC-2024-Ideas)** 
-For more inspiration you may crawl our [Github Issues](https://github.com/mixxxdj/mixxx/issues)
+For more inspiration you may crawl our [GitHub Issues](https://github.com/mixxxdj/mixxx/issues)
 
-If you'd like to help people learn about GSoC, here you will find [flyers](GSoC-Flyers) you can use to spread the word!  
+If you would like to help people learn about GSoC, here you will find [flyers](GSoC-Flyers) you can use to spread the word!  
 
 
 ## Past Years

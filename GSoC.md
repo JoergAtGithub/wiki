@@ -19,8 +19,7 @@
 
 [Mixxx](http://www.mixxx.org) is a DJ platform that brings DJs worldwide on their way without any license fees. At the same time it is in no way inferior to the market leaders and impresses with its flexible application options.  
  
-[Google Summer of Code](https://summerofcode.withgoogle.com/) is an annual program that provides paid internships to all adults for working on
-free software projects.
+[Google Summer of Code](https://summerofcode.withgoogle.com/) is an annual program that provides paid internships to all adults for working on free software projects.
 
 For more details read our [Google Summer of Code Advice](gsocadvice) and get in contact with us via a **new** topic in our [Introduce Yourself](https://mixxx.zulipchat.com/#narrow/stream/109123-introduce-yourself) Zulip stream. 
 
@@ -28,7 +27,7 @@ For more details read our [Google Summer of Code Advice](gsocadvice) and get in 
 
 Mixxx is preparing to apply for GSoC 2024. We will add/update information here soon.  
 
-Like last year, ambitious students and adults developer can contribute to Mixxx or mentor a project. The project length is flexible and can be adjusted for small ~90 hours, medium ~175 hours or larger ~350 hours projects. These hours can be timed into a 22 week period. 
+Like last year, ambitious students and developer can contribute to Mixxx or mentor a project, if they are aged 18 or above. The project length is flexible and can be adjusted for small ~90 hours, medium ~175 hours or larger ~350 hours projects. These hours can be timed into a 22 week period. 
 
 We prefer medium sized projects, consisting of smaller tasks that make a difference to our users. This way you will get familiar with Mixxx's code base, C++ and our community at the whole. 
 

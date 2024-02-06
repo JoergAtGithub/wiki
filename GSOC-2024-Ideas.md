@@ -16,7 +16,7 @@ Currently Mixxx is only capable of playing the stereo track. The goal of this pr
 
 * **Expected Outcome:** Playing and remixing of stem files
 * **Skills:** Good understanding of sound processing, C++
-* **Possible Mentor:** tbd.
+* **Possible Mentor:** Niko
 * **Difficulty:** Medium 
 * **Size:** 175 h
 
@@ -26,7 +26,7 @@ Currently creation of stem files files is a manual process in preparation of a D
 
 * **Expected Outcome:** Playing and remixing of stem files
 * **Skills:** Good understanding of sound processing, C++
-* **Possible Mentor:** tbd.
+* **Possible Mentor:** Niko
 * **Difficulty:** Medium 
 * **Size:** 175 h
 

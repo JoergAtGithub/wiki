@@ -22,7 +22,7 @@ Currently Mixxx is only capable of playing the stereo track. The goal of this pr
 
 # AI driven STEMS analyzer
 
-Currently creation of stem files files is a manual process in preparation of a DJ set. Many DJs can't effort the time and the storage space for extracting stem files. In this project a temporary stem file should be created on demand from the Mixxx GUI. Part of the project should be evaluation of already published algorithms. Integration of one of them into the Mixxx analyzer and Handling of the caching an the required GUI for this feature. 
+Currently creation of stem files files is a manual process in preparation of a DJ set. Many DJs can't effort the time and the storage space for extracting stem files. In this project a temporary stem file shall be created on demand from the Mixxx GUI. Part of the project shall be evaluation of already published algorithms. Integration of one of them into the Mixxx analyzer and handling of the caching an the required GUI for this feature. 
 
 * **Expected Outcome:** Playing and remixing of stem files
 * **Skills:** Good understanding of sound processing, C++

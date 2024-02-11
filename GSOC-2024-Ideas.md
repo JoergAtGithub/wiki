@@ -101,15 +101,17 @@ https://github.com/mixxxdj/mixxx/issues/9328
 # Graceful recovery of controllers
 
 If a controller is accidentally unplugged it has to be manually reconfigured, which is a party stopper. 
-Mixxx should do it automatically. This project has two stages, fist behave like a real DJ: fix the issue but faster. So the the time of silence on the dance floor is kept short. The advance stage of this project is to implement real Hot Plug And Play. In order to that you likely need to touch the low level inside third party libraries. 
+Mixxx shall do it automatically. This project has two stages, fist behave like a real DJ: fix the issue but faster. So the the time of silence on the dance floor is kept short. 
+
+The advance stage of this project is to implement real Hot Plug And Play. Here you shall evaluate alternative midi libraries like [libremidi](https://github.com/jcelerier/libremidi). You likely need to touch the low level inside these third party libraries and counterpart inside Mixxx.  
 
 The required controller can be provided on loan.
  
 * **Expected Outcome:** Re-power the controller and continue to use it, on your target platform. 
 * **Skills:** Good understanding of the USB stack, C++
-* **Possible Mentor:** Daniel Schürmann
+* **Possible Mentor:** Jörg Wartenberg
 * **Difficulty:** Easy / (Hot Plug And Play = Difficult)  
-* **Size:** 175 h  / (Hot Plug And Play = 350 h)
+* **Size:** 90 h  / (Hot Plug And Play = 350 h)
 
 # First class Pipewire support
 

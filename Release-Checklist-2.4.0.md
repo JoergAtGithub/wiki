@@ -11,14 +11,14 @@ release candidates).
 4.  [x] Update translations
     1.   [x] Push and pull translations for Mixxx as described here:
         [Internationalization](Internationalization)
-5. [ ] Take release screenshots for press page and blog post.
-    1.  [ ] Deere, LateNight, Shade, Tango
-    2.  [ ] Load up samplers, preview deck, etc. 
-    3.  [ ] Make all the screenshots roughly uniform (same view, same tracks
+5. [x] Take release screenshots for press page and blog post.
+    1.  [x] Deere, LateNight, Shade, Tango
+    2.  [x] Load up samplers, preview deck, etc. 
+    3.  [x] Make all the screenshots roughly uniform (same view, same tracks
         loaded, etc.)
-    4.  [ ] Take screenshots of the Mixxx window itself, **not** with your
+    4.  [x] Take screenshots of the Mixxx window itself, **not** with your
         cluttered desktop in the background.
-        1.  [ ] macOS can produce particularly pretty drop-shadow
+        1.  [x] macOS can produce particularly pretty drop-shadow
             screenshots with `Shift-Command-4` followed by the spacebar,
             then click the window to screenshot.
 6. [ ] Send out pre-announcement to the DJ press (to ensure, that they have enough time to write articles and record review videos)<br>
@@ -38,7 +38,7 @@ release candidates).
     4. [x] Check Debian Changelog and PPA destination 
 9. [x] Build release candidates:
     1.  [x] CMakeLists.txt Update VERSION and MIXXX_VERSION_PRERELEASE
-10. [ ] Perform QA testing with all release candidate binaries (Smoke Test) 
+10. [x] Perform QA testing with all release candidate binaries (Smoke Test) 
     1. [x] macOS Intel
     2. [x] macOS ARM
     3. [x] Ubuntu

@@ -40,7 +40,7 @@ release candidates).
     1.  [x] CMakeLists.txt Update VERSION and MIXXX_VERSION_PRERELEASE
 10. [ ] Perform QA testing with all release candidate binaries (Smoke Test) 
     1. [x] macOS Intel
-    2. [ ] macOS ARM
+    2. [x] macOS ARM
     3. [x] Ubuntu
     4. [x] Windows
 11. [ ] Add a git tag with a GPG signature 

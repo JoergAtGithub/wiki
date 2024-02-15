@@ -31,8 +31,8 @@ release candidates).
 7. [x] Update files from Git log 
     1. credits in `src/dialog/dlgabout.cpp`
     2. CHANGELOG.md
-8. [ ] Verify 
-    1. [ ] the latest version of https://github.com/mixxxdj/manual/tree/2.4 is published to <https://mixxx.org/manual/2.4/>
+8. [x] Verify 
+    1. [x] the latest version of https://github.com/mixxxdj/manual/tree/2.4 is published to <https://mixxx.org/manual/2.4/>
     2. [x] copyright year and version number in LICENSE
     3. [x] .github/workflows/build.yml and tools/deploy.py
     4. [x] Check Debian Changelog and PPA destination 

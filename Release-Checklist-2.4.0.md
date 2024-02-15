@@ -43,14 +43,14 @@ release candidates).
     2. [x] macOS ARM
     3. [x] Ubuntu
     4. [x] Windows
-11. [ ] Add a git tag with a GPG signature 
-    1. [ ] Update CHANGELOG.md and Replace (unreleased) with the current Date and add a commit "Release 2.4.0"
-    2. [ ] ```git tag -s 2.4.0 -m "Mixxx 2.4.0"```  (double check identity / email you are using to tag!)
-    3. [ ] ```git push --tags upstream 2.4.0```
-    4. [ ] This can be done to a commit after it has been pushed or merged
+11. [x] Add a git tag with a GPG signature 
+    1. [x] Update CHANGELOG.md and Replace (unreleased) with the current Date and add a commit "Release 2.4.0"
+    2. [x] ```git tag -s 2.4.0 -m "Mixxx 2.4.0"```  (double check identity / email you are using to tag!)
+    3. [x] ```git push --tags upstream 2.4.0```
+    4. [x] This can be done to a commit after it has been pushed or merged
         from the release candidate PR, so wait until you're sure you're ready to tag the
         release commit.
-    4. [ ] **Once pushed, a tag is forever. Never delete a tag from a
+    4. [x] **Once pushed, a tag is forever. Never delete a tag from a
         remote.**
 12. [ ] Verify release binaries are available
     1. [ ] https://downloads.mixxx.org/releases/2.4.0/

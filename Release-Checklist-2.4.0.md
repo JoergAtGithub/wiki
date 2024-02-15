@@ -44,9 +44,10 @@ release candidates).
     3. [x] Ubuntu
     4. [x] Windows
 11. [ ] Add a git tag with a GPG signature 
-    1. [ ] ```git tag -s 2.4.0 -m "Mixxx 2.4.0"```  (double check identity / email you are using to tag!)
-    2. [ ] ```git push --tags upstream 2.4.0```
-    3. [ ] This can be done to a commit after it has been pushed or merged
+    1. [ ] Update CHANGELOG.md and Replace (unreleased) with the current Date and add a commit "Release 2.4.0"
+    2. [ ] ```git tag -s 2.4.0 -m "Mixxx 2.4.0"```  (double check identity / email you are using to tag!)
+    3. [ ] ```git push --tags upstream 2.4.0```
+    4. [ ] This can be done to a commit after it has been pushed or merged
         from the release candidate PR, so wait until you're sure you're ready to tag the
         release commit.
     4. [ ] **Once pushed, a tag is forever. Never delete a tag from a

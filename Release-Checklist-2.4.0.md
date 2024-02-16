@@ -72,18 +72,18 @@ release candidates).
     3. [ ] Write a condensed version of the release notes for the [What's new in this version?](https://learn.microsoft.com/en-us/windows/apps/publish/publish-your-app/add-and-edit-store-listing-info?pivots=store-installer-msix#whats-new-in-this-version) section (1500 characters limit)
     4. [ ] Submit the .msi Installer as [app package](https://learn.microsoft.com/en-us/windows/apps/publish/publish-your-app/upload-app-packages?pivots=store-installer-msi-exe) (Note: That the verification process by Microsoft can take up to 3 working days)
 16. [ ] Update the website
-    1. [ ] Update download page:
-        1.  [ ] Do this after posting the announcement forum thread so you
+    1. [x] Update download page:
+        1.  [x] Do this after posting the announcement forum thread so you
             can link to the announcement
         2.  [x] hide beta downloads
-        3.  [ ] move current release to previous
+        3.  [x] move current release to previous
         4.  [x] replace current with new links
-    2. [ ] Update frontpage / features page / etc.
+    2. [x] Update frontpage / features page / etc.
     3. [x] Update screenshot downloads on Press page.
     4. [ ] Update credits for contributors to latest release.
     5. [ ] Update <https://mixxx.org/manual/latest> symlink to point to
         2.4.
-    7. [ ] Update copyright date here and on the blog
+    7. [x] Update copyright date here and on the blog
 17. [ ] Release announcement:
     1. [ ] Discourse is updated automatically after publishing the blog post and visiting it on the website
     2. [ ] Cross-post to Zulip \#announce stream

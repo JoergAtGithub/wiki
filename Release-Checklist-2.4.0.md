@@ -82,7 +82,7 @@ release candidates).
     3. [ ] Update screenshot downloads on Press page.
     4. [ ] Update credits for contributors to latest release.
     5. [ ] Update <https://mixxx.org/manual/latest> symlink to point to
-        2.3.
+        2.4.
     7. [ ] Update copyright date here and on the blog
 17. [ ] Release announcement:
     1. [ ] Discourse is updated automatically after publishing the blog post and visiting it on the website

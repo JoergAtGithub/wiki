@@ -62,7 +62,7 @@ release candidates).
         as a backup and record independent of downloads.mixxx.org (for
         forensic purposes).
     2. [ ] Make a release in GitHub 
-    3. [ ] Update GitHub issues 
+    3. [x] Update GitHub issues 
         1.  Create a 2.4.1 milestone 
         2.  Target all 2.4.0 issues that have not been fixed to 2.4.1 (or remove the milestone entirely) 
 14. [ ] Manual: Remove the developer version warning https://github.com/mixxxdj/manual/pull/376 and verify it at <https://mixxx.org/manual/2.4/> 

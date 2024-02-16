@@ -71,7 +71,7 @@ release candidates).
     2. [ ] Upload [screenshots](https://learn.microsoft.com/en-us/windows/apps/publish/publish-your-app/add-and-edit-store-listing-info?pivots=store-installer-msix#screenshots)
     3. [ ] Write a condensed version of the release notes for the [What's new in this version?](https://learn.microsoft.com/en-us/windows/apps/publish/publish-your-app/add-and-edit-store-listing-info?pivots=store-installer-msix#whats-new-in-this-version) section (1500 characters limit)
     4. [ ] Submit the .msi Installer as [app package](https://learn.microsoft.com/en-us/windows/apps/publish/publish-your-app/upload-app-packages?pivots=store-installer-msi-exe) (Note: That the verification process by Microsoft can take up to 3 working days)
-16. [ ] Update the website
+16. [x] Update the website
     1. [x] Update download page:
         1.  [x] Do this after posting the announcement forum thread so you
             can link to the announcement

@@ -89,9 +89,9 @@ release candidates).
     2. [x] Cross-post to Zulip \#announce stream
     3. [x] Inform the press contacts (that were informed in step 6.) that the final release now happend
     4. [ ] Cross-post to mixxx-devel~~
-    5. [ ] Cross-post to Facebook
-    6. [ ] Cross-post to Twitter/X
-    7. [ ] Cross-post to Mastodon
+    5. [x] Cross-post to Facebook
+    6. [x] Cross-post to Twitter/X
+    7. [x] Cross-post to Mastodon
     
 
 ## Promotion

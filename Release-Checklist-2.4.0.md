@@ -54,7 +54,7 @@ release candidates).
         remote.**
 12. [ ] Verify release binaries are available
     1. [ ] https://downloads.mixxx.org/releases/2.4.0/
-    2. [ ] https://launchpad.net/~mixxx/+archive/ubuntu/mixxx  
+    2. [x] https://launchpad.net/~mixxx/+archive/ubuntu/mixxx  
 13. [ ] Release
     1. [ ] Record SHA256sum of all packages in the [Release Checksums
         Google

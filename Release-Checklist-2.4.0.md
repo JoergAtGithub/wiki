@@ -52,16 +52,16 @@ release candidates).
         release commit.
     4. [x] **Once pushed, a tag is forever. Never delete a tag from a
         remote.**
-12. [ ] Verify release binaries are available
-    1. [ ] https://downloads.mixxx.org/releases/2.4.0/
+12. [x] Verify release binaries are available
+    1. [x] https://downloads.mixxx.org/releases/2.4.0/
     2. [x] https://launchpad.net/~mixxx/+archive/ubuntu/mixxx  
-13. [ ] Release
-    1. [ ] Record SHA256sum of all packages in the [Release Checksums
+13. [x] Release
+    1. [x] Record SHA256sum of all packages in the [Release Checksums
         Google
         Doc](https://docs.google.com/spreadsheets/d/1E5vFa0gKf47P3LMMXpnr3JzsZ7-ENI03IgOkj9lxYQo/edit#gid=0)
         as a backup and record independent of downloads.mixxx.org (for
         forensic purposes).
-    2. [ ] Make a release in GitHub 
+    2. [x] Make a release in GitHub 
     3. [x] Update GitHub issues 
         1.  Create a 2.4.1 milestone 
         2.  Target all 2.4.0 issues that have not been fixed to 2.4.1 (or remove the milestone entirely) 

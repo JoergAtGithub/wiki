@@ -80,7 +80,7 @@ release candidates).
         4.  [x] replace current with new links
     2. [x] Update frontpage / features page / etc.
     3. [x] Update screenshot downloads on Press page.
-    4. [ ] Update credits for contributors to latest release.
+    4. [x] Update credits for contributors to latest release.
     5. [ ] Update <https://mixxx.org/manual/latest> symlink to point to
         2.4.
     7. [x] Update copyright date here and on the blog

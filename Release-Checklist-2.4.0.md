@@ -75,11 +75,11 @@ release candidates).
     1. [ ] Update download page:
         1.  [ ] Do this after posting the announcement forum thread so you
             can link to the announcement
-        2.  [ ] hide beta downloads
+        2.  [x] hide beta downloads
         3.  [ ] move current release to previous
-        4.  [ ] replace current with new links
+        4.  [x] replace current with new links
     2. [ ] Update frontpage / features page / etc.
-    3. [ ] Update screenshot downloads on Press page.
+    3. [x] Update screenshot downloads on Press page.
     4. [ ] Update credits for contributors to latest release.
     5. [ ] Update <https://mixxx.org/manual/latest> symlink to point to
         2.4.

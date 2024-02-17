@@ -66,11 +66,11 @@ release candidates).
         1.  Create a 2.4.1 milestone 
         2.  Target all 2.4.0 issues that have not been fixed to 2.4.1 (or remove the milestone entirely) 
 14. [ ] Manual: Remove the developer version warning https://github.com/mixxxdj/manual/pull/376 and verify it at <https://mixxx.org/manual/2.4/> 
-15. [ ] Submit the new version to the Microsoft store
-    1. [ ] Add the new features to the [description](https://learn.microsoft.com/en-us/windows/apps/publish/publish-your-app/add-and-edit-store-listing-info?pivots=store-installer-msix#description)
-    2. [ ] Upload [screenshots](https://learn.microsoft.com/en-us/windows/apps/publish/publish-your-app/add-and-edit-store-listing-info?pivots=store-installer-msix#screenshots)
-    3. [ ] Write a condensed version of the release notes for the [What's new in this version?](https://learn.microsoft.com/en-us/windows/apps/publish/publish-your-app/add-and-edit-store-listing-info?pivots=store-installer-msix#whats-new-in-this-version) section (1500 characters limit)
-    4. [ ] Submit the .msi Installer as [app package](https://learn.microsoft.com/en-us/windows/apps/publish/publish-your-app/upload-app-packages?pivots=store-installer-msi-exe) (Note: That the verification process by Microsoft can take up to 3 working days)
+15. [X] Submit the new version to the Microsoft store
+    1. [X] Add the new features to the [description](https://learn.microsoft.com/en-us/windows/apps/publish/publish-your-app/add-and-edit-store-listing-info?pivots=store-installer-msix#description)
+    2. [X] Upload [screenshots](https://learn.microsoft.com/en-us/windows/apps/publish/publish-your-app/add-and-edit-store-listing-info?pivots=store-installer-msix#screenshots)
+    3. [X] Write a condensed version of the release notes for the [What's new in this version?](https://learn.microsoft.com/en-us/windows/apps/publish/publish-your-app/add-and-edit-store-listing-info?pivots=store-installer-msix#whats-new-in-this-version) section (1500 characters limit)
+    4. [X] Submit the .msi Installer as [app package](https://learn.microsoft.com/en-us/windows/apps/publish/publish-your-app/upload-app-packages?pivots=store-installer-msi-exe) (Note: That the verification process by Microsoft can take up to 3 working days)
 16. [x] Update the website
     1. [x] Update download page:
         1.  [x] Do this after posting the announcement forum thread so you

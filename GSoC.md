@@ -25,7 +25,7 @@ For more details read our [Google Summer of Code Advice](gsocadvice) and get in 
 
 ## This Year (2024)
 
-Mixxx is preparing to apply for GSoC 2024. We will add/update information here soon.  
+Mixxx has been accepted for GSoC 2024.  
 
 Like last year, ambitious students and developers can contribute to Mixxx or mentor a project, if they are aged 18 or above. The project length is flexible and can be adjusted for small ~90 hours, medium ~175 hours or larger ~350 hours projects. These hours can be timed into a 22 week period. 
 

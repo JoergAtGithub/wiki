@@ -93,7 +93,7 @@ The build will take some hours.
    from **MIXXX\_REPO**.
 
    Select the correct build configuration on the toolbar.
-   The CMakeSettings uses names like x64__fastbuild and so on. Most likely, the one you want is x64_portable.
+   The CMakeSettings uses names like x64__portable and so on. Most likely, the one you want is x64_portable.
    By default it will also generate the CMake cache using the configuration. 
    You can also run it manually (and clean and regenerate it) by selecting the 
    CMakeLists.txt file, and use the options Generate cache or CMake cache -> delete cache.

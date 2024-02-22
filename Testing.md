@@ -30,7 +30,11 @@ you will need to [compile from source code](https://github.com/mixxxdj/mixxx/wik
 
 If you would really like to be on the bleeding edge, you can try out [pull requests on GitHub](https://github.com/mixxxdj/mixxx/pulls) before
 they get merged to the main branch. This way you can be involved in the design of new features as they are being implemented. If there is an
-issue with a build from a pull request, comment on the pull request on GitHub instead of opening a bug on Launchpad.
+issue with a build from a pull request, comment on the pull request on GitHub instead of filing a bug report.
+
+You can either download binaries created by Github CI or checkout the PR branch locally and built yourself.
+
+### Download binaries build by Github CI
 
 GitHub Actions automatically builds every pull request. They are not uploaded to downloads.mixxx.org, but you can access them through GitHub. If you do not have a GitHub account already, you will need to [register one](https://github.com/join) and log in to download pull request builds.
 
@@ -56,6 +60,16 @@ To run unsigned builds on macOS, right click on the Mixxx.app file in Finder and
 To run unsigned builds on Windows, double click the .msi installer as usual. In the popup that says "Windows protected your PC", click the "More info" link just below the "Windows protected your PC" text. Then, a button will appear in the bottom right of the popup that says "Run anyway". Click that new "Run anyway" button.
 
 For Linux distributions other than Ubuntu, you will need to [compile Mixxx from source](https://github.com/mixxxdj/mixxx/wiki/compiling-on-Linux) yourself. Refer to the [Using Git](https://github.com/mixxxdj/mixxx/wiki/using-git) wiki page for how to set up Git on your computer for downloading the code to test pull requests.
+
+### Build PR branches yourself
+
+If you already have a [`git` setup](https://github.com/mixxxdj/mixxx/wiki/Using-Git), forked the Mixxx repo and are able to build Mixxx, you can checkout PR branches without having to add the remote repo of contributor (PR creator). This is possible with either `git`
+
+    git checkout upstream/pr/PULL-REQUEST-NUMBER
+
+or the `gh` utility
+
+    gh pr checkout (-f) [PULL-REQUEST-NUMBER]
 
 ## Testing Zulip stream
 

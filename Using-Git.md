@@ -147,35 +147,10 @@ on GitHub. The currently active pull requests are listed [on the GitHub
 website](https://github.com/mixxxdj/mixxx/pulls). Testing these pull
 requests and providing your feedback is really helpful and a great way
 to start getting involved in Mixxx even if you don't know how to
-program. To test a pull request, [set up .git/config as described
-above](#Set-up-Git) and download the latest updates:
+program.
 
-    git fetch upstream
-
-Find the number of the pull request from the [the GitHub
-website](https://github.com/mixxxdj/mixxx/pulls), then run
-
-    git checkout upstream/pr/PULL-REQUEST-NUMBER
-
-to switch the code files on your computer to the proposed changes. (If
-you are testing your own pull request, use the name of the [branch you
-created on your computer](#create-a-new-branch) instead of
-`upstream/pr/PULL-REQUEST-NUMBER`.)
-
-Alternative:
-At the top right of any PR page you may have noticed the `Open with` link.
-Click it and it shows you a command to be used with the the [Github command line interface](https://github.com/cli/cli).
-Besides quickly checking out PRs it gives you other shortcuts to interact with
-Github pages in the terminal.
-
-Now you can [start\#Compile Mixxx
-From Source Code](home#Compile%20Mixxx%20From%20Source%20Code) to test
-the proposed changes. Give feedback by commenting on the pull request on
-the GitHub website.
-
-Alternatively, on Windows, you can use the builds from AppVeyor instead
-of compiling pull requests yourself. Refer to the [Testing
-page](Testing#GitHub%20pull%20requests) for details.
+See https://github.com/mixxxdj/mixxx/wiki/Testing#github-pull-requests
+for details.
 
 # Create a new branch
 

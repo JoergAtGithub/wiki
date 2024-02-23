@@ -32,7 +32,9 @@ If you would really like to be on the bleeding edge, you can try out [pull reque
 they get merged to the main branch. This way you can be involved in the design of new features as they are being implemented. If there is an
 issue with a build from a pull request, comment on the pull request on GitHub instead of filing a bug report.
 
-You can either download binaries created by Github CI or checkout the PR branch locally and built yourself.
+You can either
+* download binaries created by Github CI, or
+* checkout the PR branch locally and built yourself.
 
 ### Download binaries build by Github CI
 

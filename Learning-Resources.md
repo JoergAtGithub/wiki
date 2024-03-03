@@ -9,7 +9,7 @@ We recommend you review these sections of the Qt documentation to get
 familiar with aspects of Qt that we use heavily:
 
   - [Signals &
-    Slots](http://qt-project.org/doc/latest/signalsandslots.html)
+    Slots](https://doc.qt.io/qt-6/signalsandslots.html)
 
 If you're not familiar with C++, [The Cherno
 Project](https://www.youtube.com/watch?v=18c3MTX0PK0&list=PLlrATfBNZ98dudnM48yfGUldqGD0S4FFb)

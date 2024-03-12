@@ -49,9 +49,9 @@ in one commit. Start by creating a [GitHub](http://github.com/) account,
 forked git repository onto your computer.
 
 Usually, new mappings can be released as part of bugfix releases. Hence,
-you should usually use the current stable release branch (e.g. `2.3`)
-instead of the \`main\` branch as a starting point for your new
-mapping branch. You run `git checkout -b new_branch_name 2.3` from
+you should usually use the current stable release branch (e.g. `2.4`)
+instead of the `main` branch as a starting point for your new
+mapping branch. You run `git checkout -b new_branch_name 2.4` from
 within your git repository to that. If you're making use of unreleased
 features that are only present in `main`, you can also use `main` as
 base branch instead (run `git checkout -b new_branch_name main`).

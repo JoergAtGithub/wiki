@@ -97,7 +97,7 @@ sound, either they all need to use JACK, or you can try using the
 "pulse" virtual ALSA device with Mixxx when running Mixxx on the command
 line without pasuspender. Refer to the Mixxx manual for more information
 about [sound
-APIs](https://mixxx.org/manual/latest/en/chapters/preferences.html#sound-api).
+APIs](https://mixxx.org/manual/latest/en/chapters/preferences/sound_hardware#sound-api).
 If you use JACK and do not want Mixxx to pause PulseAudio, you can edit
 /usr/share/applications/mixxx.desktop to change the line:
 

@@ -146,10 +146,7 @@ on the controller. Then try to send something to these in your mapping
 script via an output package and see if you are right. If yes, proceed
 mapping them to the correct values.
 
-I also recommend to create a new page on this wiki for your controller
-if it doesn't exist yet and documenting your findings. Even if you can't
-do the actual mapping, if you have a specification for how the inputs
-and outputs are arranged someone more experienced should be able to
-quickly write that up for you. An example for such a specification is
-the [Traktor Kontrol Z1
-page](native_instruments_traktor_kontrol_z1#hid_specification).
+For any controller mapping, we need a manual page as well. A good example for such a manual page, is the page for the [Traktor Kontrol Z1](https://manual.mixxx.org/2.4/en/hardware/controllers/native_instruments_traktor_kontrol_z1)
+The manual page is created by a seperate PR in our manual repository: https://github.com/mixxxdj/manual
+
+

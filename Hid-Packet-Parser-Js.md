@@ -226,10 +226,6 @@ There are multiple very simple mappings in Mixxx 1.11 tree, which can be
 studied for the expected ways of using the common hid packet parser
 code. The simple mappings are in:
 
-  - **common-hid-devices.js**: contains example descriptions for
-    standard HID trackpad/mouse and HID keyboard. Apple Bluetooth
-    Keyboard.cntrlr.xml, Apple Bluetooth Keyboard.js. Example script
-    just dumping the key presses received from a standard USB keyboard
   - **Sony SixxAxis.cntrlr.xml**: Simple mapping using separate files
     for HID packet declaration and script mappings
   - **Sony SixxAxis.hid.js**: The hid packet declarations for previous

@@ -16,7 +16,16 @@ tools/debian_buildenv.sh setup
 
 ## Fedora
 
-On Fedora, [enable the RPMFusion package repository](http://rpmfusion.org/Configuration).
+### Using the buildenv script (recommended)
+
+For building the `main` branch, the recommended approach is to use the script, which will add the RPM Fusion repository and automatically install all dependencies:
+```sh
+tools/rpm_buildenv.sh setup
+```
+
+### Manually
+
+[Enable the RPM Fusion package repository](http://rpmfusion.org/Configuration).
 You only need to enable the *free* repository; the *nonfree* repository is not necessary for Mixxx.
 
 Then run:

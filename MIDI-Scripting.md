@@ -2,9 +2,8 @@
 
 In order to support the features of many MIDI controllers, Mixxx offers
 what we call Controler Scripting. It enables
-hardware controls to be mapped to
-[QtScript](http://doc.trolltech.com/4.5/qtscript.html) (also known as
-[Javascript](http://en.wikipedia.org/wiki/JavaScript_syntax)/[EMCAScript](http://www.ecma-international.org/publications/standards/Ecma-262.htm)) functions, allowing mappings to manage complex behaviors. 
+hardware controls to be mapped to 
+[Javascript](http://en.wikipedia.org/wiki/JavaScript_syntax)/[EMCAScript](http://www.ecma-international.org/publications/standards/Ecma-262.htm) functions, allowing mappings to manage complex behaviors. 
 **New in Mixxx 2.4:** Mappings now run within a [QJSEngine](https://doc.qt.io/qt-5/qjsengine.html)
 and can leverage the entire feature-set of ES7 (excluding ES6 Modules for now).
 These user-created functions can then do anything desired with the MIDI event

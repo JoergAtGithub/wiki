@@ -26,7 +26,7 @@ command line, as outlined here:
 [Compiling-on-macOS](Compiling-On-macOS)  
 Depending on your computer this may take up to 60 min on the fist time.
 
-#### Using CMake (Mixxx 2.3)
+#### Using CMake (Mixxx > 2.3)
 To speed up compiling after switching branches make sure `ccache`
 is installed.
 

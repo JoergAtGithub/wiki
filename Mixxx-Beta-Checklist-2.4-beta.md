@@ -11,12 +11,12 @@ This process is followed when it is time to branch out a new beta and make the m
     3. edit the .tx/config file to point to the new project "mixxx-dj-manual-25"
     4. `git commit -a -m"Bump version to 2.5"`
     5. `git push upstream main`
-    6. upload translation sources source and the existing translations `tx push -s -t --parallel`
+    6. upload translation sources source and the existing translations `tx push -s -t`
 3. Create a 2.4 branch in [manual](https://github.com/mixxxdj/manual)
     1. `git checkout -b 2.4 upstream/main~1`
     2.  edit the .tx/config file github_version to the new branch 2.4
     3. `git commit -a -m"Redirect \"Edit on GitHub\" links to the new branch"`
-    4. `git push upstream 2.4
+    4. `git push upstream 2.4`
 4. ✓ Update translations in [mixxx](https://github.com/mixxxdj/mixxx)
     1.  Push and pull translations for Mixxx as described here:
         [Internationalization](Internationalization)

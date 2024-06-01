@@ -1,6 +1,6 @@
 Compiling software is the process of turning human-readable source code into machine code a computer can execute. Compiling Mixxx is fairly straightforward on macOS. The steps below outline what to do. If you need help after reading this page, feel free to ask questions on our [Zulip chat](https://mixxx.zulipchat.com/#narrow/stream/247620-development-help).
 
-This is a guide for x64 architecture. Building on Apple Silicon/M1/aarch64 is not yet official supported, but possible. Consult our [Zulip chat](https://mixxx.zulipchat.com) 
+This is a guide for x64 architecture. Building on Apple Silicon/M1/aarch64 is not yet official supported, but possible. Consult our [Zulip chat](https://mixxx.zulipchat.com). You may have to [compile the dependencies](https://github.com/mixxxdj/mixxx/wiki/Compiling-dependencies-for-macOS-arm64) yourself, instead of using the archive with precompiled dependencies as described below.
 
 # Install Xcode command line tools
 

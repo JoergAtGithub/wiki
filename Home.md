@@ -11,6 +11,7 @@ Due to spam attacks, wiki editing has been restricted. However you are welcome t
   - [Beginner DJ Links](Beginner%20DJ%20Links)
   - [DJ Hardware Guide](Hardware%20compatibility)
   - [Manual](https://mixxx.org/manual)
+  - [Safeguard your Digital DJ Data](Safeguard%20your%20Digital%20DJ%20Data)
 
 ### Troubleshooting
 

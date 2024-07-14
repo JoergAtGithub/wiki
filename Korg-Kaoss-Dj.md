@@ -21,6 +21,8 @@ switched off for using software effects).
     Mixxx 2.1](https://github.com/larromba/mixxx_kaoss_dj)
   - [Pull request on Github](https://github.com/mixxxdj/mixxx/pull/1509)
 
+macOS: Please note that the Korg Kaoss DJ is only supported until [macOS Monterey](https://www.korg.com/download/global/support/os/pdf/mac_compatibilitychart_KORG_en.pdf).
+
 ## Configuration options
 
 ## Mapping

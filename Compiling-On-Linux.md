@@ -107,7 +107,7 @@ You can use following task for building mixxx inside the nix development environ
 }
 ```
 
-## Guix & Guix Sysytem
+## Guix & Guix System
 
 ### Create a development environment
 

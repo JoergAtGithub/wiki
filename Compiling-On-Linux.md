@@ -113,20 +113,18 @@ You can use following task for building mixxx inside the nix development environ
 
 To create a development shell for Mixxx 2.4 use:
 ```bash
-guix shell -D mixxx
+rm -rf build && guix shell -D mixxx
 ```
 
 To create a development shell for main branch or Mixxx >=2.5 use:
 ```bash
+rm -rf build && \
 guix shell -D mixxx \
-    # The use of container is recommended [1]
     --container \
-    # Use latest libdjinterop needed for mixxx >=2.5
-    --with-commit=libdjinterop=0.21.0
-    # Qt6 dependencies
+    --with-commit=libdjinterop=0.21.0 \
     qtbase qtdeclarative qtkeychain-qt6 qtsvg qtshadertools qt5compat libxkbcommon
 ```
-[1] Without `--container` sometimes the external environment might cause compilation errors. For example, if you have ccache isntalled in your system the compilation might fail with the following error:
+If you have ccache installed on your system you might come across the following compilation error:
 ```
 The C compiler
 
@@ -134,7 +132,9 @@ The C compiler
 
   is not able to compile a simple test program.
 ```
-Using the `--container` option fixes the issue.
+To fix it, make sure to:
+1. Use the `--container` option of `guix shell`
+2. Remove the build folder before entering the development shell: `rm -rf build`
 
 ### Build Mixxx
 
@@ -143,7 +143,7 @@ Once inside the Mixxx shell you can build Mixxx simply by:
 cmake -B build && cmake --build build
 ```
 
-Once Mixxx is built, exit the shell and run the Mixxx binary in the <src_folder>/build.
+Once Mixxx is built, run the Mixxx binary in the <src_folder>/build from outside the development shell.
 
 ## Non-system Qt
 

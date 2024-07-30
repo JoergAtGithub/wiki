@@ -135,31 +135,3 @@ The build will take some hours.
   Depending on your processor, a full build can take from 5 to 20 minutes.
 
   In order to do a clean build, you can do so with `cmake --build . --clean-first`
-
-### Build 32bit version of Mixxx
-32bit versions are no longer being built, so they might stop working at some point. Anyway, these are some instructions on how you can do that.
-
-1. Get the dependencies for 32bit:
-   Either set the environment variable PLATFORM=x86 previous to execute the tools/windows_buildenv.bat script, 
-   or manually download the one for x86, 
-   or build it manually
-
-2. Follow the instructions to build from commandline, but instead open a 
-   *x86 Native tools command prompt for VS2019* 
-   (or x86_64 cross compile command prompt for VS2019). (Preferably the latter)
-
-**WARNING**: DO NOT mix 32 and 64 bits builds. Use separate console windows 
-and separate precompiled directories and cmake build directories
-
-
-## Build debug version of Mixxx
-
-1. There are no precompiled environments for debug, so this means that you have to  
-    compile Mixxx dependencies from source as explained above. 
-    You will need to indicate this commandline to generate them in debug: 
-    `build_environment xxx Debug`
-2. Follow the instructions to build from commandline, but on the cmake instructions 
-   specify **-DCMAKE_BUILD_TYPE=Debug** instead of *DCMAKE_BUILD_TYPE=Release*.
-
-**WARNING**: DO NOT mix release and debug builds. Use separate console windows 
-and separate precompiled directories and cmake build directories

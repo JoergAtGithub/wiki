@@ -103,7 +103,7 @@ The build will take some hours.
 
 ### From commandline
 
-1. Open the application "x64 Native Tools command prompt for VS2019" from the Windows Start menu.
+1. Open the application "x64 Native Tools command prompt for VS2022" from the Windows Start menu.
    There, go to **MIXXX\_REPO** folder
 
 2. Create a folder where we will setup cmake and build the sources. 
@@ -119,21 +119,17 @@ The build will take some hours.
    Do the same for the install subdir ( **MIXXX\_REPO**\install\x64_portable)
 
 3. enter into this directory, ` cd build\x64__portable` and type the following:
-   `cmake -G "Ninja" -DCMAKE_BUILD_TYPE=Release 
- -DCMAKE_PREFIX_PATH="**MIXXX\_REPO**\buildenv;**MIXXX\_REPO**\buildenv\Qt-5.14.2" 
- -DCMAKE_INSTALL_PREFIX=**MIXXX\_REPO**\install\x64_portable 
+   `cmake -DCMAKE_INSTALL_PREFIX=**MIXXX\_REPO**\install\x64_portable 
  -DDEBUG_ASSERTIONS_FATAL=ON -DHSS1394=ON -DKEYFINDER=OFF -DLOCALECOMPARE=ON 
  -DMAD=ON -DMEDIAFOUNDATION=ON -DSTATIC_DEPS=ON -DBATTERY=ON -DBROADCAST=ON -DBULK=ON 
  -DHID=ON -DLILV=ON -DOPUS=ON -DQTKEYCHAIN=ON -DVINYLCONTROL=ON ..\..`
 
-  You need to replace **MIXXX\_REPO**\buildenv and **MIXXX\_REPO** for your paths, 
-  as well as adapting the install subdir if you build a different one.
-  Also, the last part of the command "..\\.." means **MIXXX\_REPO** as seen from 
+  The last part of the command "..\\.." means **MIXXX\_REPO** as seen from 
   the cmake build dir (in our case  **MIXXX\_REPO**\build\x64__portable, so two subfolders)
 
-  Finally, set -DDEBUG_ASSERTIONS_FATAL=OFF instead of ON if you get assertion errors
-  that close Mixxx. This is intended to detect errors quickly, but 
-  might be completely unexpected sometimes.
+  Set -DDEBUG_ASSERTIONS_FATAL=OFF instead of ON if you need a stable release build - without
+  assertions that close Mixxx with error message.
+  This behavior is intended to detect errors quickly, in development builds.
 
 4. Once it completes without errors, you can type `cmake --build .` so that it starts building. 
   Depending on your processor, a full build can take from 5 to 20 minutes.

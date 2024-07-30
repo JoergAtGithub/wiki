@@ -22,7 +22,7 @@ Note: These instructions are valid for Mixxx 2.3 onwards.
     
     (Windows 10 comes with 5.1) for older Windows releases it need to be downloaded here: https://docs.microsoft.com/en-us/powershell/scripting/windows-powershell/install/installing-windows-powershell?view=powershell-5.1#upgrading-existing-windows-powershell
 
-  - **Optional**: The compiler cache [sccache](https://github.com/mozilla/sccache) and the [Rust](https://www.rust-lang.org/) framework
+  - **Optional and Not Recommended**: The compiler cache [sccache](https://github.com/mozilla/sccache) and the [Rust](https://www.rust-lang.org/) framework
 
     This can accelerate repeated builds, when you often switch between different branches. But in many other cases the build without sccache, but with pre-compiled headers (PCH) instead (enabled by default), is faster.
 

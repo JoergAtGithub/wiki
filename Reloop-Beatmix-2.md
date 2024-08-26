@@ -20,7 +20,7 @@ compatible as-is with Linux, MacOS and Windows. However, on Windows, the
 manufacturer ship an ASIO low-latency driver that can be found on the
 [Manufacturer's product page](http://www.reloop.com/reloop-beatmix-4).
 
-Mapping for the [Reloop Beatmix 4](reloop_beatmix_4) should be
+Mapping for the [Reloop Beatmix 4](reloop-beatmix-4) should be
 compatible with this controller, but haven't been tested. See the
-[Reloop Beatmix 4](reloop_beatmix_4) page for the complete mapping
+[Reloop Beatmix 4](reloop-beatmix-4) page for the complete mapping
 description.

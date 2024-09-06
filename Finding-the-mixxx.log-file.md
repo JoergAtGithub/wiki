@@ -38,8 +38,8 @@ and press Enter.
     Explorer](http://support.microsoft.com/kb/865219).
 
 ### macOS
- - `~/Library/Containers/org.mixxx.mixxx/Data/Library/Application Support/Mixxx` (Mixxx 2.3)
-- `~/Library/Application Support/Mixxx` (Mixxx 2.2 and earlier)
+ - `~/Library/Containers/org.mixxx.mixxx/Data/Library/Application Support/Mixxx` (Mixxx 2.3 and newer)
+- `~/Library/Application Support/Mixxx` (Mixxx 2.2 and older)
 
 **Note**: The user library folder is hidden by default, so use one of
 the following methods to open the Mixxx folder.

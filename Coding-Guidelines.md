@@ -26,7 +26,7 @@ Mixxx will be written in this style.
 Do not send us patches that are purely cosmetic with respect to source changes -
 this is a waste of time since it does not benefit users directly.
 
-## CO and settings keys
+## CO and setting keys
 
 Newly introduced keys should use `snake_case` formatting. 
 

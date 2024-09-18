@@ -10,7 +10,7 @@ Since this is a new technique not yet used in the Mixxx code base this page shal
 ### Locking scopes
 
 The case wehere a narrow scope is mandantory is this: 
-```
+```cpp
 { // Locking scope
     std::lock_guard shared_flag_lock(mx)
     if (shared_flag)
@@ -21,7 +21,7 @@ The case wehere a narrow scope is mandantory is this:
 }
 ```
 it can become: 
-```
+```cpp
 if (std::lock_guard shared_flag_lock(mx); shared_flag)
 {
     unsafe_ping();
@@ -36,7 +36,7 @@ The later reduces netsting, but the informative extra locking scope is no longer
 We have for example this case: 
 https://github.com/mixxxdj/mixxx/blob/6b4a6f9bfd28a553e390d996662f840747c5d782/src/encoder/encoderwave.cpp#L171
 
-```
+```cpp
     int ret;
     if (!m_metaDataTitle.isEmpty()) {
         ret = sf_set_string(m_pSndfile, SF_STR_TITLE, m_metaDataTitle.toUtf8().constData());
@@ -47,7 +47,7 @@ https://github.com/mixxxdj/mixxx/blob/6b4a6f9bfd28a553e390d996662f840747c5d782/s
 ```
 
 which may make use of the if with initalizer like this
-```
+```cpp
     if (!m_metaDataTitle.isEmpty()) {
         if (int ret = sf_set_string(m_pSndfile, SF_STR_TITLE, m_metaDataTitle.toUtf8().constData()); ret != 0) {
             qWarning("libsndfile error: %s", sf_error_number(ret));
@@ -59,7 +59,7 @@ The later narrows the scope of the POD `ret`, but with no mandatory needs. This 
 In the original code, the reviewers reads the code in the execution order. They will be able to qickly reqognice that the conditional block as unlikely error path. In the new code, the exceptionl error checking code path is focussed, instead of the original step of setting the string.  
 
 This is the code after applying clang-format changes 
-```
+```cpp
     if (int ret = sf_set_string(m_pSndfile,
                 SF_STR_TITLE,
                 m_metaDataTitle.toUtf8().constData());
@@ -73,7 +73,7 @@ This is the code after applying clang-format changes
 here we have this case: 
 https://github.com/mixxxdj/mixxx/blob/6b4a6f9bfd28a553e390d996662f840747c5d782/src/encoder/encoderfdkaacsettings.cpp#L51
 
-```
+```cpp
 int EncoderFdkAacSettings::getQualityIndex() const {
     int qualityIndex = m_pConfig->getValue(
             ConfigKey(RECORDING_PREF_KEY, kQualityKey), kDefaultQualityIndex);
@@ -91,7 +91,7 @@ int EncoderFdkAacSettings::getQualityIndex() const {
 
 this may become 
 
-```
+```cpp
 int EncoderFdkAacSettings::getQualityIndex() const {
     if (int qualityIndex = m_pConfig->getValue(
                 ConfigKey(RECORDING_PREF_KEY, kQualityKey), 
@@ -114,7 +114,7 @@ Even though the coditional block ist the likely code path, we see the inversion 
 
 ### Asignment within the consition 
 
-```
+```cpp
     if (Color color = color.getColor()) {
         qDebug() << "The color is:" color:  
         return color; 
@@ -123,7 +123,7 @@ Even though the coditional block ist the likely code path, we see the inversion 
 
 This is considered as confusing by some developers. We may write it as: 
 
-```
+```cpp
     Color color = color.getColor()
     if (color) {
         qDebug() << "The color is:" color:  
@@ -132,7 +132,7 @@ This is considered as confusing by some developers. We may write it as:
 ```
 
 With the new syntax we are abel to make it explicite and probabyl less confusing: 
-```
+```cpp
     if (Color color = color.getColor(); color) {
         qDebug() << "The color is:" color:  
         return color; 
@@ -154,7 +154,7 @@ https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#es87-dont-add-redun
 
 > This rule is especially useful when a declaration is used as a condition
 
-```
+```cpp
 if (auto pc = dynamic_cast<Circle*>(ps)) { ... } // execute if ps points to a kind of Circle, good
 
 if (auto pc = dynamic_cast<Circle*>(ps); pc != nullptr) { ... } // not recommended 

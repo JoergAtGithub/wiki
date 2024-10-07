@@ -88,7 +88,7 @@ sudo update-alternatives --config java
 
 ## Step-by-Step Setup
 
-For Eclipse 2020-12
+For Eclipse 2024-09
 
 ### General:
 
@@ -107,45 +107,41 @@ For Eclipse 2020-12
     - If not go to Window -\> Show View -\> Project Explorer
     - Close Welcome Window
 
-### For CMake builds (2.3 and main):
+### For CMake builds (2.3 and newer):
 
   - Install cmake4eclipse via the Eclipse Marketplace
     - Help -\> Eclipse Marketplace...
-    - search for cmake4eclipse and press Install.
+    - search for **cmake4eclipse** and press Install.
   - Follow the install wizard and restart Eclipse
   - File -\> New -\> Project... -\> C/C++ -\> C++ Project  
     (\!**Not** File -\> New
     -\> C/C++ Project)
+    - select **Cmake4eclipse Managed Build**, click Next
     - Set Project Name to `mixxx`
     - Uncheck "Use default location"
-    - Browse to your Mixxx source folder e.g. `~/eclipse-workspace/mixxx`.
-    - Project Type: cmake4eclipse -\> Empty Project 
-    - Toolchains: CMake driven
+    - Browse to your Mixxx source folder e.g. `~/eclipse-workspace/mixxx`, click Okay, click Next
+    - Check all build configurations you think you need. You can also configure that later on, so if you don't know yet, leave the defaults options checked (Debug, Default, Release)
     - click Finish
-  - Project -\> Properties -\> C/C++ Build
-    - Switch to Behavior tab
+  - select **mixxx** in the Project Explorer
+  - Project -\> Properties -\> Cmake4eclipse Build
+    - Switch to Build Behavior tab
     - Check "Enable parallel builds" and select "Use optimal jobs"
-    - Click "Apply and Close"
-  - Project -\> Properties -\> C/C++ Build -\> Cmake4eclipse
-    - Switch to General tab
+    - Click "Apply"
+  - Project -\> Properties -\> Cmake4eclipse Build
+    - Switch to Cmake options tab
     - Set the Build Output Location to `build/${ConfigName}`  
       **Note:** if you want to build out-of-tree, i.e. `build` is not in your
       source/workspace directory, you need to use "Create.." and 'Advanced'
       -> 'Link to folder in file system' and pick the build directory.
 
     - Click "Apply"
-  - Project -\> Properties -\> C/C++ General -\> Preprocessor...  
-    _Note_: it may be possible this page is not visble (bug probably).  
-    It is not strictly necesary, though: the important flag when configuring cmake is  
-    `-DCMAKE_EXPORT_COMPILE_COMMANDS:BOOL=ON`
+  - Project -\> Properties -\> C/C++ General -\> Preprocessor...   
     - Switch to Providers tab.
-    - Verify that **only** these providers are checked 
-      - CMAKE_EXPORT_COMPILE_COMMANDS Parser     
-      - CMAKE_EXPORT_COMPILE_COMMANDS Compiler Build-ins  
-    - **Note:** at least with Eclipse 2023-06-R and newer cmake4eclipse versions these
-    providers are deprecated, i.e. not present anymore.
-    Uncheck all potentially checked providers and use only **CMake Compilation DB**.
+    - Uncheck all potentially checked providers and use only **CMake Compilation DB**.
     - Click "Apply"
+    - **Note:** It is not strictly necesary, though: when configuring cmake manually (ie. outside Eclispe), the important flag is  
+    `-DCMAKE_EXPORT_COMPILE_COMMANDS:BOOL=ON`
+    - click Apply and Close
   - Now Mixxx should build within Eclipse with "Build Project" (Hammer icon).
     - Alternative:
     - Project -\> Clean Project

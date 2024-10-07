@@ -40,10 +40,11 @@ installation from any directory and supports the symbols file mixxx.pdb.
 
 1.  Make sure you have the debug symbols installed. This is the case if you have build 
 Mixxx yourselves like described here https://github.com/mixxxdj/mixxx/wiki/compiling%20on%20linux or if you have installed a debug symbol package via your package manager. If you are using a Mixxx version installed from our Launchpad PPA, you can install
-the dbgsym package as follows (Make sure to replace `YOUR_UBUNTU_VERSION_HERE` with your Ubuntu version like `focal` and use the right ppa `mixxx`, `mixxxbetas` or `nightlies`): 
+the dbgsym package as follows.  
+**Note:** Make sure to replace `YOUR_UBUNTU_VERSION` with your Ubuntu version like `focal` and use the right ppa `mixxx`, `mixxxbetas` or `nightlies`. If you don't know the codename of your Ubuntu version execute the command `cat /etc/*-release` and look for the line that starts with `DISTRIB_CODENAME=`. The string after that is the version codename.
 
 ```
-echo "deb http://ppa.launchpad.net/mixxx/mixxx/ubuntu YOUR_UBUNTU_VERSION_HERE main/debug" | sudo tee /etc/apt/sources.list.d/mixxx-ubuntu-mixxx-YOUR_UBUNTU_VERSION_HERE.list
+echo "deb http://ppa.launchpad.net/mixxx/mixxx/ubuntu YOUR_UBUNTU_VERSION main/debug" | sudo tee /etc/apt/sources.list.d/mixxx-ubuntu-mixxx-YOUR_UBUNTU_VERSION.list
 sudo apt-get update
 sudo apt-get install mixxx-dbgsym
 ```

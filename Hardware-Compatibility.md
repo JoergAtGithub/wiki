@@ -526,9 +526,19 @@ seamless transitions between DJs.
     available used online. If the price of a device has dropped or it
     has been discontinued, please update this page.
 
-38. Needs a udev rule to configure it as a 4 input + 4 output mixer for
-    DVS - see this
-    [gist](https://gist.github.com/timnugent/ed65a79b2bd6c63788bfada3624756a4)
+38. 
+* Needs a udev rule to configure it as a 4 input + 4 output mixer for
+    DVS. When installing from your distributions repository, it should 
+    already be located at `/usr/lib/udev/rules.d/69-mixxx-usb-uaccess.rules`.
+    If not, see this [gist](https://gist.github.com/timnugent/ed65a79b2bd6c63788bfada3624756a4).  
+* Between kernel 5.4.0.33 and 5.4.0.37, Linux changed USB 
+    initialization scheme causing Xone:23C to not be detected as a 
+    4 input + 4 output mixer anymore. You need to switch back to old 
+    scheme before plugin the mixer either temporarily using 
+    `echo Y >/sys/module/usbcore/parameters/old_scheme_first` or 
+    definitely using the `usbcore.old_scheme_first=1` kernel parameter. 
+    See [this page](https://wiki.archlinux.org/title/Kernel_parameters) 
+    on how to add a parameter to your kernel.
 
 39. This device is USB class compliant, so it should work without any
     special driver. However, there is no information about anyone using

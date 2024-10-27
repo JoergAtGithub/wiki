@@ -1335,3 +1335,107 @@ MyController.playButton = function (channel, control, value, status, group) {
     }
 }
 ```
+
+## Settings API
+
+
+The Settings API is a feature in Mixxx that allows controllers to define optional or alternative behaviors. These settings are defined using XML and can be accessed through JavaScript.
+
+### Defining Settings with XML
+
+Settings are defined within the `<settings>` element, which contains one or more `<group>` elements. Each `<group>` has a `label` attribute that describes its contents. Inside each `<group>`, there can be multiple `<option>` elements.
+
+These settings will be visible in the settings windows, under the controller mapping selection. While `<group>` and its label can be used to group settings into section, `<row>` can also be used to provide hints on layout for settings widget to be grouped when relevant. 
+
+#### Example XML Definition
+
+```xml
+<settings>
+  <group label="Cosmetic">
+    <!-- ... -->
+  </group>
+</settings>
+```
+
+Each `<option>` element defines a specific setting, with attributes such as:
+
+* `variable`: The name of the setting (used to access it through JavaScript).
+* `type`: The data type of the setting. Currently supported value are, `integer`, `boolean`, `real`, `enum`, `file`, `color`.
+* `label`: A human-readable title of the setting.
+* `description`: A human-readable description of the setting. which will be displayed as tooltip.
+* `default` (except for `enum`): An default value for the setting.
+
+> [!NOTE]
+> Please note that `label` and `description` both support the marker `:hwbtn:` (e.g: `:hwbtn:SHIFT`) which may be useful to render button's name, as it does in the Mixxx manual.
+
+##### Additional attributes for the `integer` type
+
+The `integer` setting may contains 3 optional additional attributes:
+
+* `min`: A minimum value (inclusive) for the setting.
+* `max`: A maximum value (inclusive) for the setting.
+* `step`: The amount the value gets incremented or decremented with the user activates the =/- spin box button.
+
+##### Additional attributes for the `real` type
+
+The `real` setting may contains the same 3 optional additional attributes than `integer` as well as the following:
+
+* `precision`: The number of digits displayed in the decimal part when the user can edit the value in the spin box
+
+##### Additional attributes and elements for the `enum` type
+
+The `enum` setting contains further definition as part of its body. Value enumeration is made using the `<value>` element. The body will be used for the enum value, to be received in the JavaScript mapping. The following attributes may be used on `<value>`:
+
+* `label`: The user-friendly name for that value, to be displayed in the combo box.
+* `color`: The colored rectangle to display in the combobox, next to the label. No rectangle shown if unset.
+* `default`: An default value for the setting. If multiple values define this setting, the last one will take precedence. 
+
+##### Additional attributes for the `color` type
+
+The `color` setting may the following additional attributes:
+
+* `pattern`: The number of digits displayed in the decimal part when the user can edit the value in the spin box
+
+##### Additional attributes for the `file` type
+
+The `file` setting may the following additional attributes:
+
+* `pattern`: The [filter parameter](https://doc.qt.io/qt-6/qfiledialog.html#getOpenFileName). This can be used to restrict the expected file type (e.g: `"Images (*.png *.xpm *.jpg);;Text files (*.txt)"`)
+
+#### Example XML Setting
+
+```xml
+<option variable="theme" type="enum" label="Theme">
+  <value label="Classic">stock</value>
+  <value label="Advanced">advanced</value>
+</option>
+```
+
+### Accessing Settings with JavaScript
+
+The Settings API provides a `getSetting` function to access the value of a setting. This function takes the name of the setting as an argument and returns its value.
+
+#### Example JS Usage
+
+```javascript
+const theme = engine.getSetting('theme');
+console.log(theme); // Output: "stock" or "advanced"
+```
+
+### Type Definition for `getSetting` Function
+
+The `getSetting` function returns a value of type `SettingValue`, which can be one of the following:
+
+* `string`
+* `number`
+* `boolean`
+
+```javascript
+type SettingValue = string | number | boolean;
+/**
+ * Gets the value of a controller setting
+ * @param name Name of the setting (as specified in the XML file of the mapping)
+ * @returns Value of the setting, or undefined in failure case
+ */
+function getSetting(name: string): SettingValue | undefined;
+```

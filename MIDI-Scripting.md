@@ -1368,6 +1368,9 @@ Each `<option>` element defines a specific setting, with attributes such as:
 > [!NOTE]
 > Please note that `label` and `description` both support the marker `:hwbtn:` (e.g: `:hwbtn:SHIFT`) which may be useful to render button's name, as it does in the Mixxx manual.
 
+> [!IMPORTANT]
+> The setting type `file` and `color` have been introduced in version 2.6
+
 ##### Additional attributes for the `integer` type
 
 The `integer` setting may contains 3 optional additional attributes:

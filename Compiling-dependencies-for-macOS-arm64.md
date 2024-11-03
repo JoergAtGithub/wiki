@@ -9,7 +9,7 @@ These instructions are for macOS arm64 release builds, but should be easily adap
 The build process requires several common build tools. You can install these using homebrew. Follow instruction on the [homebrew website](https://brew.sh) to install homebrew. Use it to install the following packages:
 
 ```
-$ brew install automake autoconf-archive ccache nasm ninja pkg-config
+$ brew install automake autoconf-archive ccache nasm ninja pkg-config libtool
 ```
 
 Note that homebrew will install everything in ```/opt/homebrew```

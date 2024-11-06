@@ -74,18 +74,6 @@ Ubuntu Packages to install (possibly outdated) would be:
   - eclipse
   - eclipse-cdt
 
-The latest Eclipse 2018-9 requires Oracle JDK 8 This can be installed on
-Ubuntu like that:
-
-``` bash
-sudo apt-get install default-jre
-sudo add-apt-repository ppa:webupd8team/java
-sudo apt-get update
-sudo apt-get install oracle-java8-installer
-# Oracle JDK 8 is activated by default you can switch between your Java installations using
-sudo update-alternatives --config java
-```
-
 ## Step-by-Step Setup
 
 For Eclipse 2024-09

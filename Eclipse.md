@@ -101,9 +101,7 @@ For Eclipse 2024-09
     - Help -\> Eclipse Marketplace...
     - search for **cmake4eclipse** and press Install.
   - Follow the install wizard and restart Eclipse
-  - File -\> New -\> Project... -\> C/C++ -\> C++ Project  
-    (\!**Not** File -\> New
-    -\> C/C++ Project)
+  - File -\> New -\> C/C++ Project  
     - select **Cmake4eclipse Managed Build**, click Next
     - Set Project Name to `mixxx`
     - Uncheck "Use default location"

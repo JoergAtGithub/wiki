@@ -1,1 +1,3 @@
 ![Mixxx](https://avatars0.githubusercontent.com/u/1743769?s=10&v=4) This is the *Mixxx* Wiki - [Wiki Home](https://github.com/mixxxdj/mixxx/wiki) | [Website](https:///mixxx.org) | [Manual](https:///mixxx.org/manual/) | [News](https:///mixxx.org/news/)
+
+NOTE: Due to an influx of spam we were forced to make the wiki read-only. If you'd like to change a page, please file an issue on [Github](https://github.com/mixxxdj/mixxx/issues) or [Zulip](https://mixxx.zulipchat.com/) and post your changes there. Thank you. 

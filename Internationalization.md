@@ -168,11 +168,10 @@ This procedure extracts translatable strings from Mixxx's code into QT template 
   * If you are a maintainer, create a credetial file ~/.transifexrc
 ```
 [https://www.transifex.com]
-api_hostname = https://api.transifex.com
-hostname = https://www.transifex.com
-password = <password>
-token = 
-username = <username>
+api_hostname  = https://api.transifex.com
+hostname      = https://www.transifex.com
+rest_hostname = https://rest.api.transifex.com
+token         = <generate one in https://app.transifex.com/user/settings/api/>
 ``` 
 
   * Push changed *.ts template (the translation source file) to Transifex

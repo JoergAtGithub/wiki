@@ -6,7 +6,7 @@ release candidates).
 1.  [ ] Take care of the known regressions
    https://github.com/mixxxdj/mixxx/labels/regression
    Fix and merge them, or document them in the CHANGELOG? Release Notes.  
-2.  [ ] Release 2.5.x 
+2.  [x] Release 2.4.x 
 3.  [ ] "Close" the 2.5 branch by target all 2.5 PRs to 2.6 
 4.  [ ] Update translations
     1.   [ ] Push and pull translations for Mixxx as described here:

@@ -24,7 +24,10 @@ Main benefits:
 - Align with music theory
 
 Main flaws:
-- Imperfect track such as live performance will need to have compensation grid with irrelevant BPM, translating the human imperfection
+- Imperfect track such as live performance will need to have compensation grid with irrelevant BPM, translating the human imperfection.
+
+  A padding region (to translate human imperfection often present on non electronic music) will need a dummy BPM which will impact deck synching since this will add an extra beat. For example say you have a two 16-bars at 120 BPM on deck A, and a track on deck B sync'ed, with a slight imperfection, say a 1/10 of a beat beetween the two bars. With padding beats, you will still have ~32 beats, and thanks the our "nearest beat" sync system, synching with another track will keep it align to the other decks's 16-bar, making the imperfection almost inaudible. Without that padding beat, you will have 33 beats (32 beats at 120BPM and a beat at 1200BPM), and thus the track will be off by one beat. When you listen to it, track B will suddenly get a BPM of 1200 for half a second in order to get stay align with that "dummy beat" and the second bear will be off by one. 
+
 
 In technical terms, it means that a grid is defined by:
 - its start

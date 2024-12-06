@@ -29,6 +29,7 @@ release candidates).
      *   [redaktion@remise3.de](mailto:redaktion@remise3.de)
      *   [info@dj-lab.de](mailto:info@dj-lab.de)
      *   https://cdm.link/submit-newswire-article/
+     *   https://djworx.com/contact-djworx/
 7. [ ] Update files from Git log 
     1. credits in `src/dialog/dlgabout.cpp`
     2. CHANGELOG.md

@@ -7,6 +7,8 @@ Glossary
 
 - **Grid marker**: The start of a beat grid or the first beat of that new grid
 - **Padding beat**: A space or dummy beat between two valid BPM grids
+- **Overshoot**: A beat which is played **after** where it should be due to human imperfection
+- **Undershoot**: A beat which is played **before** where it should be due to human imperfection
 
 # Design 1: theory meeting the practice
 
@@ -26,7 +28,30 @@ Main benefits:
 Main flaws:
 - Imperfect track such as live performance will need to have compensation grid with irrelevant BPM, translating the human imperfection.
 
-  A padding region (to translate human imperfection often present on non electronic music) will need a dummy BPM which will impact deck synching since this will add an extra beat. For example say you have a two 16-bars at 120 BPM on deck A, and a track on deck B sync'ed, with a slight imperfection, say a 1/10 of a beat beetween the two bars. With padding beats, you will still have ~32 beats, and thanks the our "nearest beat" sync system, synching with another track will keep it align to the other decks's 16-bar, making the imperfection almost inaudible. Without that padding beat, you will have 33 beats (32 beats at 120BPM and a beat at 1200BPM), and thus the track will be off by one beat. When you listen to it, track B will suddenly get a BPM of 1200 for half a second in order to get stay align with that "dummy beat" and the second bear will be off by one. 
+<details>
+  <summary>previous long explanation</summary>
+
+> A padding region (to translate human imperfection often present on non electronic music) will need a dummy BPM which will impact deck synching since this will add an extra beat. For example say you have a two 16-bars at 120 BPM on deck A, and a track on deck B sync'ed, with a slight imperfection, say a 1/10 of a beat beetween the two bars. With padding beats, you will still have ~32 beats, and thanks the our "nearest beat" sync system, synching with another track will keep it align to the other decks's 16-bar, making the imperfection almost inaudible. Without that padding beat, you will have 33 beats (32 beats at 120BPM and a beat at 1200BPM), and thus the track will be off by one beat. When you listen to it, track B will suddenly get a BPM of 1200 for half a second in order to get stay align with that "dummy beat" and the second bear will be off by one. 
+
+</details>
+
+Here are animations which illustrate the long explanation before:
+
+> [!NOTE]
+> The triangles represent the actual beat (e.g a kick drum) 
+
+- In case of an undershoot, the transport is okay, but the bar/downbeat will have to appear incorrect  
+
+  ![design_1_offset_undershoot](https://github.com/user-attachments/assets/3189780c-fe71-4f83-bcb2-f9e9f1a0841e)
+- In case of an overshoot, the follower's track BPM will increase drastically during the beat offset and will let to an off-by-one problem
+
+  ![design_1_offset_overshoot](https://github.com/user-attachments/assets/d62aaf51-895d-44d3-aa7a-3627eabc5f8d)
+
+  Note that the alternative of scaling the last bar to "drawn" the imperfection on 4 beats (which is what Serato tutorial are suggestion AFAIU) will still lead to poor audio result
+
+  ![design_1_scale_bar](https://github.com/user-attachments/assets/670115e6-e8b1-4511-9e68-32f6ca848221)
+
+
 
 
 In technical terms, it means that a grid is defined by:
@@ -47,6 +72,20 @@ Main benefits:
 
 Main flaws:
 - Non round number of beat will appear as padding beat, which may be confusing for users who want Mixxx to behave in a theory perfect way
+
+In order to help comparing with the flaws of Design 1, here are animations which illustrate the different usecases:
+
+> [!NOTE]
+> The triangles represent the actual beat (e.g a kick drum) 
+
+- In case of an undershoot
+
+  ![design_2_offset_undershoot](https://github.com/user-attachments/assets/d5e30b99-2804-4e56-a858-e5ac343092a2)
+
+
+- In case of an overshoot
+
+  ![design_2_offset_overshoot](https://github.com/user-attachments/assets/956e77c8-e0a6-40a1-b867-56beb1999a4c)
 
 
 In technical terms, it means that a grid is defined by:

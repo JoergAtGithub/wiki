@@ -119,7 +119,7 @@ release candidates).
         -- Boost Post $$ (optional)
     2.  [ ] Twitter
     3.  [ ] LinkedIn Connected DJs group
-    4.  [ ] Reddit r/DJs, r/Mixxx, r/linuxaudio, r/linux
+    4.  [ ] Reddit r/DJs, r/Mixxx, r/linuxaudio, r/linux, r/Beatmatch
     5.  [ ] DJTechTools Forums
     6.  [ ] TranceAddict Forums
     7.  [ ] omgubuntu.co.uk

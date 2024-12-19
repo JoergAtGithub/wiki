@@ -8,8 +8,8 @@ release candidates).
    Fix and merge them, or document them in the CHANGELOG? Release Notes.  
 2.  [x] Release 2.4.x 
 3.  [ ] "Close" the 2.5 branch by target all 2.5 PRs to 2.6 
-4.  [ ] Update translations
-    1.   [ ] Push and pull translations for Mixxx as described here:
+4.  [x] Update translations
+    1.   [x] Push and pull translations for Mixxx as described here:
         [Internationalization](Internationalization)
 5. [ ] Take release screenshots for press page and blog post.
     1.  [ ] Deere, LateNight, Shade, Tango

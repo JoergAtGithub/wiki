@@ -21,15 +21,15 @@ release candidates).
         1.  [ ] macOS can produce particularly pretty drop-shadow
             screenshots with `Shift-Command-4` followed by the spacebar,
             then click the window to screenshot.
-6. [ ] Send out pre-announcement to the DJ press (to ensure, that they have enough time to write articles and record review videos)<br>
+6. [x] Send out pre-announcement to the DJ press (to ensure, that they have enough time to write articles and record review videos)<br>
     Public press contacts are:
      *   [press@wearecrossfader.co.uk](mailto:press@wearecrossfader.co.uk)
      *   [editor@djtechtools.com](mailto:editor@djtechtools.com)
      *   [info@digitaldjtips.com](mailto:info@digitaldjtips.com)
      *   [redaktion@remise3.de](mailto:redaktion@remise3.de)
      *   [info@dj-lab.de](mailto:info@dj-lab.de)
-     *   https://cdm.link/submit-newswire-article/
-     *   https://djworx.com/contact-djworx/
+     *   https://cdm.link/submit-newswire-article/ [editor@createdigitalmusic.com](mailto:editor@createdigitalmusic.com)
+     *   https://djworx.com/contact-djworx/ [contact@djworx.com](mailto:contact@djworx.com)
 7. [ ] Update files from Git log 
     1. credits in `src/dialog/dlgabout.cpp`
     2. CHANGELOG.md

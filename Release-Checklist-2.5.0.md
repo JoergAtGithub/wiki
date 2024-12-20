@@ -30,6 +30,9 @@ release candidates).
      *   [info@dj-lab.de](mailto:info@dj-lab.de)
      *   https://cdm.link/submit-newswire-article/ [editor@createdigitalmusic.com](mailto:editor@createdigitalmusic.com)
      *   https://djworx.com/contact-djworx/ [contact@djworx.com](mailto:contact@djworx.com)
+     *   https://djmag.com/info/editorial [mick.wilson@djmag.com](mick.wilson@djmag.com)
+     *   [redaktion@djmag.de](redaktion@djmag.de)
+     *   https://mixmag.net/page/contact-mixmag [megan@mixmagmedia.com](megan@mixmagmedia.com) [patrick@mixmagmedia.com](patrick@mixmagmedia.com)
 7. [ ] Update files from Git log 
     1. credits in `src/dialog/dlgabout.cpp`
     2. CHANGELOG.md

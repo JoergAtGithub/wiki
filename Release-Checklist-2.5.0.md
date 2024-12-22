@@ -33,16 +33,16 @@ release candidates).
      *   https://djmag.com/info/editorial [mick.wilson@djmag.com](mick.wilson@djmag.com)
      *   [redaktion@djmag.de](redaktion@djmag.de)
      *   https://mixmag.net/page/contact-mixmag [megan@mixmagmedia.com](megan@mixmagmedia.com) [patrick@mixmagmedia.com](patrick@mixmagmedia.com)
-7. [ ] Update files from Git log 
+7. [x] Update files from Git log 
     1. credits in `src/dialog/dlgabout.cpp`
     2. CHANGELOG.md
-8. [ ] Verify 
-    1. [ ] the latest version of https://github.com/mixxxdj/manual/tree/2.5 is published to <https://mixxx.org/manual/2.5/>
-    2. [ ] copyright year and version number in LICENSE
-    3. [ ] .github/workflows/build.yml and tools/deploy.py
-    4. [ ] Check Debian Changelog and PPA destination 
-9. [ ] Build release candidates:
-    1.  [ ] CMakeLists.txt Update VERSION and MIXXX_VERSION_PRERELEASE
+8. [x] Verify 
+    1. [x] the latest version of https://github.com/mixxxdj/manual/tree/2.5 is published to <https://mixxx.org/manual/2.5/>
+    2. [x] copyright year and version number in LICENSE
+    3. [x] .github/workflows/build.yml and tools/deploy.py
+    4. [x] Check Debian Changelog and PPA destination 
+9. [x] Build release candidates:
+    1.  [x] CMakeLists.txt Update VERSION and MIXXX_VERSION_PRERELEASE
 10. [ ] Perform QA testing with all release candidate binaries (Smoke Test) 
     1. [ ] macOS Intel
     2. [ ] macOS ARM

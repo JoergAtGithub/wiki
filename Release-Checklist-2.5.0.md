@@ -3,7 +3,7 @@
 This process is followed when it is time for a release (after betas and
 release candidates).
 
-1.  [ ] Take care of the known regressions
+1.  [x] Take care of the known regressions
    https://github.com/mixxxdj/mixxx/labels/regression
    Fix and merge them, or document them in the CHANGELOG? Release Notes.  
 2.  [x] Release 2.4.x 

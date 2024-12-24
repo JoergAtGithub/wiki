@@ -7,7 +7,7 @@ release candidates).
    https://github.com/mixxxdj/mixxx/labels/regression
    Fix and merge them, or document them in the CHANGELOG? Release Notes.  
 2.  [x] Release 2.4.x 
-3.  [ ] "Close" the 2.5 branch by target all 2.5 PRs to 2.6 
+3.  [X] Close the 2.5.0 Milestone 
 4.  [x] Update translations
     1.   [x] Push and pull translations for Mixxx as described here:
         [Internationalization](Internationalization)
@@ -48,14 +48,14 @@ release candidates).
     2. [ ] macOS ARM
     3. [ ] Ubuntu
     4. [ ] Windows
-11. [ ] Add a git tag with a GPG signature 
-    1. [ ] Update CHANGELOG.md and Replace (unreleased) with the current Date and add a commit "Release 2.4.0"
-    2. [ ] ```git tag -s 2.5.0 -m "Mixxx 2.5.0"```  (double check identity / email you are using to tag!)
-    3. [ ] ```git push --tags upstream 2.5.0```
-    4. [ ] This can be done to a commit after it has been pushed or merged
+11. [X] Add a git tag with a GPG signature 
+    1. [X] Update CHANGELOG.md and Replace (unreleased) with the current Date and add a commit "Release 2.4.0"
+    2. [X] ```git tag -s 2.5.0 -m "Mixxx 2.5.0"```  (double check identity / email you are using to tag!)
+    3. [X] ```git push --tags upstream 2.5.0```
+    4. [X] This can be done to a commit after it has been pushed or merged
         from the release candidate PR, so wait until you're sure you're ready to tag the
         release commit.
-    4. [ ] **Once pushed, a tag is forever. Never delete a tag from a
+    4. [X] **Once pushed, a tag is forever. Never delete a tag from a
         remote.**
 12. [ ] Verify release binaries are available
     1. [ ] https://downloads.mixxx.org/releases/2.5.0/

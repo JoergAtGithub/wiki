@@ -23,3 +23,24 @@ https://github.com/mixxxdj/mixxx/wiki/Bugfix-Workflow
 
 We offer two projects: 
 
+### Key Colors for Rate Slider
+
+The Mixxx Rate Slider can change a track's key (when Keylock is off).
+This project will add color-coded hints along the slider to show the
+key the track will shift to at different slider positions.
+
+* Mentor: @danferns
+* Skills: First year programming
+
+### Key Tuning
+
+Mixxx does not show tuning information of tracks, which makes harmonic mixing difficult in case of non 440 Hz tuning.
+The project will integrate a tuning detector and show tuning information in the library.
+
+* Mentor: @daschuer
+* Skills: First year programming and SQL
+
+### Individual Project 
+
+In additionyou may offer your own project or select one or two of these projects:
+https://github.com/mixxxdj/mixxx/labels/hackathon

@@ -16,8 +16,8 @@
 If you are interested go ahead and get in contact with us via a **new** topic in our [Introduce Yourself](https://mixxx.zulipchat.com/#narrow/stream/109123-introduce-yourself) Zulip stream. 
 
 For detailed information on WOC consult 
-https://winterofcode.tech/
-Workflow link 
+https://winterofcode.tech/ and
+https://github.com/mixxxdj/mixxx/wiki/Bugfix-Workflow
 
 ## This Year (2025)
 

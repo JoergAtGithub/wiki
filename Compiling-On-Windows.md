@@ -7,7 +7,7 @@ Note: These instructions are valid for Mixxx 2.3 onwards.
 
 ## Programs to install
 
-  - [Visual Studio 2022 Community Edition](Visual%20Studio%20Community) or the Visual Studio 2022 Build Tools.
+  - [Visual Studio 2022 Community Edition](Visual-Studio-Community.md) or the Visual Studio 2022 Build Tools.
 
     * 'Visual Studio 2019' and 'Visual Studio 2017' are **too old** for building Mixxx, but only because the CMake version that comes with it is too old.
     * 'Visual Studio Code' is **not suitable** for building Mixxx on Windows!
@@ -32,7 +32,7 @@ Note: These instructions are valid for Mixxx 2.3 onwards.
 
 ## Download Mixxx's source code
 
-If you want to compile Mixxx, you'll need to download the source code. Source archives for releases are on [downloads.mixxx.org](https://downloads.mixxx.org/), but if you want to contribute to Mixxx, we recommend forking the project. Check out [Set up Git](https://github.com/mixxxdj/mixxx/wiki/Using%20Git#set-up-git) to get started.
+If you want to compile Mixxx, you'll need to download the source code. Source archives for releases are on [downloads.mixxx.org](https://downloads.mixxx.org/), but if you want to contribute to Mixxx, we recommend forking the project. Check out [Set up Git](https://github.com/mixxxdj/mixxx/wiki/Using-Git.md#set-up-git) to get started.
 
 ## Acquire Mixxx dependencies
 

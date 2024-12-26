@@ -551,7 +551,7 @@ libFLAC requires [The Netwide Assembler](http://www.nasm.us/) to build.
 
 ### Preparation
 
-1.  Build libOGG ([see above](#libogg))
+1.  Build libOGG ([see-above](.md#libogg))
 2.  [Download](http://sourceforge.net/projects/flac/files/flac-src/) the
     FLAC source and extract it.
 

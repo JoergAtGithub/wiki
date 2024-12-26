@@ -13,7 +13,7 @@ details](https://code.launchpad.net/~mixxxdevelopers/mixxx/release-1.6.2)
     here](sound%20file%20testing%20matrix)
   - Test everything in different versions of Windows, particularly
     Windows-only bugs [Compiling on Windows](compiling_on_windows)
-  - [Test MIDI mappings](Supported%20Controller%20Test%20Grid) for
+  - [Test MIDI mappings](Supported-Controller-Test-Grid.md) for
     correct functionality for as many currently supported controllers as
     we can
   - Update the [Wikipedia entry](http://en.wikipedia.org/wiki/Mixxx)

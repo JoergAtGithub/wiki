@@ -11,4 +11,4 @@ The keys of existing controls use different naming conventions, namely
   - ***snake\_case***: `beatjump_forward`, `cue_indicator`
 
 Newly added controls should use the ***snake\_case*** naming
-convention (see [GitHub PR \#2118 - Naming conventions for new controls](https://github.com/mixxxdj/mixxx/pull/2118#issuecomment-498126595)).
+convention (see-[GitHub-PR-\#2118---Naming-conventions-for-new-controls](https://github.com/mixxxdj/mixxx/pull/2118.md#issuecomment-498126595)).

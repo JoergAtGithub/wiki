@@ -3,7 +3,7 @@ straightforward on Linux. The steps below outline what to do. If you need help a
 
 # Download Mixxx source code
 
-If you want to compile Mixxx, you'll need to download the source code. Source archives for releases are on [downloads.mixxx.org](https://downloads.mixxx.org/), but if you want to contribute to Mixxx, we recommend forking the project. Check out [Set up Git](https://github.com/mixxxdj/mixxx/wiki/Using%20Git#set-up-git) to get started.
+If you want to compile Mixxx, you'll need to download the source code. Source archives for releases are on [downloads.mixxx.org](https://downloads.mixxx.org/), but if you want to contribute to Mixxx, we recommend forking the project. Check out [Set up Git](https://github.com/mixxxdj/mixxx/wiki/Using-Git.md#set-up-git) to get started.
 
 # Install build dependencies
 
@@ -212,7 +212,7 @@ assertions are violated or to abort Mixxx immediately. This ensures that message
 
 ## Non-System Qt
 
-Append `-DCMAKE_PREFIX_PATH=/path/to/qt/install` (where `/path/to/qt/install` is the path you used when [building Qt](compiling_on_linux#non-system_qt)) to the cmake configure command to instruct cmake to prefer the Qt version from that path.
+Append `-DCMAKE_PREFIX_PATH=/path/to/qt/install` (where-`/path/to/qt/install`-is-the-path-you-used-when-[building-Qt](compiling_on_linux.md#non-system_qt)) to the cmake configure command to instruct cmake to prefer the Qt version from that path.
 
 # Mixxx <= 2.2
 

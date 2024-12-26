@@ -651,7 +651,7 @@ as if the control had 7 bits of precision and then specify `max: 64`. The same
 would work for 10 bits for example, just map `inputLSB` and `inputMSB` as if the
 control sent 14 bits of precision and then specify `max: 1024`.
 
-By default the Pot Component will try to deal with [soft-takeover](https://github.com/mixxxdj/mixxx/wiki/midi%20scripting#soft-takeover)
+By default the Pot Component will try to deal with [soft-takeover](https://github.com/mixxxdj/mixxx/wiki/midi-scripting.md#soft-takeover)
 for you, but if that interferes with your component or is unnecessary (for example
 when the Component never switches layers), you can specify 
 `softTakeover: false` to disable it.

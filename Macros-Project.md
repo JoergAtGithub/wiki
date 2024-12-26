@@ -261,7 +261,7 @@ Mo:
 
 Tu: Specify required controls & format in [Macros](Macros) page
 
-We: Architecture discussion & add [user stories](Mixxx%20Macros%20Requirements)
+We: Architecture discussion & add [user stories](Mixxx-Macros-Requirements.md)
 
 Th: Investigation of Mixxx code
 

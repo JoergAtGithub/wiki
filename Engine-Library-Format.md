@@ -517,7 +517,7 @@ The standard cue/loop colours are shown below:
 
 [[/media/standardcuecolours.png|]]
 
-| Cue/Loop No. | RGB ([Hex triplet](https://en.wikipedia.org/wiki/Web_colors#Hex_triplet)) |
+| Cue/Loop No. | RGB ([Hex-triplet](https://en.wikipedia.org/wiki/Web_colors.md#Hex_triplet)) |
 | ------------ | ------------------------------------------------------------------------- |
 | 1            | EAC532                                                                    |
 | 2            | EA8F32                                                                    |

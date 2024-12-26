@@ -9,7 +9,7 @@ and faders when the DJ application starts) or completely missing. In
 these cases, you'll need to reverse engineer how the hardware
 communicates with other DJ software to get it working with Mixxx.
 
-The [MIDI Crash Course](MIDI%20Crash%20Course) page has more background
+The [MIDI Crash Course](MIDI-Crash-Course.md) page has more background
 information about interpreting MIDI messages.
 
 ## Observing MIDI/HID messages with Mixxx
@@ -45,7 +45,7 @@ information about interpreting MIDI messages.
     `
 
 In this instance, it's sending 0xB0 (which when we look at the
-[table](MIDI%20crash%20course#midi%20messages), we see that it's a
+[table](MIDI-crash-course.md#midi%20messages), we see that it's a
 Control Change message on channel 1). We also see that the second byte,
 0x02 in this case, is the control number that was moved, and the third
 is the value or position of that control, which you can ignore for the

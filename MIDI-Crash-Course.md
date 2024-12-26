@@ -83,7 +83,7 @@ them. To convert from decimal to hex, [use
 this](http://www.mathsisfun.com/binary-decimal-hexadecimal-converter.html).
 
 (Note that in order to use System Exclusive messages, you will need
-[MIDI Scripting](MIDI%20Scripting).)
+[MIDI Scripting](MIDI-Scripting.md).)
 
 ## Typical MIDI signals used by DJ controllers
 

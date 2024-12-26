@@ -78,7 +78,7 @@ The following projects were accepted for Google Summer of Code 2020:
   - [Measures, Downbeats, Bars and
     Phrases](measures_downbeats_bars_and_phrases) by Harshit
     Maurya (hacksdump)
-  - [Mixxx Macros](Mixxx%20Macros) by Janek (xerus2000)
+  - [Mixxx Macros](Mixxx-Macros.md) by Janek (xerus2000)
 
 ### 2019
 
@@ -97,9 +97,9 @@ Mixxx was accepted for Google Summer of Code 2018\!
 
 The following projects were accepted for Google Summer of Code 2018:
 
-  - [Live metadata output](Live%20metadata%20output) by David Hernández
+  - [Live metadata output](Live-metadata-output.md) by David Hernández
     Morales (davidhm) 
-  - [Effects customization](Effects%20customization) by Kshitij Gupta 
+  - [Effects customization](Effects-customization.md) by Kshitij Gupta 
 
 ### 2017
 
@@ -109,9 +109,9 @@ Mixxx is back in Google Summer of Code for 2017\!
 
 The following projects were accepted for Google Summer of Code 2017:
 
-  - [Crate Enhancements](Crate%20Enhancements) by Anastasis Grammenos
+  - [Crate Enhancements](Crate-Enhancements.md) by Anastasis Grammenos
     (gramanas) 
-  - [Microphone effects chain](Microphone%20effects%20chain) by Aris
+  - [Microphone effects chain](Microphone-effects-chain.md) by Aris
     Stathakis 
   - [Multi-broadcasting](Multi-broadcasting) by Stéphane Lepin (Palakis)
 
@@ -119,8 +119,8 @@ The following projects were accepted for Google Summer of Code 2017:
 
 The following projects were accepted for Google Summer of Code 2016:
 
-  - [Key mapping GUI](Key%20mapping%20GUI) by Jordi Ortolá Ankum
-  - [Library Layout Redesign](Library%20Layout%20Redesign) by Joan Marcè
+  - [Key mapping GUI](Key-mapping-GUI.md) by Jordi Ortolá Ankum
+  - [Library Layout Redesign](Library-Layout-Redesign.md) by Joan Marcè
     Igual
   - [MIDI Sequence Recording and
     Playback](MIDI%20Sequence%20Recording%20and%20Playback) by Anirudh
@@ -154,8 +154,8 @@ Mixxx was an accepted mentoring organization for Google Summer of Code,
 
 The following projects were accepted for Google Summer of Code 2014:
 
-  - [Cover Art Support](Cover%20Art%20Support) by Marcos Cardinot
-  - [Extending the Effects Engine](Extending%20the%20Effects%20Engine)
+  - [Cover Art Support](Cover-Art-Support.md) by Marcos Cardinot
+  - [Extending the Effects Engine](Extending-the-Effects-Engine.md)
     by Nicu Badescu
 
 ### 2013
@@ -226,7 +226,7 @@ The following projects were accepted for Google Summer of Code 2008:
   - [Stability and Crash
     Recovery](gsoc2008_stability_and_crash_recovery) by Zach Elko
 
-Additional [SoC Student Info](SoC%20Student%20Info) from GSoC 2008
+Additional [SoC Student Info](SoC-Student-Info.md) from GSoC 2008
 
 ### 2007
 

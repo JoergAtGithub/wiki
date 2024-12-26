@@ -42,8 +42,8 @@ files, it can be difficult to understand how the code fits together.
 
 ## Using IDEs
 
-  - Set up [Visual Studio Community](Visual%20Studio%20Community)
-  - Set up [Visual Studio Code](Visual%20Studio%20Code)
+  - Set up [Visual Studio Community](Visual-Studio-Community.md)
+  - Set up [Visual Studio Code](Visual-Studio-Code.md)
   - Set up [Eclipse](eclipse)
   - Set up [KDevelop](KDevelop)
   - Set up [Emacs](emacs)

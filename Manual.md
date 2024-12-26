@@ -17,7 +17,7 @@
 
 # Table of Contents
 
-1.  [Beginner's Guide](Beginner's%20Guide)
+1.  [Beginner's Guide](Beginner's-Guide.md)
 2.  [Introduction](manual#introduction)
 3.  [Installation](manual#installation)
     1.  [Windows](manual#windows)
@@ -78,7 +78,7 @@ Linux users can often find Mixxx included with their favourite
 distribution. For example, **Ubuntu** users can install Mixxx through
 the *Applications-\>Add/Remove...* menu item. If Mixxx is not packaged
 for your distribution, you can compile Mixxx from scratch. For details
-on compiling Mixxx, see: [Compiling on Linux](Compiling%20on%20Linux)
+on compiling Mixxx, see: [Compiling on Linux](Compiling-on-Linux.md)
 
 ## OS X
 

@@ -10,8 +10,8 @@ contribute to Mixxx, especially if you have some technical skill but are
 not familiar with C++.
 
 Controller mappings are written in
-[XML](MIDI%20controller%20mapping%20file%20format) and
-[JavaScript](MIDI%20scripting). While mappings can be made with only
+[XML](MIDI-controller-mapping-file-format.md) and
+[JavaScript](MIDI-scripting.md). While mappings can be made with only
 XML, most controllers will require some JavaScript for a complete
 mapping. Some controllers will require a mapping mostly or completely
 written in JavaScript. Both XML and JavaScript are fairly
@@ -58,7 +58,7 @@ base branch instead (run `git checkout -b new_branch_name main`).
 
 Make changes to your mapping and commit them when your changes work.
 Before making any commits, configure git to use your name and email in
-your commits. See the [Using Git](Using%20Git) wiki page for more
+your commits. See the [Using Git](Using-Git.md) wiki page for more
 information. Please prefix your git commit messages with the name of
 your controller so others can easily tell what the commits are for after
 your changes are merged. For example, a good commit message could look
@@ -151,7 +151,7 @@ Controller documentation in the manual should *not* include:
 
 If you don't plan to get your mapping included in Mixxx, you can list your
 controller on the [DJ Hardware
-Guide](hardware%20compatibility#mappings%20in%20development) and start a wiki
+Guide](hardware-compatibility.md#mappings%20in%20development) and start a wiki
 page for your controller instead. To make a wiki page, put double brackets
 around the name of your controller in the Hardware Guide, for example
 \[\[My Controller\]\]. Save your edit to the Hardware Guide page, then
@@ -276,8 +276,8 @@ selected by the user in the preferences. If the user does not want
 blinking LEDs, they can choose a cue mode in Mixxx's preferences that
 doesn't have them.
 
-The [Components JS\#PlayButton](Components%20JS#PlayButton) and
-[Components JS\#CueButton](Components%20JS#CueButton) objects in
+The [Components JS\#PlayButton](Components-JS.md#PlayButton) and
+[Components JS\#CueButton](Components-JS.md#CueButton) objects in
 Components JS can take care of these details for you.
 
 ### Level meter LEDs
@@ -327,7 +327,7 @@ those to distinguish between a sampler that is loaded but not playing, a
 sampler that is playing, and (if you have enough colors available) a
 sampler that is playing and looping.
 
-The [Components JS\#SamplerButton](Components%20JS#SamplerButton) object
+The [Components JS\#SamplerButton](Components-JS.md#SamplerButton) object
 in Components JS will can take care of these details for you a
 
 ### Touch strips
@@ -373,7 +373,7 @@ signals for these functions should *not* be mapped to the software gains
 in Mixxx. Unfortunately, there is no reliable, cross-platform way for
 Mixxx to access the controls accessible to the OS' mixer program, so
 these controls cannot be mapped to control the sound card. Users should
-be directed to the [operating system mixer](operating%20system%20mixer)
+be directed to the [operating system mixer](operating-system-mixer.md)
 wiki page for instructions on how to adjust their output levels.
 Although this is less convenient than mapping the software gains in
 Mixxx, it makes a substantial difference to the sound quality users will

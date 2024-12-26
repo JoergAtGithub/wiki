@@ -206,7 +206,7 @@ used when writing messages describing your commits:
 Running `git status` will show which files have changes that have not
 been committed. Running `git diff` will show a color coded diff
 comparing your uncommitted changes to the last commit made on that
-branch. [\#GUI Tools](#GUI%20Tools) are helpful for this. When working
+branch. [\#GUI Tools](#GUI-Tools.md) are helpful for this. When working
 on code, you may end up trying some changes that you do not end up
 needing. Reviewing your own code is helpful for making sure you only
 commit the changes that are needed.

@@ -8,48 +8,48 @@ page.
 
   - [Registering MIDI input handlers from
     JavaScript](Registering%20MIDI%20input%20handlers%20from%20JavaScript)
-  - [Controller Preferences](Controller%20Preferences)
-  - [Mixxx Init Refactor](Mixxx%20Init%20Refactor)
-  - [Controller Script Modules](Controller%20Script%20Modules)
+  - [Controller Preferences](Controller-Preferences.md)
+  - [Mixxx Init Refactor](Mixxx-Init-Refactor.md)
+  - [Controller Script Modules](Controller-Script-Modules.md)
   - [hid\_device\_api](hid_device_api)
-  - [Revamped Control System](Revamped%20Control%20System)
-  - [Skinning Engine](Skinning%20Engine)
-  - [DVS mode](DVS%20mode)
-  - [OSC Backend](OSC%20Backend)
-  - [Multi-channel file mixing](Multi-channel%20file%20mixing)
-  - [Modifier System](Modifier%20System)
+  - [Revamped Control System](Revamped-Control-System.md)
+  - [Skinning Engine](Skinning-Engine.md)
+  - [DVS mode](DVS-mode.md)
+  - [OSC Backend](OSC-Backend.md)
+  - [Multi-channel file mixing](Multi-channel-file-mixing.md)
+  - [Modifier System](Modifier-System.md)
   - [nonblockingdb\_status](nonblockingdb_status)
-  - [Loop Recorder](Loop%20Recorder)
+  - [Loop Recorder](Loop-Recorder.md)
   - [Timing](Timing)
   - [Touch](Touch)
-  - [Cues and loops 2.0](Cues%20and%20loops%202.0)
+  - [Cues and loops 2.0](Cues-and-loops-2.0.md)
   - [OSC-Client](OSC-Client)
-  - [Ctlra Support](Ctlra%20Support)
-  - [Auto DJ Cues](Auto%20DJ%20Cues)
-  - [Beat and Bar Edit Workflow](Beat%20and%20Bar%20Edit%20Workflow)
+  - [Ctlra Support](Ctlra-Support.md)
+  - [Auto DJ Cues](Auto-DJ-Cues.md)
+  - [Beat and Bar Edit Workflow](Beat-and-Bar-Edit-Workflow.md)
 
 ## Implemented Specifications
 
   - [Looping](Looping)
-  - [Configurable Cue Behaviour](Configurable%20Cue%20Behaviour)
-  - [Code Organization and Cleanup](Code%20Organization%20and%20Cleanup)
-  - [Library Rewrite Using SQLite](Library%20Rewrite%20Using%20SQLite)
+  - [Configurable Cue Behaviour](Configurable-Cue-Behaviour.md)
+  - [Code Organization and Cleanup](Code-Organization-and-Cleanup.md)
+  - [Library Rewrite Using SQLite](Library-Rewrite-Using-SQLite.md)
   - [Library Metadata Rewrite using
     TagLib](Library%20Metadata%20Rewrite%20using%20TagLib)
   - [Beatloops](Beatloops) as well as quantization for setting loops,
     cues and hotcues
   - [Aubio (misnamed Beat
     Juggling)](Aubio%20\(misnamed%20Beat%20Juggling\))
-  - [Single-Deck Vinyl Control](Single-Deck%20Vinyl%20Control)
-  - [N-Deck Support](N-Deck%20Support)
-  - [Effects Framework](Effects%20Framework)
+  - [Single-Deck Vinyl Control](Single-Deck-Vinyl-Control.md)
+  - [N-Deck Support](N-Deck-Support.md)
+  - [Effects Framework](Effects-Framework.md)
 
 ## Abandoned Specifications
 
-  - [Waveform Thread Refactor](Waveform%20Thread%20Refactor)
+  - [Waveform Thread Refactor](Waveform-Thread-Refactor.md)
   - [Play queue and Library Improvements
     Proposals](playqueue_and_library_improvements_proposals)
-  - [SoundSource Refactor/Merge](SoundSource%20Refactor/Merge)
+  - [SoundSource Refactor/Merge](SoundSource-Refactor/Merge.md)
 
 ## Good Intro Projects
 

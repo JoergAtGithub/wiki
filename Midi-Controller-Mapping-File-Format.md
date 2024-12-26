@@ -5,7 +5,7 @@ MIDI messages from a controller into commands that Mixxx understands.
 **The easiest way to create a new MIDI preset is by using the MIDI
 Learning Wizard** in the *Preferences \> Controllers*. This will
 generate an XML file located in the [user controller mapping
-folder](controller%20mapping%20file%20locations#user%20controller%20mapping%20folder).
+folder](controller-mapping-file-locations.md#user%20controller%20mapping%20folder).
 You can then modify this XML file it creates (or any of the ones that
 ship with Mixxx or found on [the
 forum](http://mixxx.org/forums/viewforum.php?f=7)) using the information
@@ -99,13 +99,13 @@ MIDI signal controls. The [Mixxx Controls](mixxxcontrols) page lists the
 available values for these group and key elements.
 
 The \<status\> and \<midino\> elements define the MIDI signal that Mixxx
-will listen for. See the [MIDI Crash Course](MIDI%20Crash%20Course) for
+will listen for. See the [MIDI Crash Course](MIDI-Crash-Course.md) for
 a brief introduction to MIDI signals.
 
 ### Pitch controls
 
 Some controllers send messages with a status byte of `0xEn` which, per
-the MIDI standard (see the [MIDI Crash Course](MIDI%20Crash%20Course),)
+the MIDI standard (see the [MIDI Crash Course](MIDI-Crash-Course.md),)
 are followed by two value bytes in little-endian format. These are
 usually used for pitch sliders or pitch wheels. To map these controls,
 do the same as above but omit the `<midino>` element.
@@ -125,7 +125,7 @@ XML, write:
   - **Normal**: No modifications, MIDI\_NOTE\_OFF or value == 0 is used
     as "released" and all other values as "pressed" 
   - **Script-Binding**: Bind to a MIDI script function given in the
-    "key" tag. (See [MIDI Scripting](MIDI%20Scripting) for details.)
+    "key" tag. (See [MIDI Scripting](MIDI-Scripting.md) for details.)
   - **SelectKnob**: For relative controls centered on 64 (0x40)
   - **Diff**: Adds the current value of a relative control to the
     previous value

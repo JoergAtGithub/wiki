@@ -9,13 +9,13 @@ and can leverage the entire feature-set of ES7 (excluding ES6 Modules for now).
 These user-created functions can then do anything desired with the MIDI event
 info such as affect different controls depending on whether another
 button is pressed, adjust incoming control values to work better with
-Mixxx (i.e. for [scratching](#Scratching-and-jog-wheels)), send messages
+Mixxx (i.e.-for-[scratching](.md#Scratching-and-jog-wheels)), send messages
 to LED displays on the controller, or even [turn a 2 deck controller
 into a 4 deck
 controller](#turning-a-2-deck-controller-into-a-4-deck-controller).
 
 If you would like your mapping included in Mixxx, please see the coding
-guidelines on the [Contributing Mappings](Contributing%20Mappings) page.
+guidelines on the [Contributing Mappings](Contributing-Mappings.md) page.
 
 JavaScript is mostly used for programming complex functionality in Web
 pages. There are many tutorials online, such as
@@ -512,7 +512,7 @@ the only way to log anything from a controlller script, was using
 ## Components library
 
 Now that you understand the basics, it is suggested to use the
-[Components JS](Components%20JS) library for new mappings.
+[Components JS](Components-JS.md) library for new mappings.
 
 ## Soft-takeover
 
@@ -696,7 +696,7 @@ timers increase.)
 **NEVER use busy-wait loops!** (Loops that do nothing but delay. They
 can cause Mixxx to stutter.) **Always use a timer instead!**
 
-See the [script timers](script%20timers) page for more details on best
+See the [script timers](script-timers.md) page for more details on best
 practices for using timers.
 
 Old controller scripts used strings that evaluate to functions instead
@@ -958,7 +958,7 @@ Here are some examples to get you started. These examples start simple
 and get progressively more complex.
 
 **Note:** Most of the features demonstrated in these examples exist in much
-easier to use and most importantly review form in [Components JS](Components%20JS)!
+easier to use and most importantly review form in [Components JS](Components-JS.md)!
 So if you plan on submitting your hard work, please prefer writing your
 mapping in ComponentsJS from the start. It is by far the preferred paradigm
 for mappings that aren't simple enough to fit into less then 50 lines.
@@ -982,7 +982,7 @@ MyController.someButton = function (_channel, _control, value, _status, _group) 
 }
 ```
 
-*ComponentsJS: [`Button#isPress`](Components%20JS#button)*
+*ComponentsJS: [`Button#isPress`](Components-JS.md#button)*
 
 ### Rescale incoming values
 
@@ -996,7 +996,7 @@ MyController.pitchSlider = function (_channel, _control, value, _status, group) 
 }
 ```
 
-*ComponentsJS: [`Component#inValueScalue`](Components%20JS#methods)*
+*ComponentsJS: [`Component#inValueScalue`](Components-JS.md#methods)*
 
 **IMPORTANT NOTE:** You must always declare variables with `const` or `let`
 when you first use them inside a function since it establishes scope. If you
@@ -1038,7 +1038,7 @@ MyController.colorCodes = {
 }
 ```
 
-*ComponentsJS: [`Component#midi`/`Component#on`/`Component#off`](Components%20JS#component-setup)*
+*ComponentsJS: [`Component#midi`/`Component#on`/`Component#off`](Components-JS.md#component-setup)*
 
 Now, when writing code to change an LED to green, instead of typing the
 note number for the LED and the value for green directly, you can
@@ -1109,7 +1109,7 @@ something different depending on whether a shift button or layer
 switching button is active, you need to use JavaScript. There are
 multiple ways this can be accomplished.
 
-*ComponentsJS: [`Component#shift`/`Component#unshift`/`ComponentContainer`](Components%20JS#shift-layers)
+*ComponentsJS: [`Component#shift`/`Component#unshift`/`ComponentContainer`](Components-JS.md#shift-layers)
 
 #### Tracking the state of the modifier in a variable
 
@@ -1199,7 +1199,7 @@ MyController.shiftButton = function (channel, control, value, status, group) {
 }
 ```
 
-*ComponentsJS: [`ComponentContainer`](Components%20JS#componentcontainer-and-managing-layers)
+*ComponentsJS: [`ComponentContainer`](Components-JS.md#componentcontainer-and-managing-layers)
 
 ### Turning a 2 deck controller into a 4 deck controller
 
@@ -1221,7 +1221,7 @@ decks 1/3 and \[Channel2\] for decks 2/4. Map the buttons you want to
 change between decks 1/3 and decks 2/4 to the deckToggleButton function.
 
 This can be achieved much easier in ComponentsJS through the use
-of the [`Deck`](Components%20JS#deck)
+of the [`Deck`](Components-JS.md#deck)
 Component!
 
 Click the tab below labeled 'deckToggleExample.js' to download this

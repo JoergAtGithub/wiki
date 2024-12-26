@@ -992,7 +992,7 @@ a new logical block. Always break after "},"
 
 ```cpp
     m_pTrackCollection->callSync(
-            [this](TrackCollectionPrivate* pTrackCollectionPrivate) {
+            [this](TrackCollectionPrivate*-pTrackCollectionPrivate.md) {
                 connect(&pTrackCollectionPrivate->getCrateDAO(),
                         SIGNAL(added(int)), this, SLOT(slotCrateAdded(int)));
                 connect(&pTrackCollectionPrivate->getCrateDAO(),

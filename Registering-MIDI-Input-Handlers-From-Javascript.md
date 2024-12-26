@@ -87,7 +87,7 @@ code. Thoughts?
 
 ## Integrating with Components
 
-The [Components JS](Components%20JS) library would continue to work in
+The [Components JS](Components-JS.md) library would continue to work in
 largely the same way. The input callback would be registered by the
 generic `Component` constructor using the Component's `midi` and `input`
 properties as arguments to `midi.makeInputHandler`. Like the output

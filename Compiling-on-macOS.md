@@ -14,11 +14,11 @@ Click "Install" on the software update popup window that will appear and wait fo
 
 # Download Mixxx source code
 
-If you want to compile Mixxx, you'll need to download the source code. Source archives for releases are on [downloads.mixxx.org](https://downloads.mixxx.org/), but if you want to contribute to Mixxx, we recommend forking the project. Check out [Set up Git](https://github.com/mixxxdj/mixxx/wiki/Using%20Git#set-up-git) to get started.
+If you want to compile Mixxx, you'll need to download the source code. Source archives for releases are on [downloads.mixxx.org](https://downloads.mixxx.org/), but if you want to contribute to Mixxx, we recommend forking the project. Check out [Set up Git](https://github.com/mixxxdj/mixxx/wiki/Using-Git.md#set-up-git) to get started.
 
 # Install build dependencies
 
-There is a script at `tools/macos_buildenv.sh` inside the Mixxx source code repository which automatically downloads an archive with all the precompiled dependencies and build tools that Mixxx requires (apart from the Xcode command line tools [explained above](#install-xcode-command-line-tools)). The script also sets environment variables needed to compile Mixxx. Run the script with `source` to set up your build environment. Assuming you have the Mixxx source code in ~/mixxx, run the following command (replace ~/mixxx if you put the source code elsewhere):
+There is a script at `tools/macos_buildenv.sh` inside the Mixxx source code repository which automatically downloads an archive with all the precompiled dependencies and build tools that Mixxx requires (apart-from-the-Xcode-command-line-tools-[explained-above](.md#install-xcode-command-line-tools)). The script also sets environment variables needed to compile Mixxx. Run the script with `source` to set up your build environment. Assuming you have the Mixxx source code in ~/mixxx, run the following command (replace ~/mixxx if you put the source code elsewhere):
 
 ```shell
 source ~/mixxx/tools/macos_buildenv.sh setup
@@ -91,4 +91,4 @@ The DMG file is created in ~/mixxx/build. You can run the bundle by double click
 
 # Set up development tools
 
-Now that you can build Mixxx, learn about [developer tools](https://github.com/mixxxdj/mixxx/wiki/Developer%20Tools) that make Mixxx development easier.
+Now that you can build Mixxx, learn about [developer tools](https://github.com/mixxxdj/mixxx/wiki/Developer-Tools.md) that make Mixxx development easier.

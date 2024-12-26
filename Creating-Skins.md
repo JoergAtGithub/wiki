@@ -29,7 +29,7 @@ tooltips when you hover your mouse over parts of the skin, go to Options
 \> Preferences \> Interface and select "Skin and Library" for the
 Tooltip option.
 
-Keep in mind the [Skin Guidelines](Skin%20Guidelines).
+Keep in mind the [Skin Guidelines](Skin-Guidelines.md).
 
 ### Things to know
 
@@ -2723,12 +2723,12 @@ performed action (Y=lfoDelay or lfoDepth or lfoPeriod)
   - [Skin Color Scheme
     Architecture](https://github.com/mixxxdj/mixxx/wiki/Skin-Color-Scheme-Architecture#scheme-format) - Explains how
     color schemes work in Mixxx 1.6.0+
-  - [Mixxx Skinning Guidelines](Skin%20Guidelines)
+  - [Mixxx Skinning Guidelines](Skin-Guidelines.md)
   - [Skin Color Schemes Tips and
     Tool](Skin%20Color%20Schemes%20Tips%20and%20Tool) - A "walkthrough"
     on creating schemes, includes a link to an online Javascript tool
     that will help determine correct HSVTweak values.
-  - [Skin layout tutorial](Skin%20layout%20tutorial) - A walkthrough on
+  - [Skin layout tutorial](Skin-layout-tutorial.md) - A walkthrough on
     creating a minimal skin, with focus on the common problems a skin
     designer will encounter when setting the layout of various skin
     elements.

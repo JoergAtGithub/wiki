@@ -156,7 +156,7 @@ driver](hercules_linux_usermode_driver).
 
 ## Hercules DJ Console RMX
 
-Moved -\> [Hercules DJ Console RMX](Hercules%20DJ%20Console%20RMX)
+Moved -\> [Hercules DJ Console RMX](Hercules-DJ-Console-RMX.md)
 
 ## Hercules DJ Console RMX 2
 
@@ -172,7 +172,7 @@ Find it here -\>[Hercules DJ Console 4Set](hercules_dj_4set)
 
 ## Hercules DJ Control Steel
 
-Moved -\> [Hercules DJ Control Steel](Hercules%20DJ%20Control%20Steel)
+Moved -\> [Hercules DJ Control Steel](Hercules-DJ-Control-Steel.md)
 
 ## Hercules DJ Control MP3 e2 / MP3 LE / Glow
 

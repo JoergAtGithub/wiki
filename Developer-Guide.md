@@ -11,7 +11,7 @@ developers*
 
 ## Prerequisites
 
-First, get the code of Mixxx [using Git](using%20Git).
+First, get the code of Mixxx [using Git](using-Git.md).
 
 To understand this guide, you should have a working experience with a
 systems language like C, C++, or Java. You should be able to get by with
@@ -25,11 +25,11 @@ files. IDEs index the entire code tree and allow you to jump from where
 a function is used to its definition, even if that is in another file
 (which it often is). Without this powerful tool, you will spend a lot of
 time simply finding the code you're looking for instead of understanding
-what it is doing. We have [guides](developer%20tools#using%20IDEs) for
+what it is doing. We have [guides](developer-tools.md#using%20IDEs) for
 setting up several IDEs to work on Mixxx, but feel free to use whatever
 IDE you prefer.
 
-Please check out the [Learning resources](Learning%20resources) page to
+Please check out the [Learning resources](Learning-resources.md) page to
 learn about the basics and underlying concepts
 
 ## Core Infrastructure

@@ -1,5 +1,5 @@
 ***If you were directed here from the Sound Hardware preferences in
-Mixxx, see [Adjusting Audio Latency](Adjusting%20Audio%20Latency).***
+Mixxx, see [Adjusting Audio Latency](Adjusting-Audio-Latency.md).***
 
 # Troubleshooting
 
@@ -10,7 +10,7 @@ available on [the download page](http://mixxx.org/download).
 
 ## Audio is crackling
 
-Your audio latency may be set lower than your system can handle. First, raise your audio buffer size in Preferences > Sound Hardware until sound is flawless. Furthermore, see the [Adjusting Audio Latency](Adjusting%20Audio%20Latency) page for tips on tweaking the latency in your operating system.
+Your audio latency may be set lower than your system can handle. First, raise your audio buffer size in Preferences > Sound Hardware until sound is flawless. Furthermore, see the [Adjusting Audio Latency](Adjusting-Audio-Latency.md) page for tips on tweaking the latency in your operating system.
 
 Updating to Windows 10 20H2 has made this worse for some users. Raising the audio buffer size or downgrading to an earlier version of Windows may work around the issue.
 
@@ -144,7 +144,7 @@ access sound cards on multiple OSs, so those suggestions apply to both
 programs.
 
 If you are considering what sound card to get for use with Mixxx, read
-the [DJ Hardware Guide](Hardware%20Compatibility).
+the [DJ Hardware Guide](Hardware-Compatibility.md).
 
 ### GNU/Linux
 
@@ -156,7 +156,7 @@ good for audio use that requires low latency like Mixxx. The PulseAudio
 daemon occupies the ALSA device while it is running. To temporarily
 disable PulseAudio while Mixxx is running, start it with `pasuspender
 mixxx`. The .desktop launcher icon for Mixxx does this automatically. To
-run Mixxx with [command line options](command%20line%20options), such as
+run Mixxx with [command line options](command-line-options.md), such as
 `--mididebug`, put `--` between `pasuspender` and the rest of the
 command. For example, run `pasuspender -- mixxx --mididebug`
 
@@ -223,13 +223,13 @@ back to the Preferences window.
 If you are sure your controller is connected but it still does not show
 up in Mixxx, read the appropriate section below. If you do not know
 whether your controller is a MIDI controller or HID controller, search
-for it on the [DJ Hardware Guide](hardware%20compatibility). If it is
+for it on the [DJ Hardware Guide](hardware-compatibility.md). If it is
 not listed there, it is most likely a MIDI device.
 
 Some controllers have their own pecularities that are noted on their own
 wiki pages. If the information below does not solve your problem, check
 the wiki page for your controller, which you can find a link to on the
-[DJ Hardware Guide](hardware%20compatibility).
+[DJ Hardware Guide](hardware-compatibility.md).
 
 ### MIDI controllers on GNU/Linux
 
@@ -512,4 +512,4 @@ The desktop launchers in the source repository already include this fix.
 
 ## Troubleshooting other issues (Finding the mixxx.log file)
 
-Refer to [Finding the mixxx.log file](Finding%20the%20mixxx.log%20file)
+Refer to [Finding the mixxx.log file](Finding-the-mixxx.log-file.md)

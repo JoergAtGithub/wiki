@@ -153,7 +153,7 @@ HerculesMk2.fx_cue_loop_button = function (msg) {
             case "cue": /* seek trigger_no cue point on msg.channel */; break;
             case "loop": /* trigger_no 1 to loop in/out, 2/3 to lengthen/shorten loop */ ; break;
         }
-        alert(msg.channel + " " + HerculesMk2.modes[mode] + " button #" + trigger_no + " hit.");
+        alert(msg.channel-+-"-"-+-HerculesMk2.modes[mode]-+-"-button-.md#" + trigger_no + " hit.");
     }
 ```
 

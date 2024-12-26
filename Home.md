@@ -8,36 +8,36 @@ Due to spam attacks, wiki editing has been restricted. However you are welcome t
 
 ### Getting Started
 
-  - [Beginner DJ Links](Beginner%20DJ%20Links)
-  - [DJ Hardware Guide](Hardware%20compatibility)
+  - [Beginner DJ Links](Beginner-DJ-Links.md)
+  - [DJ Hardware Guide](Hardware-compatibility.md)
   - [Manual](https://mixxx.org/manual)
-  - [Safeguard your Digital DJ Data](Safeguard%20your%20Digital%20DJ%20Data)
+  - [Safeguard your Digital DJ Data](Safeguard-your-Digital-DJ-Data.md)
 
 ### Troubleshooting
 
   - [Troubleshooting](Troubleshooting)
-  - [Finding the Mixxx.log file](Finding%20the%20Mixxx.log%20file) can
+  - [Finding the Mixxx.log file](Finding-the-Mixxx.log-file.md) can
     be helpful when Mixxx isn't working right. Please attach this file
     to bug reports and forum posts when asking for help.
-  - [Adjusting Audio Latency](Adjusting%20Audio%20Latency)
+  - [Adjusting Audio Latency](Adjusting-Audio-Latency.md)
 
 ### Getting Involved
 
-  - [Reporting bugs](Reporting%20bugs) is a great way to contribute to
+  - [Reporting bugs](Reporting-bugs.md) is a great way to contribute to
     Mixxx, especially if you don't have programming skills
   - [Testing](Testing) the latest features helps speed up development 
-  - [Getting Involved in Mixxx](Getting%20Involved): Want Mixxx to be
+  - [Getting Involved in Mixxx](Getting-Involved.md): Want Mixxx to be
     even more awesome? You don't need to be a programmer to help us.
   - [Google Summer of Code](https://github.com/mixxxdj/mixxx/wiki/Gsoc) 
 
 ### Extras
 
-  - [Live GNU/Linux distributions featuring Mixxx](Portable%20Mixxx):
+  - [Live GNU/Linux distributions featuring Mixxx](Portable-Mixxx.md):
     Run Mixxx from a USB drive or DVD without having to install anything
     on the computer
   - [Live Calls with Skype and
     Mixxx](https://www.primcast.com/support/live-calls-with-skype-and-mixxx/)
-  - [MIDI clock output](MIDI%20clock%20output)
+  - [MIDI clock output](MIDI-clock-output.md)
 
 ## Community Resources
 
@@ -77,20 +77,20 @@ Due to spam attacks, wiki editing has been restricted. However you are welcome t
   - [MIDI controller mapping file
     format](MIDI%20controller%20mapping%20file%20format): create or
     change a MIDI mapping file for your controller
-  - [MIDI crash course](MIDI%20crash%20course)
-  - [Reverse engineering](Reverse%20engineering) tips for DJ hardware
-  - [Controller scripting with JavaScript](midi%20scripting): map
+  - [MIDI crash course](MIDI-crash-course.md)
+  - [Reverse engineering](Reverse-engineering.md) tips for DJ hardware
+  - [Controller scripting with JavaScript](midi-scripting.md): map
     advanced behaviors including jog wheel scratching, modifier (shift)
     buttons, and deck toggle buttons
-  - [Components JS](Components%20JS): JavaScript library to help with
+  - [Components JS](Components-JS.md): JavaScript library to help with
     writing mapping scripts
-  - [Contributing mappings](Contributing%20mappings): describes how to
+  - [Contributing mappings](Contributing-mappings.md): describes how to
     get your mapping included in Mixxx
   - [Controller mapping file
     locations](Controller%20mapping%20file%20locations)
-  - [Updating controller mappings](Updating%20controller%20mappings):
+  - [Updating controller mappings](Updating-controller-mappings.md):
     how to adapt old mappings for the latest version of Mixxx
-  - [HID & USB Bulk controller mappings](hid%20mapping): create or
+  - [HID & USB Bulk controller mappings](hid-mapping.md): create or
     change a mapping for your HID or USB bulk-transfer mode controller
   - [Mixxx Controls](MixxxControls): List of Mixxx's controls that can
     be manipulated by controller mappings
@@ -101,11 +101,11 @@ Due to spam attacks, wiki editing has been restricted. However you are welcome t
 ## Skin Documentation
 
   - [Creating Skins](Creating-Skins) - the most up to date guide
-  - [Skin Guidelines](Skin%20Guidelines)
-  - [Skin Color Scheme Architecture](Skin%20Color%20Scheme%20Architecture)
-  - [Skin Color Schemes Tips and Tool](Skin%20Color%20Schemes%20Tips%20and%20Tool)
-  - [On Icons and Images](On%20Icons%20and%20Images)
-  - [Skin System Changelog](Skin%20System%20Changelog)
+  - [Skin Guidelines](Skin-Guidelines.md)
+  - [Skin Color Scheme Architecture](Skin-Color-Scheme-Architecture.md)
+  - [Skin Color Schemes Tips and Tool](Skin-Color-Schemes-Tips-and-Tool.md)
+  - [On Icons and Images](On-Icons-and-Images.md)
+  - [Skin System Changelog](Skin-System-Changelog.md)
   - [Skins forum](https://mixxx.discourse.group/c/skins/11): search for
     skins, share your skins, and ask for help
 
@@ -113,36 +113,36 @@ Due to spam attacks, wiki editing has been restricted. However you are welcome t
 
 ### Compile Mixxx From Source Code
 
-  - [Compiling on Linux](Compiling%20on%20Linux)
-  - [Compiling on Windows](Compiling%20on%20Windows)
-  - [Compiling on macOS](Compiling%20on%20macOS)
+  - [Compiling on Linux](Compiling-on-Linux.md)
+  - [Compiling on Windows](Compiling-on-Windows.md)
+  - [Compiling on macOS](Compiling-on-macOS.md)
   - [Packaging / Making a Mixxx Installer](Packaging-Making-A-Mixxx-Installer)
 
 ### Getting Started
 
-  - [Contribution Guidelines](Contribution%20Guidelines)
-  - [Coding Guidelines](Coding%20Guidelines)
-  - [Developer Guide](Developer%20Guide): high level overview of Mixxx's
+  - [Contribution Guidelines](Contribution-Guidelines.md)
+  - [Coding Guidelines](Coding-Guidelines.md)
+  - [Developer Guide](Developer-Guide.md): high level overview of Mixxx's
     architecture
-  - [Developer Tools](Developer%20Tools)
-  - [Using Git](Using%20Git)
+  - [Developer Tools](Developer-Tools.md)
+  - [Using Git](Using-Git.md)
   - [Bug & feautre request tracker](https://github.com/mixxxdj/mixxx/wiki/Mixxx-bugs-and-feature-requests)
-  - [Bugfix Workflow](Bugfix%20Workflow) 
-  - [Creating Backtraces](Creating%20Backtraces): helpful for debugging
+  - [Bugfix Workflow](Bugfix-Workflow.md) 
+  - [Creating Backtraces](Creating-Backtraces.md): helpful for debugging
     crashes
   - [Code profiling](Profiling) to see what parts of the code are using
     more CPU time than others
-  - [Learning Resources](Learning%20Resources)
+  - [Learning Resources](Learning-Resources.md)
 
 ### Development Topics
 
-  - [Minimum requirements policy](Minimum%20requirements%20policy)
-  - [Unit tests](Unit%20tests) help prevent regressions. Writing tests
+  - [Minimum requirements policy](Minimum-requirements-policy.md)
+  - [Unit tests](Unit-tests.md) help prevent regressions. Writing tests
     is essential for new code\!
-  - [Iconic Tracks](Iconic%20Tracks) A list of tracks, useful for
+  - [Iconic Tracks](Iconic-Tracks.md) A list of tracks, useful for
     discussing Mixxx features
-  - [Development Roadmap](Development%20Roadmap)
-  - [Feature Design Documents](feature%20discussion)
+  - [Development Roadmap](Development-Roadmap.md)
+  - [Feature Design Documents](feature-discussion.md)
   - [Google Summer of Code](gsoc) student projects and information.
   - [Google Code-in](gci) task list and information
 
@@ -150,13 +150,13 @@ Due to spam attacks, wiki editing has been restricted. However you are welcome t
 
   - [Pitch percentages for semitones and
     notes](Pitch%20percentages%20for%20semitones%20and%20notes)
-  - [Engine Library format](Engine%20Library%20format) (for Denon Prime
+  - [Engine Library format](Engine-Library-format.md) (for Denon Prime
     hardware)
 
 ## Archives
 
   - [Press](Press) about Mixxx
-  - [Developer meeting archives](meetings%20archive)
+  - [Developer meeting archives](meetings-archive.md)
   - Bazaar (legacy) code browsing on
     [Launchpad](https://code.launchpad.net/mixxx/+branches)
   - SVN (even more legacy) code browsing on

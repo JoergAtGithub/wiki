@@ -7,7 +7,7 @@ building Windows self-extracting installers. This page contains
 information on making such packages.
 
 First, we assume you've built & run Mixxx successfully from the
-instructions on the [Compiling on Windows](Compiling%20on%20Windows)
+instructions on the [Compiling on Windows](Compiling-on-Windows.md)
 page.
 
 ## Preparation

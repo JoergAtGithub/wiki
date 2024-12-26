@@ -46,7 +46,7 @@ for 1.9.0](https://bugs.launchpad.net/mixxx/+bugs?field.searchtext=&orderby=stat
   - Add MIDI controller mappings [from the
     forums](http://www.mixxx.org/forums/viewforum.php?f=7) to the
     branch.
-  - [Test MIDI mappings](Supported%20Controller%20Test%20Grid) for
+  - [Test MIDI mappings](Supported-Controller-Test-Grid.md) for
     correct functionality for as many currently supported controllers as
     we can
   - Update the [Wikipedia entry](http://en.wikipedia.org/wiki/Mixxx)

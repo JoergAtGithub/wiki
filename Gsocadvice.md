@@ -160,7 +160,7 @@ something you're going to enjoy. Once you've made your mind up:
 1.  Make sure you've thought about the project and understand what it
     entails
 2.  Don't be afraid to come up with original solutions to the problem
-3.  [Set up an IDE](Developer%20Tools#Using%20IDEs) to start exploring
+3.  [Set up an IDE](Developer-Tools.md#Using%20IDEs) to start exploring
     the area of the code you will be working on and understanding how
     the classes work together. Read the [Developer
     Guide](Developer%20Guide) for an introduction to the organization of

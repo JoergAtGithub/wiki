@@ -204,7 +204,7 @@ The bottom encoders are not mapped in the 4 effect unit layout.
 ### Effect unit focusing
 
 In addition to focusing one effect in a unit at a time with the
-[Standard Effects Mapping](Standard%20Effects%20Mapping), the Xone K2/K1
+[Standard Effects Mapping](Standard-Effects-Mapping.md), the Xone K2/K1
 has another mode for focusing a whole effect unit. This allows for
 controlling the parameters of all 3 effects in the unit at a time. This
 mode is only available on the 4 effect unit layouts. To access it, press

@@ -113,7 +113,7 @@ the appropriate parts:
         </controller>
     </MixxxControllerPreset>
 
-There is also an [HID Packet Parser JS](HID%20Packet%20Parser%20JS)
+There is also an [HID Packet Parser JS](HID-Packet-Parser-JS.md)
 script in the `res/controllers` directory you can examine for parsing
 hints. (If you would like to try using it directly, simply add it to the
 top of the `scriptfiles` list in your XML file:)
